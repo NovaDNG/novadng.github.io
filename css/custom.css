@@ -1,3 +1,26 @@
+/* iA-writer-quattro-regular - latin */
+@font-face {
+  font-family: 'iA Writer Quattro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/iAWriterQuattroS-Regular.eot'); /* IE9 Compat Modes */
+  src: local('iA Writer Quattro S Regular'), local('iAWriterQuattroS-Regular'),
+       url('../fonts/iAWriterQuattroS-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/iAWriterQuattroS-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/iAWriterQuattroS-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/iAWriterQuattroS-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/dm-serif-display-v4-latin-regular.svg#DMSerifDisplay') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/RobotoSlab-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
 /* dm-serif-display-regular - latin */
 @font-face {
   font-family: 'DM Serif Display';

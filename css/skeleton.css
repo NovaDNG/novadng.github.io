@@ -200,8 +200,8 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Inter", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  font-family: "iA Writer Quattro", "Inter", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #52524f;
 }
 
 /* Typography
@@ -209,7 +209,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Roboto Slab', 'DM Serif Display', serif;
   font-weight: 400;
 }
 
