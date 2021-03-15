@@ -16,9 +16,9 @@
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
-       url('../fonts/RobotoSlab-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'),
+       url('../fonts/RobotoSlab-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 /* dm-serif-display-regular - latin */
