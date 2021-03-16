@@ -55,9 +55,9 @@ html {
 
 img {
   max-width: 100%;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   margin-bottom: 1%;
 }
 
@@ -253,7 +253,7 @@ a.footer-link:focus {
 }
 
 .hexo {
-  fill: #03adfc;
+  fill: #e2001eA;
   vertical-align: middle;
   padding-bottom: 4px;
 }
@@ -288,8 +288,8 @@ body {
 }
 
 body.darkmode {
-  background: rgb(34, 34, 38);
-  color: rgb(230, 230, 230);
+  background: rgb(25, 25, 26);
+  color: rgb(151, 154, 156);
 }
 
 .trans {
