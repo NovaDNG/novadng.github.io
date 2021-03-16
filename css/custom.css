@@ -227,10 +227,10 @@ blockquote footer cite:before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(128 128 128 / 70%);
+  background: rgb(128 128 128 / 56%);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgb(128 128 128 / 20%);
+  background: rgb(128 128 128 / 16%);
 }
 
 ::-webkit-scrollbar-thumb:active { 
@@ -253,7 +253,7 @@ a.footer-link:focus {
 }
 
 .hexo {
-  fill: #e2001eA;
+  fill: #e2001A;
   vertical-align: middle;
   padding-bottom: 4px;
 }
@@ -277,9 +277,9 @@ a.footer-link:focus {
 
 body {
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 10px;
-  bottom: 10px;
+  bottom: 0px;
   right: 10px;
   padding: 5px;
   overflow-y: scroll;
