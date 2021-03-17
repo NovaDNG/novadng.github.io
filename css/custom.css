@@ -201,11 +201,10 @@ body.darkmode li p code {
 
 /* blockquote */
 blockquote {
-  font-family: 'Inter';
+  font-family: 'Roboto Slab', 'Inter';
   background-color: rgba(148, 148, 149, 0.08) ;
   margin: 1.5em 0px;
   padding: 1.1em 20px 1px 20px;
-  font-style: italic;
 }
 
 blockquote footer {
@@ -285,6 +284,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.3s ease-in-out;
+  background: #eae6e2;
 }
 
 body.darkmode {
