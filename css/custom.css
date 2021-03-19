@@ -54,11 +54,14 @@ html {
 }
 
 img {
-  max-width: 100%;
+  max-width: 120%;
   -webkit-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
   -moz-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
   box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
+  box-shadow-hover: 0 2px 1.6px rgba(0, 0, 0, 0.012), 0 4.5px 3.6px rgba(0, 0, 0, 0.017), 0 7.9px 6.3px rgba(0, 0, 0, 0.021),
+  0 12.5px 10px rgba(0, 0, 0, 0.025), 0 19.3px 15.5px rgba(0, 0, 0, 0.029), 0 30.1px 24.1px rgba(0, 0, 0, 0.033), 0 50px 40px rgba(0, 0, 0, 0.038), 0 100px 80px rgba(0, 0, 0, 0.05);
   margin-bottom: 1%;
+  transition: box-shadow 0.23s ease-in-out;
 }
 
 @media (min-width: 550px) {
@@ -201,7 +204,7 @@ body.darkmode li p code {
 
 /* blockquote */
 blockquote {
-  font-family: 'Roboto Slab', 'Inter';
+  font-family: 'Roboto Slab', 'Inter', HYQiHei, FZYouH, Source Han Sans, sans-serif;
   background-color: rgba(148, 148, 149, 0.08) ;
   margin: 1.5em 0px;
   padding: 1.1em 20px 1px 20px;
