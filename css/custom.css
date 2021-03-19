@@ -62,7 +62,7 @@ img {
   0 4.5px 3.6px rgba(0, 0, 0, 0.017), 
   0 7.9px 6.3px rgba(0, 0, 0, 0.021),
   0 12.5px 10px rgba(0, 0, 0, 0.025), 
-  0 19.3px 15.5px rgba(0, 0, 0, 0.029), 
+  0 19.3px 15.5px rgba(0, 0, 0, 0.029); 
   margin-bottom: 1%;
   transition: box-shadow 0.23s ease-in-out;
 }
@@ -207,7 +207,7 @@ body.darkmode li p code {
 
 /* blockquote */
 blockquote {
-  font-family: 'Roboto Slab', 'Inter', FZYouH, HYQiHei, Source Han Sans, sans-serif;
+  font-family: 'Roboto Slab', 'Inter', 'HYQiHei-40S', FZYouH, Source Han Sans SC, sans-serif;
   background-color: rgba(148, 148, 149, 0.08) ;
   margin: 1.5em 0px;
   padding: 1.1em 20px 1px 20px;
