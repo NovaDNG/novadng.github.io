@@ -514,7 +514,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #a0a09d;
 }
 
 th:first-child,
@@ -579,7 +579,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #a0a09d;
 }
 
 /* Clearing
