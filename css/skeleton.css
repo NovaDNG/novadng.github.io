@@ -287,7 +287,7 @@ a:not(.icon) {
 a:hover:not(.icon),
 a:focus:not(.icon) {
   background-position: 0 100%;
-  color: #fff;
+  color: #e9e6e2;
 }
 
 /* a:hover {

@@ -58,13 +58,7 @@ img {
   -webkit-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
   -moz-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
   box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
-  box-shadow-hover: 0 2px 1.6px rgba(0, 0, 0, 0.012), 
-  0 4.5px 3.6px rgba(0, 0, 0, 0.017), 
-  0 7.9px 6.3px rgba(0, 0, 0, 0.021),
-  0 12.5px 10px rgba(0, 0, 0, 0.025), 
-  0 19.3px 15.5px rgba(0, 0, 0, 0.029); 
   margin-bottom: 1%;
-  transition: box-shadow 0.23s ease-in-out;
 }
 
 @media (min-width: 550px) {
