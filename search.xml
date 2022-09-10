@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
+    <url>/2022/09/10/LM-EA9/</url>
+    <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52326554321/in/dateposted/" title="TechArt LMEA9 + Voigtländer Heliar 40/2,8 VM"><img src="https://live.staticflickr.com/65535/52326554321_76a9ecf951_k.jpg" alt="TechArt LMEA9 + Voigtländer Heliar 40/2,8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022/09/09/Standard_Obsession_%E2%85%A1/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40/2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40/2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40/2.8 一直处于一个有些尴尬的状态. </p>
+<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52346586710/in/dateposted/" title="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"><img src="https://live.staticflickr.com/65535/52346586710_0404371f4b_z.jpg" alt="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
+<p>那么正式进入普通使用体验. 首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40/2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52346478233/in/dateposted/" title="AF Noise LM-EA9"><img src="https://combo.staticflickr.com/pw/images/zh-hk/video-processing/z.png" alt="AF Noise LM-EA9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 但好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以你需要设置一个切换 AF/MF 快捷键, 略有些不便. </p>
+<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f/2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的举例, 提升对焦速度. </p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 ɑ7c 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40/2.5G 或者 90/2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
+<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Photography is FUN —— Pen F 避坑指南</title>
     <url>/2022/05/29/Pen-F-pitfalls/</url>
     <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087660201/in/dateposted/" title="R-D1, Df &amp; Pen-F"><img src="https://live.staticflickr.com/65535/52087660201_374ba5438b_o.jpg" alt="R-D1, Df &amp; Pen-F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -32,6 +54,113 @@
 ]]></content>
       <tags>
         <tag>Gadget</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
+    <url>/2021/03/22/reMarkable-2/</url>
+    <content><![CDATA[<h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061528238/in/dateposted-public/" title="Iriver Story"><img src="https://live.staticflickr.com/65535/51061528238_7f65cbf9d1_h.jpg" alt="Iriver Story"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
+<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
+<p><img src="http://myequil.wpengine.com/wp-content/themes/ensconce/images/f_components_trans.png" alt="equil smartpen"></p>
+<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒/笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
+<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
+<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
+<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
+<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
+<h3 id="写-amp-画"><a href="#写-amp-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061764988/in/dateposted-public/" title="网格预览"><img src="https://live.staticflickr.com/65535/51061764988_62f96a4583_h.jpg" alt="网格预览"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061666508/in/dateposted-public/" title="网格输出"><img src="https://live.staticflickr.com/65535/51061666508_4baeb5f74d_h.jpg" alt="网格输出"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
+<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/50999813030/in/dateposted-public/" title="书法练习"><img src="https://live.staticflickr.com/65535/50999813030_cbbd2ba488_h.jpg" alt="书法练习"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062480106/in/dateposted-public/" title="速写练习"><img src="https://live.staticflickr.com/65535/51062480106_d9269ee5c8_h.jpg" alt="速写练习"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062467122/in/dateposted-public/" title="星之原石"><img src="https://live.staticflickr.com/65535/51062467122_19d84d6f43_h.jpg" alt="星之原石"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
+<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑/手机上实时预览 reMarkable 上的作画/书写/注记, 是个非常方便的小功能. </p>
+<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf/epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062563897/in/dateposted-public/" title="Type is Beautiful 会刊"><img src="https://live.staticflickr.com/65535/51062563897_92bb4c3ab6_h.jpg" alt="Type is Beautiful 会刊"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
+<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
+<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端/ssh 客户端</p>
+<pre class="line-numbers language-none"><code class="language-none">ssh root@&lt;你的.reMarkable.IP.地址&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/50999647715/in/dateposted-public/" title="非常炫酷的登陆画面"><img src="https://live.staticflickr.com/65535/50999647715_7705b77839_h.jpg" alt="非常炫酷的登陆画面"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
+<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
+<pre class="line-numbers language-none"><code class="language-none">scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:&#x2F;usr&#x2F;share&#x2F;fonts&#x2F;ttf&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
+<pre class="line-numbers language-none"><code class="language-none">cd &#x2F;usr&#x2F;share&#x2F;fonts&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf/ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
+<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言/风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>追求小屏智能手机之路</title>
+    <url>/2021/03/12/yearning-for-a-tiny-smartphone/</url>
+    <content><![CDATA[<p><img src="https://live.staticflickr.com/65535/51041015252_785a279489_o.jpg"><br>稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点<a href="https://item.jd.com/10025201949310.html">这个链接</a>购买.</p>
+<hr>
+<h3 id="Jelly-之前"><a href="#Jelly-之前" class="headerlink" title="Jelly 之前"></a>Jelly 之前</h3><p>自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.</p>
+<p><img src="https://live.staticflickr.com/65535/51040924711_cfe1e5739f_o.jpg" alt="｢点金石｣ 上的 Veer 和旁边的 Nexus 4"></p>
+<p>当然, 会买 Veer 除了喜欢小巧的手机, 更多的原因还是我对 webOS 的喜爱. 不过没选择当时作为旗舰的 Pre³ 而选择了 Veer 就完全是因为尺寸了. 比起 Pre³ 的 3.6 寸 ｢大屏｣, 2.6 寸屏幕的 Veer 在手中是真正的小巧玲珑, 如珠圆玉润的卵石般令人爱不释手. 而且 Veer 还有一块全键盘, 作为小屏手机, 在输入这一最大的痛点上也得到了对我来说完美的解决, 我现在甚至还能依稀想起来自 veer 键盘上那一股若有若无的神奇香味.</p>
+<p>上大学之后没多久, 我很幸运地在 ebay 上买到了一台微软的 Kin, 不过这台机器并不是智能手机, 而且在一年多以后我便将这台手机送给了一位友人, 这里就不多做介绍了.</p>
+<p><img src="https://live.staticflickr.com/65535/51040924756_2802745045_o.jpg" alt="3.4 寸的屏幕放在今天来看也算是迷你了"></p>
+<p>送走 Kin 之后不久, 我就从父亲手中得到了他淘汰不用的 iPhone 5. 很多老派 iPhone 爱好者依然认为 4 寸屏幕的 iPhone 5 形态是最能兼顾易用性与手感的黄金尺寸, 当然另一派则认为 3.5 寸屏幕的 iPhone 4 才是真正的黄金尺寸 —— 包括当时刚刚宣称要做手机的老罗. 又过了不久, 苹果推出了 iPhone 5s 造型, iPhone 6s 性能的 iPhone SE, 我便第一时间入手了. 在那个时候, iPhone SE 已经被主流大众认为是小屏手机了, 而诸如夏普 Aquos Crystal 和小米 MIx 等机器也为人们揭开了 ｢全面屏｣ 的一角, 在这之后手机厂家们便纷纷朝着全面屏的方向发展去了, 手机尺寸本身也终于不再变得更大.</p>
+<blockquote>
+<p>你以为会有 iPhone 5/SE 的图? 这么大众的手机没图的啦.</p>
+</blockquote>
+<p>这个时候可能有人会问了, 为什么都说了这么多了, 还没提到一句索尼的 Xperia Compact 系列? 其实我从 Xperia Z2 开始就一直是索尼手机的用户, 但是因为某些奇怪的心态 (觉得已经买了大屏的版本再买同一系列的小屏版是一件很不对劲的事情) 和机器本身的问题 —— 比如 Z3 Compact 摄像头的位置不对劲, 扬声器和听筒没有隐藏进边框, Z5 和 XZ 的正面没有完全对称等等鸡毛蒜皮的原因, 便没有买 Z 系列的 Compact. 等到了 2017 年, 我终于把主力手机从 5.2 寸屏幕的 Xperia Z5 换成了 4.6 寸屏幕的 Xperia XZ1 Compact.</p>
+<p><img src="https://live.staticflickr.com/65535/51040924676_69b9442672_o.jpg" alt="iPhone SE, Xperia XZ1 Compact 和 Xperia Z5"></p>
+<p>XZ1 Compact 在我心目中可以算是非常完美的小屏旗舰了, 比 iPhone SE 稍大一圈, 但是屏幕尺寸大上了不少, 外形方方正正, 采用了当时索尼新的设计语言 Omni loop, 在边缘稍微做了一点弧形, 握持手感也非常优秀. 虽然没做边框隐藏扬声器/听筒, 但是换来了非常优秀的外放音质, 可以说在我心目中这台机器几乎没有缺点.</p>
+<p>一年之后, 夏普发布了 Aquos R2 Compact. 这台机器刚发布的时候我的想法和大多数人应该是一样的: WTF? 这上下都有缺口的设计是什么鬼才想出来的? 实在是不能接受啊! 不久之后我就买了与他前后脚发布的 Pixel 3 —— 不是 3 XL, 3 XL 那个超巨型缺口的傻逼程度实在是不能接受.</p>
+<p><img src="https://live.staticflickr.com/65535/51041015572_95465ca597_o.jpg" alt="XZ1 Compact 和长了一截的 Pixel 3"></p>
+<p>没想到的是, 在 2018 年 5.5 寸屏幕的 Pixel 3 在很多人眼里已经可以算是小屏手机了 , 这不免让我感到有些哭笑不得.</p>
+<p>2019 年下旬某日, 我在朋友家体验他的 Apple TV 时在 YouTube 上看到了一则多亲 AI 2 手机的评测, 当时就被这手机给迷住了, 不过当时这机器还在众筹阶段, 等到 2020 年初的时候我才终于买到. 多亲 AI 2 作为一台尺寸和 iPhone SE 差不多的手机, 因为用了细长的全面屏设计而屏幕达到了 5 寸, 而且碳酸聚酯外壳的选色非常漂亮, 我非常喜欢.</p>
+<p><a href="https://item.jd.com/100011582242.html">多亲 AI 2 Pro</a></p>
+<p>为什么在这里给的是 Pro 的链接? 当然是因为 2 的性能实在是有些太差了. 我本来是打算拿它来做微信专用机, 但是它运行微信的时候卡顿感可以说是难以接受的 —— 当然我知道这是腾讯的问题, Telegram 之类的应用在上面运行起来都没什么压力, 只是不太留得住后台. 据说 Pro 在提升了硬件配置之后运行起微信至少不会直接卡死了. 在用了没几天之后, 我就开始打起了 Aquos R2 Compact 的主意.</p>
+<p><img src="https://live.staticflickr.com/65535/51040924606_841fccb69e_o.jpg" alt="我的青色系手机收藏. 从左到右依次是 Aquos R2 Compact, 多亲 AI 2, nextbit Robin, NUANS NEO"></p>
+<p>在买之前我特地和一位已经买了的小屏爱好者朋友做了深入交流 , 在朋友的安利下我便十分坚定地入手了 Aquos R2 Compact. 因为上下两个缺口的缘故, 这台有着 5.2 寸屏幕的手机机身尺寸却和 XZ1 Compact 相差无几, 适应了诡异的屏幕形状之后我忍不住 ｢真香｣ 了一回. R2 Compact 虽然比多亲稍微胖了一点, 但是性能的提升是实打实的, 拿来做主力机确实毫无压力, 它那别扭的屏幕甚至是 120Hz 高刷新率屏幕 (虽然对我来讲完全体会不出来⋯⋯), 而且正面的指纹识别模块还兼职触控按键, 可以让我找回一点在 veer 上轻扫屏幕下方返回的感动, 顺便还可以补救一下 Google 那无药可救的手势操作. 这台机器现在我也依然带在身边, 夏普那边还表示这台机器能够升级到 Android 11 (只是时间尚未确定).</p>
+<p>等到 2020 年九月, 苹果发布了 iPhone 12 mini. 在当初机身尺寸泄漏的时候我就下定决心只要这是真的那就一定买, 而发布会上终于确定了的那一刻我可以说是欢呼雀跃了, 毕竟这年头所有的厂家在做手机的时候难免都会收到苹果的影响 —— 无论是好还是坏, 如果苹果敢于在 2020 年开个小屏旗舰的头, 那么或许接下来其他厂家也会试水? 等到 iPhone 12 mini 开放购买之后, 我便第一时间购入.</p>
+<p><img src="https://live.staticflickr.com/65535/51041015517_805a00e2ea_o.jpg" alt="尺寸和 R2 Compact 几乎一模一样的 iPhone 12 mini"></p>
+<p>尽管尺寸和 R2 Compact 几乎一模一样, 但 12 mini 的边框尺寸稍微比 R2 Compact 窄一些, 下边框也和另外三边同宽, 所以能塞进 5.4 寸的屏幕. 而且回归了平直的设计语言也让我觉得这是 iPhone 6 以来最好看的 iPhone 设计 (排除掉 SE, 毕竟那是 5s 的设计). 而 12 mini 最大的缺点 —— 续航严重不足, 对我这个拿它做备机的人来说也完全不是问题.</p>
+<h3 id="Jelly-2"><a href="#Jelly-2" class="headerlink" title="Jelly 2"></a>Jelly 2</h3><p>实际上, 在 iPhone 12 系列配置泄漏之前, 我就已经知道了 Jelly 2 的存在 . 在更早之前 —— 大约 2017 年, Jelly 1 刚出来时正值 detox phone 大热, 除了 unihertz 之外还有不少厂家做出了各种奇形怪状的小手机, 但是它们大多都过于精简, 导致很难真的把它们当作唯一主力使用, Jelly 1 虽然是全功能的, 但是它的设计和用料都实在有些令人难以下定决心购买, 所以这一波 detox 手机对我完全没有产生任何冲击. 反倒是 HMD 推出新的 8110 的时候我很心动, 然而因为种种原因没有买一台来收藏.</p>
+<p>虽然我在 20 年中旬就知道了这部手机的存在, 但当时它还在 indiegogo 筹资, 所以只是给了一些 influencer 评测样机. 直到年底才终于开放购买, 而我拿到手则是这两天的事情了.</p>
+<p><img src="https://live.staticflickr.com/65535/51040194288_7fc85744ca_o.jpg" alt="Xperia 1 II 在 Jelly 面前是真的庞然巨物了"></p>
+<p>Jelly 2 的三维和 Veer 几乎相差无几 (95×49.4×16.5 vs 84×54.5×15.1), 不过区别于 veer 的类肤质感外壳, Jelly 用的是普通的光面塑料, 手感稍微差了一些. 不过好在它十分小巧, 这塑料某种程度上增加了它的 ｢糖果质感｣ —— 就像它的名字一样, 在阳光下它看起来是有几分像一颗巨大的 jelly bean. 不过拿到手机的时候我才发现它的挂绳孔实际上在随机附赠的保护壳上, 为了使用挂绳孔我只好不情不愿地用上了这个保护壳. 保护壳的材质就是普通的软胶, 手感<strong>十分一般</strong>, 而且让整个机身变大了不少, 而且限制了可以使用的 Type C 充电线材类型, 十分难受.</p>
+<p>一开机进入设置流程, 我就意识到了它无论是出于节省空间或者成本的考虑采用了转子震动马达, 这和采用了线形马达的 Xperia 1 II 和 iPhone 12 mini 比起来真的是云泥之别. 好在输入法的振动可以自己调整或者关闭, 否则它本来就很糟糕的输入体验就要更加不堪了.</p>
+<p>既然以它的缺点开了头, 那干脆就先把它的缺点过一遍吧 —— 反正铁了心想买的人应该早就点了开头的那个链接下订单去了.</p>
+<ol>
+<li>它的<strong>扬声器十分糟糕</strong>, 不过这是可以想象的, 毕竟尺寸限制摆在那里. 设置里有个可以强行提高音量的开关, 千万不要去点, 点开的话那声音真的是呕哑嘲哳难为听, 不是开玩笑的;</li>
+<li>它的<strong>相机也十分一般</strong>, 不过这相机存在的价值大概就是完成扫扫二维码之类的工作, 应该不会真的有人想要在这样的机器上追求高级的相机吧?</li>
+<li>它的充电接口在机身右侧底部, <strong>充电的时候右手起来十分别扭</strong> (好在官方提供了一条 L 型接口的 Type C 转 A 线);</li>
+<li>背部的<strong>指纹感应器识别率不高</strong>, 雪上加霜的是如果你装了保护套, 保护套的厚度会进一步减少手指与传感器接触的面积, 再次降低识别成功率. 而且这个指纹传感器没有集成手势识别, 不能像 pixel 的那样通过扫动来控制通知中心开关 (好在手机本来就这么小了, 去拉通知中心确实轻而易举);</li>
+<li>绝大部分 <strong>Android 应用都没有为这么小的尺寸优化</strong>, 就连 Android 系统也不例外. Jelly 的系统虽然有做了一下小优化, 但是终归没有为此提供一个全局的解决方案;</li>
+<li>它虽然提供了一个自定义按钮, 但是这个按钮就在电源键旁边, 而且大小和手感与电源键一模一样, 非常<strong>容易误触</strong>. 当然这个自定义按钮确实是非常好的, 它可以作为对讲机的对讲按钮, 也可以自己定义点按､长按和双击的快捷操作, 十分便利.</li>
+</ol>
+<p><img src="https://live.staticflickr.com/65535/51041015137_87ac1fd266_k.jpg" alt="好在平时正常握持的姿势一般拇指都会放在电源上, 不然误触几率怕是要加倍"></p>
+<p>缺点就是前面那些了, 至少在我看来. 说完了缺点就该让我大吹一番了. 首先就是它没有选择走 ｢全面屏｣ 路线, 保留了电容触摸三大金刚, 这也让我可以免得吃 Google 那套鬼畜手势导航的屎 —— 当然如果你执意要吃屎的话也可以在设置里开启屏内导航 (默认是开启的) 并关闭电容按键. 而且在这个尺寸下, 手势导航还真的就没什么优势可言. 唯一遗憾的就是 Home 键没能集成通知灯, 通知灯被放在了摄像头左侧 —— 再想想 2021 年多少旗舰手机都没有通知灯了, 真的是感觉十分唏嘘 (当然, 由于 OLED 屏幕和 AOD 的普遍使用, 通知灯的需求也确实是不像以前那么强烈了). 另外这几个按钮是没有背光的, 在暗处使用的时候偶尔会按错/没按到, 有点小别扭.</p>
+<p><img src="https://live.staticflickr.com/65535/51040194003_b78959f60d_o.jpg" alt="如果偶尔需要在这机器上看长文也不是不行, 但是你大概不会愿意经常这么做的⋯⋯"></p>
+<p>Unihertz 没有以机身尺寸为借口取消顶部的耳机接口, 令人十分欣慰. 插上耳机之后还可以以耳机为天线使用内置的收音机, 十分便利. 而机身顶部还有另一个已经几乎灭绝的东西 —— 红外信号发射口, 这对于控制那些尚未智能化的家电来说十分便利, 是非常令人欣喜的存在.</p>
+<p><img src="https://live.staticflickr.com/65535/51040194153_a42d0c401a_o.jpg" alt="与目前手机上最好的屏幕 —— Xperia 1 II 的屏幕对比"></p>
+<p>Jelly 的 480×854 三寸屏幕属于勉强够用的水平, 不过这部手机也没指望你老盯着它看, 所以这屏幕虽然十分不怎么样但我并不会抱怨. 而屏幕小且分辨率低的另一个好处就是这块屏幕极其省电, 如果配合上深色主题, 那使用一整天下来会发现屏幕占用的电量真的寥寥无几. 既然说到了电池就顺便提一下它的续航, 由于这手机本身的属性导致了你不可能想要长时间使用, 更何况它的电池容量是 2,000mAh! 所以用一整天 (从早上七点开始到晚上十一点结束) 是毫无压力的, 甚至我觉得它能撑个两天, 如果用得更不频繁的话.</p>
+<p>它采用了一颗联发科曦力 P60, 只要不试着在这机器上玩大型游戏 (你疯了吗?!) 应该都是十分够用的. 和芯片相关的唯一问题就是它的基带不是很好, 在这个大厂普遍铺开 5G 的时代显得网速有些捉襟见肘 (我这里体验的对照是 FEH 2.4GB 的数据, 在相同的 Wi-Fi 环境下 Jelly 下载这些数据花了 Xperia 1 II 大约两倍的时间), 不过说实话你也不会想要在它上面做什么需要那么高网速的事吧, 至少它应付视频会议之类的需求还是绰绰有余的.</p>
+<p>最后不得不提一下的就是它的输入. 虽然机身大小类似 Veer, 但是 Jelly 2 并没有方便的 QWERTY 全键盘, 所以输入只能靠语音或者屏幕内虚拟键盘了. 如果你用九宫键盘并且把键盘高度开到最大的话勉强可以获得一个操作面积类似直板功能机九宫键盘的区域, 然而说实话体验并不好. 个人认为最佳解决方案还是滑动输入 + 中到小的键盘高度, 靠输入法的自动纠错来进行比较高效的输入, 配合双拼可以达到勉强可以接受的输入效率. 当然, 即使如此在使用这台机器的时候想要输入的愿望也是极为低下的, 而本来这台机器就算是一台 detox phone, 所以这个问题⋯⋯ 也就不算是个问题了?</p>
+<p>对了, 这台机器甚至支持 Micro SD 卡扩展 —— 另一个在 2021 年几乎灭绝的功能. 虽然 Micro SD 卡和第二张 SIM 共用卡槽, 但是对于我这样没有双卡需求的人来说就可以直接用来当扩展储存了.</p>
+<h3 id="一点结语"><a href="#一点结语" class="headerlink" title="一点结语"></a>一点结语</h3><p>Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.</p>
+<p>做出这台小手机的公司, 上海集赫电子商务有限公司, 是一家成立于 2016 年, 只有 50 人不到的小公司 . 在 Jelly 2 之前, 他们已经做出了 Jelly, Titan (一台有点类似黑莓 Passport 的全键盘手机), Atom (小巧的三防手机) 三个系列, 皆为小众但精致的机器, 在海内外广受死忠粉丝好评. 我也非常认同 Unihertz 日文网站上的一句话: ｢様々なスマホがありますが、現代のスマートフォンは、大きく、複雑で、とても壊れやすい。｣ —— 现在的智能手机虽然眼花缭乱, 但无不大而复杂, 而且容易损坏 (此处应有 JerryRigsEverything 插入), 而 Unihertz 选择了完全反其道而行, 自始至终开发小巧, 简单而坚固的手机, 逆流而上, 勇气可嘉.</p>
+<p>如果你已经深深陷入当代智能生活不能自拔却又希望有一台小手机的话恐怕还是只能选择 iPhone 12 mini, 但若你想要试着反抗一番, 看看能不能从这滩泥沼中挣脱, 不妨试试看 Jelly 2. 毕竟谁知道这台机器会不会成为一代绝唱呢 —— 各种小道消息都表明 iPhone 12 mini ｢销量不及预期｣, 靠苹果来重新开启小屏旗舰时代的希望恐怕是十分渺茫了.</p>
+]]></content>
+      <tags>
+        <tag>thoughts</tag>
       </tags>
   </entry>
   <entry>
@@ -160,113 +289,6 @@
 ]]></content>
       <tags>
         <tag>Gadget</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
-    <url>/2021/03/22/reMarkable-2/</url>
-    <content><![CDATA[<h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061528238/in/dateposted-public/" title="Iriver Story"><img src="https://live.staticflickr.com/65535/51061528238_7f65cbf9d1_h.jpg" alt="Iriver Story"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
-<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
-<p><img src="http://myequil.wpengine.com/wp-content/themes/ensconce/images/f_components_trans.png" alt="equil smartpen"></p>
-<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒/笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
-<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
-<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
-<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
-<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
-<h3 id="写-amp-画"><a href="#写-amp-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061764988/in/dateposted-public/" title="网格预览"><img src="https://live.staticflickr.com/65535/51061764988_62f96a4583_h.jpg" alt="网格预览"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061666508/in/dateposted-public/" title="网格输出"><img src="https://live.staticflickr.com/65535/51061666508_4baeb5f74d_h.jpg" alt="网格输出"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
-<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/50999813030/in/dateposted-public/" title="书法练习"><img src="https://live.staticflickr.com/65535/50999813030_cbbd2ba488_h.jpg" alt="书法练习"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062480106/in/dateposted-public/" title="速写练习"><img src="https://live.staticflickr.com/65535/51062480106_d9269ee5c8_h.jpg" alt="速写练习"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062467122/in/dateposted-public/" title="星之原石"><img src="https://live.staticflickr.com/65535/51062467122_19d84d6f43_h.jpg" alt="星之原石"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
-<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑/手机上实时预览 reMarkable 上的作画/书写/注记, 是个非常方便的小功能. </p>
-<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf/epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062563897/in/dateposted-public/" title="Type is Beautiful 会刊"><img src="https://live.staticflickr.com/65535/51062563897_92bb4c3ab6_h.jpg" alt="Type is Beautiful 会刊"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
-<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
-<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端/ssh 客户端</p>
-<pre class="line-numbers language-none"><code class="language-none">ssh root@&lt;你的.reMarkable.IP.地址&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/50999647715/in/dateposted-public/" title="非常炫酷的登陆画面"><img src="https://live.staticflickr.com/65535/50999647715_7705b77839_h.jpg" alt="非常炫酷的登陆画面"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
-<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
-<pre class="line-numbers language-none"><code class="language-none">scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:&#x2F;usr&#x2F;share&#x2F;fonts&#x2F;ttf&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
-<pre class="line-numbers language-none"><code class="language-none">cd &#x2F;usr&#x2F;share&#x2F;fonts&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf/ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
-<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言/风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>追求小屏智能手机之路</title>
-    <url>/2021/03/12/yearning-for-a-tiny-smartphone/</url>
-    <content><![CDATA[<p><img src="https://live.staticflickr.com/65535/51041015252_785a279489_o.jpg"><br>稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点<a href="https://item.jd.com/10025201949310.html">这个链接</a>购买.</p>
-<hr>
-<h3 id="Jelly-之前"><a href="#Jelly-之前" class="headerlink" title="Jelly 之前"></a>Jelly 之前</h3><p>自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.</p>
-<p><img src="https://live.staticflickr.com/65535/51040924711_cfe1e5739f_o.jpg" alt="｢点金石｣ 上的 Veer 和旁边的 Nexus 4"></p>
-<p>当然, 会买 Veer 除了喜欢小巧的手机, 更多的原因还是我对 webOS 的喜爱. 不过没选择当时作为旗舰的 Pre³ 而选择了 Veer 就完全是因为尺寸了. 比起 Pre³ 的 3.6 寸 ｢大屏｣, 2.6 寸屏幕的 Veer 在手中是真正的小巧玲珑, 如珠圆玉润的卵石般令人爱不释手. 而且 Veer 还有一块全键盘, 作为小屏手机, 在输入这一最大的痛点上也得到了对我来说完美的解决, 我现在甚至还能依稀想起来自 veer 键盘上那一股若有若无的神奇香味.</p>
-<p>上大学之后没多久, 我很幸运地在 ebay 上买到了一台微软的 Kin, 不过这台机器并不是智能手机, 而且在一年多以后我便将这台手机送给了一位友人, 这里就不多做介绍了.</p>
-<p><img src="https://live.staticflickr.com/65535/51040924756_2802745045_o.jpg" alt="3.4 寸的屏幕放在今天来看也算是迷你了"></p>
-<p>送走 Kin 之后不久, 我就从父亲手中得到了他淘汰不用的 iPhone 5. 很多老派 iPhone 爱好者依然认为 4 寸屏幕的 iPhone 5 形态是最能兼顾易用性与手感的黄金尺寸, 当然另一派则认为 3.5 寸屏幕的 iPhone 4 才是真正的黄金尺寸 —— 包括当时刚刚宣称要做手机的老罗. 又过了不久, 苹果推出了 iPhone 5s 造型, iPhone 6s 性能的 iPhone SE, 我便第一时间入手了. 在那个时候, iPhone SE 已经被主流大众认为是小屏手机了, 而诸如夏普 Aquos Crystal 和小米 MIx 等机器也为人们揭开了 ｢全面屏｣ 的一角, 在这之后手机厂家们便纷纷朝着全面屏的方向发展去了, 手机尺寸本身也终于不再变得更大.</p>
-<blockquote>
-<p>你以为会有 iPhone 5/SE 的图? 这么大众的手机没图的啦.</p>
-</blockquote>
-<p>这个时候可能有人会问了, 为什么都说了这么多了, 还没提到一句索尼的 Xperia Compact 系列? 其实我从 Xperia Z2 开始就一直是索尼手机的用户, 但是因为某些奇怪的心态 (觉得已经买了大屏的版本再买同一系列的小屏版是一件很不对劲的事情) 和机器本身的问题 —— 比如 Z3 Compact 摄像头的位置不对劲, 扬声器和听筒没有隐藏进边框, Z5 和 XZ 的正面没有完全对称等等鸡毛蒜皮的原因, 便没有买 Z 系列的 Compact. 等到了 2017 年, 我终于把主力手机从 5.2 寸屏幕的 Xperia Z5 换成了 4.6 寸屏幕的 Xperia XZ1 Compact.</p>
-<p><img src="https://live.staticflickr.com/65535/51040924676_69b9442672_o.jpg" alt="iPhone SE, Xperia XZ1 Compact 和 Xperia Z5"></p>
-<p>XZ1 Compact 在我心目中可以算是非常完美的小屏旗舰了, 比 iPhone SE 稍大一圈, 但是屏幕尺寸大上了不少, 外形方方正正, 采用了当时索尼新的设计语言 Omni loop, 在边缘稍微做了一点弧形, 握持手感也非常优秀. 虽然没做边框隐藏扬声器/听筒, 但是换来了非常优秀的外放音质, 可以说在我心目中这台机器几乎没有缺点.</p>
-<p>一年之后, 夏普发布了 Aquos R2 Compact. 这台机器刚发布的时候我的想法和大多数人应该是一样的: WTF? 这上下都有缺口的设计是什么鬼才想出来的? 实在是不能接受啊! 不久之后我就买了与他前后脚发布的 Pixel 3 —— 不是 3 XL, 3 XL 那个超巨型缺口的傻逼程度实在是不能接受.</p>
-<p><img src="https://live.staticflickr.com/65535/51041015572_95465ca597_o.jpg" alt="XZ1 Compact 和长了一截的 Pixel 3"></p>
-<p>没想到的是, 在 2018 年 5.5 寸屏幕的 Pixel 3 在很多人眼里已经可以算是小屏手机了 , 这不免让我感到有些哭笑不得.</p>
-<p>2019 年下旬某日, 我在朋友家体验他的 Apple TV 时在 YouTube 上看到了一则多亲 AI 2 手机的评测, 当时就被这手机给迷住了, 不过当时这机器还在众筹阶段, 等到 2020 年初的时候我才终于买到. 多亲 AI 2 作为一台尺寸和 iPhone SE 差不多的手机, 因为用了细长的全面屏设计而屏幕达到了 5 寸, 而且碳酸聚酯外壳的选色非常漂亮, 我非常喜欢.</p>
-<p><a href="https://item.jd.com/100011582242.html">多亲 AI 2 Pro</a></p>
-<p>为什么在这里给的是 Pro 的链接? 当然是因为 2 的性能实在是有些太差了. 我本来是打算拿它来做微信专用机, 但是它运行微信的时候卡顿感可以说是难以接受的 —— 当然我知道这是腾讯的问题, Telegram 之类的应用在上面运行起来都没什么压力, 只是不太留得住后台. 据说 Pro 在提升了硬件配置之后运行起微信至少不会直接卡死了. 在用了没几天之后, 我就开始打起了 Aquos R2 Compact 的主意.</p>
-<p><img src="https://live.staticflickr.com/65535/51040924606_841fccb69e_o.jpg" alt="我的青色系手机收藏. 从左到右依次是 Aquos R2 Compact, 多亲 AI 2, nextbit Robin, NUANS NEO"></p>
-<p>在买之前我特地和一位已经买了的小屏爱好者朋友做了深入交流 , 在朋友的安利下我便十分坚定地入手了 Aquos R2 Compact. 因为上下两个缺口的缘故, 这台有着 5.2 寸屏幕的手机机身尺寸却和 XZ1 Compact 相差无几, 适应了诡异的屏幕形状之后我忍不住 ｢真香｣ 了一回. R2 Compact 虽然比多亲稍微胖了一点, 但是性能的提升是实打实的, 拿来做主力机确实毫无压力, 它那别扭的屏幕甚至是 120Hz 高刷新率屏幕 (虽然对我来讲完全体会不出来⋯⋯), 而且正面的指纹识别模块还兼职触控按键, 可以让我找回一点在 veer 上轻扫屏幕下方返回的感动, 顺便还可以补救一下 Google 那无药可救的手势操作. 这台机器现在我也依然带在身边, 夏普那边还表示这台机器能够升级到 Android 11 (只是时间尚未确定).</p>
-<p>等到 2020 年九月, 苹果发布了 iPhone 12 mini. 在当初机身尺寸泄漏的时候我就下定决心只要这是真的那就一定买, 而发布会上终于确定了的那一刻我可以说是欢呼雀跃了, 毕竟这年头所有的厂家在做手机的时候难免都会收到苹果的影响 —— 无论是好还是坏, 如果苹果敢于在 2020 年开个小屏旗舰的头, 那么或许接下来其他厂家也会试水? 等到 iPhone 12 mini 开放购买之后, 我便第一时间购入.</p>
-<p><img src="https://live.staticflickr.com/65535/51041015517_805a00e2ea_o.jpg" alt="尺寸和 R2 Compact 几乎一模一样的 iPhone 12 mini"></p>
-<p>尽管尺寸和 R2 Compact 几乎一模一样, 但 12 mini 的边框尺寸稍微比 R2 Compact 窄一些, 下边框也和另外三边同宽, 所以能塞进 5.4 寸的屏幕. 而且回归了平直的设计语言也让我觉得这是 iPhone 6 以来最好看的 iPhone 设计 (排除掉 SE, 毕竟那是 5s 的设计). 而 12 mini 最大的缺点 —— 续航严重不足, 对我这个拿它做备机的人来说也完全不是问题.</p>
-<h3 id="Jelly-2"><a href="#Jelly-2" class="headerlink" title="Jelly 2"></a>Jelly 2</h3><p>实际上, 在 iPhone 12 系列配置泄漏之前, 我就已经知道了 Jelly 2 的存在 . 在更早之前 —— 大约 2017 年, Jelly 1 刚出来时正值 detox phone 大热, 除了 unihertz 之外还有不少厂家做出了各种奇形怪状的小手机, 但是它们大多都过于精简, 导致很难真的把它们当作唯一主力使用, Jelly 1 虽然是全功能的, 但是它的设计和用料都实在有些令人难以下定决心购买, 所以这一波 detox 手机对我完全没有产生任何冲击. 反倒是 HMD 推出新的 8110 的时候我很心动, 然而因为种种原因没有买一台来收藏.</p>
-<p>虽然我在 20 年中旬就知道了这部手机的存在, 但当时它还在 indiegogo 筹资, 所以只是给了一些 influencer 评测样机. 直到年底才终于开放购买, 而我拿到手则是这两天的事情了.</p>
-<p><img src="https://live.staticflickr.com/65535/51040194288_7fc85744ca_o.jpg" alt="Xperia 1 II 在 Jelly 面前是真的庞然巨物了"></p>
-<p>Jelly 2 的三维和 Veer 几乎相差无几 (95×49.4×16.5 vs 84×54.5×15.1), 不过区别于 veer 的类肤质感外壳, Jelly 用的是普通的光面塑料, 手感稍微差了一些. 不过好在它十分小巧, 这塑料某种程度上增加了它的 ｢糖果质感｣ —— 就像它的名字一样, 在阳光下它看起来是有几分像一颗巨大的 jelly bean. 不过拿到手机的时候我才发现它的挂绳孔实际上在随机附赠的保护壳上, 为了使用挂绳孔我只好不情不愿地用上了这个保护壳. 保护壳的材质就是普通的软胶, 手感<strong>十分一般</strong>, 而且让整个机身变大了不少, 而且限制了可以使用的 Type C 充电线材类型, 十分难受.</p>
-<p>一开机进入设置流程, 我就意识到了它无论是出于节省空间或者成本的考虑采用了转子震动马达, 这和采用了线形马达的 Xperia 1 II 和 iPhone 12 mini 比起来真的是云泥之别. 好在输入法的振动可以自己调整或者关闭, 否则它本来就很糟糕的输入体验就要更加不堪了.</p>
-<p>既然以它的缺点开了头, 那干脆就先把它的缺点过一遍吧 —— 反正铁了心想买的人应该早就点了开头的那个链接下订单去了.</p>
-<ol>
-<li>它的<strong>扬声器十分糟糕</strong>, 不过这是可以想象的, 毕竟尺寸限制摆在那里. 设置里有个可以强行提高音量的开关, 千万不要去点, 点开的话那声音真的是呕哑嘲哳难为听, 不是开玩笑的;</li>
-<li>它的<strong>相机也十分一般</strong>, 不过这相机存在的价值大概就是完成扫扫二维码之类的工作, 应该不会真的有人想要在这样的机器上追求高级的相机吧?</li>
-<li>它的充电接口在机身右侧底部, <strong>充电的时候右手起来十分别扭</strong> (好在官方提供了一条 L 型接口的 Type C 转 A 线);</li>
-<li>背部的<strong>指纹感应器识别率不高</strong>, 雪上加霜的是如果你装了保护套, 保护套的厚度会进一步减少手指与传感器接触的面积, 再次降低识别成功率. 而且这个指纹传感器没有集成手势识别, 不能像 pixel 的那样通过扫动来控制通知中心开关 (好在手机本来就这么小了, 去拉通知中心确实轻而易举);</li>
-<li>绝大部分 <strong>Android 应用都没有为这么小的尺寸优化</strong>, 就连 Android 系统也不例外. Jelly 的系统虽然有做了一下小优化, 但是终归没有为此提供一个全局的解决方案;</li>
-<li>它虽然提供了一个自定义按钮, 但是这个按钮就在电源键旁边, 而且大小和手感与电源键一模一样, 非常<strong>容易误触</strong>. 当然这个自定义按钮确实是非常好的, 它可以作为对讲机的对讲按钮, 也可以自己定义点按､长按和双击的快捷操作, 十分便利.</li>
-</ol>
-<p><img src="https://live.staticflickr.com/65535/51041015137_87ac1fd266_k.jpg" alt="好在平时正常握持的姿势一般拇指都会放在电源上, 不然误触几率怕是要加倍"></p>
-<p>缺点就是前面那些了, 至少在我看来. 说完了缺点就该让我大吹一番了. 首先就是它没有选择走 ｢全面屏｣ 路线, 保留了电容触摸三大金刚, 这也让我可以免得吃 Google 那套鬼畜手势导航的屎 —— 当然如果你执意要吃屎的话也可以在设置里开启屏内导航 (默认是开启的) 并关闭电容按键. 而且在这个尺寸下, 手势导航还真的就没什么优势可言. 唯一遗憾的就是 Home 键没能集成通知灯, 通知灯被放在了摄像头左侧 —— 再想想 2021 年多少旗舰手机都没有通知灯了, 真的是感觉十分唏嘘 (当然, 由于 OLED 屏幕和 AOD 的普遍使用, 通知灯的需求也确实是不像以前那么强烈了). 另外这几个按钮是没有背光的, 在暗处使用的时候偶尔会按错/没按到, 有点小别扭.</p>
-<p><img src="https://live.staticflickr.com/65535/51040194003_b78959f60d_o.jpg" alt="如果偶尔需要在这机器上看长文也不是不行, 但是你大概不会愿意经常这么做的⋯⋯"></p>
-<p>Unihertz 没有以机身尺寸为借口取消顶部的耳机接口, 令人十分欣慰. 插上耳机之后还可以以耳机为天线使用内置的收音机, 十分便利. 而机身顶部还有另一个已经几乎灭绝的东西 —— 红外信号发射口, 这对于控制那些尚未智能化的家电来说十分便利, 是非常令人欣喜的存在.</p>
-<p><img src="https://live.staticflickr.com/65535/51040194153_a42d0c401a_o.jpg" alt="与目前手机上最好的屏幕 —— Xperia 1 II 的屏幕对比"></p>
-<p>Jelly 的 480×854 三寸屏幕属于勉强够用的水平, 不过这部手机也没指望你老盯着它看, 所以这屏幕虽然十分不怎么样但我并不会抱怨. 而屏幕小且分辨率低的另一个好处就是这块屏幕极其省电, 如果配合上深色主题, 那使用一整天下来会发现屏幕占用的电量真的寥寥无几. 既然说到了电池就顺便提一下它的续航, 由于这手机本身的属性导致了你不可能想要长时间使用, 更何况它的电池容量是 2,000mAh! 所以用一整天 (从早上七点开始到晚上十一点结束) 是毫无压力的, 甚至我觉得它能撑个两天, 如果用得更不频繁的话.</p>
-<p>它采用了一颗联发科曦力 P60, 只要不试着在这机器上玩大型游戏 (你疯了吗?!) 应该都是十分够用的. 和芯片相关的唯一问题就是它的基带不是很好, 在这个大厂普遍铺开 5G 的时代显得网速有些捉襟见肘 (我这里体验的对照是 FEH 2.4GB 的数据, 在相同的 Wi-Fi 环境下 Jelly 下载这些数据花了 Xperia 1 II 大约两倍的时间), 不过说实话你也不会想要在它上面做什么需要那么高网速的事吧, 至少它应付视频会议之类的需求还是绰绰有余的.</p>
-<p>最后不得不提一下的就是它的输入. 虽然机身大小类似 Veer, 但是 Jelly 2 并没有方便的 QWERTY 全键盘, 所以输入只能靠语音或者屏幕内虚拟键盘了. 如果你用九宫键盘并且把键盘高度开到最大的话勉强可以获得一个操作面积类似直板功能机九宫键盘的区域, 然而说实话体验并不好. 个人认为最佳解决方案还是滑动输入 + 中到小的键盘高度, 靠输入法的自动纠错来进行比较高效的输入, 配合双拼可以达到勉强可以接受的输入效率. 当然, 即使如此在使用这台机器的时候想要输入的愿望也是极为低下的, 而本来这台机器就算是一台 detox phone, 所以这个问题⋯⋯ 也就不算是个问题了?</p>
-<p>对了, 这台机器甚至支持 Micro SD 卡扩展 —— 另一个在 2021 年几乎灭绝的功能. 虽然 Micro SD 卡和第二张 SIM 共用卡槽, 但是对于我这样没有双卡需求的人来说就可以直接用来当扩展储存了.</p>
-<h3 id="一点结语"><a href="#一点结语" class="headerlink" title="一点结语"></a>一点结语</h3><p>Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.</p>
-<p>做出这台小手机的公司, 上海集赫电子商务有限公司, 是一家成立于 2016 年, 只有 50 人不到的小公司 . 在 Jelly 2 之前, 他们已经做出了 Jelly, Titan (一台有点类似黑莓 Passport 的全键盘手机), Atom (小巧的三防手机) 三个系列, 皆为小众但精致的机器, 在海内外广受死忠粉丝好评. 我也非常认同 Unihertz 日文网站上的一句话: ｢様々なスマホがありますが、現代のスマートフォンは、大きく、複雑で、とても壊れやすい。｣ —— 现在的智能手机虽然眼花缭乱, 但无不大而复杂, 而且容易损坏 (此处应有 JerryRigsEverything 插入), 而 Unihertz 选择了完全反其道而行, 自始至终开发小巧, 简单而坚固的手机, 逆流而上, 勇气可嘉.</p>
-<p>如果你已经深深陷入当代智能生活不能自拔却又希望有一台小手机的话恐怕还是只能选择 iPhone 12 mini, 但若你想要试着反抗一番, 看看能不能从这滩泥沼中挣脱, 不妨试试看 Jelly 2. 毕竟谁知道这台机器会不会成为一代绝唱呢 —— 各种小道消息都表明 iPhone 12 mini ｢销量不及预期｣, 靠苹果来重新开启小屏旗舰时代的希望恐怕是十分渺茫了.</p>
-]]></content>
-      <tags>
-        <tag>thoughts</tag>
       </tags>
   </entry>
 </search>
