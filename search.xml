@@ -8,16 +8,51 @@
 <p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52346586710/in/dateposted/" title="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"><img src="https://live.staticflickr.com/65535/52346586710_0404371f4b_z.jpg" alt="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40/2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40/2.8, Pentax-L 43/1.9 Special, Voigtländer Nokton 50/1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50/1.5, 都可以正常使用. </p>
+<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40/2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52346478233/in/dateposted/" title="AF Noise LM-EA9"><img src="https://combo.staticflickr.com/pw/images/zh-hk/video-processing/z.png" alt="AF Noise LM-EA9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的11 Sep 2022自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF/MF 快捷键, 略有些不便. 我自己在使用中发现先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f/2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF/MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
+<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f/2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f/2. </p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
 <p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
 <p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 ɑ7c 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40/2.5G 或者 90/2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40/2.5G 或者 90/2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
 <p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— Pen F 避坑指南</title>
+    <url>/2022/05/29/Pen-F-pitfalls/</url>
+    <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087660201/in/dateposted/" title="R-D1, Df &amp; Pen-F"><img src="https://live.staticflickr.com/65535/52087660201_374ba5438b_o.jpg" alt="R-D1, Df &amp; Pen-F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
+</blockquote>
+<p>我对 Micro 4/3 系统的印象其实一直不怎么样 —— 在 2013~14 年间父上大人曾经使用过一台松下 G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯 E-M1. 在我的认知中 G3 和 E-M1 这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的 APS-C 入门单反小很多, 但彼时 M43 系统的缺点依然十分明显 —— 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
+<p>时间推进到 2016 年, 我手头上已经有了 Df 和 X100T 两台机器, 因此基本不再关心新发布的相机了. 然而 Pen-F 的发布还是给我留下了深刻的印象 —— 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C 相机的前提下再购入M4/3 系统, 所以便没有考虑购入. </p>
+<p>又过了这么多年, 如今已经是 2022 年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的 OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购买 Pen-F 的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师的 ASMR</a> 时的冲动消费, 并没有什么特别的理由. </p>
+<p>拿到 Pen-F 并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了 2022 年, Pen-F 那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的 Df 和 α7C, Pen-F 除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍 Pen-F 的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被 Pen-F 性感身姿诱惑的潜在购买者指明一些坑.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52082588374/in/dateposted/" title="Olympus Pen F"><img src="https://live.staticflickr.com/65535/52082588374_3e42471095_k.jpg" alt="Olympus Pen F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管 Pen-F 有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调整 ISO 和白平衡的方式 (Df 有 ISO 盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄 JPEG 的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 —— 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
+<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了 EVF 旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成 ISO/快门速度拨盘算了. </p>
+<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用 Pen-F 之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对 Pen-F 的期望值. 实际到手之后我很快发现了一个问题: 我转接了 VM 50/1.5 给 Pen-F 使用, 由于半幅裁切基本上已经相当于 100mm 等效, 在对焦时如果不开防抖会受到很大影响; 然而 Pen-F 的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087906959/in/dateposted/" title="Pen-F w/ VM 50/1.5"><img src="https://live.staticflickr.com/65535/52087906959_8a33b72fb9_o.jpg" alt="Pen-F w/ VM 50/1.5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动 ISO/快门速度策略并不能设置为降低快门速度换取低 ISO, 导致 P/A/S 模式下这防抖模式很难体现出优势, 我甚至关闭了自动 ISO —— 实话说 Pen-F 的画面细腻度确实不高, 如果放大到 200% 即使在 ISO 200 (最低原生 ISO) 时暗部都有一些噪点, 这表现甚至还不如我的 R-D1. 相比之下索尼在菜单里提供了自动 ISO 策略调整可以让用户降低快门速度换取低 ISO, 使用时感受就比奥林巴斯好上许多.  </p>
+<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接 M 口手动头使用, 但是我也同时购入了一枚二手松下 15/1,7 作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在 Df, X100T, GR 和 α7C 上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的 AFL 按钮, Pen-F 却没有这么一个方便的按钮.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52095381440/in/dateposted/" title="Pen-F Back"><img src="https://live.staticflickr.com/65535/52095381440_ac1e7b351f_o.jpg" alt="Pen-F Back"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>后拨轮附近的几个按钮里 Fn1 太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是 Pen-F 就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
+<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F 的电池容量只有 1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数 EVF 的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数 EVF, Pen-F 的续航才会变成比较正常的状态. </p>
+<p>和续航相关还有一个问题: 如果系统设置里启用了自动 EVF/屏幕切换, 那么即使用户合上了屏幕, 眼睛离开 EVF 的时候 EVF 也会熄灭, 此时任何操作都是无效的, 不能像 α7C 那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
+<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了 threaded 的尼康 Df 和富士 X100 系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1 虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52081318447/in/dateposted/" title="Olympus Pen F"><img src="https://live.staticflickr.com/65535/52081318447_b58f471c11_z.jpg" alt="Olympus Pen F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 安装在索尼/尼康等其他相机热靴上时均无法启用, 着实非常可惜. </p>
+<p>Pen-F 对 SD 卡的读写速度体感非常慢, 同一张卡 Pen-F 拍摄和删除照片的速度都比 Df/α7C 慢很多 (尚未在 GR 上测试同一张卡, 但估计也是比 GR 慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对 SD 卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为 Pen-F 的 UI 导致了这种迟缓. </p>
+<p>顺便, 如果你在使用索尼的 ToughCard, 你会发现 Pen-F 的卡槽和 ToughCard 结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
+<p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15/1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
+<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -113,44 +148,11 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN —— Pen F 避坑指南</title>
-    <url>/2022/05/29/Pen-F-pitfalls/</url>
-    <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087660201/in/dateposted/" title="R-D1, Df &amp; Pen-F"><img src="https://live.staticflickr.com/65535/52087660201_374ba5438b_o.jpg" alt="R-D1, Df &amp; Pen-F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
-</blockquote>
-<p>我对 Micro 4/3 系统的印象其实一直不怎么样 —— 在 2013~14 年间父上大人曾经使用过一台松下 G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯 E-M1. 在我的认知中 G3 和 E-M1 这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的 APS-C 入门单反小很多, 但彼时 M43 系统的缺点依然十分明显 —— 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
-<p>时间推进到 2016 年, 我手头上已经有了 Df 和 X100T 两台机器, 因此基本不再关心新发布的相机了. 然而 Pen-F 的发布还是给我留下了深刻的印象 —— 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C 相机的前提下再购入M4/3 系统, 所以便没有考虑购入. </p>
-<p>又过了这么多年, 如今已经是 2022 年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的 OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购买 Pen-F 的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师的 ASMR</a> 时的冲动消费, 并没有什么特别的理由. </p>
-<p>拿到 Pen-F 并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了 2022 年, Pen-F 那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的 Df 和 ɑ7C, Pen-F 除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍 Pen-F 的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被 Pen-F 性感身姿诱惑的潜在购买者指明一些坑.</p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52082588374/in/dateposted/" title="Olympus Pen F"><img src="https://live.staticflickr.com/65535/52082588374_3e42471095_k.jpg" alt="Olympus Pen F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管 Pen-F 有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调整 ISO 和白平衡的方式 (Df 有 ISO 盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄 JPEG 的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 —— 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
-<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了 EVF 旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成 ISO/快门速度拨盘算了. </p>
-<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用 Pen-F 之前我已经用过了 ɑ7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对 Pen-F 的期望值. 实际到手之后我很快发现了一个问题: 我转接了 VM 50/1.5 给 Pen-F 使用, 由于半幅裁切基本上已经相当于 100mm 等效, 在对焦时如果不开防抖会受到很大影响; 然而 Pen-F 的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087906959/in/dateposted/" title="Pen-F w/ VM 50/1.5"><img src="https://live.staticflickr.com/65535/52087906959_8a33b72fb9_o.jpg" alt="Pen-F w/ VM 50/1.5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动 ISO/快门速度策略并不能设置为降低快门速度换取低 ISO, 导致 P/A/S 模式下这防抖模式很难体现出优势, 我甚至关闭了自动 ISO —— 实话说 Pen-F 的画面细腻度确实不高, 如果放大到 200% 即使在 ISO 200 (最低原生 ISO) 时暗部都有一些噪点, 这表现甚至还不如我的 R-D1. 相比之下索尼在菜单里提供了自动 ISO 策略调整可以让用户降低快门速度换取低 ISO, 使用时感受就比奥林巴斯好上许多.  </p>
-<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接 M 口手动头使用, 但是我也同时购入了一枚二手松下 15/1,7 作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在 Df, X100T, GR 和 ɑ7C 上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的 AFL 按钮, Pen-F 却没有这么一个方便的按钮.</p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52095381440/in/dateposted/" title="Pen-F Back"><img src="https://live.staticflickr.com/65535/52095381440_ac1e7b351f_o.jpg" alt="Pen-F Back"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>后拨轮附近的几个按钮里 Fn1 太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是 Pen-F 就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
-<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F 的电池容量只有 1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数 EVF 的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数 EVF, Pen-F 的续航才会变成比较正常的状态. </p>
-<p>和续航相关还有一个问题: 如果系统设置里启用了自动 EVF/屏幕切换, 那么即使用户合上了屏幕, 眼睛离开 EVF 的时候 EVF 也会熄灭, 此时任何操作都是无效的, 不能像 ɑ7C 那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
-<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了 threaded 的尼康 Df 和富士 X100 系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1 虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52081318447/in/dateposted/" title="Olympus Pen F"><img src="https://live.staticflickr.com/65535/52081318447_b58f471c11_z.jpg" alt="Olympus Pen F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 安装在索尼/尼康等其他相机热靴上时均无法启用, 着实非常可惜. </p>
-<p>Pen-F 对 SD 卡的读写速度体感非常慢, 同一张卡 Pen-F 拍摄和删除照片的速度都比 Df/ɑ7C 慢很多 (尚未在 GR 上测试同一张卡, 但估计也是比 GR 慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对 SD 卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为 Pen-F 的 UI 导致了这种迟缓. </p>
-<p>顺便, 如果你在使用索尼的 ToughCard, 你会发现 Pen-F 的卡槽和 ToughCard 结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
-<p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15/1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
-<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photography is FUN —— Standard Obsession Ⅱ</title>
     <url>/2022/09/09/Standard_Obsession_%E2%85%A1/</url>
-    <content><![CDATA[<p>这篇文章主要是补完一些这半年里我新入手的标准镜, 它们分别是 Voigtländer 40/2.8, Voigtländer 50/1.5 Ⅰ &amp; Ⅱ, 还有索尼 FE 40/2.5. 如果你看过上一篇 Standard Obsession 可能会觉得奇怪, 怎么又有一个 Voigtländer 40? 而且光圈还小了一档? 这个问题的答案往下看就会明白了⋯⋯</p>
-<h3 id="Voigtlander-Heliar-40-2-8-VM"><a href="#Voigtlander-Heliar-40-2-8-VM" class="headerlink" title="Voigtländer Heliar 40/2.8 VM"></a>Voigtländer Heliar 40/2.8 VM</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52167625354/in/dateposted/" title="40/2.8"><img src="https://live.staticflickr.com/65535/52167625354_d6761f2db5_o.jpg" alt="40/2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+    <content><![CDATA[<p>这篇文章主要是补完一些这半年里我新入手的标准镜, 它们分别是 Voigtländer 40/2.8, Voigtländer 50/1.5 Ⅰ &amp; Ⅱ, 还有索尼 FE 40/2.5. </p>
+<h3 id="Voigtlander-Heliar-40-2-8-VM"><a href="#Voigtlander-Heliar-40-2-8-VM" class="headerlink" title="Voigtländer Heliar 40/2.8 VM"></a>Voigtländer Heliar 40/2.8 VM</h3><p>如果你看过上一篇 Standard Obsession 可能会觉得奇怪, 怎么又有一个 Voigtländer 40? 而且光圈还小了一档? 这个问题的答案往下看就会明白了⋯⋯</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52167625354/in/dateposted/" title="40/2.8"><img src="https://live.staticflickr.com/65535/52167625354_d6761f2db5_o.jpg" alt="40/2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>这实在是一枚值得大书特书的镜头, 然而网上却鲜见讨论, 令人惊讶. Heliar 40/2.8 虽然是一枚 M 口镜头, 但可以说唯独是不能用在原生 M 口的机器上 ——这枚镜头在外形上借鉴了徕卡经典的缩头设计, 在 2022 年看起来十分别致, 但它却不具备对焦结构, 必须靠带有螺纹线圈的转接环来实现对焦. </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51971409160/in/album-72177720295596293/" title="Alpha 7c + Heliar 40/2.8"><img src="https://live.staticflickr.com/65535/51971409160_9235e8a696_o.jpg" alt="Alpha 7c + Heliar 40/2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>缩起状态下它仅仅伸出卡口 <strong>12.5mm</strong>, 可以说是前所未有的极致轻薄了 (相较之下尼康的 45/2.8P 的 <strong>17mm</strong> 显得黯然失色). 完全展开后则变成 21.5mm, 依然极为小巧. </p>
@@ -166,19 +168,20 @@
 <p>我坦白: 买初代纯粹是馋她身子! </p>
 </blockquote>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51817464997/in/dateposted/" title="R-D1S w/ Voigtlander 50/1.5 Aspherical"><img src="https://live.staticflickr.com/65535/51817464997_5050975fcc_o.jpg" alt="R-D1S w/ Voigtlander 50/1.5 Aspherical"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这设计未免也太帅了吧! 齿轮一般的对焦环真的是越看越好看, 而适当的凹陷配合精良的做工使得它的对焦体验无比优秀, </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300345080" title="Voigtländer Nokton 50/1.5"><img src="https://live.staticflickr.com/65535/52198327895_0f316981ff_h.jpg" alt="Voigtländer Nokton 50/1.5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这设计未免也太帅了吧! 齿轮一般的对焦环真的是越看越好看, 而适当的凹陷配合精良的做工使得它的对焦体验无比优秀, 哪怕只是握着把玩都完全爱不释手. 反观隔壁的二代⋯⋯ </p>
+<p>哪怕只是握着把玩都完全爱不释手. 反观隔壁的二代⋯⋯ </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51818416106/in/album-72177720295596293/" title="Voigtlander 50/1.5 Aspherical II"><img src="https://live.staticflickr.com/65535/51818416106_95df17d2f6_o.jpg" alt="Voigtlander 50/1.5 Aspherical II"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>这二代就长得十分一般了, <a href="https://www.cosina.co.jp/wp/wp-content/uploads/2021/09/VM-50_15VL_01-scaled.jpg" title="最右">铬铜特别版</a>的熊猫配色还可以说有些特色, 但贵出的价格我觉得不值得. 抛开外观不谈, 二代的使用手感可以说是全面退步了 —— 光圈环变细小了, 虽然多了两个小凸起, 但是这两片薄薄的凸起握起来手感也并不好, 而且只有那凸起上刻有防滑纹路, 其他部分全部光溜溜, 远不如一代的实用. </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300345135" title="Voigtländer Nokton 50/1.5 II"><img src="https://live.staticflickr.com/65535/52198339010_4ecf7aa9e0_h.jpg" alt="Voigtländer Nokton 50/1.5 II"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>对焦环就更不用提了, 虽然我理解细密的防滑纹路有助于精密对焦, 但这纹路摸起来实在是扎手, 手感极差, 操作便捷度上更是和一代差了十万八千里, 更远不如其他 M 镜头常见的对焦月牙, 可以说是我用过的手动镜头里对焦手感最差的一枚了, 可以说除了小 (长 37mm) 之外一无是处了, 强烈不推荐购买. </p>
+<p>对焦环就更不用提了, 虽然我理解细密的防滑纹路有助于精密对焦, 但这纹路摸起来实在是扎手, 手感极差, 操作便捷度上更是和一代差了十万八千里, 更远不如其他 M 镜头常见的对焦月牙, 可以说是我用过的手动镜头里对焦手感最差的一枚了, 可以说除了小 (长 37mm) 之外一无是处了 —— 问题是论小, 它也小不过 Heliar 40/2.8 呀. 强烈不推荐购买. </p>
 <h3 id="Sony-FE-40mm-F2-5-G"><a href="#Sony-FE-40mm-F2-5-G" class="headerlink" title="Sony FE 40mm F2.5 G"></a>Sony FE 40mm F2.5 G</h3><p>感觉在中文圈几乎所有评测都在吼 ｢不要买它! 不要买它! 不要买它!｣ 然而我还是买了, 原因无它, 还是因为它小. </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51970844721/in/dateposted/" title="Alpha 7c + 40/2.5G"><img src="https://live.staticflickr.com/65535/51970844721_bc98851620_o.jpg" alt="Alpha 7c + 40/2.5G"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>虽然比起宾得 43/1,9 之类的镜头来说它确实算不上小, 但是在 FE 口自动对焦镜头里它却已经算是很迷你的存在了. 好吧我知道 35/2,8 ZA 比它小, 但是 35/2,8 已经是一款七八年的老镜头了, 画质和对焦速度有些落后了. 我买自动镜头就是为了获得一个最无须操心的使用体验, 没理由去选择一款已经快要被完全淘汰的镜头. </p>
 <p>这枚镜头可以算是麻雀虽小五脏具全的典范了: 它有在现代自动镜头上愈发罕见的光圈环 (但是索尼 G/GM 镜头上都保留了下来), 一个自定义按钮, AF/MF 开关, 光圈环限位开关, 甚至可以说它的可操作部分有点太多了使它不大的镜筒看起来有些拥挤. 这些特色也使得它在三阳等其他家副厂面前能扬眉吐气, 唯一可以和它在操控性上一争高下的只有适马的 45/2,8 DG DN, 但 —— 这个时候, 40/2,5 的画质又比 45/2,8 好出可以感知的那么一截, 成为了决定性因素⋯⋯ </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52073045500/in/dateposted/" title="Pentax-L 43/50 Finder"><img src="https://live.staticflickr.com/65535/52073045500_f630c6e7eb_o.jpg" alt="Pentax-L 43/50 Finder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>而且说道操控性, 很有趣的一点是当这枚镜头和我的宾得 43/50 取景器一起使用时, 我可以通过取景器画面最下方看到当前的光圈值, 对于快速操作也大有帮助. </p>
-<p>至于画质, 作为一枚 2020 年才发布的镜头, 足够现代的光学设计理念带给了它非常强大的性能, 基本上我都是放心地全开光圈使用的, 除了有比较明显的紫边之外基本上没有任何光学缺陷了. 而它的机械性能则处于第一梯队, 自动对焦速度飞快, 也毫不犹豫, 配合 ɑ7c 的对焦性能目前来说我还没遇到过失败的状况, 哪怕是在夜里对没有灯光直射的地点对焦也可以成功, 属于令人安心的性能怪兽. </p>
+<p>至于画质, 作为一枚 2020 年才发布的镜头, 足够现代的光学设计理念带给了它非常强大的性能, 基本上我都是放心地全开光圈使用的, 除了有比较明显的紫边之外基本上没有任何光学缺陷了. 而它的机械性能则处于第一梯队, 自动对焦速度飞快, 也毫不犹豫, 配合 α7C 的对焦性能目前来说我还没遇到过失败的状况, 哪怕是在夜里对没有灯光直射的地点对焦也可以成功, 属于令人安心的性能怪兽. </p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300365134" title="FE 40/2,5 G"><img src="https://live.staticflickr.com/65535/52199508550_47d093d56e_z.jpg" alt="FE 40/2,5 G"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>虽然在上篇里我提过之所以抛弃了 50/1.8G 的一个原因就是它太现代, 太无趣了, 但是 40/2,5G 在操控性上比 50/1.8G 好上无数倍, 而金属的镜筒又使得它的操控感更上一层楼. 它甚至最后还具备一定的防滴能力可以防范遇到的小雨, 实在是非常令人安心. 现在 40/2,5G 作为以备不时之需的最终防线待在我的包里. </p>
 <h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>目前来看我应该暂时不会收其它的标准镜头了 —— 尽管我很想这么说, 但是这几天 Meyer Optik 又发了新的 <a href="https://www.meyer-optik-goerlitz.com/en/lenses/biotar-58-f1.5-ii">Biotar 58/1,5 II</a>… 咕, 比起我手上的那个 Helios-44, 这东西才是正牌货呀! 恐怕我对标准镜头的渴求一时半会儿还是无法停止吧⋯⋯ </p>
