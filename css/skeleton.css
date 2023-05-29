@@ -210,7 +210,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-family: 'Roboto Slab', 'DM Serif Display', Charter, Bitstream Charter, -apple-system, BlinkMacSystemFont, serif;
+  font-family: 'Roboto Slab', 'DM Serif Display', Charter, Bitstream Charter, HYXuanSong, -apple-system, BlinkMacSystemFont, serif;
   font-weight: 700;
   font-variant: tabular-nums;
 }
