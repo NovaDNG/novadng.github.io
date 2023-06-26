@@ -281,6 +281,9 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a:not(.icon) {
   color: inherit;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
   background-size: 100% 200%;
   transition:
     background-position .2s ease-in-out
