@@ -154,7 +154,7 @@ img {
 }
 
 .ml-1 {
-    margin-left: 7rem;
+    padding-left: 5rem;
 }
 
 .bottom {
@@ -185,7 +185,7 @@ img {
 
 .mt-2 {
     margin-top: 3rem;
-    line-height: 2em;
+    line-height: 1.3em;
 }
 
 .mt-3 {
@@ -331,12 +331,12 @@ a.footer-link:focus {
 }
 
 body {
-    position: absolute;
+    position: static;
     top: 0px;
-    left: 10px;
+    left: 0px;
     bottom: 0px;
-    right: 10px;
-    padding: 5px;
+    right: 0px;
+    padding: 8px;
     overflow-y: scroll;
     overflow-x: hidden;
     transition: all 0.3s ease-in-out;
