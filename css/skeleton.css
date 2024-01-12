@@ -614,10 +614,10 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-    margin-top: 3rem;
-    margin-bottom: 3.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     border-width: 0;
-    border-top: 1px solid #a0a09d;
+    border-top: 1pt solid #919191;
 }
 
 /* Clearing
