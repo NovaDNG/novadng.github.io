@@ -261,16 +261,16 @@
 &lt;p&gt;话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 &lt;a href=&#34;https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh&#34;&gt;read on reMarkable&lt;/a&gt; Chrome 扩展, 可是我这里从来没有成功过⋯⋯ &lt;/p&gt;
 &lt;h4 id=&#34;中文支持&#34;&gt;&lt;a href=&#34;#中文支持&#34; class=&#34;headerlink&#34; title=&#34;中文支持&#34;&gt;&lt;/a&gt;中文支持&lt;/h4&gt;&lt;p&gt;reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (&lt;a href=&#34;https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/&#34;&gt;参考资料&lt;/a&gt;). &lt;/p&gt;
 &lt;p&gt;首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &amp;gt; Help &amp;gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&amp;#x2F;ssh 客户端&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;ssh root@&amp;lt;你的.reMarkable.IP.地址&amp;gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34; language-hljs plaintext&#34;&gt;&lt;code class=&#34;language-hljs plaintext&#34;&gt;ssh root@&lt;你的.reMarkable.IP.地址&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;然后输入密码, 即可进入 reMarkable 的根目录. &lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/50999647715/in/dateposted-public/&#34; title=&#34;非常炫酷的登陆画面&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/50999647715_7705b77839_h.jpg&#34; alt=&#34;非常炫酷的登陆画面&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 &lt;code&gt;fc-list&lt;/code&gt; 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 &lt;code&gt;/usr/share/fonts/&lt;/code&gt;. 了解这个信息后, 我们就可以往里面添加字体了. &lt;/p&gt;
 &lt;p&gt;新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: &lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;scp &amp;lt;你的字体所在的完整路径&amp;gt; root@&amp;lt;你的.reMarkable.IP.地址&amp;gt;:&amp;#x2F;usr&amp;#x2F;share&amp;#x2F;fonts&amp;#x2F;ttf&amp;#x2F;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34; language-hljs plaintext&#34;&gt;&lt;code class=&#34;language-hljs plaintext&#34;&gt;scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:/usr/share/fonts/ttf/&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, &lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;cd &amp;#x2F;usr&amp;#x2F;share&amp;#x2F;fonts&amp;#x2F;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34; language-hljs plaintext&#34;&gt;&lt;code class=&#34;language-hljs plaintext&#34;&gt;cd /usr/share/fonts/&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;进入字体文件夹, &lt;code&gt;mkdir otf/ttc&lt;/code&gt; (后面的 otf&amp;#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. &lt;/p&gt;
 &lt;p&gt;传输完文件后, 再次输入 &lt;code&gt;fc-list&lt;/code&gt; 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&amp;#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. &lt;/p&gt;
