@@ -1,22 +1,18 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>NovaDNG Studio • Posts by &#34;thoughts&#34; tag</title>
-        <link>https://novadng.studio</link>
-        <description></description>
-        <language>en,zh-CN,default</language>
-        <pubDate>Sat, 13 Mar 2021 04:46:25 +0800</pubDate>
-        <lastBuildDate>Sat, 13 Mar 2021 04:46:25 +0800</lastBuildDate>
-        <category>Gadget</category>
-        <category>Music</category>
-        <category>thoughts</category>
-        <item>
-            <guid isPermalink="true">https://novadng.studio/2021/03/13/yearning-for-a-tiny-smartphone/</guid>
-            <title>追求小屏智能手机之路</title>
-            <link>https://novadng.studio/2021/03/13/yearning-for-a-tiny-smartphone/</link>
-            <category>thoughts</category>
-            <pubDate>Sat, 13 Mar 2021 04:46:25 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51041015252_785a279489_o.jpg&#34;&gt;&lt;br&gt;稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点&lt;a href=&#34;https://item.jd.com/10025201949310.html&#34;&gt;这个链接&lt;/a&gt;购买.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://novadng.studio</id>
+    <title>NovaDNG Studio • Posts by &#34;thoughts, gadget&#34; tag</title>
+    <link href="https://novadng.studio" />
+    <updated>2021-03-12T20:46:25.000Z</updated>
+    <category term="Music" />
+    <category term="Gadget, Photography" />
+    <category term="Gadget" />
+    <category term="thoughts, Gadget" />
+    <entry>
+        <id>https://novadng.studio/2021/03/13/yearning-for-a-tiny-smartphone/</id>
+        <title>追求小屏智能手机之路</title>
+        <link rel="alternate" href="https://novadng.studio/2021/03/13/yearning-for-a-tiny-smartphone/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51041015252_785a279489_o.jpg&#34;&gt;&lt;br&gt;稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点&lt;a href=&#34;https://item.jd.com/10025201949310.html&#34;&gt;这个链接&lt;/a&gt;购买.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;Jelly-之前&#34;&gt;&lt;a href=&#34;#Jelly-之前&#34; class=&#34;headerlink&#34; title=&#34;Jelly 之前&#34;&gt;&lt;/a&gt;Jelly 之前&lt;/h3&gt;&lt;p&gt;自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51040924711_cfe1e5739f_o.jpg&#34; alt=&#34;｢点金石｣ 上的 Veer 和旁边的 Nexus 4&#34;&gt;&lt;/p&gt;
@@ -67,7 +63,8 @@
 &lt;h3 id=&#34;一点结语&#34;&gt;&lt;a href=&#34;#一点结语&#34; class=&#34;headerlink&#34; title=&#34;一点结语&#34;&gt;&lt;/a&gt;一点结语&lt;/h3&gt;&lt;p&gt;Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.&lt;/p&gt;
 &lt;p&gt;做出这台小手机的公司, 上海集赫电子商务有限公司, 是一家成立于 2016 年, 只有 50 人不到的小公司 . 在 Jelly 2 之前, 他们已经做出了 Jelly, Titan (一台有点类似黑莓 Passport 的全键盘手机), Atom (小巧的三防手机) 三个系列, 皆为小众但精致的机器, 在海内外广受死忠粉丝好评. 我也非常认同 Unihertz 日文网站上的一句话: ｢様々なスマホがありますが、現代のスマートフォンは、大きく、複雑で、とても壊れやすい。｣ —— 现在的智能手机虽然眼花缭乱, 但无不大而复杂, 而且容易损坏 (此处应有 JerryRigsEverything 插入), 而 Unihertz 选择了完全反其道而行, 自始至终开发小巧, 简单而坚固的手机, 逆流而上, 勇气可嘉.&lt;/p&gt;
 &lt;p&gt;如果你已经深深陷入当代智能生活不能自拔却又希望有一台小手机的话恐怕还是只能选择 iPhone 12 mini, 但若你想要试着反抗一番, 看看能不能从这滩泥沼中挣脱, 不妨试试看 Jelly 2. 毕竟谁知道这台机器会不会成为一代绝唱呢 —— 各种小道消息都表明 iPhone 12 mini ｢销量不及预期｣, 靠苹果来重新开启小屏旗舰时代的希望恐怕是十分渺茫了.&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="thoughts, Gadget" />
+        <updated>2021-03-12T20:46:25.000Z</updated>
+    </entry>
+</feed>
