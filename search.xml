@@ -1,109 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>一些 CeVIO AI 入門小技巧 (以星界為例)</title>
-    <url>/2022/12/09/CeVIOAItipsandtricks/</url>
-    <content><![CDATA[<p>這篇文章主要是給想要購買可不&#x2F;星界&#x2F;裏命&#x2F;狐子&#x2F;羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何 Vocaloid 相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門 CeVIO AI 比你想象的要容易得多. </p>
-<iframe height="480" style="width:100%;max-width:720px;background:transparent;" src="https://www.youtube.com/embed/P4u_COefgGY" title="Daily Note/酔シグレ (covered by 星界)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<blockquote>
-<p>我做的 Daily Note 星界翻唱</p>
-</blockquote>
-<p>那麼在正式開始前, 你應該要對 CeVIO AI 有一些基本的瞭解. 夜輪老師有翻譯了<a href="https://cevio-user-guide-unofficial.github.io/CeVIO-AI/">官方使用者指南</a>, 天雨大佬也寫了一系列<a href="https://www.bilibili.com/read/readlist/rl508759">基礎入門指南</a>, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力. </p>
-<h3 id="1-CeVIO-AI-之外"><a href="#1-CeVIO-AI-之外" class="headerlink" title="1. CeVIO AI 之外"></a>1. CeVIO AI 之外</h3><p>CeVIO AI 本身畢竟不是一款正經的 DAW, 你難免會需要藉助其他 DAW 以及各種輔助工具的幫助 —— 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: <a href="https://supermegaultragroovy.com/products/capo/">capo</a>. 很可惜的是, 這款應用目前只支援 macOS 和 iOS. 或者你用來搭配 CeVIO AI 的正經 DAW 有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552759160/in/dateposted/" title="SCR-20221209-e4n"><img src="https://live.staticflickr.com/65535/52552759160_1e1ee82233_h.jpg" alt="SCR-20221209-e4n"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>capo 的介面</p>
-</blockquote>
-<p>除了音準, 另外一個重要的參數是拍子. 儘管很多 DAW 都提供了用滑鼠&#x2F;鍵盤打拍來確定拍子的功能, 但是對於稍長一點的歌曲而言 1~2bpm 的區別就可以造成在歌曲中後段的嚴重節拍失調, 所以使用 capo 或者 DAW 自帶的精確節拍分析工具儘可能地在開頭就找準節拍就非常重要. 如果你在做到中後期的時候突然意識到了節拍設定錯誤造成了失調, 除了推倒重來之外還有一個辦法: 使用標尺上的 tempo 標尺, 從曲子中間開始插入正確的節拍. 雖然是 dirty hack 但好歹可以亡羊補牢, 省去一些推倒重來的時間. </p>
-<h3 id="2-情感"><a href="#2-情感" class="headerlink" title="2. 情感"></a>2. 情感</h3><p>對於星界和之後的音樂同位體來說, 情感參數是唯一一個需要儘早決定的可調整參數, 因為只有它是一個全域性, 無法針對某一個特定區域調整的參數. 情感會大幅影響預設音符的音高, 顫音振幅和頻率, 儘早決定合適的數值可以省去很多後期調整的麻煩. 但是注意了, 儘管調高情感值會讓一些預設音符發音聽起來十分自然, 但也會造成很多預設音符的音高變得非常奇怪, 所以我強烈不建議把情感拉滿. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552288846/in/photostream/" title="SCR-20221209-ejw"><img src="https://live.staticflickr.com/65535/52552288846_4ac330df80_h.jpg" alt="SCR-20221209-ejw"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>情感拉高之後預設曲線就會出現一些迷之情況</p>
-</blockquote>
-<h3 id="3-呼吸音"><a href="#3-呼吸音" class="headerlink" title="3. 呼吸音"></a>3. 呼吸音</h3><p>CeVIO AI 對於什麼時候加呼吸音⋯⋯ 嗯, 有一套自己的想法. 如果你發現在自己不想聽到呼吸音&#x2F;邏輯上說不通的地方出現了換氣聲, 那最簡單粗暴的方法就是開啟音量面板把換氣聲處的音量砍掉. 我試過用連音標記消除換氣, 但這方法時靈時不靈, 感覺需要碰運氣. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552782850/in/photostream/" title="去除呼吸"><img src="https://live.staticflickr.com/65535/52552782850_2919d4feef_h.jpg" alt="去除呼吸"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>圖上已經在樂句頭尾加入了連唱標記, 然而 CeVIO AI 依然在中間插入了換氣, 我才用壓音量方式砍平換氣</p>
-</blockquote>
-<p>至於加入換氣聲, 如果是在語句中的話可以給換氣聲前一個音符加入換氣標記 (右鍵 - プロパティ&#x2F;property - ブレス&#x2F;breath). 但如果是在語句開頭, 可以在第一個音符前空 1&#x2F;4 拍 ~ 半拍 (取決於你想要多長的吸氣聲) 的位置加入隨便什麼音符, 然後在那個音符上設定換氣標記, 再開啟音量面板將額外加入的那個音的音量降到最低, 就相當於在語句前加入了呼吸聲. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552759215/in/photostream/" title="SCR-20221209-edf"><img src="https://live.staticflickr.com/65535/52552759215_2e9f35162d_h.jpg" alt="SCR-20221209-edf"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>注意最開頭那個額外的 ｢は｣</p>
-</blockquote>
-<h3 id="4-填詞"><a href="#4-填詞" class="headerlink" title="4. 填詞"></a>4. 填詞</h3><p>很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為 reference. 如果你的 DAW 沒有這樣的功能, 那 <a href="https://vocalremover.org/">vocalremover</a> 能提供一個效果堪用的工具. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552797345/in/photostream/" title="拆音"><img src="https://live.staticflickr.com/65535/52552797345_11e57683a9_h.jpg" alt="拆音"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>｢たまま｣ 被我拆成了 ｢たあままあ｣</p>
-</blockquote>
-<h3 id="5-音準"><a href="#5-音準" class="headerlink" title="5. 音準"></a>5. 音準</h3><p>如果你已經按照 1. 裡的建議檢視過原曲的頻譜, 應該會注意到很多時候歌手的發音並不總是壓在相應音高的頻譜範圍內, 除卻顫音之外也經常會有一個長音首尾皆大幅偏離原本音高的現象, 但絕大多數情況下這依然聽起來十分悅耳. 實際上每位歌手的發聲方式各有不同, 但一般人類很難做到完美地完全踩在絕對正確的頻譜範圍內, 有各種滑音等等變化才符合普通人類的唱法. CeVIO AI 自然也考慮到了這一點, 所以在輸入音高發生變化的音符時往往會生成一條較為自然的音高曲線. 但是 —— CeVIO AI 很多時候, 嗯, 有一套自己的想法, 經常發生矯枉過正的情況. 尤其是在星界, 情感值設定較高的時候, 預設的音高曲線會非常的放飛自我, 請務必多多試聽儘早發現這些問題. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552580794/in/photostream/" title="SCR-20221209-ejm"><img src="https://live.staticflickr.com/65535/52552580794_99053fe680_h.jpg" alt="SCR-20221209-ejm"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>看似偏到九宵雲外的音高曲線, 但實際播放聽起來十分自然</p>
-</blockquote>
-<h3 id="6-顫音"><a href="#6-顫音" class="headerlink" title="6. 顫音"></a>6. 顫音</h3><p>和音高相同, 每位歌手都有自己對顫音的理解和利用方式. CeVIO AI 會預設給一些長音尾部加入顫音, 而且預設的振幅和週期與情感直接相關. 如果你想要模仿某位歌手的唱法, 仔細觀察歌手原曲的頻譜往往能大概瞭解他&#x2F;她的顫音特色, 然後再回到 CeVIO AI 裡調整振幅週期曲線. 如果你覺得調整曲線的方式太不直觀了, 也可以選擇刪掉預設曲線, 直接進入音高介面徒手繪製曲線, 也不失為一種辦法. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552759350/in/photostream/" title="SCR-20221209-eul"><img src="https://live.staticflickr.com/65535/52552759350_345da353ba_h.jpg" alt="SCR-20221209-eul"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>注意, 徒手畫的曲線依然會被顫音的兩個參數影響</p>
-</blockquote>
-<h3 id="7-音色-Alpha"><a href="#7-音色-Alpha" class="headerlink" title="7. 音色 (Alpha)"></a>7. 音色 (Alpha)</h3><p>雖然和情感一樣也會持續顯示在畫面右側, 但實際上音色是可以單獨分區域調整的. 工具欄上的 ALP 項就是音色曲線調整介面, 可以根據曲子中的變化靈活進行調整. 總體來說, 音色值越高, 聲音聽起來就越開放, 成熟; 音色值越低, 聽起來就越尖細, 幼稚. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52551828482/in/photostream/" title="音色"><img src="https://live.staticflickr.com/65535/52551828482_af87c86d71_h.jpg" alt="音色"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>這兩個嘆氣一般的 ｢啊啊｣ 我降低了音色值讓它聽起來語氣有所變化 (雖然後來還是決定讓可不代勞了所以音量曲線直接拉到 0) </p>
-</blockquote>
-<h3 id="8-氣聲-Whisper-Voice"><a href="#8-氣聲-Whisper-Voice" class="headerlink" title="8. 氣聲 (Whisper Voice)"></a>8. 氣聲 (Whisper Voice)</h3><p>這個裏技是由<a href="https://twitter.com/NayutalieN/status/1429683978064207875">奶油糖星人</a>最早發現的, 感謝他! </p>
-<p>首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效. </p>
-<p>確定適用範圍後, 你需要在強弱標尺 (DYNAMICS) 上在開始處雙擊, 將強弱記號改成 pp 或 ppp, 然後在結束處恢復為正常 (預設為 N). 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 (まとめ選択ツール &#x2F; Collectively Selection Tool) 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 (往上移動一個八度). 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52551828442/in/photostream/" title="SCR-20221209-egj"><img src="https://live.staticflickr.com/65535/52551828442_01b27e472f_h.jpg" alt="SCR-20221209-egj"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552831138/in/photostream/" title="SCR-20221209-epz"><img src="https://live.staticflickr.com/65535/52552831138_4bed15ff8f_h.jpg" alt="SCR-20221209-epz"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="9-其他小技巧"><a href="#9-其他小技巧" class="headerlink" title="9. 其他小技巧"></a>9. 其他小技巧</h3><p>在時間線&#x2F;標尺上滾動滾輪可以左右捲動畫面. 注意, 所有可調整的曲線裡只有音高曲線會隨著畫面上下移動, 其他曲線都是固定高度的, 所以調整時可以以音高介面為基準來確定顯示的畫面區域. </p>
-]]></content>
-      <tags>
-        <tag>Music</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photography is FUN —— 更多尼康老鏡頭</title>
     <url>/2024/03/22/EvenMoreNikkokrVintageLens/</url>
-    <content><![CDATA[<p>這幾個月我又陸續入手了一些尼康老鏡頭⋯⋯ 它們分別是 Nikkor-N･C Auto 1:2.8 f&#x3D;24mm; Nikkor-O･C Auto 1:2 f&#x3D;35mm; AI Nikkor*ED 180mm 1:2.8 S. 當然, 還有一點很重要的是我又購入了一臺 FM3ᴀ.</p>
-<p>目前我用 FM3ᴀ 拍了兩卷: 一卷柯達金 200 一卷富士 premium 400, 在那上面用 35&#x2F;2 拍了一些 (主要是金 200). </p>
-<h3 id="Nikkor-N･C-Auto-1-2-8-f-24mm"><a href="#Nikkor-N･C-Auto-1-2-8-f-24mm" class="headerlink" title="Nikkor-N･C Auto 1:2.8 f&#x3D;24mm"></a>Nikkor-N･C Auto 1:2.8 f&#x3D;24mm</h3><p>對於已經習慣於拿 40~55mm 焦距掛機的我來說, 35mm 很長時間都已經被我當成廣角鏡頭來使用了, 然而 35mm 畢竟確實是不夠廣, 在很多需要真廣角的場景下捉襟見肘, 所以我就動了這 24mm 鏡頭的主意. 這枚鏡頭也有其特別之處: 它是尼康第一枚應用了浮動鏡片對焦 (Close Range Correction, CRC) 技術的鏡頭, 在尼克爾鏡頭發展史上算是很重要的一步. 但實際上它的近攝畫質並沒有好到那裡去 ⸺ 也是可以理解的, 畢竟是 1967 年時的設計, 雖然尼康意識到了浮動鏡組設計可以彌補近距離對焦時的各種相差, 但 1. 24mm 作為當時的超廣角鏡頭本來就不是給近距離拍攝設計的; 2. 當年的光學計算還沒發達到可以完美矯正各種問題的程度. </p>
+    <content><![CDATA[<p>這幾個月我又陸續入手了一些尼康老鏡頭⋯⋯ 它們分別是 Nikkor-N･C Auto 1:2.8 f=24mm; Nikkor-O･C Auto 1:2 f=35mm; AI Nikkor*ED 180mm 1:2.8 S. 當然, 還有一點很重要的是我又購入了一臺 FM3ᴀ.</p>
+<p>目前我用 FM3ᴀ 拍了兩卷: 一卷柯達金 200 一卷富士 premium 400, 在那上面用 35/2 拍了一些 (主要是金 200).</p>
+<h3 id="Nikkor-N･C-Auto-1-2-8-f-24mm">Nikkor-N･C Auto 1:2.8 f=24mm</h3>
+<p>對於已經習慣於拿 40~55mm 焦距掛機的我來說, 35mm 很長時間都已經被我當成廣角鏡頭來使用了, 然而 35mm 畢竟確實是不夠廣, 在很多需要真廣角的場景下捉襟見肘, 所以我就動了這 24mm 鏡頭的主意. 這枚鏡頭也有其特別之處: 它是尼康第一枚應用了浮動鏡片對焦 (Close Range Correction, CRC) 技術的鏡頭, 在尼克爾鏡頭發展史上算是很重要的一步. 但實際上它的近攝畫質並沒有好到那裡去 ⸺ 也是可以理解的, 畢竟是 1967 年時的設計, 雖然尼康意識到了浮動鏡組設計可以彌補近距離對焦時的各種相差, 但 1. 24mm 作為當時的超廣角鏡頭本來就不是給近距離拍攝設計的; 2. 當年的光學計算還沒發達到可以完美矯正各種問題的程度.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720314695641" title="Nikkor 24/2.8"><img src="https://live.staticflickr.com/65535/53524482811_7f86bd7568_b.jpg"  alt="Nikkor 24/2.8"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>我手頭的這枚 24&#x2F;2.8 是難得一見的美品, 也沒有進行過 AI Conversion. 好在 Df 的 AI feeler 是可以摺疊的, 這樣我就可以直接在 Df 上使用它. 唯一的麻煩是我總是擔心換成別的鏡頭之後我會忘記再把 feeler 豎起來, 幸而目前這種問題還沒有發生過. 可惜 FM 系列相機都不支援摺疊 feeler, 我就放棄了在 FM3ᴀ 上使用它的想法. </p>
+<p>我手頭的這枚 24/2.8 是難得一見的美品, 也沒有進行過 AI Conversion. 好在 Df 的 AI feeler 是可以摺疊的, 這樣我就可以直接在 Df 上使用它. 唯一的麻煩是我總是擔心換成別的鏡頭之後我會忘記再把 feeler 豎起來, 幸而目前這種問題還沒有發生過. 可惜 FM 系列相機都不支援摺疊 feeler, 我就放棄了在 FM3ᴀ 上使用它的想法.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53610681374/in/dateposted-public/" title="DSC09671-"><img src="https://live.staticflickr.com/65535/53610681374_7fd1bef756_b.jpg"  alt="DSC09671-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>可以注意到 feeler 已經被摺疊</p>
 </blockquote>
-<h3 id="Nikkor-O･C-Auto-1-2-f-35mm"><a href="#Nikkor-O･C-Auto-1-2-f-35mm" class="headerlink" title="Nikkor-O･C Auto 1:2 f&#x3D;35mm"></a>Nikkor-O･C Auto 1:2 f&#x3D;35mm</h3><p>其實我在 2015 年就購買了等效 35mm 的富士 X100T 隨身攜帶, 所以照理說我應該會很適應 35mm 焦段才對⋯⋯ 然而自從 17 年我不再隨身攜帶它, 轉而將 50mm 作為隨行鏡頭, 現在 35mm 對我而言反而變成了一個很陌生的焦段了: 作為掛機頭使用時因為已經太習慣 50mm 和 105mm 的視角而總覺得太廣, 但真的想要拍需要廣角的照片時又發現它遠沒有我需要的廣⋯⋯ </p>
+<h3 id="Nikkor-O･C-Auto-1-2-f-35mm">Nikkor-O･C Auto 1:2 f=35mm</h3>
+<p>其實我在 2015 年就購買了等效 35mm 的富士 X100T 隨身攜帶, 所以照理說我應該會很適應 35mm 焦段才對⋯⋯ 然而自從 17 年我不再隨身攜帶它, 轉而將 50mm 作為隨行鏡頭, 現在 35mm 對我而言反而變成了一個很陌生的焦段了: 作為掛機頭使用時因為已經太習慣 50mm 和 105mm 的視角而總覺得太廣, 但真的想要拍需要廣角的照片時又發現它遠沒有我需要的廣⋯⋯</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720314576504" title="Nikkor 35/2"><img src="https://live.staticflickr.com/65535/53508510410_597ae227a8_c.jpg"  alt="Nikkor 35/2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>不出所料這枚鏡頭在買到之後並沒有經常被使用, 不過我還是把它塞在包裡 ｢以備不時之需｣. AI 鏡頭的大小非常合適, 對我來說多帶這一枚鏡頭並沒有什麼額外負擔. </p>
+<p>不出所料這枚鏡頭在買到之後並沒有經常被使用, 不過我還是把它塞在包裡 ｢以備不時之需｣. AI 鏡頭的大小非常合適, 對我來說多帶這一枚鏡頭並沒有什麼額外負擔.</p>
 <p>以前沒試著重新習慣 35mm 的時候每次看到 DPReview TV 的 Chris <a href="https://www.youtube.com/watch?v=kFnag3MSGQ4">抱怨 35mm 鏡頭</a>都會覺得他只是在開玩笑, 現在回過頭來看覺得他說的句句是實話⋯⋯</p>
-<h3 id="AI-Nikkor-ED-180mm-1-2-8-S"><a href="#AI-Nikkor-ED-180mm-1-2-8-S" class="headerlink" title="AI Nikkor*ED 180mm 1:2.8 S"></a>AI Nikkor*ED 180mm 1:2.8 S</h3><p>目前我手頭最沉的鏡頭. 上了 Df 之後總計 1,650g, 屬實是健身了. 相較之下 FM3ᴀ + 45&#x2F;2,8P 才 756g, 真的就才一半. 不過實際使用上其實並不會真的覺得很重 ⸺ 或者說並不會因為重而影響到構圖&#x2F;對焦. </p>
+<h3 id="AI-Nikkor-ED-180mm-1-2-8-S">AI Nikkor*ED 180mm 1:2.8 S</h3>
+<p>目前我手頭最沉的鏡頭. 上了 Df 之後總計 1,650g, 屬實是健身了. 相較之下 FM3ᴀ + 45/2,8P 才 756g, 真的就才一半. 不過實際使用上其實並不會真的覺得很重 ⸺ 或者說並不會因為重而影響到構圖/對焦.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53610144301/in/dateposted-public/" title="DSC09668-"><img src="https://live.staticflickr.com/65535/53610144301_6912961811_b.jpg"  alt="DSC09668-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>沒有算上揹帶, 算上的話就 1,650 了</p>
 </blockquote>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720314566658" title="Nikkor 180/2.8"><img src="https://live.staticflickr.com/65535/53507378167_7143a287db_b.jpg"  alt="Nikkor 180/2.8"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>它的問題是鏡筒後部 (光圈環) 到對焦環之間有個很不自然的 slope, 每次我試圖改變光圈時都覺得很彆扭. 還有一個小問題是在攜帶時它的鏡筒會自然往外伸長, 尤其是走一小段路之後它甚至可能會伸長至 MFD, 總讓人擔心會因此進灰⋯⋯</p>
-<p>除此之外就只剩下優點了. 它的畫質的確是非常對得起體積, 不過也不要因為它名字裡有 ED 就認為它能 APO ⸺ 當你對焦出問題的時候還是會注意到一些 LoCA, 偏偏在 180mm ƒ&#x2F;2.8 這個組合上對焦稍微偏離一點點就會看出很明顯的問題, 所以對於用單反拍攝的使用者來說挑戰其實挺大的, 如果用微單 + 放大對焦的話應該會輕鬆很多吧. 以及雖然是 AI-S 鏡頭, 但我還沒敢拿它接 FM3ᴀ 使用, 畢竟浪費菲林還是會有很強罪惡感的⋯⋯ </p>
-<h3 id="一些補遺"><a href="#一些補遺" class="headerlink" title="一些補遺"></a>一些補遺</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53610144106/in/dateposted-public/" title="DSC09669-"><img src="https://live.staticflickr.com/65535/53610144106_82b590df20_b.jpg"  alt="DSC09669-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>除此之外就只剩下優點了. 它的畫質的確是非常對得起體積, 不過也不要因為它名字裡有 ED 就認為它能 APO ⸺ 當你對焦出問題的時候還是會注意到一些 LoCA, 偏偏在 180mm ƒ/2.8 這個組合上對焦稍微偏離一點點就會看出很明顯的問題, 所以對於用單反拍攝的使用者來說挑戰其實挺大的, 如果用微單 + 放大對焦的話應該會輕鬆很多吧. 以及雖然是 AI-S 鏡頭, 但我還沒敢拿它接 FM3ᴀ 使用, 畢竟浪費菲林還是會有很強罪惡感的⋯⋯</p>
+<h3 id="一些補遺">一些補遺</h3>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53610144106/in/dateposted-public/" title="DSC09669-"><img src="https://live.staticflickr.com/65535/53610144106_82b590df20_b.jpg"  alt="DSC09669-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53610439669/in/dateposted-public/" title="GRPF0991-29 mm"><img src="https://live.staticflickr.com/65535/53610439669_d24f88f206_b.jpg"  alt="GRPF0991-29 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>主要是和 FM3ᴀ 相關的. 拿到 FM3ᴀ 之後我意識到它的厚度其實比 Df 薄很多, 實際上和 α7C 比起來都沒厚多少, 如果用原裝的眼罩, FM3ᴀ + 45&#x2F;2,8P  + 藤壺遮光罩單就厚度而言甚至比 α7C + 40&#x2F;2,8 縮起 + 遮光罩的狀態還要薄一點點, 可以直接塞進我的單肩包⋯⋯ 所以我就用這個組合隨身了一段時間. 除了這個組合, 配合 Voigtländer 40&#x2F;2 不帶遮光罩 (當然還是帶了 UV 鏡作保護) 也是差不多的厚度, 但是光圈更大畫質也更好, 唯一的問題是 SL Ⅱ 系列鏡頭的審美比較接近 F5~F6 的樣式, 放在 FM3ᴀ 上感覺倒是嫌不夠和諧. </p>
+<p>主要是和 FM3ᴀ 相關的. 拿到 FM3ᴀ 之後我意識到它的厚度其實比 Df 薄很多, 實際上和 α7C 比起來都沒厚多少, 如果用原裝的眼罩, FM3ᴀ + 45/2,8P  + 藤壺遮光罩單就厚度而言甚至比 α7C + 40/2,8 縮起 + 遮光罩的狀態還要薄一點點, 可以直接塞進我的單肩包⋯⋯ 所以我就用這個組合隨身了一段時間. 除了這個組合, 配合 Voigtländer 40/2 不帶遮光罩 (當然還是帶了 UV 鏡作保護) 也是差不多的厚度, 但是光圈更大畫質也更好, 唯一的問題是 SL Ⅱ 系列鏡頭的審美比較接近 F5~F6 的樣式, 放在 FM3ᴀ 上感覺倒是嫌不夠和諧.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53605921579/in/album-72177720295635275/" title="6-"><img src="https://live.staticflickr.com/65535/53605921579_8710e08c3a_b.jpg" alt="6-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
-<p>45&#x2F;2,8P</p>
+<p>45/2,8P</p>
 </blockquote>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53605795753/in/album-72177720314890490/" title="28-"><img src="https://live.staticflickr.com/65535/53605795753_568fe4c02a_b.jpg"  alt="28-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
-<p>40&#x2F;2</p>
+<p>40/2</p>
 </blockquote>
-<p>最後再來說說 FM3ᴀ 本身的問題, 主要是兩點, 1. 曝光補償撥盤手感很彆扭, 鎖定按鈕經常難以按至操作深度 (我都不敢想象在戴著手套的狀態下會是多難操作了), 調整之後在取景器裡也無法確認調整的數值, 導致難以盲操作; 2. 這個更多是我自己的問題了: 取景器目鏡不能直接調整屈光度, 自帶目鏡我不戴眼鏡時會覺得看起來有些模糊, 不過我有目鏡放大鏡很大程度上解決了這個問題 (說來神奇, FM3ᴀ 目鏡螺口和 R-D1 的目鏡螺口是相通的, 那個放大鏡原本是買給 R-D1s 用的). </p>
-<p>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; </p>
-<p>說起來之前好像一直都沒介紹過 Voigtländer Apo-Skopar 90mm ƒ&#x2F;2,8 SL-IIs. </p>
+<p>最後再來說說 FM3ᴀ 本身的問題, 主要是兩點, 1. 曝光補償撥盤手感很彆扭, 鎖定按鈕經常難以按至操作深度 (我都不敢想象在戴著手套的狀態下會是多難操作了), 調整之後在取景器裡也無法確認調整的數值, 導致難以盲操作; 2. 這個更多是我自己的問題了: 取景器目鏡不能直接調整屈光度, 自帶目鏡我不戴眼鏡時會覺得看起來有些模糊, 不過我有目鏡放大鏡很大程度上解決了這個問題 (說來神奇, FM3ᴀ 目鏡螺口和 R-D1 的目鏡螺口是相通的, 那個放大鏡原本是買給 R-D1s 用的).</p>
+<p>=======</p>
+<p>說起來之前好像一直都沒介紹過 Voigtländer Apo-Skopar 90mm ƒ/2,8 SL-IIs.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53610441129/in/dateposted-public/" title="DSC09666-"><img src="https://live.staticflickr.com/65535/53610441129_12a1207140_b.jpg"  alt="DSC09666-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>這是在購入 105&#x2F;2,5 之前購買的, 2021 年上市的, 非常新的鏡頭. 不得不說 SL-IIs 系列鏡頭的設計真的非常棒, 完美抓住了 Auto 鏡頭的精髓, 但又是 AIS 卡口, 甚至附帶電子觸點, 簡直是完美結合. 使用體驗方面, 它很 APO, 90 也是個用起來非常舒服的焦段, 我甚至也用它掛機了一段時間. 不過在 105&#x2F;2,5 到手之後它就迅速進了冷宮⋯⋯ </p>
+<p>這是在購入 105/2,5 之前購買的, 2021 年上市的, 非常新的鏡頭. 不得不說 SL-IIs 系列鏡頭的設計真的非常棒, 完美抓住了 Auto 鏡頭的精髓, 但又是 AIS 卡口, 甚至附帶電子觸點, 簡直是完美結合. 使用體驗方面, 它很 APO, 90 也是個用起來非常舒服的焦段, 我甚至也用它掛機了一段時間. 不過在 105/2,5 到手之後它就迅速進了冷宮⋯⋯</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720311137111" title="Apo Skopar 90/2.8 SL2s"><img src="https://live.staticflickr.com/65535/53182084759_33bf616e63_b.jpg"  alt="Apo Skopar 90/2.8 SL2s"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+]]></content>
+      <tags>
+        <tag>Gadget, Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一些 CeVIO AI 入門小技巧 (以星界為例)</title>
+    <url>/2022/12/09/CeVIOAItipsandtricks/</url>
+    <content><![CDATA[<p>這篇文章主要是給想要購買可不/星界/裏命/狐子/羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何 Vocaloid 相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門 CeVIO AI 比你想象的要容易得多.</p>
+<iframe height="480" style="width:100%;max-width:720px;background:transparent;" src="https://www.youtube.com/embed/P4u_COefgGY" title="Daily Note/酔シグレ (covered by 星界)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<blockquote>
+<p>我做的 Daily Note 星界翻唱</p>
+</blockquote>
+<p>那麼在正式開始前, 你應該要對 CeVIO AI 有一些基本的瞭解. 夜輪老師有翻譯了<a href="https://cevio-user-guide-unofficial.github.io/CeVIO-AI/">官方使用者指南</a>, 天雨大佬也寫了一系列<a href="https://www.bilibili.com/read/readlist/rl508759">基礎入門指南</a>, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力.</p>
+<h3 id="1-CeVIO-AI-之外">1. CeVIO AI 之外</h3>
+<p>CeVIO AI 本身畢竟不是一款正經的 DAW, 你難免會需要藉助其他 DAW 以及各種輔助工具的幫助 —— 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: <a href="https://supermegaultragroovy.com/products/capo/">capo</a>. 很可惜的是, 這款應用目前只支援 macOS 和 iOS. 或者你用來搭配 CeVIO AI 的正經 DAW 有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552759160/in/dateposted/" title="SCR-20221209-e4n"><img src="https://live.staticflickr.com/65535/52552759160_1e1ee82233_h.jpg" alt="SCR-20221209-e4n"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>capo 的介面</p>
+</blockquote>
+<p>除了音準, 另外一個重要的參數是拍子. 儘管很多 DAW 都提供了用滑鼠/鍵盤打拍來確定拍子的功能, 但是對於稍長一點的歌曲而言 1~2bpm 的區別就可以造成在歌曲中後段的嚴重節拍失調, 所以使用 capo 或者 DAW 自帶的精確節拍分析工具儘可能地在開頭就找準節拍就非常重要. 如果你在做到中後期的時候突然意識到了節拍設定錯誤造成了失調, 除了推倒重來之外還有一個辦法: 使用標尺上的 tempo 標尺, 從曲子中間開始插入正確的節拍. 雖然是 dirty hack 但好歹可以亡羊補牢, 省去一些推倒重來的時間.</p>
+<h3 id="2-情感">2. 情感</h3>
+<p>對於星界和之後的音樂同位體來說, 情感參數是唯一一個需要儘早決定的可調整參數, 因為只有它是一個全域性, 無法針對某一個特定區域調整的參數. 情感會大幅影響預設音符的音高, 顫音振幅和頻率, 儘早決定合適的數值可以省去很多後期調整的麻煩. 但是注意了, 儘管調高情感值會讓一些預設音符發音聽起來十分自然, 但也會造成很多預設音符的音高變得非常奇怪, 所以我強烈不建議把情感拉滿.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552288846/in/photostream/" title="SCR-20221209-ejw"><img src="https://live.staticflickr.com/65535/52552288846_4ac330df80_h.jpg" alt="SCR-20221209-ejw"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>情感拉高之後預設曲線就會出現一些迷之情況</p>
+</blockquote>
+<h3 id="3-呼吸音">3. 呼吸音</h3>
+<p>CeVIO AI 對於什麼時候加呼吸音⋯⋯ 嗯, 有一套自己的想法. 如果你發現在自己不想聽到呼吸音/邏輯上說不通的地方出現了換氣聲, 那最簡單粗暴的方法就是開啟音量面板把換氣聲處的音量砍掉. 我試過用連音標記消除換氣, 但這方法時靈時不靈, 感覺需要碰運氣.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552782850/in/photostream/" title="去除呼吸"><img src="https://live.staticflickr.com/65535/52552782850_2919d4feef_h.jpg" alt="去除呼吸"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>圖上已經在樂句頭尾加入了連唱標記, 然而 CeVIO AI 依然在中間插入了換氣, 我才用壓音量方式砍平換氣</p>
+</blockquote>
+<p>至於加入換氣聲, 如果是在語句中的話可以給換氣聲前一個音符加入換氣標記 (右鍵 - プロパティ/property - ブレス/breath). 但如果是在語句開頭, 可以在第一個音符前空 1/4 拍 ~ 半拍 (取決於你想要多長的吸氣聲) 的位置加入隨便什麼音符, 然後在那個音符上設定換氣標記, 再開啟音量面板將額外加入的那個音的音量降到最低, 就相當於在語句前加入了呼吸聲.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552759215/in/photostream/" title="SCR-20221209-edf"><img src="https://live.staticflickr.com/65535/52552759215_2e9f35162d_h.jpg" alt="SCR-20221209-edf"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>注意最開頭那個額外的 ｢は｣</p>
+</blockquote>
+<h3 id="4-填詞">4. 填詞</h3>
+<p>很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為 reference. 如果你的 DAW 沒有這樣的功能, 那 <a href="https://vocalremover.org">vocalremover</a> 能提供一個效果堪用的工具.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552797345/in/photostream/" title="拆音"><img src="https://live.staticflickr.com/65535/52552797345_11e57683a9_h.jpg" alt="拆音"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>｢たまま｣ 被我拆成了 ｢たあままあ｣</p>
+</blockquote>
+<h3 id="5-音準">5. 音準</h3>
+<p>如果你已經按照 1. 裡的建議檢視過原曲的頻譜, 應該會注意到很多時候歌手的發音並不總是壓在相應音高的頻譜範圍內, 除卻顫音之外也經常會有一個長音首尾皆大幅偏離原本音高的現象, 但絕大多數情況下這依然聽起來十分悅耳. 實際上每位歌手的發聲方式各有不同, 但一般人類很難做到完美地完全踩在絕對正確的頻譜範圍內, 有各種滑音等等變化才符合普通人類的唱法. CeVIO AI 自然也考慮到了這一點, 所以在輸入音高發生變化的音符時往往會生成一條較為自然的音高曲線. 但是 —— CeVIO AI 很多時候, 嗯, 有一套自己的想法, 經常發生矯枉過正的情況. 尤其是在星界, 情感值設定較高的時候, 預設的音高曲線會非常的放飛自我, 請務必多多試聽儘早發現這些問題.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552580794/in/photostream/" title="SCR-20221209-ejm"><img src="https://live.staticflickr.com/65535/52552580794_99053fe680_h.jpg" alt="SCR-20221209-ejm"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>看似偏到九宵雲外的音高曲線, 但實際播放聽起來十分自然</p>
+</blockquote>
+<h3 id="6-顫音">6. 顫音</h3>
+<p>和音高相同, 每位歌手都有自己對顫音的理解和利用方式. CeVIO AI 會預設給一些長音尾部加入顫音, 而且預設的振幅和週期與情感直接相關. 如果你想要模仿某位歌手的唱法, 仔細觀察歌手原曲的頻譜往往能大概瞭解他/她的顫音特色, 然後再回到 CeVIO AI 裡調整振幅週期曲線. 如果你覺得調整曲線的方式太不直觀了, 也可以選擇刪掉預設曲線, 直接進入音高介面徒手繪製曲線, 也不失為一種辦法.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552759350/in/photostream/" title="SCR-20221209-eul"><img src="https://live.staticflickr.com/65535/52552759350_345da353ba_h.jpg" alt="SCR-20221209-eul"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>注意, 徒手畫的曲線依然會被顫音的兩個參數影響</p>
+</blockquote>
+<h3 id="7-音色-Alpha">7. 音色 (Alpha)</h3>
+<p>雖然和情感一樣也會持續顯示在畫面右側, 但實際上音色是可以單獨分區域調整的. 工具欄上的 ALP 項就是音色曲線調整介面, 可以根據曲子中的變化靈活進行調整. 總體來說, 音色值越高, 聲音聽起來就越開放, 成熟; 音色值越低, 聽起來就越尖細, 幼稚.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52551828482/in/photostream/" title="音色"><img src="https://live.staticflickr.com/65535/52551828482_af87c86d71_h.jpg" alt="音色"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>這兩個嘆氣一般的 ｢啊啊｣ 我降低了音色值讓它聽起來語氣有所變化 (雖然後來還是決定讓可不代勞了所以音量曲線直接拉到 0)</p>
+</blockquote>
+<h3 id="8-氣聲-Whisper-Voice">8. 氣聲 (Whisper Voice)</h3>
+<p>這個裏技是由<a href="https://twitter.com/NayutalieN/status/1429683978064207875">奶油糖星人</a>最早發現的, 感謝他!</p>
+<p>首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效.</p>
+<p>確定適用範圍後, 你需要在強弱標尺 (DYNAMICS) 上在開始處雙擊, 將強弱記號改成 pp 或 ppp, 然後在結束處恢復為正常 (預設為 N). 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 (まとめ選択ツール / Collectively Selection Tool) 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 (往上移動一個八度). 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52551828442/in/photostream/" title="SCR-20221209-egj"><img src="https://live.staticflickr.com/65535/52551828442_01b27e472f_h.jpg" alt="SCR-20221209-egj"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52552831138/in/photostream/" title="SCR-20221209-epz"><img src="https://live.staticflickr.com/65535/52552831138_4bed15ff8f_h.jpg" alt="SCR-20221209-epz"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="9-其他小技巧">9. 其他小技巧</h3>
+<p>在時間線/標尺上滾動滾輪可以左右捲動畫面. 注意, 所有可調整的曲線裡只有音高曲線會隨著畫面上下移動, 其他曲線都是固定高度的, 所以調整時可以以音高介面為基準來確定顯示的畫面區域.</p>
+]]></content>
+      <tags>
+        <tag>Music</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
+    <url>/2022/09/10/LM-EA9/</url>
+    <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52326554321/in/dateposted/" title="TechArt LMEA9 + Voigtländer Heliar 40/2,8 VM"><img src="https://live.staticflickr.com/65535/52326554321_76a9ecf951_k.jpg" alt="TechArt LMEA9 + Voigtländer Heliar 40/2,8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022/09/09/Standard_Obsession_%E2%85%A1/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40/2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40/2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40/2.8 一直处于一个有些尴尬的状态.</p>
+<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52346586710/in/dateposted/" title="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"><img src="https://live.staticflickr.com/65535/52346586710_0404371f4b_z.jpg" alt="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩.</p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40/2.8, Pentax-L 43/1.9 Special, Voigtländer Nokton 50/1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50/1.5, 都可以正常使用.</p>
+<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40/2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.</p>
+<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的.</p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF/MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率.</p>
+<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f/2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f/2.</p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用.</p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度.</p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了.</p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40/2.5G 或者 90/2.8 DGDN 拍那么多照片, 以后有机会的话会试试看.</p>
+<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的.</p>
+]]></content>
+      <tags>
+        <tag>Gadget, Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— 一些尼康老鏡頭</title>
+    <url>/2023/12/14/MoreNikkorVintageLens/</url>
+    <content><![CDATA[<p>這一年來我又陸續購入了一些老鏡頭, 其中比較值得一提的是 Nikkor-P Auto 1:2.5 f=105mm, Nikkor-S･C Auto 55mm ƒ/1.2 和 AI Micro-Nikkor 55mm ƒ/2.8 S. 從命名上也可以看出這幾枚鏡頭來自六､ 七十年代, 都是比父上大人還要年長的存在了. 它們都是那個年代裡極具特色的存在, 即使放在今天也絲毫不會過時的有趣鏡頭.</p>
+<h3 id="｢阿富汗少女｣-之前">｢阿富汗少女｣ 之前</h3>
+<p>提到尼康的 105mm 鏡頭, 大概最為廣為人知的就是拍下了那張著名阿富汗少女肖像的 <strong>AI Nikkor 105mm ƒ/2.5</strong>. 網上關於她的介紹數不勝數, 它也的確是一枚配得上 Steve McCurry 的大師之器. 但我手頭的 105/2.5 並不是這枚傳奇鏡頭, 而是在光學設計與外觀上都略有差異的 Auto 版. Auto 版設計的年代更為久遠 (1966), 雖然也是五枚鏡片構成, 但構造是三組五片 (AI 版則是四組五片).</p>
+<p>儘管是六十年代的設計, 但它依然是一枚以今天的目光來看也毫不遜色於真正阿富汗少女鏡的鏡頭. 除了全開光圈時畫面周邊銳度略微下降以及高光處容易產生較為明顯的紫邊之外, 它的各項表現都十分優秀. 不过它也有很符合六十年代老镜头的弱点: 全开光圈时距离越远分辨率下降得越快, 50 米开外时主体会显得毛绒绒的, 这时候如果想获得锐利的画面还是收一点光圈才好.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720313371291" title="Nikkor 105/2.5"><img src="https://live.staticflickr.com/65535/53397363254_cf6ffe676a_h.jpg" alt="Nikkor 105/2.5"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>但是 Auto 鏡頭於我而言最大的優勢其實是外觀 —— Auto 版是經典的銀嘴設計, 對焦環也是全金屬齒輪狀凸起, 看起來非常優雅; 而 AI 版 105/2.5 則改為了黑色鏡筒前端, 對焦環也變成了塑膠顆粒, 多了一些現代感而失去了 Auto 版的獨特感.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53397081966/in/album-72177720295596293/" title="GRPF071140-2"><img src="https://live.staticflickr.com/65535/53397081966_1e74c1afd5_h.jpg" alt="GRPF071140-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在拿到這枚鏡頭之前, 我手上焦距最長的鏡頭是 AF 135/2 DC. 但是我從來沒有想過拿它掛機, 畢竟它真的太大太沉. 這幾天我拿這枚 Auto 105 掛機卻意外發現效果不錯, 它的重量並沒有很沉 (370g), 對於我這種不太願意拉近距離拍照的人來說是個很好的捷徑. 之前總擔心對焦失敗的問題似乎也並沒有很嚴重, 大概是這麼多年來我已經完全習慣了手動對焦吧. 說道手動對焦, 我還挺期待 Zf 的手動對焦輔助⋯⋯</p>
+<h3 id="｢試錯者｣-的樂趣">｢試錯者｣ 的樂趣</h3>
+<p>在馬上就要進入 2024 年的當下, 各種國產 ƒ/0.95 鏡頭已經層出不窮, 就算是只看尼康自家的大光圈鏡頭, 這枚誕生於 1967 年的 Auto 55mm ƒ/1.2 都是極有可能被很多人忘卻的一枚 —— 畢竟在它後面就是大名鼎鼎的 AI Noct-Nikkor 58mm ƒ/1.2 (1977). 要說 55/1.2 的光芒完全被 58/1.2 掩蓋也的確是不冤枉, 它們的畫質的確是雲泥之別, 55/1.2 在光圈全開的狀態下彗差飛起, 尤其是在對無限遠對焦的時候全畫面畫質都無法直視⋯⋯</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720313397009" title="Nikkor 55/1.2"><img src="https://live.staticflickr.com/65535/53397376739_f2ba27a04a_h.jpg" alt="Nikkor 55/1.2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>左右翻頁可以檢視收光圈之後對比效果</p>
+</blockquote>
+<p>實際上, 若是看一眼尼康開發大口徑 50mm 鏡頭的歷史, 就會發現這枚 55mm ƒ/1.2 算是一枚試錯意味非常強烈的鏡頭. 在它之前, 尼康剛剛攻克了 50mm ƒ/1.4 (1962), 對於在標準鏡焦段上製作更大口徑躍躍欲試. 有了這枚 55/1.2 作為試錯的鋪墊, 後來的 Noct-Nikkor (1977) 便改進了光學公式, 修正了彗差巨大的問題, 使得全開狀態變得可用; 而幾年後 (1978) 的 AI 50mm ƒ/1.2 更是幾乎完全沿用了 55/1.2 光學公式. 當然, 由於這幾年裡非球面玻璃的研磨､ 校驗技術也得到了長足的進步, 使得 Noct 58 和 50/1.2 鏡頭可以採用更高精度的非球面鏡片校正相差, 這就顯得 55/1.2 ｢試錯者｣ 的身份更加醒目了.</p>
+<p>強到沒邊的彗差和近距離攝影時的像差使得全開光圈狀態下在無限遠和極近距離基本上都是無法使用的狀態, 但在人像距離上倒是療效奇好. ƒ/1.2 大光圈使背景分離度強烈, 雖然彗差強到沒邊, 這枚鏡頭的場曲和球差都意外地控制得很好, 光斑也非常乾淨, 拿來拍夜景人像十分合適. 光圈收到 5.6 之後拿來應付一下風光拍攝也是可以的, 邊緣銳度其實相當不錯, 但這種狀況下好像沒有特地選擇又大又笨重的它 (420g) 來掛機的理由⋯⋯? 我的 <a href="https://novadng.studio/2022/01/02/Standard_Obsession/">AI Nikkor 50mm ƒ/1.8S</a> (1980, 170g) 可香了呢.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53280396500/in/album-72177720295596293/" title="DSC08077Voigtländer Heliar 40mm ƒ-2.8 Asperical"><img src="https://live.staticflickr.com/65535/53280396500_08f144a7c1_h.jpg" alt="DSC08077Voigtländer Heliar 40mm ƒ-2.8 Asperical"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>最後額外提一句: 這枚鏡頭的對焦環緊實程度比其他尼康手動鏡頭要更強, 幾乎難以用一根手指撥動, 我搜了一下發現這應該是 by design 而不是個體差, <a href="https://www.kenrockwell.com/nikon/55mm-f12.htm#ergo">即使是更晚的 AI 版本也是如此</a>. 這既是優點也是缺點, 它可以讓我稍微不用那麼擔心事先調整好的對焦距離被不小心碰歪 (105/2.5 那超級絲滑的對焦環的缺點就是很容易不小心碰歪焦距), 缺點是快速對焦幾乎是不可能完成的任務.</p>
+<h3 id="長盛不衰的微距鏡">長盛不衰的微距鏡</h3>
+<p>我其實很少拍攝微距. 但是因為最近開始了膠片攝影, 為了翻拍膠片才動起了購買專門的微距鏡的念頭. 既然提到微距和尼克爾, 那第一個在腦海中浮現的候選項自然就是這 Micro-Nikkor 55/2.8 了. 它常年以來都佔據著 ｢最銳利 F 口鏡頭｣ 的寶座, 而且甚至時至今日仍在生產, 是時候讓我親眼驗證一下這 ｢活著傳奇｣ 了.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720312104557" title="Nikkor 55/2.8"><img src="https://live.staticflickr.com/65535/53276546369_edb98bb64f_h.jpg" alt="Nikkor 55/2.8"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>的確是非常的銳利, 哪怕是在全開光圈的條件下. 很多時候反倒是因為我無法穩定地拍攝而造成了畫面的模糊. 不過只用磨砂玻璃來確認對焦也的確是很不利, 如果 Df 可以更簡單地更換對焦屏就好了⋯⋯</p>
+<p>說句實話, 我確實不太喜歡這枚鏡頭的外觀. 一來我本就更中意 Auto 鏡頭的對焦環風格, 二來當時尼康為了宣傳同時期推出的近攝環在 55/2.8 的鏡筒上額外添加了 ｢附帶近攝環之後的放大倍率｣, 於我而言完全是無用資訊且破壞了鏡身的一體感. 不過反正這枚鏡頭作為微距鏡平時也不太可能有機會被用作掛機出門, 所以這點問題倒很容易忍了.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53272078094/in/album-72177720295596293/" title="DSC08065Voigtländer Heliar 40mm ƒ-2.8 Asperical"><img src="https://live.staticflickr.com/65535/53272078094_6fdf984291_h.jpg" alt="DSC08065Voigtländer Heliar 40mm ƒ-2.8 Asperical"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<hr>
+<p>最後再來一張我手頭全部 F 鏡的全家福吧:</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53279042352/in/album-72177720295596293/" title="GRPF0634-Enhanced-NR40-2"><img src="https://live.staticflickr.com/65535/53279042352_004006af63_h.jpg" alt="GRPF0634-Enhanced-NR40-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>(拍完之後才意識到 Voigtländer Ultron 40mm ƒ/2 SL 被裝在 Pen-F 上掛機, 忘記拍進來了⋯⋯ 也罷, 它長得太不尼康了就不讓它入鏡了 wwwwww)</p>
 ]]></content>
       <tags>
         <tag>Gadget, Photography</tag>
@@ -114,176 +186,34 @@
     <url>/2022/05/30/Pen-F-pitfalls/</url>
     <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087660201/in/dateposted/" title="R-D1, Df &amp; Pen-F"><img src="https://live.staticflickr.com/65535/52087660201_374ba5438b_o.jpg" alt="R-D1, Df &amp; Pen-F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
-<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
+<p>没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
 </blockquote>
-<p>我对 Micro 4&#x2F;3 系统的印象其实一直不怎么样 —— 在 2013~14 年间父上大人曾经使用过一台松下 G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯 E-M1. 在我的认知中 G3 和 E-M1 这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的 APS-C 入门单反小很多, 但彼时 M43 系统的缺点依然十分明显 —— 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
-<p>时间推进到 2016 年, 我手头上已经有了 Df 和 X100T 两台机器, 因此基本不再关心新发布的相机了. 然而 Pen-F 的发布还是给我留下了深刻的印象 —— 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C 相机的前提下再购入M4&#x2F;3 系统, 所以便没有考虑购入. </p>
-<p>又过了这么多年, 如今已经是 2022 年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的 OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购买 Pen-F 的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师的 ASMR</a> 时的冲动消费, 并没有什么特别的理由. </p>
+<p>我对 Micro 4/3 系统的印象其实一直不怎么样 —— 在 2013~14 年间父上大人曾经使用过一台松下 G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯 E-M1. 在我的认知中 G3 和 E-M1 这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的 APS-C 入门单反小很多, 但彼时 M43 系统的缺点依然十分明显 —— 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕.</p>
+<p>时间推进到 2016 年, 我手头上已经有了 Df 和 X100T 两台机器, 因此基本不再关心新发布的相机了. 然而 Pen-F 的发布还是给我留下了深刻的印象 —— 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C 相机的前提下再购入M4/3 系统, 所以便没有考虑购入.</p>
+<p>又过了这么多年, 如今已经是 2022 年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的 OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购买 Pen-F 的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师的 ASMR</a> 时的冲动消费, 并没有什么特别的理由.</p>
 <p>拿到 Pen-F 并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了 2022 年, Pen-F 那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的 Df 和 α7C, Pen-F 除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍 Pen-F 的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被 Pen-F 性感身姿诱惑的潜在购买者指明一些坑.</p>
-<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管 Pen-F 有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调整 ISO 和白平衡的方式 (Df 有 ISO 盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄 JPEG 的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 —— 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
-<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了 EVF 旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成 ISO&#x2F;快门速度拨盘算了. </p>
-<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用 Pen-F 之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对 Pen-F 的期望值. 实际到手之后我很快发现了一个问题: 我转接了 VM 50&#x2F;1.5 给 Pen-F 使用, 由于半幅裁切基本上已经相当于 100mm 等效, 在对焦时如果不开防抖会受到很大影响; 然而 Pen-F 的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
+<h3 id="1-低于预期的操作便捷度">1. 低于预期的操作便捷度</h3>
+<p>尽管 Pen-F 有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调整 ISO 和白平衡的方式 (Df 有 ISO 盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄 JPEG 的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 —— 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了.</p>
+<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了 EVF 旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成 ISO/快门速度拨盘算了.</p>
+<h3 id="2-烦人的五轴防抖噪音">2. 烦人的五轴防抖噪音</h3>
+<p>在使用 Pen-F 之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对 Pen-F 的期望值. 实际到手之后我很快发现了一个问题: 我转接了 VM 50/1.5 给 Pen-F 使用, 由于半幅裁切基本上已经相当于 100mm 等效, 在对焦时如果不开防抖会受到很大影响; 然而 Pen-F 的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52087906959/in/dateposted/" title="Pen-F w/ VM 50/1.5"><img src="https://live.staticflickr.com/65535/52087906959_8a33b72fb9_o.jpg" alt="Pen-F w/ VM 50/1.5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动 ISO&#x2F;快门速度策略并不能设置为降低快门速度换取低 ISO, 导致 P&#x2F;A&#x2F;S 模式下这防抖模式很难体现出优势, 我甚至关闭了自动 ISO —— 实话说 Pen-F 的画面细腻度确实不高, 如果放大到 200% 即使在 ISO 200 (最低原生 ISO) 时暗部都有一些噪点, 这表现甚至还不如我的 R-D1. 相比之下索尼在菜单里提供了自动 ISO 策略调整可以让用户降低快门速度换取低 ISO, 使用时感受就比奥林巴斯好上许多.  </p>
-<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接 M 口手动头使用, 但是我也同时购入了一枚二手松下 15&#x2F;1,7 作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在 Df, X100T, GR 和 α7C 上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的 AFL 按钮, Pen-F 却没有这么一个方便的按钮.</p>
+<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动 ISO/快门速度策略并不能设置为降低快门速度换取低 ISO, 导致 P/A/S 模式下这防抖模式很难体现出优势, 我甚至关闭了自动 ISO —— 实话说 Pen-F 的画面细腻度确实不高, 如果放大到 200% 即使在 ISO 200 (最低原生 ISO) 时暗部都有一些噪点, 这表现甚至还不如我的 R-D1. 相比之下索尼在菜单里提供了自动 ISO 策略调整可以让用户降低快门速度换取低 ISO, 使用时感受就比奥林巴斯好上许多.</p>
+<h3 id="3-无处安放的背部对焦按钮">3. 无处安放的背部对焦按钮</h3>
+<p>虽然我主要是转接 M 口手动头使用, 但是我也同时购入了一枚二手松下 15/1,7 作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在 Df, X100T, GR 和 α7C 上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的 AFL 按钮, Pen-F 却没有这么一个方便的按钮.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52095381440/in/dateposted/" title="Pen-F Back"><img src="https://live.staticflickr.com/65535/52095381440_ac1e7b351f_o.jpg" alt="Pen-F Back"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>后拨轮附近的几个按钮里 Fn1 太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是 Pen-F 就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
-<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F 的电池容量只有 1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数 EVF 的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数 EVF, Pen-F 的续航才会变成比较正常的状态. </p>
-<p>和续航相关还有一个问题: 如果系统设置里启用了自动 EVF&#x2F;屏幕切换, 那么即使用户合上了屏幕, 眼睛离开 EVF 的时候 EVF 也会熄灭, 此时任何操作都是无效的, 不能像 α7C 那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
-<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了 threaded 的尼康 Df 和富士 X100 系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1 虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
+<p>后拨轮附近的几个按钮里 Fn1 太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是 Pen-F 就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯</p>
+<h3 id="4-悲剧的续航">4. 悲剧的续航</h3>
+<p>Pen-F 的电池容量只有 1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数 EVF 的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数 EVF, Pen-F 的续航才会变成比较正常的状态.</p>
+<p>和续航相关还有一个问题: 如果系统设置里启用了自动 EVF/屏幕切换, 那么即使用户合上了屏幕, 眼睛离开 EVF 的时候 EVF 也会熄灭, 此时任何操作都是无效的, 不能像 α7C 那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍.</p>
+<h3 id="5-一些其他令人不满的小问题">5. 一些其他令人不满的小问题</h3>
+<p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了 threaded 的尼康 Df 和富士 X100 系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1 虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52081318447/in/dateposted/" title="Olympus Pen F"><img src="https://live.staticflickr.com/65535/52081318447_b58f471c11_z.jpg" alt="Olympus Pen F"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 热靴金属压片有一個额外突出的部分, 安装在索尼&#x2F;尼康等其他相机热靴上时均无法启用, 着实非常可惜 (如果你胆子大可以把这个突出打磨掉, 操作得当的话不会影响使用).</p>
-<p>Pen-F 对 SD 卡的读写速度体感非常慢, 同一张卡 Pen-F 拍摄和删除照片的速度都比 Df&#x2F;α7C 慢很多 (尚未在 GR 上测试同一张卡, 但估计也是比 GR 慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对 SD 卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为 Pen-F 的 UI 导致了这种迟缓. </p>
-<p>顺便, 如果你在使用索尼的 ToughCard, 你会发现 Pen-F 的卡槽和 ToughCard 结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
-<p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15&#x2F;1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
-<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
-]]></content>
-      <tags>
-        <tag>Gadget, Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN —— Standard Obsession</title>
-    <url>/2022/01/02/Standard_Obsession/</url>
-    <content><![CDATA[<p>就在不久之前, 我拿到了心心念念的 Voigtlander 40&#x2F;2, 这是我手头第八个 ｢标准焦段｣ 的镜头了 (如果不算 SX-70 的等效 60mm 镜头的话) —— 之前的分别是 Nikkor 50&#x2F;1.8G, Ricoh GR IIIx, Nikkor AI-S 50&#x2F;1.8, Nikkor 45&#x2F;2.8P, Zeiss ZM 50&#x2F;1.5, Helios-44 58&#x2F;2, Pentax 43&#x2F;1.9. 用了这么久这些 ｢标准镜头｣, 我觉得可以写篇文章谈谈他们了. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51759346033/in/album-72177720295596293/" title="Pancakes"><img src="https://live.staticflickr.com/65535/51759346033_50c1c61e5f_h.jpg" alt="Pancakes"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><strong>Disclaimer</strong>: 我不是一个靠摄影吃饭的人, 我对器材的追求基本是乐趣 &gt; 性能, 虽然如果能同时满足两者自然是最好, 但通常需要满足这两者就得加钱, 所以⋯⋯</p>
-<h3 id="AF-S-Nikkor-50mm-f-1-8G"><a href="#AF-S-Nikkor-50mm-f-1-8G" class="headerlink" title="AF-S Nikkor 50mm f&#x2F;1.8G"></a>AF-S Nikkor 50mm f&#x2F;1.8G</h3><p>这是在购买 Df 的时候一同入手的套机头. 这枚 2011 年发布的镜头在我购买 Df 时 (2014 年) 算是非常新的设计了, 各种硬性指标都非常优秀. 前组在大部分时候都深深陷在镜筒中, 被保护得非常好, 绝大多数时候也不需要使用那个附带的笨拙而廉价的遮光罩. 它无言地陪伴我度过了六七年的时光, 经历了各种风吹雨打甚至还有一次摔落 (虽然只有不到半米的高度), 依旧可靠. 全塑料的外壳虽然看起来非常廉价而且非常容易脏, 但是也让它极为轻便. 尽管我现在已经不将它作为挂机镜头了, 它还是在我的包里会有一席之地. </p>
-<p>那么, 既然 50&#x2F;1.8G 这么好, 为什么我会接下来买那么多焦段类似的其他镜头呢? 概括来说的话应该有三点: </p>
-<ul>
-<li>其一, 我对<a href="https://novadng.studio/2021/03/12/yearning-for-a-tiny-smartphone/">小设备</a>有着迷之执着 —— 然而在尼康单反上追求小好像从根本上就搞错了什么, 基本上单反比起微单就已经是庞然巨物了, 况且若是追求小当初我应该去买宾得才是, 现在再来后悔感觉也为时已晚⋯⋯ 但是 Df 又是唯一一台有着复古外观 + 操作方式的全画幅数码单反, 我还是非常喜欢它的. </li>
-<li>其次, 50&#x2F;1.8G 是一枚几乎没有个性的镜头 —— 现代先进的光学设计基本抹去了所有可能出现的光学问题, 在成像几乎完美的同时也使得它几乎没有任何个性. 当然很多时候 ｢个性｣ 从现实的角度上来说其实都是光学缺陷, 但我们应该扬长避短而不是认为光学缺陷就是世界末日. </li>
-<li>最后, 算前一点的延续, 作为一个摄影爱好者, 我在追求记录时光的同时更想要的是从中寻求乐趣. 50&#x2F;1.8G 在这方面可以说是一枚没有乐趣的镜头 —— 无论是成像还是操作都很无趣. 虽然 Df 机身为摄影提供了不少乐趣, 但我还是想追求更有趣的镜头.</li>
-</ul>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295618346" title="Cambridge tour"><img src="https://live.staticflickr.com/65535/51787672422_8aef1feb10_h.jpg" alt="Cambridge tour"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="AI-Nikkor-50mm-f-1-8S"><a href="#AI-Nikkor-50mm-f-1-8S" class="headerlink" title="AI Nikkor 50mm f&#x2F;1.8S"></a>AI Nikkor 50mm f&#x2F;1.8S</h3><p>在寻找迷你镜头的时候, 我第一个瞄准的就是 AI Nikkor 50mm f&#x2F;1.8S. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51740205140/in/album-72177720295596293/" title="Nikon Pancake"><img src="https://live.staticflickr.com/65535/51740205140_856b9fb1b3_h.jpg" alt="Nikon Pancake"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在尼康的官方网站上有一个很有趣的专栏叫 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/index.html">｢尼克尔镜头的一千零一夜｣</a>, 其中就<a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0060/">介绍</a>了这枚非常小巧精致的镜头. 从光学的角度来看它算是 50&#x2F;1.8G 的父辈, 但是没有自动对焦系统和省去了 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0063/">｢必要之恶｣</a>, 它的体积比起 50&#x2F;1.8G 要小得多: </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51788971709/in/album-72177720295596293/" title="50/1.8G 50/1.8S 45/2.8P"><img src="https://live.staticflickr.com/65535/51788971709_696f0e6b8e_h.jpg" alt="50/1.8G 50/1.8S 45/2.8P"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>↑ 如前文所说变得脏兮兮的 50&#x2F;1.8G, 用酒精棉都擦不干净, 是塑胶本身白化了</p>
-<p>虽然没有使用非球面镜片, 但是相对先进的光学设计带来了小巧的整体结构 —— 仅仅 <strong>27mm</strong> 的厚度, 而且在保证了较大光圈的前提下全开时相比 50&#x2F;1.8G 并没有太大差距, 可用性极高. 而全金属的镜筒在手感上比全塑料的 50&#x2F;1.8G 好上十万八千里, 尤其是顺滑的对焦环更是令人爱不释手. </p>
-<p>这枚镜头在当时作为推广入门级单反相机的伴生物 (Nikon 50mm f&#x2F;1.8 Series E, 光学性能上只有镀膜有区别, 外壳换成了全塑料), 价格极其便宜, 由于产量巨大的关系存世量也极多, 属于便宜大碗的好镜头, 某种程度上我甚至想推荐所有尼康单反用户都入手一枚 —— 不过话虽如此, 老 AI-S 镜头和很多非旗舰机身都不兼容了, 如今它的实用价值确实日渐式微. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295624370" title="AI Nikkor 50/1.8S"><img src="https://live.staticflickr.com/65535/51790435845_248d954245_h.jpg" alt="AI Nikkor 50/1.8S"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>可惜我的这枚镜头在入手时光圈环就有些运作不畅, 经常会卡在一个近似 f&#x2F;1.9 的位置, 导致 bokeh 产生奇怪的裁切, 不久前送修去了. 购买二手老头难免会遇到这样的状况, 只能说能去线下亲自摸一回的话可以避免很多这样的小问题. </p>
-<h3 id="AI-Nikkor-45mm-f-2-8P"><a href="#AI-Nikkor-45mm-f-2-8P" class="headerlink" title="AI Nikkor 45mm f&#x2F;2.8P"></a>AI Nikkor 45mm f&#x2F;2.8P</h3><p>比起海量生产, 便宜大碗的 50&#x2F;1.8S, 这枚伴随着一台传说级别的机身 —— FM3A —— 而诞生的 45&#x2F;2.8P 就相对来说没那么广为人知了. 我手上的 Df 在设计上有很多继承自 FM3A 的元素, 这也是让我觉得 45&#x2F;2.8P 会是一个绝配的因素. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51738486367/in/album-72177720295596293/" title="Nikon Df"><img src="https://live.staticflickr.com/65535/51738486367_75c182d0b4_h.jpg" alt="Df & 45/2.8P"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这镜头本体比 50&#x2F;1.8S 还要更薄, 真的是不折不扣的 pancake lens 了. 虽然不知道为什么尼康研发部门在已经有 50&#x2F;1.8S 这个可以说极致轻薄的镜头的情况下还要再花费心思研发一款新的轻薄镜头⋯⋯ 难道是因为 1997 年时宾得推出了比 50&#x2F;1.8S 薄 0.5mm, 光学素质更好, 而且还带自动对焦的 FA 43mm f&#x2F;1.9 Limited? (笑) 尼康自己的开发人员也在一千零一夜里如此打趣: </p>
-<blockquote>
-<p>重厚長大のイメージのあるニッコールレンズだが [<a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">1</a>]</p>
-</blockquote>
-<p>直译就是尼克尔镜头总是给人留下又重又厚又长又大的印象 —— 很不幸的是时至今日除了 ｢重｣ 这一点因为换用了全塑料镜筒有所改善 (以牺牲了手感为代价), 另外三点毫无改善. 这时再看 45&#x2F;2.8P 就显得有些无奈又好笑了. </p>
-<p>抛开历史和现实来看 45&#x2F;2.8P, 这枚镜头无疑是非常有特色的: 它只有令人惊讶的 <strong>17mm</strong> 厚, 而为了保证对焦环手感, 镜筒基本直接被对焦环和光圈环一分为二, 导致它的装卸体验十分糟糕 (这点上 Voigtlander 40&#x2F;2 就取得了更好的平衡, 下文会提到); 它在全开光圈的状态下画面中心分辨率相当可靠, 越靠近边缘则毫无意外地有些劣化, 而它光学上最大的弱点应该是彗差严重 —— 但这反而可以说是一种很有味道的特色, 只要你不试图用它来全开光圈拍建筑或者风光, 这个问题其实很难被注意到. f&#x2F;2.8 的最大光圈其实对对焦准确度相对宽容, 虽然焦外的柔化也因此变得不那么强烈, 但是配合手感上佳的对焦环操作, 使用体验还是非常优秀的. </p>
-<p>45&#x2F;2.8P 的另一大特色就是那形状奇异的遮光罩了. 尼康自己的开发者戏称它为 ｢藤壶遮光罩｣ (フジツボフード[<a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">1</a>]), 着实准确. 这个遮光罩允许我在大部分时间不使用镜头盖而不担心镜头前组镜片受到污染, 又几乎没有增加多少体积. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51739953379/in/album-72177720295596293/" title="Nikon Pancake"><img src="https://live.staticflickr.com/65535/51739953379_0304964559_h.jpg" alt="Nikon Pancake"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>有趣的是, 由于和 Voigtlander 40&#x2F;2 口径相同, 这两枚镜头可以互换遮光罩, 也导致 45&#x2F;2.8P 可以顺带使用 Voigtlander 40&#x2F;2 的近摄镜, 让它具有了一定程度的近摄能力: </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791796840/in/photostream/" title="45/2.8P closeup"><img src="https://live.staticflickr.com/65535/51791796840_6cd7fb9d4a_h.jpg" alt="45/2.8P closeup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791430244/in/photostream/" title="45/2.8P w/ closeup lens"><img src="https://live.staticflickr.com/65535/51791430244_6f1514d028_h.jpg" alt="45/2.8P w/ closeup lens"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>当然, 其实 50&#x2F;1.8S 也可以用 40&#x2F;2 的遮光罩和近摄镜, 这三枚镜头的滤镜口径都是 52mm, 混搭配件也是乐趣无穷. 眼尖的读者应该已经看出来了, 我给 50&#x2F;1.8S 默认搭配的天光滤镜就是原本搭配 45&#x2F;2.8P 的银色边框款. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51807804194/in/album-72177720295596293/" title="Nikkor 45/2.8P"><img src="https://live.staticflickr.com/65535/51807804194_82fd9438cc_h.jpg" alt="Nikkor 45/2.8P"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这枚镜头由于存世不久具有一定稀有价值, 价格被炒得有点高, 如果你不是像我一样病态的追求小镜头, 其实是不建议购买的. </p>
-<h3 id="Ricoh-GR-IIIx"><a href="#Ricoh-GR-IIIx" class="headerlink" title="Ricoh GR IIIx"></a>Ricoh GR IIIx</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51788433271/in/album-72177720295596293/" title="GR IIIx vs iPhone 12 mini"><img src="https://live.staticflickr.com/65535/51788433271_4bed699b5d_h.jpg" alt="GR IIIx vs iPhone 12 mini"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>一图胜千言. 在没有任何外置装备的前提下, GR IIIx 这 110×62×35mm 的尺寸可以轻松地装进我的几乎所有普通口袋. 等效 40&#x2F;2.8 的镜头是完全重新设计的, 但是某种程度上又是一种传承. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791877550/in/dateposted/" title="GR0004731-80 sec at f - 2.8"><img src="https://live.staticflickr.com/65535/51791877550_b49013c3ce_h.jpg" alt="GR0004731-80 sec at f - 2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>40mm 对我来说已经可以算是广角了 (等效 35mm 的 X100T 对我来说就是超广角⋯⋯), 足以用来应付我绝大多数日常拍照的需求. 毕竟 ｢手头的相机才是最好的相机｣, 虽然我没有把它带到浴室里, 但自从入手了 GR IIIx 之后每次出门我都必定会带上它. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51784842727/in/album-72177720295596293/" title="GR IIIx w/ Pentax 43 finder"><img src="https://live.staticflickr.com/65535/51784842727_eff938e7c4_h.jpg" alt="GR IIIx w/ Pentax 43 finder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>实际使用的状态. 宾得的这个 43mm 取景器虽然给它增加了一点高度, 但是放进冬天外套的口袋还是毫无压力的. 外置取景器可以让我不用再盯着屏幕, 而是像使用旁轴相机一样操作 GR IIIx, 极大提升了使用体验. </p>
-<p>GR IIIx 还有一个优点就是极近的最近对焦距离, 可以某种程度地充当微距镜头. 事实上, 前文大部分设备的照片都是由 GR IIIx 拍摄的. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295636512" title="Camera Museum"><img src="https://live.staticflickr.com/65535/51791254943_0b39e74dde_h.jpg" alt="Camera Museum"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Zeiss-C-Sonnar-T-1-5-50-ZM"><a href="#Zeiss-C-Sonnar-T-1-5-50-ZM" class="headerlink" title="Zeiss C Sonnar T* 1.5&#x2F;50 ZM"></a>Zeiss C Sonnar T* 1.5&#x2F;50 ZM</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51739950944/in/album-72177720295596293/" title="Zeiss C Sonnar T* 1.5/50 ZM"><img src="https://live.staticflickr.com/65535/51739950944_0764c03c45_h.jpg" alt="Zeiss C Sonnar T* 1.5/50 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>徕卡 M 口本来就不缺各种小巧的镜头了, 无论是本家还是全世界其他光学大厂都为 M 口设计过小巧玲珑的镜头, 而在 50mm 焦段里蔡司这枚 Sonnar 又是其中佼佼者, 55.5×38mm 的体积比徕卡本家的所有大光圈 50mm 镜头都要娇小 —— 虽然我在购买这枚镜头的时候尚不知晓福伦达 <a href="https://www.cosina.co.jp/voigtlander/vm-mount/nokton-vintage-line-50mm-f1-5-aspherical-ii/">Nokton 1:1,5&#x2F;50 II</a> 的存在. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51739543383/in/album-72177720295596293/" title="GR IIIx"><img src="https://live.staticflickr.com/65535/51739543383_0f6fe381e6_h.jpg" alt="GR IIIx"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>↑ 尽管比福伦达 Nokton 50&#x2F;1.5 II 大了那么一丢丢, 50&#x2F;1.5 ZM 也已经够小巧了</p>
-<p>这枚镜头继承了 1932 年经典的松纳结构, 配上二十一世纪的新材料和镀膜技术, 算是经典重生. 不过毕竟是 90 年前的光学设计, 以今天的眼光来看缺陷其实是很明显的: 它在全开光圈的时候真的很软, 即使是画面最中心的部分分辨率和对比度也不算优秀; 然而这也是它的一大特色, 由这光学缺陷造就了优秀的氛围控制. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51738485872/in/album-72177720295596066/" title="Zeiss C Sonnar 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738485872_e162b0ec74_h.jpg" alt="Zeiss C Sonnar 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这枚镜头的边缘可以说是非常糟糕的, 不过我完全不在意 —— 我的 R-D1s 是 APS-C CCD, 完美规避了边缘严重的暗角､ 分辨率和对比度下降等问题. 在光圈收到 f&#x2F;4 之后, 画面软的问题也基本得到解决, 可以用来拍摄风景和建筑了. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791375393/in/dateposted/" title="Zeiss C Sonnar T* 1.5/50 ZM"><img src="https://live.staticflickr.com/65535/51791375393_a0cbf621ad_h.jpg" alt="Zeiss C Sonnar T* 1.5/50 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>它的另一个特色, 是特殊的光圈叶片形状. 在前面的照片里很容易就可以看出在光圈收缩之后, ZM 50&#x2F;1.5 形成的光圈形状是一个锯盘型, 这个形状也完美地反映到了收缩光圈后的 bokeh 上. 我个人是不太喜欢这种锯盘型的 bokeh, 不过这只是我的个人喜好而已. </p>
-<p>这个镜头还有一个非常邪道的玩法 —— 如果你用它反接, 会得到一个仿佛向外扩散的焦外虚化, 效果非常有趣: </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295649351" title="ZM 1.5/50 reverse"><img src="https://live.staticflickr.com/65535/51785578386_c16e203ccc_h.jpg" alt="ZM 1.5/50 reverse"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>最后, 这支镜头也是我手头所有手动光圈环的镜头里唯一一个有 1&#x2F;3 光圈档位的镜头, 在只支持整档变换快门速度和 ISO 的 R-D1s 上对于控制精确曝光显得格外方便. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295596066" title="Zeiss 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738489767_c8a2748b6b_h.jpg" alt="Zeiss 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Helios-44-58mm-f-2"><a href="#Helios-44-58mm-f-2" class="headerlink" title="Helios-44 58mm f&#x2F;2"></a>Helios-44 58mm f&#x2F;2</h3><p>这个镜头就真的纯粹是当做玩具收来的了, 毕竟价格真的够便宜, 也很容易就能买到. 关于它的故事在网上已经遍地都是我就不再重复了. 由于光学缺陷而造成强烈的螺旋状焦外为无数爱好者津津乐道, 成片确实十分惊艳. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295613639" title="Helios-44"><img src="https://live.staticflickr.com/65535/51740199705_dd3cfa0ad2_h.jpg" alt="Helios-44"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>↑ Helios-44 的相册</p>
-<p>这枚镜头的光圈控制是由两个光圈环来进行的: 在镜头最前端标有光圈值, 手感非常紧实, 旋转到整档时会有段位感的环是光圈预设环, 旋转它并不会改变镜头当前的光圈; 在它下方没有标注数字, 只有纹路的环则是真正的光圈环, 它完全没有段位感, 旋转它可以在最大光圈和之前预设的光圈之间无级调整. 我一般是把预设光圈放在 f&#x2F;5.6 的状态, 反正实际使用的时候基本都是全开以追求那独特的焦外散景. </p>
-<p>这枚镜头由于在不同时期由不同的工厂生产, 不同批次之间区别还挺大, 某种程度上也产生了一种 Helios-44 版本学[<a href="https://www.youtube.com/watch?v=qnJ23-i6bgw" title="The Helios 44-2 Lens Version You should Avoid Buying">2</a>]. 我只是纯粹捡便宜货好玩, 也不敢说自己对此有多么了解, 但是这些不同版本的 Helios-44 据我了解光学性能应该都十分类似, 最多就是后期版本镀膜可能有所变化和光圈叶片数量不同而已. 当然另一个问题就是这些 Helios-44 的成色大多十分糟糕, 成色好的则被炒得价格奇高, 失去了它作为玩具的价值. </p>
-<h3 id="SMC-Pentax-L-1-1-9-43mm-Special"><a href="#SMC-Pentax-L-1-1-9-43mm-Special" class="headerlink" title="SMC Pentax-L 1:1,9 43mm Special"></a>SMC Pentax-L 1:1,9 43mm Special</h3><p>某种意义上算是一枚邪典镜头? 曾经是单反上最小体积下画质最好的 FA 43&#x2F;1.9 Limited 被做成螺口特别版之后既失去了自动对焦, 体积上的优势也荡然无存, 尽管光学上依然是十分优异的, 但是整个镜头的存在意义变得十分迷幻, 在网上也几乎找不到相关的资料. 坊间留下的传闻基本都是因为宾得本来就喜欢做各种 ｢限定｣､ ｢特别｣ 镜头, 当时饱受好评的 FA 43&#x2F;1.9 自然逃不过特别版的魔爪, 于是就有了这支十分迷幻的 43 special. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51759971970/in/album-72177720295596293/" title="SMC 43/1.9"><img src="https://live.staticflickr.com/65535/51759971970_6b48846d45_h.jpg" alt="SMC 43/1.9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这镜头的镜筒设计和普通的徕卡镜头并无区别, 对焦环的指柄弧面手感十分舒适, 对焦环本身顺滑平稳, 对焦手感上佳, 在 R-D1s 的 APS-C 传感器上等效 65mm 也更接近标准焦段的效果. 但这枚镜头附赠的镜头盖是螺口镜头盖, 平常使用十分不便, 我基本都是把镜头盖单独丢在包里的口袋, 用一枚紫外滤镜来充作镜头保护. 和徕卡的 Summicron 50 类似, 它也有内置的遮光罩, 但是这个遮光罩的拉出手感与徕卡比就相去甚远, 略显生涩. </p>
-<p>还有一个可能逼死强迫症的问题是, 使用 L39 to M mount 转接环把这枚镜头转接到 R-D1s 上的时候, 完全拧紧后镜头刻度的位置并不是朝着 12 点方向的, 而是在一个 11 点左右的位置, 如果说视觉上的观感还算可以接受的话, 由此导致的对焦拨杆的默认位置和其他 M 口镜头有所偏移, 实在是非常难以接受了⋯⋯ </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51792613841/in/dateposted/" title="R-D1s"><img src="https://live.staticflickr.com/65535/51792613841_7dddb3c9bf_h.jpg" alt="R-D1s"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这个镜头还附赠了一个 43&#x2F;50mm 线框的取景器, 就是之前我放在 GR IIIx 上的那个. 虽然它并不是专为 GR IIIx 设计的, 但是它们搭配起来却莫名合拍, 所以我现在就直接把它挂在 GR IIIx 上用了. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51792742923/in/album-72177720295596293/" title="43/50 finder"><img src="https://live.staticflickr.com/65535/51792742923_ef9122c804_h.jpg" alt="43/50 finder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Voigtlander-40mm-f-2-SL-II"><a href="#Voigtlander-40mm-f-2-SL-II" class="headerlink" title="Voigtlander 40mm f&#x2F;2 SL II"></a>Voigtlander 40mm f&#x2F;2 SL II</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295635305" title="Pentax 43/1.9 L Special"><img src="https://live.staticflickr.com/65535/51791054678_3122d1e24d_h.jpg" alt="Pentax 43/1.9 L Special"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>一枚在迷你身材和优异画质两个领域都取得夺目成就的镜头. 它的体积介于尼康的 50&#x2F;1.8S 与 45&#x2F;2.8P 之间 —— <strong>24.5mm</strong>, 而它的光学素质远在 45&#x2F;2.8P 之上, 比 50&#x2F;1.8S 也好上不少, 虽然不如 50&#x2F;1.8S 那么便宜但也还算是不错的价格, 简直是一枚完美的镜头. 可惜不知道确善能脑子哪根筋搭错了, 几年前停产了这款镜头, 上线了一款光学结构相同 (据我所知应该是) 但是体积增大不少 (厚度变成了 37.5mm) 的新款, 让我有点担心这枚镜头以后会开始涨价. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51755586693/in/album-72177720295596293/" title="GR0003471-80 sec at f - 2.8"><img src="https://live.staticflickr.com/65535/51755586693_5426366b4a_h.jpg" alt="GR0003471-80 sec at f - 2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这镜头在结构上更接近 50&#x2F;1.8S, 光圈环和对焦环之间有一条纤细带纹路的固定结构, 这使得它的装卸手感比 45&#x2F;2.8P 要好得多. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51807443911/in/album-72177720295596293/" title="Nikon Df w/ Voigtlander 40/2"><img src="https://live.staticflickr.com/65535/51807443911_85aa5834df_h.jpg" alt="Nikon Df w/ Voigtlander 40/2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这枚镜头采用了一枚双面非球面镜片, 各种像差都得到了不错的修正, 除了全开光圈在对焦无限远时分辨率略有些下降之外, 基本可以说是完美的 —— 就连全开光圈时的画面边缘都相当锐利, 细节丰富. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791020833/in/album-72177720295637523/" title="DSC_15031-160 sec at f - 2.0"><img src="https://live.staticflickr.com/65535/51791020833_1acf6e4df6_h.jpg" alt="DSC_15031-160 sec at f - 2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>它唯一的缺陷, 或者说特色, 却也正是由这枚非球面镜片引起: 它的 bokeh 有非常明显的 ｢洋葱圈｣. 只要画面中出现 bokeh, 洋葱圈就相当明显, 觉得它是特色还是缺陷就看个人爱好了. 就我个人来说洋葱圈是比 ZM 50&#x2F;1.5 的锯盘要容易接受. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791282894/in/album-72177720295637523/" title="w/ closeup filter ƒ/2.0"><img src="https://live.staticflickr.com/65535/51791282894_9277e0db6f_h.jpg" alt="w/ closeup filter ƒ/2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>但是它在光圈上还有一个优点: 它有着独特的光圈叶片设计, 让它在 f&#x2F;5.6 时也可以呈现圆形光圈, 如果你对圆形 bokeh ball 有奇怪的追求的话, 这枚镜头应该会非常对你的胃口. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51806487157/in/album-72177720295596293/" title="Voigtlander 40/2"><img src="https://live.staticflickr.com/65535/51806487157_f88550ffee_h.jpg" alt="Voigtlander 40/2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>以上就是我目前收集的 ｢标准镜头｣ 们了, 如果还有机会的话我希望可以买一个福伦达的 Nokton 50&#x2F;1.5 VM, 不过这个需求并没有很强烈, 不知何时才会成真. </p>
-]]></content>
-      <tags>
-        <tag>Gadget, Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN —— 一些尼康老鏡頭</title>
-    <url>/2023/12/14/MoreNikkorVintageLens/</url>
-    <content><![CDATA[<p>這一年來我又陸續購入了一些老鏡頭, 其中比較值得一提的是 Nikkor-P Auto 1:2.5 f&#x3D;105mm, Nikkor-S･C Auto 55mm ƒ&#x2F;1.2 和 AI Micro-Nikkor 55mm ƒ&#x2F;2.8 S. 從命名上也可以看出這幾枚鏡頭來自六､ 七十年代, 都是比父上大人還要年長的存在了. 它們都是那個年代裡極具特色的存在, 即使放在今天也絲毫不會過時的有趣鏡頭.</p>
-<h3 id="｢阿富汗少女｣-之前"><a href="#｢阿富汗少女｣-之前" class="headerlink" title="｢阿富汗少女｣ 之前"></a>｢阿富汗少女｣ 之前</h3><p>提到尼康的 105mm 鏡頭, 大概最為廣為人知的就是拍下了那張著名阿富汗少女肖像的 <strong>AI Nikkor 105mm ƒ&#x2F;2.5</strong>. 網上關於她的介紹數不勝數, 它也的確是一枚配得上 Steve McCurry 的大師之器. 但我手頭的 105&#x2F;2.5 並不是這枚傳奇鏡頭, 而是在光學設計與外觀上都略有差異的 Auto 版. Auto 版設計的年代更為久遠 (1966), 雖然也是五枚鏡片構成, 但構造是三組五片 (AI 版則是四組五片).</p>
-<p>儘管是六十年代的設計, 但它依然是一枚以今天的目光來看也毫不遜色於真正阿富汗少女鏡的鏡頭. 除了全開光圈時畫面周邊銳度略微下降以及高光處容易產生較為明顯的紫邊之外, 它的各項表現都十分優秀. 不过它也有很符合六十年代老镜头的弱点: 全开光圈时距离越远分辨率下降得越快, 50 米开外时主体会显得毛绒绒的, 这时候如果想获得锐利的画面还是收一点光圈才好.</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720313371291" title="Nikkor 105/2.5"><img src="https://live.staticflickr.com/65535/53397363254_cf6ffe676a_h.jpg" alt="Nikkor 105/2.5"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>但是 Auto 鏡頭於我而言最大的優勢其實是外觀 —— Auto 版是經典的銀嘴設計, 對焦環也是全金屬齒輪狀凸起, 看起來非常優雅; 而 AI 版 105&#x2F;2.5 則改為了黑色鏡筒前端, 對焦環也變成了塑膠顆粒, 多了一些現代感而失去了 Auto 版的獨特感.</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53397081966/in/album-72177720295596293/" title="GRPF071140-2"><img src="https://live.staticflickr.com/65535/53397081966_1e74c1afd5_h.jpg" alt="GRPF071140-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在拿到這枚鏡頭之前, 我手上焦距最長的鏡頭是 AF 135&#x2F;2 DC. 但是我從來沒有想過拿它掛機, 畢竟它真的太大太沉. 這幾天我拿這枚 Auto 105 掛機卻意外發現效果不錯, 它的重量並沒有很沉 (370g), 對於我這種不太願意拉近距離拍照的人來說是個很好的捷徑. 之前總擔心對焦失敗的問題似乎也並沒有很嚴重, 大概是這麼多年來我已經完全習慣了手動對焦吧. 說道手動對焦, 我還挺期待 Zf 的手動對焦輔助⋯⋯</p>
-<h3 id="｢試錯者｣-的樂趣"><a href="#｢試錯者｣-的樂趣" class="headerlink" title="｢試錯者｣ 的樂趣"></a>｢試錯者｣ 的樂趣</h3><p>在馬上就要進入 2024 年的當下, 各種國產 ƒ&#x2F;0.95 鏡頭已經層出不窮, 就算是只看尼康自家的大光圈鏡頭, 這枚誕生於 1967 年的 Auto 55mm ƒ&#x2F;1.2 都是極有可能被很多人忘卻的一枚 —— 畢竟在它後面就是大名鼎鼎的 AI Noct-Nikkor 58mm ƒ&#x2F;1.2 (1977). 要說 55&#x2F;1.2 的光芒完全被 58&#x2F;1.2 掩蓋也的確是不冤枉, 它們的畫質的確是雲泥之別, 55&#x2F;1.2 在光圈全開的狀態下彗差飛起, 尤其是在對無限遠對焦的時候全畫面畫質都無法直視⋯⋯</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720313397009" title="Nikkor 55/1.2"><img src="https://live.staticflickr.com/65535/53397376739_f2ba27a04a_h.jpg" alt="Nikkor 55/1.2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>左右翻頁可以檢視收光圈之後對比效果</p>
-</blockquote>
-<p>實際上, 若是看一眼尼康開發大口徑 50mm 鏡頭的歷史, 就會發現這枚 55mm ƒ&#x2F;1.2 算是一枚試錯意味非常強烈的鏡頭. 在它之前, 尼康剛剛攻克了 50mm ƒ&#x2F;1.4 (1962), 對於在標準鏡焦段上製作更大口徑躍躍欲試. 有了這枚 55&#x2F;1.2 作為試錯的鋪墊, 後來的 Noct-Nikkor (1977) 便改進了光學公式, 修正了彗差巨大的問題, 使得全開狀態變得可用; 而幾年後 (1978) 的 AI 50mm ƒ&#x2F;1.2 更是幾乎完全沿用了 55&#x2F;1.2 光學公式. 當然, 由於這幾年裡非球面玻璃的研磨､ 校驗技術也得到了長足的進步, 使得 Noct 58 和 50&#x2F;1.2 鏡頭可以採用更高精度的非球面鏡片校正相差, 這就顯得 55&#x2F;1.2 ｢試錯者｣ 的身份更加醒目了.</p>
-<p>強到沒邊的彗差和近距離攝影時的像差使得全開光圈狀態下在無限遠和極近距離基本上都是無法使用的狀態, 但在人像距離上倒是療效奇好. ƒ&#x2F;1.2 大光圈使背景分離度強烈, 雖然彗差強到沒邊, 這枚鏡頭的場曲和球差都意外地控制得很好, 光斑也非常乾淨, 拿來拍夜景人像十分合適. 光圈收到 5.6 之後拿來應付一下風光拍攝也是可以的, 邊緣銳度其實相當不錯, 但這種狀況下好像沒有特地選擇又大又笨重的它 (420g) 來掛機的理由⋯⋯? 我的 <a href="https://novadng.studio/2022/01/02/Standard_Obsession/">AI Nikkor 50mm ƒ&#x2F;1.8S</a> (1980, 170g) 可香了呢.</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53280396500/in/album-72177720295596293/" title="DSC08077Voigtländer Heliar 40mm ƒ-2.8 Asperical"><img src="https://live.staticflickr.com/65535/53280396500_08f144a7c1_h.jpg" alt="DSC08077Voigtländer Heliar 40mm ƒ-2.8 Asperical"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>最後額外提一句: 這枚鏡頭的對焦環緊實程度比其他尼康手動鏡頭要更強, 幾乎難以用一根手指撥動, 我搜了一下發現這應該是 by design 而不是個體差, <a href="https://www.kenrockwell.com/nikon/55mm-f12.htm#ergo">即使是更晚的 AI 版本也是如此</a>. 這既是優點也是缺點, 它可以讓我稍微不用那麼擔心事先調整好的對焦距離被不小心碰歪 (105&#x2F;2.5 那超級絲滑的對焦環的缺點就是很容易不小心碰歪焦距), 缺點是快速對焦幾乎是不可能完成的任務. </p>
-<h3 id="長盛不衰的微距鏡"><a href="#長盛不衰的微距鏡" class="headerlink" title="長盛不衰的微距鏡"></a>長盛不衰的微距鏡</h3><p>我其實很少拍攝微距. 但是因為最近開始了膠片攝影, 為了翻拍膠片才動起了購買專門的微距鏡的念頭. 既然提到微距和尼克爾, 那第一個在腦海中浮現的候選項自然就是這 Micro-Nikkor 55&#x2F;2.8 了. 它常年以來都佔據著 ｢最銳利 F 口鏡頭｣ 的寶座, 而且甚至時至今日仍在生產, 是時候讓我親眼驗證一下這 ｢活著傳奇｣ 了.</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720312104557" title="Nikkor 55/2.8"><img src="https://live.staticflickr.com/65535/53276546369_edb98bb64f_h.jpg" alt="Nikkor 55/2.8"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>的確是非常的銳利, 哪怕是在全開光圈的條件下. 很多時候反倒是因為我無法穩定地拍攝而造成了畫面的模糊. 不過只用磨砂玻璃來確認對焦也的確是很不利, 如果 Df 可以更簡單地更換對焦屏就好了⋯⋯</p>
-<p>說句實話, 我確實不太喜歡這枚鏡頭的外觀. 一來我本就更中意 Auto 鏡頭的對焦環風格, 二來當時尼康為了宣傳同時期推出的近攝環在 55&#x2F;2.8 的鏡筒上額外添加了 ｢附帶近攝環之後的放大倍率｣, 於我而言完全是無用資訊且破壞了鏡身的一體感. 不過反正這枚鏡頭作為微距鏡平時也不太可能有機會被用作掛機出門, 所以這點問題倒很容易忍了.</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53272078094/in/album-72177720295596293/" title="DSC08065Voigtländer Heliar 40mm ƒ-2.8 Asperical"><img src="https://live.staticflickr.com/65535/53272078094_6fdf984291_h.jpg" alt="DSC08065Voigtländer Heliar 40mm ƒ-2.8 Asperical"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<hr>
-<p>最後再來一張我手頭全部 F 鏡的全家福吧:</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53279042352/in/album-72177720295596293/" title="GRPF0634-Enhanced-NR40-2"><img src="https://live.staticflickr.com/65535/53279042352_004006af63_h.jpg" alt="GRPF0634-Enhanced-NR40-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>(拍完之後才意識到 Voigtländer Ultron 40mm ƒ&#x2F;2 SL 被裝在 Pen-F 上掛機, 忘記拍進來了⋯⋯ 也罷, 它長得太不尼康了就不讓它入鏡了 wwwwww)</p>
-]]></content>
-      <tags>
-        <tag>Gadget, Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
-    <url>/2022/09/10/LM-EA9/</url>
-    <content><![CDATA[<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52326554321/in/dateposted/" title="TechArt LMEA9 + Voigtländer Heliar 40/2,8 VM"><img src="https://live.staticflickr.com/65535/52326554321_76a9ecf951_k.jpg" alt="TechArt LMEA9 + Voigtländer Heliar 40/2,8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022/09/09/Standard_Obsession_%E2%85%A1/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
-<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52346586710/in/dateposted/" title="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"><img src="https://live.staticflickr.com/65535/52346586710_0404371f4b_z.jpg" alt="Voigtländer Close Focus Adapter, LM-EA9, Voigtländer Helliar 40/2.8 VM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
-<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
-<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
-<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
-<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
-<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 热靴金属压片有一個额外突出的部分, 安装在索尼/尼康等其他相机热靴上时均无法启用, 着实非常可惜 (如果你胆子大可以把这个突出打磨掉, 操作得当的话不会影响使用).</p>
+<p>Pen-F 对 SD 卡的读写速度体感非常慢, 同一张卡 Pen-F 拍摄和删除照片的速度都比 Df/α7C 慢很多 (尚未在 GR 上测试同一张卡, 但估计也是比 GR 慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对 SD 卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为 Pen-F 的 UI 导致了这种迟缓.</p>
+<p>顺便, 如果你在使用索尼的 ToughCard, 你会发现 Pen-F 的卡槽和 ToughCard 结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖.</p>
+<p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15/1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用.</p>
+<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯</p>
 ]]></content>
       <tags>
         <tag>Gadget, Photography</tag>
@@ -292,41 +222,143 @@
   <entry>
     <title>Photography is FUN —— Standard Obsession Ⅱ</title>
     <url>/2022/09/09/Standard_Obsession_%E2%85%A1/</url>
-    <content><![CDATA[<p>这篇文章主要是补完一些这半年里我新入手的标准镜, 它们分别是 Voigtländer 40&#x2F;2.8, Voigtländer 50&#x2F;1.5 Ⅰ &amp; Ⅱ, 还有索尼 FE 40&#x2F;2.5. </p>
-<h3 id="Voigtlander-Heliar-40-2-8-VM"><a href="#Voigtlander-Heliar-40-2-8-VM" class="headerlink" title="Voigtländer Heliar 40&#x2F;2.8 VM"></a>Voigtländer Heliar 40&#x2F;2.8 VM</h3><p>如果你看过上一篇 Standard Obsession 可能会觉得奇怪, 怎么又有一个 Voigtländer 40? 而且光圈还小了一档? 这个问题的答案往下看就会明白了⋯⋯</p>
+    <content><![CDATA[<p>这篇文章主要是补完一些这半年里我新入手的标准镜, 它们分别是 Voigtländer 40/2.8, Voigtländer 50/1.5 Ⅰ &amp; Ⅱ, 还有索尼 FE 40/2.5.</p>
+<h3 id="Voigtlander-Heliar-40-2-8-VM">Voigtländer Heliar 40/2.8 VM</h3>
+<p>如果你看过上一篇 Standard Obsession 可能会觉得奇怪, 怎么又有一个 Voigtländer 40? 而且光圈还小了一档? 这个问题的答案往下看就会明白了⋯⋯</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52167625354/in/dateposted/" title="40/2.8"><img src="https://live.staticflickr.com/65535/52167625354_d6761f2db5_o.jpg" alt="40/2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这实在是一枚值得大书特书的镜头, 然而网上却鲜见讨论, 令人惊讶. Heliar 40&#x2F;2.8 虽然是一枚 M 口镜头, 但可以说唯独是不能用在原生 M 口的机器上 ——这枚镜头在外形上借鉴了徕卡经典的缩头设计, 在 2022 年看起来十分别致, 但它却不具备对焦结构, 必须靠带有螺纹线圈的转接环来实现对焦. </p>
+<p>这实在是一枚值得大书特书的镜头, 然而网上却鲜见讨论, 令人惊讶. Heliar 40/2.8 虽然是一枚 M 口镜头, 但可以说唯独是不能用在原生 M 口的机器上 ——这枚镜头在外形上借鉴了徕卡经典的缩头设计, 在 2022 年看起来十分别致, 但它却不具备对焦结构, 必须靠带有螺纹线圈的转接环来实现对焦.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51971409160/in/album-72177720295596293/" title="Alpha 7c + Heliar 40/2.8"><img src="https://live.staticflickr.com/65535/51971409160_9235e8a696_o.jpg" alt="Alpha 7c + Heliar 40/2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>缩起状态下它仅仅伸出卡口 <strong>12.5mm</strong>, 可以说是前所未有的极致轻薄了 (相较之下尼康的 45&#x2F;2.8P 的 <strong>17mm</strong> 显得黯然失色). 完全展开后则变成 21.5mm, 依然极为小巧. </p>
-<p>确善能在设计这枚镜头时的初衷只是将它作为自家近摄环的配件使用, 所以没有加入对焦机构, 使得它在原生 M 口上只能固定在无限远. 而得益于现代无反相机极短的法兰距, 几家主流无反厂商都有不错的近摄环, 借助这些近摄环 Heliar 40&#x2F;2.8 即可获得正常的拍摄能力. 配合确善能自家的 VM-E 近摄环, 它最近可以对焦到 48cm; 配合其他家&#x2F;卡口近摄环时的最近对焦距离则各不相同, 但基本上都可以满足日常使用需求. </p>
+<p>缩起状态下它仅仅伸出卡口 <strong>12.5mm</strong>, 可以说是前所未有的极致轻薄了 (相较之下尼康的 45/2.8P 的 <strong>17mm</strong> 显得黯然失色). 完全展开后则变成 21.5mm, 依然极为小巧.</p>
+<p>确善能在设计这枚镜头时的初衷只是将它作为自家近摄环的配件使用, 所以没有加入对焦机构, 使得它在原生 M 口上只能固定在无限远. 而得益于现代无反相机极短的法兰距, 几家主流无反厂商都有不错的近摄环, 借助这些近摄环 Heliar 40/2.8 即可获得正常的拍摄能力. 配合确善能自家的 VM-E 近摄环, 它最近可以对焦到 48cm; 配合其他家/卡口近摄环时的最近对焦距离则各不相同, 但基本上都可以满足日常使用需求.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52167625369/in/dateposted/" title="50/1.5 II, 35/2, 40/2.8"><img src="https://live.staticflickr.com/65535/52167625369_9277d996bf_o.jpg" alt="50/1.5 II, 35/2, 40/2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>既然没了对焦机构, 它身上唯一剩下的操作就只有光圈环了. 这也是它挺大的一个体验短板 —— 它的光圈环是无极转动, 基本不可能通过盲操作改变光圈到一个确定值; 而因为近摄环大抵都不带有距离刻度, 因此估焦也变得几乎不可能完成, 可以说是牺牲极大了. </p>
-<p>既然谈到了缺点那就顺便说说它的另一个问题: 虽然随镜头附带了两个遮光罩和两个镜头盖, 但筒形遮光罩一装上这镜头最大的优势便彻底消失了, 而穹形遮光罩配合的镜头盖是螺纹旋入式, 使用上略有些不便, 而且基本上每次旋开镜头盖时光圈都会被重置到 2.8, 如果你习惯 f&#x2F;4 之类的其他值或许会觉得很烦. </p>
-<p>作为一枚只有五片三组简单而传统结构的镜头, 虽然有一枚非球面镜片加持, 它的画质还是很符合我们对这类镜头的刻板印象: 无限远全开光圈时中心尚算锐利, 边缘画质有所下降, 收缩光圈边缘画质提升, 大约在 f&#x2F;8 时达到最佳; 近距离对焦时焦外有不太明显的旋焦; f&#x2F;5.6 以上的大光圈时 LoCA 严重, 建议合理运用扬长避短. </p>
+<p>既然没了对焦机构, 它身上唯一剩下的操作就只有光圈环了. 这也是它挺大的一个体验短板 —— 它的光圈环是无极转动, 基本不可能通过盲操作改变光圈到一个确定值; 而因为近摄环大抵都不带有距离刻度, 因此估焦也变得几乎不可能完成, 可以说是牺牲极大了.</p>
+<p>既然谈到了缺点那就顺便说说它的另一个问题: 虽然随镜头附带了两个遮光罩和两个镜头盖, 但筒形遮光罩一装上这镜头最大的优势便彻底消失了, 而穹形遮光罩配合的镜头盖是螺纹旋入式, 使用上略有些不便, 而且基本上每次旋开镜头盖时光圈都会被重置到 2.8, 如果你习惯 f/4 之类的其他值或许会觉得很烦.</p>
+<p>作为一枚只有五片三组简单而传统结构的镜头, 虽然有一枚非球面镜片加持, 它的画质还是很符合我们对这类镜头的刻板印象: 无限远全开光圈时中心尚算锐利, 边缘画质有所下降, 收缩光圈边缘画质提升, 大约在 f/8 时达到最佳; 近距离对焦时焦外有不太明显的旋焦; f/5.6 以上的大光圈时 LoCA 严重, 建议合理运用扬长避短.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300365034" title="Voigtländer Heliar 40/2,8"><img src="https://live.staticflickr.com/65535/52199016093_6ba5a2fe83_h.jpg" alt="Voigtländer Heliar 40/2,8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>虽然这枚镜头理论上来说采用了现代的多层镀膜, 但在遇到比较苛刻的光线时依然会产生较强的眩光. 个人认为这是十分有个性的, 但不可否认这也是光学缺陷的体现. 话虽如此, 在强烈逆光下它依然保留了不错的细节, 可以说反而是很值得称道了. </p>
-<p>今年确善能推出了一款光学结构完全相同, 但是取消了缩头设计加回对焦结构的 <a href="https://www.cosina.co.jp/voigtlander/vm-mount/heliar-40mm-f2-8-aspherical/">Heliar 40&#x2F;2.8 Asperical</a>, 个人认为基本上失去了这镜头最大的特色了, 没什么意思, 就不推荐购买了. 缩头的 Heliar 40&#x2F;2.8 去年停产了, 但是二手市场上应该还是可以买到品相不错的美品, 有兴趣的话可以碰碰运气. </p>
-<h3 id="Voigtlander-Nokton-50-1-5-Ⅰ-Ⅱ-MC-VM"><a href="#Voigtlander-Nokton-50-1-5-Ⅰ-Ⅱ-MC-VM" class="headerlink" title="Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ MC VM"></a>Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ MC VM</h3><blockquote>
-<p>我坦白: 买初代纯粹是馋她身子! </p>
+<p>虽然这枚镜头理论上来说采用了现代的多层镀膜, 但在遇到比较苛刻的光线时依然会产生较强的眩光. 个人认为这是十分有个性的, 但不可否认这也是光学缺陷的体现. 话虽如此, 在强烈逆光下它依然保留了不错的细节, 可以说反而是很值得称道了.</p>
+<p>今年确善能推出了一款光学结构完全相同, 但是取消了缩头设计加回对焦结构的 <a href="https://www.cosina.co.jp/voigtlander/vm-mount/heliar-40mm-f2-8-aspherical/">Heliar 40/2.8 Asperical</a>, 个人认为基本上失去了这镜头最大的特色了, 没什么意思, 就不推荐购买了. 缩头的 Heliar 40/2.8 去年停产了, 但是二手市场上应该还是可以买到品相不错的美品, 有兴趣的话可以碰碰运气.</p>
+<h3 id="Voigtlander-Nokton-50-1-5-Ⅰ-Ⅱ-MC-VM">Voigtländer Nokton 50/1.5 Ⅰ &amp; Ⅱ MC VM</h3>
+<blockquote>
+<p>我坦白: 买初代纯粹是馋她身子!</p>
 </blockquote>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/52001874844/in/album-72177720295596293" title="Voigtlander Nokton 50/1,5"><img src="https://live.staticflickr.com/65535/52001874844_bb4fff7d10_b.jpg" alt="Voigtlander Nokton 50/1,5"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这设计未免也太帅了吧! 齿轮一般的对焦环真的是越看越好看, 而适当的凹陷配合精良的做工使得它的对焦体验无比优秀, </p>
+<p>这设计未免也太帅了吧! 齿轮一般的对焦环真的是越看越好看, 而适当的凹陷配合精良的做工使得它的对焦体验无比优秀,</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300345080" title="Voigtländer Nokton 50/1.5"><img src="https://live.staticflickr.com/65535/52198327895_0f316981ff_h.jpg" alt="Voigtländer Nokton 50/1.5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>哪怕只是握着把玩都完全爱不释手. 反观隔壁的二代⋯⋯ </p>
+<p>哪怕只是握着把玩都完全爱不释手. 反观隔壁的二代⋯⋯</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51818416106/in/album-72177720295596293/" title="Voigtlander 50/1.5 Aspherical II"><img src="https://live.staticflickr.com/65535/51818416106_95df17d2f6_o.jpg" alt="Voigtlander 50/1.5 Aspherical II"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这二代就长得十分一般了, <a href="https://www.cosina.co.jp/wp/wp-content/uploads/2021/09/VM-50_15VL_01-scaled.jpg" title="最右">铬铜特别版</a>的熊猫配色还可以说有些特色, 但贵出的价格我觉得不值得. 抛开外观不谈, 二代的使用手感可以说是全面退步了 —— 光圈环变细小了, 虽然多了两个小凸起, 但是这两片薄薄的凸起握起来手感也并不好, 而且只有那凸起上刻有防滑纹路, 其他部分全部光溜溜, 远不如一代的实用. </p>
+<p>这二代就长得十分一般了, <a href="https://www.cosina.co.jp/wp/wp-content/uploads/2021/09/VM-50_15VL_01-scaled.jpg" title="最右">铬铜特别版</a>的熊猫配色还可以说有些特色, 但贵出的价格我觉得不值得. 抛开外观不谈, 二代的使用手感可以说是全面退步了 —— 光圈环变细小了, 虽然多了两个小凸起, 但是这两片薄薄的凸起握起来手感也并不好, 而且只有那凸起上刻有防滑纹路, 其他部分全部光溜溜, 远不如一代的实用.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300345135" title="Voigtländer Nokton 50/1.5 II"><img src="https://live.staticflickr.com/65535/52198339010_4ecf7aa9e0_h.jpg" alt="Voigtländer Nokton 50/1.5 II"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>对焦环就更不用提了, 虽然我理解细密的防滑纹路有助于精密对焦, 但这纹路摸起来实在是扎手, 手感极差, 操作便捷度上更是和一代差了十万八千里, 更远不如其他 M 镜头常见的对焦月牙, 可以说是我用过的手动镜头里对焦手感最差的一枚了, 可以说除了小 (长 37mm) 之外一无是处了 —— 问题是论小, 它也小不过 Heliar 40&#x2F;2.8 呀. 强烈不推荐购买. </p>
-<h3 id="Sony-FE-40mm-F2-5-G"><a href="#Sony-FE-40mm-F2-5-G" class="headerlink" title="Sony FE 40mm F2.5 G"></a>Sony FE 40mm F2.5 G</h3><p>感觉在中文圈几乎所有评测都在吼 ｢不要买它! 不要买它! 不要买它!｣ 然而我还是买了, 原因无它, 还是因为它小. </p>
+<p>对焦环就更不用提了, 虽然我理解细密的防滑纹路有助于精密对焦, 但这纹路摸起来实在是扎手, 手感极差, 操作便捷度上更是和一代差了十万八千里, 更远不如其他 M 镜头常见的对焦月牙, 可以说是我用过的手动镜头里对焦手感最差的一枚了, 可以说除了小 (长 37mm) 之外一无是处了 —— 问题是论小, 它也小不过 Heliar 40/2.8 呀. 强烈不推荐购买.</p>
+<h3 id="Sony-FE-40mm-F2-5-G">Sony FE 40mm F2.5 G</h3>
+<p>感觉在中文圈几乎所有评测都在吼 ｢不要买它! 不要买它! 不要买它!｣ 然而我还是买了, 原因无它, 还是因为它小.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51970844721/in/dateposted/" title="Alpha 7c + 40/2.5G"><img src="https://live.staticflickr.com/65535/51970844721_bc98851620_o.jpg" alt="Alpha 7c + 40/2.5G"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>虽然比起宾得 43&#x2F;1,9 之类的镜头来说它确实算不上小, 但是在 FE 口自动对焦镜头里它却已经算是很迷你的存在了. 好吧我知道 35&#x2F;2,8 ZA 比它小, 但是 35&#x2F;2,8 已经是一款七八年的老镜头了, 画质和对焦速度有些落后了. 我买自动镜头就是为了获得一个最无须操心的使用体验, 没理由去选择一款已经快要被完全淘汰的镜头. </p>
-<p>这枚镜头可以算是麻雀虽小五脏具全的典范了: 它有在现代自动镜头上愈发罕见的光圈环 (但是索尼 G&#x2F;GM 镜头上都保留了下来), 一个自定义按钮, AF&#x2F;MF 开关, 光圈环限位开关, 甚至可以说它的可操作部分有点太多了使它不大的镜筒看起来有些拥挤. 这些特色也使得它在三阳等其他家副厂面前能扬眉吐气, 唯一可以和它在操控性上一争高下的只有适马的 45&#x2F;2,8 DG DN, 但 —— 这个时候, 40&#x2F;2,5 的画质又比 45&#x2F;2,8 好出可以感知的那么一截, 成为了决定性因素⋯⋯ </p>
+<p>虽然比起宾得 43/1,9 之类的镜头来说它确实算不上小, 但是在 FE 口自动对焦镜头里它却已经算是很迷你的存在了. 好吧我知道 35/2,8 ZA 比它小, 但是 35/2,8 已经是一款七八年的老镜头了, 画质和对焦速度有些落后了. 我买自动镜头就是为了获得一个最无须操心的使用体验, 没理由去选择一款已经快要被完全淘汰的镜头.</p>
+<p>这枚镜头可以算是麻雀虽小五脏具全的典范了: 它有在现代自动镜头上愈发罕见的光圈环 (但是索尼 G/GM 镜头上都保留了下来), 一个自定义按钮, AF/MF 开关, 光圈环限位开关, 甚至可以说它的可操作部分有点太多了使它不大的镜筒看起来有些拥挤. 这些特色也使得它在三阳等其他家副厂面前能扬眉吐气, 唯一可以和它在操控性上一争高下的只有适马的 45/2,8 DG DN, 但 —— 这个时候, 40/2,5 的画质又比 45/2,8 好出可以感知的那么一截, 成为了决定性因素⋯⋯</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/52073045500/in/dateposted/" title="Pentax-L 43/50 Finder"><img src="https://live.staticflickr.com/65535/52073045500_f630c6e7eb_o.jpg" alt="Pentax-L 43/50 Finder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>而且说道操控性, 很有趣的一点是当这枚镜头和我的宾得 43&#x2F;50 取景器一起使用时, 我可以通过取景器画面最下方看到当前的光圈值, 对于快速操作也大有帮助. </p>
-<p>至于画质, 作为一枚 2020 年才发布的镜头, 足够现代的光学设计理念带给了它非常强大的性能, 基本上我都是放心地全开光圈使用的, 除了有比较明显的紫边之外基本上没有任何光学缺陷了. 而它的机械性能则处于第一梯队, 自动对焦速度飞快, 也毫不犹豫, 配合 α7C 的对焦性能目前来说我还没遇到过失败的状况, 哪怕是在夜里对没有灯光直射的地点对焦也可以成功, 属于令人安心的性能怪兽. </p>
+<p>而且说道操控性, 很有趣的一点是当这枚镜头和我的宾得 43/50 取景器一起使用时, 我可以通过取景器画面最下方看到当前的光圈值, 对于快速操作也大有帮助.</p>
+<p>至于画质, 作为一枚 2020 年才发布的镜头, 足够现代的光学设计理念带给了它非常强大的性能, 基本上我都是放心地全开光圈使用的, 除了有比较明显的紫边之外基本上没有任何光学缺陷了. 而它的机械性能则处于第一梯队, 自动对焦速度飞快, 也毫不犹豫, 配合 α7C 的对焦性能目前来说我还没遇到过失败的状况, 哪怕是在夜里对没有灯光直射的地点对焦也可以成功, 属于令人安心的性能怪兽.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300365134" title="FE 40/2.5 G"><img src="https://live.staticflickr.com/65535/52198008387_b3c6c84b3c_b.jpg" alt="FE 40/2.5 G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>虽然在上篇里我提过之所以抛弃了 50&#x2F;1.8G 的一个原因就是它太现代, 太无趣了, 但是 40&#x2F;2,5G 在操控性上比 50&#x2F;1.8G 好上无数倍, 而金属的镜筒又使得它的操控感更上一层楼. 它甚至最后还具备一定的防滴能力可以防范遇到的小雨, 实在是非常令人安心. 现在 40&#x2F;2,5G 作为以备不时之需的最终防线待在我的包里. </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>目前来看我应该暂时不会收其它的标准镜头了 —— 尽管我很想这么说, 但是这几天 Meyer Optik 又发了新的 <a href="https://www.meyer-optik-goerlitz.com/en/lenses/biotar-58-f1.5-ii">Biotar 58&#x2F;1,5 II</a>… 咕, 比起我手上的那个 Helios-44, 这东西才是正牌货呀! 恐怕我对标准镜头的渴求一时半会儿还是无法停止吧⋯⋯ </p>
+<p>虽然在上篇里我提过之所以抛弃了 50/1.8G 的一个原因就是它太现代, 太无趣了, 但是 40/2,5G 在操控性上比 50/1.8G 好上无数倍, 而金属的镜筒又使得它的操控感更上一层楼. 它甚至最后还具备一定的防滴能力可以防范遇到的小雨, 实在是非常令人安心. 现在 40/2,5G 作为以备不时之需的最终防线待在我的包里.</p>
+<h3 id="结语">结语</h3>
+<p>目前来看我应该暂时不会收其它的标准镜头了 —— 尽管我很想这么说, 但是这几天 Meyer Optik 又发了新的 <a href="https://www.meyer-optik-goerlitz.com/en/lenses/biotar-58-f1.5-ii">Biotar 58/1,5 II</a>… 咕, 比起我手上的那个 Helios-44, 这东西才是正牌货呀! 恐怕我对标准镜头的渴求一时半会儿还是无法停止吧⋯⋯</p>
+]]></content>
+      <tags>
+        <tag>Gadget, Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— Standard Obsession</title>
+    <url>/2022/01/02/Standard_Obsession/</url>
+    <content><![CDATA[<p>就在不久之前, 我拿到了心心念念的 Voigtlander 40/2, 这是我手头第八个 ｢标准焦段｣ 的镜头了 (如果不算 SX-70 的等效 60mm 镜头的话) —— 之前的分别是 Nikkor 50/1.8G, Ricoh GR IIIx, Nikkor AI-S 50/1.8, Nikkor 45/2.8P, Zeiss ZM 50/1.5, Helios-44 58/2, Pentax 43/1.9. 用了这么久这些 ｢标准镜头｣, 我觉得可以写篇文章谈谈他们了.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51759346033/in/album-72177720295596293/" title="Pancakes"><img src="https://live.staticflickr.com/65535/51759346033_50c1c61e5f_h.jpg" alt="Pancakes"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><strong>Disclaimer</strong>: 我不是一个靠摄影吃饭的人, 我对器材的追求基本是乐趣 &gt; 性能, 虽然如果能同时满足两者自然是最好, 但通常需要满足这两者就得加钱, 所以⋯⋯</p>
+<h3 id="AF-S-Nikkor-50mm-f-1-8G">AF-S Nikkor 50mm f/1.8G</h3>
+<p>这是在购买 Df 的时候一同入手的套机头. 这枚 2011 年发布的镜头在我购买 Df 时 (2014 年) 算是非常新的设计了, 各种硬性指标都非常优秀. 前组在大部分时候都深深陷在镜筒中, 被保护得非常好, 绝大多数时候也不需要使用那个附带的笨拙而廉价的遮光罩. 它无言地陪伴我度过了六七年的时光, 经历了各种风吹雨打甚至还有一次摔落 (虽然只有不到半米的高度), 依旧可靠. 全塑料的外壳虽然看起来非常廉价而且非常容易脏, 但是也让它极为轻便. 尽管我现在已经不将它作为挂机镜头了, 它还是在我的包里会有一席之地.</p>
+<p>那么, 既然 50/1.8G 这么好, 为什么我会接下来买那么多焦段类似的其他镜头呢? 概括来说的话应该有三点:</p>
+<ul>
+<li>其一, 我对<a href="https://novadng.studio/2021/03/12/yearning-for-a-tiny-smartphone/">小设备</a>有着迷之执着 —— 然而在尼康单反上追求小好像从根本上就搞错了什么, 基本上单反比起微单就已经是庞然巨物了, 况且若是追求小当初我应该去买宾得才是, 现在再来后悔感觉也为时已晚⋯⋯ 但是 Df 又是唯一一台有着复古外观 + 操作方式的全画幅数码单反, 我还是非常喜欢它的.</li>
+<li>其次, 50/1.8G 是一枚几乎没有个性的镜头 —— 现代先进的光学设计基本抹去了所有可能出现的光学问题, 在成像几乎完美的同时也使得它几乎没有任何个性. 当然很多时候 ｢个性｣ 从现实的角度上来说其实都是光学缺陷, 但我们应该扬长避短而不是认为光学缺陷就是世界末日.</li>
+<li>最后, 算前一点的延续, 作为一个摄影爱好者, 我在追求记录时光的同时更想要的是从中寻求乐趣. 50/1.8G 在这方面可以说是一枚没有乐趣的镜头 —— 无论是成像还是操作都很无趣. 虽然 Df 机身为摄影提供了不少乐趣, 但我还是想追求更有趣的镜头.</li>
+</ul>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295618346" title="Cambridge tour"><img src="https://live.staticflickr.com/65535/51787672422_8aef1feb10_h.jpg" alt="Cambridge tour"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="AI-Nikkor-50mm-f-1-8S">AI Nikkor 50mm f/1.8S</h3>
+<p>在寻找迷你镜头的时候, 我第一个瞄准的就是 AI Nikkor 50mm f/1.8S.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51740205140/in/album-72177720295596293/" title="Nikon Pancake"><img src="https://live.staticflickr.com/65535/51740205140_856b9fb1b3_h.jpg" alt="Nikon Pancake"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在尼康的官方网站上有一个很有趣的专栏叫 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/index.html">｢尼克尔镜头的一千零一夜｣</a>, 其中就<a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0060/">介绍</a>了这枚非常小巧精致的镜头. 从光学的角度来看它算是 50/1.8G 的父辈, 但是没有自动对焦系统和省去了 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0063/">｢必要之恶｣</a>, 它的体积比起 50/1.8G 要小得多:</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51788971709/in/album-72177720295596293/" title="50/1.8G 50/1.8S 45/2.8P"><img src="https://live.staticflickr.com/65535/51788971709_696f0e6b8e_h.jpg" alt="50/1.8G 50/1.8S 45/2.8P"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>↑ 如前文所说变得脏兮兮的 50/1.8G, 用酒精棉都擦不干净, 是塑胶本身白化了</p>
+<p>虽然没有使用非球面镜片, 但是相对先进的光学设计带来了小巧的整体结构 —— 仅仅 <strong>27mm</strong> 的厚度, 而且在保证了较大光圈的前提下全开时相比 50/1.8G 并没有太大差距, 可用性极高. 而全金属的镜筒在手感上比全塑料的 50/1.8G 好上十万八千里, 尤其是顺滑的对焦环更是令人爱不释手.</p>
+<p>这枚镜头在当时作为推广入门级单反相机的伴生物 (Nikon 50mm f/1.8 Series E, 光学性能上只有镀膜有区别, 外壳换成了全塑料), 价格极其便宜, 由于产量巨大的关系存世量也极多, 属于便宜大碗的好镜头, 某种程度上我甚至想推荐所有尼康单反用户都入手一枚 —— 不过话虽如此, 老 AI-S 镜头和很多非旗舰机身都不兼容了, 如今它的实用价值确实日渐式微.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295624370" title="AI Nikkor 50/1.8S"><img src="https://live.staticflickr.com/65535/51790435845_248d954245_h.jpg" alt="AI Nikkor 50/1.8S"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>可惜我的这枚镜头在入手时光圈环就有些运作不畅, 经常会卡在一个近似 f/1.9 的位置, 导致 bokeh 产生奇怪的裁切, 不久前送修去了. 购买二手老头难免会遇到这样的状况, 只能说能去线下亲自摸一回的话可以避免很多这样的小问题.</p>
+<h3 id="AI-Nikkor-45mm-f-2-8P">AI Nikkor 45mm f/2.8P</h3>
+<p>比起海量生产, 便宜大碗的 50/1.8S, 这枚伴随着一台传说级别的机身 —— FM3A —— 而诞生的 45/2.8P 就相对来说没那么广为人知了. 我手上的 Df 在设计上有很多继承自 FM3A 的元素, 这也是让我觉得 45/2.8P 会是一个绝配的因素.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51738486367/in/album-72177720295596293/" title="Nikon Df"><img src="https://live.staticflickr.com/65535/51738486367_75c182d0b4_h.jpg" alt="Df & 45/2.8P"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这镜头本体比 50/1.8S 还要更薄, 真的是不折不扣的 pancake lens 了. 虽然不知道为什么尼康研发部门在已经有 50/1.8S 这个可以说极致轻薄的镜头的情况下还要再花费心思研发一款新的轻薄镜头⋯⋯ 难道是因为 1997 年时宾得推出了比 50/1.8S 薄 0.5mm, 光学素质更好, 而且还带自动对焦的 FA 43mm f/1.9 Limited? (笑) 尼康自己的开发人员也在一千零一夜里如此打趣:</p>
+<blockquote>
+<p>重厚長大のイメージのあるニッコールレンズだが [<a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">1</a>]</p>
+</blockquote>
+<p>直译就是尼克尔镜头总是给人留下又重又厚又长又大的印象 —— 很不幸的是时至今日除了 ｢重｣ 这一点因为换用了全塑料镜筒有所改善 (以牺牲了手感为代价), 另外三点毫无改善. 这时再看 45/2.8P 就显得有些无奈又好笑了.</p>
+<p>抛开历史和现实来看 45/2.8P, 这枚镜头无疑是非常有特色的: 它只有令人惊讶的 <strong>17mm</strong> 厚, 而为了保证对焦环手感, 镜筒基本直接被对焦环和光圈环一分为二, 导致它的装卸体验十分糟糕 (这点上 Voigtlander 40/2 就取得了更好的平衡, 下文会提到); 它在全开光圈的状态下画面中心分辨率相当可靠, 越靠近边缘则毫无意外地有些劣化, 而它光学上最大的弱点应该是彗差严重 —— 但这反而可以说是一种很有味道的特色, 只要你不试图用它来全开光圈拍建筑或者风光, 这个问题其实很难被注意到. f/2.8 的最大光圈其实对对焦准确度相对宽容, 虽然焦外的柔化也因此变得不那么强烈, 但是配合手感上佳的对焦环操作, 使用体验还是非常优秀的.</p>
+<p>45/2.8P 的另一大特色就是那形状奇异的遮光罩了. 尼康自己的开发者戏称它为 ｢藤壶遮光罩｣ (フジツボフード[<a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">1</a>]), 着实准确. 这个遮光罩允许我在大部分时间不使用镜头盖而不担心镜头前组镜片受到污染, 又几乎没有增加多少体积.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51739953379/in/album-72177720295596293/" title="Nikon Pancake"><img src="https://live.staticflickr.com/65535/51739953379_0304964559_h.jpg" alt="Nikon Pancake"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>有趣的是, 由于和 Voigtlander 40/2 口径相同, 这两枚镜头可以互换遮光罩, 也导致 45/2.8P 可以顺带使用 Voigtlander 40/2 的近摄镜, 让它具有了一定程度的近摄能力:</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791796840/in/photostream/" title="45/2.8P closeup"><img src="https://live.staticflickr.com/65535/51791796840_6cd7fb9d4a_h.jpg" alt="45/2.8P closeup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791430244/in/photostream/" title="45/2.8P w/ closeup lens"><img src="https://live.staticflickr.com/65535/51791430244_6f1514d028_h.jpg" alt="45/2.8P w/ closeup lens"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>当然, 其实 50/1.8S 也可以用 40/2 的遮光罩和近摄镜, 这三枚镜头的滤镜口径都是 52mm, 混搭配件也是乐趣无穷. 眼尖的读者应该已经看出来了, 我给 50/1.8S 默认搭配的天光滤镜就是原本搭配 45/2.8P 的银色边框款.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51807804194/in/album-72177720295596293/" title="Nikkor 45/2.8P"><img src="https://live.staticflickr.com/65535/51807804194_82fd9438cc_h.jpg" alt="Nikkor 45/2.8P"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这枚镜头由于存世不久具有一定稀有价值, 价格被炒得有点高, 如果你不是像我一样病态的追求小镜头, 其实是不建议购买的.</p>
+<h3 id="Ricoh-GR-IIIx">Ricoh GR IIIx</h3>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51788433271/in/album-72177720295596293/" title="GR IIIx vs iPhone 12 mini"><img src="https://live.staticflickr.com/65535/51788433271_4bed699b5d_h.jpg" alt="GR IIIx vs iPhone 12 mini"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>一图胜千言. 在没有任何外置装备的前提下, GR IIIx 这 110×62×35mm 的尺寸可以轻松地装进我的几乎所有普通口袋. 等效 40/2.8 的镜头是完全重新设计的, 但是某种程度上又是一种传承.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791877550/in/dateposted/" title="GR0004731-80 sec at f - 2.8"><img src="https://live.staticflickr.com/65535/51791877550_b49013c3ce_h.jpg" alt="GR0004731-80 sec at f - 2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>40mm 对我来说已经可以算是广角了 (等效 35mm 的 X100T 对我来说就是超广角⋯⋯), 足以用来应付我绝大多数日常拍照的需求. 毕竟 ｢手头的相机才是最好的相机｣, 虽然我没有把它带到浴室里, 但自从入手了 GR IIIx 之后每次出门我都必定会带上它.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51784842727/in/album-72177720295596293/" title="GR IIIx w/ Pentax 43 finder"><img src="https://live.staticflickr.com/65535/51784842727_eff938e7c4_h.jpg" alt="GR IIIx w/ Pentax 43 finder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>实际使用的状态. 宾得的这个 43mm 取景器虽然给它增加了一点高度, 但是放进冬天外套的口袋还是毫无压力的. 外置取景器可以让我不用再盯着屏幕, 而是像使用旁轴相机一样操作 GR IIIx, 极大提升了使用体验.</p>
+<p>GR IIIx 还有一个优点就是极近的最近对焦距离, 可以某种程度地充当微距镜头. 事实上, 前文大部分设备的照片都是由 GR IIIx 拍摄的.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295636512" title="Camera Museum"><img src="https://live.staticflickr.com/65535/51791254943_0b39e74dde_h.jpg" alt="Camera Museum"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Zeiss-C-Sonnar-T-1-5-50-ZM">Zeiss C Sonnar T* 1.5/50 ZM</h3>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51739950944/in/album-72177720295596293/" title="Zeiss C Sonnar T* 1.5/50 ZM"><img src="https://live.staticflickr.com/65535/51739950944_0764c03c45_h.jpg" alt="Zeiss C Sonnar T* 1.5/50 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>徕卡 M 口本来就不缺各种小巧的镜头了, 无论是本家还是全世界其他光学大厂都为 M 口设计过小巧玲珑的镜头, 而在 50mm 焦段里蔡司这枚 Sonnar 又是其中佼佼者, 55.5×38mm 的体积比徕卡本家的所有大光圈 50mm 镜头都要娇小 —— 虽然我在购买这枚镜头的时候尚不知晓福伦达 <a href="https://www.cosina.co.jp/voigtlander/vm-mount/nokton-vintage-line-50mm-f1-5-aspherical-ii/">Nokton 1:1,5/50 II</a> 的存在.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51739543383/in/album-72177720295596293/" title="GR IIIx"><img src="https://live.staticflickr.com/65535/51739543383_0f6fe381e6_h.jpg" alt="GR IIIx"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>↑ 尽管比福伦达 Nokton 50/1.5 II 大了那么一丢丢, 50/1.5 ZM 也已经够小巧了</p>
+<p>这枚镜头继承了 1932 年经典的松纳结构, 配上二十一世纪的新材料和镀膜技术, 算是经典重生. 不过毕竟是 90 年前的光学设计, 以今天的眼光来看缺陷其实是很明显的: 它在全开光圈的时候真的很软, 即使是画面最中心的部分分辨率和对比度也不算优秀; 然而这也是它的一大特色, 由这光学缺陷造就了优秀的氛围控制.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51738485872/in/album-72177720295596066/" title="Zeiss C Sonnar 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738485872_e162b0ec74_h.jpg" alt="Zeiss C Sonnar 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这枚镜头的边缘可以说是非常糟糕的, 不过我完全不在意 —— 我的 R-D1s 是 APS-C CCD, 完美规避了边缘严重的暗角､ 分辨率和对比度下降等问题. 在光圈收到 f/4 之后, 画面软的问题也基本得到解决, 可以用来拍摄风景和建筑了.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791375393/in/dateposted/" title="Zeiss C Sonnar T* 1.5/50 ZM"><img src="https://live.staticflickr.com/65535/51791375393_a0cbf621ad_h.jpg" alt="Zeiss C Sonnar T* 1.5/50 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>它的另一个特色, 是特殊的光圈叶片形状. 在前面的照片里很容易就可以看出在光圈收缩之后, ZM 50/1.5 形成的光圈形状是一个锯盘型, 这个形状也完美地反映到了收缩光圈后的 bokeh 上. 我个人是不太喜欢这种锯盘型的 bokeh, 不过这只是我的个人喜好而已.</p>
+<p>这个镜头还有一个非常邪道的玩法 —— 如果你用它反接, 会得到一个仿佛向外扩散的焦外虚化, 效果非常有趣:</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295649351" title="ZM 1.5/50 reverse"><img src="https://live.staticflickr.com/65535/51785578386_c16e203ccc_h.jpg" alt="ZM 1.5/50 reverse"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>最后, 这支镜头也是我手头所有手动光圈环的镜头里唯一一个有 1/3 光圈档位的镜头, 在只支持整档变换快门速度和 ISO 的 R-D1s 上对于控制精确曝光显得格外方便.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295596066" title="Zeiss 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738489767_c8a2748b6b_h.jpg" alt="Zeiss 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Helios-44-58mm-f-2">Helios-44 58mm f/2</h3>
+<p>这个镜头就真的纯粹是当做玩具收来的了, 毕竟价格真的够便宜, 也很容易就能买到. 关于它的故事在网上已经遍地都是我就不再重复了. 由于光学缺陷而造成强烈的螺旋状焦外为无数爱好者津津乐道, 成片确实十分惊艳.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295613639" title="Helios-44"><img src="https://live.staticflickr.com/65535/51740199705_dd3cfa0ad2_h.jpg" alt="Helios-44"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>↑ Helios-44 的相册</p>
+<p>这枚镜头的光圈控制是由两个光圈环来进行的: 在镜头最前端标有光圈值, 手感非常紧实, 旋转到整档时会有段位感的环是光圈预设环, 旋转它并不会改变镜头当前的光圈; 在它下方没有标注数字, 只有纹路的环则是真正的光圈环, 它完全没有段位感, 旋转它可以在最大光圈和之前预设的光圈之间无级调整. 我一般是把预设光圈放在 f/5.6 的状态, 反正实际使用的时候基本都是全开以追求那独特的焦外散景.</p>
+<p>这枚镜头由于在不同时期由不同的工厂生产, 不同批次之间区别还挺大, 某种程度上也产生了一种 Helios-44 版本学[<a href="https://www.youtube.com/watch?v=qnJ23-i6bgw" title="The Helios 44-2 Lens Version You should Avoid Buying">2</a>]. 我只是纯粹捡便宜货好玩, 也不敢说自己对此有多么了解, 但是这些不同版本的 Helios-44 据我了解光学性能应该都十分类似, 最多就是后期版本镀膜可能有所变化和光圈叶片数量不同而已. 当然另一个问题就是这些 Helios-44 的成色大多十分糟糕, 成色好的则被炒得价格奇高, 失去了它作为玩具的价值.</p>
+<h3 id="SMC-Pentax-L-1-1-9-43mm-Special">SMC Pentax-L 1:1,9 43mm Special</h3>
+<p>某种意义上算是一枚邪典镜头? 曾经是单反上最小体积下画质最好的 FA 43/1.9 Limited 被做成螺口特别版之后既失去了自动对焦, 体积上的优势也荡然无存, 尽管光学上依然是十分优异的, 但是整个镜头的存在意义变得十分迷幻, 在网上也几乎找不到相关的资料. 坊间留下的传闻基本都是因为宾得本来就喜欢做各种 ｢限定｣､ ｢特别｣ 镜头, 当时饱受好评的 FA 43/1.9 自然逃不过特别版的魔爪, 于是就有了这支十分迷幻的 43 special.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51759971970/in/album-72177720295596293/" title="SMC 43/1.9"><img src="https://live.staticflickr.com/65535/51759971970_6b48846d45_h.jpg" alt="SMC 43/1.9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这镜头的镜筒设计和普通的徕卡镜头并无区别, 对焦环的指柄弧面手感十分舒适, 对焦环本身顺滑平稳, 对焦手感上佳, 在 R-D1s 的 APS-C 传感器上等效 65mm 也更接近标准焦段的效果. 但这枚镜头附赠的镜头盖是螺口镜头盖, 平常使用十分不便, 我基本都是把镜头盖单独丢在包里的口袋, 用一枚紫外滤镜来充作镜头保护. 和徕卡的 Summicron 50 类似, 它也有内置的遮光罩, 但是这个遮光罩的拉出手感与徕卡比就相去甚远, 略显生涩.</p>
+<p>还有一个可能逼死强迫症的问题是, 使用 L39 to M mount 转接环把这枚镜头转接到 R-D1s 上的时候, 完全拧紧后镜头刻度的位置并不是朝着 12 点方向的, 而是在一个 11 点左右的位置, 如果说视觉上的观感还算可以接受的话, 由此导致的对焦拨杆的默认位置和其他 M 口镜头有所偏移, 实在是非常难以接受了⋯⋯</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51792613841/in/dateposted/" title="R-D1s"><img src="https://live.staticflickr.com/65535/51792613841_7dddb3c9bf_h.jpg" alt="R-D1s"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这个镜头还附赠了一个 43/50mm 线框的取景器, 就是之前我放在 GR IIIx 上的那个. 虽然它并不是专为 GR IIIx 设计的, 但是它们搭配起来却莫名合拍, 所以我现在就直接把它挂在 GR IIIx 上用了.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51792742923/in/album-72177720295596293/" title="43/50 finder"><img src="https://live.staticflickr.com/65535/51792742923_ef9122c804_h.jpg" alt="43/50 finder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Voigtlander-40mm-f-2-SL-II">Voigtlander 40mm f/2 SL II</h3>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295635305" title="Pentax 43/1.9 L Special"><img src="https://live.staticflickr.com/65535/51791054678_3122d1e24d_h.jpg" alt="Pentax 43/1.9 L Special"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>一枚在迷你身材和优异画质两个领域都取得夺目成就的镜头. 它的体积介于尼康的 50/1.8S 与 45/2.8P 之间 —— <strong>24.5mm</strong>, 而它的光学素质远在 45/2.8P 之上, 比 50/1.8S 也好上不少, 虽然不如 50/1.8S 那么便宜但也还算是不错的价格, 简直是一枚完美的镜头. 可惜不知道确善能脑子哪根筋搭错了, 几年前停产了这款镜头, 上线了一款光学结构相同 (据我所知应该是) 但是体积增大不少 (厚度变成了 37.5mm) 的新款, 让我有点担心这枚镜头以后会开始涨价.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51755586693/in/album-72177720295596293/" title="GR0003471-80 sec at f - 2.8"><img src="https://live.staticflickr.com/65535/51755586693_5426366b4a_h.jpg" alt="GR0003471-80 sec at f - 2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这镜头在结构上更接近 50/1.8S, 光圈环和对焦环之间有一条纤细带纹路的固定结构, 这使得它的装卸手感比 45/2.8P 要好得多.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51807443911/in/album-72177720295596293/" title="Nikon Df w/ Voigtlander 40/2"><img src="https://live.staticflickr.com/65535/51807443911_85aa5834df_h.jpg" alt="Nikon Df w/ Voigtlander 40/2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这枚镜头采用了一枚双面非球面镜片, 各种像差都得到了不错的修正, 除了全开光圈在对焦无限远时分辨率略有些下降之外, 基本可以说是完美的 —— 就连全开光圈时的画面边缘都相当锐利, 细节丰富.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791020833/in/album-72177720295637523/" title="DSC_15031-160 sec at f - 2.0"><img src="https://live.staticflickr.com/65535/51791020833_1acf6e4df6_h.jpg" alt="DSC_15031-160 sec at f - 2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>它唯一的缺陷, 或者说特色, 却也正是由这枚非球面镜片引起: 它的 bokeh 有非常明显的 ｢洋葱圈｣. 只要画面中出现 bokeh, 洋葱圈就相当明显, 觉得它是特色还是缺陷就看个人爱好了. 就我个人来说洋葱圈是比 ZM 50/1.5 的锯盘要容易接受.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791282894/in/album-72177720295637523/" title="w/ closeup filter ƒ/2.0"><img src="https://live.staticflickr.com/65535/51791282894_9277e0db6f_h.jpg" alt="w/ closeup filter ƒ/2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>但是它在光圈上还有一个优点: 它有着独特的光圈叶片设计, 让它在 f/5.6 时也可以呈现圆形光圈, 如果你对圆形 bokeh ball 有奇怪的追求的话, 这枚镜头应该会非常对你的胃口.</p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51806487157/in/album-72177720295596293/" title="Voigtlander 40/2"><img src="https://live.staticflickr.com/65535/51806487157_f88550ffee_h.jpg" alt="Voigtlander 40/2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="结语">结语</h3>
+<p>以上就是我目前收集的 ｢标准镜头｣ 们了, 如果还有机会的话我希望可以买一个福伦达的 Nokton 50/1.5 VM, 不过这个需求并没有很强烈, 不知何时才会成真.</p>
 ]]></content>
       <tags>
         <tag>Gadget, Photography</tag>
@@ -336,65 +368,69 @@
     <title>東京遊記 PART Ⅰ</title>
     <url>/2024/10/15/TripToTokyo1/</url>
     <content><![CDATA[<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052125636/in/album-72177720321005949" title="DSC_0706-40 mm"><img src="https://live.staticflickr.com/65535/54052125636_6efba503a3_b.jpg"  alt="DSC_0706-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>這篇遊記意味著東京之行的徹底完結. 這兩個月間我仍然沉浸在這次旅行的餘韻中不願甦醒; 另一方面, 這一週值得記錄的東西太多, 提筆便感到千萬思緒湧上心頭不知從何道來. 但我知道不論如何, 總是得為這段回憶親手畫上句號, 從美夢中醒來. </p>
-<h4 id="Day-1-五月"><a href="#Day-1-五月" class="headerlink" title="Day -1, 五月"></a>Day -1, 五月</h4><p>為什麼明明對日本文化如此熱衷卻時至今日都還沒去過日本, 以前這個問題時常會浮現在我的心頭, 尤其是每當看到朋友們分享各自的日本行跡時. 後來我給自己的解釋是, 我需要一個更強的規劃一次旅遊的動力. 在五月的時候這個動力終於出現 ⸺ 我順利抽中了<a href="https://kamitsubaki.jp/news/2024/04/25/3372/">ヰ世界情緒初次線下個人演唱會 Animal Ⅲ</a>門票, 以此為契機我開始規劃這次長達一週的旅遊. </p>
-<p>實際上決定把日本之行擴充到七日後, 我思考的第一個問題是 ⸺ 應該帶什麼鏡頭? </p>
-<p>除了在文章裡提到過的鏡頭, 這幾年我陸陸續續收集了<a href="https://novadng.studio/Now/">二十餘枚鏡頭</a>, 除卻幾枚玩具性質和收藏性質的也還有橫跨三四個系統, 十餘枚的選擇範圍. 本著最大化相容性和減少冗餘的原則, 我決定只帶一臺數碼機 ⸺ Zƒ ⸺ 和一臺菲林機 ⸺ FA, 再帶上 F 轉 Z 接環確保 Zƒ 能覆蓋儘可能多的場景. </p>
-<p>鏡頭選擇上, 我最終確定了從廣到長 Voigtländer 40&#x2F;1.4 VM (最小最輕便的大光圈 Zƒ 掛機頭), Sigma 90&#x2F;2.8 DG DN (手頭最可靠的自動對焦鏡, 且還算輕便), Nikkor-P Auto 105&#x2F;2.5 (FA&#x2F;FM3ᴀ 上最慣用的掛機頭, 之前也帶去哈爾濱&#x2F;長白山過, 久經考驗的戰士), Zeiss APO-Sonnar 135&#x2F;2 (當時手頭畫質最好的鏡頭). 只看數字的話妳或許會認為 105&#x2F;2.5 這個選擇有些尷尬, 它作為 FA 的掛機頭在輕便上不如 90&#x2F;2.8, 質素上不如 135&#x2F;2, 也許應該換成 35&#x2F;2 或者 24&#x2F;2.8 其中一枚來讓 FA 也有廣角能力的, 但我在東京的市街中穿行時又確實用 105&#x2F;2.5 攝下不少滿意的影像, 故我不認為這是一個錯誤的選擇. </p>
-<p>但我還是做出了一個重大錯誤決定 ⸺ 把 <a href="https://www.thinktankphoto.com/products/retrospective-7-v2-0">ThinkTank Retrospective 7</a> 作為唯一攝影包背去了. 這個包雖然是很好的單肩包, 但我在旅途中更經常採用的是 sling&#x2F;messenger 的方式斜挎, 在這種方式下 Retrospective 的舒適度其實很差, 基本上每一小時左右我的肩膀便會开始感到不堪重负, 而每一次調節揹帶&#x2F;換肩都在提醒着我: 如果再讓我選擇一次的話, 一定要提前買一款 messenger bag 或者把 Peak Design Sling 塞進行李箱⋯⋯ </p>
+<p>這篇遊記意味著東京之行的徹底完結. 這兩個月間我仍然沉浸在這次旅行的餘韻中不願甦醒; 另一方面, 這一週值得記錄的東西太多, 提筆便感到千萬思緒湧上心頭不知從何道來. 但我知道不論如何, 總是得為這段回憶親手畫上句號, 從美夢中醒來.</p>
+<h4 id="Day-1-五月">Day -1, 五月</h4>
+<p>為什麼明明對日本文化如此熱衷卻時至今日都還沒去過日本, 以前這個問題時常會浮現在我的心頭, 尤其是每當看到朋友們分享各自的日本行跡時. 後來我給自己的解釋是, 我需要一個更強的規劃一次旅遊的動力. 在五月的時候這個動力終於出現 ⸺ 我順利抽中了<a href="https://kamitsubaki.jp/news/2024/04/25/3372/">ヰ世界情緒初次線下個人演唱會 Animal Ⅲ</a>門票, 以此為契機我開始規劃這次長達一週的旅遊.</p>
+<p>實際上決定把日本之行擴充到七日後, 我思考的第一個問題是 ⸺ 應該帶什麼鏡頭?</p>
+<p>除了在文章裡提到過的鏡頭, 這幾年我陸陸續續收集了<a href="https://novadng.studio/Now/">二十餘枚鏡頭</a>, 除卻幾枚玩具性質和收藏性質的也還有橫跨三四個系統, 十餘枚的選擇範圍. 本著最大化相容性和減少冗餘的原則, 我決定只帶一臺數碼機 ⸺ Zƒ ⸺ 和一臺菲林機 ⸺ FA, 再帶上 F 轉 Z 接環確保 Zƒ 能覆蓋儘可能多的場景.</p>
+<p>鏡頭選擇上, 我最終確定了從廣到長 Voigtländer 40/1.4 VM (最小最輕便的大光圈 Zƒ 掛機頭), Sigma 90/2.8 DG DN (手頭最可靠的自動對焦鏡, 且還算輕便), Nikkor-P Auto 105/2.5 (FA/FM3ᴀ 上最慣用的掛機頭, 之前也帶去哈爾濱/長白山過, 久經考驗的戰士), Zeiss APO-Sonnar 135/2 (當時手頭畫質最好的鏡頭). 只看數字的話妳或許會認為 105/2.5 這個選擇有些尷尬, 它作為 FA 的掛機頭在輕便上不如 90/2.8, 質素上不如 135/2, 也許應該換成 35/2 或者 24/2.8 其中一枚來讓 FA 也有廣角能力的, 但我在東京的市街中穿行時又確實用 105/2.5 攝下不少滿意的影像, 故我不認為這是一個錯誤的選擇.</p>
+<p>但我還是做出了一個重大錯誤決定 ⸺ 把 <a href="https://www.thinktankphoto.com/products/retrospective-7-v2-0">ThinkTank Retrospective 7</a> 作為唯一攝影包背去了. 這個包雖然是很好的單肩包, 但我在旅途中更經常採用的是 sling/messenger 的方式斜挎, 在這種方式下 Retrospective 的舒適度其實很差, 基本上每一小時左右我的肩膀便會开始感到不堪重负, 而每一次調節揹帶/換肩都在提醒着我: 如果再讓我選擇一次的話, 一定要提前買一款 messenger bag 或者把 Peak Design Sling 塞進行李箱⋯⋯</p>
 <p>做好了各種準備 ⸺ 簽證之類的問題大概有很強時效性, 而且在小紅書等平臺也有詳盡教程 (中國的ヰ組也有一篇<a href="https://anima3-guide.isekaijoucho.moe/">非常詳盡的教程</a>, 值得參考), 在此略過不表 ⸺ 就只剩下在興奮與忐忑中等待八月的到來.</p>
-<h3 id="Day-0-八月五日-星期一-羽田-立會川"><a href="#Day-0-八月五日-星期一-羽田-立會川" class="headerlink" title="Day 0, 八月五日, 星期一, 羽田 - 立會川"></a>Day 0, 八月五日, 星期一, 羽田 - 立會川</h3><p>乘機 - 轉機 - 入境 - 京急線到住處毫無波瀾略過不表, 唯一小起伏是在羽田車站上車前沒好好看站臺標識差點一頭扎進女性專用車廂了. 到達住處 (Airbnb) 已經十點左右了, 但我按耐不住好奇心把行李一放就帶上相機出門逛街去了. 夜間的立會川行人稀少, 商業街的店鋪也都歇業, 有時我會覺得自己看起來像個不法分子, 但我果然還是很享受在空無一人的街道上漫步的感覺. 立會川的居民區各處細節與風格和倫敦明明風馬牛不相及, 但整體感受上卻莫名相似, 讓走在街上的我產生了回到英國的錯覺. </p>
+<h3 id="Day-0-八月五日-星期一-羽田-立會川">Day 0, 八月五日, 星期一, 羽田 - 立會川</h3>
+<p>乘機 - 轉機 - 入境 - 京急線到住處毫無波瀾略過不表, 唯一小起伏是在羽田車站上車前沒好好看站臺標識差點一頭扎進女性專用車廂了. 到達住處 (Airbnb) 已經十點左右了, 但我按耐不住好奇心把行李一放就帶上相機出門逛街去了. 夜間的立會川行人稀少, 商業街的店鋪也都歇業, 有時我會覺得自己看起來像個不法分子, 但我果然還是很享受在空無一人的街道上漫步的感覺. 立會川的居民區各處細節與風格和倫敦明明風馬牛不相及, 但整體感受上卻莫名相似, 讓走在街上的我產生了回到英國的錯覺.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052436754/in/album-72177720321005949" title="DSC_0654-40 mm"><img src="https://live.staticflickr.com/65535/54052436754_7f0554d6c5_b.jpg" alt="DSC_0654-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>雖然是夜間, 但街燈的亮度依然足夠照亮很多本就設計得非常醒目的警示標語和圖示, <a href="https://www.mlit.go.jp/sogoseisaku/barrierfree/content/001727468.pdf">這些標識的設計</a>多有獨到之處, 除了警示之外還能看到四處貼著各種奇形怪狀的符號與圖示, 這些圖示有著獨特的活力, 使空無一人的街道顯得生機勃勃. </p>
+<p>雖然是夜間, 但街燈的亮度依然足夠照亮很多本就設計得非常醒目的警示標語和圖示, <a href="https://www.mlit.go.jp/sogoseisaku/barrierfree/content/001727468.pdf">這些標識的設計</a>多有獨到之處, 除了警示之外還能看到四處貼著各種奇形怪狀的符號與圖示, 這些圖示有著獨特的活力, 使空無一人的街道顯得生機勃勃.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051238972/in/album-72177720321005949/" title="DSC_0637-40 mm"><img src="https://live.staticflickr.com/65535/54051238972_aaf09b8f3d_b.jpg" alt="DSC_0637-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>夜晚的探險止於住處兩公里開外的全家燈光, 口乾舌燥的我毫無抵抗地被鉤了進去. 這也是來日本之後我第一次開口說日語. 雖然只是簡單的 ｢不需要袋子, 刷信用卡｣ 但成功說出口並看到店員毫無猶豫地迴應了我的要求, 還是感覺鬆了一口氣. 之後的一週裡我和當地人的幾乎所有交流都是透過這三腳貓日語交流, 雖然期間的確遇到了一些問題 (Day 2 詳述) 但總體而言居然並無大礙, 的確讓我產生了 ｢難道我日語水平其實還可以?｣ 的錯覺⋯⋯</p>
-<h3 id="Day-1-八月六日-星期二-品川-秋葉原"><a href="#Day-1-八月六日-星期二-品川-秋葉原" class="headerlink" title="Day 1, 八月六日, 星期二, 品川 - 秋葉原"></a>Day 1, 八月六日, 星期二, 品川 - 秋葉原</h3><p>按照計劃, 本日的行程應該是去參拜 (?) 尼康總部, 物色一些膠捲和老鏡. 我選擇的住處離尼康新總部非常近, 步行十五分鐘左右即可到達, 但我打算先在附近的相機店買一些膠捲. 很不幸地, 在品川找到的兩家中古相機店雖然都有出售膠捲, 但同時也只接受現金付款, 我不得不在路上的一家照片沖印店裡購買了一卷富士 400 急用 (為通關便利我沒有在 FA 裡裝上膠捲, 也沒有帶膠捲). </p>
+<h3 id="Day-1-八月六日-星期二-品川-秋葉原">Day 1, 八月六日, 星期二, 品川 - 秋葉原</h3>
+<p>按照計劃, 本日的行程應該是去參拜 (?) 尼康總部, 物色一些膠捲和老鏡. 我選擇的住處離尼康新總部非常近, 步行十五分鐘左右即可到達, 但我打算先在附近的相機店買一些膠捲. 很不幸地, 在品川找到的兩家中古相機店雖然都有出售膠捲, 但同時也只接受現金付款, 我不得不在路上的一家照片沖印店裡購買了一卷富士 400 急用 (為通關便利我沒有在 FA 裡裝上膠捲, 也沒有帶膠捲).</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069016123/in/album-72177720321005949" title="DSC_0718-40 mm"><img src="https://live.staticflickr.com/65535/54069016123_245a37e098_b.jpg" alt="DSC_0718-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>尼康總部所在, 路名 ｢光學大道｣, 不愧是日本光學⋯⋯</p>
 </blockquote>
-<p>距那家店不遠就是尼康新總部. 當時搬遷工作還在進行中, 附近街道上不時能看到佩戴尼康工牌的人士搬著箱子或推著小車神色匆匆地來往. 雖然知道尼康博物館還未重新開張, 但我還是忍不住走進了辦公樓大堂, 詢問了保安相關事項, 得到了保安的 ｢兩個月後再來吧｣ 答覆後才戀戀不捨離開. </p>
+<p>距那家店不遠就是尼康新總部. 當時搬遷工作還在進行中, 附近街道上不時能看到佩戴尼康工牌的人士搬著箱子或推著小車神色匆匆地來往. 雖然知道尼康博物館還未重新開張, 但我還是忍不住走進了辦公樓大堂, 詢問了保安相關事項, 得到了保安的 ｢兩個月後再來吧｣ 答覆後才戀戀不捨離開.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068748251/in/album-72177720321005949/" title="65510029-"><img src="https://live.staticflickr.com/65535/54068748251_e06c68c673_b.jpg" alt="65510029-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>從尼康總部門口經過的 JK</p>
 </blockquote>
 <hr>
-<p>說道中古相機鏡頭, 果然還是得去秋葉原啊. 秋葉原和品川相比之下簡直是兩個世界, 熙攘喧鬧得讓我有些頭大. 好在拐進旁邊的小巷之後喧嚷程度銳減, 而我盯上的幾家相機店恰好都在這些小巷中. </p>
-<p>整個下午的時間我都在秋葉原的數家中古相機店裡抑制著自己爆買的衝動流連. 我是有打算購入一枚 (左右?) 的中古廣角鏡, 最後我也如願在<a href="https://tokyocamera.net/">東京 CAMERA</a> 買到了一枚比較冷門的 Voigtländer 28&#x2F;1.9 LTM 版. 本店的鏡頭收藏著實豐富, 我差點就把持不住斥巨資購入另一枚 <a href="https://lens-db.com/cosina-tokyo-kogaku-auto-topcor-58mm-f14-2003/">Auto-Topcon 58mm ƒ&#x2F;1.4</a> 了⋯⋯ 真是危險. </p>
+<p>說道中古相機鏡頭, 果然還是得去秋葉原啊. 秋葉原和品川相比之下簡直是兩個世界, 熙攘喧鬧得讓我有些頭大. 好在拐進旁邊的小巷之後喧嚷程度銳減, 而我盯上的幾家相機店恰好都在這些小巷中.</p>
+<p>整個下午的時間我都在秋葉原的數家中古相機店裡抑制著自己爆買的衝動流連. 我是有打算購入一枚 (左右?) 的中古廣角鏡, 最後我也如願在<a href="https://tokyocamera.net/">東京 CAMERA</a> 買到了一枚比較冷門的 Voigtländer 28/1.9 LTM 版. 本店的鏡頭收藏著實豐富, 我差點就把持不住斥巨資購入另一枚 <a href="https://lens-db.com/cosina-tokyo-kogaku-auto-topcor-58mm-f14-2003/">Auto-Topcon 58mm ƒ/1.4</a> 了⋯⋯ 真是危險.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069089279/in/album-72177720321005949/" title="DSC_0749-40 mm"><img src="https://live.staticflickr.com/65535/54069089279_1c454e9dc5_b.jpg" alt="DSC_0749-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>東京 CAMERA 的販賣品之一, 黃金 FA, 價格令人咋舌, 和它一比我手頭的普通 FA 就顯得灰頭土臉了 wwwww</p>
 </blockquote>
 <hr>
-<p>天色漸暗時我離開了秋葉原 ⸺ 包裡裝著剛買的鏡頭以及大概夠我揮霍一年量的各類膠捲. 回家之後自然是迫不及待換上了新 (入手的中古) 鏡頭出門又溜了一圈, 順便物色晚餐. 在一家<a href="https://maps.app.goo.gl/4B5bTCoNw6mXYw8Y8">提供食物, 名字霸氣的酒吧</a>用餐後下起了陣雨. 有些意外地從酒吧老闆處得到了一把小雨傘讓我得以安全回家, 順便拍了一些雨中夜景. </p>
+<p>天色漸暗時我離開了秋葉原 ⸺ 包裡裝著剛買的鏡頭以及大概夠我揮霍一年量的各類膠捲. 回家之後自然是迫不及待換上了新 (入手的中古) 鏡頭出門又溜了一圈, 順便物色晚餐. 在一家<a href="https://maps.app.goo.gl/4B5bTCoNw6mXYw8Y8">提供食物, 名字霸氣的酒吧</a>用餐後下起了陣雨. 有些意外地從酒吧老闆處得到了一把小雨傘讓我得以安全回家, 順便拍了一些雨中夜景.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052429799/in/album-72177720321005949" title="DSC_0790-25 mm"><img src="https://live.staticflickr.com/65535/54052429799_d0e90fea5d_b.jpg" alt="DSC_0790-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>雨後的商店街確實呈現了和昨天截然不同的質感, 地面雖然有不少積水的反光但踩上去卻基本沒有水花, 也不怎麼打滑, 大概是因為雨量並不算很大吧. 可惜這 LTM 卡口鏡頭毫無密封令我不敢在雨中停留, 三步並作兩步快速回到了住處. </p>
-<p>躺在床上, 腦中預演著期待已久的明日行程和回味著今天遇到的人與事, 聽著窗外的雨聲進入了夢鄉. </p>
-<h3 id="Day-2-八月七日-星期三-橫須賀-橫濱"><a href="#Day-2-八月七日-星期三-橫須賀-橫濱" class="headerlink" title="Day 2, 八月七日, 星期三, 橫須賀 - 橫濱"></a>Day 2, 八月七日, 星期三, 橫須賀 - 橫濱</h3><p>由於我的貪心, 今天的行程有點緊張. 按照計劃, 我提著屆時在會場分發的各種情緒周邊先坐電車來到橫濱的演出場地 ⸺ 國際平和會議場附近的車站, 把周邊存入儲物櫃之後再輕裝前往橫須賀遊覽. 所幸昨夜的雨雲已經散去, 天氣還算不錯, 在我到達橫須賀的時候天氣甚至變得十分晴朗而炎熱, 走到三笠公園時我基本已經汗流浹背. </p>
-<p>紀念艦上的遊客寥寥無幾, 我登上舷梯來到甲板入口. </p>
+<p>雨後的商店街確實呈現了和昨天截然不同的質感, 地面雖然有不少積水的反光但踩上去卻基本沒有水花, 也不怎麼打滑, 大概是因為雨量並不算很大吧. 可惜這 LTM 卡口鏡頭毫無密封令我不敢在雨中停留, 三步並作兩步快速回到了住處.</p>
+<p>躺在床上, 腦中預演著期待已久的明日行程和回味著今天遇到的人與事, 聽著窗外的雨聲進入了夢鄉.</p>
+<h3 id="Day-2-八月七日-星期三-橫須賀-橫濱">Day 2, 八月七日, 星期三, 橫須賀 - 橫濱</h3>
+<p>由於我的貪心, 今天的行程有點緊張. 按照計劃, 我提著屆時在會場分發的各種情緒周邊先坐電車來到橫濱的演出場地 ⸺ 國際平和會議場附近的車站, 把周邊存入儲物櫃之後再輕裝前往橫須賀遊覽. 所幸昨夜的雨雲已經散去, 天氣還算不錯, 在我到達橫須賀的時候天氣甚至變得十分晴朗而炎熱, 走到三笠公園時我基本已經汗流浹背.</p>
+<p>紀念艦上的遊客寥寥無幾, 我登上舷梯來到甲板入口.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052115846/in/album-72177720321005949" title="65510026-"><img src="https://live.staticflickr.com/65535/54052115846_02646f1c6d_b.jpg" alt="65510026-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>東鄉平八郎青銅像與三笠紀念館</p>
 </blockquote>
-<p>門票我早已提前買好, 本以為直接出示 QR 碼便能進入, 沒想到樂天英文版和日文版的資料沒有共通, 工作人員也不清楚到底遇到了什麼問題.  我們花了好一會兒才釐清了狀況, 成功切換賬號找到了入場憑證, 這個時候就難免感嘆自己的日語水平還遠未夠班了. </p>
-<p>艦上風景實際上我早在各種歷史紀錄片和導覽文章裡看過數遍, 而且三笠和貝爾法斯特不同, 已經完全固定在基座上了, 所以很大程度上並不算是 ｢船｣ 了, 但實際站在甲板上時還是十分激動. </p>
+<p>門票我早已提前買好, 本以為直接出示 QR 碼便能進入, 沒想到樂天英文版和日文版的資料沒有共通, 工作人員也不清楚到底遇到了什麼問題.  我們花了好一會兒才釐清了狀況, 成功切換賬號找到了入場憑證, 這個時候就難免感嘆自己的日語水平還遠未夠班了.</p>
+<p>艦上風景實際上我早在各種歷史紀錄片和導覽文章裡看過數遍, 而且三笠和貝爾法斯特不同, 已經完全固定在基座上了, 所以很大程度上並不算是 ｢船｣ 了, 但實際站在甲板上時還是十分激動.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052500379/in/album-72177720321005949" title="DSC_0860-40 mm"><img src="https://live.staticflickr.com/65535/54052500379_47011e6d15_b.jpg" alt="DSC_0860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>三笠畢竟是前無畏時代的設計, 艙室佈置和我參觀過的其他現代戰艦截然不同, 還保留著讓人想起風帆戰艦時代的感覺. 儘管不能攀上桅杆進入嘹望臺, 但在艦橋上方的平臺已經足夠獲得很好的視野. 橫須賀的海岸線一覽無遺. </p>
+<p>三笠畢竟是前無畏時代的設計, 艙室佈置和我參觀過的其他現代戰艦截然不同, 還保留著讓人想起風帆戰艦時代的感覺. 儘管不能攀上桅杆進入嘹望臺, 但在艦橋上方的平臺已經足夠獲得很好的視野. 橫須賀的海岸線一覽無遺.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051309252/in/album-72177720321005949/" title="DSC_0875-40 mm"><img src="https://live.staticflickr.com/65535/54051309252_1db0b60206_b.jpg" alt="DSC_0875-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>艦上理所當然地花費了大量筆墨介紹了 ｢皇國興廢在此一戰｣ 與東鄉平八郎的歷史, 作為 ｢愛國主義教育基地｣ 的確是能讓人感受到心潮澎湃. 不過比起這些, 更令我感興趣的是下層甲板裡巨量的聯合艦隊船模. 雖然我覺得紀念艦裡有船模大概是再理所當然不過的事, 但能在這裡看到從日俄戰爭到二戰幾乎全部日本軍艦的模型還是令我感到十分震撼. </p>
+<p>艦上理所當然地花費了大量筆墨介紹了 ｢皇國興廢在此一戰｣ 與東鄉平八郎的歷史, 作為 ｢愛國主義教育基地｣ 的確是能讓人感受到心潮澎湃. 不過比起這些, 更令我感興趣的是下層甲板裡巨量的聯合艦隊船模. 雖然我覺得紀念艦裡有船模大概是再理所當然不過的事, 但能在這裡看到從日俄戰爭到二戰幾乎全部日本軍艦的模型還是令我感到十分震撼.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54067942037/in/album-72177720321005949" title="DSC_0891-40 mm"><img src="https://live.staticflickr.com/65535/54067942037_3fcf8ebf5c_b.jpg" alt="DSC_0891-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
-<p>我最喜歡的重巡洋艦 ⸺ 高雄級. </p>
+<p>我最喜歡的重巡洋艦 ⸺ 高雄級.</p>
 </blockquote>
-<p>這些模型的開模雖然略有些粗糙, 但製作得十分精細, 幾乎可以和 Wilhelmshaven Maritime Museum 的船模比肩 (Wilhelmshaven 勝在有不少 1&#x2F;300 甚至 1&#x2F;100 模型, 細節量恐怖); 十倍勝過英國的 National Maritime Museum 裡相同大小的船模 (1&#x2F;100 KGV 細節量依然可觀); 十萬倍勝過 Queensland Maritime Museum 中的船模 (昆士蘭那邊的甚至有不少基本的史實錯誤, 還有看起來簡直是魔改架空的船⋯⋯ 而且還是 1&#x2F;300!). </p>
+<p>這些模型的開模雖然略有些粗糙, 但製作得十分精細, 幾乎可以和 Wilhelmshaven Maritime Museum 的船模比肩 (Wilhelmshaven 勝在有不少 1/300 甚至 1/100 模型, 細節量恐怖); 十倍勝過英國的 National Maritime Museum 裡相同大小的船模 (1/100 KGV 細節量依然可觀); 十萬倍勝過 Queensland Maritime Museum 中的船模 (昆士蘭那邊的甚至有不少基本的史實錯誤, 還有看起來簡直是魔改架空的船⋯⋯ 而且還是 1/300!).</p>
 <hr>
-<p>在花費了遠超過計劃的時間端詳完船模之後, 我急匆匆趕往附近的海軍咖哩本店. 作為極負盛名的海軍咖哩本店自然是免不了要排隊, 好在我並沒有等待太久. 海軍咖哩的份量看起來平平無奇, 飢腸轆轆的我還多點了一瓶<a href="https://dreambeer.jp/ec/beer/detail/117">横須賀フォレストジンジャー</a>, 但是一開始進食才發現這咖哩的飽腹感迷之強勁, 吃了不到一半我就覺得十分飽足, 暗叫不妙. 計算了一下時間之後我覺得可以慢慢吃, 於是經過了大約 45 分鐘的苦戰, 我總算是吃完了這看起來微不足道的一份牛肉咖哩⋯⋯ </p>
+<p>在花費了遠超過計劃的時間端詳完船模之後, 我急匆匆趕往附近的海軍咖哩本店. 作為極負盛名的海軍咖哩本店自然是免不了要排隊, 好在我並沒有等待太久. 海軍咖哩的份量看起來平平無奇, 飢腸轆轆的我還多點了一瓶<a href="https://dreambeer.jp/ec/beer/detail/117">横須賀フォレストジンジャー</a>, 但是一開始進食才發現這咖哩的飽腹感迷之強勁, 吃了不到一半我就覺得十分飽足, 暗叫不妙. 計算了一下時間之後我覺得可以慢慢吃, 於是經過了大約 45 分鐘的苦戰, 我總算是吃完了這看起來微不足道的一份牛肉咖哩⋯⋯</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069167604/in/album-72177720321005949" title="DSC_0942-40 mm"><img src="https://live.staticflickr.com/65535/54069167604_3999af9672_b.jpg" alt="DSC_0942-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>相信我, 這一份咖哩真的可以頂一整天到深夜</p>
 </blockquote>
 <hr>
-<p>字面意思上的酒足飯飽之後我開始動身前往橫濱. 剛下電車便看到身著神椿服飾的人們向著橫濱國際平和會議場前進, 而我順利取回早上寄存的周邊之後也匯入他們向著會場移動. 身邊散發著觀測者氣息的人越來越多, 等到我來到會場後的廣場時, 出現在我面前的便是觀測者的海洋. </p>
+<p>字面意思上的酒足飯飽之後我開始動身前往橫濱. 剛下電車便看到身著神椿服飾的人們向著橫濱國際平和會議場前進, 而我順利取回早上寄存的周邊之後也匯入他們向著會場移動. 身邊散發著觀測者氣息的人越來越多, 等到我來到會場後的廣場時, 出現在我面前的便是觀測者的海洋.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052624305/in/album-72177720321005949" title="DSC_0946-40 mm"><img src="https://live.staticflickr.com/65535/54052624305_7111a08773_b.jpg" alt="DSC_0946-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>會場後廣場所見的風景</p>
@@ -405,12 +441,11 @@
 </blockquote>
 <p>我積攢了半年的社交能量便在此時派上了用場 ⸺ 本次我帶著來自<a href="https://x.com/ShiraishiKanoya">白石老師</a>製作的周邊分發, 並錄下收到周邊的觀測者對 ｢最喜歡情緒哪首歌? 為什麼?｣ 兩個問題的答案. 健忘的我臨行前又把錄音筆丟在家裡, 這次只好用 iPhone 頂著嘈雜的人聲與海風錄製, 好在最後基本上都能聽清. 白石老師收到這些錄音之後稍作剪輯發了出來.</p>
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113272984443193&bvid=BV19V2WY5E45&cid=26205359116&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
 <blockquote>
 <p>充滿回憶的聲音</p>
 </blockquote>
 <hr>
-<p>在進行了一下午, 大概有我平時兩年份的社交之後, 暮色漸沉, 入場的時間到了. </p>
+<p>在進行了一下午, 大概有我平時兩年份的社交之後, 暮色漸沉, 入場的時間到了.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051227557/in/album-72177720321005949" title="65510012-"><img src="https://live.staticflickr.com/65535/54051227557_7b9bb0ee7e_b.jpg" alt="65510012-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>港口的夕陽</p>
@@ -419,63 +454,127 @@
 <blockquote>
 <p>開演前</p>
 </blockquote>
-<p>儘管在 Anima Ⅲ 之前我已經在國內參加過幾場不同規模的 live, 這次演出給我帶來的震撼依然遠勝於之前任何一場. 十人規模的豪華樂隊讓伴奏的表現力暴增, 情緒自己的歌唱也迴應了大家的期待, 令我數度流淚. 不單是音樂, 情緒充滿力量的話語同樣另所有觀眾動容, 我相信在場的不少觀測者都從這次演出中汲取了充分的創作動力. </p>
-<p>任何的文字記敘在當晚的演出面前都顯得蒼白無力. 當我隨著散場的人流走出會場時耳邊似乎仍然迴響著她的歌聲與話語 ⸺ 不如說直到今天這迴響仍未消散. </p>
+<p>儘管在 Anima Ⅲ 之前我已經在國內參加過幾場不同規模的 live, 這次演出給我帶來的震撼依然遠勝於之前任何一場. 十人規模的豪華樂隊讓伴奏的表現力暴增, 情緒自己的歌唱也迴應了大家的期待, 令我數度流淚. 不單是音樂, 情緒充滿力量的話語同樣另所有觀眾動容, 我相信在場的不少觀測者都從這次演出中汲取了充分的創作動力.</p>
+<p>任何的文字記敘在當晚的演出面前都顯得蒼白無力. 當我隨著散場的人流走出會場時耳邊似乎仍然迴響著她的歌聲與話語 ⸺ 不如說直到今天這迴響仍未消散.</p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052502279/in/album-72177720321005949" title="DSC_1040-40 mm"><img src="https://live.staticflickr.com/65535/54052502279_03dfabc30d_b.jpg" alt="DSC_1040-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <blockquote>
 <p>散場之後的橫濱港口</p>
 </blockquote>
-<p>一夜無眠. </p>
-<p>Continue to <a href="https://novadng.studio/2024/10/16/TripToTokyo2">Part Ⅱ (WIP)</a> </p>
+<p>一夜無眠.</p>
+<p>Continue to <a href="https://novadng.studio/2024/10/16/TripToTokyo2">Part Ⅱ (WIP)</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
       </tags>
   </entry>
   <entry>
+    <title>Photography is FUN —— ℤƒ 碎碎念</title>
+    <url>/2024/09/08/ZfAndMoreLens/</url>
+    <content><![CDATA[<blockquote>
+<p>GAS (Gear Acquisition Syndrome) is REAL</p>
+</blockquote>
+<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
+<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
+<h3 id="房間裡的大象">房間裡的大象</h3>
+<blockquote>
+<p>甚至有兩頭⋯⋯</p>
+</blockquote>
+<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E/M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
+<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53807622453/in/dateposted-public/" title="Hand grip comparism"><img src="https://live.staticflickr.com/65535/53807622453_cbfbe014c1_b.jpg" alt="Hand grip comparism"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系/Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <s>甚至連徠卡都在數位 M 機背部做了凸起</s>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
+<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
+<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉/物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
+<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53808012816/in/dateposted-public/" title="Zf Viewfinder"><img src="https://live.staticflickr.com/65535/53808012816_69dfe19280_b.jpg" alt="Zf Viewfinder"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠/鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65/2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
+<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
+<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
+<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180/2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53809683794/in/dateposted-public/" title="GR003310-18.3 mm"><img src="https://live.staticflickr.com/65535/53809683794_0c724d828c_b.jpg" /></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Zf-❤︎-M-Lens">Zƒ ❤︎ M Lens</h3>
+<p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022/01/02/Standard_Obsession/">AI Nikkor 45/2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53809601433/in/dateposted-public/" title="GR003314-18.3 mm"><img src="https://live.staticflickr.com/65535/53809601433_79252c9548_b.jpg" /></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022/09/10/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
+<ol>
+<li>
+<p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
+</li>
+<li>
+<p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概同樣是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ/2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1/3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
+</li>
+<li>
+<p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
+</li>
+</ol>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53809683789/in/dateposted-public/" title="邪道的終點⋯⋯"><img src="https://live.staticflickr.com/65535/53809683789_b9603f84eb_b.jpg" alt="邪道的終點⋯⋯"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53815268818/in/dateposted-public/" title="Zf + Nikkor Auto 105/2.5"><img src="https://live.staticflickr.com/65535/53815268818_5bcede150a_b.jpg" alt="Zf + Nikkor Auto 105/2.5"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Zf-❤︎-FE-Lens">Zƒ ❤︎ FE Lens</h3>
+<p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
+<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01/02 和 Megadap 的 ETZ21/Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01/02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
+<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40/2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53806435867/in/dateposted-public/" title="Zf with Sony FE 40/2,5 G"><img src="https://live.staticflickr.com/65535/53806435867_b6d4215988_b.jpg" alt="Zf with Sony FE 40/2,5 G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40/2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40/2.5G 和 Sigma 90/2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
+<h3 id="復古設計的贊否">復古設計的贊否</h3>
+<p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1/125 或者 1/60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
+<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
+<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
+<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭/轉接方案. 前文提過, SE 40/2 和 28/2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠/鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G/E 鏡頭也是同理.</p>
+<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ/1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
+]]></content>
+      <tags>
+        <tag>Gadget, Photography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
     <url>/2021/03/22/reMarkable-2/</url>
-    <content><![CDATA[<h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061528238/in/dateposted-public/" title="Iriver Story"><img src="https://live.staticflickr.com/65535/51061528238_7f65cbf9d1_h.jpg" alt="Iriver Story"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
-<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
+    <content><![CDATA[<h3 id="我的-e-ink-设备使用历程">我的 e-ink 设备使用历程</h3>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061528238/in/dateposted-public/" title="Iriver Story"><img src="https://live.staticflickr.com/65535/51061528238_7f65cbf9d1_h.jpg" alt="Iriver Story"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了.</p>
+<h3 id="reMarkable-1">reMarkable 1</h3>
+<p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣.</p>
 <p><img src="http://myequil.wpengine.com/wp-content/themes/ensconce/images/f_components_trans.png" alt="equil smartpen"></p>
-<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
-<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
-<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
-<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
-<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
-<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
+<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒/笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了.</p>
+<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧).</p>
+<h3 id="reMarkable-2">reMarkable 2</h3>
+<p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到.</p>
+<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手.</p>
+<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕.</p>
+<h3 id="写-画">写 &amp; 画</h3>
+<p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061764988/in/dateposted-public/" title="网格预览"><img src="https://live.staticflickr.com/65535/51061764988_62f96a4583_h.jpg" alt="网格预览"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51061666508/in/dateposted-public/" title="网格输出"><img src="https://live.staticflickr.com/65535/51061666508_4baeb5f74d_h.jpg" alt="网格输出"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
-<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
+<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的.</p>
+<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/50999813030/in/dateposted-public/" title="书法练习"><img src="https://live.staticflickr.com/65535/50999813030_cbbd2ba488_h.jpg" alt="书法练习"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
+<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>:</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062480106/in/dateposted-public/" title="速写练习"><img src="https://live.staticflickr.com/65535/51062480106_d9269ee5c8_h.jpg" alt="速写练习"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
+<p>除了速写之外, 我也试着用它来进行偶尔的插画:</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062467122/in/dateposted-public/" title="星之原石"><img src="https://live.staticflickr.com/65535/51062467122_19d84d6f43_h.jpg" alt="星之原石"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
-<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑&#x2F;手机上实时预览 reMarkable 上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
-<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf&#x2F;epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
+<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满.</p>
+<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑/手机上实时预览 reMarkable 上的作画/书写/注记, 是个非常方便的小功能.</p>
+<h3 id="读">读</h3>
+<p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf/epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51062563897/in/dateposted-public/" title="Type is Beautiful 会刊"><img src="https://live.staticflickr.com/65535/51062563897_92bb4c3ab6_h.jpg" alt="Type is Beautiful 会刊"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
-<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
-<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&#x2F;ssh 客户端</p>
+<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯</p>
+<h4 id="中文支持">中文支持</h4>
+<p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>).</p>
+<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端/ssh 客户端</p>
 <pre class=" language-hljs plaintext"><code class="language-hljs plaintext">ssh root@<你的.reMarkable.IP.地址></code></pre>
-
-<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
+<p>然后输入密码, 即可进入 reMarkable 的根目录.</p>
 <p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/50999647715/in/dateposted-public/" title="非常炫酷的登陆画面"><img src="https://live.staticflickr.com/65535/50999647715_7705b77839_h.jpg" alt="非常炫酷的登陆画面"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
-<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
+<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了.</p>
+<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体:</p>
 <pre class=" language-hljs plaintext"><code class="language-hljs plaintext">scp <你的字体所在的完整路径> root@<你的.reMarkable.IP.地址>:/usr/share/fonts/ttf/</code></pre>
-
-<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
+<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口,</p>
 <pre class=" language-hljs plaintext"><code class="language-hljs plaintext">cd /usr/share/fonts/</code></pre>
-
-<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf&#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
-<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
-<p>如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux 下的字体调校指南</a>. </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
+<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf/ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可.</p>
+<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言/风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已.</p>
+<p>如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux 下的字体调校指南</a>.</p>
+<h3 id="结语">结语</h3>
+<p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击.</p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -484,20 +583,22 @@
   <entry>
     <title>追求小屏智能手机之路</title>
     <url>/2021/03/13/yearning-for-a-tiny-smartphone/</url>
-    <content><![CDATA[<p><img src="https://live.staticflickr.com/65535/51041015252_785a279489_o.jpg"><br>稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点<a href="https://item.jd.com/10025201949310.html">这个链接</a>购买.</p>
+    <content><![CDATA[<p><img src="https://live.staticflickr.com/65535/51041015252_785a279489_o.jpg" alt=""><br>
+稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点<a href="https://item.jd.com/10025201949310.html">这个链接</a>购买.</p>
 <hr>
-<h3 id="Jelly-之前"><a href="#Jelly-之前" class="headerlink" title="Jelly 之前"></a>Jelly 之前</h3><p>自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.</p>
+<h3 id="Jelly-之前">Jelly 之前</h3>
+<p>自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.</p>
 <p><img src="https://live.staticflickr.com/65535/51040924711_cfe1e5739f_o.jpg" alt="｢点金石｣ 上的 Veer 和旁边的 Nexus 4"></p>
 <p>当然, 会买 Veer 除了喜欢小巧的手机, 更多的原因还是我对 webOS 的喜爱. 不过没选择当时作为旗舰的 Pre³ 而选择了 Veer 就完全是因为尺寸了. 比起 Pre³ 的 3.6 寸 ｢大屏｣, 2.6 寸屏幕的 Veer 在手中是真正的小巧玲珑, 如珠圆玉润的卵石般令人爱不释手. 而且 Veer 还有一块全键盘, 作为小屏手机, 在输入这一最大的痛点上也得到了对我来说完美的解决, 我现在甚至还能依稀想起来自 veer 键盘上那一股若有若无的神奇香味.</p>
 <p>上大学之后没多久, 我很幸运地在 ebay 上买到了一台微软的 Kin, 不过这台机器并不是智能手机, 而且在一年多以后我便将这台手机送给了一位友人, 这里就不多做介绍了.</p>
 <p><img src="https://live.staticflickr.com/65535/51040924756_2802745045_o.jpg" alt="3.4 寸的屏幕放在今天来看也算是迷你了"></p>
 <p>送走 Kin 之后不久, 我就从父亲手中得到了他淘汰不用的 iPhone 5. 很多老派 iPhone 爱好者依然认为 4 寸屏幕的 iPhone 5 形态是最能兼顾易用性与手感的黄金尺寸, 当然另一派则认为 3.5 寸屏幕的 iPhone 4 才是真正的黄金尺寸 —— 包括当时刚刚宣称要做手机的老罗. 又过了不久, 苹果推出了 iPhone 5s 造型, iPhone 6s 性能的 iPhone SE, 我便第一时间入手了. 在那个时候, iPhone SE 已经被主流大众认为是小屏手机了, 而诸如夏普 Aquos Crystal 和小米 MIx 等机器也为人们揭开了 ｢全面屏｣ 的一角, 在这之后手机厂家们便纷纷朝着全面屏的方向发展去了, 手机尺寸本身也终于不再变得更大.</p>
 <blockquote>
-<p>你以为会有 iPhone 5&#x2F;SE 的图? 这么大众的手机没图的啦.</p>
+<p>你以为会有 iPhone 5/SE 的图? 这么大众的手机没图的啦.</p>
 </blockquote>
 <p>这个时候可能有人会问了, 为什么都说了这么多了, 还没提到一句索尼的 Xperia Compact 系列? 其实我从 Xperia Z2 开始就一直是索尼手机的用户, 但是因为某些奇怪的心态 (觉得已经买了大屏的版本再买同一系列的小屏版是一件很不对劲的事情) 和机器本身的问题 —— 比如 Z3 Compact 摄像头的位置不对劲, 扬声器和听筒没有隐藏进边框, Z5 和 XZ 的正面没有完全对称等等鸡毛蒜皮的原因, 便没有买 Z 系列的 Compact. 等到了 2017 年, 我终于把主力手机从 5.2 寸屏幕的 Xperia Z5 换成了 4.6 寸屏幕的 Xperia XZ1 Compact.</p>
 <p><img src="https://live.staticflickr.com/65535/51040924676_69b9442672_o.jpg" alt="iPhone SE, Xperia XZ1 Compact 和 Xperia Z5"></p>
-<p>XZ1 Compact 在我心目中可以算是非常完美的小屏旗舰了, 比 iPhone SE 稍大一圈, 但是屏幕尺寸大上了不少, 外形方方正正, 采用了当时索尼新的设计语言 Omni loop, 在边缘稍微做了一点弧形, 握持手感也非常优秀. 虽然没做边框隐藏扬声器&#x2F;听筒, 但是换来了非常优秀的外放音质, 可以说在我心目中这台机器几乎没有缺点.</p>
+<p>XZ1 Compact 在我心目中可以算是非常完美的小屏旗舰了, 比 iPhone SE 稍大一圈, 但是屏幕尺寸大上了不少, 外形方方正正, 采用了当时索尼新的设计语言 Omni loop, 在边缘稍微做了一点弧形, 握持手感也非常优秀. 虽然没做边框隐藏扬声器/听筒, 但是换来了非常优秀的外放音质, 可以说在我心目中这台机器几乎没有缺点.</p>
 <p>一年之后, 夏普发布了 Aquos R2 Compact. 这台机器刚发布的时候我的想法和大多数人应该是一样的: WTF? 这上下都有缺口的设计是什么鬼才想出来的? 实在是不能接受啊! 不久之后我就买了与他前后脚发布的 Pixel 3 —— 不是 3 XL, 3 XL 那个超巨型缺口的傻逼程度实在是不能接受.</p>
 <p><img src="https://live.staticflickr.com/65535/51041015572_95465ca597_o.jpg" alt="XZ1 Compact 和长了一截的 Pixel 3"></p>
 <p>没想到的是, 在 2018 年 5.5 寸屏幕的 Pixel 3 在很多人眼里已经可以算是小屏手机了 , 这不免让我感到有些哭笑不得.</p>
@@ -509,7 +610,8 @@
 <p>等到 2020 年九月, 苹果发布了 iPhone 12 mini. 在当初机身尺寸泄漏的时候我就下定决心只要这是真的那就一定买, 而发布会上终于确定了的那一刻我可以说是欢呼雀跃了, 毕竟这年头所有的厂家在做手机的时候难免都会收到苹果的影响 —— 无论是好还是坏, 如果苹果敢于在 2020 年开个小屏旗舰的头, 那么或许接下来其他厂家也会试水? 等到 iPhone 12 mini 开放购买之后, 我便第一时间购入.</p>
 <p><img src="https://live.staticflickr.com/65535/51041015517_805a00e2ea_o.jpg" alt="尺寸和 R2 Compact 几乎一模一样的 iPhone 12 mini"></p>
 <p>尽管尺寸和 R2 Compact 几乎一模一样, 但 12 mini 的边框尺寸稍微比 R2 Compact 窄一些, 下边框也和另外三边同宽, 所以能塞进 5.4 寸的屏幕. 而且回归了平直的设计语言也让我觉得这是 iPhone 6 以来最好看的 iPhone 设计 (排除掉 SE, 毕竟那是 5s 的设计). 而 12 mini 最大的缺点 —— 续航严重不足, 对我这个拿它做备机的人来说也完全不是问题.</p>
-<h3 id="Jelly-2"><a href="#Jelly-2" class="headerlink" title="Jelly 2"></a>Jelly 2</h3><p>实际上, 在 iPhone 12 系列配置泄漏之前, 我就已经知道了 Jelly 2 的存在 . 在更早之前 —— 大约 2017 年, Jelly 1 刚出来时正值 detox phone 大热, 除了 unihertz 之外还有不少厂家做出了各种奇形怪状的小手机, 但是它们大多都过于精简, 导致很难真的把它们当作唯一主力使用, Jelly 1 虽然是全功能的, 但是它的设计和用料都实在有些令人难以下定决心购买, 所以这一波 detox 手机对我完全没有产生任何冲击. 反倒是 HMD 推出新的 8110 的时候我很心动, 然而因为种种原因没有买一台来收藏.</p>
+<h3 id="Jelly-2">Jelly 2</h3>
+<p>实际上, 在 iPhone 12 系列配置泄漏之前, 我就已经知道了 Jelly 2 的存在 . 在更早之前 —— 大约 2017 年, Jelly 1 刚出来时正值 detox phone 大热, 除了 unihertz 之外还有不少厂家做出了各种奇形怪状的小手机, 但是它们大多都过于精简, 导致很难真的把它们当作唯一主力使用, Jelly 1 虽然是全功能的, 但是它的设计和用料都实在有些令人难以下定决心购买, 所以这一波 detox 手机对我完全没有产生任何冲击. 反倒是 HMD 推出新的 8110 的时候我很心动, 然而因为种种原因没有买一台来收藏.</p>
 <p>虽然我在 20 年中旬就知道了这部手机的存在, 但当时它还在 indiegogo 筹资, 所以只是给了一些 influencer 评测样机. 直到年底才终于开放购买, 而我拿到手则是这两天的事情了.</p>
 <p><img src="https://live.staticflickr.com/65535/51040194288_7fc85744ca_o.jpg" alt="Xperia 1 II 在 Jelly 面前是真的庞然巨物了"></p>
 <p>Jelly 2 的三维和 Veer 几乎相差无几 (95×49.4×16.5 vs 84×54.5×15.1), 不过区别于 veer 的类肤质感外壳, Jelly 用的是普通的光面塑料, 手感稍微差了一些. 不过好在它十分小巧, 这塑料某种程度上增加了它的 ｢糖果质感｣ —— 就像它的名字一样, 在阳光下它看起来是有几分像一颗巨大的 jelly bean. 不过拿到手机的时候我才发现它的挂绳孔实际上在随机附赠的保护壳上, 为了使用挂绳孔我只好不情不愿地用上了这个保护壳. 保护壳的材质就是普通的软胶, 手感<strong>十分一般</strong>, 而且让整个机身变大了不少, 而且限制了可以使用的 Type C 充电线材类型, 十分难受.</p>
@@ -524,7 +626,7 @@
 <li>它虽然提供了一个自定义按钮, 但是这个按钮就在电源键旁边, 而且大小和手感与电源键一模一样, 非常<strong>容易误触</strong>. 当然这个自定义按钮确实是非常好的, 它可以作为对讲机的对讲按钮, 也可以自己定义点按､长按和双击的快捷操作, 十分便利.</li>
 </ol>
 <p><img src="https://live.staticflickr.com/65535/51041015137_87ac1fd266_k.jpg" alt="好在平时正常握持的姿势一般拇指都会放在电源上, 不然误触几率怕是要加倍"></p>
-<p>缺点就是前面那些了, 至少在我看来. 说完了缺点就该让我大吹一番了. 首先就是它没有选择走 ｢全面屏｣ 路线, 保留了电容触摸三大金刚, 这也让我可以免得吃 Google 那套鬼畜手势导航的屎 —— 当然如果你执意要吃屎的话也可以在设置里开启屏内导航 (默认是开启的) 并关闭电容按键. 而且在这个尺寸下, 手势导航还真的就没什么优势可言. 唯一遗憾的就是 Home 键没能集成通知灯, 通知灯被放在了摄像头左侧 —— 再想想 2021 年多少旗舰手机都没有通知灯了, 真的是感觉十分唏嘘 (当然, 由于 OLED 屏幕和 AOD 的普遍使用, 通知灯的需求也确实是不像以前那么强烈了). 另外这几个按钮是没有背光的, 在暗处使用的时候偶尔会按错&#x2F;没按到, 有点小别扭.</p>
+<p>缺点就是前面那些了, 至少在我看来. 说完了缺点就该让我大吹一番了. 首先就是它没有选择走 ｢全面屏｣ 路线, 保留了电容触摸三大金刚, 这也让我可以免得吃 Google 那套鬼畜手势导航的屎 —— 当然如果你执意要吃屎的话也可以在设置里开启屏内导航 (默认是开启的) 并关闭电容按键. 而且在这个尺寸下, 手势导航还真的就没什么优势可言. 唯一遗憾的就是 Home 键没能集成通知灯, 通知灯被放在了摄像头左侧 —— 再想想 2021 年多少旗舰手机都没有通知灯了, 真的是感觉十分唏嘘 (当然, 由于 OLED 屏幕和 AOD 的普遍使用, 通知灯的需求也确实是不像以前那么强烈了). 另外这几个按钮是没有背光的, 在暗处使用的时候偶尔会按错/没按到, 有点小别扭.</p>
 <p><img src="https://live.staticflickr.com/65535/51040194003_b78959f60d_o.jpg" alt="如果偶尔需要在这机器上看长文也不是不行, 但是你大概不会愿意经常这么做的⋯⋯"></p>
 <p>Unihertz 没有以机身尺寸为借口取消顶部的耳机接口, 令人十分欣慰. 插上耳机之后还可以以耳机为天线使用内置的收音机, 十分便利. 而机身顶部还有另一个已经几乎灭绝的东西 —— 红外信号发射口, 这对于控制那些尚未智能化的家电来说十分便利, 是非常令人欣喜的存在.</p>
 <p><img src="https://live.staticflickr.com/65535/51040194153_a42d0c401a_o.jpg" alt="与目前手机上最好的屏幕 —— Xperia 1 II 的屏幕对比"></p>
@@ -532,65 +634,13 @@
 <p>它采用了一颗联发科曦力 P60, 只要不试着在这机器上玩大型游戏 (你疯了吗?!) 应该都是十分够用的. 和芯片相关的唯一问题就是它的基带不是很好, 在这个大厂普遍铺开 5G 的时代显得网速有些捉襟见肘 (我这里体验的对照是 FEH 2.4GB 的数据, 在相同的 Wi-Fi 环境下 Jelly 下载这些数据花了 Xperia 1 II 大约两倍的时间), 不过说实话你也不会想要在它上面做什么需要那么高网速的事吧, 至少它应付视频会议之类的需求还是绰绰有余的.</p>
 <p>最后不得不提一下的就是它的输入. 虽然机身大小类似 Veer, 但是 Jelly 2 并没有方便的 QWERTY 全键盘, 所以输入只能靠语音或者屏幕内虚拟键盘了. 如果你用九宫键盘并且把键盘高度开到最大的话勉强可以获得一个操作面积类似直板功能机九宫键盘的区域, 然而说实话体验并不好. 个人认为最佳解决方案还是滑动输入 + 中到小的键盘高度, 靠输入法的自动纠错来进行比较高效的输入, 配合双拼可以达到勉强可以接受的输入效率. 当然, 即使如此在使用这台机器的时候想要输入的愿望也是极为低下的, 而本来这台机器就算是一台 detox phone, 所以这个问题⋯⋯ 也就不算是个问题了?</p>
 <p>对了, 这台机器甚至支持 Micro SD 卡扩展 —— 另一个在 2021 年几乎灭绝的功能. 虽然 Micro SD 卡和第二张 SIM 共用卡槽, 但是对于我这样没有双卡需求的人来说就可以直接用来当扩展储存了.</p>
-<h3 id="一点结语"><a href="#一点结语" class="headerlink" title="一点结语"></a>一点结语</h3><p>Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.</p>
+<h3 id="一点结语">一点结语</h3>
+<p>Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.</p>
 <p>做出这台小手机的公司, 上海集赫电子商务有限公司, 是一家成立于 2016 年, 只有 50 人不到的小公司 . 在 Jelly 2 之前, 他们已经做出了 Jelly, Titan (一台有点类似黑莓 Passport 的全键盘手机), Atom (小巧的三防手机) 三个系列, 皆为小众但精致的机器, 在海内外广受死忠粉丝好评. 我也非常认同 Unihertz 日文网站上的一句话: ｢様々なスマホがありますが、現代のスマートフォンは、大きく、複雑で、とても壊れやすい。｣ —— 现在的智能手机虽然眼花缭乱, 但无不大而复杂, 而且容易损坏 (此处应有 JerryRigsEverything 插入), 而 Unihertz 选择了完全反其道而行, 自始至终开发小巧, 简单而坚固的手机, 逆流而上, 勇气可嘉.</p>
 <p>如果你已经深深陷入当代智能生活不能自拔却又希望有一台小手机的话恐怕还是只能选择 iPhone 12 mini, 但若你想要试着反抗一番, 看看能不能从这滩泥沼中挣脱, 不妨试试看 Jelly 2. 毕竟谁知道这台机器会不会成为一代绝唱呢 —— 各种小道消息都表明 iPhone 12 mini ｢销量不及预期｣, 靠苹果来重新开启小屏旗舰时代的希望恐怕是十分渺茫了.</p>
 ]]></content>
       <tags>
         <tag>thoughts, Gadget</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN —— ℤƒ 碎碎念</title>
-    <url>/2024/09/08/ZfAndMoreLens/</url>
-    <content><![CDATA[<blockquote>
-<p>GAS (Gear Acquisition Syndrome) is REAL</p>
-</blockquote>
-<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
-<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
-<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
-<p>甚至有兩頭⋯⋯</p>
-</blockquote>
-<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受. </p>
-<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計: </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53807622453/in/dateposted-public/" title="Hand grip comparism"><img src="https://live.staticflickr.com/65535/53807622453_cbfbe014c1_b.jpg" alt="Hand grip comparism"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的. </p>
-<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ. </p>
-<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明. </p>
-<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53808012816/in/dateposted-public/" title="Zf Viewfinder"><img src="https://live.staticflickr.com/65535/53808012816_69dfe19280_b.jpg" alt="Zf Viewfinder"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
-<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好. </p>
-<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
-<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53809683794/in/dateposted-public/" title="GR003310-18.3 mm"><img src="https://live.staticflickr.com/65535/53809683794_0c724d828c_b.jpg" /></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022/01/02/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53809601433/in/dateposted-public/" title="GR003314-18.3 mm"><img src="https://live.staticflickr.com/65535/53809601433_79252c9548_b.jpg" /></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022/09/10/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但 </p>
-<ol>
-<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的. </p>
-</li>
-<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概同樣是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦. </p>
-</li>
-<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
-</li>
-</ol>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53809683789/in/dateposted-public/" title="邪道的終點⋯⋯"><img src="https://live.staticflickr.com/65535/53809683789_b9603f84eb_b.jpg" alt="邪道的終點⋯⋯"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53815268818/in/dateposted-public/" title="Zf + Nikkor Auto 105/2.5"><img src="https://live.staticflickr.com/65535/53815268818_5bcede150a_b.jpg" alt="Zf + Nikkor Auto 105/2.5"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能. </p>
-<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題. </p>
-<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53806435867/in/dateposted-public/" title="Zf with Sony FE 40/2,5 G"><img src="https://live.staticflickr.com/65535/53806435867_b6d4215988_b.jpg" alt="Zf with Sony FE 40/2,5 G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受. </p>
-<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利. </p>
-<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的. </p>
-<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎. </p>
-<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理. </p>
-<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯ </p>
-]]></content>
-      <tags>
-        <tag>Gadget, Photography</tag>
       </tags>
   </entry>
 </search>
