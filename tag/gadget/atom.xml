@@ -13,47 +13,51 @@
         <id>https://novadng.studio/2021/03/22/reMarkable-2/</id>
         <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
         <link rel="alternate" href="https://novadng.studio/2021/03/22/reMarkable-2/"/>
-        <content type="html">&lt;h3 id=&#34;我的-e-ink-设备使用历程&#34;&gt;&lt;a href=&#34;#我的-e-ink-设备使用历程&#34; class=&#34;headerlink&#34; title=&#34;我的 e-ink 设备使用历程&#34;&gt;&lt;/a&gt;我的 e-ink 设备使用历程&lt;/h3&gt;&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51061528238/in/dateposted-public/&#34; title=&#34;Iriver Story&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51061528238_7f65cbf9d1_h.jpg&#34; alt=&#34;Iriver Story&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. &lt;/p&gt;
-&lt;h3 id=&#34;reMarkable-1&#34;&gt;&lt;a href=&#34;#reMarkable-1&#34; class=&#34;headerlink&#34; title=&#34;reMarkable 1&#34;&gt;&lt;/a&gt;reMarkable 1&lt;/h3&gt;&lt;p&gt;早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 &lt;a href=&#34;https://www.myequil.com/smartpen2/&#34;&gt;equil Smartpen&lt;/a&gt;, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. &lt;/p&gt;
+        <content type="html">&lt;h3 id=&#34;我的-e-ink-设备使用历程&#34;&gt;我的 e-ink 设备使用历程&lt;/h3&gt;
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51061528238/in/dateposted-public/&#34; title=&#34;Iriver Story&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51061528238_7f65cbf9d1_h.jpg&#34; alt=&#34;Iriver Story&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了.&lt;/p&gt;
+&lt;h3 id=&#34;reMarkable-1&#34;&gt;reMarkable 1&lt;/h3&gt;
+&lt;p&gt;早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 &lt;a href=&#34;https://www.myequil.com/smartpen2/&#34;&gt;equil Smartpen&lt;/a&gt;, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://myequil.wpengine.com/wp-content/themes/ensconce/images/f_components_trans.png&#34; alt=&#34;equil smartpen&#34;&gt;&lt;/p&gt;
-&lt;p&gt;虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&amp;#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. &lt;/p&gt;
-&lt;p&gt;而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). &lt;/p&gt;
-&lt;h3 id=&#34;reMarkable-2&#34;&gt;&lt;a href=&#34;#reMarkable-2&#34; class=&#34;headerlink&#34; title=&#34;reMarkable 2&#34;&gt;&lt;/a&gt;reMarkable 2&lt;/h3&gt;&lt;p&gt;快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. &lt;/p&gt;
-&lt;p&gt;拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. &lt;/p&gt;
-&lt;p&gt;金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. &lt;/p&gt;
-&lt;h3 id=&#34;写-画&#34;&gt;&lt;a href=&#34;#写-画&#34; class=&#34;headerlink&#34; title=&#34;写 &amp;amp; 画&#34;&gt;&lt;/a&gt;写 &amp;amp; 画&lt;/h3&gt;&lt;p&gt;先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. &lt;/p&gt;
+&lt;p&gt;虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒/笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了.&lt;/p&gt;
+&lt;p&gt;而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧).&lt;/p&gt;
+&lt;h3 id=&#34;reMarkable-2&#34;&gt;reMarkable 2&lt;/h3&gt;
+&lt;p&gt;快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到.&lt;/p&gt;
+&lt;p&gt;拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手.&lt;/p&gt;
+&lt;p&gt;金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕.&lt;/p&gt;
+&lt;h3 id=&#34;写-画&#34;&gt;写 &amp;amp; 画&lt;/h3&gt;
+&lt;p&gt;先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便.&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51061764988/in/dateposted-public/&#34; title=&#34;网格预览&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51061764988_62f96a4583_h.jpg&#34; alt=&#34;网格预览&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51061666508/in/dateposted-public/&#34; title=&#34;网格输出&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51061666508_4baeb5f74d_h.jpg&#34; alt=&#34;网格输出&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. &lt;/p&gt;
-&lt;p&gt;另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ &lt;/p&gt;
+&lt;p&gt;reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的.&lt;/p&gt;
+&lt;p&gt;另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/50999813030/in/dateposted-public/&#34; title=&#34;书法练习&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/50999813030_cbbd2ba488_h.jpg&#34; alt=&#34;书法练习&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了&lt;a href=&#34;https://www.youtube.com/watch?v=UbxbpkLIf4E&#34;&gt;速写练习&lt;/a&gt;: &lt;/p&gt;
+&lt;p&gt;说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了&lt;a href=&#34;https://www.youtube.com/watch?v=UbxbpkLIf4E&#34;&gt;速写练习&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51062480106/in/dateposted-public/&#34; title=&#34;速写练习&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51062480106_d9269ee5c8_h.jpg&#34; alt=&#34;速写练习&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;除了速写之外, 我也试着用它来进行偶尔的插画: &lt;/p&gt;
+&lt;p&gt;除了速写之外, 我也试着用它来进行偶尔的插画:&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51062467122/in/dateposted-public/&#34; title=&#34;星之原石&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51062467122_19d84d6f43_h.jpg&#34; alt=&#34;星之原石&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. &lt;/p&gt;
-&lt;p&gt;另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑&amp;#x2F;手机上实时预览 reMarkable 上的作画&amp;#x2F;书写&amp;#x2F;注记, 是个非常方便的小功能. &lt;/p&gt;
-&lt;h3 id=&#34;读&#34;&gt;&lt;a href=&#34;#读&#34; class=&#34;headerlink&#34; title=&#34;读&#34;&gt;&lt;/a&gt;读&lt;/h3&gt;&lt;p&gt;虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf&amp;#x2F;epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. &lt;/p&gt;
+&lt;p&gt;reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满.&lt;/p&gt;
+&lt;p&gt;另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑/手机上实时预览 reMarkable 上的作画/书写/注记, 是个非常方便的小功能.&lt;/p&gt;
+&lt;h3 id=&#34;读&#34;&gt;读&lt;/h3&gt;
+&lt;p&gt;虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf/epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕.&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/51062563897/in/dateposted-public/&#34; title=&#34;Type is Beautiful 会刊&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/51062563897_92bb4c3ab6_h.jpg&#34; alt=&#34;Type is Beautiful 会刊&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 &lt;a href=&#34;https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh&#34;&gt;read on reMarkable&lt;/a&gt; Chrome 扩展, 可是我这里从来没有成功过⋯⋯ &lt;/p&gt;
-&lt;h4 id=&#34;中文支持&#34;&gt;&lt;a href=&#34;#中文支持&#34; class=&#34;headerlink&#34; title=&#34;中文支持&#34;&gt;&lt;/a&gt;中文支持&lt;/h4&gt;&lt;p&gt;reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (&lt;a href=&#34;https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/&#34;&gt;参考资料&lt;/a&gt;). &lt;/p&gt;
-&lt;p&gt;首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &amp;gt; Help &amp;gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&amp;#x2F;ssh 客户端&lt;/p&gt;
+&lt;p&gt;话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 &lt;a href=&#34;https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh&#34;&gt;read on reMarkable&lt;/a&gt; Chrome 扩展, 可是我这里从来没有成功过⋯⋯&lt;/p&gt;
+&lt;h4 id=&#34;中文支持&#34;&gt;中文支持&lt;/h4&gt;
+&lt;p&gt;reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (&lt;a href=&#34;https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/&#34;&gt;参考资料&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &amp;gt; Help &amp;gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端/ssh 客户端&lt;/p&gt;
 &lt;pre class=&#34; language-hljs plaintext&#34;&gt;&lt;code class=&#34;language-hljs plaintext&#34;&gt;ssh root@&lt;你的.reMarkable.IP.地址&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后输入密码, 即可进入 reMarkable 的根目录. &lt;/p&gt;
+&lt;p&gt;然后输入密码, 即可进入 reMarkable 的根目录.&lt;/p&gt;
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34; data-footer=&#34;true&#34; href=&#34;https://www.flickr.com/photos/geoffreyr/50999647715/in/dateposted-public/&#34; title=&#34;非常炫酷的登陆画面&#34;&gt;&lt;img src=&#34;https://live.staticflickr.com/65535/50999647715_7705b77839_h.jpg&#34; alt=&#34;非常炫酷的登陆画面&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 &lt;code&gt;fc-list&lt;/code&gt; 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 &lt;code&gt;/usr/share/fonts/&lt;/code&gt;. 了解这个信息后, 我们就可以往里面添加字体了. &lt;/p&gt;
-&lt;p&gt;新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: &lt;/p&gt;
+&lt;p&gt;成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 &lt;code&gt;fc-list&lt;/code&gt; 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 &lt;code&gt;/usr/share/fonts/&lt;/code&gt;. 了解这个信息后, 我们就可以往里面添加字体了.&lt;/p&gt;
+&lt;p&gt;新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体:&lt;/p&gt;
 &lt;pre class=&#34; language-hljs plaintext&#34;&gt;&lt;code class=&#34;language-hljs plaintext&#34;&gt;scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:/usr/share/fonts/ttf/&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, &lt;/p&gt;
+&lt;p&gt;便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口,&lt;/p&gt;
 &lt;pre class=&#34; language-hljs plaintext&#34;&gt;&lt;code class=&#34;language-hljs plaintext&#34;&gt;cd /usr/share/fonts/&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;进入字体文件夹, &lt;code&gt;mkdir otf/ttc&lt;/code&gt; (后面的 otf&amp;#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. &lt;/p&gt;
-&lt;p&gt;传输完文件后, 再次输入 &lt;code&gt;fc-list&lt;/code&gt; 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&amp;#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. &lt;/p&gt;
-&lt;p&gt;如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 &lt;a href=&#34;https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/&#34;&gt;Linux 下的字体调校指南&lt;/a&gt;. &lt;/p&gt;
-&lt;h3 id=&#34;结语&#34;&gt;&lt;a href=&#34;#结语&#34; class=&#34;headerlink&#34; title=&#34;结语&#34;&gt;&lt;/a&gt;结语&lt;/h3&gt;&lt;p&gt;自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. &lt;/p&gt;
+&lt;p&gt;进入字体文件夹, &lt;code&gt;mkdir otf/ttc&lt;/code&gt; (后面的 otf/ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可.&lt;/p&gt;
+&lt;p&gt;传输完文件后, 再次输入 &lt;code&gt;fc-list&lt;/code&gt; 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言/风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已.&lt;/p&gt;
+&lt;p&gt;如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 &lt;a href=&#34;https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/&#34;&gt;Linux 下的字体调校指南&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
+&lt;p&gt;自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击.&lt;/p&gt;
 </content>
         <category term="Gadget" />
         <updated>2021-03-22T10:21:59.000Z</updated>
