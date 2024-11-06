@@ -325,6 +325,9 @@ a.footer-link:focus {
 .instagram {
     fill: #e4405f;
 }
+.bluesky {
+    fill: #007bf9;
+}
 
 .nanobar {
     left: 0;
