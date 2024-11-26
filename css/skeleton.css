@@ -240,15 +240,15 @@ h6 {
         "DM Serif Display",
         Charter,
         "Bitstream Charter",
-        "FZYouSongJ GBK",
         "HYXuanSong",
+        "FZYouSongJ GBK",
         "Ten Mincho",
         "Ten Mincho Antique",
         "Source Han Serif VF",
         -apple-system,
         BlinkMacSystemFont,
         serif;
-    font-weight: 900;
+    font-weight: 800;
     font-variant: oldstyle-nums;
 }
 
