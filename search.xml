@@ -64,32 +64,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
-    <url>/2022-09/LM-EA9/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
-<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
-<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
-<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
-<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
-<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
-<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
-<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
-<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
-<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photography is FUN —— 更多尼康老鏡頭</title>
     <url>/2024-03/EvenMoreNikkokrVintageLens/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>這幾個月我又陸續入手了一些尼康老鏡頭⋯⋯ 它們分別是 Nikkor-N･C Auto 1:2.8 f&#x3D;24mm; Nikkor-O･C Auto 1:2 f&#x3D;35mm; AI Nikkor*ED 180mm 1:2.8 S. 當然, 還有一點很重要的是我又購入了一臺 FM3ᴀ.</p>
@@ -130,6 +104,32 @@
 <p><img src="/2024-03/EvenMoreNikkokrVintageLens/dsc09666-_53610441129_o.avif"></p>
 <p>這是在購入 105&#x2F;2,5 之前購買的, 2021 年上市的, 非常新的鏡頭. 不得不說 SL-IIs 系列鏡頭的設計真的非常棒, 完美抓住了 Auto 鏡頭的精髓, 但又是 AIS 卡口, 甚至附帶電子觸點, 簡直是完美結合. 使用體驗方面, 它很 APO, 90 也是個用起來非常舒服的焦段, 我甚至也用它掛機了一段時間. 不過在 105&#x2F;2,5 到手之後它就迅速進了冷宮⋯⋯ </p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720311137111" title="Apo Skopar 90/2.8 SL2s"><img src="https://live.staticflickr.com/65535/53182084759_33bf616e63_b.jpg"  alt="Apo Skopar 90/2.8 SL2s"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
+    <url>/2022-09/LM-EA9/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
+<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
+<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
+<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
+<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
+<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
+<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -199,6 +199,40 @@
 <p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15&#x2F;1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
 <hr>
 <p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— Standard Obsession Ⅲ</title>
+    <url>/2024-10/Standard-Obsession-3/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Nikkor-H-Auto-50mm-f-2"><a href="#Nikkor-H-Auto-50mm-f-2" class="headerlink" title="Nikkor-H Auto 50mm ƒ&#x2F;2"></a>Nikkor-H Auto 50mm ƒ&#x2F;2</h3><p>我知道, 我知道⋯⋯ 我已經有這枚鏡頭的完全上位替代 <a href="https://novadng.studio/2022-01/Standard-Obsession/">AI Nikkor 50mm ƒ&#x2F;1.8 S</a> 了, 但是⋯⋯ 隨著時間經過, 我愈發認為 AI 風格的塑膠皮對焦環令人難以忍受, 而 Auto 鏡頭的金屬對焦環則越看越順眼⋯⋯ 於是我終於在閒魚上低價購入了這枚差不多 60 歲高齡的老鏡. 這枚鏡頭和我之前買的其他尼康老鏡最大的不同就是, 它是一枚 ｢官改｣ 鏡. </p>
+<p><img src="/2024-10/Standard-Obsession-3/24355055105.avif"></p>
+<p>先給不瞭解尼康 F 卡口發展史的讀者簡單概括一下: 雖然尼康號稱 F 卡口相容性強大, 但在發展過程中先後經歷了 Auto -&gt; AI -&gt; AI-S -&gt; AF -&gt; AF-E 這幾個比較重大的改版, 最老的 Auto 鏡頭如果不經過 ｢改口｣ 的話無法安裝到大部分 AI&#x2F;AI-S&#x2F;AF 機身上, 因為鏡頭末端沒有留出與機身上的光圈聯動杆對接的空間. 在 AI 機身&#x2F;鏡頭剛剛推出的七十年代, 尼康為自家顧客提供了官方修改鏡頭卡口的服務, Auto 鏡頭的使用者花一點錢就可以讓尼康把鏡頭的光圈環拆下來, 替換成既能在老機身上使用､ 測光, 又能原生支援新 AI 聯動的部件. 這就是所謂的 ｢官改｣. 等到 2005 年, 尼康早已不銷售任何 Auto 鏡頭, 心思全部放在追趕佳能的自動對焦技術上了, 官方改口服務也宣告終結. </p>
+<p>當然, 要讓 Auto 鏡頭能順利在新機身上使用其實並不是很難的事情, 普通人只要有銼刀和耐心都能做到, 所以無論是當年還是現在, 都有無數使用者直接在自家把鏡頭銼成能與新相機相容的狀態. 比起官改, 這些 ｢私改｣ AI 口的鏡頭最大的缺點是沒有光圈直讀標識 (Aperture Direct Readout), 在尼康電子化前推出的相機上都不能直接在取景器中觀測光圈數值. 當然製作者的手藝也對成品質量影響很大, 我手頭的這些私改鏡頭裡, 手藝比較細的會保留 ｢兔耳｣, 在打磨完的切口上塗上保護漆, 乍一看似乎毫髮無損; 比較糙的會直接磨掉兔耳的一部分, 甚至會連螺孔一起磨掉, 當然更不用想會有保護漆了. </p>
+<p><img src="/2024-10/Standard-Obsession-3/35+50.avif"></p>
+<blockquote>
+<p>兩枚官改白嘴鏡頭</p>
+</blockquote>
+<p>不過歸根結底, 就算是手藝再糙其實也是不會影響最終成像效果的 (糙到歪了好幾毫米影響自動測光那種程度就有點過分了, 我也沒遇到過), 而且因為打磨的區域在最靠近卡口的部分, 鏡頭裝到機身上之後就看不到了, 我之前並沒有特別在意這些. 直到某一天, 我得知了世界上有官改 Nikkor-H 50&#x2F;2 的存在. 這枚鏡頭的特殊之處在於它的銀色內鏡筒 (白嘴), 而且光圈環與對焦環一樣採用了凹凸形設計 (題外話: 現在福倫達還在生產的幾枚 F 鏡頭都採用了這樣的設計), 簡直長在了我的審美上 , 於是我就毫不猶豫地入手了一枚. </p>
+<p><img src="/2024-10/Standard-Obsession-3/FM3%E1%B4%80+50.avif"></p>
+<p>和 FA 與 FM3ᴀ 確實都是絕配, 果然拿在手上心情更好了, 損失的那半檔光圈和顏值比起來根本不算個事兒了. 不過比起損失半檔光圈, 這個鏡頭因為沒有多層鍍膜, 在強光直射的環境下對比度直接爆炸的問題才是比較令人擔憂的, 好在鏡頭前組其實相當深陷於鏡筒中, 倒是不必太擔心畫面外雜光的影響. 仔細一想, 50&#x2F;2 的光學設計和 50&#x2F;1.8 沒有太大區別, 把鏡筒重新設計一下的話大概也能變成餅乾頭的體型吧⋯⋯? </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720321539386" title="Nikkor 50/2"><img src="https://live.staticflickr.com/65535/54099831678_e6a96863b3_c.jpg" alt="Nikkor 50/2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Voigtlander-Nokton-Classic-40mm-f-1-4"><a href="#Voigtlander-Nokton-Classic-40mm-f-1-4" class="headerlink" title="Voigtländer Nokton Classic 40mm ƒ&#x2F;1.4"></a>Voigtländer Nokton Classic 40mm ƒ&#x2F;1.4</h3><p>我知道, 我知道⋯⋯ 我已經有比這枚鏡頭更小巧的 <a href="https://novadng.studio/2022-09/Standard-Obsession-2">Heliar 40&#x2F;2.8</a> 了, 但是⋯⋯ 首先這枚鏡頭基本沒比 Heliar 40&#x2F;2.8 大多少, 以此為代價她自帶對焦螺線, 而且光圈大了二檔! 在這基本算是口袋體積的前提下做到 1.4 的大光圈, 就算全開的時候基本上可以說只能拍拍人像小品, 這多出來的兩檔很多時候就是能拍與不能拍的區別. 而且, 能直接在 Hexar RF 和 R-D1 上使用也是很大的一個賣點, ⋯⋯你看, 只要想找理由總是可以找到的 (</p>
+<p><img src="/2024-10/Standard-Obsession-3/Z%C6%92+40.avif"></p>
+<p>光圈大二檔還有一個好處就是即使在夜間也可以收一檔光圈拍出帶星芒的街景. 福倫達在這些古典鏡頭中都使用了基本直線的光圈葉片, 星芒非常銳利醒目. Heliar 40&#x2F;2.8 雖然也可以收, 但本就不充裕的光圈再收 ISO 就要飆太高了, 得不償失. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720318159646" title="Nokton Classic 40/1.4"><img src="https://live.staticflickr.com/65535/53810164605_102d534c69_b.jpg" alt="Nokton Classic 40/1.4"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>夜間的日本街道可以說是這枚鏡頭最好的遊樂場. 比 35mm 略窄一點的視角對我來說正好能裁去我不擅長發現的多餘元素, 構圖變得更加得心應手. 在 Zƒ 上無論是手動對焦還是配合 TZM 接環進行自動對焦體驗都非常流暢. </p>
+<p>這枚鏡頭有個巨大的缺陷&#x2F;特點就是場曲十分嚴重. 如果你想要用它拍風光, 覺得光圈收到 ƒ&#x2F;5.6 就足夠應付了 (從銳利度角度來說, 在 Zƒ 上這是正確的), 拍完會發現周邊依然軟綿綿的. 實際上重新對邊角處對焦後就能拍出邊角銳利的照片, 當然代價就是⋯⋯ 畫面中心會變軟. 這個問題大約要等光圈收到 ƒ&#x2F;8 甚至 ƒ&#x2F;11 才能解決. 好在我本來就沒怎麼打算用它拍風光, 這也就不算是什麼大問題了. </p>
+<h3 id="Voigtlander-Macro-APO-Lanthar-65mm-f-2-Aspherical-Z"><a href="#Voigtlander-Macro-APO-Lanthar-65mm-f-2-Aspherical-Z" class="headerlink" title="Voigtländer Macro APO-Lanthar 65mm ƒ&#x2F;2 Aspherical Z"></a>Voigtländer Macro APO-Lanthar 65mm ƒ&#x2F;2 Aspherical Z</h3><p>啊! APO! 我的生命之光! 我的慾念之火! 我的罪孽! 我的靈魂! Apo-chroma-tic! (((</p>
+<p>我確實不是初次擁有自稱 APO 的鏡頭了: 從最早的 Voigtländer APO-Skopar 90mm ƒ&#x2F;2.8 到後來的 Zeiss APO-Sonnar 135mm ƒ&#x2F;2, 他們的質素都是毫無疑問的優異, 但, 又沒有達到我心目中對於 APO 的追求. 在一年前試用過某位熟人的 Leica APO-Summicron M 35mm ƒ&#x2F;2 之後, 我心中對 APO 的渴望就愈發強烈. </p>
+<p><img src="/2024-10/Standard-Obsession-3/Z%C6%92+65.avif"></p>
+<p>自從我確定要購買 Zƒ 之後, 我就一直把目光鎖定在這枚鏡頭上. 沒錯, 她比起我手上目前所有的標準鏡來講都可以說是龐然巨物, 但若是論畫質她又是我手頭所有鏡頭中毫無疑問的第一名. 雖然我一直說比起鏡頭各異的特性來說畫質沒那麼令人在意, 但我終歸還是需要一枚能應付高質素拍攝的鏡頭. 這枚 65 同時還是能夠做到 0.5 倍放大的凖微距頭, 而我在 Zƒ 上使用 <a href="https://novadng.studio/2023-12/MoreNikkorVintageLens/">AIS 55&#x2F;2.8</a> 的體驗其實並不太好, 且 55&#x2F;2.8 在近攝時如果全開光圈質素其實下降得有點明顯. 思來想去, 我還是義無反顧地購入了這枚 65&#x2F;2.</p>
+<p>要論現代, 這枚 65&#x2F;2 在設計時間上其實早於 90&#x2F;2.8 APO-Skopar, Z 卡口版本雖然於 2022 年推出, 但光學系統和 17 年面世的 E 卡口版本並無區別, 而 90&#x2F;2.8 則是大約 21 年底面世, 光學系統算是全新設計了. 但是 90&#x2F;2.8 的 APO 標打得相對更寬鬆, 在色散以外的部分表現其實普普, 而由於偏長焦也不太便於用來拍攝產品, 而比起傳奇的 Nikkor 105&#x2F;2.5 她又並無太多的個性可言, 所以在我手上一直是冷宮狀態. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720320622733" title="Macro Apo Lanthar 65/2"><img src="https://live.staticflickr.com/65535/54023309174_6e59ab555d_b.jpg" alt="Macro Apo Lanthar 65/2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>有趣的是雖然它是打著 Macro 旗號買來的鏡頭, 我用它 90% 的情境都是普通距離, 微距的樣片好像一張都找不到⋯⋯ 不過說道微距, 推薦一下維卓仕家的 <a href="https://viltrox.com/products/viltrox-dg-z-brass-bayonet-auto-focus-af-macro-extension-tube-ring-set-12mm-24mm-for-nikon-z6-z7-z50-z-mount-mirrorless-camera">Z 口微距延長環</a>, 這應該是市面上唯一一款帶電子觸點, 這樣能保證我在對焦時能看到合焦提示, 極大提升便利度. 可惜這款延長環的筒身是塑膠製, 手感其實很爛, 卡口雖然官方說是金屬製, 但我怎麼看都覺得像是塑膠鍍上一層金屬漆⋯⋯ 算了, 反正它能做到將 65&#x2F;2 的放大率撐到接近 1:1, 也不貴, 不能要求太多了. </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -340,37 +374,75 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN —— Standard Obsession Ⅲ</title>
-    <url>/2024-10/Standard-Obsession-3/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Nikkor-H-Auto-50mm-f-2"><a href="#Nikkor-H-Auto-50mm-f-2" class="headerlink" title="Nikkor-H Auto 50mm ƒ&#x2F;2"></a>Nikkor-H Auto 50mm ƒ&#x2F;2</h3><p>我知道, 我知道⋯⋯ 我已經有這枚鏡頭的完全上位替代 <a href="https://novadng.studio/2022-01/Standard-Obsession/">AI Nikkor 50mm ƒ&#x2F;1.8 S</a> 了, 但是⋯⋯ 隨著時間經過, 我愈發認為 AI 風格的塑膠皮對焦環令人難以忍受, 而 Auto 鏡頭的金屬對焦環則越看越順眼⋯⋯ 於是我終於在閒魚上低價購入了這枚差不多 60 歲高齡的老鏡. 這枚鏡頭和我之前買的其他尼康老鏡最大的不同就是, 它是一枚 ｢官改｣ 鏡. </p>
-<p><img src="/2024-10/Standard-Obsession-3/24355055105.avif"></p>
-<p>先給不瞭解尼康 F 卡口發展史的讀者簡單概括一下: 雖然尼康號稱 F 卡口相容性強大, 但在發展過程中先後經歷了 Auto -&gt; AI -&gt; AI-S -&gt; AF -&gt; AF-E 這幾個比較重大的改版, 最老的 Auto 鏡頭如果不經過 ｢改口｣ 的話無法安裝到大部分 AI&#x2F;AI-S&#x2F;AF 機身上, 因為鏡頭末端沒有留出與機身上的光圈聯動杆對接的空間. 在 AI 機身&#x2F;鏡頭剛剛推出的七十年代, 尼康為自家顧客提供了官方修改鏡頭卡口的服務, Auto 鏡頭的使用者花一點錢就可以讓尼康把鏡頭的光圈環拆下來, 替換成既能在老機身上使用､ 測光, 又能原生支援新 AI 聯動的部件. 這就是所謂的 ｢官改｣. 等到 2005 年, 尼康早已不銷售任何 Auto 鏡頭, 心思全部放在追趕佳能的自動對焦技術上了, 官方改口服務也宣告終結. </p>
-<p>當然, 要讓 Auto 鏡頭能順利在新機身上使用其實並不是很難的事情, 普通人只要有銼刀和耐心都能做到, 所以無論是當年還是現在, 都有無數使用者直接在自家把鏡頭銼成能與新相機相容的狀態. 比起官改, 這些 ｢私改｣ AI 口的鏡頭最大的缺點是沒有光圈直讀標識 (Aperture Direct Readout), 在尼康電子化前推出的相機上都不能直接在取景器中觀測光圈數值. 當然製作者的手藝也對成品質量影響很大, 我手頭的這些私改鏡頭裡, 手藝比較細的會保留 ｢兔耳｣, 在打磨完的切口上塗上保護漆, 乍一看似乎毫髮無損; 比較糙的會直接磨掉兔耳的一部分, 甚至會連螺孔一起磨掉, 當然更不用想會有保護漆了. </p>
-<p><img src="/2024-10/Standard-Obsession-3/35+50.avif"></p>
+    <title>東京遊記 PART Ⅱ</title>
+    <url>/2024-10/TripToTokyo2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/dateposted-public/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Day-3-八月八日-星期四-千駄ヶ谷-墨田"><a href="#Day-3-八月八日-星期四-千駄ヶ谷-墨田" class="headerlink" title="Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田"></a>Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田</h3><p>從這天開始行程就不是我一個人了, <a href="https://bsky.app/profile/bsky.mikelei.me">米克雷</a>在昨天 Live 結束後與我會和, 之後便一直同行至東京之行結束. 由於昨天 live 的衝擊, 今天的行程安排比較寬裕, 只有拜訪 Pixiv 和晴空塔. Pixiv 可以說是我的插繪審美啟蒙, 是我心目中的聖地之一. 之前默默使用了十幾年, 今天終於有機會一探究竟. </p>
+<p>帶領我參觀的是 <a href="https://twitter.com/godling_zlm">@godling_zlm</a>, 感覺我們也快認識十年 ⸺ 不對, 搞不好真的已經十年了⋯⋯ Pixiv 總部位於 <a href="https://www.pixiv.co.jp/company/">JPR 千駄ヶ谷大樓</a>, 從外面看就是一棟毫不起眼的辦公樓, 沒有任何能讓人聯想到世界上萬億頂尖插繪在此集聚的特徵. 但可別被它的外觀欺騙, Pixiv 的辦公室可是大有乾坤. </p>
+<p>一下電梯, 出現在眼前的就是一片由巨大繪馬構成的牆. 其上滿是各位耳熟能詳的大手繪師作品. 從電梯廳往辦公區行進, 會經過一個兩面掛滿了小號繪馬的通道, 這些繪馬無論哪個單獨拿出來都足夠寶貴了, 在 Pixiv 居然能鋪滿好幾面牆, 而且還在不斷替換⋯⋯ 實在是令人垂涎. Godling 介紹了這個辦公室是由大名鼎鼎的 <a href="https://www.teamlab.art/">teamLab</a> 操刀設計 ⸺ 最近同為他們操刀的麻布台 <a href="https://www.teamlab.art/jp/e/tokyo/">Digital Art Museum 展覽</a>也很火, 我本想找機會去參觀, 但沒能擠出時間只能遺憾作罷. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54071450508/in/album-72177720321005949" title="DSC_1073-50mm f-1G"><img src="https://live.staticflickr.com/65535/54071450508_7d3dea6c8a_b.jpg" alt="DSC_1073-50mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068751131/in/album-72177720321005949/" title="三輪士郎"><img src="https://live.staticflickr.com/65535/54068751131_c3a39bd32a_b.jpg" alt="三輪士郎"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>進入辦公區內部, 更加震撼的畫面呈現在我的眼前: 整個主辦公區由一張連成一體的巨大木質桌子環繞, 這桌子形狀蜿蜒曲折彷彿擁有生命, 以非常自然的狀態構成了幾十個<strong>相連但又互不影響</strong>的工作區域. Godling 介紹在瘟疫過後大部分員工都選擇居家辦公, 所以儘管是工作日在這辦公的人也寥寥無幾, 但我已經可以想象在瘟疫前這會是一個多麼和諧美好的工作空間了. 現代辦公室設計很難擺脫在個人空間與效率間擇一的難題, teamLab 用這塊形狀奇異的桌子漂亮地給出了解決方案, 可以說讓人大開眼界. </p>
+<p><img src="https://cdn.prod.website-files.com/5db35de024bb988f5fb4e168/5e58ed2a8d96fd5240cdf46f_pixiv-hero.jpg" alt="辦公區俯視圖"></p>
 <blockquote>
-<p>兩枚官改白嘴鏡頭</p>
+<p>要完整展現這張桌子對我的鏡頭來說不愧是難度太高了, 就用<a href="https://bitrise.io/customer-stories/pixiv-jp">發表在網上</a>的公開圖片吧</p>
 </blockquote>
-<p>不過歸根結底, 就算是手藝再糙其實也是不會影響最終成像效果的 (糙到歪了好幾毫米影響自動測光那種程度就有點過分了, 我也沒遇到過), 而且因為打磨的區域在最靠近卡口的部分, 鏡頭裝到機身上之後就看不到了, 我之前並沒有特別在意這些. 直到某一天, 我得知了世界上有官改 Nikkor-H 50&#x2F;2 的存在. 這枚鏡頭的特殊之處在於它的銀色內鏡筒 (白嘴), 而且光圈環與對焦環一樣採用了凹凸形設計 (題外話: 現在福倫達還在生產的幾枚 F 鏡頭都採用了這樣的設計), 簡直長在了我的審美上 , 於是我就毫不猶豫地入手了一枚. </p>
-<p><img src="/2024-10/Standard-Obsession-3/FM3%E1%B4%80+50.avif"></p>
-<p>和 FA 與 FM3ᴀ 確實都是絕配, 果然拿在手上心情更好了, 損失的那半檔光圈和顏值比起來根本不算個事兒了. 不過比起損失半檔光圈, 這個鏡頭因為沒有多層鍍膜, 在強光直射的環境下對比度直接爆炸的問題才是比較令人擔憂的, 好在鏡頭前組其實相當深陷於鏡筒中, 倒是不必太擔心畫面外雜光的影響. 仔細一想, 50&#x2F;2 的光學設計和 50&#x2F;1.8 沒有太大區別, 把鏡筒重新設計一下的話大概也能變成餅乾頭的體型吧⋯⋯? </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720321539386" title="Nikkor 50/2"><img src="https://live.staticflickr.com/65535/54099831678_e6a96863b3_c.jpg" alt="Nikkor 50/2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Voigtlander-Nokton-Classic-40mm-f-1-4"><a href="#Voigtlander-Nokton-Classic-40mm-f-1-4" class="headerlink" title="Voigtländer Nokton Classic 40mm ƒ&#x2F;1.4"></a>Voigtländer Nokton Classic 40mm ƒ&#x2F;1.4</h3><p>我知道, 我知道⋯⋯ 我已經有比這枚鏡頭更小巧的 <a href="https://novadng.studio/2022-09/Standard-Obsession-2">Heliar 40&#x2F;2.8</a> 了, 但是⋯⋯ 首先這枚鏡頭基本沒比 Heliar 40&#x2F;2.8 大多少, 以此為代價她自帶對焦螺線, 而且光圈大了二檔! 在這基本算是口袋體積的前提下做到 1.4 的大光圈, 就算全開的時候基本上可以說只能拍拍人像小品, 這多出來的兩檔很多時候就是能拍與不能拍的區別. 而且, 能直接在 Hexar RF 和 R-D1 上使用也是很大的一個賣點, ⋯⋯你看, 只要想找理由總是可以找到的 (</p>
-<p><img src="/2024-10/Standard-Obsession-3/Z%C6%92+40.avif"></p>
-<p>光圈大二檔還有一個好處就是即使在夜間也可以收一檔光圈拍出帶星芒的街景. 福倫達在這些古典鏡頭中都使用了基本直線的光圈葉片, 星芒非常銳利醒目. Heliar 40&#x2F;2.8 雖然也可以收, 但本就不充裕的光圈再收 ISO 就要飆太高了, 得不償失. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720318159646" title="Nokton Classic 40/1.4"><img src="https://live.staticflickr.com/65535/53810164605_102d534c69_b.jpg" alt="Nokton Classic 40/1.4"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>夜間的日本街道可以說是這枚鏡頭最好的遊樂場. 比 35mm 略窄一點的視角對我來說正好能裁去我不擅長發現的多餘元素, 構圖變得更加得心應手. 在 Zƒ 上無論是手動對焦還是配合 TZM 接環進行自動對焦體驗都非常流暢. </p>
-<p>這枚鏡頭有個巨大的缺陷&#x2F;特點就是場曲十分嚴重. 如果你想要用它拍風光, 覺得光圈收到 ƒ&#x2F;5.6 就足夠應付了 (從銳利度角度來說, 在 Zƒ 上這是正確的), 拍完會發現周邊依然軟綿綿的. 實際上重新對邊角處對焦後就能拍出邊角銳利的照片, 當然代價就是⋯⋯ 畫面中心會變軟. 這個問題大約要等光圈收到 ƒ&#x2F;8 甚至 ƒ&#x2F;11 才能解決. 好在我本來就沒怎麼打算用它拍風光, 這也就不算是什麼大問題了. </p>
-<h3 id="Voigtlander-Macro-APO-Lanthar-65mm-f-2-Aspherical-Z"><a href="#Voigtlander-Macro-APO-Lanthar-65mm-f-2-Aspherical-Z" class="headerlink" title="Voigtländer Macro APO-Lanthar 65mm ƒ&#x2F;2 Aspherical Z"></a>Voigtländer Macro APO-Lanthar 65mm ƒ&#x2F;2 Aspherical Z</h3><p>啊! APO! 我的生命之光! 我的慾念之火! 我的罪孽! 我的靈魂! Apo-chroma-tic! (((</p>
-<p>我確實不是初次擁有自稱 APO 的鏡頭了: 從最早的 Voigtländer APO-Skopar 90mm ƒ&#x2F;2.8 到後來的 Zeiss APO-Sonnar 135mm ƒ&#x2F;2, 他們的質素都是毫無疑問的優異, 但, 又沒有達到我心目中對於 APO 的追求. 在一年前試用過某位熟人的 Leica APO-Summicron M 35mm ƒ&#x2F;2 之後, 我心中對 APO 的渴望就愈發強烈. </p>
-<p><img src="/2024-10/Standard-Obsession-3/Z%C6%92+65.avif"></p>
-<p>自從我確定要購買 Zƒ 之後, 我就一直把目光鎖定在這枚鏡頭上. 沒錯, 她比起我手上目前所有的標準鏡來講都可以說是龐然巨物, 但若是論畫質她又是我手頭所有鏡頭中毫無疑問的第一名. 雖然我一直說比起鏡頭各異的特性來說畫質沒那麼令人在意, 但我終歸還是需要一枚能應付高質素拍攝的鏡頭. 這枚 65 同時還是能夠做到 0.5 倍放大的凖微距頭, 而我在 Zƒ 上使用 <a href="https://novadng.studio/2023-12/MoreNikkorVintageLens/">AIS 55&#x2F;2.8</a> 的體驗其實並不太好, 且 55&#x2F;2.8 在近攝時如果全開光圈質素其實下降得有點明顯. 思來想去, 我還是義無反顧地購入了這枚 65&#x2F;2.</p>
-<p>要論現代, 這枚 65&#x2F;2 在設計時間上其實早於 90&#x2F;2.8 APO-Skopar, Z 卡口版本雖然於 2022 年推出, 但光學系統和 17 年面世的 E 卡口版本並無區別, 而 90&#x2F;2.8 則是大約 21 年底面世, 光學系統算是全新設計了. 但是 90&#x2F;2.8 的 APO 標打得相對更寬鬆, 在色散以外的部分表現其實普普, 而由於偏長焦也不太便於用來拍攝產品, 而比起傳奇的 Nikkor 105&#x2F;2.5 她又並無太多的個性可言, 所以在我手上一直是冷宮狀態. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720320622733" title="Macro Apo Lanthar 65/2"><img src="https://live.staticflickr.com/65535/54023309174_6e59ab555d_b.jpg" alt="Macro Apo Lanthar 65/2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>有趣的是雖然它是打著 Macro 旗號買來的鏡頭, 我用它 90% 的情境都是普通距離, 微距的樣片好像一張都找不到⋯⋯ 不過說道微距, 推薦一下維卓仕家的 <a href="https://viltrox.com/products/viltrox-dg-z-brass-bayonet-auto-focus-af-macro-extension-tube-ring-set-12mm-24mm-for-nikon-z6-z7-z50-z-mount-mirrorless-camera">Z 口微距延長環</a>, 這應該是市面上唯一一款帶電子觸點, 這樣能保證我在對焦時能看到合焦提示, 極大提升便利度. 可惜這款延長環的筒身是塑膠製, 手感其實很爛, 卡口雖然官方說是金屬製, 但我怎麼看都覺得像是塑膠鍍上一層金屬漆⋯⋯ 算了, 反正它能做到將 65&#x2F;2 的放大率撐到接近 1:1, 也不貴, 不能要求太多了. </p>
+<p>除去這塊桌子, 最讓我感興趣的就是牆上的書架了. 這裡塞滿了歷年來 pixiv 出版或協力的各種書刊, 是另一個巨大的寶庫, 如果能有機會把這裡的所有作品都閱讀一遍的話⋯⋯ 簡直是做夢都不敢想啊. 書架裡最醒目的區域是各種獎盃獎牌, 其中還有不少技術開發相關的獎項, 提醒了我其實 Pixiv 不單單擅於運營, 同樣是注重先進技術的公司. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069084509/in/album-72177720321005949/" title="DSC_1099-25 mm"><img src="https://live.staticflickr.com/65535/54069084509_d102798413_b.jpg" alt="DSC_1099-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>中午我們一起在<a href="https://maps.app.goo.gl/HhkhGHiXVLeb3Mzh7">代代木站附近的一家壽司店</a>吃了午飯. Godling 說這家店中午提供平價但高質量的社畜午餐, 晚上提供奢華大餐給社畜的老闆, 而我只覺得社畜午餐倒也量足料精價效比十足. 飽餐後我們就此別過, 他回家繼續工作, 而我與米克雷前往晴空塔. </p>
+<hr>
+<p>俗話說傻子和煙都喜歡高處, 這麼看來我必然是個傻子無誤了. 儘管知道晴空塔無論何時都遊客爆滿, 我還是義無反顧地把它列入本次行程必須去的目的地. 大概是根植於 DNA 裡的某些本能, 我一直很喜歡從高處俯瞰城市. 晴空塔 495m 的上層展望臺當然實打實地滿足了我. 和去年在哈爾濱登上龍塔時相比, 首先晴空塔的展望臺就已經比龍塔那 200 米出頭的高度要高上太多; 其次哈爾濱的城市俯瞰起來真的⋯⋯ 乏善可陳, 在嚴冬的襯托下一片肅殺; 相較之下從晴空塔上眺望東京看到的是秩序與混沌並存, 尤其是到日薄西山華燈初上時更是生機勃發, 與龍塔上所見簡直是兩個極端. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068752271/in/album-72177720321005949/" title="DSC_1157-135 mm"><img src="https://live.staticflickr.com/65535/54068752271_748349a6cc_b.jpg" alt="DSC_1157-135 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</p>
+</blockquote>
+<p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/album-72177720321005949/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg" alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051312762/in/album-72177720321005949/" title="DSC_1358-Enhanced-NR-40 mm"><img src="https://live.staticflickr.com/65535/54051312762_ab59c0738f_b.jpg" alt="DSC_1358-Enhanced-NR-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>快速上升的電梯 + 慢速快門產生的時空隧道感</p>
+</blockquote>
+<p>落日之後我打算繼續拍東京夜景, 於是繞到吧檯處. 吧檯是需要購買食物才能進入的, 但人相對要少一些, 有高度很剛好的桌子供客人進食, 風景也非常宜人. 俯瞰夜間的東京感覺繁華程度更甚日間, 各色燈光恰到好處地裝點城市的各個角落, 又不像很多國內的城市搞形狀詭異的夜景工程憑空製造光汙染, 給人的感覺十分乾淨. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051311352/in/album-72177720321005949/" title="DSC_1461-25 mm"><img src="https://live.staticflickr.com/65535/54051311352_7edcc96b3d_b.jpg" alt="DSC_1461-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>踩著打烊時點在餐飲街吃了點晚飯, 又在紀念品店買了一堆小禮物, 我們登上電車回到住處. </p>
+<h3 id="Day-4-八月九日-星期五-池袋-涉谷"><a href="#Day-4-八月九日-星期五-池袋-涉谷" class="headerlink" title="Day 4, 八月九日, 星期五, 池袋 - 涉谷"></a>Day 4, 八月九日, 星期五, 池袋 - 涉谷</h3><p>今天的行程 ⸺ 聖地巡禮. 池袋太陽城裡有兩個我們都特別想去的地方: 太陽城水族館和 ｢滿天｣ 天象館. 兩者都是在動畫 <a href="https://bgm.tv/subject/428735">Bang Dream! It’s MyGO!!!!! </a> 中登場, 有重要戲份發生的地點, 同樣也都是特別適合放鬆遊覽的景點. </p>
+<p>我們先進入了水族館. 大約全世界水族館都是吸引小朋友的地方, 太陽城這裡也不例外, 好在嘈雜程度比起國內的幾個水族館勉強還算是可以接受. 室內部分展出的水族並沒有什麼獨特之處, 但館內各種玻璃維護得非常乾淨, 觀看體驗比我之前在國內去的幾家都要好很多. 玻璃乾淨的另一個好處就是拍照效果也相對更好一些. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052809900/in/album-72177720321005949" title="DSC_1595-25 mm"><img src="https://live.staticflickr.com/65535/54052809900_7478532983_b.jpg" alt="DSC_1595-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>水母缸無論看幾次都覺得非常療愈</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052364421/in/album-72177720321005949/" title="DSC_1649-25 mm"><img src="https://live.staticflickr.com/65535/54052364421_c19d58bf4d_b.jpg" alt="DSC_1649-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>表情 (?) 十分佛系的烏賊</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052607148/in/album-72177720321005949/" title="DSC_1606-25 mm"><img src="https://live.staticflickr.com/65535/54052607148_264acbc0b9_b.jpg" alt="DSC_1606-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>比水母缸更好的是什麼? 那當然是水母牆啦</p>
+</blockquote>
+<p>室內部分並不大, 很快就走到了盡頭來到室外, 而這才是本館的重頭戲 ⸺ 空中企鵝的所在. 和印象裡不同, 在熱帶其實也有企鵝存在, 而太陽城水族館就有一批俗稱南非企鵝的熱帶企鵝. 在東京 33℃ 的驕陽下企鵝們懶洋洋地在假山的陰影裡休息或踱步, 偶爾有一兩隻跑到太陽下, 不一會兒也受不住炎熱去灑水噴頭旁納涼. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610323/in/album-72177720321005949" title="DSC_1799-40 mm"><img src="https://live.staticflickr.com/65535/54052610323_450e9dccda_b.jpg" alt="DSC_1799-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051214437/in/album-72177720321005949" title="65520034-"><img src="https://live.staticflickr.com/65535/54051214437_209db1d85d_b.jpg" alt="65520034-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>企鵝略有些笨拙的動作看起來的確是非常療愈. 但比起地上的企鵝, 更療愈的當然是 ⸺ 在空中的企鵝! 透過在市中心的四層建築上建造巨大水缸, 太陽城水族館讓企鵝在水缸中游泳的身姿變得彷彿在空中飛行一般. 我徹底理解了為什麼高松燈會辦水族館年票了, 如果可以的話我也想每天下班來這裡看企鵝⋯⋯ 不行的話至少每週一次⋯⋯</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610043/in/album-72177720321005949/" title="DSC_1804-40 mm"><img src="https://live.staticflickr.com/65535/54052610043_0a804f557a_b.jpg" alt="DSC_1804-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在被烈陽烤成軟泥之前我們回到了室內. 簡單吃了午飯又喝了一杯咖啡之後就差不多到了天象館預定節目的時間, 我們便進入水族館一牆之隔的天象館. </p>
+<hr>
+<p>我選擇的節目是由津田健次郎講解的<a href="https://planetarium.konicaminolta.jp/program/italian/?hall=manten">義大利星空散步</a>. 進入館內後大家找到座位並調整靠背變成半躺的狀態 ⸺ 靠背的調整並不像動畫裡那樣唐突落下, 而是有很明顯的潤滑與阻尼. 觀客基本到齊後照明逐漸熄滅, 投影啟動, 球形天幕上映出星空. 就像喜歡高處一樣, 星空對我也有著無法抗拒的吸引力, 即使是這虛擬的星空也同樣. 我屏息凝神豎起耳朵等待著解說出現. </p>
+<p>我一直都很喜歡津田健次郎的聲音, 但我沒想到他在解說時使用的溫柔的聲線與星空配合的效果是如此完美. 一直以來我刻板印象裡津田健次郎的聲音低沉深邃充滿磁性, 但往往暗含著激烈的情感, 而錄製解說時他的聲音卻只充滿著溫柔, 彷若慈愛的父親&#x2F;兄長&#x2F;丈夫引導著兒女&#x2F;弟妹&#x2F;伴侶共同在這星夜遨遊. 儘管解說的內容是早已耳熟能詳的羅馬神話與星座的關聯, 但星象儀的投影與津田健次郎的解說一道, 還是構築了令人沉醉的體驗. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611193/in/album-72177720321005949/" title="DSC_1841-40 mm"><img src="https://live.staticflickr.com/65535/54052611193_2ecb27a36f_b.jpg" alt="DSC_1841-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>演出結束後的星象儀. 投影儀和星象儀的清晰度區別還是很明顯的, 星象儀並不是一直在運轉</p>
+</blockquote>
+<p>戀戀不捨地離開太陽城後, 我心想都已經來池袋了乾脆去 <a href="https://www.mixalivetokyo.com/">Mixa Live</a> 看一眼吧, 沒想到四樓的 Store Mixa 有 BanG Dream 周邊販售, 我們毫無抵抗地被吸了進去, 眼睛一閉一睜活動經費就少了一大截⋯⋯ </p>
+<hr>
+<p>好不容易逃脫 Store Mixa 魔窟, 我們繼續前往下一個目的地 ⸺ <a href="https://sholayered.jp/">Sholayered 本店</a>. 想要拜訪這家店也多少有一點聖地巡禮的意思, 我是從一位多才多藝的繪師<a href="https://x.com/kazari_tayu">風李たゆ老師</a>處得知這一品牌的. 我本來對香水可以說是一竅不通, 但近幾年在<a href="https://findmestore.thinkr.jp/collections/isekaijoucho/products/%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-3rd-anniversary-official-goods">情緒小姐</a>､ <a href="https://clear.fanbox.cc/">風李老師</a>和<a href="https://mall.bilibili.com/neul-next/index.html?noTitleBar=1&page=mall-up_shop&shopId=343172">艾茵老師</a>的栽培 (?) 下也搭建了還算完整的個人香味體系 (?), Sholayered 的室內香取向我也很喜歡, 之前買了風李老師推薦過的鮮梨味室內香在國內已經沒有代購了, 我就想趁著這次機會來補充一下. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610058/in/album-72177720321005949" title="DSC_1860-40 mm"><img src="https://live.staticflickr.com/65535/54052610058_5111714712_b.jpg" alt="DSC_1860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>店員異常熱情, 在聽到我是從 Layerd Fragrance 時代就在購買的老客戶之後更是滔滔不絕侃侃而談, 店裡主推的商品本來就能隨意試用, 一時間我的嗅覺都有些過載了. 神奇的是和店員談論香水的話題我居然基本也能無障礙交流, 又讓我覺得自己日語水平真行了. 實話說新推出的很多款式都讓我覺得有些怪異或者刻意, 不如我早已瞄準的幾個經典款式對胃口. 最後我買了一大瓶室內香和兩瓶香水, 心滿意足回家. </p>
+<hr>
+<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
 ]]></content>
       <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
+        <tag>Travel</tag>
       </tags>
   </entry>
   <entry>
@@ -475,78 +547,6 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 PART Ⅱ</title>
-    <url>/2024-10/TripToTokyo2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/dateposted-public/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Day-3-八月八日-星期四-千駄ヶ谷-墨田"><a href="#Day-3-八月八日-星期四-千駄ヶ谷-墨田" class="headerlink" title="Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田"></a>Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田</h3><p>從這天開始行程就不是我一個人了, <a href="https://bsky.app/profile/bsky.mikelei.me">米克雷</a>在昨天 Live 結束後與我會和, 之後便一直同行至東京之行結束. 由於昨天 live 的衝擊, 今天的行程安排比較寬裕, 只有拜訪 Pixiv 和晴空塔. Pixiv 可以說是我的插繪審美啟蒙, 是我心目中的聖地之一. 之前默默使用了十幾年, 今天終於有機會一探究竟. </p>
-<p>帶領我參觀的是 <a href="https://twitter.com/godling_zlm">@godling_zlm</a>, 感覺我們也快認識十年 ⸺ 不對, 搞不好真的已經十年了⋯⋯ Pixiv 總部位於 <a href="https://www.pixiv.co.jp/company/">JPR 千駄ヶ谷大樓</a>, 從外面看就是一棟毫不起眼的辦公樓, 沒有任何能讓人聯想到世界上萬億頂尖插繪在此集聚的特徵. 但可別被它的外觀欺騙, Pixiv 的辦公室可是大有乾坤. </p>
-<p>一下電梯, 出現在眼前的就是一片由巨大繪馬構成的牆. 其上滿是各位耳熟能詳的大手繪師作品. 從電梯廳往辦公區行進, 會經過一個兩面掛滿了小號繪馬的通道, 這些繪馬無論哪個單獨拿出來都足夠寶貴了, 在 Pixiv 居然能鋪滿好幾面牆, 而且還在不斷替換⋯⋯ 實在是令人垂涎. Godling 介紹了這個辦公室是由大名鼎鼎的 <a href="https://www.teamlab.art/">teamLab</a> 操刀設計 ⸺ 最近同為他們操刀的麻布台 <a href="https://www.teamlab.art/jp/e/tokyo/">Digital Art Museum 展覽</a>也很火, 我本想找機會去參觀, 但沒能擠出時間只能遺憾作罷. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54071450508/in/album-72177720321005949" title="DSC_1073-50mm f-1G"><img src="https://live.staticflickr.com/65535/54071450508_7d3dea6c8a_b.jpg" alt="DSC_1073-50mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068751131/in/album-72177720321005949/" title="三輪士郎"><img src="https://live.staticflickr.com/65535/54068751131_c3a39bd32a_b.jpg" alt="三輪士郎"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>進入辦公區內部, 更加震撼的畫面呈現在我的眼前: 整個主辦公區由一張連成一體的巨大木質桌子環繞, 這桌子形狀蜿蜒曲折彷彿擁有生命, 以非常自然的狀態構成了幾十個<strong>相連但又互不影響</strong>的工作區域. Godling 介紹在瘟疫過後大部分員工都選擇居家辦公, 所以儘管是工作日在這辦公的人也寥寥無幾, 但我已經可以想象在瘟疫前這會是一個多麼和諧美好的工作空間了. 現代辦公室設計很難擺脫在個人空間與效率間擇一的難題, teamLab 用這塊形狀奇異的桌子漂亮地給出了解決方案, 可以說讓人大開眼界. </p>
-<p><img src="https://cdn.prod.website-files.com/5db35de024bb988f5fb4e168/5e58ed2a8d96fd5240cdf46f_pixiv-hero.jpg" alt="辦公區俯視圖"></p>
-<blockquote>
-<p>要完整展現這張桌子對我的鏡頭來說不愧是難度太高了, 就用<a href="https://bitrise.io/customer-stories/pixiv-jp">發表在網上</a>的公開圖片吧</p>
-</blockquote>
-<p>除去這塊桌子, 最讓我感興趣的就是牆上的書架了. 這裡塞滿了歷年來 pixiv 出版或協力的各種書刊, 是另一個巨大的寶庫, 如果能有機會把這裡的所有作品都閱讀一遍的話⋯⋯ 簡直是做夢都不敢想啊. 書架裡最醒目的區域是各種獎盃獎牌, 其中還有不少技術開發相關的獎項, 提醒了我其實 Pixiv 不單單擅於運營, 同樣是注重先進技術的公司. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069084509/in/album-72177720321005949/" title="DSC_1099-25 mm"><img src="https://live.staticflickr.com/65535/54069084509_d102798413_b.jpg" alt="DSC_1099-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>中午我們一起在<a href="https://maps.app.goo.gl/HhkhGHiXVLeb3Mzh7">代代木站附近的一家壽司店</a>吃了午飯. Godling 說這家店中午提供平價但高質量的社畜午餐, 晚上提供奢華大餐給社畜的老闆, 而我只覺得社畜午餐倒也量足料精價效比十足. 飽餐後我們就此別過, 他回家繼續工作, 而我與米克雷前往晴空塔. </p>
-<hr>
-<p>俗話說傻子和煙都喜歡高處, 這麼看來我必然是個傻子無誤了. 儘管知道晴空塔無論何時都遊客爆滿, 我還是義無反顧地把它列入本次行程必須去的目的地. 大概是根植於 DNA 裡的某些本能, 我一直很喜歡從高處俯瞰城市. 晴空塔 495m 的上層展望臺當然實打實地滿足了我. 和去年在哈爾濱登上龍塔時相比, 首先晴空塔的展望臺就已經比龍塔那 200 米出頭的高度要高上太多; 其次哈爾濱的城市俯瞰起來真的⋯⋯ 乏善可陳, 在嚴冬的襯托下一片肅殺; 相較之下從晴空塔上眺望東京看到的是秩序與混沌並存, 尤其是到日薄西山華燈初上時更是生機勃發, 與龍塔上所見簡直是兩個極端. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068752271/in/album-72177720321005949/" title="DSC_1157-135 mm"><img src="https://live.staticflickr.com/65535/54068752271_748349a6cc_b.jpg" alt="DSC_1157-135 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</p>
-</blockquote>
-<p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/album-72177720321005949/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg" alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051312762/in/album-72177720321005949/" title="DSC_1358-Enhanced-NR-40 mm"><img src="https://live.staticflickr.com/65535/54051312762_ab59c0738f_b.jpg" alt="DSC_1358-Enhanced-NR-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>快速上升的電梯 + 慢速快門產生的時空隧道感</p>
-</blockquote>
-<p>落日之後我打算繼續拍東京夜景, 於是繞到吧檯處. 吧檯是需要購買食物才能進入的, 但人相對要少一些, 有高度很剛好的桌子供客人進食, 風景也非常宜人. 俯瞰夜間的東京感覺繁華程度更甚日間, 各色燈光恰到好處地裝點城市的各個角落, 又不像很多國內的城市搞形狀詭異的夜景工程憑空製造光汙染, 給人的感覺十分乾淨. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051311352/in/album-72177720321005949/" title="DSC_1461-25 mm"><img src="https://live.staticflickr.com/65535/54051311352_7edcc96b3d_b.jpg" alt="DSC_1461-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>踩著打烊時點在餐飲街吃了點晚飯, 又在紀念品店買了一堆小禮物, 我們登上電車回到住處. </p>
-<h3 id="Day-4-八月九日-星期五-池袋-涉谷"><a href="#Day-4-八月九日-星期五-池袋-涉谷" class="headerlink" title="Day 4, 八月九日, 星期五, 池袋 - 涉谷"></a>Day 4, 八月九日, 星期五, 池袋 - 涉谷</h3><p>今天的行程 ⸺ 聖地巡禮. 池袋太陽城裡有兩個我們都特別想去的地方: 太陽城水族館和 ｢滿天｣ 天象館. 兩者都是在動畫 <a href="https://bgm.tv/subject/428735">Bang Dream! It’s MyGO!!!!! </a> 中登場, 有重要戲份發生的地點, 同樣也都是特別適合放鬆遊覽的景點. </p>
-<p>我們先進入了水族館. 大約全世界水族館都是吸引小朋友的地方, 太陽城這裡也不例外, 好在嘈雜程度比起國內的幾個水族館勉強還算是可以接受. 室內部分展出的水族並沒有什麼獨特之處, 但館內各種玻璃維護得非常乾淨, 觀看體驗比我之前在國內去的幾家都要好很多. 玻璃乾淨的另一個好處就是拍照效果也相對更好一些. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052809900/in/album-72177720321005949" title="DSC_1595-25 mm"><img src="https://live.staticflickr.com/65535/54052809900_7478532983_b.jpg" alt="DSC_1595-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>水母缸無論看幾次都覺得非常療愈</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052364421/in/album-72177720321005949/" title="DSC_1649-25 mm"><img src="https://live.staticflickr.com/65535/54052364421_c19d58bf4d_b.jpg" alt="DSC_1649-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>表情 (?) 十分佛系的烏賊</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052607148/in/album-72177720321005949/" title="DSC_1606-25 mm"><img src="https://live.staticflickr.com/65535/54052607148_264acbc0b9_b.jpg" alt="DSC_1606-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>比水母缸更好的是什麼? 那當然是水母牆啦</p>
-</blockquote>
-<p>室內部分並不大, 很快就走到了盡頭來到室外, 而這才是本館的重頭戲 ⸺ 空中企鵝的所在. 和印象裡不同, 在熱帶其實也有企鵝存在, 而太陽城水族館就有一批俗稱南非企鵝的熱帶企鵝. 在東京 33℃ 的驕陽下企鵝們懶洋洋地在假山的陰影裡休息或踱步, 偶爾有一兩隻跑到太陽下, 不一會兒也受不住炎熱去灑水噴頭旁納涼. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610323/in/album-72177720321005949" title="DSC_1799-40 mm"><img src="https://live.staticflickr.com/65535/54052610323_450e9dccda_b.jpg" alt="DSC_1799-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051214437/in/album-72177720321005949" title="65520034-"><img src="https://live.staticflickr.com/65535/54051214437_209db1d85d_b.jpg" alt="65520034-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>企鵝略有些笨拙的動作看起來的確是非常療愈. 但比起地上的企鵝, 更療愈的當然是 ⸺ 在空中的企鵝! 透過在市中心的四層建築上建造巨大水缸, 太陽城水族館讓企鵝在水缸中游泳的身姿變得彷彿在空中飛行一般. 我徹底理解了為什麼高松燈會辦水族館年票了, 如果可以的話我也想每天下班來這裡看企鵝⋯⋯ 不行的話至少每週一次⋯⋯</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610043/in/album-72177720321005949/" title="DSC_1804-40 mm"><img src="https://live.staticflickr.com/65535/54052610043_0a804f557a_b.jpg" alt="DSC_1804-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在被烈陽烤成軟泥之前我們回到了室內. 簡單吃了午飯又喝了一杯咖啡之後就差不多到了天象館預定節目的時間, 我們便進入水族館一牆之隔的天象館. </p>
-<hr>
-<p>我選擇的節目是由津田健次郎講解的<a href="https://planetarium.konicaminolta.jp/program/italian/?hall=manten">義大利星空散步</a>. 進入館內後大家找到座位並調整靠背變成半躺的狀態 ⸺ 靠背的調整並不像動畫裡那樣唐突落下, 而是有很明顯的潤滑與阻尼. 觀客基本到齊後照明逐漸熄滅, 投影啟動, 球形天幕上映出星空. 就像喜歡高處一樣, 星空對我也有著無法抗拒的吸引力, 即使是這虛擬的星空也同樣. 我屏息凝神豎起耳朵等待著解說出現. </p>
-<p>我一直都很喜歡津田健次郎的聲音, 但我沒想到他在解說時使用的溫柔的聲線與星空配合的效果是如此完美. 一直以來我刻板印象裡津田健次郎的聲音低沉深邃充滿磁性, 但往往暗含著激烈的情感, 而錄製解說時他的聲音卻只充滿著溫柔, 彷若慈愛的父親&#x2F;兄長&#x2F;丈夫引導著兒女&#x2F;弟妹&#x2F;伴侶共同在這星夜遨遊. 儘管解說的內容是早已耳熟能詳的羅馬神話與星座的關聯, 但星象儀的投影與津田健次郎的解說一道, 還是構築了令人沉醉的體驗. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611193/in/album-72177720321005949/" title="DSC_1841-40 mm"><img src="https://live.staticflickr.com/65535/54052611193_2ecb27a36f_b.jpg" alt="DSC_1841-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>演出結束後的星象儀. 投影儀和星象儀的清晰度區別還是很明顯的, 星象儀並不是一直在運轉</p>
-</blockquote>
-<p>戀戀不捨地離開太陽城後, 我心想都已經來池袋了乾脆去 <a href="https://www.mixalivetokyo.com/">Mixa Live</a> 看一眼吧, 沒想到四樓的 Store Mixa 有 BanG Dream 周邊販售, 我們毫無抵抗地被吸了進去, 眼睛一閉一睜活動經費就少了一大截⋯⋯ </p>
-<hr>
-<p>好不容易逃脫 Store Mixa 魔窟, 我們繼續前往下一個目的地 ⸺ <a href="https://sholayered.jp/">Sholayered 本店</a>. 想要拜訪這家店也多少有一點聖地巡禮的意思, 我是從一位多才多藝的繪師<a href="https://x.com/kazari_tayu">風李たゆ老師</a>處得知這一品牌的. 我本來對香水可以說是一竅不通, 但近幾年在<a href="https://findmestore.thinkr.jp/collections/isekaijoucho/products/%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-3rd-anniversary-official-goods">情緒小姐</a>､ <a href="https://clear.fanbox.cc/">風李老師</a>和<a href="https://mall.bilibili.com/neul-next/index.html?noTitleBar=1&page=mall-up_shop&shopId=343172">艾茵老師</a>的栽培 (?) 下也搭建了還算完整的個人香味體系 (?), Sholayered 的室內香取向我也很喜歡, 之前買了風李老師推薦過的鮮梨味室內香在國內已經沒有代購了, 我就想趁著這次機會來補充一下. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610058/in/album-72177720321005949" title="DSC_1860-40 mm"><img src="https://live.staticflickr.com/65535/54052610058_5111714712_b.jpg" alt="DSC_1860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>店員異常熱情, 在聽到我是從 Layerd Fragrance 時代就在購買的老客戶之後更是滔滔不絕侃侃而談, 店裡主推的商品本來就能隨意試用, 一時間我的嗅覺都有些過載了. 神奇的是和店員談論香水的話題我居然基本也能無障礙交流, 又讓我覺得自己日語水平真行了. 實話說新推出的很多款式都讓我覺得有些怪異或者刻意, 不如我早已瞄準的幾個經典款式對胃口. 最後我買了一大瓶室內香和兩瓶香水, 心滿意足回家. </p>
-<hr>
-<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>東京遊記 PART Ⅲ</title>
     <url>/2024-10/TripToTokyo3/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052612018/in/album-72177720321005949" title="DSC_2006-40 mm"><img src="https://live.staticflickr.com/65535/54052612018_8b96386d0d_b.jpg"  alt="DSC_2006-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -643,67 +643,58 @@
       </tags>
   </entry>
   <entry>
-    <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
-    <url>/2021-03/reMarkable-2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><img src="/2021-03/reMarkable-2/iriver-story_51061528238_o.avif"></p>
-<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
-<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
-<p><img src="/2021-03/reMarkable-2/44923.avif" alt="equil smartpen"></p>
-<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
-<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
-<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
-<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
-<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
-<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
-<p><img src="/2021-03/reMarkable-2/51061764988_fdea9a24be_o.avif"></p>
-<blockquote>
-<p>部分网格预览</p>
+    <title>Photography is FUN —— ℤƒ 碎碎念</title>
+    <url>/2024-09/ZfAndMoreLens/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
+<p>GAS (Gear Acquisition Syndrome) is REAL</p>
 </blockquote>
-<p><img src="/2021-03/reMarkable-2/51061666508_a03e60169d_o.avif"></p>
-<blockquote>
-<p>上课做笔记用的大号网格</p>
+<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
+<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
+<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
+<p>甚至有兩頭⋯⋯</p>
 </blockquote>
-<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
-<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
-<p><img src="/2021-03/reMarkable-2/50999813030_69c14c3a28_o.avif" alt="书法练习"></p>
-<blockquote>
-<p>模拟平头笔的手感怪怪的</p>
-</blockquote>
-<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
-<p><img src="/2021-03/reMarkable-2/51062480106_b881a3fc4e_o.avif" alt="速写练习"></p>
-<blockquote>
-<p>感谢<a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">伊那老师</a> (</p>
-</blockquote>
-<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
-<p><img src="/2021-03/reMarkable-2/51062467122_5692e6f85c_o.avif"></p>
-<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
-<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑&#x2F;手机上实时预览 reMarkable 上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
-<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf&#x2F;epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
-<p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
-<blockquote>
-<p>现在就加入 <a href="https://www.thetype.com/members/">The Type 会员</a>吧!</p>
-</blockquote>
-<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
-<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
-<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&#x2F;ssh 客户端</p>
-<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">ssh root@<你的.reMarkable.IP.地址></code></pre>
-
-<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
-<p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
-<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
-<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
-<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">scp <你的字体所在的完整路径> root@<你的.reMarkable.IP.地址>:/usr/share/fonts/ttf/</code></pre>
-
-<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
-<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">cd /usr/share/fonts/</code></pre>
-
-<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf&#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
-<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
-<p>如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux 下的字体调校指南</a>. </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
+<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
+<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
+<p><img src="/2024-09/ZfAndMoreLens/Grip.avif"></p>
+<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
+<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
+<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
+<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+viewfinder.avif"></p>
+<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
+<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
+<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
+<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+180.avif"></p>
+<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022-01/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Zf+4014.avif"></p>
+<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022-09/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
+<ol>
+<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
+</li>
+<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概同樣是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
+</li>
+<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
+</li>
+</ol>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+heliar40.avif"></p>
+<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+105.avif"></p>
+<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
+<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
+<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+FE40.avif"></p>
+<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
+<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
+<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
+<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
+<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理.</p>
+<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
+<p><img src="/2024-09/ZfAndMoreLens/ZfGripZM50.avif"></p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
+        <tag>Photography</tag>
       </tags>
   </entry>
   <entry>
@@ -772,58 +763,67 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN —— ℤƒ 碎碎念</title>
-    <url>/2024-09/ZfAndMoreLens/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
-<p>GAS (Gear Acquisition Syndrome) is REAL</p>
+    <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
+    <url>/2021-03/reMarkable-2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><img src="/2021-03/reMarkable-2/iriver-story_51061528238_o.avif"></p>
+<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
+<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
+<p><img src="/2021-03/reMarkable-2/44923.avif" alt="equil smartpen"></p>
+<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
+<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
+<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
+<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
+<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
+<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
+<p><img src="/2021-03/reMarkable-2/51061764988_fdea9a24be_o.avif"></p>
+<blockquote>
+<p>部分网格预览</p>
 </blockquote>
-<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
-<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
-<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
-<p>甚至有兩頭⋯⋯</p>
+<p><img src="/2021-03/reMarkable-2/51061666508_a03e60169d_o.avif"></p>
+<blockquote>
+<p>上课做笔记用的大号网格</p>
 </blockquote>
-<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
-<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
-<p><img src="/2024-09/ZfAndMoreLens/Grip.avif"></p>
-<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
-<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
-<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
-<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+viewfinder.avif"></p>
-<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
-<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
-<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
-<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+180.avif"></p>
-<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022-01/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Zf+4014.avif"></p>
-<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022-09/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
-<ol>
-<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
-</li>
-<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概同樣是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
-</li>
-<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
-</li>
-</ol>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+heliar40.avif"></p>
-<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+105.avif"></p>
-<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
-<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
-<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+FE40.avif"></p>
-<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
-<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
-<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
-<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
-<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理.</p>
-<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
-<p><img src="/2024-09/ZfAndMoreLens/ZfGripZM50.avif"></p>
+<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
+<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
+<p><img src="/2021-03/reMarkable-2/50999813030_69c14c3a28_o.avif" alt="书法练习"></p>
+<blockquote>
+<p>模拟平头笔的手感怪怪的</p>
+</blockquote>
+<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
+<p><img src="/2021-03/reMarkable-2/51062480106_b881a3fc4e_o.avif" alt="速写练习"></p>
+<blockquote>
+<p>感谢<a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">伊那老师</a> (</p>
+</blockquote>
+<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
+<p><img src="/2021-03/reMarkable-2/51062467122_5692e6f85c_o.avif"></p>
+<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
+<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑&#x2F;手机上实时预览 reMarkable 上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
+<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf&#x2F;epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
+<p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
+<blockquote>
+<p>现在就加入 <a href="https://www.thetype.com/members/">The Type 会员</a>吧!</p>
+</blockquote>
+<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
+<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
+<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&#x2F;ssh 客户端</p>
+<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">ssh root@<你的.reMarkable.IP.地址></code></pre>
+
+<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
+<p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
+<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
+<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
+<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">scp <你的字体所在的完整路径> root@<你的.reMarkable.IP.地址>:/usr/share/fonts/ttf/</code></pre>
+
+<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
+<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">cd /usr/share/fonts/</code></pre>
+
+<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf&#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
+<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
+<p>如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux 下的字体调校指南</a>. </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
-        <tag>Photography</tag>
       </tags>
   </entry>
 </search>
