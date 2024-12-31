@@ -48,32 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
-    <url>/2022-09/LM-EA9/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
-<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
-<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
-<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
-<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
-<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
-<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
-<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
-<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
-<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一些 CeVIO AI 入門小技巧 (以星界為例)</title>
     <url>/2022-12/CeVIOAItipsandtricks/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>這篇文章主要是給想要購買可不&#x2F;星界&#x2F;裏命&#x2F;狐子&#x2F;羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何 Vocaloid 相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門 CeVIO AI 比你想象的要容易得多. </p>
@@ -134,6 +108,32 @@
 ]]></content>
       <tags>
         <tag>Music</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— LM-EA9, 邪道的终点</title>
+    <url>/2022-09/LM-EA9/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="https://novadng.studio/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
+<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
+<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 —— 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
+<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
+<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
+<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 —— 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
+<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ——  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 —— 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
       </tags>
   </entry>
   <entry>
@@ -202,6 +202,87 @@
 ]]></content>
       <tags>
         <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— Best of 2024</title>
+    <url>/2024-12/BestOf2024Photography/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>心血來潮, 我也做個小小年終總結吧. 規則是每個月一張照片, 或者一張數位照片和一張菲林照片. </p>
+<h3 id="一月"><a href="#一月" class="headerlink" title="一月"></a>一月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53481416722/in/dateposted/" title="DSC_51110.0 mm f-0.0"><img src="https://live.staticflickr.com/65535/53481416722_22bb24c9d7_b.jpg" alt="DSC_51110.0 mm f-0.0"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>海洋研究所的珊瑚. 實際上的觀看體驗比照片中更加鮮豔, 但這實在是超出相機 (以及絕大多數熒幕?) 的極限了. </p>
+</blockquote>
+<h3 id="二月"><a href="#二月" class="headerlink" title="二月"></a>二月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53519617217/in/dateposted/" title="GRD_5832-180 mm-2"><img src="https://live.staticflickr.com/65535/53519617217_9139a7f517_b.jpg"  alt="GRD_5832-180 mm-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>提前步入老年觀鳥生活. 拍攝飛翔的鳥類時尤其希望手上的鏡頭是自動對焦的, 哪怕是 AF-D 也行⋯⋯ 然而用手動長焦成功拍下這些時成就感還是很高的. </p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53605921579/in/dateposted/" title="6-"><img src="https://live.staticflickr.com/65535/53605921579_8710e08c3a_b.jpg" alt="6-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>不知將去往何方的行李箱. FM3ᴀ + 45&#x2F;2.8 的第一卷. </p>
+</blockquote>
+<h3 id="三月"><a href="#三月" class="headerlink" title="三月"></a>三月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54195779873/in/dateposted/" title="GRD_7502-105 mm"><img src="https://live.staticflickr.com/65535/54195779873_7db4f845cd_b.jpg" alt="GRD_7502-105 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>Fayzz 樂隊的演出. 105&#x2F;2.5 + Dƒ 應付這種場合可算得心應手</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53742345612/in/datetaken/" title="51770003-"><img src="https://live.staticflickr.com/65535/53742345612_f2f52b07cf_b.jpg"  alt="51770003-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>被遺棄的透明雨傘. </p>
+</blockquote>
+<h3 id="四月"><a href="#四月" class="headerlink" title="四月"></a>四月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54194645622/in/dateposted/" title="GR003204-18.3 mm"><img src="https://live.staticflickr.com/65535/54194645622_e0e7496637_b.jpg" alt="GR003204-18.3 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>雨後的落花. 黃色的椅子不知是被誰遺棄在這裡, 意外地為畫面豐富了色彩. </p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53743598114/in/datetaken/" title="52670017-"><img src="https://live.staticflickr.com/65535/53743598114_75511cd901_b.jpg" alt="52670017-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>浦東美術館. </p>
+</blockquote>
+<h3 id="五月"><a href="#五月" class="headerlink" title="五月"></a>五月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53700011893/in/dateposted/" title="GRD_8657-180 mm"><img src="https://live.staticflickr.com/65535/53700011893_b7abd843a0_b.jpg" width="1024" height="378" alt="GRD_8657-180 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>夜鷺和小白鷺. 一個猥瑣一個翩躚. (180&#x2F;2.8 ED 果然還是太不 APO)</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54099831678/in/datetaken/" title="66050019-"><img src="https://live.staticflickr.com/65535/54099831678_e6a96863b3_b.jpg" alt="66050019-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>不知為何全部倒下的路障. </p>
+</blockquote>
+<h3 id="六月"><a href="#六月" class="headerlink" title="六月"></a>六月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53810164605/in/datetaken/" title="DSC09994-"><img src="https://live.staticflickr.com/65535/53810164605_102d534c69_b.jpg" alt="DSC09994-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>在地鐵上閱讀的女士. 我自己也會在找到座位時讀書, 但找不到座位時就不太想把書拿出來⋯⋯</p>
+</blockquote>
+<h3 id="七月"><a href="#七月" class="headerlink" title="七月"></a>七月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54100034440/in/datetaken/" title="66040004-"><img src="https://live.staticflickr.com/65535/54100034440_2cc4d78790_b.jpg" alt="66040004-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>砍枝條的村民. </p>
+</blockquote>
+<h3 id="八月"><a href="#八月" class="headerlink" title="八月"></a>八月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052429799/in/datetaken/" title="DSC_0790-25 mm"><img src="https://live.staticflickr.com/65535/54052429799_d0e90fea5d_b.jpg"  alt="DSC_0790-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>雨後的商店街. </p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/datetaken/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg"  alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>俯瞰東京. 東京的照片我可以挑一堆出來, 實在是難以選擇⋯⋯</p>
+</blockquote>
+<h3 id="九月"><a href="#九月" class="headerlink" title="九月"></a>九月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54023212828/in/datetaken/" title="DSC_2824-65 mm-2"><img src="https://live.staticflickr.com/65535/54023212828_3d25b2f7f8_b.jpg" alt="DSC_2824-65 mm-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>在渡口等待的板車.</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54194681467/in/dateposted/" title="fh-28-"><img src="https://live.staticflickr.com/65535/54194681467_5259fbdba0_b.jpg"  alt="fh-28-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>音樂學校後門的小巷. </p>
+</blockquote>
+<h3 id="十月"><a href="#十月" class="headerlink" title="十月"></a>十月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54054910858/in/datetaken/" title="DSC_4393-65mm f-2"><img src="https://live.staticflickr.com/65535/54054910858_cc0a0f00c6_b.jpg" alt="DSC_4393-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>貨運港口的傍晚. </p>
+</blockquote>
+<h3 id="十一月"><a href="#十一月" class="headerlink" title="十一月"></a>十一月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54168331819/in/datetaken/" title="DSC_585650mm f-1G"><img src="https://live.staticflickr.com/65535/54168331819_b2336b5a37_b.jpg" alt="DSC_585650mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>步行街的攤位. </p>
+</blockquote>
+<h3 id="十二月"><a href="#十二月" class="headerlink" title="十二月"></a>十二月</h3><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54237889498/in/dateposted/" title="DSC_6123-80 mm"><img src="https://live.staticflickr.com/65535/54237889498_b1812e73b8_b.jpg"  alt="DSC_6123-80 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>初次嘗試變形鏡頭. 完全無視警示牌的被用作菜園的空地. </p>
+</blockquote>
+]]></content>
+      <tags>
         <tag>Photography</tag>
       </tags>
   </entry>
@@ -374,358 +455,6 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 PART Anima Ⅲ</title>
-    <url>/2024-10/TripToTokyoAnima/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>雖然<a href="/2024/10/15/TripToTokyo1/">上篇</a>結尾我自覺任何文字記錄對於這場演出而言都是多餘的, 但這兩個月我的 Anima Ⅲ 戒斷反應日趨嚴重, 還是忍不住想寫些廢話記錄這次演出.</p>
-<h3 id="樂隊"><a href="#樂隊" class="headerlink" title="樂隊"></a>樂隊</h3><p><img src="/2024-10/TripToTokyoAnima/Anima3band.avif"></p>
-<blockquote>
-<p>功勞榜</p>
-</blockquote>
-<p>本場演出樂隊的核心成員 (鍵盤吉他貝斯鼓大提琴) 都是觀測者們耳熟能詳的老朋友了, 其中大提琴<a href="https://x.com/GOSHU27">伊藤修平</a>先生更是從初代 Anima 一路走來的核心成員 (band master), 屬於看到他們登臺就可以安心的存在.</p>
-<p>樂隊裡最亮眼的角色大概非鍵盤<a href="https://www.wataru-saito.com/">斎藤渉</a>先生莫屬了. 因為一頭標誌性的長髮與彈奏時專注入迷的神態而被觀測者們熟知, 在很多曲目的過渡橋段裡都有齋藤先生的華彩, 我作為鋼琴愛好者是聽得相當過癮恨不得當場鼓掌叫好.</p>
-<p>絃樂組自從在不可解参 (想) 裡進行了一次擴編後就保持了兩把小提琴, 一把中提琴和一把大提琴的規模. 情緒的很多老歌與絃樂組的相性都極好, 普通的伴奏裡增加配樂厚度, 對一些樂曲高潮部分表現力強化還有一些過渡橋段的加花效果都是有目共睹的.</p>
-<p>本次的樂隊改編也仍然是由修平先生完成, 因為加入了小號和薩克斯所以管樂器改編由更加專業的小號手<a href="https://6335ab21df400.site123.me/">山田丈造</a>進行. 大體來說我是非常喜歡修平先生的改編風格, 因應 Live 氛圍在很多曲子前加入了巧思密集的前奏應該是一大特色, 讓我們在初次聆聽時無法瞬間辨認出開演的曲目, 增加了驚喜的感覺. 而且樂隊改編時還極大改善了某些曲子原本的弱點 (比如說⋯⋯ 香椎老師的鼓點), 真是錦上添花的妙筆. 但也依舊存在每首曲子結束時都加入了冗長的收尾, 顯得拖泥帶水的問題. 雖然我覺得在現場配合觀眾的歡呼氣氛確實很好, 但個人並不喜歡.</p>
-<h3 id="舞臺"><a href="#舞臺" class="headerlink" title="舞臺"></a>舞臺</h3><p>橫濱國際平和會議場的<a href="https://www.pacifico.co.jp/guide/convention">國家禮堂</a>觀眾席分為三層, 總共可容納 5,000 名觀眾, 我的作為位於二層靠右, 總體而言視野還算良好, 音響效果也算不錯, 要和之前參加的 livehouse 演出相比那就好不知道多少倍了.</p>
-<p>演出的舞臺被分為上下兩層, 樂隊都集中在下層, 中間是作為主要演出區域的雙層熒幕. 我坐在右側所以左側的樂隊成員略有些難以看清, 不過好在舞臺上方還有副熒幕, 有時會播放樂隊成員的特寫.</p>
-<p>實話說我很不喜歡神椿的現場演出, 這兩個熒幕給神椿的場景設計加上了巨大的枷鎖. 全虛擬的演出雖然犧牲了觀眾的臨場體驗, 但在舞臺設計上能夠天馬行空, 做出現實裡無論如何都無法看到的場景 ⸺ 不可解弍 Q2､ 花譜畢業 live 和不可解参 (想) 都是我心目中無法磨滅的至高體驗. 和前面提到的幾場演出裡從精緻美觀到豪華壯麗的場景相比, Anima Ⅲ 的舞臺設計就只能用樸素來形容了, 雖然能體驗到不少巧思, 但終歸是被兩個熒幕的表現效果所限制.</p>
-<h3 id="單曲感想-部分"><a href="#單曲感想-部分" class="headerlink" title="單曲感想 (部分)"></a>單曲感想 (部分)</h3><p><strong>描き続けた君へ</strong>: 開場便是堪稱情緒代名曲的至不懈繪畫的你, 而正如前文所述, 修平先生給本曲增加了將近一分半的額外導入段落, 把現場的氣氛烘托致極. 聽到情緒聲音的瞬間相信很多觀眾都與我一樣渾身戰慄, 比起初次聽到本曲時已經接近終場的感動, 那想必是期待已久的願望終於實現, 而且是超水平實現時激動的雀躍外顯.</p>
-<p><strong>ディメンション</strong>: 開場部分觀眾們整齊劃一的呼喊完全體現出了現地表演的魅力. 過渡橋段的華彩是齋藤先生大放異彩的舞臺.</p>
-<p><strong>システムズコア</strong>: 如果因為某種不可告人的原因在會場裡居然有人昏昏欲睡, 那麼在聽到這首歌之後他必然會精神百倍. 咖啡因含量 100%, 短小精悍的 wake up call.</p>
-<p><strong>ラピスのお人形</strong>: 開頭引入採用了一段非常爵士的鍵盤, 無縫接入舞曲風的青金石, 讓人不得不讚歎修平先生和春捲飯的天才.</p>
-<p><strong>グレイスケイル</strong>: 《色彩》中我最喜歡的一曲, 如今 samayuzame 的曲子在這張專輯裡有些鶴立雞群, 但在這場演出就裡顯得無比融洽. 現場改變版把橋接部分做了大幅調整, 效果器拉滿的吉他與耳語搬的吟唱結合, 雖然情緒平靜但依然讓人覺得皮膚過電. 和下一首敘述者的華爾茲一道為維護 ｢虛擬黑暗歌手｣ 做了最後一點努力 (笑).</p>
-<p><strong>此処に棘と死を</strong>: 本曲無論是放在《色彩》中還是本場演出中都是最為異質的存在, 但由於嶄新的演出形式 ⸺ stand mic performance ⸺ 以及管樂器的加入使得原有些格格不入的本曲得到了完美展現. 不得不說情緒的學習和表演能力真的好強, 世上彷彿沒有她無法駕馭的風格.</p>
-<p><strong>いろはに咲きて</strong>: 原本在吹奏薩克斯風的<a href="https://www.julius-keilwerth.com/artist/kosei-nagata/">永田昴生</a>先生此時換上了長笛, 為本曲注入了強力的和風, 聽到此處我又差點忍不住拍手叫好了, 不知道這是修平先生還是山田先生的主意, 真的是天才.</p>
-<p><strong>シリウスの心臓</strong>: 我聽到前奏響起打擊樂器的聲音時心理就咯噔一聲, 暗叫不妙. 必須說實話 ⸺ 這次的天狼星心臟的改編是歷次 live 中我最不滿的. 究其原因還是打擊樂器､ 吉他與貝斯的加入一定程度上摧毀了本曲試圖營造的氛圍. 本曲原本的鋼琴獨奏配樂具有極強的敘事性, 前幾次改編中加入的絃樂做到了對敘事性的大幅強化. 我大概能理解修平先生想要讓這首情緒最廣為人知的曲目呈現出更加宏大的感覺, 但很可惜這個嘗試在我看來是失敗的, 打擊樂器與電吉他､ 貝斯的加入為配樂引入了電子元素和與鋼琴､ 絃樂完全不搭調的強節奏感, 擾亂了已經被構建的敘事風格, 產生了失衡. 另一大問題是在副歌二的部分樂隊 + 歌聲開始引發了一點注意力爭搶, 進一步破壞了一直以來的情感塑造, 這個問題顯然是去掉打擊樂､ 吉他與貝斯就可以直接解決的. 也許修平先生想要探索天狼星這個 ｢框架｣ 能夠承載的上限, 我也一直認為這首曲子是非常豐儉由人可塑性強大的, 但這次挑戰顯然觸及了這個框架的上限. (我認為我也不算天狼星保守派, 因為我是非常非常贊成往編曲中加入絃樂組的)</p>
-<p><strong>アンビバレント</strong>: 一直以來我都認為<a href="https://www.maosasagawa.jp/">笹川真生</a>是一位非常需要對電波的作曲家, 而很可惜他為理芽做的很多曲對我而言都對不上電波. 但 Ambivalent 裡他收斂了很多, 讓本曲變得容易接受得多, 而且配合<a href="https://www.youtube.com/watch?v=9lxqrgViCXk">有些魔性的 MV</a>, 十分洗腦. Live 版依然利用了樂隊編成豐富的優勢, 伴奏比單曲版要豐滿不少.</p>
-<p><strong>ANGELIC</strong>: 片尾曲仙人香椎老師在 Anima Ⅱ 的力作, 過去一年來我重複聆聽次數最多的曲子, 本次以更高規格的樂隊呈現. 對於打擊樂器的加入我略有一點不滿, 但沒有天狼星那麼不滿, 蓋因原本香椎老師是讓鋼琴承擔了部分打擊樂器的職責, 今次打擊樂器加入反倒有些眾神歸位的感覺, 並不會覺得怪異. 演出專用新衣裝 Edelweiss 優雅華貴, 與本曲氣質相得益彰.</p>
-<p><strong>ARCADIA</strong>: 片尾曲仙人香椎老師在 Anima I 的力作. 令人驚喜的是樂隊介紹前奏的迴歸 (Anima Ⅱ 裡樂隊介紹前奏消失了, 那段時間神椿其他 live 裡也基本都不見樂隊介紹前奏), 讓人長吁一口氣. 我對隨著情緒的介紹一個個加入演奏, 最後匯聚成宏大樂章的樂隊介紹形態不能更喜愛了. 這首歌大概很難被ヰ組客觀評價, 因為腦子裡出現 MV 場景會瞬間化為感動的潮水衝破所有理智, 是目前三首片尾曲中分量最沉重的. 不知道會場裡有多少人和我一樣隨著旋律進入高潮而無法控制地流下眼淚.</p>
-<p><strong>かたちなきもの</strong>: 比起不懈繪畫, 我從內心深處更認同本曲才是 ｢ヰ世界情緒主題曲｣, 但本次演出裡混音出了一點小事故, 薩克斯風的音量在很長一段都嚴重蓋過了所有其他樂器與歌聲, 使得現場的體驗有些下降.</p>
-<p><strong>みらいのかたち</strong>: 結合著之前的 MC, 非常有片尾曲感的曲子, 比起前面讓人激動､ 幸福地落淚而言本曲更傾向於平靜地落淚. 這首歌被排在無形之物後必然是深思熟慮的對仗, 從象徵過去的無形之寶物, 到尚未定型的未來之形狀, 本次 live 以對美好未來的嚮往畫上句號, 可以說再完美不過了.</p>
-<p><strong>ETERNAL</strong>: 很大程度上在結尾曲播出時我的眼淚已經流乾了, 聽著身邊的觀測者們隨著鋼琴伴奏鼓掌, 在關鍵演職人員出現在 staff roll 的時候爆發出熱烈的掌聲和歡呼時我卻深陷於這片尾曲中不能自拔. 私心認為後半段純音樂版因為去掉了鼓點而獲得了更高的一致性, 可惜線上錄影的版本裡有觀眾們激動地鼓掌歡呼的聲音沒法用來合成, 不然多少要試試看.</p>
-<p><img src="/2024-10/TripToTokyoAnima/%7FLastFMSep2024.avif"></p>
-<hr>
-<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Music</tag>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN —— ℤƒ 碎碎念</title>
-    <url>/2024-09/ZfAndMoreLens/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
-<p>GAS (Gear Acquisition Syndrome) is REAL</p>
-</blockquote>
-<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
-<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
-<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
-<p>甚至有兩頭⋯⋯</p>
-</blockquote>
-<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
-<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
-<p><img src="/2024-09/ZfAndMoreLens/Grip.avif"></p>
-<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
-<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
-<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
-<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+viewfinder.avif"></p>
-<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
-<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
-<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
-<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+180.avif"></p>
-<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022-01/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Zf+4014.avif"></p>
-<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022-09/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
-<ol>
-<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
-</li>
-<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概同樣是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
-</li>
-<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
-</li>
-</ol>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+heliar40.avif"></p>
-<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+105.avif"></p>
-<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
-<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
-<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+FE40.avif"></p>
-<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
-<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
-<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
-<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
-<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理.</p>
-<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
-<p><img src="/2024-09/ZfAndMoreLens/ZfGripZM50.avif"></p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
-    <url>/2021-03/reMarkable-2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><img src="/2021-03/reMarkable-2/iriver-story_51061528238_o.avif"></p>
-<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
-<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
-<p><img src="/2021-03/reMarkable-2/44923.avif" alt="equil smartpen"></p>
-<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
-<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
-<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
-<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
-<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
-<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
-<p><img src="/2021-03/reMarkable-2/51061764988_fdea9a24be_o.avif"></p>
-<blockquote>
-<p>部分网格预览</p>
-</blockquote>
-<p><img src="/2021-03/reMarkable-2/51061666508_a03e60169d_o.avif"></p>
-<blockquote>
-<p>上课做笔记用的大号网格</p>
-</blockquote>
-<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
-<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
-<p><img src="/2021-03/reMarkable-2/50999813030_69c14c3a28_o.avif" alt="书法练习"></p>
-<blockquote>
-<p>模拟平头笔的手感怪怪的</p>
-</blockquote>
-<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
-<p><img src="/2021-03/reMarkable-2/51062480106_b881a3fc4e_o.avif" alt="速写练习"></p>
-<blockquote>
-<p>感谢<a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">伊那老师</a> (</p>
-</blockquote>
-<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
-<p><img src="/2021-03/reMarkable-2/51062467122_5692e6f85c_o.avif"></p>
-<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
-<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑&#x2F;手机上实时预览 reMarkable 上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
-<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf&#x2F;epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
-<p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
-<blockquote>
-<p>现在就加入 <a href="https://www.thetype.com/members/">The Type 会员</a>吧!</p>
-</blockquote>
-<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
-<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
-<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&#x2F;ssh 客户端</p>
-<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">ssh root@<你的.reMarkable.IP.地址></code></pre>
-
-<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
-<p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
-<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
-<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
-<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">scp <你的字体所在的完整路径> root@<你的.reMarkable.IP.地址>:/usr/share/fonts/ttf/</code></pre>
-
-<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
-<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">cd /usr/share/fonts/</code></pre>
-
-<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf&#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
-<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
-<p>如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux 下的字体调校指南</a>. </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>東京遊記 PART Ⅱ</title>
-    <url>/2024-10/TripToTokyo2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/dateposted-public/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Day-3-八月八日-星期四-千駄ヶ谷-墨田"><a href="#Day-3-八月八日-星期四-千駄ヶ谷-墨田" class="headerlink" title="Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田"></a>Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田</h3><p>從這天開始行程就不是我一個人了, <a href="https://bsky.app/profile/bsky.mikelei.me">米克雷</a>在昨天 Live 結束後與我會和, 之後便一直同行至東京之行結束. 由於昨天 live 的衝擊, 今天的行程安排比較寬裕, 只有拜訪 Pixiv 和晴空塔. Pixiv 可以說是我的插繪審美啟蒙, 是我心目中的聖地之一. 之前默默使用了十幾年, 今天終於有機會一探究竟. </p>
-<p>帶領我參觀的是 <a href="https://twitter.com/godling_zlm">@godling_zlm</a>, 感覺我們也快認識十年 ⸺ 不對, 搞不好真的已經十年了⋯⋯ Pixiv 總部位於 <a href="https://www.pixiv.co.jp/company/">JPR 千駄ヶ谷大樓</a>, 從外面看就是一棟毫不起眼的辦公樓, 沒有任何能讓人聯想到世界上萬億頂尖插繪在此集聚的特徵. 但可別被它的外觀欺騙, Pixiv 的辦公室可是大有乾坤. </p>
-<p>一下電梯, 出現在眼前的就是一片由巨大繪馬構成的牆. 其上滿是各位耳熟能詳的大手繪師作品. 從電梯廳往辦公區行進, 會經過一個兩面掛滿了小號繪馬的通道, 這些繪馬無論哪個單獨拿出來都足夠寶貴了, 在 Pixiv 居然能鋪滿好幾面牆, 而且還在不斷替換⋯⋯ 實在是令人垂涎. Godling 介紹了這個辦公室是由大名鼎鼎的 <a href="https://www.teamlab.art/">teamLab</a> 操刀設計 ⸺ 最近同為他們操刀的麻布台 <a href="https://www.teamlab.art/jp/e/tokyo/">Digital Art Museum 展覽</a>也很火, 我本想找機會去參觀, 但沒能擠出時間只能遺憾作罷. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54071450508/in/album-72177720321005949" title="DSC_1073-50mm f-1G"><img src="https://live.staticflickr.com/65535/54071450508_7d3dea6c8a_b.jpg" alt="DSC_1073-50mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068751131/in/album-72177720321005949/" title="三輪士郎"><img src="https://live.staticflickr.com/65535/54068751131_c3a39bd32a_b.jpg" alt="三輪士郎"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>進入辦公區內部, 更加震撼的畫面呈現在我的眼前: 整個主辦公區由一張連成一體的巨大木質桌子環繞, 這桌子形狀蜿蜒曲折彷彿擁有生命, 以非常自然的狀態構成了幾十個<strong>相連但又互不影響</strong>的工作區域. Godling 介紹在瘟疫過後大部分員工都選擇居家辦公, 所以儘管是工作日在這辦公的人也寥寥無幾, 但我已經可以想象在瘟疫前這會是一個多麼和諧美好的工作空間了. 現代辦公室設計很難擺脫在個人空間與效率間擇一的難題, teamLab 用這塊形狀奇異的桌子漂亮地給出了解決方案, 可以說讓人大開眼界. </p>
-<p><img src="https://cdn.prod.website-files.com/5db35de024bb988f5fb4e168/5e58ed2a8d96fd5240cdf46f_pixiv-hero.jpg" alt="辦公區俯視圖"></p>
-<blockquote>
-<p>要完整展現這張桌子對我的鏡頭來說不愧是難度太高了, 就用<a href="https://bitrise.io/customer-stories/pixiv-jp">發表在網上</a>的公開圖片吧</p>
-</blockquote>
-<p>除去這塊桌子, 最讓我感興趣的就是牆上的書架了. 這裡塞滿了歷年來 pixiv 出版或協力的各種書刊, 是另一個巨大的寶庫, 如果能有機會把這裡的所有作品都閱讀一遍的話⋯⋯ 簡直是做夢都不敢想啊. 書架裡最醒目的區域是各種獎盃獎牌, 其中還有不少技術開發相關的獎項, 提醒了我其實 Pixiv 不單單擅於運營, 同樣是注重先進技術的公司. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069084509/in/album-72177720321005949/" title="DSC_1099-25 mm"><img src="https://live.staticflickr.com/65535/54069084509_d102798413_b.jpg" alt="DSC_1099-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>中午我們一起在<a href="https://maps.app.goo.gl/HhkhGHiXVLeb3Mzh7">代代木站附近的一家壽司店</a>吃了午飯. Godling 說這家店中午提供平價但高質量的社畜午餐, 晚上提供奢華大餐給社畜的老闆, 而我只覺得社畜午餐倒也量足料精價效比十足. 飽餐後我們就此別過, 他回家繼續工作, 而我與米克雷前往晴空塔. </p>
-<hr>
-<p>俗話說傻子和煙都喜歡高處, 這麼看來我必然是個傻子無誤了. 儘管知道晴空塔無論何時都遊客爆滿, 我還是義無反顧地把它列入本次行程必須去的目的地. 大概是根植於 DNA 裡的某些本能, 我一直很喜歡從高處俯瞰城市. 晴空塔 495m 的上層展望臺當然實打實地滿足了我. 和去年在哈爾濱登上龍塔時相比, 首先晴空塔的展望臺就已經比龍塔那 200 米出頭的高度要高上太多; 其次哈爾濱的城市俯瞰起來真的⋯⋯ 乏善可陳, 在嚴冬的襯托下一片肅殺; 相較之下從晴空塔上眺望東京看到的是秩序與混沌並存, 尤其是到日薄西山華燈初上時更是生機勃發, 與龍塔上所見簡直是兩個極端. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068752271/in/album-72177720321005949/" title="DSC_1157-135 mm"><img src="https://live.staticflickr.com/65535/54068752271_748349a6cc_b.jpg" alt="DSC_1157-135 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</p>
-</blockquote>
-<p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/album-72177720321005949/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg" alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051312762/in/album-72177720321005949/" title="DSC_1358-Enhanced-NR-40 mm"><img src="https://live.staticflickr.com/65535/54051312762_ab59c0738f_b.jpg" alt="DSC_1358-Enhanced-NR-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>快速上升的電梯 + 慢速快門產生的時空隧道感</p>
-</blockquote>
-<p>落日之後我打算繼續拍東京夜景, 於是繞到吧檯處. 吧檯是需要購買食物才能進入的, 但人相對要少一些, 有高度很剛好的桌子供客人進食, 風景也非常宜人. 俯瞰夜間的東京感覺繁華程度更甚日間, 各色燈光恰到好處地裝點城市的各個角落, 又不像很多國內的城市搞形狀詭異的夜景工程憑空製造光汙染, 給人的感覺十分乾淨. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051311352/in/album-72177720321005949/" title="DSC_1461-25 mm"><img src="https://live.staticflickr.com/65535/54051311352_7edcc96b3d_b.jpg" alt="DSC_1461-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>踩著打烊時點在餐飲街吃了點晚飯, 又在紀念品店買了一堆小禮物, 我們登上電車回到住處. </p>
-<h3 id="Day-4-八月九日-星期五-池袋-涉谷"><a href="#Day-4-八月九日-星期五-池袋-涉谷" class="headerlink" title="Day 4, 八月九日, 星期五, 池袋 - 涉谷"></a>Day 4, 八月九日, 星期五, 池袋 - 涉谷</h3><p>今天的行程 ⸺ 聖地巡禮. 池袋太陽城裡有兩個我們都特別想去的地方: 太陽城水族館和 ｢滿天｣ 天象館. 兩者都是在動畫 <a href="https://bgm.tv/subject/428735">Bang Dream! It’s MyGO!!!!! </a> 中登場, 有重要戲份發生的地點, 同樣也都是特別適合放鬆遊覽的景點. </p>
-<p>我們先進入了水族館. 大約全世界水族館都是吸引小朋友的地方, 太陽城這裡也不例外, 好在嘈雜程度比起國內的幾個水族館勉強還算是可以接受. 室內部分展出的水族並沒有什麼獨特之處, 但館內各種玻璃維護得非常乾淨, 觀看體驗比我之前在國內去的幾家都要好很多. 玻璃乾淨的另一個好處就是拍照效果也相對更好一些. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052809900/in/album-72177720321005949" title="DSC_1595-25 mm"><img src="https://live.staticflickr.com/65535/54052809900_7478532983_b.jpg" alt="DSC_1595-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>水母缸無論看幾次都覺得非常療愈</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052364421/in/album-72177720321005949/" title="DSC_1649-25 mm"><img src="https://live.staticflickr.com/65535/54052364421_c19d58bf4d_b.jpg" alt="DSC_1649-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>表情 (?) 十分佛系的烏賊</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052607148/in/album-72177720321005949/" title="DSC_1606-25 mm"><img src="https://live.staticflickr.com/65535/54052607148_264acbc0b9_b.jpg" alt="DSC_1606-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>比水母缸更好的是什麼? 那當然是水母牆啦</p>
-</blockquote>
-<p>室內部分並不大, 很快就走到了盡頭來到室外, 而這才是本館的重頭戲 ⸺ 空中企鵝的所在. 和印象裡不同, 在熱帶其實也有企鵝存在, 而太陽城水族館就有一批俗稱南非企鵝的熱帶企鵝. 在東京 33℃ 的驕陽下企鵝們懶洋洋地在假山的陰影裡休息或踱步, 偶爾有一兩隻跑到太陽下, 不一會兒也受不住炎熱去灑水噴頭旁納涼. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610323/in/album-72177720321005949" title="DSC_1799-40 mm"><img src="https://live.staticflickr.com/65535/54052610323_450e9dccda_b.jpg" alt="DSC_1799-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051214437/in/album-72177720321005949" title="65520034-"><img src="https://live.staticflickr.com/65535/54051214437_209db1d85d_b.jpg" alt="65520034-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>企鵝略有些笨拙的動作看起來的確是非常療愈. 但比起地上的企鵝, 更療愈的當然是 ⸺ 在空中的企鵝! 透過在市中心的四層建築上建造巨大水缸, 太陽城水族館讓企鵝在水缸中游泳的身姿變得彷彿在空中飛行一般. 我徹底理解了為什麼高松燈會辦水族館年票了, 如果可以的話我也想每天下班來這裡看企鵝⋯⋯ 不行的話至少每週一次⋯⋯</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610043/in/album-72177720321005949/" title="DSC_1804-40 mm"><img src="https://live.staticflickr.com/65535/54052610043_0a804f557a_b.jpg" alt="DSC_1804-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在被烈陽烤成軟泥之前我們回到了室內. 簡單吃了午飯又喝了一杯咖啡之後就差不多到了天象館預定節目的時間, 我們便進入水族館一牆之隔的天象館. </p>
-<hr>
-<p>我選擇的節目是由津田健次郎講解的<a href="https://planetarium.konicaminolta.jp/program/italian/?hall=manten">義大利星空散步</a>. 進入館內後大家找到座位並調整靠背變成半躺的狀態 ⸺ 靠背的調整並不像動畫裡那樣唐突落下, 而是有很明顯的潤滑與阻尼. 觀客基本到齊後照明逐漸熄滅, 投影啟動, 球形天幕上映出星空. 就像喜歡高處一樣, 星空對我也有著無法抗拒的吸引力, 即使是這虛擬的星空也同樣. 我屏息凝神豎起耳朵等待著解說出現. </p>
-<p>我一直都很喜歡津田健次郎的聲音, 但我沒想到他在解說時使用的溫柔的聲線與星空配合的效果是如此完美. 一直以來我刻板印象裡津田健次郎的聲音低沉深邃充滿磁性, 但往往暗含著激烈的情感, 而錄製解說時他的聲音卻只充滿著溫柔, 彷若慈愛的父親&#x2F;兄長&#x2F;丈夫引導著兒女&#x2F;弟妹&#x2F;伴侶共同在這星夜遨遊. 儘管解說的內容是早已耳熟能詳的羅馬神話與星座的關聯, 但星象儀的投影與津田健次郎的解說一道, 還是構築了令人沉醉的體驗. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611193/in/album-72177720321005949/" title="DSC_1841-40 mm"><img src="https://live.staticflickr.com/65535/54052611193_2ecb27a36f_b.jpg" alt="DSC_1841-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>演出結束後的星象儀. 投影儀和星象儀的清晰度區別還是很明顯的, 星象儀並不是一直在運轉</p>
-</blockquote>
-<p>戀戀不捨地離開太陽城後, 我心想都已經來池袋了乾脆去 <a href="https://www.mixalivetokyo.com/">Mixa Live</a> 看一眼吧, 沒想到四樓的 Store Mixa 有 BanG Dream 周邊販售, 我們毫無抵抗地被吸了進去, 眼睛一閉一睜活動經費就少了一大截⋯⋯ </p>
-<hr>
-<p>好不容易逃脫 Store Mixa 魔窟, 我們繼續前往下一個目的地 ⸺ <a href="https://sholayered.jp/">Sholayered 本店</a>. 想要拜訪這家店也多少有一點聖地巡禮的意思, 我是從一位多才多藝的繪師<a href="https://x.com/kazari_tayu">風李たゆ老師</a>處得知這一品牌的. 我本來對香水可以說是一竅不通, 但近幾年在<a href="https://findmestore.thinkr.jp/collections/isekaijoucho/products/%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-3rd-anniversary-official-goods">情緒小姐</a>､ <a href="https://clear.fanbox.cc/">風李老師</a>和<a href="https://mall.bilibili.com/neul-next/index.html?noTitleBar=1&page=mall-up_shop&shopId=343172">艾茵老師</a>的栽培 (?) 下也搭建了還算完整的個人香味體系 (?), Sholayered 的室內香取向我也很喜歡, 之前買了風李老師推薦過的鮮梨味室內香在國內已經沒有代購了, 我就想趁著這次機會來補充一下. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610058/in/album-72177720321005949" title="DSC_1860-40 mm"><img src="https://live.staticflickr.com/65535/54052610058_5111714712_b.jpg" alt="DSC_1860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>店員異常熱情, 在聽到我是從 Layerd Fragrance 時代就在購買的老客戶之後更是滔滔不絕侃侃而談, 店裡主推的商品本來就能隨意試用, 一時間我的嗅覺都有些過載了. 神奇的是和店員談論香水的話題我居然基本也能無障礙交流, 又讓我覺得自己日語水平真行了. 實話說新推出的很多款式都讓我覺得有些怪異或者刻意, 不如我早已瞄準的幾個經典款式對胃口. 最後我買了一大瓶室內香和兩瓶香水, 心滿意足回家. </p>
-<hr>
-<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>追求小屏智能手机之路</title>
-    <url>/2021-03/yearning-for-a-tiny-smartphone/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2021-03/yearning-for-a-tiny-smartphone/20210311_175801_51041015252_o.avif"></p>
-<p>稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点<a href="https://item.jd.com/10025201949310.html">这个链接</a>购买.</p>
-<hr>
-<h3 id="Jelly-之前"><a href="#Jelly-之前" class="headerlink" title="Jelly 之前"></a>Jelly 之前</h3><p>自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_1864_51040924711_o.avif" alt="｢点金石｣ 上的 Veer 和旁边的 Nexus 4"></p>
-<p>当然, 会买 Veer 除了喜欢小巧的手机, 更多的原因还是我对 webOS 的喜爱. 不过没选择当时作为旗舰的 Pre³ 而选择了 Veer 就完全是因为尺寸了. 比起 Pre³ 的 3.6 寸 ｢大屏｣, 2.6 寸屏幕的 Veer 在手中是真正的小巧玲珑, 如珠圆玉润的卵石般令人爱不释手. 而且 Veer 还有一块全键盘, 作为小屏手机, 在输入这一最大的痛点上也得到了对我来说完美的解决, 我现在甚至还能依稀想起来自 veer 键盘上那一股若有若无的神奇香味.</p>
-<p>上大学之后没多久, 我很幸运地在 ebay 上买到了一台微软的 Kin, 不过这台机器并不是智能手机, 而且在一年多以后我便将这台手机送给了一位友人, 这里就不多做介绍了.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/2013-02-09-125748_51040924756_o.avif" alt="3.4 寸的屏幕放在今天来看也算是迷你了"></p>
-<p>送走 Kin 之后不久, 我就从父亲手中得到了他淘汰不用的 iPhone 5. 很多老派 iPhone 爱好者依然认为 4 寸屏幕的 iPhone 5 形态是最能兼顾易用性与手感的黄金尺寸, 当然另一派则认为 3.5 寸屏幕的 iPhone 4 才是真正的黄金尺寸 —— 包括当时刚刚宣称要做手机的老罗. 又过了不久, 苹果推出了 iPhone 5s 造型, iPhone 6s 性能的 iPhone SE, 我便第一时间入手了. 在那个时候, iPhone SE 已经被主流大众认为是小屏手机了, 而诸如夏普 Aquos Crystal 和小米 MIx 等机器也为人们揭开了 ｢全面屏｣ 的一角, 在这之后手机厂家们便纷纷朝着全面屏的方向发展去了, 手机尺寸本身也终于不再变得更大.</p>
-<blockquote>
-<p>你以为会有 iPhone 5&#x2F;SE 的图? 这么大众的手机没图的啦.</p>
-</blockquote>
-<p>这个时候可能有人会问了, 为什么都说了这么多了, 还没提到一句索尼的 Xperia Compact 系列? 其实我从 Xperia Z2 开始就一直是索尼手机的用户, 但是因为某些奇怪的心态 (觉得已经买了大屏的版本再买同一系列的小屏版是一件很不对劲的事情) 和机器本身的问题 —— 比如 Z3 Compact 摄像头的位置不对劲, 扬声器和听筒没有隐藏进边框, Z5 和 XZ 的正面没有完全对称等等鸡毛蒜皮的原因, 便没有买 Z 系列的 Compact. 等到了 2017 年, 我终于把主力手机从 5.2 寸屏幕的 Xperia Z5 换成了 4.6 寸屏幕的 Xperia XZ1 Compact.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_20171206_185536713_51040924676_o.avif" alt="iPhone SE, Xperia XZ1 Compact 和 Xperia Z5"></p>
-<p>XZ1 Compact 在我心目中可以算是非常完美的小屏旗舰了, 比 iPhone SE 稍大一圈, 但是屏幕尺寸大上了不少, 外形方方正正, 采用了当时索尼新的设计语言 Omni loop, 在边缘稍微做了一点弧形, 握持手感也非常优秀. 虽然没做边框隐藏扬声器&#x2F;听筒, 但是换来了非常优秀的外放音质, 可以说在我心目中这台机器几乎没有缺点.</p>
-<p>一年之后, 夏普发布了 Aquos R2 Compact. 这台机器刚发布的时候我的想法和大多数人应该是一样的: WTF? 这上下都有缺口的设计是什么鬼才想出来的? 实在是不能接受啊! 不久之后我就买了与他前后脚发布的 Pixel 3 —— 不是 3 XL, 3 XL 那个超巨型缺口的傻逼程度实在是不能接受.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/dsc_0003_51041015572_o.avif" alt="XZ1 Compact 和长了一截的 Pixel 3"></p>
-<p>没想到的是, 在 2018 年 5.5 寸屏幕的 Pixel 3 在很多人眼里已经可以算是小屏手机了 , 这不免让我感到有些哭笑不得.</p>
-<p>2019 年下旬某日, 我在朋友家体验他的 Apple TV 时在 YouTube 上看到了一则多亲 AI 2 手机的评测, 当时就被这手机给迷住了, 不过当时这机器还在众筹阶段, 等到 2020 年初的时候我才终于买到. 多亲 AI 2 作为一台尺寸和 iPhone SE 差不多的手机, 因为用了细长的全面屏设计而屏幕达到了 5 寸, 而且碳酸聚酯外壳的选色非常漂亮, 我非常喜欢.</p>
-<p><a href="https://item.jd.com/100011582242.html">多亲 AI 2 Pro</a></p>
-<p>为什么在这里给的是 Pro 的链接? 当然是因为 2 的性能实在是有些太差了. 我本来是打算拿它来做微信专用机, 但是它运行微信的时候卡顿感可以说是难以接受的 —— 当然我知道这是腾讯的问题, Telegram 之类的应用在上面运行起来都没什么压力, 只是不太留得住后台. 据说 Pro 在提升了硬件配置之后运行起微信至少不会直接卡死了. 在用了没几天之后, 我就开始打起了 Aquos R2 Compact 的主意.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_20200321_000815_51040924606_o.avif" alt="我的青色系手机收藏. 从左到右依次是 Aquos R2 Compact, 多亲 AI 2, nextbit Robin, NUANS NEO"></p>
-<blockquote>
-<p>我的青色系手机收藏. 从左到右依次是 Aquos R2 Compact, 多亲 AI 2, nextbit Robin, NUANS NEO</p>
-</blockquote>
-<p>在买之前我特地和一位已经买了的小屏爱好者朋友做了深入交流 , 在朋友的安利下我便十分坚定地入手了 Aquos R2 Compact. 因为上下两个缺口的缘故, 这台有着 5.2 寸屏幕的手机机身尺寸却和 XZ1 Compact 相差无几, 适应了诡异的屏幕形状之后我忍不住 ｢真香｣ 了一回. R2 Compact 虽然比多亲稍微胖了一点, 但是性能的提升是实打实的, 拿来做主力机确实毫无压力, 它那别扭的屏幕甚至是 120Hz 高刷新率屏幕 (虽然对我来讲完全体会不出来⋯⋯), 而且正面的指纹识别模块还兼职触控按键, 可以让我找回一点在 veer 上轻扫屏幕下方返回的感动, 顺便还可以补救一下 Google 那无药可救的手势操作. 这台机器现在我也依然带在身边, 夏普那边还表示这台机器能够升级到 Android 11 (只是时间尚未确定).</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_3838_51040194233_o.avif" alt="Aquos R2 Compact"></p>
-<p>等到 2020 年九月, 苹果发布了 iPhone 12 mini. 在当初机身尺寸泄漏的时候我就下定决心只要这是真的那就一定买, 而发布会上终于确定了的那一刻我可以说是欢呼雀跃了, 毕竟这年头所有的厂家在做手机的时候难免都会收到苹果的影响 —— 无论是好还是坏, 如果苹果敢于在 2020 年开个小屏旗舰的头, 那么或许接下来其他厂家也会试水? 等到 iPhone 12 mini 开放购买之后, 我便第一时间购入.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/20201212_113835_51041015517_o.avif" alt="尺寸和 R2 Compact 几乎一模一样的 iPhone 12 mini"></p>
-<p>尽管尺寸和 R2 Compact 几乎一模一样, 但 12 mini 的边框尺寸稍微比 R2 Compact 窄一些, 下边框也和另外三边同宽, 所以能塞进 5.4 寸的屏幕. 而且回归了平直的设计语言也让我觉得这是 iPhone 6 以来最好看的 iPhone 设计 (排除掉 SE, 毕竟那是 5s 的设计). 而 12 mini 最大的缺点 —— 续航严重不足, 对我这个拿它做备机的人来说也完全不是问题.</p>
-<h3 id="Jelly-2"><a href="#Jelly-2" class="headerlink" title="Jelly 2"></a>Jelly 2</h3><p>实际上, 在 iPhone 12 系列配置泄漏之前, 我就已经知道了 Jelly 2 的存在 . 在更早之前 —— 大约 2017 年, Jelly 1 刚出来时正值 detox phone 大热, 除了 unihertz 之外还有不少厂家做出了各种奇形怪状的小手机, 但是它们大多都过于精简, 导致很难真的把它们当作唯一主力使用, Jelly 1 虽然是全功能的, 但是它的设计和用料都实在有些令人难以下定决心购买, 所以这一波 detox 手机对我完全没有产生任何冲击. 反倒是 HMD 推出新的 8110 的时候我很心动, 然而因为种种原因没有买一台来收藏.</p>
-<p>虽然我在 20 年中旬就知道了这部手机的存在, 但当时它还在 indiegogo 筹资, 所以只是给了一些 influencer 评测样机. 直到年底才终于开放购买, 而我拿到手则是这两天的事情了.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0806_51040194288_o.avif" alt="Xperia 1 II 在 Jelly 面前是真的庞然巨物了"></p>
-<p>Jelly 2 的三维和 Veer 几乎相差无几 (95×49.4×16.5 vs 84×54.5×15.1), 不过区别于 veer 的类肤质感外壳, Jelly 用的是普通的光面塑料, 手感稍微差了一些. 不过好在它十分小巧, 这塑料某种程度上增加了它的 ｢糖果质感｣ —— 就像它的名字一样, 在阳光下它看起来是有几分像一颗巨大的 jelly bean. 不过拿到手机的时候我才发现它的挂绳孔实际上在随机附赠的保护壳上, 为了使用挂绳孔我只好不情不愿地用上了这个保护壳. 保护壳的材质就是普通的软胶, 手感<strong>十分一般</strong>, 而且让整个机身变大了不少, 而且限制了可以使用的 Type C 充电线材类型, 十分难受.</p>
-<p>一开机进入设置流程, 我就意识到了它无论是出于节省空间或者成本的考虑采用了转子震动马达, 这和采用了线形马达的 Xperia 1 II 和 iPhone 12 mini 比起来真的是云泥之别. 好在输入法的振动可以自己调整或者关闭, 否则它本来就很糟糕的输入体验就要更加不堪了.</p>
-<p>既然以它的缺点开了头, 那干脆就先把它的缺点过一遍吧 —— 反正铁了心想买的人应该早就点了开头的那个链接下订单去了.</p>
-<ol>
-<li>它的<strong>扬声器十分糟糕</strong>, 不过这是可以想象的, 毕竟尺寸限制摆在那里. 设置里有个可以强行提高音量的开关, 千万不要去点, 点开的话那声音真的是呕哑嘲哳难为听, 不是开玩笑的;</li>
-<li>它的<strong>相机也十分一般</strong>, 不过这相机存在的价值大概就是完成扫扫二维码之类的工作, 应该不会真的有人想要在这样的机器上追求高级的相机吧?</li>
-<li>它的充电接口在机身右侧底部, <strong>充电的时候右手起来十分别扭</strong> (好在官方提供了一条 L 型接口的 Type C 转 A 线);</li>
-<li>背部的<strong>指纹感应器识别率不高</strong>, 雪上加霜的是如果你装了保护套, 保护套的厚度会进一步减少手指与传感器接触的面积, 再次降低识别成功率. 而且这个指纹传感器没有集成手势识别, 不能像 pixel 的那样通过扫动来控制通知中心开关 (好在手机本来就这么小了, 去拉通知中心确实轻而易举);</li>
-<li>绝大部分 <strong>Android 应用都没有为这么小的尺寸优化</strong>, 就连 Android 系统也不例外. Jelly 的系统虽然有做了一下小优化, 但是终归没有为此提供一个全局的解决方案;</li>
-<li>它虽然提供了一个自定义按钮, 但是这个按钮就在电源键旁边, 而且大小和手感与电源键一模一样, 非常<strong>容易误触</strong>. 当然这个自定义按钮确实是非常好的, 它可以作为对讲机的对讲按钮, 也可以自己定义点按､长按和双击的快捷操作, 十分便利.</li>
-</ol>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0800_51041015137_o.avif" alt="好在平时正常握持的姿势一般拇指都会放在电源上, 不然误触几率怕是要加倍"></p>
-<p>缺点就是前面那些了, 至少在我看来. 说完了缺点就该让我大吹一番了. 首先就是它没有选择走 ｢全面屏｣ 路线, 保留了电容触摸三大金刚, 这也让我可以免得吃 Google 那套鬼畜手势导航的屎 —— 当然如果你执意要吃屎的话也可以在设置里开启屏内导航 (默认是开启的) 并关闭电容按键. 而且在这个尺寸下, 手势导航还真的就没什么优势可言. 唯一遗憾的就是 Home 键没能集成通知灯, 通知灯被放在了摄像头左侧 —— 再想想 2021 年多少旗舰手机都没有通知灯了, 真的是感觉十分唏嘘 (当然, 由于 OLED 屏幕和 AOD 的普遍使用, 通知灯的需求也确实是不像以前那么强烈了). 另外这几个按钮是没有背光的, 在暗处使用的时候偶尔会按错&#x2F;没按到, 有点小别扭.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0803_51040194003_o.avif" alt="如果偶尔需要在这机器上看长文也不是不行, 但是你大概不会愿意经常这么做的⋯⋯"></p>
-<p>Unihertz 没有以机身尺寸为借口取消顶部的耳机接口, 令人十分欣慰. 插上耳机之后还可以以耳机为天线使用内置的收音机, 十分便利. 而机身顶部还有另一个已经几乎灭绝的东西 —— 红外信号发射口, 这对于控制那些尚未智能化的家电来说十分便利, 是非常令人欣喜的存在.</p>
-<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0811_51040194153_o.avif" alt="与目前手机上最好的屏幕 —— Xperia 1 II 的屏幕对比"></p>
-<p>Jelly 的 480×854 三寸屏幕属于勉强够用的水平, 不过这部手机也没指望你老盯着它看, 所以这屏幕虽然十分不怎么样但我并不会抱怨. 而屏幕小且分辨率低的另一个好处就是这块屏幕极其省电, 如果配合上深色主题, 那使用一整天下来会发现屏幕占用的电量真的寥寥无几. 既然说到了电池就顺便提一下它的续航, 由于这手机本身的属性导致了你不可能想要长时间使用, 更何况它的电池容量是 2,000mAh! 所以用一整天 (从早上七点开始到晚上十一点结束) 是毫无压力的, 甚至我觉得它能撑个两天, 如果用得更不频繁的话.</p>
-<p>它采用了一颗联发科曦力 P60, 只要不试着在这机器上玩大型游戏 (你疯了吗?!) 应该都是十分够用的. 和芯片相关的唯一问题就是它的基带不是很好, 在这个大厂普遍铺开 5G 的时代显得网速有些捉襟见肘 (我这里体验的对照是 FEH 2.4GB 的数据, 在相同的 Wi-Fi 环境下 Jelly 下载这些数据花了 Xperia 1 II 大约两倍的时间), 不过说实话你也不会想要在它上面做什么需要那么高网速的事吧, 至少它应付视频会议之类的需求还是绰绰有余的.</p>
-<p>最后不得不提一下的就是它的输入. 虽然机身大小类似 Veer, 但是 Jelly 2 并没有方便的 QWERTY 全键盘, 所以输入只能靠语音或者屏幕内虚拟键盘了. 如果你用九宫键盘并且把键盘高度开到最大的话勉强可以获得一个操作面积类似直板功能机九宫键盘的区域, 然而说实话体验并不好. 个人认为最佳解决方案还是滑动输入 + 中到小的键盘高度, 靠输入法的自动纠错来进行比较高效的输入, 配合双拼可以达到勉强可以接受的输入效率. 当然, 即使如此在使用这台机器的时候想要输入的愿望也是极为低下的, 而本来这台机器就算是一台 detox phone, 所以这个问题⋯⋯ 也就不算是个问题了?</p>
-<p>对了, 这台机器甚至支持 Micro SD 卡扩展 —— 另一个在 2021 年几乎灭绝的功能. 虽然 Micro SD 卡和第二张 SIM 共用卡槽, 但是对于我这样没有双卡需求的人来说就可以直接用来当扩展储存了.</p>
-<h3 id="一点结语"><a href="#一点结语" class="headerlink" title="一点结语"></a>一点结语</h3><p>Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.</p>
-<p>做出这台小手机的公司, 上海集赫电子商务有限公司, 是一家成立于 2016 年, 只有 50 人不到的小公司 . 在 Jelly 2 之前, 他们已经做出了 Jelly, Titan (一台有点类似黑莓 Passport 的全键盘手机), Atom (小巧的三防手机) 三个系列, 皆为小众但精致的机器, 在海内外广受死忠粉丝好评. 我也非常认同 Unihertz 日文网站上的一句话: ｢様々なスマホがありますが、現代のスマートフォンは、大きく、複雑で、とても壊れやすい。｣ —— 现在的智能手机虽然眼花缭乱, 但无不大而复杂, 而且容易损坏 (此处应有 JerryRigsEverything 插入), 而 Unihertz 选择了完全反其道而行, 自始至终开发小巧, 简单而坚固的手机, 逆流而上, 勇气可嘉.</p>
-<p>如果你已经深深陷入当代智能生活不能自拔却又希望有一台小手机的话恐怕还是只能选择 iPhone 12 mini, 但若你想要试着反抗一番, 看看能不能从这滩泥沼中挣脱, 不妨试试看 Jelly 2. 毕竟谁知道这台机器会不会成为一代绝唱呢 —— 各种小道消息都表明 iPhone 12 mini ｢销量不及预期｣, 靠苹果来重新开启小屏旗舰时代的希望恐怕是十分渺茫了.</p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>thoughts</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>東京遊記 PART Ⅲ</title>
-    <url>/2024-10/TripToTokyo3/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052612018/in/album-72177720321005949" title="DSC_2006-40 mm"><img src="https://live.staticflickr.com/65535/54052612018_8b96386d0d_b.jpg"  alt="DSC_2006-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Day-5-八月十日-星期六-新宿-文京-池袋"><a href="#Day-5-八月十日-星期六-新宿-文京-池袋" class="headerlink" title="Day 5, 八月十日, 星期六, 新宿 - 文京 - 池袋"></a>Day 5, 八月十日, 星期六, 新宿 - 文京 - 池袋</h3><p>今天主要的目的地是書籍活字館和印刷博物館. 本來還擔心遇到週六這些地方人會比較多, 但只能說文字排印就算在日本也只能算是小眾方向, 又沒有特殊展覽&#x2F;活動, 兩邊都沒什麼人, 開心. </p>
-<p>市谷之社書籍與活字館位於大日本印刷公司 (DNP) 建築群內, 從車站到本館路上目之所及全是 DNP 的標識, 儼然一副 DNP 帝國的模樣, 不愧是世界上規模最大的印刷公司. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052814030/in/album-72177720321005949/" title="DSC_1938-40 mm"><img src="https://live.staticflickr.com/65535/54052814030_0b2ff0c1b1_b.jpg" alt="DSC_1938-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>活字館修建於大日本印刷市谷工坊鐘樓原址. 整體形態基本仿造了百年前的風貌, 在市谷之社那一堆戰後建築裡顯得鶴立雞群. 不單是外觀, 入內後便會發現室內陳設的風格也散發著昭和年代的氣息. 印刷用的各種工作臺我在大學的印刷工坊裡基本上都已經見過了, 但學校裡的基本都是小型化的個人用版本, 而活字館裡這些可都是商用的大傢伙, 光就佔地面積都完全不是一個檔次. 而且學校裡的活字基本只有拉丁文和數字, 可沒有那麼多漢字和假名. 一樓的展區裡最讓我印象深刻的是個有趣的 AR 裝置, 它讓遊客在活字櫃前操作一塊半透的熒幕, 選擇對應的活字來排出一句話. 我和米克雷各自試了幾次, 皆慘敗而歸, 親身體會了排字工的不易. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54077251188/in/dateposted/" title="DSC_1932-40 mm"><img src="https://live.staticflickr.com/65535/54077251188_0a5cb6f669_b.jpg" alt="DSC_1932-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>一樓的大部分空間被活字陳列架與印刷機器佔據, 實際開放參觀的空間其實很小, 更多展覽其實在二樓. 而來到二樓之後迎接我們的是 ⸺ 針對小朋友設定的印刷知識入門講解. 對我而言算是複習了一遍課上學過的知識, 可惜米克雷不懂日語不然這確實是個入門的絕佳教程. 比起一樓陳列的上個世代的印刷用具, 二樓則展現了當下的印刷技術. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611508/in/album-72177720321005949" title="ヰ!"><img src="https://live.staticflickr.com/65535/54052611508_5f88d986f5_b.jpg" alt="ヰ!"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>ヰ!</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54077251428/in/album-72177720321005949" title="あ！秀英！"><img src="https://live.staticflickr.com/65535/54077251428_57082b02d5_b.jpg" alt="あ！秀英！"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>休息區的長椅被做成了秀英活字的形狀, 非常可愛</p>
-</blockquote>
-<p>休息區旁邊的書架上有很多文字排印相關書籍可供借閱與購買, 可惜我的行李箱空間實在有限 (而且明天還要買吟遊詩人系列的周邊), 只能眼巴巴看著這些書強行按下了購賣欲. 聽工作人員解說了一圈鐳射列印套色印刷等現代印刷技術後, 我們就離開了書籍活字館. </p>
-<hr>
-<p>相較於書籍活字館那單獨擁有一棟樓的牌面, 隱藏在<a href="https://www.printing-museum.org/access/">凸版印刷小石川本社大樓</a>裡的印刷博物館就顯得低調很多. 題外話: 我自己做<a href="https://youtu.be/e4UhH5XzlyI">歌回切片</a>封面用的日文字型就是<a href="https://www.morisawa.co.jp/fonts/specimen/2205">凸版文久標題宋</a>, 對凸版社的牌子我有著額外的親切感. </p>
-<p>進入大樓之後博物館的入口就在顯眼處. 一樓的流動展覽是免費進入的, 當時展出的是 <a href="https://www.printing-museum.org/collection/exhibition/g20240720.php">｢西文活字之銀河｣</a>; 地下一樓的常設展覽需要購票進入, 但是在固定時間段會有凸版印刷表演, 內容也更為豐富, 極為推薦. </p>
-<p>我們先進入了一樓. 令人震撼的是, 這 ｢活字之銀河｣ 展真的排列出了如銀河搬的活字, 從我們最為熟悉的 Caslon, Garamond 到很多專業人士也一輩子都不會用到､ 即使看到名字也讀不出來的字形, 琳琅滿目, 簡直是數量的暴力. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052370386/in/album-72177720321005949" title="DSC_1978-40 mm"><img src="https://live.staticflickr.com/65535/54052370386_dda5dab0e4_b.jpg" alt="DSC_1978-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>即使過了 15 年? 20 年? 我還是會被 black letter 吸住走不動路</p>
-</blockquote>
-<p>除了位於展廳正中的活字銀河, 展廳四周也佈置了介紹西文印刷歷史的展板, 還有用於排字的工具等等, 不過這些比起之前在書籍活字館展出的工具就簡略太多了⋯⋯ 當時我還是這麼想著的. 瀏覽完了一樓的展覽, 我們順著樓梯走進地下一層. 進入地下一層我才發現地下的展廳比地面要大多了, 面積上感覺比書籍活字館兩層樓加起來還要大, 其中按照時間順序構築了一座印刷史迷宮. </p>
-<p>不過在我們進入迷宮之前, 在入口處的凸版印刷台開始了印刷演示. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052814175/in/album-72177720321005949/" title="DSC_1993-40 mm"><img src="https://live.staticflickr.com/65535/54052814175_c7d122d503_b.jpg" alt="DSC_1993-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>雖然是週六下午, 但來觀看的遊客確實不多, 總共只有不到十人. 到點後工作人員先簡略介紹了一下這臺印刷機的歷史 ⸺ 它雖然是個複製品, 但依然是全世界僅有兩臺的初代凸版印刷機複製品, 十分珍貴. 印刷的流程和我在學校工坊裡體驗過的並無不同, 只不過從機器中印出的是一張銳利清晰的古登堡畫像. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052368766/in/album-72177720321005949/" title="DSC_2005-40 mm"><img src="https://live.staticflickr.com/65535/54052368766_ffa4cf02e4_b.jpg" alt="DSC_2005-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>觀看完了印刷表演, 我們開始遊覽內部的展廳. 對於印刷世界史我大致有所瞭解, 但印刷的日本史我就幾乎一無所知了, 所以這從繩文時代開始解說的展覽對我而言收益匪淺. 解說有展板解說與可互動熒幕, 熒幕中顯示的內容也支援中英文, 不用擔心被某些專有名詞難住理解不能. 一些出土文物的解說也有附帶影像資料, 比如日本自行改進的活字鑄造技術就有當年考古人員實操澆鑄的影像記錄, 比起乾巴巴的文字說明容易理解多了. </p>
-<p>在接近出口的地方設有套色印刷體驗台, 遊客們可以自己拿一張空白明信片, 然後分別用四色油墨蓋上印章, 最後製作成一張顏色鮮豔, 帶日曆的紀念明信片. 體驗完套色印刷, 在紀念品店買了一件印著古登堡聖經的 T 恤之後, 我們意猶未盡地離開了印刷博物館. </p>
-<hr>
-<p>從印刷工坊出來的時候落日尚有餘暉, 我提議拜訪一下<a href="https://eyemirror.jp/">執事眼鏡</a> ⸺ 我想給<a href="https://ec.eyemirror.jp/products/detail/486">自己的眼鏡</a>配一個新盒子, 米克雷的眼鏡腿不知斷了多久一直用膠帶粘著湊合, 說不定可以在那裡找到他心儀的鏡框呢. 於是我們坐上電車, 來到了執事眼鏡池袋本店. </p>
-<p>眼鏡店比昨天訪問的香水店還要小, 四周又都是玻璃展櫃讓空間顯得更加逼仄. 但其中陳列的各種眼鏡的確形狀奇詭氣質各異. 一直以為執事眼鏡只和各類文化 IP 聯動設計眼鏡, 沒想到還有很多樂隊聯名, 當然也有很多他們原創的設計. 我們去的時間點店裡主推的是 Fate 聯名與 IM@S 聯名, 都不是我很感興趣的主題, 但有些眼鏡的設計確實是引人注目. </p>
-<p>我被店員告知完售聯名眼鏡的專用盒子在店裡是沒有的, 只好退而求其次買了個通用的三稜柱眼鏡盒; 米克雷逛了幾圈後覺得價格果然還是太勸退了也沒有購買任何商品, 與是我們便離開了眼鏡店, 在池袋找了家<a href="https://bikyo15.com/">小店</a>用餐後回到住處. </p>
-<h3 id="Day-6-八月十一日-星期日-東池袋"><a href="#Day-6-八月十一日-星期日-東池袋" class="headerlink" title="Day 6, 八月十一日, 星期日, 東池袋"></a>Day 6, 八月十一日, 星期日, 東池袋</h3><p>今天的行程只有一個 ⸺ 參加香音老師的<a href="https://yoishigure2021.wixsite.com/minstrel3">吟遊詩人聯動咖啡</a>! 可以說這次運氣真的很好, 我目前最熱衷的兩位音樂人重大活動居然剛好在一週內進行. 聯動咖啡的活動持續一整天, 分為四個時段進行, 而且晚間的活動還會是解密活動, 我將此視為對自己日語水平的最大挑戰. </p>
-<p>Live Mixa 我前兩天就來探訪過了, 不過之前從五樓到九樓的樓梯上了鎖, 我無法窺探其中的佈置, 活動當天才看到樓梯間的牆壁上掛滿了吟遊詩人系列相關的插繪, 氣氛非常到位. 因為是按照咖啡廳的席位事前報名, 所以在等待的人並不算太多, 入場速度也很快, 入場時間過後不久大家就都已經到達指定位置就坐. 第一次參加這種活動我心裡不免有些緊張, 但在聯動的食物被端到我面前時這緊張遍煙消雲散 ⸺ </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54055088640/in/album-72177720321005949/" title="DSC_2061-40 mm"><img src="https://live.staticflickr.com/65535/54055088640_0e48b0aa11_b.jpg" alt="DSC_2061-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>香音老師或許在畫得精美上沒有天賦, 但絕對是有畫得讓人捧腹的才華. 本場聯動咖啡的精華之一便是這「才能爆発!?時雨とライラ、”入れ替わり組”による​爆発画伯パンケーキ」了. 鬆餅本體上就有糖漿畫的迷之表情不說, 這份套餐還會贈送一小壺糖漿, 彷彿在鼓勵大家往這表情上加點什麼. 但這是個精心設計的陷阱 ⸺ 用糖漿在鬆餅上繪畫, 談何容易! 經過一番苦戰之後, 我華麗的失敗 (或者從香音老師計劃的角度來說, 應該算大成功?) 了⋯⋯ </p>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%AB%E3%83%95%E3%82%A7?src=hash&amp;ref_src=twsrc%5Etfw">#吟遊詩人シリーズコラボカフェ</a><br><br>失敗しました 😇 <a href="https://t.co/V0Vb6Umaah">pic.twitter.com/V0Vb6Umaah</a></p>&mdash; NovaDNG (@NovaDNG) <a href="https://twitter.com/NovaDNG/status/1822576571666051482?ref_src=twsrc%5Etfw">August 11, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-<p>(如果妳想看其他參會者的作品, 可以去 Twitter 上瀏覽 <a href="https://x.com/hashtag/%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%AB%E3%83%95%E3%82%A7">#吟遊詩人シリーズコラボカフェ</a>)</p>
-<p>除去鬆餅, 其他的食物就是比較正經的食物了, 反而沒什麼值得大書特書的部分. 當然我相信沒人會真的因為食物參加這種活動的 (沒有人吧⋯⋯?), 重頭戲當然是香音老師主持的吟遊詩人主題參演者對談與朗讀劇. 這次出席的嘉賓都是二人一組登場, 分別是<a href="https://x.com/ruka_motomiya">琉華</a> × <a href="https://x.com/_Eye_0_">Eye</a>, <a href="https://x.com/25myomyo25">みょみょ</a> × <a href="https://x.com/waka_nana0413">わかばやし</a> 以及 <a href="https://x.com/Luciaaa_Sings">Lucia</a> × <a href="https://x.com/panda__aoi">結城碧</a>. 參加者都穿著以劇中角色印象出發搭配的衣服. 可惜會場中當然不能拍照錄像, 不然⋯⋯ </p>
-<p>香音老師先分別與他們聊吟遊詩人系列相關的話題, 然後是一個兩人互動小遊戲, 最後以朗讀劇收尾. 其中讓我留下最深刻印象的當屬みょみょ和わかばやし的組合, 兩人本就早已熟識, 互動自然活潑, 感覺她們二人不需要任何引導就能聊上幾天⋯⋯ 可惜活動的時間有限, 香音老師還是控制了她們興高采烈的對話. </p>
-<p>能把這群多姿多彩多才多藝的音樂人聚集在一起, 香音老師的努力與魅力果然令人感嘆. 半天時間轉眼過去, 活動進入了最後的部分 ⸺ 解謎挑戰. 按照香音老師自己的說法, 她作為推理解密愛好者早就想搞一次這樣的活動了, 所以她可能比我們所有人都要興奮. 而題目的難度, 香音老師自述 ｢絕對是想象以上的難度!｣ 不禁讓我更加心虛. </p>
-<p>到開場時間後, 大家都從先前拿到資料袋 (居然是香音老師和琉華小姐協助分發的!) 中取出題目閱覽. 我彷彿聽到了周遭的嘆氣聲, 但我完全沒功夫理會, 因為哪怕會場的螢幕上已經寫了一些提示我甚至都無法勉強看懂很多題目⋯⋯ 等時限到達香音老師公佈答案時, 我發現自己只做對了 1&#x2F;3 左右的題目. 令我驚喜的是, 所有謎題的答案最後拼出的最終暗號居然是 <a href="https://www.youtube.com/watch?v=LEjZ3lJPzN0">｢藍悼花｣</a>! </p>
-<p>活動終於結束, 我戀戀不捨地離開 Live Mixa 回到住處, 整理行李. </p>
-<h4 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7"></a>Day 7</h4><p>大部分時候旅行對我而言就是非日常與日常的界限. 雖然我已經回到了日常, 但我仍未復歸現實.  </p>
-<hr>
-<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a> </p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>東京遊記 PART Ⅰ</title>
     <url>/2024-10/TripToTokyo1/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052125636/in/album-72177720321005949" title="DSC_0706-40 mm"><img src="https://live.staticflickr.com/65535/54052125636_6efba503a3_b.jpg"  alt="DSC_0706-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -824,6 +553,358 @@
 ]]></content>
       <tags>
         <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 PART Ⅱ</title>
+    <url>/2024-10/TripToTokyo2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/dateposted-public/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Day-3-八月八日-星期四-千駄ヶ谷-墨田"><a href="#Day-3-八月八日-星期四-千駄ヶ谷-墨田" class="headerlink" title="Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田"></a>Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田</h3><p>從這天開始行程就不是我一個人了, <a href="https://bsky.app/profile/bsky.mikelei.me">米克雷</a>在昨天 Live 結束後與我會和, 之後便一直同行至東京之行結束. 由於昨天 live 的衝擊, 今天的行程安排比較寬裕, 只有拜訪 Pixiv 和晴空塔. Pixiv 可以說是我的插繪審美啟蒙, 是我心目中的聖地之一. 之前默默使用了十幾年, 今天終於有機會一探究竟. </p>
+<p>帶領我參觀的是 <a href="https://twitter.com/godling_zlm">@godling_zlm</a>, 感覺我們也快認識十年 ⸺ 不對, 搞不好真的已經十年了⋯⋯ Pixiv 總部位於 <a href="https://www.pixiv.co.jp/company/">JPR 千駄ヶ谷大樓</a>, 從外面看就是一棟毫不起眼的辦公樓, 沒有任何能讓人聯想到世界上萬億頂尖插繪在此集聚的特徵. 但可別被它的外觀欺騙, Pixiv 的辦公室可是大有乾坤. </p>
+<p>一下電梯, 出現在眼前的就是一片由巨大繪馬構成的牆. 其上滿是各位耳熟能詳的大手繪師作品. 從電梯廳往辦公區行進, 會經過一個兩面掛滿了小號繪馬的通道, 這些繪馬無論哪個單獨拿出來都足夠寶貴了, 在 Pixiv 居然能鋪滿好幾面牆, 而且還在不斷替換⋯⋯ 實在是令人垂涎. Godling 介紹了這個辦公室是由大名鼎鼎的 <a href="https://www.teamlab.art/">teamLab</a> 操刀設計 ⸺ 最近同為他們操刀的麻布台 <a href="https://www.teamlab.art/jp/e/tokyo/">Digital Art Museum 展覽</a>也很火, 我本想找機會去參觀, 但沒能擠出時間只能遺憾作罷. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54071450508/in/album-72177720321005949" title="DSC_1073-50mm f-1G"><img src="https://live.staticflickr.com/65535/54071450508_7d3dea6c8a_b.jpg" alt="DSC_1073-50mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068751131/in/album-72177720321005949/" title="三輪士郎"><img src="https://live.staticflickr.com/65535/54068751131_c3a39bd32a_b.jpg" alt="三輪士郎"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>進入辦公區內部, 更加震撼的畫面呈現在我的眼前: 整個主辦公區由一張連成一體的巨大木質桌子環繞, 這桌子形狀蜿蜒曲折彷彿擁有生命, 以非常自然的狀態構成了幾十個<strong>相連但又互不影響</strong>的工作區域. Godling 介紹在瘟疫過後大部分員工都選擇居家辦公, 所以儘管是工作日在這辦公的人也寥寥無幾, 但我已經可以想象在瘟疫前這會是一個多麼和諧美好的工作空間了. 現代辦公室設計很難擺脫在個人空間與效率間擇一的難題, teamLab 用這塊形狀奇異的桌子漂亮地給出了解決方案, 可以說讓人大開眼界. </p>
+<p><img src="https://cdn.prod.website-files.com/5db35de024bb988f5fb4e168/5e58ed2a8d96fd5240cdf46f_pixiv-hero.jpg" alt="辦公區俯視圖"></p>
+<blockquote>
+<p>要完整展現這張桌子對我的鏡頭來說不愧是難度太高了, 就用<a href="https://bitrise.io/customer-stories/pixiv-jp">發表在網上</a>的公開圖片吧</p>
+</blockquote>
+<p>除去這塊桌子, 最讓我感興趣的就是牆上的書架了. 這裡塞滿了歷年來 pixiv 出版或協力的各種書刊, 是另一個巨大的寶庫, 如果能有機會把這裡的所有作品都閱讀一遍的話⋯⋯ 簡直是做夢都不敢想啊. 書架裡最醒目的區域是各種獎盃獎牌, 其中還有不少技術開發相關的獎項, 提醒了我其實 Pixiv 不單單擅於運營, 同樣是注重先進技術的公司. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069084509/in/album-72177720321005949/" title="DSC_1099-25 mm"><img src="https://live.staticflickr.com/65535/54069084509_d102798413_b.jpg" alt="DSC_1099-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>中午我們一起在<a href="https://maps.app.goo.gl/HhkhGHiXVLeb3Mzh7">代代木站附近的一家壽司店</a>吃了午飯. Godling 說這家店中午提供平價但高質量的社畜午餐, 晚上提供奢華大餐給社畜的老闆, 而我只覺得社畜午餐倒也量足料精價效比十足. 飽餐後我們就此別過, 他回家繼續工作, 而我與米克雷前往晴空塔. </p>
+<hr>
+<p>俗話說傻子和煙都喜歡高處, 這麼看來我必然是個傻子無誤了. 儘管知道晴空塔無論何時都遊客爆滿, 我還是義無反顧地把它列入本次行程必須去的目的地. 大概是根植於 DNA 裡的某些本能, 我一直很喜歡從高處俯瞰城市. 晴空塔 495m 的上層展望臺當然實打實地滿足了我. 和去年在哈爾濱登上龍塔時相比, 首先晴空塔的展望臺就已經比龍塔那 200 米出頭的高度要高上太多; 其次哈爾濱的城市俯瞰起來真的⋯⋯ 乏善可陳, 在嚴冬的襯托下一片肅殺; 相較之下從晴空塔上眺望東京看到的是秩序與混沌並存, 尤其是到日薄西山華燈初上時更是生機勃發, 與龍塔上所見簡直是兩個極端. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068752271/in/album-72177720321005949/" title="DSC_1157-135 mm"><img src="https://live.staticflickr.com/65535/54068752271_748349a6cc_b.jpg" alt="DSC_1157-135 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</p>
+</blockquote>
+<p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/album-72177720321005949/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg" alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051312762/in/album-72177720321005949/" title="DSC_1358-Enhanced-NR-40 mm"><img src="https://live.staticflickr.com/65535/54051312762_ab59c0738f_b.jpg" alt="DSC_1358-Enhanced-NR-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>快速上升的電梯 + 慢速快門產生的時空隧道感</p>
+</blockquote>
+<p>落日之後我打算繼續拍東京夜景, 於是繞到吧檯處. 吧檯是需要購買食物才能進入的, 但人相對要少一些, 有高度很剛好的桌子供客人進食, 風景也非常宜人. 俯瞰夜間的東京感覺繁華程度更甚日間, 各色燈光恰到好處地裝點城市的各個角落, 又不像很多國內的城市搞形狀詭異的夜景工程憑空製造光汙染, 給人的感覺十分乾淨. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051311352/in/album-72177720321005949/" title="DSC_1461-25 mm"><img src="https://live.staticflickr.com/65535/54051311352_7edcc96b3d_b.jpg" alt="DSC_1461-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>踩著打烊時點在餐飲街吃了點晚飯, 又在紀念品店買了一堆小禮物, 我們登上電車回到住處. </p>
+<h3 id="Day-4-八月九日-星期五-池袋-涉谷"><a href="#Day-4-八月九日-星期五-池袋-涉谷" class="headerlink" title="Day 4, 八月九日, 星期五, 池袋 - 涉谷"></a>Day 4, 八月九日, 星期五, 池袋 - 涉谷</h3><p>今天的行程 ⸺ 聖地巡禮. 池袋太陽城裡有兩個我們都特別想去的地方: 太陽城水族館和 ｢滿天｣ 天象館. 兩者都是在動畫 <a href="https://bgm.tv/subject/428735">Bang Dream! It’s MyGO!!!!! </a> 中登場, 有重要戲份發生的地點, 同樣也都是特別適合放鬆遊覽的景點. </p>
+<p>我們先進入了水族館. 大約全世界水族館都是吸引小朋友的地方, 太陽城這裡也不例外, 好在嘈雜程度比起國內的幾個水族館勉強還算是可以接受. 室內部分展出的水族並沒有什麼獨特之處, 但館內各種玻璃維護得非常乾淨, 觀看體驗比我之前在國內去的幾家都要好很多. 玻璃乾淨的另一個好處就是拍照效果也相對更好一些. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052809900/in/album-72177720321005949" title="DSC_1595-25 mm"><img src="https://live.staticflickr.com/65535/54052809900_7478532983_b.jpg" alt="DSC_1595-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>水母缸無論看幾次都覺得非常療愈</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052364421/in/album-72177720321005949/" title="DSC_1649-25 mm"><img src="https://live.staticflickr.com/65535/54052364421_c19d58bf4d_b.jpg" alt="DSC_1649-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>表情 (?) 十分佛系的烏賊</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052607148/in/album-72177720321005949/" title="DSC_1606-25 mm"><img src="https://live.staticflickr.com/65535/54052607148_264acbc0b9_b.jpg" alt="DSC_1606-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>比水母缸更好的是什麼? 那當然是水母牆啦</p>
+</blockquote>
+<p>室內部分並不大, 很快就走到了盡頭來到室外, 而這才是本館的重頭戲 ⸺ 空中企鵝的所在. 和印象裡不同, 在熱帶其實也有企鵝存在, 而太陽城水族館就有一批俗稱南非企鵝的熱帶企鵝. 在東京 33℃ 的驕陽下企鵝們懶洋洋地在假山的陰影裡休息或踱步, 偶爾有一兩隻跑到太陽下, 不一會兒也受不住炎熱去灑水噴頭旁納涼. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610323/in/album-72177720321005949" title="DSC_1799-40 mm"><img src="https://live.staticflickr.com/65535/54052610323_450e9dccda_b.jpg" alt="DSC_1799-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051214437/in/album-72177720321005949" title="65520034-"><img src="https://live.staticflickr.com/65535/54051214437_209db1d85d_b.jpg" alt="65520034-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>企鵝略有些笨拙的動作看起來的確是非常療愈. 但比起地上的企鵝, 更療愈的當然是 ⸺ 在空中的企鵝! 透過在市中心的四層建築上建造巨大水缸, 太陽城水族館讓企鵝在水缸中游泳的身姿變得彷彿在空中飛行一般. 我徹底理解了為什麼高松燈會辦水族館年票了, 如果可以的話我也想每天下班來這裡看企鵝⋯⋯ 不行的話至少每週一次⋯⋯</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610043/in/album-72177720321005949/" title="DSC_1804-40 mm"><img src="https://live.staticflickr.com/65535/54052610043_0a804f557a_b.jpg" alt="DSC_1804-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在被烈陽烤成軟泥之前我們回到了室內. 簡單吃了午飯又喝了一杯咖啡之後就差不多到了天象館預定節目的時間, 我們便進入水族館一牆之隔的天象館. </p>
+<hr>
+<p>我選擇的節目是由津田健次郎講解的<a href="https://planetarium.konicaminolta.jp/program/italian/?hall=manten">義大利星空散步</a>. 進入館內後大家找到座位並調整靠背變成半躺的狀態 ⸺ 靠背的調整並不像動畫裡那樣唐突落下, 而是有很明顯的潤滑與阻尼. 觀客基本到齊後照明逐漸熄滅, 投影啟動, 球形天幕上映出星空. 就像喜歡高處一樣, 星空對我也有著無法抗拒的吸引力, 即使是這虛擬的星空也同樣. 我屏息凝神豎起耳朵等待著解說出現. </p>
+<p>我一直都很喜歡津田健次郎的聲音, 但我沒想到他在解說時使用的溫柔的聲線與星空配合的效果是如此完美. 一直以來我刻板印象裡津田健次郎的聲音低沉深邃充滿磁性, 但往往暗含著激烈的情感, 而錄製解說時他的聲音卻只充滿著溫柔, 彷若慈愛的父親&#x2F;兄長&#x2F;丈夫引導著兒女&#x2F;弟妹&#x2F;伴侶共同在這星夜遨遊. 儘管解說的內容是早已耳熟能詳的羅馬神話與星座的關聯, 但星象儀的投影與津田健次郎的解說一道, 還是構築了令人沉醉的體驗. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611193/in/album-72177720321005949/" title="DSC_1841-40 mm"><img src="https://live.staticflickr.com/65535/54052611193_2ecb27a36f_b.jpg" alt="DSC_1841-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>演出結束後的星象儀. 投影儀和星象儀的清晰度區別還是很明顯的, 星象儀並不是一直在運轉</p>
+</blockquote>
+<p>戀戀不捨地離開太陽城後, 我心想都已經來池袋了乾脆去 <a href="https://www.mixalivetokyo.com/">Mixa Live</a> 看一眼吧, 沒想到四樓的 Store Mixa 有 BanG Dream 周邊販售, 我們毫無抵抗地被吸了進去, 眼睛一閉一睜活動經費就少了一大截⋯⋯ </p>
+<hr>
+<p>好不容易逃脫 Store Mixa 魔窟, 我們繼續前往下一個目的地 ⸺ <a href="https://sholayered.jp/">Sholayered 本店</a>. 想要拜訪這家店也多少有一點聖地巡禮的意思, 我是從一位多才多藝的繪師<a href="https://x.com/kazari_tayu">風李たゆ老師</a>處得知這一品牌的. 我本來對香水可以說是一竅不通, 但近幾年在<a href="https://findmestore.thinkr.jp/collections/isekaijoucho/products/%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-3rd-anniversary-official-goods">情緒小姐</a>､ <a href="https://clear.fanbox.cc/">風李老師</a>和<a href="https://mall.bilibili.com/neul-next/index.html?noTitleBar=1&page=mall-up_shop&shopId=343172">艾茵老師</a>的栽培 (?) 下也搭建了還算完整的個人香味體系 (?), Sholayered 的室內香取向我也很喜歡, 之前買了風李老師推薦過的鮮梨味室內香在國內已經沒有代購了, 我就想趁著這次機會來補充一下. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610058/in/album-72177720321005949" title="DSC_1860-40 mm"><img src="https://live.staticflickr.com/65535/54052610058_5111714712_b.jpg" alt="DSC_1860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>店員異常熱情, 在聽到我是從 Layerd Fragrance 時代就在購買的老客戶之後更是滔滔不絕侃侃而談, 店裡主推的商品本來就能隨意試用, 一時間我的嗅覺都有些過載了. 神奇的是和店員談論香水的話題我居然基本也能無障礙交流, 又讓我覺得自己日語水平真行了. 實話說新推出的很多款式都讓我覺得有些怪異或者刻意, 不如我早已瞄準的幾個經典款式對胃口. 最後我買了一大瓶室內香和兩瓶香水, 心滿意足回家. </p>
+<hr>
+<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 PART Ⅲ</title>
+    <url>/2024-10/TripToTokyo3/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052612018/in/album-72177720321005949" title="DSC_2006-40 mm"><img src="https://live.staticflickr.com/65535/54052612018_8b96386d0d_b.jpg"  alt="DSC_2006-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Day-5-八月十日-星期六-新宿-文京-池袋"><a href="#Day-5-八月十日-星期六-新宿-文京-池袋" class="headerlink" title="Day 5, 八月十日, 星期六, 新宿 - 文京 - 池袋"></a>Day 5, 八月十日, 星期六, 新宿 - 文京 - 池袋</h3><p>今天主要的目的地是書籍活字館和印刷博物館. 本來還擔心遇到週六這些地方人會比較多, 但只能說文字排印就算在日本也只能算是小眾方向, 又沒有特殊展覽&#x2F;活動, 兩邊都沒什麼人, 開心. </p>
+<p>市谷之社書籍與活字館位於大日本印刷公司 (DNP) 建築群內, 從車站到本館路上目之所及全是 DNP 的標識, 儼然一副 DNP 帝國的模樣, 不愧是世界上規模最大的印刷公司. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052814030/in/album-72177720321005949/" title="DSC_1938-40 mm"><img src="https://live.staticflickr.com/65535/54052814030_0b2ff0c1b1_b.jpg" alt="DSC_1938-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>活字館修建於大日本印刷市谷工坊鐘樓原址. 整體形態基本仿造了百年前的風貌, 在市谷之社那一堆戰後建築裡顯得鶴立雞群. 不單是外觀, 入內後便會發現室內陳設的風格也散發著昭和年代的氣息. 印刷用的各種工作臺我在大學的印刷工坊裡基本上都已經見過了, 但學校裡的基本都是小型化的個人用版本, 而活字館裡這些可都是商用的大傢伙, 光就佔地面積都完全不是一個檔次. 而且學校裡的活字基本只有拉丁文和數字, 可沒有那麼多漢字和假名. 一樓的展區裡最讓我印象深刻的是個有趣的 AR 裝置, 它讓遊客在活字櫃前操作一塊半透的熒幕, 選擇對應的活字來排出一句話. 我和米克雷各自試了幾次, 皆慘敗而歸, 親身體會了排字工的不易. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54077251188/in/dateposted/" title="DSC_1932-40 mm"><img src="https://live.staticflickr.com/65535/54077251188_0a5cb6f669_b.jpg" alt="DSC_1932-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>一樓的大部分空間被活字陳列架與印刷機器佔據, 實際開放參觀的空間其實很小, 更多展覽其實在二樓. 而來到二樓之後迎接我們的是 ⸺ 針對小朋友設定的印刷知識入門講解. 對我而言算是複習了一遍課上學過的知識, 可惜米克雷不懂日語不然這確實是個入門的絕佳教程. 比起一樓陳列的上個世代的印刷用具, 二樓則展現了當下的印刷技術. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611508/in/album-72177720321005949" title="ヰ!"><img src="https://live.staticflickr.com/65535/54052611508_5f88d986f5_b.jpg" alt="ヰ!"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>ヰ!</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54077251428/in/album-72177720321005949" title="あ！秀英！"><img src="https://live.staticflickr.com/65535/54077251428_57082b02d5_b.jpg" alt="あ！秀英！"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>休息區的長椅被做成了秀英活字的形狀, 非常可愛</p>
+</blockquote>
+<p>休息區旁邊的書架上有很多文字排印相關書籍可供借閱與購買, 可惜我的行李箱空間實在有限 (而且明天還要買吟遊詩人系列的周邊), 只能眼巴巴看著這些書強行按下了購賣欲. 聽工作人員解說了一圈鐳射列印套色印刷等現代印刷技術後, 我們就離開了書籍活字館. </p>
+<hr>
+<p>相較於書籍活字館那單獨擁有一棟樓的牌面, 隱藏在<a href="https://www.printing-museum.org/access/">凸版印刷小石川本社大樓</a>裡的印刷博物館就顯得低調很多. 題外話: 我自己做<a href="https://youtu.be/e4UhH5XzlyI">歌回切片</a>封面用的日文字型就是<a href="https://www.morisawa.co.jp/fonts/specimen/2205">凸版文久標題宋</a>, 對凸版社的牌子我有著額外的親切感. </p>
+<p>進入大樓之後博物館的入口就在顯眼處. 一樓的流動展覽是免費進入的, 當時展出的是 <a href="https://www.printing-museum.org/collection/exhibition/g20240720.php">｢西文活字之銀河｣</a>; 地下一樓的常設展覽需要購票進入, 但是在固定時間段會有凸版印刷表演, 內容也更為豐富, 極為推薦. </p>
+<p>我們先進入了一樓. 令人震撼的是, 這 ｢活字之銀河｣ 展真的排列出了如銀河搬的活字, 從我們最為熟悉的 Caslon, Garamond 到很多專業人士也一輩子都不會用到､ 即使看到名字也讀不出來的字形, 琳琅滿目, 簡直是數量的暴力. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052370386/in/album-72177720321005949" title="DSC_1978-40 mm"><img src="https://live.staticflickr.com/65535/54052370386_dda5dab0e4_b.jpg" alt="DSC_1978-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>即使過了 15 年? 20 年? 我還是會被 black letter 吸住走不動路</p>
+</blockquote>
+<p>除了位於展廳正中的活字銀河, 展廳四周也佈置了介紹西文印刷歷史的展板, 還有用於排字的工具等等, 不過這些比起之前在書籍活字館展出的工具就簡略太多了⋯⋯ 當時我還是這麼想著的. 瀏覽完了一樓的展覽, 我們順著樓梯走進地下一層. 進入地下一層我才發現地下的展廳比地面要大多了, 面積上感覺比書籍活字館兩層樓加起來還要大, 其中按照時間順序構築了一座印刷史迷宮. </p>
+<p>不過在我們進入迷宮之前, 在入口處的凸版印刷台開始了印刷演示. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052814175/in/album-72177720321005949/" title="DSC_1993-40 mm"><img src="https://live.staticflickr.com/65535/54052814175_c7d122d503_b.jpg" alt="DSC_1993-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>雖然是週六下午, 但來觀看的遊客確實不多, 總共只有不到十人. 到點後工作人員先簡略介紹了一下這臺印刷機的歷史 ⸺ 它雖然是個複製品, 但依然是全世界僅有兩臺的初代凸版印刷機複製品, 十分珍貴. 印刷的流程和我在學校工坊裡體驗過的並無不同, 只不過從機器中印出的是一張銳利清晰的古登堡畫像. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052368766/in/album-72177720321005949/" title="DSC_2005-40 mm"><img src="https://live.staticflickr.com/65535/54052368766_ffa4cf02e4_b.jpg" alt="DSC_2005-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>觀看完了印刷表演, 我們開始遊覽內部的展廳. 對於印刷世界史我大致有所瞭解, 但印刷的日本史我就幾乎一無所知了, 所以這從繩文時代開始解說的展覽對我而言收益匪淺. 解說有展板解說與可互動熒幕, 熒幕中顯示的內容也支援中英文, 不用擔心被某些專有名詞難住理解不能. 一些出土文物的解說也有附帶影像資料, 比如日本自行改進的活字鑄造技術就有當年考古人員實操澆鑄的影像記錄, 比起乾巴巴的文字說明容易理解多了. </p>
+<p>在接近出口的地方設有套色印刷體驗台, 遊客們可以自己拿一張空白明信片, 然後分別用四色油墨蓋上印章, 最後製作成一張顏色鮮豔, 帶日曆的紀念明信片. 體驗完套色印刷, 在紀念品店買了一件印著古登堡聖經的 T 恤之後, 我們意猶未盡地離開了印刷博物館. </p>
+<hr>
+<p>從印刷工坊出來的時候落日尚有餘暉, 我提議拜訪一下<a href="https://eyemirror.jp/">執事眼鏡</a> ⸺ 我想給<a href="https://ec.eyemirror.jp/products/detail/486">自己的眼鏡</a>配一個新盒子, 米克雷的眼鏡腿不知斷了多久一直用膠帶粘著湊合, 說不定可以在那裡找到他心儀的鏡框呢. 於是我們坐上電車, 來到了執事眼鏡池袋本店. </p>
+<p>眼鏡店比昨天訪問的香水店還要小, 四周又都是玻璃展櫃讓空間顯得更加逼仄. 但其中陳列的各種眼鏡的確形狀奇詭氣質各異. 一直以為執事眼鏡只和各類文化 IP 聯動設計眼鏡, 沒想到還有很多樂隊聯名, 當然也有很多他們原創的設計. 我們去的時間點店裡主推的是 Fate 聯名與 IM@S 聯名, 都不是我很感興趣的主題, 但有些眼鏡的設計確實是引人注目. </p>
+<p>我被店員告知完售聯名眼鏡的專用盒子在店裡是沒有的, 只好退而求其次買了個通用的三稜柱眼鏡盒; 米克雷逛了幾圈後覺得價格果然還是太勸退了也沒有購買任何商品, 與是我們便離開了眼鏡店, 在池袋找了家<a href="https://bikyo15.com/">小店</a>用餐後回到住處. </p>
+<h3 id="Day-6-八月十一日-星期日-東池袋"><a href="#Day-6-八月十一日-星期日-東池袋" class="headerlink" title="Day 6, 八月十一日, 星期日, 東池袋"></a>Day 6, 八月十一日, 星期日, 東池袋</h3><p>今天的行程只有一個 ⸺ 參加香音老師的<a href="https://yoishigure2021.wixsite.com/minstrel3">吟遊詩人聯動咖啡</a>! 可以說這次運氣真的很好, 我目前最熱衷的兩位音樂人重大活動居然剛好在一週內進行. 聯動咖啡的活動持續一整天, 分為四個時段進行, 而且晚間的活動還會是解密活動, 我將此視為對自己日語水平的最大挑戰. </p>
+<p>Live Mixa 我前兩天就來探訪過了, 不過之前從五樓到九樓的樓梯上了鎖, 我無法窺探其中的佈置, 活動當天才看到樓梯間的牆壁上掛滿了吟遊詩人系列相關的插繪, 氣氛非常到位. 因為是按照咖啡廳的席位事前報名, 所以在等待的人並不算太多, 入場速度也很快, 入場時間過後不久大家就都已經到達指定位置就坐. 第一次參加這種活動我心裡不免有些緊張, 但在聯動的食物被端到我面前時這緊張遍煙消雲散 ⸺ </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54055088640/in/album-72177720321005949/" title="DSC_2061-40 mm"><img src="https://live.staticflickr.com/65535/54055088640_0e48b0aa11_b.jpg" alt="DSC_2061-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>香音老師或許在畫得精美上沒有天賦, 但絕對是有畫得讓人捧腹的才華. 本場聯動咖啡的精華之一便是這「才能爆発!?時雨とライラ、”入れ替わり組”による​爆発画伯パンケーキ」了. 鬆餅本體上就有糖漿畫的迷之表情不說, 這份套餐還會贈送一小壺糖漿, 彷彿在鼓勵大家往這表情上加點什麼. 但這是個精心設計的陷阱 ⸺ 用糖漿在鬆餅上繪畫, 談何容易! 經過一番苦戰之後, 我華麗的失敗 (或者從香音老師計劃的角度來說, 應該算大成功?) 了⋯⋯ </p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%AB%E3%83%95%E3%82%A7?src=hash&amp;ref_src=twsrc%5Etfw">#吟遊詩人シリーズコラボカフェ</a><br><br>失敗しました 😇 <a href="https://t.co/V0Vb6Umaah">pic.twitter.com/V0Vb6Umaah</a></p>&mdash; NovaDNG (@NovaDNG) <a href="https://twitter.com/NovaDNG/status/1822576571666051482?ref_src=twsrc%5Etfw">August 11, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<p>(如果妳想看其他參會者的作品, 可以去 Twitter 上瀏覽 <a href="https://x.com/hashtag/%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%AB%E3%83%95%E3%82%A7">#吟遊詩人シリーズコラボカフェ</a>)</p>
+<p>除去鬆餅, 其他的食物就是比較正經的食物了, 反而沒什麼值得大書特書的部分. 當然我相信沒人會真的因為食物參加這種活動的 (沒有人吧⋯⋯?), 重頭戲當然是香音老師主持的吟遊詩人主題參演者對談與朗讀劇. 這次出席的嘉賓都是二人一組登場, 分別是<a href="https://x.com/ruka_motomiya">琉華</a> × <a href="https://x.com/_Eye_0_">Eye</a>, <a href="https://x.com/25myomyo25">みょみょ</a> × <a href="https://x.com/waka_nana0413">わかばやし</a> 以及 <a href="https://x.com/Luciaaa_Sings">Lucia</a> × <a href="https://x.com/panda__aoi">結城碧</a>. 參加者都穿著以劇中角色印象出發搭配的衣服. 可惜會場中當然不能拍照錄像, 不然⋯⋯ </p>
+<p>香音老師先分別與他們聊吟遊詩人系列相關的話題, 然後是一個兩人互動小遊戲, 最後以朗讀劇收尾. 其中讓我留下最深刻印象的當屬みょみょ和わかばやし的組合, 兩人本就早已熟識, 互動自然活潑, 感覺她們二人不需要任何引導就能聊上幾天⋯⋯ 可惜活動的時間有限, 香音老師還是控制了她們興高采烈的對話. </p>
+<p>能把這群多姿多彩多才多藝的音樂人聚集在一起, 香音老師的努力與魅力果然令人感嘆. 半天時間轉眼過去, 活動進入了最後的部分 ⸺ 解謎挑戰. 按照香音老師自己的說法, 她作為推理解密愛好者早就想搞一次這樣的活動了, 所以她可能比我們所有人都要興奮. 而題目的難度, 香音老師自述 ｢絕對是想象以上的難度!｣ 不禁讓我更加心虛. </p>
+<p>到開場時間後, 大家都從先前拿到資料袋 (居然是香音老師和琉華小姐協助分發的!) 中取出題目閱覽. 我彷彿聽到了周遭的嘆氣聲, 但我完全沒功夫理會, 因為哪怕會場的螢幕上已經寫了一些提示我甚至都無法勉強看懂很多題目⋯⋯ 等時限到達香音老師公佈答案時, 我發現自己只做對了 1&#x2F;3 左右的題目. 令我驚喜的是, 所有謎題的答案最後拼出的最終暗號居然是 <a href="https://www.youtube.com/watch?v=LEjZ3lJPzN0">｢藍悼花｣</a>! </p>
+<p>活動終於結束, 我戀戀不捨地離開 Live Mixa 回到住處, 整理行李. </p>
+<h4 id="Day-7"><a href="#Day-7" class="headerlink" title="Day 7"></a>Day 7</h4><p>大部分時候旅行對我而言就是非日常與日常的界限. 雖然我已經回到了日常, 但我仍未復歸現實.  </p>
+<hr>
+<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a> </p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 PART Anima Ⅲ</title>
+    <url>/2024-10/TripToTokyoAnima/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>雖然<a href="/2024/10/15/TripToTokyo1/">上篇</a>結尾我自覺任何文字記錄對於這場演出而言都是多餘的, 但這兩個月我的 Anima Ⅲ 戒斷反應日趨嚴重, 還是忍不住想寫些廢話記錄這次演出.</p>
+<h3 id="樂隊"><a href="#樂隊" class="headerlink" title="樂隊"></a>樂隊</h3><p><img src="/2024-10/TripToTokyoAnima/Anima3band.avif"></p>
+<blockquote>
+<p>功勞榜</p>
+</blockquote>
+<p>本場演出樂隊的核心成員 (鍵盤吉他貝斯鼓大提琴) 都是觀測者們耳熟能詳的老朋友了, 其中大提琴<a href="https://x.com/GOSHU27">伊藤修平</a>先生更是從初代 Anima 一路走來的核心成員 (band master), 屬於看到他們登臺就可以安心的存在.</p>
+<p>樂隊裡最亮眼的角色大概非鍵盤<a href="https://www.wataru-saito.com/">斎藤渉</a>先生莫屬了. 因為一頭標誌性的長髮與彈奏時專注入迷的神態而被觀測者們熟知, 在很多曲目的過渡橋段裡都有齋藤先生的華彩, 我作為鋼琴愛好者是聽得相當過癮恨不得當場鼓掌叫好.</p>
+<p>絃樂組自從在不可解参 (想) 裡進行了一次擴編後就保持了兩把小提琴, 一把中提琴和一把大提琴的規模. 情緒的很多老歌與絃樂組的相性都極好, 普通的伴奏裡增加配樂厚度, 對一些樂曲高潮部分表現力強化還有一些過渡橋段的加花效果都是有目共睹的.</p>
+<p>本次的樂隊改編也仍然是由修平先生完成, 因為加入了小號和薩克斯所以管樂器改編由更加專業的小號手<a href="https://6335ab21df400.site123.me/">山田丈造</a>進行. 大體來說我是非常喜歡修平先生的改編風格, 因應 Live 氛圍在很多曲子前加入了巧思密集的前奏應該是一大特色, 讓我們在初次聆聽時無法瞬間辨認出開演的曲目, 增加了驚喜的感覺. 而且樂隊改編時還極大改善了某些曲子原本的弱點 (比如說⋯⋯ 香椎老師的鼓點), 真是錦上添花的妙筆. 但也依舊存在每首曲子結束時都加入了冗長的收尾, 顯得拖泥帶水的問題. 雖然我覺得在現場配合觀眾的歡呼氣氛確實很好, 但個人並不喜歡.</p>
+<h3 id="舞臺"><a href="#舞臺" class="headerlink" title="舞臺"></a>舞臺</h3><p>橫濱國際平和會議場的<a href="https://www.pacifico.co.jp/guide/convention">國家禮堂</a>觀眾席分為三層, 總共可容納 5,000 名觀眾, 我的作為位於二層靠右, 總體而言視野還算良好, 音響效果也算不錯, 要和之前參加的 livehouse 演出相比那就好不知道多少倍了.</p>
+<p>演出的舞臺被分為上下兩層, 樂隊都集中在下層, 中間是作為主要演出區域的雙層熒幕. 我坐在右側所以左側的樂隊成員略有些難以看清, 不過好在舞臺上方還有副熒幕, 有時會播放樂隊成員的特寫.</p>
+<p>實話說我很不喜歡神椿的現場演出, 這兩個熒幕給神椿的場景設計加上了巨大的枷鎖. 全虛擬的演出雖然犧牲了觀眾的臨場體驗, 但在舞臺設計上能夠天馬行空, 做出現實裡無論如何都無法看到的場景 ⸺ 不可解弍 Q2､ 花譜畢業 live 和不可解参 (想) 都是我心目中無法磨滅的至高體驗. 和前面提到的幾場演出裡從精緻美觀到豪華壯麗的場景相比, Anima Ⅲ 的舞臺設計就只能用樸素來形容了, 雖然能體驗到不少巧思, 但終歸是被兩個熒幕的表現效果所限制.</p>
+<h3 id="單曲感想-部分"><a href="#單曲感想-部分" class="headerlink" title="單曲感想 (部分)"></a>單曲感想 (部分)</h3><p><strong>描き続けた君へ</strong>: 開場便是堪稱情緒代名曲的至不懈繪畫的你, 而正如前文所述, 修平先生給本曲增加了將近一分半的額外導入段落, 把現場的氣氛烘托致極. 聽到情緒聲音的瞬間相信很多觀眾都與我一樣渾身戰慄, 比起初次聽到本曲時已經接近終場的感動, 那想必是期待已久的願望終於實現, 而且是超水平實現時激動的雀躍外顯.</p>
+<p><strong>ディメンション</strong>: 開場部分觀眾們整齊劃一的呼喊完全體現出了現地表演的魅力. 過渡橋段的華彩是齋藤先生大放異彩的舞臺.</p>
+<p><strong>システムズコア</strong>: 如果因為某種不可告人的原因在會場裡居然有人昏昏欲睡, 那麼在聽到這首歌之後他必然會精神百倍. 咖啡因含量 100%, 短小精悍的 wake up call.</p>
+<p><strong>ラピスのお人形</strong>: 開頭引入採用了一段非常爵士的鍵盤, 無縫接入舞曲風的青金石, 讓人不得不讚歎修平先生和春捲飯的天才.</p>
+<p><strong>グレイスケイル</strong>: 《色彩》中我最喜歡的一曲, 如今 samayuzame 的曲子在這張專輯裡有些鶴立雞群, 但在這場演出就裡顯得無比融洽. 現場改變版把橋接部分做了大幅調整, 效果器拉滿的吉他與耳語搬的吟唱結合, 雖然情緒平靜但依然讓人覺得皮膚過電. 和下一首敘述者的華爾茲一道為維護 ｢虛擬黑暗歌手｣ 做了最後一點努力 (笑).</p>
+<p><strong>此処に棘と死を</strong>: 本曲無論是放在《色彩》中還是本場演出中都是最為異質的存在, 但由於嶄新的演出形式 ⸺ stand mic performance ⸺ 以及管樂器的加入使得原有些格格不入的本曲得到了完美展現. 不得不說情緒的學習和表演能力真的好強, 世上彷彿沒有她無法駕馭的風格.</p>
+<p><strong>いろはに咲きて</strong>: 原本在吹奏薩克斯風的<a href="https://www.julius-keilwerth.com/artist/kosei-nagata/">永田昴生</a>先生此時換上了長笛, 為本曲注入了強力的和風, 聽到此處我又差點忍不住拍手叫好了, 不知道這是修平先生還是山田先生的主意, 真的是天才.</p>
+<p><strong>シリウスの心臓</strong>: 我聽到前奏響起打擊樂器的聲音時心理就咯噔一聲, 暗叫不妙. 必須說實話 ⸺ 這次的天狼星心臟的改編是歷次 live 中我最不滿的. 究其原因還是打擊樂器､ 吉他與貝斯的加入一定程度上摧毀了本曲試圖營造的氛圍. 本曲原本的鋼琴獨奏配樂具有極強的敘事性, 前幾次改編中加入的絃樂做到了對敘事性的大幅強化. 我大概能理解修平先生想要讓這首情緒最廣為人知的曲目呈現出更加宏大的感覺, 但很可惜這個嘗試在我看來是失敗的, 打擊樂器與電吉他､ 貝斯的加入為配樂引入了電子元素和與鋼琴､ 絃樂完全不搭調的強節奏感, 擾亂了已經被構建的敘事風格, 產生了失衡. 另一大問題是在副歌二的部分樂隊 + 歌聲開始引發了一點注意力爭搶, 進一步破壞了一直以來的情感塑造, 這個問題顯然是去掉打擊樂､ 吉他與貝斯就可以直接解決的. 也許修平先生想要探索天狼星這個 ｢框架｣ 能夠承載的上限, 我也一直認為這首曲子是非常豐儉由人可塑性強大的, 但這次挑戰顯然觸及了這個框架的上限. (我認為我也不算天狼星保守派, 因為我是非常非常贊成往編曲中加入絃樂組的)</p>
+<p><strong>アンビバレント</strong>: 一直以來我都認為<a href="https://www.maosasagawa.jp/">笹川真生</a>是一位非常需要對電波的作曲家, 而很可惜他為理芽做的很多曲對我而言都對不上電波. 但 Ambivalent 裡他收斂了很多, 讓本曲變得容易接受得多, 而且配合<a href="https://www.youtube.com/watch?v=9lxqrgViCXk">有些魔性的 MV</a>, 十分洗腦. Live 版依然利用了樂隊編成豐富的優勢, 伴奏比單曲版要豐滿不少.</p>
+<p><strong>ANGELIC</strong>: 片尾曲仙人香椎老師在 Anima Ⅱ 的力作, 過去一年來我重複聆聽次數最多的曲子, 本次以更高規格的樂隊呈現. 對於打擊樂器的加入我略有一點不滿, 但沒有天狼星那麼不滿, 蓋因原本香椎老師是讓鋼琴承擔了部分打擊樂器的職責, 今次打擊樂器加入反倒有些眾神歸位的感覺, 並不會覺得怪異. 演出專用新衣裝 Edelweiss 優雅華貴, 與本曲氣質相得益彰.</p>
+<p><strong>ARCADIA</strong>: 片尾曲仙人香椎老師在 Anima I 的力作. 令人驚喜的是樂隊介紹前奏的迴歸 (Anima Ⅱ 裡樂隊介紹前奏消失了, 那段時間神椿其他 live 裡也基本都不見樂隊介紹前奏), 讓人長吁一口氣. 我對隨著情緒的介紹一個個加入演奏, 最後匯聚成宏大樂章的樂隊介紹形態不能更喜愛了. 這首歌大概很難被ヰ組客觀評價, 因為腦子裡出現 MV 場景會瞬間化為感動的潮水衝破所有理智, 是目前三首片尾曲中分量最沉重的. 不知道會場裡有多少人和我一樣隨著旋律進入高潮而無法控制地流下眼淚.</p>
+<p><strong>かたちなきもの</strong>: 比起不懈繪畫, 我從內心深處更認同本曲才是 ｢ヰ世界情緒主題曲｣, 但本次演出裡混音出了一點小事故, 薩克斯風的音量在很長一段都嚴重蓋過了所有其他樂器與歌聲, 使得現場的體驗有些下降.</p>
+<p><strong>みらいのかたち</strong>: 結合著之前的 MC, 非常有片尾曲感的曲子, 比起前面讓人激動､ 幸福地落淚而言本曲更傾向於平靜地落淚. 這首歌被排在無形之物後必然是深思熟慮的對仗, 從象徵過去的無形之寶物, 到尚未定型的未來之形狀, 本次 live 以對美好未來的嚮往畫上句號, 可以說再完美不過了.</p>
+<p><strong>ETERNAL</strong>: 很大程度上在結尾曲播出時我的眼淚已經流乾了, 聽著身邊的觀測者們隨著鋼琴伴奏鼓掌, 在關鍵演職人員出現在 staff roll 的時候爆發出熱烈的掌聲和歡呼時我卻深陷於這片尾曲中不能自拔. 私心認為後半段純音樂版因為去掉了鼓點而獲得了更高的一致性, 可惜線上錄影的版本裡有觀眾們激動地鼓掌歡呼的聲音沒法用來合成, 不然多少要試試看.</p>
+<p><img src="/2024-10/TripToTokyoAnima/%7FLastFMSep2024.avif"></p>
+<hr>
+<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Music</tag>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN —— ℤƒ 碎碎念</title>
+    <url>/2024-09/ZfAndMoreLens/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
+<p>GAS (Gear Acquisition Syndrome) is REAL</p>
+</blockquote>
+<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
+<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
+<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
+<p>甚至有兩頭⋯⋯</p>
+</blockquote>
+<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
+<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
+<p><img src="/2024-09/ZfAndMoreLens/Grip.avif"></p>
+<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
+<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
+<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
+<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+viewfinder.avif"></p>
+<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
+<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
+<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
+<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+180.avif"></p>
+<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022-01/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Zf+4014.avif"></p>
+<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022-09/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
+<ol>
+<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
+</li>
+<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概同樣是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
+</li>
+<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
+</li>
+</ol>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+heliar40.avif"></p>
+<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+105.avif"></p>
+<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
+<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
+<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+FE40.avif"></p>
+<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
+<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
+<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
+<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
+<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理.</p>
+<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
+<p><img src="/2024-09/ZfAndMoreLens/ZfGripZM50.avif"></p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>追求小屏智能手机之路</title>
+    <url>/2021-03/yearning-for-a-tiny-smartphone/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2021-03/yearning-for-a-tiny-smartphone/20210311_175801_51041015252_o.avif"></p>
+<p>稍微了解我一点的人都应该知道, 我勉强算是个小屏手机爱好者. 这两天我正好拿到了心心念念的 Jelly 2, 兴奋之余不免想要安利一番, 顺带回顾一下这十年来我对小屏手机的追求⋯⋯ 如果没兴趣看我唠叨的人, 可以直接点<a href="https://item.jd.com/10025201949310.html">这个链接</a>购买.</p>
+<hr>
+<h3 id="Jelly-之前"><a href="#Jelly-之前" class="headerlink" title="Jelly 之前"></a>Jelly 之前</h3><p>自从 iPhone 开启了触屏手机的潮流后, 所有人都尝到了大屏幕的甜头, 尤其是 2010 年左右三星和 HTC 等厂家开始推出大屏手机并且受到市场一致好评之后, 所有人就头也不回地朝着大屏的方向狂飙突进. 但是差不多就是在那个时候吧, 还是高中生的我购入了人生中第一台小屏手机 —— HP Veer.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_1864_51040924711_o.avif" alt="｢点金石｣ 上的 Veer 和旁边的 Nexus 4"></p>
+<p>当然, 会买 Veer 除了喜欢小巧的手机, 更多的原因还是我对 webOS 的喜爱. 不过没选择当时作为旗舰的 Pre³ 而选择了 Veer 就完全是因为尺寸了. 比起 Pre³ 的 3.6 寸 ｢大屏｣, 2.6 寸屏幕的 Veer 在手中是真正的小巧玲珑, 如珠圆玉润的卵石般令人爱不释手. 而且 Veer 还有一块全键盘, 作为小屏手机, 在输入这一最大的痛点上也得到了对我来说完美的解决, 我现在甚至还能依稀想起来自 veer 键盘上那一股若有若无的神奇香味.</p>
+<p>上大学之后没多久, 我很幸运地在 ebay 上买到了一台微软的 Kin, 不过这台机器并不是智能手机, 而且在一年多以后我便将这台手机送给了一位友人, 这里就不多做介绍了.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/2013-02-09-125748_51040924756_o.avif" alt="3.4 寸的屏幕放在今天来看也算是迷你了"></p>
+<p>送走 Kin 之后不久, 我就从父亲手中得到了他淘汰不用的 iPhone 5. 很多老派 iPhone 爱好者依然认为 4 寸屏幕的 iPhone 5 形态是最能兼顾易用性与手感的黄金尺寸, 当然另一派则认为 3.5 寸屏幕的 iPhone 4 才是真正的黄金尺寸 —— 包括当时刚刚宣称要做手机的老罗. 又过了不久, 苹果推出了 iPhone 5s 造型, iPhone 6s 性能的 iPhone SE, 我便第一时间入手了. 在那个时候, iPhone SE 已经被主流大众认为是小屏手机了, 而诸如夏普 Aquos Crystal 和小米 MIx 等机器也为人们揭开了 ｢全面屏｣ 的一角, 在这之后手机厂家们便纷纷朝着全面屏的方向发展去了, 手机尺寸本身也终于不再变得更大.</p>
+<blockquote>
+<p>你以为会有 iPhone 5&#x2F;SE 的图? 这么大众的手机没图的啦.</p>
+</blockquote>
+<p>这个时候可能有人会问了, 为什么都说了这么多了, 还没提到一句索尼的 Xperia Compact 系列? 其实我从 Xperia Z2 开始就一直是索尼手机的用户, 但是因为某些奇怪的心态 (觉得已经买了大屏的版本再买同一系列的小屏版是一件很不对劲的事情) 和机器本身的问题 —— 比如 Z3 Compact 摄像头的位置不对劲, 扬声器和听筒没有隐藏进边框, Z5 和 XZ 的正面没有完全对称等等鸡毛蒜皮的原因, 便没有买 Z 系列的 Compact. 等到了 2017 年, 我终于把主力手机从 5.2 寸屏幕的 Xperia Z5 换成了 4.6 寸屏幕的 Xperia XZ1 Compact.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_20171206_185536713_51040924676_o.avif" alt="iPhone SE, Xperia XZ1 Compact 和 Xperia Z5"></p>
+<p>XZ1 Compact 在我心目中可以算是非常完美的小屏旗舰了, 比 iPhone SE 稍大一圈, 但是屏幕尺寸大上了不少, 外形方方正正, 采用了当时索尼新的设计语言 Omni loop, 在边缘稍微做了一点弧形, 握持手感也非常优秀. 虽然没做边框隐藏扬声器&#x2F;听筒, 但是换来了非常优秀的外放音质, 可以说在我心目中这台机器几乎没有缺点.</p>
+<p>一年之后, 夏普发布了 Aquos R2 Compact. 这台机器刚发布的时候我的想法和大多数人应该是一样的: WTF? 这上下都有缺口的设计是什么鬼才想出来的? 实在是不能接受啊! 不久之后我就买了与他前后脚发布的 Pixel 3 —— 不是 3 XL, 3 XL 那个超巨型缺口的傻逼程度实在是不能接受.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/dsc_0003_51041015572_o.avif" alt="XZ1 Compact 和长了一截的 Pixel 3"></p>
+<p>没想到的是, 在 2018 年 5.5 寸屏幕的 Pixel 3 在很多人眼里已经可以算是小屏手机了 , 这不免让我感到有些哭笑不得.</p>
+<p>2019 年下旬某日, 我在朋友家体验他的 Apple TV 时在 YouTube 上看到了一则多亲 AI 2 手机的评测, 当时就被这手机给迷住了, 不过当时这机器还在众筹阶段, 等到 2020 年初的时候我才终于买到. 多亲 AI 2 作为一台尺寸和 iPhone SE 差不多的手机, 因为用了细长的全面屏设计而屏幕达到了 5 寸, 而且碳酸聚酯外壳的选色非常漂亮, 我非常喜欢.</p>
+<p><a href="https://item.jd.com/100011582242.html">多亲 AI 2 Pro</a></p>
+<p>为什么在这里给的是 Pro 的链接? 当然是因为 2 的性能实在是有些太差了. 我本来是打算拿它来做微信专用机, 但是它运行微信的时候卡顿感可以说是难以接受的 —— 当然我知道这是腾讯的问题, Telegram 之类的应用在上面运行起来都没什么压力, 只是不太留得住后台. 据说 Pro 在提升了硬件配置之后运行起微信至少不会直接卡死了. 在用了没几天之后, 我就开始打起了 Aquos R2 Compact 的主意.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_20200321_000815_51040924606_o.avif" alt="我的青色系手机收藏. 从左到右依次是 Aquos R2 Compact, 多亲 AI 2, nextbit Robin, NUANS NEO"></p>
+<blockquote>
+<p>我的青色系手机收藏. 从左到右依次是 Aquos R2 Compact, 多亲 AI 2, nextbit Robin, NUANS NEO</p>
+</blockquote>
+<p>在买之前我特地和一位已经买了的小屏爱好者朋友做了深入交流 , 在朋友的安利下我便十分坚定地入手了 Aquos R2 Compact. 因为上下两个缺口的缘故, 这台有着 5.2 寸屏幕的手机机身尺寸却和 XZ1 Compact 相差无几, 适应了诡异的屏幕形状之后我忍不住 ｢真香｣ 了一回. R2 Compact 虽然比多亲稍微胖了一点, 但是性能的提升是实打实的, 拿来做主力机确实毫无压力, 它那别扭的屏幕甚至是 120Hz 高刷新率屏幕 (虽然对我来讲完全体会不出来⋯⋯), 而且正面的指纹识别模块还兼职触控按键, 可以让我找回一点在 veer 上轻扫屏幕下方返回的感动, 顺便还可以补救一下 Google 那无药可救的手势操作. 这台机器现在我也依然带在身边, 夏普那边还表示这台机器能够升级到 Android 11 (只是时间尚未确定).</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_3838_51040194233_o.avif" alt="Aquos R2 Compact"></p>
+<p>等到 2020 年九月, 苹果发布了 iPhone 12 mini. 在当初机身尺寸泄漏的时候我就下定决心只要这是真的那就一定买, 而发布会上终于确定了的那一刻我可以说是欢呼雀跃了, 毕竟这年头所有的厂家在做手机的时候难免都会收到苹果的影响 —— 无论是好还是坏, 如果苹果敢于在 2020 年开个小屏旗舰的头, 那么或许接下来其他厂家也会试水? 等到 iPhone 12 mini 开放购买之后, 我便第一时间购入.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/20201212_113835_51041015517_o.avif" alt="尺寸和 R2 Compact 几乎一模一样的 iPhone 12 mini"></p>
+<p>尽管尺寸和 R2 Compact 几乎一模一样, 但 12 mini 的边框尺寸稍微比 R2 Compact 窄一些, 下边框也和另外三边同宽, 所以能塞进 5.4 寸的屏幕. 而且回归了平直的设计语言也让我觉得这是 iPhone 6 以来最好看的 iPhone 设计 (排除掉 SE, 毕竟那是 5s 的设计). 而 12 mini 最大的缺点 —— 续航严重不足, 对我这个拿它做备机的人来说也完全不是问题.</p>
+<h3 id="Jelly-2"><a href="#Jelly-2" class="headerlink" title="Jelly 2"></a>Jelly 2</h3><p>实际上, 在 iPhone 12 系列配置泄漏之前, 我就已经知道了 Jelly 2 的存在 . 在更早之前 —— 大约 2017 年, Jelly 1 刚出来时正值 detox phone 大热, 除了 unihertz 之外还有不少厂家做出了各种奇形怪状的小手机, 但是它们大多都过于精简, 导致很难真的把它们当作唯一主力使用, Jelly 1 虽然是全功能的, 但是它的设计和用料都实在有些令人难以下定决心购买, 所以这一波 detox 手机对我完全没有产生任何冲击. 反倒是 HMD 推出新的 8110 的时候我很心动, 然而因为种种原因没有买一台来收藏.</p>
+<p>虽然我在 20 年中旬就知道了这部手机的存在, 但当时它还在 indiegogo 筹资, 所以只是给了一些 influencer 评测样机. 直到年底才终于开放购买, 而我拿到手则是这两天的事情了.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0806_51040194288_o.avif" alt="Xperia 1 II 在 Jelly 面前是真的庞然巨物了"></p>
+<p>Jelly 2 的三维和 Veer 几乎相差无几 (95×49.4×16.5 vs 84×54.5×15.1), 不过区别于 veer 的类肤质感外壳, Jelly 用的是普通的光面塑料, 手感稍微差了一些. 不过好在它十分小巧, 这塑料某种程度上增加了它的 ｢糖果质感｣ —— 就像它的名字一样, 在阳光下它看起来是有几分像一颗巨大的 jelly bean. 不过拿到手机的时候我才发现它的挂绳孔实际上在随机附赠的保护壳上, 为了使用挂绳孔我只好不情不愿地用上了这个保护壳. 保护壳的材质就是普通的软胶, 手感<strong>十分一般</strong>, 而且让整个机身变大了不少, 而且限制了可以使用的 Type C 充电线材类型, 十分难受.</p>
+<p>一开机进入设置流程, 我就意识到了它无论是出于节省空间或者成本的考虑采用了转子震动马达, 这和采用了线形马达的 Xperia 1 II 和 iPhone 12 mini 比起来真的是云泥之别. 好在输入法的振动可以自己调整或者关闭, 否则它本来就很糟糕的输入体验就要更加不堪了.</p>
+<p>既然以它的缺点开了头, 那干脆就先把它的缺点过一遍吧 —— 反正铁了心想买的人应该早就点了开头的那个链接下订单去了.</p>
+<ol>
+<li>它的<strong>扬声器十分糟糕</strong>, 不过这是可以想象的, 毕竟尺寸限制摆在那里. 设置里有个可以强行提高音量的开关, 千万不要去点, 点开的话那声音真的是呕哑嘲哳难为听, 不是开玩笑的;</li>
+<li>它的<strong>相机也十分一般</strong>, 不过这相机存在的价值大概就是完成扫扫二维码之类的工作, 应该不会真的有人想要在这样的机器上追求高级的相机吧?</li>
+<li>它的充电接口在机身右侧底部, <strong>充电的时候右手起来十分别扭</strong> (好在官方提供了一条 L 型接口的 Type C 转 A 线);</li>
+<li>背部的<strong>指纹感应器识别率不高</strong>, 雪上加霜的是如果你装了保护套, 保护套的厚度会进一步减少手指与传感器接触的面积, 再次降低识别成功率. 而且这个指纹传感器没有集成手势识别, 不能像 pixel 的那样通过扫动来控制通知中心开关 (好在手机本来就这么小了, 去拉通知中心确实轻而易举);</li>
+<li>绝大部分 <strong>Android 应用都没有为这么小的尺寸优化</strong>, 就连 Android 系统也不例外. Jelly 的系统虽然有做了一下小优化, 但是终归没有为此提供一个全局的解决方案;</li>
+<li>它虽然提供了一个自定义按钮, 但是这个按钮就在电源键旁边, 而且大小和手感与电源键一模一样, 非常<strong>容易误触</strong>. 当然这个自定义按钮确实是非常好的, 它可以作为对讲机的对讲按钮, 也可以自己定义点按､长按和双击的快捷操作, 十分便利.</li>
+</ol>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0800_51041015137_o.avif" alt="好在平时正常握持的姿势一般拇指都会放在电源上, 不然误触几率怕是要加倍"></p>
+<p>缺点就是前面那些了, 至少在我看来. 说完了缺点就该让我大吹一番了. 首先就是它没有选择走 ｢全面屏｣ 路线, 保留了电容触摸三大金刚, 这也让我可以免得吃 Google 那套鬼畜手势导航的屎 —— 当然如果你执意要吃屎的话也可以在设置里开启屏内导航 (默认是开启的) 并关闭电容按键. 而且在这个尺寸下, 手势导航还真的就没什么优势可言. 唯一遗憾的就是 Home 键没能集成通知灯, 通知灯被放在了摄像头左侧 —— 再想想 2021 年多少旗舰手机都没有通知灯了, 真的是感觉十分唏嘘 (当然, 由于 OLED 屏幕和 AOD 的普遍使用, 通知灯的需求也确实是不像以前那么强烈了). 另外这几个按钮是没有背光的, 在暗处使用的时候偶尔会按错&#x2F;没按到, 有点小别扭.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0803_51040194003_o.avif" alt="如果偶尔需要在这机器上看长文也不是不行, 但是你大概不会愿意经常这么做的⋯⋯"></p>
+<p>Unihertz 没有以机身尺寸为借口取消顶部的耳机接口, 令人十分欣慰. 插上耳机之后还可以以耳机为天线使用内置的收音机, 十分便利. 而机身顶部还有另一个已经几乎灭绝的东西 —— 红外信号发射口, 这对于控制那些尚未智能化的家电来说十分便利, 是非常令人欣喜的存在.</p>
+<p><img src="/2021-03/yearning-for-a-tiny-smartphone/img_0811_51040194153_o.avif" alt="与目前手机上最好的屏幕 —— Xperia 1 II 的屏幕对比"></p>
+<p>Jelly 的 480×854 三寸屏幕属于勉强够用的水平, 不过这部手机也没指望你老盯着它看, 所以这屏幕虽然十分不怎么样但我并不会抱怨. 而屏幕小且分辨率低的另一个好处就是这块屏幕极其省电, 如果配合上深色主题, 那使用一整天下来会发现屏幕占用的电量真的寥寥无几. 既然说到了电池就顺便提一下它的续航, 由于这手机本身的属性导致了你不可能想要长时间使用, 更何况它的电池容量是 2,000mAh! 所以用一整天 (从早上七点开始到晚上十一点结束) 是毫无压力的, 甚至我觉得它能撑个两天, 如果用得更不频繁的话.</p>
+<p>它采用了一颗联发科曦力 P60, 只要不试着在这机器上玩大型游戏 (你疯了吗?!) 应该都是十分够用的. 和芯片相关的唯一问题就是它的基带不是很好, 在这个大厂普遍铺开 5G 的时代显得网速有些捉襟见肘 (我这里体验的对照是 FEH 2.4GB 的数据, 在相同的 Wi-Fi 环境下 Jelly 下载这些数据花了 Xperia 1 II 大约两倍的时间), 不过说实话你也不会想要在它上面做什么需要那么高网速的事吧, 至少它应付视频会议之类的需求还是绰绰有余的.</p>
+<p>最后不得不提一下的就是它的输入. 虽然机身大小类似 Veer, 但是 Jelly 2 并没有方便的 QWERTY 全键盘, 所以输入只能靠语音或者屏幕内虚拟键盘了. 如果你用九宫键盘并且把键盘高度开到最大的话勉强可以获得一个操作面积类似直板功能机九宫键盘的区域, 然而说实话体验并不好. 个人认为最佳解决方案还是滑动输入 + 中到小的键盘高度, 靠输入法的自动纠错来进行比较高效的输入, 配合双拼可以达到勉强可以接受的输入效率. 当然, 即使如此在使用这台机器的时候想要输入的愿望也是极为低下的, 而本来这台机器就算是一台 detox phone, 所以这个问题⋯⋯ 也就不算是个问题了?</p>
+<p>对了, 这台机器甚至支持 Micro SD 卡扩展 —— 另一个在 2021 年几乎灭绝的功能. 虽然 Micro SD 卡和第二张 SIM 共用卡槽, 但是对于我这样没有双卡需求的人来说就可以直接用来当扩展储存了.</p>
+<h3 id="一点结语"><a href="#一点结语" class="headerlink" title="一点结语"></a>一点结语</h3><p>Jelly 2 对于不需要现在各种旗舰机那些华而不实的噱头功能, 甚至几乎不怎么需要智能手机, 只是实在逃不开微信等各种服务型手机应用深刻侵入我们生活的用户而言可以说是真•正道的光, 它提供了满足现代智能生活的基础设施, 摒弃了所有徒有其表的功能, 是一台完全可以成为唯一主力手机的机器, 这在主流手机们尺寸普遍奔着 6 寸往上并且不断加入各种花里胡哨伎俩的年代真的难能可贵.</p>
+<p>做出这台小手机的公司, 上海集赫电子商务有限公司, 是一家成立于 2016 年, 只有 50 人不到的小公司 . 在 Jelly 2 之前, 他们已经做出了 Jelly, Titan (一台有点类似黑莓 Passport 的全键盘手机), Atom (小巧的三防手机) 三个系列, 皆为小众但精致的机器, 在海内外广受死忠粉丝好评. 我也非常认同 Unihertz 日文网站上的一句话: ｢様々なスマホがありますが、現代のスマートフォンは、大きく、複雑で、とても壊れやすい。｣ —— 现在的智能手机虽然眼花缭乱, 但无不大而复杂, 而且容易损坏 (此处应有 JerryRigsEverything 插入), 而 Unihertz 选择了完全反其道而行, 自始至终开发小巧, 简单而坚固的手机, 逆流而上, 勇气可嘉.</p>
+<p>如果你已经深深陷入当代智能生活不能自拔却又希望有一台小手机的话恐怕还是只能选择 iPhone 12 mini, 但若你想要试着反抗一番, 看看能不能从这滩泥沼中挣脱, 不妨试试看 Jelly 2. 毕竟谁知道这台机器会不会成为一代绝唱呢 —— 各种小道消息都表明 iPhone 12 mini ｢销量不及预期｣, 靠苹果来重新开启小屏旗舰时代的希望恐怕是十分渺茫了.</p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>thoughts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>reMarkable 2 —— 糟糕的阅读器, 完美的速写本</title>
+    <url>/2021-03/reMarkable-2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="我的-e-ink-设备使用历程"><a href="#我的-e-ink-设备使用历程" class="headerlink" title="我的 e-ink 设备使用历程"></a>我的 e-ink 设备使用历程</h3><p><img src="/2021-03/reMarkable-2/iriver-story_51061528238_o.avif"></p>
+<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台 iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的 QWERTY 键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过 e-ink 设备了. </p>
+<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在 2017 年中旬, 我就从朋友的口中了解到了 reMarkable 这个产品的存在 —— 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对 e-ink 设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 —— 曾经我对 iPad Pro 抱有这样的期待, 但 iPad Pro 终究还是太大且沉, Apple Pencil 的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
+<p><img src="/2021-03/reMarkable-2/44923.avif" alt="equil smartpen"></p>
+<p>虽然 equil 的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
+<p>而 e-ink 笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购买 reMarkable 1 代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
+<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到 2020 年, reMarkable 在三月时宣布了 reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2 的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到了 Batch 8, 等到差不多 12 月初才收到. </p>
+<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 —— 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比 11 寸 iPad Pro 还略大一点的机身, 重量却感觉似乎不到 iPad 的一半 (夸张了, 471g vs 403g). reMarkable 的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代 Apple pencil 好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的 4,096 级压感和倾斜感应, 用起来非常得心应手. </p>
+<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
+<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable 内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
+<p><img src="/2021-03/reMarkable-2/51061764988_fdea9a24be_o.avif"></p>
+<blockquote>
+<p>部分网格预览</p>
+</blockquote>
+<p><img src="/2021-03/reMarkable-2/51061666508_a03e60169d_o.avif"></p>
+<blockquote>
+<p>上课做笔记用的大号网格</p>
+</blockquote>
+<p>reMarkable 内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
+<p>另外, reMarkable 内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔 Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 —— 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
+<p><img src="/2021-03/reMarkable-2/50999813030_69c14c3a28_o.avif" alt="书法练习"></p>
+<blockquote>
+<p>模拟平头笔的手感怪怪的</p>
+</blockquote>
+<p>说完了写就该说画了. reMarkable 作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
+<p><img src="/2021-03/reMarkable-2/51062480106_b881a3fc4e_o.avif" alt="速写练习"></p>
+<blockquote>
+<p>感谢<a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">伊那老师</a> (</p>
+</blockquote>
+<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
+<p><img src="/2021-03/reMarkable-2/51062467122_5692e6f85c_o.avif"></p>
+<p>reMarkable 的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
+<p>另外, 如果你在菜单里选择了 LiveView (beta), 再在别的设备上启动 reMarkable 客户端, 就可以在电脑&#x2F;手机上实时预览 reMarkable 上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
+<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是 reMarkable 的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是 reMarkable 作为阅读器和它们完全没有一战之力 —— 不是说用它阅读的体验不好, reMarkable 的屏幕分辨率高达 1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable 必须使用专门的程序把 pdf&#x2F;epub 文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说把 reMarkable 甩下了几万里. 雪上加霜的是, 即使是阅读普通的 pdf, reMarkable 在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
+<p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
+<blockquote>
+<p>现在就加入 <a href="https://www.thetype.com/members/">The Type 会员</a>吧!</p>
+</blockquote>
+<p>话虽如此, 我还是用它读了不少东西 —— 毕竟 e-ink 屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable 还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome 扩展, 可是我这里从来没有成功过⋯⋯ </p>
+<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable 从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类 Linux 系统, 所以用户可以比较容易地为它添加多语言支持 —— 然而对于我这种几百年没开过 ssh 的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为 reMarkable 添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
+<p>首先你的电脑需要支持 ssh. 另外还需要准备好想要支持的语言的字体. 准备好 ssh 和字体文件之后, 打开 reMarkable 的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面 General information 的底部就会写着本机的 IP 地址与 SSH 密码. 之后进入终端&#x2F;ssh 客户端</p>
+<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">ssh root@<你的.reMarkable.IP.地址></code></pre>
+
+<p>然后输入密码, 即可进入 reMarkable 的根目录. </p>
+<p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
+<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 —— 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
+<p>新开一个终端窗口, 如果你准备的字体有提供 truetpye 格式文件 (ttf), 直接使用 scp 命令往 remarkable 原有的文件夹里传输准备好的字体: </p>
+<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">scp <你的字体所在的完整路径> root@<你的.reMarkable.IP.地址>:/usr/share/fonts/ttf/</code></pre>
+
+<p>便可以了. 如果你的字体只有 otf 或者 ttc 等等, 那么回到前一个终端窗口, </p>
+<pre class=" language-hljs plaintext"><code class="language-hljs plaintext">cd /usr/share/fonts/</code></pre>
+
+<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的 otf&#x2F;ttc 根据你的字体格式来选择), 之后就按照前面传输 ttf 相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
+<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启 reMarkable 就可以获得对应的语言支持. 不过, reMarkable 目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
+<p>如果你想研究更多如何在 reMarkable 上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux 下的字体调校指南</a>. </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从 reMarkable 1 推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的 e-ink 产品, 但是在我看来 reMarkable 2 依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
       </tags>
   </entry>
 </search>
