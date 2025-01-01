@@ -221,7 +221,7 @@ body {
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-    /*    font-variant: tabular-nums;*/
+    font-variant-numeric: oldstyle-nums;
     color: #4c4c4f;
 }
 
@@ -249,7 +249,7 @@ h6 {
         BlinkMacSystemFont,
         serif;
     font-weight: 800;
-    font-variant: oldstyle-nums;
+    font-variant-numeric: oldstyle-nums;
 }
 
 h1 {
