@@ -396,3 +396,23 @@ body.darkmode {
         text-align: left;
     }
 }
+/*img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
+  -moz-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
+  box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
+  margin-bottom: 1%;
+}
+
+@media (min-width: 768px) {
+  img {
+    width: 75vw;
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}*/
