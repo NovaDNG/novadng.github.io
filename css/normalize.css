@@ -114,7 +114,10 @@ samp {
  */
 
 small {
-  font-size: 80%;
+  font-size: 85%;
+  color: color-mix(in srgb, currentColor 56%, transparent);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /**
