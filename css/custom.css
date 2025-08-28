@@ -107,7 +107,7 @@ img {
   [_gallery >](imgages/test.jpg)
   */
     img[alt~="_gallery"] {
-        max-width: 49.5%;
+        max-width: 49.55%;
     }
 
     /* Aligned to the right */

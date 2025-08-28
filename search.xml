@@ -82,6 +82,69 @@
       </tags>
   </entry>
   <entry>
+    <title>一些 CeVIO AI 入門小技巧 (以星界為例)</title>
+    <url>/2022-12/CeVIOAItipsandtricks/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>這篇文章主要是給想要購買可不&#x2F;星界&#x2F;裏命&#x2F;狐子&#x2F;羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何 Vocaloid 相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門 CeVIO AI 比你想象的要容易得多. </p>
+<iframe height="480" style="width:100%;max-width:720px;background:transparent;" src="https://www.youtube.com/embed/P4u_COefgGY" title="Daily Note/酔シグレ (covered by 星界)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<blockquote>
+<p>我做的 Daily Note 星界翻唱</p>
+</blockquote>
+<p>那麼在正式開始前, 你應該要對 CeVIO AI 有一些基本的瞭解. 夜輪老師有翻譯了<a href="https://cevio-user-guide-unofficial.github.io/CeVIO-AI/">官方使用者指南</a>, 天雨大佬也寫了一系列<a href="https://www.bilibili.com/read/readlist/rl508759">基礎入門指南</a>, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力. </p>
+<h3 id="1-CeVIO-AI-之外"><a href="#1-CeVIO-AI-之外" class="headerlink" title="1. CeVIO AI 之外"></a>1. CeVIO AI 之外</h3><p>CeVIO AI 本身畢竟不是一款正經的 DAW, 你難免會需要藉助其他 DAW 以及各種輔助工具的幫助 —— 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: <a href="https://supermegaultragroovy.com/products/capo/">capo</a>. 很可惜的是, 這款應用目前只支援 macOS 和 iOS. 或者你用來搭配 CeVIO AI 的正經 DAW 有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-e4n.avif"></p>
+<blockquote>
+<p>capo 的介面</p>
+</blockquote>
+<p>除了音準, 另外一個重要的參數是拍子. 儘管很多 DAW 都提供了用滑鼠&#x2F;鍵盤打拍來確定拍子的功能, 但是對於稍長一點的歌曲而言 1~2bpm 的區別就可以造成在歌曲中後段的嚴重節拍失調, 所以使用 capo 或者 DAW 自帶的精確節拍分析工具儘可能地在開頭就找準節拍就非常重要. 如果你在做到中後期的時候突然意識到了節拍設定錯誤造成了失調, 除了推倒重來之外還有一個辦法: 使用標尺上的 tempo 標尺, 從曲子中間開始插入正確的節拍. 雖然是 dirty hack 但好歹可以亡羊補牢, 省去一些推倒重來的時間. </p>
+<h3 id="2-情感"><a href="#2-情感" class="headerlink" title="2. 情感"></a>2. 情感</h3><p>對於星界和之後的音樂同位體來說, 情感參數是唯一一個需要儘早決定的可調整參數, 因為只有它是一個全域性, 無法針對某一個特定區域調整的參數. 情感會大幅影響預設音符的音高, 顫音振幅和頻率, 儘早決定合適的數值可以省去很多後期調整的麻煩. 但是注意了, 儘管調高情感值會讓一些預設音符發音聽起來十分自然, 但也會造成很多預設音符的音高變得非常奇怪, 所以我強烈不建議把情感拉滿. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-ejw.avif"></p>
+<blockquote>
+<p>情感拉高之後預設曲線就會出現一些迷之情況</p>
+</blockquote>
+<h3 id="3-呼吸音"><a href="#3-呼吸音" class="headerlink" title="3. 呼吸音"></a>3. 呼吸音</h3><p>CeVIO AI 對於什麼時候加呼吸音⋯⋯ 嗯, 有一套自己的想法. 如果你發現在自己不想聽到呼吸音&#x2F;邏輯上說不通的地方出現了換氣聲, 那最簡單粗暴的方法就是開啟音量面板把換氣聲處的音量砍掉. 我試過用連音標記消除換氣, 但這方法時靈時不靈, 感覺需要碰運氣. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-fe2.avif"></p>
+<blockquote>
+<p>圖上已經在樂句頭尾加入了連唱標記, 然而 CeVIO AI 依然在中間插入了換氣, 我才用壓音量方式砍平換氣</p>
+</blockquote>
+<p>至於加入換氣聲, 如果是在語句中的話可以給換氣聲前一個音符加入換氣標記 (右鍵 - プロパティ&#x2F;property - ブレス&#x2F;breath). 但如果是在語句開頭, 可以在第一個音符前空 1&#x2F;4 拍 ~ 半拍 (取決於你想要多長的吸氣聲) 的位置加入隨便什麼音符, 然後在那個音符上設定換氣標記, 再開啟音量面板將額外加入的那個音的音量降到最低, 就相當於在語句前加入了呼吸聲. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-edf.avif"></p>
+<blockquote>
+<p>注意最開頭那個額外的 ｢は｣</p>
+</blockquote>
+<h3 id="4-填詞"><a href="#4-填詞" class="headerlink" title="4. 填詞"></a>4. 填詞</h3><p>很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為 reference. 如果你的 DAW 沒有這樣的功能, 那 <a href="https://vocalremover.org/">vocalremover</a> 能提供一個效果堪用的工具. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-fo9.avif"></p>
+<blockquote>
+<p>｢たまま｣ 被我拆成了 ｢たあままあ｣</p>
+</blockquote>
+<h3 id="5-音準"><a href="#5-音準" class="headerlink" title="5. 音準"></a>5. 音準</h3><p>如果你已經按照 1. 裡的建議檢視過原曲的頻譜, 應該會注意到很多時候歌手的發音並不總是壓在相應音高的頻譜範圍內, 除卻顫音之外也經常會有一個長音首尾皆大幅偏離原本音高的現象, 但絕大多數情況下這依然聽起來十分悅耳. 實際上每位歌手的發聲方式各有不同, 但一般人類很難做到完美地完全踩在絕對正確的頻譜範圍內, 有各種滑音等等變化才符合普通人類的唱法. CeVIO AI 自然也考慮到了這一點, 所以在輸入音高發生變化的音符時往往會生成一條較為自然的音高曲線. 但是 —— CeVIO AI 很多時候, 嗯, 有一套自己的想法, 經常發生矯枉過正的情況. 尤其是在星界, 情感值設定較高的時候, 預設的音高曲線會非常的放飛自我, 請務必多多試聽儘早發現這些問題. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-ejm.avif"></p>
+<blockquote>
+<p>看似偏到九宵雲外的音高曲線, 但實際播放聽起來十分自然</p>
+</blockquote>
+<h3 id="6-顫音"><a href="#6-顫音" class="headerlink" title="6. 顫音"></a>6. 顫音</h3><p>和音高相同, 每位歌手都有自己對顫音的理解和利用方式. CeVIO AI 會預設給一些長音尾部加入顫音, 而且預設的振幅和週期與情感直接相關. 如果你想要模仿某位歌手的唱法, 仔細觀察歌手原曲的頻譜往往能大概瞭解他&#x2F;她的顫音特色, 然後再回到 CeVIO AI 裡調整振幅週期曲線. 如果你覺得調整曲線的方式太不直觀了, 也可以選擇刪掉預設曲線, 直接進入音高介面徒手繪製曲線, 也不失為一種辦法. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-eul.avif"></p>
+<blockquote>
+<p>注意, 徒手畫的曲線依然會被顫音的兩個參數影響</p>
+</blockquote>
+<h3 id="7-音色-Alpha"><a href="#7-音色-Alpha" class="headerlink" title="7. 音色 (Alpha)"></a>7. 音色 (Alpha)</h3><p>雖然和情感一樣也會持續顯示在畫面右側, 但實際上音色是可以單獨分區域調整的. 工具欄上的 ALP 項就是音色曲線調整介面, 可以根據曲子中的變化靈活進行調整. 總體來說, 音色值越高, 聲音聽起來就越開放, 成熟; 音色值越低, 聽起來就越尖細, 幼稚. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-ehz.avif"></p>
+<blockquote>
+<p>這兩個嘆氣一般的 ｢啊啊｣ 我降低了音色值讓它聽起來語氣有所變化 (雖然後來還是決定讓可不代勞了所以音量曲線直接拉到 0) </p>
+</blockquote>
+<h3 id="8-氣聲-Whisper-Voice"><a href="#8-氣聲-Whisper-Voice" class="headerlink" title="8. 氣聲 (Whisper Voice)"></a>8. 氣聲 (Whisper Voice)</h3><p>這個裏技是由<a href="https://twitter.com/NayutalieN/status/1429683978064207875">奶油糖星人</a>最早發現的, 感謝他! </p>
+<p>首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效. </p>
+<p>確定適用範圍後, 你需要在強弱標尺 (DYNAMICS) 上在開始處雙擊, 將強弱記號改成 pp 或 ppp, 然後在結束處恢復為正常 (預設為 N). 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 (まとめ選択ツール &#x2F; Collectively Selection Tool) 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 (往上移動一個八度). 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-egj.avif"></p>
+<p>除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果. </p>
+<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-epz.avif"></p>
+<h3 id="9-其他小技巧"><a href="#9-其他小技巧" class="headerlink" title="9. 其他小技巧"></a>9. 其他小技巧</h3><p>在時間線&#x2F;標尺上滾動滾輪可以左右捲動畫面. 注意, 所有可調整的曲線裡只有音高曲線會隨著畫面上下移動, 其他曲線都是固定高度的, 所以調整時可以以音高介面為基準來確定顯示的畫面區域. </p>
+]]></content>
+      <tags>
+        <tag>Music</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Photography is FUN 番外篇 ⸺ 各類包包</title>
     <url>/2025-04/Bags/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>之前在<a href="https://novadng.studio/2025-02/TripToTokyo2025Part1/">遊記</a>中提到過, 正確的揹包選擇會給旅途體驗帶來巨大區別. 仔細一想我似乎還沒有介紹過目前持有的大小攝影包, 感覺是可以從我個人的使用體驗出發為可能與我需求相似的讀者諸君提供一些參考. 不過歸根結底揹負體驗的確是因人而異, 文中提到的各種主觀體驗有多少價值, 就由讀者諸君自行決定了. 這麼一想, 幾乎能裝進任何包包的 <a href="https://novadng.studio/2025-03/OMthePetit/">OM-2n</a> 含金量似乎又增加了⋯⋯</p>
@@ -209,69 +272,6 @@
       <tags>
         <tag>Photography</tag>
         <tag>Gadget</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一些 CeVIO AI 入門小技巧 (以星界為例)</title>
-    <url>/2022-12/CeVIOAItipsandtricks/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>這篇文章主要是給想要購買可不&#x2F;星界&#x2F;裏命&#x2F;狐子&#x2F;羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何 Vocaloid 相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門 CeVIO AI 比你想象的要容易得多. </p>
-<iframe height="480" style="width:100%;max-width:720px;background:transparent;" src="https://www.youtube.com/embed/P4u_COefgGY" title="Daily Note/酔シグレ (covered by 星界)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<blockquote>
-<p>我做的 Daily Note 星界翻唱</p>
-</blockquote>
-<p>那麼在正式開始前, 你應該要對 CeVIO AI 有一些基本的瞭解. 夜輪老師有翻譯了<a href="https://cevio-user-guide-unofficial.github.io/CeVIO-AI/">官方使用者指南</a>, 天雨大佬也寫了一系列<a href="https://www.bilibili.com/read/readlist/rl508759">基礎入門指南</a>, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力. </p>
-<h3 id="1-CeVIO-AI-之外"><a href="#1-CeVIO-AI-之外" class="headerlink" title="1. CeVIO AI 之外"></a>1. CeVIO AI 之外</h3><p>CeVIO AI 本身畢竟不是一款正經的 DAW, 你難免會需要藉助其他 DAW 以及各種輔助工具的幫助 —— 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: <a href="https://supermegaultragroovy.com/products/capo/">capo</a>. 很可惜的是, 這款應用目前只支援 macOS 和 iOS. 或者你用來搭配 CeVIO AI 的正經 DAW 有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-e4n.avif"></p>
-<blockquote>
-<p>capo 的介面</p>
-</blockquote>
-<p>除了音準, 另外一個重要的參數是拍子. 儘管很多 DAW 都提供了用滑鼠&#x2F;鍵盤打拍來確定拍子的功能, 但是對於稍長一點的歌曲而言 1~2bpm 的區別就可以造成在歌曲中後段的嚴重節拍失調, 所以使用 capo 或者 DAW 自帶的精確節拍分析工具儘可能地在開頭就找準節拍就非常重要. 如果你在做到中後期的時候突然意識到了節拍設定錯誤造成了失調, 除了推倒重來之外還有一個辦法: 使用標尺上的 tempo 標尺, 從曲子中間開始插入正確的節拍. 雖然是 dirty hack 但好歹可以亡羊補牢, 省去一些推倒重來的時間. </p>
-<h3 id="2-情感"><a href="#2-情感" class="headerlink" title="2. 情感"></a>2. 情感</h3><p>對於星界和之後的音樂同位體來說, 情感參數是唯一一個需要儘早決定的可調整參數, 因為只有它是一個全域性, 無法針對某一個特定區域調整的參數. 情感會大幅影響預設音符的音高, 顫音振幅和頻率, 儘早決定合適的數值可以省去很多後期調整的麻煩. 但是注意了, 儘管調高情感值會讓一些預設音符發音聽起來十分自然, 但也會造成很多預設音符的音高變得非常奇怪, 所以我強烈不建議把情感拉滿. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-ejw.avif"></p>
-<blockquote>
-<p>情感拉高之後預設曲線就會出現一些迷之情況</p>
-</blockquote>
-<h3 id="3-呼吸音"><a href="#3-呼吸音" class="headerlink" title="3. 呼吸音"></a>3. 呼吸音</h3><p>CeVIO AI 對於什麼時候加呼吸音⋯⋯ 嗯, 有一套自己的想法. 如果你發現在自己不想聽到呼吸音&#x2F;邏輯上說不通的地方出現了換氣聲, 那最簡單粗暴的方法就是開啟音量面板把換氣聲處的音量砍掉. 我試過用連音標記消除換氣, 但這方法時靈時不靈, 感覺需要碰運氣. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-fe2.avif"></p>
-<blockquote>
-<p>圖上已經在樂句頭尾加入了連唱標記, 然而 CeVIO AI 依然在中間插入了換氣, 我才用壓音量方式砍平換氣</p>
-</blockquote>
-<p>至於加入換氣聲, 如果是在語句中的話可以給換氣聲前一個音符加入換氣標記 (右鍵 - プロパティ&#x2F;property - ブレス&#x2F;breath). 但如果是在語句開頭, 可以在第一個音符前空 1&#x2F;4 拍 ~ 半拍 (取決於你想要多長的吸氣聲) 的位置加入隨便什麼音符, 然後在那個音符上設定換氣標記, 再開啟音量面板將額外加入的那個音的音量降到最低, 就相當於在語句前加入了呼吸聲. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-edf.avif"></p>
-<blockquote>
-<p>注意最開頭那個額外的 ｢は｣</p>
-</blockquote>
-<h3 id="4-填詞"><a href="#4-填詞" class="headerlink" title="4. 填詞"></a>4. 填詞</h3><p>很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為 reference. 如果你的 DAW 沒有這樣的功能, 那 <a href="https://vocalremover.org/">vocalremover</a> 能提供一個效果堪用的工具. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-fo9.avif"></p>
-<blockquote>
-<p>｢たまま｣ 被我拆成了 ｢たあままあ｣</p>
-</blockquote>
-<h3 id="5-音準"><a href="#5-音準" class="headerlink" title="5. 音準"></a>5. 音準</h3><p>如果你已經按照 1. 裡的建議檢視過原曲的頻譜, 應該會注意到很多時候歌手的發音並不總是壓在相應音高的頻譜範圍內, 除卻顫音之外也經常會有一個長音首尾皆大幅偏離原本音高的現象, 但絕大多數情況下這依然聽起來十分悅耳. 實際上每位歌手的發聲方式各有不同, 但一般人類很難做到完美地完全踩在絕對正確的頻譜範圍內, 有各種滑音等等變化才符合普通人類的唱法. CeVIO AI 自然也考慮到了這一點, 所以在輸入音高發生變化的音符時往往會生成一條較為自然的音高曲線. 但是 —— CeVIO AI 很多時候, 嗯, 有一套自己的想法, 經常發生矯枉過正的情況. 尤其是在星界, 情感值設定較高的時候, 預設的音高曲線會非常的放飛自我, 請務必多多試聽儘早發現這些問題. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-ejm.avif"></p>
-<blockquote>
-<p>看似偏到九宵雲外的音高曲線, 但實際播放聽起來十分自然</p>
-</blockquote>
-<h3 id="6-顫音"><a href="#6-顫音" class="headerlink" title="6. 顫音"></a>6. 顫音</h3><p>和音高相同, 每位歌手都有自己對顫音的理解和利用方式. CeVIO AI 會預設給一些長音尾部加入顫音, 而且預設的振幅和週期與情感直接相關. 如果你想要模仿某位歌手的唱法, 仔細觀察歌手原曲的頻譜往往能大概瞭解他&#x2F;她的顫音特色, 然後再回到 CeVIO AI 裡調整振幅週期曲線. 如果你覺得調整曲線的方式太不直觀了, 也可以選擇刪掉預設曲線, 直接進入音高介面徒手繪製曲線, 也不失為一種辦法. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-eul.avif"></p>
-<blockquote>
-<p>注意, 徒手畫的曲線依然會被顫音的兩個參數影響</p>
-</blockquote>
-<h3 id="7-音色-Alpha"><a href="#7-音色-Alpha" class="headerlink" title="7. 音色 (Alpha)"></a>7. 音色 (Alpha)</h3><p>雖然和情感一樣也會持續顯示在畫面右側, 但實際上音色是可以單獨分區域調整的. 工具欄上的 ALP 項就是音色曲線調整介面, 可以根據曲子中的變化靈活進行調整. 總體來說, 音色值越高, 聲音聽起來就越開放, 成熟; 音色值越低, 聽起來就越尖細, 幼稚. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-ehz.avif"></p>
-<blockquote>
-<p>這兩個嘆氣一般的 ｢啊啊｣ 我降低了音色值讓它聽起來語氣有所變化 (雖然後來還是決定讓可不代勞了所以音量曲線直接拉到 0) </p>
-</blockquote>
-<h3 id="8-氣聲-Whisper-Voice"><a href="#8-氣聲-Whisper-Voice" class="headerlink" title="8. 氣聲 (Whisper Voice)"></a>8. 氣聲 (Whisper Voice)</h3><p>這個裏技是由<a href="https://twitter.com/NayutalieN/status/1429683978064207875">奶油糖星人</a>最早發現的, 感謝他! </p>
-<p>首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效. </p>
-<p>確定適用範圍後, 你需要在強弱標尺 (DYNAMICS) 上在開始處雙擊, 將強弱記號改成 pp 或 ppp, 然後在結束處恢復為正常 (預設為 N). 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 (まとめ選択ツール &#x2F; Collectively Selection Tool) 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 (往上移動一個八度). 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-egj.avif"></p>
-<p>除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果. </p>
-<p><img src="/2022-12/CeVIOAItipsandtricks/SCR-20221209-epz.avif"></p>
-<h3 id="9-其他小技巧"><a href="#9-其他小技巧" class="headerlink" title="9. 其他小技巧"></a>9. 其他小技巧</h3><p>在時間線&#x2F;標尺上滾動滾輪可以左右捲動畫面. 注意, 所有可調整的曲線裡只有音高曲線會隨著畫面上下移動, 其他曲線都是固定高度的, 所以調整時可以以音高介面為基準來確定顯示的畫面區域. </p>
-]]></content>
-      <tags>
-        <tag>Music</tag>
       </tags>
   </entry>
   <entry>
@@ -762,78 +762,6 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 PART Ⅱ</title>
-    <url>/2024-10/TripToTokyo2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/dateposted-public/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Day-3-八月八日-星期四-千駄ヶ谷-墨田"><a href="#Day-3-八月八日-星期四-千駄ヶ谷-墨田" class="headerlink" title="Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田"></a>Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田</h3><p>從這天開始行程就不是我一個人了, <a href="https://bsky.app/profile/bsky.mikelei.me">米克雷</a>在昨天 Live 結束後與我會和, 之後便一直同行至東京之行結束. 由於昨天 live 的衝擊, 今天的行程安排比較寬裕, 只有拜訪 Pixiv 和晴空塔. Pixiv 可以說是我的插繪審美啟蒙, 是我心目中的聖地之一. 之前默默使用了十幾年, 今天終於有機會一探究竟. </p>
-<p>帶領我參觀的是 <a href="https://twitter.com/godling_zlm">@godling_zlm</a>, 感覺我們也快認識十年 ⸺ 不對, 搞不好真的已經十年了⋯⋯ Pixiv 總部位於 <a href="https://www.pixiv.co.jp/company/">JPR 千駄ヶ谷大樓</a>, 從外面看就是一棟毫不起眼的辦公樓, 沒有任何能讓人聯想到世界上萬億頂尖插繪在此集聚的特徵. 但可別被它的外觀欺騙, Pixiv 的辦公室可是大有乾坤. </p>
-<p>一下電梯, 出現在眼前的就是一片由巨大繪馬構成的牆. 其上滿是各位耳熟能詳的大手繪師作品. 從電梯廳往辦公區行進, 會經過一個兩面掛滿了小號繪馬的通道, 這些繪馬無論哪個單獨拿出來都足夠寶貴了, 在 Pixiv 居然能鋪滿好幾面牆, 而且還在不斷替換⋯⋯ 實在是令人垂涎. Godling 介紹了這個辦公室是由大名鼎鼎的 <a href="https://www.teamlab.art/">teamLab</a> 操刀設計 ⸺ 最近同為他們操刀的麻布台 <a href="https://www.teamlab.art/jp/e/tokyo/">Digital Art Museum 展覽</a>也很火, 我本想找機會去參觀, 但沒能擠出時間只能遺憾作罷. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54071450508/in/album-72177720321005949" title="DSC_1073-50mm f-1G"><img src="https://live.staticflickr.com/65535/54071450508_7d3dea6c8a_b.jpg" alt="DSC_1073-50mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068751131/in/album-72177720321005949/" title="三輪士郎"><img src="https://live.staticflickr.com/65535/54068751131_c3a39bd32a_b.jpg" alt="三輪士郎"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>進入辦公區內部, 更加震撼的畫面呈現在我的眼前: 整個主辦公區由一張連成一體的巨大木質桌子環繞, 這桌子形狀蜿蜒曲折彷彿擁有生命, 以非常自然的狀態構成了幾十個<strong>相連但又互不影響</strong>的工作區域. Godling 介紹在瘟疫過後大部分員工都選擇居家辦公, 所以儘管是工作日在這辦公的人也寥寥無幾, 但我已經可以想象在瘟疫前這會是一個多麼和諧美好的工作空間了. 現代辦公室設計很難擺脫在個人空間與效率間擇一的難題, teamLab 用這塊形狀奇異的桌子漂亮地給出了解決方案, 可以說讓人大開眼界. </p>
-<p><img src="https://cdn.prod.website-files.com/5db35de024bb988f5fb4e168/5e58ed2a8d96fd5240cdf46f_pixiv-hero.jpg" alt="辦公區俯視圖"></p>
-<blockquote>
-<p>要完整展現這張桌子對我的鏡頭來說不愧是難度太高了, 就用<a href="https://bitrise.io/customer-stories/pixiv-jp">發表在網上</a>的公開圖片吧</p>
-</blockquote>
-<p>除去這塊桌子, 最讓我感興趣的就是牆上的書架了. 這裡塞滿了歷年來 pixiv 出版或協力的各種書刊, 是另一個巨大的寶庫, 如果能有機會把這裡的所有作品都閱讀一遍的話⋯⋯ 簡直是做夢都不敢想啊. 書架裡最醒目的區域是各種獎盃獎牌, 其中還有不少技術開發相關的獎項, 提醒了我其實 Pixiv 不單單擅於運營, 同樣是注重先進技術的公司. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069084509/in/album-72177720321005949/" title="DSC_1099-25 mm"><img src="https://live.staticflickr.com/65535/54069084509_d102798413_b.jpg" alt="DSC_1099-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>中午我們一起在<a href="https://maps.app.goo.gl/HhkhGHiXVLeb3Mzh7">代代木站附近的一家壽司店</a>吃了午飯. Godling 說這家店中午提供平價但高質量的社畜午餐, 晚上提供奢華大餐給社畜的老闆, 而我只覺得社畜午餐倒也量足料精價效比十足. 飽餐後我們就此別過, 他回家繼續工作, 而我與米克雷前往晴空塔. </p>
-<hr>
-<p>俗話說傻子和煙都喜歡高處, 這麼看來我必然是個傻子無誤了. 儘管知道晴空塔無論何時都遊客爆滿, 我還是義無反顧地把它列入本次行程必須去的目的地. 大概是根植於 DNA 裡的某些本能, 我一直很喜歡從高處俯瞰城市. 晴空塔 495m 的上層展望臺當然實打實地滿足了我. 和去年在哈爾濱登上龍塔時相比, 首先晴空塔的展望臺就已經比龍塔那 200 米出頭的高度要高上太多; 其次哈爾濱的城市俯瞰起來真的⋯⋯ 乏善可陳, 在嚴冬的襯托下一片肅殺; 相較之下從晴空塔上眺望東京看到的是秩序與混沌並存, 尤其是到日薄西山華燈初上時更是生機勃發, 與龍塔上所見簡直是兩個極端. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068752271/in/album-72177720321005949/" title="DSC_1157-135 mm"><img src="https://live.staticflickr.com/65535/54068752271_748349a6cc_b.jpg" alt="DSC_1157-135 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</p>
-</blockquote>
-<p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/album-72177720321005949/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg" alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051312762/in/album-72177720321005949/" title="DSC_1358-Enhanced-NR-40 mm"><img src="https://live.staticflickr.com/65535/54051312762_ab59c0738f_b.jpg" alt="DSC_1358-Enhanced-NR-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>快速上升的電梯 + 慢速快門產生的時空隧道感</p>
-</blockquote>
-<p>落日之後我打算繼續拍東京夜景, 於是繞到吧檯處. 吧檯是需要購買食物才能進入的, 但人相對要少一些, 有高度很剛好的桌子供客人進食, 風景也非常宜人. 俯瞰夜間的東京感覺繁華程度更甚日間, 各色燈光恰到好處地裝點城市的各個角落, 又不像很多國內的城市搞形狀詭異的夜景工程憑空製造光汙染, 給人的感覺十分乾淨. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051311352/in/album-72177720321005949/" title="DSC_1461-25 mm"><img src="https://live.staticflickr.com/65535/54051311352_7edcc96b3d_b.jpg" alt="DSC_1461-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>踩著打烊時點在餐飲街吃了點晚飯, 又在紀念品店買了一堆小禮物, 我們登上電車回到住處. </p>
-<h3 id="Day-4-八月九日-星期五-池袋-涉谷"><a href="#Day-4-八月九日-星期五-池袋-涉谷" class="headerlink" title="Day 4, 八月九日, 星期五, 池袋 - 涉谷"></a>Day 4, 八月九日, 星期五, 池袋 - 涉谷</h3><p>今天的行程 ⸺ 聖地巡禮. 池袋太陽城裡有兩個我們都特別想去的地方: 太陽城水族館和 ｢滿天｣ 天象館. 兩者都是在動畫 <a href="https://bgm.tv/subject/428735">Bang Dream! It’s MyGO!!!!!</a> 中登場, 有重要戲份發生的地點, 同樣也都是特別適合放鬆遊覽的景點. </p>
-<p>我們先進入了水族館. 大約全世界水族館都是吸引小朋友的地方, 太陽城這裡也不例外, 好在嘈雜程度比起國內的幾個水族館勉強還算是可以接受. 室內部分展出的水族並沒有什麼獨特之處, 但館內各種玻璃維護得非常乾淨, 觀看體驗比我之前在國內去的幾家都要好很多. 玻璃乾淨的另一個好處就是拍照效果也相對更好一些. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052809900/in/album-72177720321005949" title="DSC_1595-25 mm"><img src="https://live.staticflickr.com/65535/54052809900_7478532983_b.jpg" alt="DSC_1595-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>水母缸無論看幾次都覺得非常療愈</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052364421/in/album-72177720321005949/" title="DSC_1649-25 mm"><img src="https://live.staticflickr.com/65535/54052364421_c19d58bf4d_b.jpg" alt="DSC_1649-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>表情 (?) 十分佛系的烏賊</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052607148/in/album-72177720321005949/" title="DSC_1606-25 mm"><img src="https://live.staticflickr.com/65535/54052607148_264acbc0b9_b.jpg" alt="DSC_1606-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>比水母缸更好的是什麼? 那當然是水母牆啦</p>
-</blockquote>
-<p>室內部分並不大, 很快就走到了盡頭來到室外, 而這才是本館的重頭戲 ⸺ 空中企鵝的所在. 和印象裡不同, 在熱帶其實也有企鵝存在, 而太陽城水族館就有一批俗稱南非企鵝的熱帶企鵝. 在東京 33℃ 的驕陽下企鵝們懶洋洋地在假山的陰影裡休息或踱步, 偶爾有一兩隻跑到太陽下, 不一會兒也受不住炎熱去灑水噴頭旁納涼. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610323/in/album-72177720321005949" title="DSC_1799-40 mm"><img src="https://live.staticflickr.com/65535/54052610323_450e9dccda_b.jpg" alt="DSC_1799-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051214437/in/album-72177720321005949" title="65520034-"><img src="https://live.staticflickr.com/65535/54051214437_209db1d85d_b.jpg" alt="65520034-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>企鵝略有些笨拙的動作看起來的確是非常療愈. 但比起地上的企鵝, 更療愈的當然是 ⸺ 在空中的企鵝! 透過在市中心的四層建築上建造巨大水缸, 太陽城水族館讓企鵝在水缸中游泳的身姿變得彷彿在空中飛行一般. 我徹底理解了為什麼高松燈會辦水族館年票了, 如果可以的話我也想每天下班來這裡看企鵝⋯⋯ 不行的話至少每週一次⋯⋯</p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610043/in/album-72177720321005949/" title="DSC_1804-40 mm"><img src="https://live.staticflickr.com/65535/54052610043_0a804f557a_b.jpg" alt="DSC_1804-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>在被烈陽烤成軟泥之前我們回到了室內. 簡單吃了午飯又喝了一杯咖啡之後就差不多到了天象館預定節目的時間, 我們便進入水族館一牆之隔的天象館. </p>
-<hr>
-<p>我選擇的節目是由津田健次郎講解的<a href="https://planetarium.konicaminolta.jp/program/italian/?hall=manten">義大利星空散步</a>. 進入館內後大家找到座位並調整靠背變成半躺的狀態 ⸺ 靠背的調整並不像動畫裡那樣唐突落下, 而是有很明顯的潤滑與阻尼. 觀客基本到齊後照明逐漸熄滅, 投影啟動, 球形天幕上映出星空. 就像喜歡高處一樣, 星空對我也有著無法抗拒的吸引力, 即使是這虛擬的星空也同樣. 我屏息凝神豎起耳朵等待著解說出現. </p>
-<p>我一直都很喜歡津田健次郎的聲音, 但我沒想到他在解說時使用的溫柔的聲線與星空配合的效果是如此完美. 一直以來我刻板印象裡津田健次郎的聲音低沉深邃充滿磁性, 但往往暗含著激烈的情感, 而錄製解說時他的聲音卻只充滿著溫柔, 彷若慈愛的父親&#x2F;兄長&#x2F;丈夫引導著兒女&#x2F;弟妹&#x2F;伴侶共同在這星夜遨遊. 儘管解說的內容是早已耳熟能詳的羅馬神話與星座的關聯, 但星象儀的投影與津田健次郎的解說一道, 還是構築了令人沉醉的體驗. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611193/in/album-72177720321005949/" title="DSC_1841-40 mm"><img src="https://live.staticflickr.com/65535/54052611193_2ecb27a36f_b.jpg" alt="DSC_1841-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>演出結束後的星象儀. 投影儀和星象儀的清晰度區別還是很明顯的, 星象儀並不是一直在運轉</p>
-</blockquote>
-<p>戀戀不捨地離開太陽城後, 我心想都已經來池袋了乾脆去 <a href="https://www.mixalivetokyo.com/">Mixa Live</a> 看一眼吧, 沒想到四樓的 Store Mixa 有 BanG Dream 周邊販售, 我們毫無抵抗地被吸了進去, 眼睛一閉一睜活動經費就少了一大截⋯⋯ </p>
-<hr>
-<p>好不容易逃脫 Store Mixa 魔窟, 我們繼續前往下一個目的地 ⸺ <a href="https://sholayered.jp/">Sholayered 本店</a>. 想要拜訪這家店也多少有一點聖地巡禮的意思, 我是從一位多才多藝的繪師<a href="https://x.com/kazari_tayu">風李たゆ老師</a>處得知這一品牌的. 我本來對香水可以說是一竅不通, 但近幾年在<a href="https://findmestore.thinkr.jp/collections/isekaijoucho/products/%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-3rd-anniversary-official-goods">情緒小姐</a>､ <a href="https://clear.fanbox.cc/">風李老師</a>和<a href="https://mall.bilibili.com/neul-next/index.html?noTitleBar=1&page=mall-up_shop&shopId=343172">艾茵老師</a>的栽培 (?) 下也搭建了還算完整的個人香味體系 (?), Sholayered 的室內香取向我也很喜歡, 之前買了風李老師推薦過的鮮梨味室內香在國內已經沒有代購了, 我就想趁著這次機會來補充一下. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610058/in/album-72177720321005949" title="DSC_1860-40 mm"><img src="https://live.staticflickr.com/65535/54052610058_5111714712_b.jpg" alt="DSC_1860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>店員異常熱情, 在聽到我是從 Layerd Fragrance 時代就在購買的老客戶之後更是滔滔不絕侃侃而談, 店裡主推的商品本來就能隨意試用, 一時間我的嗅覺都有些過載了. 神奇的是和店員談論香水的話題我居然基本也能無障礙交流, 又讓我覺得自己日語水平真行了. 實話說新推出的很多款式都讓我覺得有些怪異或者刻意, 不如我早已瞄準的幾個經典款式對胃口. 最後我買了一大瓶室內香和兩瓶香水, 心滿意足回家. </p>
-<hr>
-<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>東京遊記 PART Ⅰ</title>
     <url>/2024-10/TripToTokyo1/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052125636/in/album-72177720321005949" title="DSC_0706-40 mm"><img src="https://live.staticflickr.com/65535/54052125636_6efba503a3_b.jpg"  alt="DSC_0706-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -929,6 +857,78 @@
 <p>一夜無眠. </p>
 <hr>
 <p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 PART Ⅱ</title>
+    <url>/2024-10/TripToTokyo2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/dateposted-public/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Day-3-八月八日-星期四-千駄ヶ谷-墨田"><a href="#Day-3-八月八日-星期四-千駄ヶ谷-墨田" class="headerlink" title="Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田"></a>Day 3, 八月八日, 星期四, 千駄ヶ谷 - 墨田</h3><p>從這天開始行程就不是我一個人了, <a href="https://bsky.app/profile/bsky.mikelei.me">米克雷</a>在昨天 Live 結束後與我會和, 之後便一直同行至東京之行結束. 由於昨天 live 的衝擊, 今天的行程安排比較寬裕, 只有拜訪 Pixiv 和晴空塔. Pixiv 可以說是我的插繪審美啟蒙, 是我心目中的聖地之一. 之前默默使用了十幾年, 今天終於有機會一探究竟. </p>
+<p>帶領我參觀的是 <a href="https://twitter.com/godling_zlm">@godling_zlm</a>, 感覺我們也快認識十年 ⸺ 不對, 搞不好真的已經十年了⋯⋯ Pixiv 總部位於 <a href="https://www.pixiv.co.jp/company/">JPR 千駄ヶ谷大樓</a>, 從外面看就是一棟毫不起眼的辦公樓, 沒有任何能讓人聯想到世界上萬億頂尖插繪在此集聚的特徵. 但可別被它的外觀欺騙, Pixiv 的辦公室可是大有乾坤. </p>
+<p>一下電梯, 出現在眼前的就是一片由巨大繪馬構成的牆. 其上滿是各位耳熟能詳的大手繪師作品. 從電梯廳往辦公區行進, 會經過一個兩面掛滿了小號繪馬的通道, 這些繪馬無論哪個單獨拿出來都足夠寶貴了, 在 Pixiv 居然能鋪滿好幾面牆, 而且還在不斷替換⋯⋯ 實在是令人垂涎. Godling 介紹了這個辦公室是由大名鼎鼎的 <a href="https://www.teamlab.art/">teamLab</a> 操刀設計 ⸺ 最近同為他們操刀的麻布台 <a href="https://www.teamlab.art/jp/e/tokyo/">Digital Art Museum 展覽</a>也很火, 我本想找機會去參觀, 但沒能擠出時間只能遺憾作罷. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54071450508/in/album-72177720321005949" title="DSC_1073-50mm f-1G"><img src="https://live.staticflickr.com/65535/54071450508_7d3dea6c8a_b.jpg" alt="DSC_1073-50mm f-1G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068751131/in/album-72177720321005949/" title="三輪士郎"><img src="https://live.staticflickr.com/65535/54068751131_c3a39bd32a_b.jpg" alt="三輪士郎"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>進入辦公區內部, 更加震撼的畫面呈現在我的眼前: 整個主辦公區由一張連成一體的巨大木質桌子環繞, 這桌子形狀蜿蜒曲折彷彿擁有生命, 以非常自然的狀態構成了幾十個<strong>相連但又互不影響</strong>的工作區域. Godling 介紹在瘟疫過後大部分員工都選擇居家辦公, 所以儘管是工作日在這辦公的人也寥寥無幾, 但我已經可以想象在瘟疫前這會是一個多麼和諧美好的工作空間了. 現代辦公室設計很難擺脫在個人空間與效率間擇一的難題, teamLab 用這塊形狀奇異的桌子漂亮地給出了解決方案, 可以說讓人大開眼界. </p>
+<p><img src="https://cdn.prod.website-files.com/5db35de024bb988f5fb4e168/5e58ed2a8d96fd5240cdf46f_pixiv-hero.jpg" alt="辦公區俯視圖"></p>
+<blockquote>
+<p>要完整展現這張桌子對我的鏡頭來說不愧是難度太高了, 就用<a href="https://bitrise.io/customer-stories/pixiv-jp">發表在網上</a>的公開圖片吧</p>
+</blockquote>
+<p>除去這塊桌子, 最讓我感興趣的就是牆上的書架了. 這裡塞滿了歷年來 pixiv 出版或協力的各種書刊, 是另一個巨大的寶庫, 如果能有機會把這裡的所有作品都閱讀一遍的話⋯⋯ 簡直是做夢都不敢想啊. 書架裡最醒目的區域是各種獎盃獎牌, 其中還有不少技術開發相關的獎項, 提醒了我其實 Pixiv 不單單擅於運營, 同樣是注重先進技術的公司. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069084509/in/album-72177720321005949/" title="DSC_1099-25 mm"><img src="https://live.staticflickr.com/65535/54069084509_d102798413_b.jpg" alt="DSC_1099-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>中午我們一起在<a href="https://maps.app.goo.gl/HhkhGHiXVLeb3Mzh7">代代木站附近的一家壽司店</a>吃了午飯. Godling 說這家店中午提供平價但高質量的社畜午餐, 晚上提供奢華大餐給社畜的老闆, 而我只覺得社畜午餐倒也量足料精價效比十足. 飽餐後我們就此別過, 他回家繼續工作, 而我與米克雷前往晴空塔. </p>
+<hr>
+<p>俗話說傻子和煙都喜歡高處, 這麼看來我必然是個傻子無誤了. 儘管知道晴空塔無論何時都遊客爆滿, 我還是義無反顧地把它列入本次行程必須去的目的地. 大概是根植於 DNA 裡的某些本能, 我一直很喜歡從高處俯瞰城市. 晴空塔 495m 的上層展望臺當然實打實地滿足了我. 和去年在哈爾濱登上龍塔時相比, 首先晴空塔的展望臺就已經比龍塔那 200 米出頭的高度要高上太多; 其次哈爾濱的城市俯瞰起來真的⋯⋯ 乏善可陳, 在嚴冬的襯托下一片肅殺; 相較之下從晴空塔上眺望東京看到的是秩序與混沌並存, 尤其是到日薄西山華燈初上時更是生機勃發, 與龍塔上所見簡直是兩個極端. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068752271/in/album-72177720321005949/" title="DSC_1157-135 mm"><img src="https://live.staticflickr.com/65535/54068752271_748349a6cc_b.jpg" alt="DSC_1157-135 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</p>
+</blockquote>
+<p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052540660/in/album-72177720321005949/" title="65510006-"><img src="https://live.staticflickr.com/65535/54052540660_3b5d0270da_b.jpg" alt="65510006-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051312762/in/album-72177720321005949/" title="DSC_1358-Enhanced-NR-40 mm"><img src="https://live.staticflickr.com/65535/54051312762_ab59c0738f_b.jpg" alt="DSC_1358-Enhanced-NR-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>快速上升的電梯 + 慢速快門產生的時空隧道感</p>
+</blockquote>
+<p>落日之後我打算繼續拍東京夜景, 於是繞到吧檯處. 吧檯是需要購買食物才能進入的, 但人相對要少一些, 有高度很剛好的桌子供客人進食, 風景也非常宜人. 俯瞰夜間的東京感覺繁華程度更甚日間, 各色燈光恰到好處地裝點城市的各個角落, 又不像很多國內的城市搞形狀詭異的夜景工程憑空製造光汙染, 給人的感覺十分乾淨. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051311352/in/album-72177720321005949/" title="DSC_1461-25 mm"><img src="https://live.staticflickr.com/65535/54051311352_7edcc96b3d_b.jpg" alt="DSC_1461-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>踩著打烊時點在餐飲街吃了點晚飯, 又在紀念品店買了一堆小禮物, 我們登上電車回到住處. </p>
+<h3 id="Day-4-八月九日-星期五-池袋-涉谷"><a href="#Day-4-八月九日-星期五-池袋-涉谷" class="headerlink" title="Day 4, 八月九日, 星期五, 池袋 - 涉谷"></a>Day 4, 八月九日, 星期五, 池袋 - 涉谷</h3><p>今天的行程 ⸺ 聖地巡禮. 池袋太陽城裡有兩個我們都特別想去的地方: 太陽城水族館和 ｢滿天｣ 天象館. 兩者都是在動畫 <a href="https://bgm.tv/subject/428735">Bang Dream! It’s MyGO!!!!!</a> 中登場, 有重要戲份發生的地點, 同樣也都是特別適合放鬆遊覽的景點. </p>
+<p>我們先進入了水族館. 大約全世界水族館都是吸引小朋友的地方, 太陽城這裡也不例外, 好在嘈雜程度比起國內的幾個水族館勉強還算是可以接受. 室內部分展出的水族並沒有什麼獨特之處, 但館內各種玻璃維護得非常乾淨, 觀看體驗比我之前在國內去的幾家都要好很多. 玻璃乾淨的另一個好處就是拍照效果也相對更好一些. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052809900/in/album-72177720321005949" title="DSC_1595-25 mm"><img src="https://live.staticflickr.com/65535/54052809900_7478532983_b.jpg" alt="DSC_1595-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>水母缸無論看幾次都覺得非常療愈</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052364421/in/album-72177720321005949/" title="DSC_1649-25 mm"><img src="https://live.staticflickr.com/65535/54052364421_c19d58bf4d_b.jpg" alt="DSC_1649-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>表情 (?) 十分佛系的烏賊</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052607148/in/album-72177720321005949/" title="DSC_1606-25 mm"><img src="https://live.staticflickr.com/65535/54052607148_264acbc0b9_b.jpg" alt="DSC_1606-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>比水母缸更好的是什麼? 那當然是水母牆啦</p>
+</blockquote>
+<p>室內部分並不大, 很快就走到了盡頭來到室外, 而這才是本館的重頭戲 ⸺ 空中企鵝的所在. 和印象裡不同, 在熱帶其實也有企鵝存在, 而太陽城水族館就有一批俗稱南非企鵝的熱帶企鵝. 在東京 33℃ 的驕陽下企鵝們懶洋洋地在假山的陰影裡休息或踱步, 偶爾有一兩隻跑到太陽下, 不一會兒也受不住炎熱去灑水噴頭旁納涼. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610323/in/album-72177720321005949" title="DSC_1799-40 mm"><img src="https://live.staticflickr.com/65535/54052610323_450e9dccda_b.jpg" alt="DSC_1799-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051214437/in/album-72177720321005949" title="65520034-"><img src="https://live.staticflickr.com/65535/54051214437_209db1d85d_b.jpg" alt="65520034-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>企鵝略有些笨拙的動作看起來的確是非常療愈. 但比起地上的企鵝, 更療愈的當然是 ⸺ 在空中的企鵝! 透過在市中心的四層建築上建造巨大水缸, 太陽城水族館讓企鵝在水缸中游泳的身姿變得彷彿在空中飛行一般. 我徹底理解了為什麼高松燈會辦水族館年票了, 如果可以的話我也想每天下班來這裡看企鵝⋯⋯ 不行的話至少每週一次⋯⋯</p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610043/in/album-72177720321005949/" title="DSC_1804-40 mm"><img src="https://live.staticflickr.com/65535/54052610043_0a804f557a_b.jpg" alt="DSC_1804-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>在被烈陽烤成軟泥之前我們回到了室內. 簡單吃了午飯又喝了一杯咖啡之後就差不多到了天象館預定節目的時間, 我們便進入水族館一牆之隔的天象館. </p>
+<hr>
+<p>我選擇的節目是由津田健次郎講解的<a href="https://planetarium.konicaminolta.jp/program/italian/?hall=manten">義大利星空散步</a>. 進入館內後大家找到座位並調整靠背變成半躺的狀態 ⸺ 靠背的調整並不像動畫裡那樣唐突落下, 而是有很明顯的潤滑與阻尼. 觀客基本到齊後照明逐漸熄滅, 投影啟動, 球形天幕上映出星空. 就像喜歡高處一樣, 星空對我也有著無法抗拒的吸引力, 即使是這虛擬的星空也同樣. 我屏息凝神豎起耳朵等待著解說出現. </p>
+<p>我一直都很喜歡津田健次郎的聲音, 但我沒想到他在解說時使用的溫柔的聲線與星空配合的效果是如此完美. 一直以來我刻板印象裡津田健次郎的聲音低沉深邃充滿磁性, 但往往暗含著激烈的情感, 而錄製解說時他的聲音卻只充滿著溫柔, 彷若慈愛的父親&#x2F;兄長&#x2F;丈夫引導著兒女&#x2F;弟妹&#x2F;伴侶共同在這星夜遨遊. 儘管解說的內容是早已耳熟能詳的羅馬神話與星座的關聯, 但星象儀的投影與津田健次郎的解說一道, 還是構築了令人沉醉的體驗. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052611193/in/album-72177720321005949/" title="DSC_1841-40 mm"><img src="https://live.staticflickr.com/65535/54052611193_2ecb27a36f_b.jpg" alt="DSC_1841-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>演出結束後的星象儀. 投影儀和星象儀的清晰度區別還是很明顯的, 星象儀並不是一直在運轉</p>
+</blockquote>
+<p>戀戀不捨地離開太陽城後, 我心想都已經來池袋了乾脆去 <a href="https://www.mixalivetokyo.com/">Mixa Live</a> 看一眼吧, 沒想到四樓的 Store Mixa 有 BanG Dream 周邊販售, 我們毫無抵抗地被吸了進去, 眼睛一閉一睜活動經費就少了一大截⋯⋯ </p>
+<hr>
+<p>好不容易逃脫 Store Mixa 魔窟, 我們繼續前往下一個目的地 ⸺ <a href="https://sholayered.jp/">Sholayered 本店</a>. 想要拜訪這家店也多少有一點聖地巡禮的意思, 我是從一位多才多藝的繪師<a href="https://x.com/kazari_tayu">風李たゆ老師</a>處得知這一品牌的. 我本來對香水可以說是一竅不通, 但近幾年在<a href="https://findmestore.thinkr.jp/collections/isekaijoucho/products/%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92-3rd-anniversary-official-goods">情緒小姐</a>､ <a href="https://clear.fanbox.cc/">風李老師</a>和<a href="https://mall.bilibili.com/neul-next/index.html?noTitleBar=1&page=mall-up_shop&shopId=343172">艾茵老師</a>的栽培 (?) 下也搭建了還算完整的個人香味體系 (?), Sholayered 的室內香取向我也很喜歡, 之前買了風李老師推薦過的鮮梨味室內香在國內已經沒有代購了, 我就想趁著這次機會來補充一下. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052610058/in/album-72177720321005949" title="DSC_1860-40 mm"><img src="https://live.staticflickr.com/65535/54052610058_5111714712_b.jpg" alt="DSC_1860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>店員異常熱情, 在聽到我是從 Layerd Fragrance 時代就在購買的老客戶之後更是滔滔不絕侃侃而談, 店裡主推的商品本來就能隨意試用, 一時間我的嗅覺都有些過載了. 神奇的是和店員談論香水的話題我居然基本也能無障礙交流, 又讓我覺得自己日語水平真行了. 實話說新推出的很多款式都讓我覺得有些怪異或者刻意, 不如我早已瞄準的幾個經典款式對胃口. 最後我買了一大瓶室內香和兩瓶香水, 心滿意足回家. </p>
+<hr>
+<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
@@ -1034,64 +1034,6 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 2025 (六月篇) Part Ⅲ</title>
-    <url>/2025-06/TripToTokyo2025JunPart3/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart3/magnify.avif"></p>
-<h3 id="Day-3-六月八日-星期日-涉谷-墨田"><a href="#Day-3-六月八日-星期日-涉谷-墨田" class="headerlink" title="Day 3, 六月八日, 星期日, 涉谷 - 墨田"></a>Day 3, 六月八日, 星期日, 涉谷 - 墨田</h3><p>終於到了本次日本之旅的最核心, Yoishigure Fanbox Live vol.1. 按照計劃我與 Oscar 先來到涉谷的 Parco 會面, 順便逛逛那裡的任天堂總店. 然而我們還是小看了週日任天堂店的人流, 店內完全是水洩不通, 我們連穿過店內都感到有些吃力, 更別說駐足觀看各個商品和展示品, 只能草草瞥了一圈離開. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Godzilla.avif"></p>
-<blockquote>
-<p>任天堂店旁邊的哥吉拉</p>
-</blockquote>
-<p>從 Parco 出來我們就去附近的<a href="https://oreryushio.co.jp/?page_id=797">拉麵店</a>填肚子, 心想離會場這麼近時間肯定是充裕的. 沒想到在涉谷附近居然無處尋覓一家合適的花店, 要麼是只賣居家擺放用的花要麼就是週日關店歇業, 我們只好放棄了送花的選項 ⸺ 後來進入會場後也發現今回似乎沒人送花了, 看來大家的想法都差不多⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Gee-ge.avif"></p>
-<p>登上 <a href="http://gee-ge.net/">Gee-ge</a> 所在的四層, 發現入口是一個極其狹窄的樓梯間, livehouse 的門也非常不起眼, 寬度基本上不能容納二人同時進入. 稍待片刻便到了入場時間, 我和 Oscar 因為排隊的位置靠前所以最先進入 livehouse. Livehouse 內的空間也確實不大, 比上回的保谷小音樂廳更袖珍, 官網上說能容納 60 人看起來應該是個很接近的數字. 話說回來在 2025 年參加這樣的活動居然只能用現金支付, 還好參與人數不多否則 Gee-ge 要堵車到樓下吧. 我在交門票錢的時候覺得來幫忙分送特典, 戴著口罩的工作人員眉宇間氣質和香音老師很像, 還以為是香音老師居然在演出前來幫忙, 對她鞠了一躬, 沒想到在演出結束後的回顧直播上香音老師透露那是她妹妹⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/poster.avif"></p>
-<p>在交完門票錢領完特典和飲料後, Oscar 發現座位似乎並沒有編號, 於是拉著我徑直奔向第一排 ⸺ 在這裡我離鋼琴的距離不過三米出頭, 這輩子都沒有離演出者這麼近過, 可算徹底彌補了上次 Classical Live vol.2 沒能近距離觀賞香音老師彈琴的遺憾. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Piano.avif"></p>
-<p>就坐後屏息等待不久, 香音老師便施然入場. 本次她穿著的藍灰連身長裙與我讓 amayouri 老師繪製的插繪中禮服風格異曲同工, 都是在腰部鏤空的設計, 不知道是香音老師刻意選擇還是巧合. </p>
-<p>沒有開場白, 燈光師調暗了觀眾席照明後香音老師便開始了演奏. 雖然之前已經分別見識過了香音老師彈琴與歌唱, 但彈唱確實是第一次觀賞. 在我的座位無法看到香音老師手指的動作, 非常可惜, 但人也不能太貪心⋯⋯ 除了最開始的一曲大概因為凝重的氣氛讓香音老師比較明顯地彈錯一個音外, 整場演出基本沒有明顯的失誤. 香音老師的表情平靜而自信, 僅在彈錯音符時略微蹙眉, 而她的歌聲依舊澄澈, 雖然不像演唱歌劇時那樣穿透力強勁, 但更加平靜和緩的歌聲倒是比較符合本次 live 的 ｢居家氛圍｣. </p>
-<p>一曲結束, 香音老師直接在琴凳上側身, 面對觀眾開始 MC. MC 氛圍輕鬆, 感覺和直播沒什麼區別, 也說了希望大家不用拘謹, 該喝水喝水, 想創造類似爵士酒吧氛圍. 這麼一想, 這次演出說不定是十月的預演⋯⋯ 本次演出的曲目裡, 除了香音老師已經決定必然會唱的之外, 還有四首由 fanbox 成員們票選的曲目. 可惜我投的曲目只有夜明けを乞う。入選了 ⸺ 不如說要從各 15 曲中選出兩首實在過於困難了! 即便如此我還是很高興能看到 Daily Note 被放在候選名單裡, 縱使心知選它的人大概不會很多. </p>
-<p>幾首沒能位列前茅的曲子也進入了歌單中倒算是預料之外情理之中, 而其中最為驚喜則是瑠華姐姐演唱的返し唄 ⸺ 沒錯, 酔シグレ活動全勤獎的瑠華姐姐本次也沒有缺席, 登台獻唱了二首半 (二首獨唱, 一首合唱). 瑠華姐姐在舞台上的站位距離我的座位大概只有不到二米, 字面意思的觸手可及. 瑠華姐姐和香音老師一樣穿著素色的洗練長裙, 但和香音老師搭配了典雅的高跟鞋不同, 瑠華姐姐搭配的是略有些朋克風格的黑色長靴, 這個組合顯得非常帥氣. 至於為什麼突然改口稱瑠華姐姐, 那是因為近距離觀賞瑠華小姐演出後被她散發的姐姐氣場所折服, 不由自主⋯⋯</p>
-<p>香音老師的獨唱曲以藍悼花作為結束. 香音老師是真的很喜歡藍悼花, 之前聯動咖啡廳的解密也是以藍悼花作為謎底⋯⋯ 而藍悼花結束後, 瑠華姐姐重新登台, 與香音老師再次合唱了あまりある残像, 二人的配合依舊天衣無縫, 為本次演出畫上了完美的句號. </p>
-<p>但本次演唱會和上次不同, 我們被允許向香音老師面呈禮物, 而香音老師也會親手為我們分送 fanbox 成員特殊紀念品, 所以演出結束後香音老師和瑠華姐姐並沒有離場, 而是直接穿過觀眾席來到了位於 livehouse 入口附近的物販區. 我和 Oscar 互相給對方鼓勁一邊慢騰騰地排隊購買物販, 心中七上八下忐忑不安⋯⋯ 排隊時我就觀察著香音老師, 發現她能記得參會者們的很多情報, 比如某位聽眾同時還是 Eye&#x2F;Lucia&#x2F;つぐ的粉絲, 並作出相應的評論. 而且每個人與香音老師對話的時間似乎也沒什麼限制. </p>
-<p>我非常軟弱地讓 Oscar 排在前面, 希望擠出哪怕多一點的時間做心理準備; 這當然是毫無意義的, 畢竟在香音老師對我開口說話的瞬間這些準備就全都化為虛無, 只剩下喜悅與激動. 我與 Oscar 一道語無倫次地對香音老師表示感謝與喜愛, 一邊將禮物交給香音老師 ⸺  Oscar 贈送的是外觀復古而華麗的懷錶, 我贈送的則是玻璃工藝的蘸水筆, 這些都是香音老師曾經說過喜愛的物品, 也是我們討論過後得出的結果. 香音老師非常熱情地當場開啟包裝盒檢視, 並向我們表示感謝, 隨後也親手將 fanbox 成員的特典交給我們. 我在香音老師面前張口結舌, 除了鞠躬如搗蒜之外什麼話也說不出來, 只有在最後離開前祝願香音老師之後在歌劇那邊的演出也一帆風順. </p>
-<p>我和 Oscar 幾近逃也一般離開了 Gee-ge, 一邊後悔著沒有抓住機會同香音老師多聊一些, 一面又為得到香音老師的感謝與鼓勵沾沾自喜, 兩人不約而同地發出了怪笑&#x2F;怪聲. </p>
-<hr>
-<p>一面在腦中回味著 fanbox live 的餘韻, 我一邊登上電車前往 Book&amp;Design 參加<a href="https://book-design.jp/events/699/">『欧文書体　基礎知識と使い方』刊行記念「小林章と欧文書体展」</a>. 與本づくりハウス相比, Book&amp;Design 的展示廳就顯得寬敞明亮, 空間充裕, 令人心曠神怡了 ⸺ 當然不是說本づくりハウス讓人心情低落, 但的確是顯得過於擁擠 (這又何嘗不是一種 foreshadowing…). 展廳兩側的牆上掛滿了小林章先生過去字型作品樣張的大幅印刷, 中間的島台上則放置了他的著作, 手稿以及使用了他設計的字型進行排印的出版物､ 商品, 而這些著作旁還放了一次性手套與消毒液供感興趣的觀客翻閱. 我到場時場內觀客數量寥寥無幾, 大家都專心致志地觀賞著牆上和桌上的展品. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/ITCLuna.avif" alt="ITC Luna"></p>
-<blockquote>
-<p>專門被拉出來展示的 ITC Luna 月圖形</p>
-</blockquote>
-<p>當我看完第一面牆上的字型見本時, 小林章先生來到了會場. 他先向在場所有人簡單問候, 接著便開門見山地表示如果有問題歡迎直接向本人提出, 如果提出了好問題的話還會得到他親自頒發的 ｢好問題獎｣. 於是大家便蜂擁到小林章先生身邊提出各式問題. 因為字型樣張掛在牆上, 所以很多提問都直接與字型的細節設計相關, 小林章先生連連表示好問題, 作為好問題獎的禮物很快便見底. 我也抓住機會詢問了與 Zapf 先生手稿相關的問題, 拿到最後一支好問題獎. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/ZapfAmpersand.avif" alt="Zapf 先生的手稿"></p>
-<p>在第一波問題問完之後, 小林章先生向現場工作人員要了個一次性碗, 然後踱步到島台擺放使用了他設計的字型做包裝的商品展示區, 隨手拿起了一包糖果便拆開倒入碗中, 和大家說: ｢這是我在德國時的客戶開發的糖果, 是德國人喜歡的酸味糖, 特色當然就是特別的酸, 但我非常中意, 你們也不用客氣來嚐嚐看呀~｣ 我正為居然可以現場吃展品而震驚, 其他觀客們早已各自拿了一顆糖果吃了起來, 其中不少人果然面露難色並感嘆真的好酸, 小林章先生笑逐顏開並自己也抓了一顆放進嘴裡樂在其中. 我也拿了一顆品嚐, 確實是符合我對德國酸味糖的印象 ⸺ 畢竟我在澳大利亞和英國留學時已經吃過不少不同品牌但都來自德國的酸味糖了, 對嗜酸的我來說這點程度倒不算什麼, 但在展會上能夠吃展品果然是全新的體驗. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/SourCandy.avif"></p>
-<blockquote>
-<p>一臉壞笑 (?) 開啟酸味糖的小林章先生, 有興趣的讀者也可以自己去網拍上買一包來嚐嚐. 順帶一提我在澳大利亞和英國時吃得最多的是 Trolli 和 Haribo, hitschies 反而很少見</p>
-</blockquote>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Publishing.avif"></p>
-<blockquote>
-<p>出版物展區還擺放了被翻譯成不同文字的著作, Eric 主播翻譯的簡體中文版赫然在列</p>
-</blockquote>
-<p>隨著小林章先生到場, 觀客數量也逐漸增加, 和昨天一樣也有不少日本字型製作公司人士前來參觀. 小林章先生是真的很喜歡酸酸糖, 在聊天或被提問的間隙空閒時遍會自己抓一顆酸酸糖吃, 讓我覺得非常有親近感. 不過已經觀賞完了所有展品, 提問也獲得了解答, 我也沒打算聽太久業界交流, 便找機會讓小林章先生替我簽了個名, 然後離開了 Book&amp;Design 展覽廳. </p>
-<hr>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/AsakusaSkytree.avif"></p>
-<p>因為 Book&amp;Design 最近的車站是淺草站, 而走到路邊發現全是遊客的我不想走進人潮, 於是便向著人潮的反向散步, 沿著墨田河順流而下. 沒走多遠發現河對岸有<a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%9B%E3%83%BC%E3%83%AB">一棟頂著造型非常喜感雕像的建築</a>, 好奇心驅使下我便過橋去一探究竟, 才發現原來這就是朝日啤酒大樓群. 仔細一看導覽牌上寫著朝日啤酒總部大樓頂樓有一個展望酒廊, 這下不得不造訪一趟了. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Skytree_Pano.jxl"></p>
-<p>展望酒廊名喚 Sky Room, 空間也並不大, 提供各類啤酒以及下酒小食. 酒廊裡的客人似乎都只是把這裡當做拍照打卡點, 像我一樣點了一堆小食打算當晚餐熬到落日的人算是個異類吧. 我雖然並不是啤酒愛好者, 但朝日超爽啤酒 (<a href="https://www.youtube.com/watch?v=iizLYJInM0I">｢銀色的傢伙｣</a>)鼎鼎大名還是有所耳聞的, 這次喝到倒也確實不負期待, 口感清爽, 但略嫌清淡, 沒那麼對我的胃口. 倒是生啤和黑生啤因為有更多苦味和麥芽香氣更對我胃口. 然而不知不覺我就在日落之前喝進了 1.5L 的啤酒, 恐怖⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Sunset.avif"></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Afterglow.avif"></p>
-<blockquote>
-<p>一邊喝酒一邊看晚霞果然還是太中年男性了⋯⋯</p>
-</blockquote>
-<hr>
-<p>東京遊記 2025 六月篇系列: <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>東京遊記 2025 (六月篇) Part Ⅳ</title>
     <url>/2025-06/TripToTokyo2025JunPart4/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart4/Tokyo1AM.avif"></p>
@@ -1148,6 +1090,64 @@
 </blockquote>
 <hr>
 <p>東京遊記 2025 六月篇系列: <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a> </p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 2025 (六月篇) Part Ⅲ</title>
+    <url>/2025-06/TripToTokyo2025JunPart3/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart3/magnify.avif"></p>
+<h3 id="Day-3-六月八日-星期日-涉谷-墨田"><a href="#Day-3-六月八日-星期日-涉谷-墨田" class="headerlink" title="Day 3, 六月八日, 星期日, 涉谷 - 墨田"></a>Day 3, 六月八日, 星期日, 涉谷 - 墨田</h3><p>終於到了本次日本之旅的最核心, Yoishigure Fanbox Live vol.1. 按照計劃我與 Oscar 先來到涉谷的 Parco 會面, 順便逛逛那裡的任天堂總店. 然而我們還是小看了週日任天堂店的人流, 店內完全是水洩不通, 我們連穿過店內都感到有些吃力, 更別說駐足觀看各個商品和展示品, 只能草草瞥了一圈離開. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Godzilla.avif"></p>
+<blockquote>
+<p>任天堂店旁邊的哥吉拉</p>
+</blockquote>
+<p>從 Parco 出來我們就去附近的<a href="https://oreryushio.co.jp/?page_id=797">拉麵店</a>填肚子, 心想離會場這麼近時間肯定是充裕的. 沒想到在涉谷附近居然無處尋覓一家合適的花店, 要麼是只賣居家擺放用的花要麼就是週日關店歇業, 我們只好放棄了送花的選項 ⸺ 後來進入會場後也發現今回似乎沒人送花了, 看來大家的想法都差不多⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Gee-ge.avif"></p>
+<p>登上 <a href="http://gee-ge.net/">Gee-ge</a> 所在的四層, 發現入口是一個極其狹窄的樓梯間, livehouse 的門也非常不起眼, 寬度基本上不能容納二人同時進入. 稍待片刻便到了入場時間, 我和 Oscar 因為排隊的位置靠前所以最先進入 livehouse. Livehouse 內的空間也確實不大, 比上回的保谷小音樂廳更袖珍, 官網上說能容納 60 人看起來應該是個很接近的數字. 話說回來在 2025 年參加這樣的活動居然只能用現金支付, 還好參與人數不多否則 Gee-ge 要堵車到樓下吧. 我在交門票錢的時候覺得來幫忙分送特典, 戴著口罩的工作人員眉宇間氣質和香音老師很像, 還以為是香音老師居然在演出前來幫忙, 對她鞠了一躬, 沒想到在演出結束後的回顧直播上香音老師透露那是她妹妹⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/poster.avif"></p>
+<p>在交完門票錢領完特典和飲料後, Oscar 發現座位似乎並沒有編號, 於是拉著我徑直奔向第一排 ⸺ 在這裡我離鋼琴的距離不過三米出頭, 這輩子都沒有離演出者這麼近過, 可算徹底彌補了上次 Classical Live vol.2 沒能近距離觀賞香音老師彈琴的遺憾. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Piano.avif"></p>
+<p>就坐後屏息等待不久, 香音老師便施然入場. 本次她穿著的藍灰連身長裙與我讓 amayouri 老師繪製的插繪中禮服風格異曲同工, 都是在腰部鏤空的設計, 不知道是香音老師刻意選擇還是巧合. </p>
+<p>沒有開場白, 燈光師調暗了觀眾席照明後香音老師便開始了演奏. 雖然之前已經分別見識過了香音老師彈琴與歌唱, 但彈唱確實是第一次觀賞. 在我的座位無法看到香音老師手指的動作, 非常可惜, 但人也不能太貪心⋯⋯ 除了最開始的一曲大概因為凝重的氣氛讓香音老師比較明顯地彈錯一個音外, 整場演出基本沒有明顯的失誤. 香音老師的表情平靜而自信, 僅在彈錯音符時略微蹙眉, 而她的歌聲依舊澄澈, 雖然不像演唱歌劇時那樣穿透力強勁, 但更加平靜和緩的歌聲倒是比較符合本次 live 的 ｢居家氛圍｣. </p>
+<p>一曲結束, 香音老師直接在琴凳上側身, 面對觀眾開始 MC. MC 氛圍輕鬆, 感覺和直播沒什麼區別, 也說了希望大家不用拘謹, 該喝水喝水, 想創造類似爵士酒吧氛圍. 這麼一想, 這次演出說不定是十月的預演⋯⋯ 本次演出的曲目裡, 除了香音老師已經決定必然會唱的之外, 還有四首由 fanbox 成員們票選的曲目. 可惜我投的曲目只有夜明けを乞う。入選了 ⸺ 不如說要從各 15 曲中選出兩首實在過於困難了! 即便如此我還是很高興能看到 Daily Note 被放在候選名單裡, 縱使心知選它的人大概不會很多. </p>
+<p>幾首沒能位列前茅的曲子也進入了歌單中倒算是預料之外情理之中, 而其中最為驚喜則是瑠華姐姐演唱的返し唄 ⸺ 沒錯, 酔シグレ活動全勤獎的瑠華姐姐本次也沒有缺席, 登台獻唱了二首半 (二首獨唱, 一首合唱). 瑠華姐姐在舞台上的站位距離我的座位大概只有不到二米, 字面意思的觸手可及. 瑠華姐姐和香音老師一樣穿著素色的洗練長裙, 但和香音老師搭配了典雅的高跟鞋不同, 瑠華姐姐搭配的是略有些朋克風格的黑色長靴, 這個組合顯得非常帥氣. 至於為什麼突然改口稱瑠華姐姐, 那是因為近距離觀賞瑠華小姐演出後被她散發的姐姐氣場所折服, 不由自主⋯⋯</p>
+<p>香音老師的獨唱曲以藍悼花作為結束. 香音老師是真的很喜歡藍悼花, 之前聯動咖啡廳的解密也是以藍悼花作為謎底⋯⋯ 而藍悼花結束後, 瑠華姐姐重新登台, 與香音老師再次合唱了あまりある残像, 二人的配合依舊天衣無縫, 為本次演出畫上了完美的句號. </p>
+<p>但本次演唱會和上次不同, 我們被允許向香音老師面呈禮物, 而香音老師也會親手為我們分送 fanbox 成員特殊紀念品, 所以演出結束後香音老師和瑠華姐姐並沒有離場, 而是直接穿過觀眾席來到了位於 livehouse 入口附近的物販區. 我和 Oscar 互相給對方鼓勁一邊慢騰騰地排隊購買物販, 心中七上八下忐忑不安⋯⋯ 排隊時我就觀察著香音老師, 發現她能記得參會者們的很多情報, 比如某位聽眾同時還是 Eye&#x2F;Lucia&#x2F;つぐ的粉絲, 並作出相應的評論. 而且每個人與香音老師對話的時間似乎也沒什麼限制. </p>
+<p>我非常軟弱地讓 Oscar 排在前面, 希望擠出哪怕多一點的時間做心理準備; 這當然是毫無意義的, 畢竟在香音老師對我開口說話的瞬間這些準備就全都化為虛無, 只剩下喜悅與激動. 我與 Oscar 一道語無倫次地對香音老師表示感謝與喜愛, 一邊將禮物交給香音老師 ⸺  Oscar 贈送的是外觀復古而華麗的懷錶, 我贈送的則是玻璃工藝的蘸水筆, 這些都是香音老師曾經說過喜愛的物品, 也是我們討論過後得出的結果. 香音老師非常熱情地當場開啟包裝盒檢視, 並向我們表示感謝, 隨後也親手將 fanbox 成員的特典交給我們. 我在香音老師面前張口結舌, 除了鞠躬如搗蒜之外什麼話也說不出來, 只有在最後離開前祝願香音老師之後在歌劇那邊的演出也一帆風順. </p>
+<p>我和 Oscar 幾近逃也一般離開了 Gee-ge, 一邊後悔著沒有抓住機會同香音老師多聊一些, 一面又為得到香音老師的感謝與鼓勵沾沾自喜, 兩人不約而同地發出了怪笑&#x2F;怪聲. </p>
+<hr>
+<p>一面在腦中回味著 fanbox live 的餘韻, 我一邊登上電車前往 Book&amp;Design 參加<a href="https://book-design.jp/events/699/">『欧文書体　基礎知識と使い方』刊行記念「小林章と欧文書体展」</a>. 與本づくりハウス相比, Book&amp;Design 的展示廳就顯得寬敞明亮, 空間充裕, 令人心曠神怡了 ⸺ 當然不是說本づくりハウス讓人心情低落, 但的確是顯得過於擁擠 (這又何嘗不是一種 foreshadowing…). 展廳兩側的牆上掛滿了小林章先生過去字型作品樣張的大幅印刷, 中間的島台上則放置了他的著作, 手稿以及使用了他設計的字型進行排印的出版物､ 商品, 而這些著作旁還放了一次性手套與消毒液供感興趣的觀客翻閱. 我到場時場內觀客數量寥寥無幾, 大家都專心致志地觀賞著牆上和桌上的展品. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/ITCLuna.avif" alt="ITC Luna"></p>
+<blockquote>
+<p>專門被拉出來展示的 ITC Luna 月圖形</p>
+</blockquote>
+<p>當我看完第一面牆上的字型見本時, 小林章先生來到了會場. 他先向在場所有人簡單問候, 接著便開門見山地表示如果有問題歡迎直接向本人提出, 如果提出了好問題的話還會得到他親自頒發的 ｢好問題獎｣. 於是大家便蜂擁到小林章先生身邊提出各式問題. 因為字型樣張掛在牆上, 所以很多提問都直接與字型的細節設計相關, 小林章先生連連表示好問題, 作為好問題獎的禮物很快便見底. 我也抓住機會詢問了與 Zapf 先生手稿相關的問題, 拿到最後一支好問題獎. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/ZapfAmpersand.avif" alt="Zapf 先生的手稿"></p>
+<p>在第一波問題問完之後, 小林章先生向現場工作人員要了個一次性碗, 然後踱步到島台擺放使用了他設計的字型做包裝的商品展示區, 隨手拿起了一包糖果便拆開倒入碗中, 和大家說: ｢這是我在德國時的客戶開發的糖果, 是德國人喜歡的酸味糖, 特色當然就是特別的酸, 但我非常中意, 你們也不用客氣來嚐嚐看呀~｣ 我正為居然可以現場吃展品而震驚, 其他觀客們早已各自拿了一顆糖果吃了起來, 其中不少人果然面露難色並感嘆真的好酸, 小林章先生笑逐顏開並自己也抓了一顆放進嘴裡樂在其中. 我也拿了一顆品嚐, 確實是符合我對德國酸味糖的印象 ⸺ 畢竟我在澳大利亞和英國留學時已經吃過不少不同品牌但都來自德國的酸味糖了, 對嗜酸的我來說這點程度倒不算什麼, 但在展會上能夠吃展品果然是全新的體驗. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/SourCandy.avif"></p>
+<blockquote>
+<p>一臉壞笑 (?) 開啟酸味糖的小林章先生, 有興趣的讀者也可以自己去網拍上買一包來嚐嚐. 順帶一提我在澳大利亞和英國時吃得最多的是 Trolli 和 Haribo, hitschies 反而很少見</p>
+</blockquote>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Publishing.avif"></p>
+<blockquote>
+<p>出版物展區還擺放了被翻譯成不同文字的著作, Eric 主播翻譯的簡體中文版赫然在列</p>
+</blockquote>
+<p>隨著小林章先生到場, 觀客數量也逐漸增加, 和昨天一樣也有不少日本字型製作公司人士前來參觀. 小林章先生是真的很喜歡酸酸糖, 在聊天或被提問的間隙空閒時遍會自己抓一顆酸酸糖吃, 讓我覺得非常有親近感. 不過已經觀賞完了所有展品, 提問也獲得了解答, 我也沒打算聽太久業界交流, 便找機會讓小林章先生替我簽了個名, 然後離開了 Book&amp;Design 展覽廳. </p>
+<hr>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/AsakusaSkytree.avif"></p>
+<p>因為 Book&amp;Design 最近的車站是淺草站, 而走到路邊發現全是遊客的我不想走進人潮, 於是便向著人潮的反向散步, 沿著墨田河順流而下. 沒走多遠發現河對岸有<a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%9B%E3%83%BC%E3%83%AB">一棟頂著造型非常喜感雕像的建築</a>, 好奇心驅使下我便過橋去一探究竟, 才發現原來這就是朝日啤酒大樓群. 仔細一看導覽牌上寫著朝日啤酒總部大樓頂樓有一個展望酒廊, 這下不得不造訪一趟了. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Skytree_Pano.jxl"></p>
+<p>展望酒廊名喚 Sky Room, 空間也並不大, 提供各類啤酒以及下酒小食. 酒廊裡的客人似乎都只是把這裡當做拍照打卡點, 像我一樣點了一堆小食打算當晚餐熬到落日的人算是個異類吧. 我雖然並不是啤酒愛好者, 但朝日超爽啤酒 (<a href="https://www.youtube.com/watch?v=iizLYJInM0I">｢銀色的傢伙｣</a>)鼎鼎大名還是有所耳聞的, 這次喝到倒也確實不負期待, 口感清爽, 但略嫌清淡, 沒那麼對我的胃口. 倒是生啤和黑生啤因為有更多苦味和麥芽香氣更對我胃口. 然而不知不覺我就在日落之前喝進了 1.5L 的啤酒, 恐怖⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Sunset.avif"></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Afterglow.avif"></p>
+<blockquote>
+<p>一邊喝酒一邊看晚霞果然還是太中年男性了⋯⋯</p>
+</blockquote>
+<hr>
+<p>東京遊記 2025 六月篇系列: <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="https://novadng.studio/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
@@ -1265,44 +1265,6 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 PART Anima Ⅲ</title>
-    <url>/2024-10/TripToTokyoAnima/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>雖然<a href="/2024/10/15/TripToTokyo1/">上篇</a>結尾我自覺任何文字記錄對於這場演出而言都是多餘的, 但這兩個月我的 Anima Ⅲ 戒斷反應日趨嚴重, 還是忍不住想寫些廢話記錄這次演出.</p>
-<h3 id="樂隊"><a href="#樂隊" class="headerlink" title="樂隊"></a>樂隊</h3><p><img src="/2024-10/TripToTokyoAnima/Anima3band.avif"></p>
-<blockquote>
-<p>功勞榜</p>
-</blockquote>
-<p>本場演出樂隊的核心成員 (鍵盤吉他貝斯鼓大提琴) 都是觀測者們耳熟能詳的老朋友了, 其中大提琴<a href="https://x.com/GOSHU27">伊藤修平</a>先生更是從初代 Anima 一路走來的核心成員 (band master), 屬於看到他們登臺就可以安心的存在.</p>
-<p>樂隊裡最亮眼的角色大概非鍵盤<a href="https://www.wataru-saito.com/">斎藤渉</a>先生莫屬了. 因為一頭標誌性的長髮與彈奏時專注入迷的神態而被觀測者們熟知, 在很多曲目的過渡橋段裡都有齋藤先生的華彩, 我作為鋼琴愛好者是聽得相當過癮恨不得當場鼓掌叫好.</p>
-<p>絃樂組自從在不可解参 (想) 裡進行了一次擴編後就保持了兩把小提琴, 一把中提琴和一把大提琴的規模. 情緒的很多老歌與絃樂組的相性都極好, 普通的伴奏裡增加配樂厚度, 對一些樂曲高潮部分表現力強化還有一些過渡橋段的加花效果都是有目共睹的.</p>
-<p>本次的樂隊改編也仍然是由修平先生完成, 因為加入了小號和薩克斯所以管樂器改編由更加專業的小號手<a href="https://6335ab21df400.site123.me/">山田丈造</a>進行. 大體來說我是非常喜歡修平先生的改編風格, 因應 Live 氛圍在很多曲子前加入了巧思密集的前奏應該是一大特色, 讓我們在初次聆聽時無法瞬間辨認出開演的曲目, 增加了驚喜的感覺. 而且樂隊改編時還極大改善了某些曲子原本的弱點 (比如說⋯⋯ 香椎老師的鼓點), 真是錦上添花的妙筆. 但也依舊存在每首曲子結束時都加入了冗長的收尾, 顯得拖泥帶水的問題. 雖然我覺得在現場配合觀眾的歡呼氣氛確實很好, 但個人並不喜歡.</p>
-<h3 id="舞臺"><a href="#舞臺" class="headerlink" title="舞臺"></a>舞臺</h3><p>橫濱國際平和會議場的<a href="https://www.pacifico.co.jp/guide/convention">國家禮堂</a>觀眾席分為三層, 總共可容納 5,000 名觀眾, 我的作為位於二層靠右, 總體而言視野還算良好, 音響效果也算不錯, 要和之前參加的 livehouse 演出相比那就好不知道多少倍了.</p>
-<p>演出的舞臺被分為上下兩層, 樂隊都集中在下層, 中間是作為主要演出區域的雙層熒幕. 我坐在右側所以左側的樂隊成員略有些難以看清, 不過好在舞臺上方還有副熒幕, 有時會播放樂隊成員的特寫.</p>
-<p>實話說我很不喜歡神椿的現場演出, 這兩個熒幕給神椿的場景設計加上了巨大的枷鎖. 全虛擬的演出雖然犧牲了觀眾的臨場體驗, 但在舞臺設計上能夠天馬行空, 做出現實裡無論如何都無法看到的場景 ⸺ 不可解弍 Q2､ 花譜畢業 live 和不可解参 (想) 都是我心目中無法磨滅的至高體驗. 和前面提到的幾場演出裡從精緻美觀到豪華壯麗的場景相比, Anima Ⅲ 的舞臺設計就只能用樸素來形容了, 雖然能體驗到不少巧思, 但終歸是被兩個熒幕的表現效果所限制.</p>
-<h3 id="單曲感想-部分"><a href="#單曲感想-部分" class="headerlink" title="單曲感想 (部分)"></a>單曲感想 (部分)</h3><p><strong>描き続けた君へ</strong>: 開場便是堪稱情緒代名曲的至不懈繪畫的你, 而正如前文所述, 修平先生給本曲增加了將近一分半的額外導入段落, 把現場的氣氛烘托致極. 聽到情緒聲音的瞬間相信很多觀眾都與我一樣渾身戰慄, 比起初次聽到本曲時已經接近終場的感動, 那想必是期待已久的願望終於實現, 而且是超水平實現時激動的雀躍外顯.</p>
-<p><strong>ディメンション</strong>: 開場部分觀眾們整齊劃一的呼喊完全體現出了現地表演的魅力. 過渡橋段的華彩是齋藤先生大放異彩的舞臺.</p>
-<p><strong>システムズコア</strong>: 如果因為某種不可告人的原因在會場裡居然有人昏昏欲睡, 那麼在聽到這首歌之後他必然會精神百倍. 咖啡因含量 100%, 短小精悍的 wake up call.</p>
-<p><strong>ラピスのお人形</strong>: 開頭引入採用了一段非常爵士的鍵盤, 無縫接入舞曲風的青金石, 讓人不得不讚歎修平先生和春捲飯的天才.</p>
-<p><strong>グレイスケイル</strong>: 《色彩》中我最喜歡的一曲, 如今 samayuzame 的曲子在這張專輯裡有些鶴立雞群, 但在這場演出就裡顯得無比融洽. 現場改變版把橋接部分做了大幅調整, 效果器拉滿的吉他與耳語搬的吟唱結合, 雖然情緒平靜但依然讓人覺得皮膚過電. 和下一首敘述者的華爾茲一道為維護 ｢虛擬黑暗歌手｣ 做了最後一點努力 (笑).</p>
-<p><strong>此処に棘と死を</strong>: 本曲無論是放在《色彩》中還是本場演出中都是最為異質的存在, 但由於嶄新的演出形式 ⸺ stand mic performance ⸺ 以及管樂器的加入使得原有些格格不入的本曲得到了完美展現. 不得不說情緒的學習和表演能力真的好強, 世上彷彿沒有她無法駕馭的風格.</p>
-<p><strong>いろはに咲きて</strong>: 原本在吹奏薩克斯風的<a href="https://www.julius-keilwerth.com/artist/kosei-nagata/">永田昴生</a>先生此時換上了長笛, 為本曲注入了強力的和風, 聽到此處我又差點忍不住拍手叫好了, 不知道這是修平先生還是山田先生的主意, 真的是天才.</p>
-<p><strong>シリウスの心臓</strong>: 我聽到前奏響起打擊樂器的聲音時心理就咯噔一聲, 暗叫不妙. 必須說實話 ⸺ 這次的天狼星心臟的改編是歷次 live 中我最不滿的. 究其原因還是打擊樂器､ 吉他與貝斯的加入一定程度上摧毀了本曲試圖營造的氛圍. 本曲原本的鋼琴獨奏配樂具有極強的敘事性, 前幾次改編中加入的絃樂做到了對敘事性的大幅強化. 我大概能理解修平先生想要讓這首情緒最廣為人知的曲目呈現出更加宏大的感覺, 但很可惜這個嘗試在我看來是失敗的, 打擊樂器與電吉他､ 貝斯的加入為配樂引入了電子元素和與鋼琴､ 絃樂完全不搭調的強節奏感, 擾亂了已經被構建的敘事風格, 產生了失衡. 另一大問題是在副歌二的部分樂隊 + 歌聲開始引發了一點注意力爭搶, 進一步破壞了一直以來的情感塑造, 這個問題顯然是去掉打擊樂､ 吉他與貝斯就可以直接解決的. 也許修平先生想要探索天狼星這個 ｢框架｣ 能夠承載的上限, 我也一直認為這首曲子是非常豐儉由人可塑性強大的, 但這次挑戰顯然觸及了這個框架的上限. (我認為我也不算天狼星保守派, 因為我是非常非常贊成往編曲中加入絃樂組的)</p>
-<p><strong>アンビバレント</strong>: 一直以來我都認為<a href="https://www.maosasagawa.jp/">笹川真生</a>是一位非常需要對電波的作曲家, 而很可惜他為理芽做的很多曲對我而言都對不上電波. 但 Ambivalent 裡他收斂了很多, 讓本曲變得容易接受得多, 而且配合<a href="https://www.youtube.com/watch?v=9lxqrgViCXk">有些魔性的 MV</a>, 十分洗腦. Live 版依然利用了樂隊編成豐富的優勢, 伴奏比單曲版要豐滿不少.</p>
-<p><strong>ANGELIC</strong>: 片尾曲仙人香椎老師在 Anima Ⅱ 的力作, 過去一年來我重複聆聽次數最多的曲子, 本次以更高規格的樂隊呈現. 對於打擊樂器的加入我略有一點不滿, 但沒有天狼星那麼不滿, 蓋因原本香椎老師是讓鋼琴承擔了部分打擊樂器的職責, 今次打擊樂器加入反倒有些眾神歸位的感覺, 並不會覺得怪異. 演出專用新衣裝 Edelweiss 優雅華貴, 與本曲氣質相得益彰.</p>
-<p><strong>ARCADIA</strong>: 片尾曲仙人香椎老師在 Anima I 的力作. 令人驚喜的是樂隊介紹前奏的迴歸 (Anima Ⅱ 裡樂隊介紹前奏消失了, 那段時間神椿其他 live 裡也基本都不見樂隊介紹前奏), 讓人長吁一口氣. 我對隨著情緒的介紹一個個加入演奏, 最後匯聚成宏大樂章的樂隊介紹形態不能更喜愛了. 這首歌大概很難被ヰ組客觀評價, 因為腦子裡出現 MV 場景會瞬間化為感動的潮水衝破所有理智, 是目前三首片尾曲中分量最沉重的. 不知道會場裡有多少人和我一樣隨著旋律進入高潮而無法控制地流下眼淚.</p>
-<p><strong>かたちなきもの</strong>: 比起不懈繪畫, 我從內心深處更認同本曲才是 ｢ヰ世界情緒主題曲｣, 但本次演出裡混音出了一點小事故, 薩克斯風的音量在很長一段都嚴重蓋過了所有其他樂器與歌聲, 使得現場的體驗有些下降.</p>
-<p><strong>みらいのかたち</strong>: 結合著之前的 MC, 非常有片尾曲感的曲子, 比起前面讓人激動､ 幸福地落淚而言本曲更傾向於平靜地落淚. 這首歌被排在無形之物後必然是深思熟慮的對仗, 從象徵過去的無形之寶物, 到尚未定型的未來之形狀, 本次 live 以對美好未來的嚮往畫上句號, 可以說再完美不過了.</p>
-<p><strong>ETERNAL</strong>: 很大程度上在結尾曲播出時我的眼淚已經流乾了, 聽著身邊的觀測者們隨著鋼琴伴奏鼓掌, 在關鍵演職人員出現在 staff roll 的時候爆發出熱烈的掌聲和歡呼時我卻深陷於這片尾曲中不能自拔. 私心認為後半段純音樂版因為去掉了鼓點而獲得了更高的一致性, 可惜線上錄影的版本裡有觀眾們激動地鼓掌歡呼的聲音沒法用來合成, 不然多少要試試看.</p>
-<p><img src="/2024-10/TripToTokyoAnima/%7FLastFMSep2024.avif"></p>
-<hr>
-<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Music</tag>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>東京遊記 PART Ⅲ</title>
     <url>/2024-10/TripToTokyo3/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052612018/in/album-72177720321005949" title="DSC_2006-40 mm"><img src="https://live.staticflickr.com/65535/54052612018_8b96386d0d_b.jpg"  alt="DSC_2006-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -1358,6 +1320,99 @@
 ]]></content>
       <tags>
         <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 PART Anima Ⅲ</title>
+    <url>/2024-10/TripToTokyoAnima/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>雖然<a href="/2024/10/15/TripToTokyo1/">上篇</a>結尾我自覺任何文字記錄對於這場演出而言都是多餘的, 但這兩個月我的 Anima Ⅲ 戒斷反應日趨嚴重, 還是忍不住想寫些廢話記錄這次演出.</p>
+<h3 id="樂隊"><a href="#樂隊" class="headerlink" title="樂隊"></a>樂隊</h3><p><img src="/2024-10/TripToTokyoAnima/Anima3band.avif"></p>
+<blockquote>
+<p>功勞榜</p>
+</blockquote>
+<p>本場演出樂隊的核心成員 (鍵盤吉他貝斯鼓大提琴) 都是觀測者們耳熟能詳的老朋友了, 其中大提琴<a href="https://x.com/GOSHU27">伊藤修平</a>先生更是從初代 Anima 一路走來的核心成員 (band master), 屬於看到他們登臺就可以安心的存在.</p>
+<p>樂隊裡最亮眼的角色大概非鍵盤<a href="https://www.wataru-saito.com/">斎藤渉</a>先生莫屬了. 因為一頭標誌性的長髮與彈奏時專注入迷的神態而被觀測者們熟知, 在很多曲目的過渡橋段裡都有齋藤先生的華彩, 我作為鋼琴愛好者是聽得相當過癮恨不得當場鼓掌叫好.</p>
+<p>絃樂組自從在不可解参 (想) 裡進行了一次擴編後就保持了兩把小提琴, 一把中提琴和一把大提琴的規模. 情緒的很多老歌與絃樂組的相性都極好, 普通的伴奏裡增加配樂厚度, 對一些樂曲高潮部分表現力強化還有一些過渡橋段的加花效果都是有目共睹的.</p>
+<p>本次的樂隊改編也仍然是由修平先生完成, 因為加入了小號和薩克斯所以管樂器改編由更加專業的小號手<a href="https://6335ab21df400.site123.me/">山田丈造</a>進行. 大體來說我是非常喜歡修平先生的改編風格, 因應 Live 氛圍在很多曲子前加入了巧思密集的前奏應該是一大特色, 讓我們在初次聆聽時無法瞬間辨認出開演的曲目, 增加了驚喜的感覺. 而且樂隊改編時還極大改善了某些曲子原本的弱點 (比如說⋯⋯ 香椎老師的鼓點), 真是錦上添花的妙筆. 但也依舊存在每首曲子結束時都加入了冗長的收尾, 顯得拖泥帶水的問題. 雖然我覺得在現場配合觀眾的歡呼氣氛確實很好, 但個人並不喜歡.</p>
+<h3 id="舞臺"><a href="#舞臺" class="headerlink" title="舞臺"></a>舞臺</h3><p>橫濱國際平和會議場的<a href="https://www.pacifico.co.jp/guide/convention">國家禮堂</a>觀眾席分為三層, 總共可容納 5,000 名觀眾, 我的作為位於二層靠右, 總體而言視野還算良好, 音響效果也算不錯, 要和之前參加的 livehouse 演出相比那就好不知道多少倍了.</p>
+<p>演出的舞臺被分為上下兩層, 樂隊都集中在下層, 中間是作為主要演出區域的雙層熒幕. 我坐在右側所以左側的樂隊成員略有些難以看清, 不過好在舞臺上方還有副熒幕, 有時會播放樂隊成員的特寫.</p>
+<p>實話說我很不喜歡神椿的現場演出, 這兩個熒幕給神椿的場景設計加上了巨大的枷鎖. 全虛擬的演出雖然犧牲了觀眾的臨場體驗, 但在舞臺設計上能夠天馬行空, 做出現實裡無論如何都無法看到的場景 ⸺ 不可解弍 Q2､ 花譜畢業 live 和不可解参 (想) 都是我心目中無法磨滅的至高體驗. 和前面提到的幾場演出裡從精緻美觀到豪華壯麗的場景相比, Anima Ⅲ 的舞臺設計就只能用樸素來形容了, 雖然能體驗到不少巧思, 但終歸是被兩個熒幕的表現效果所限制.</p>
+<h3 id="單曲感想-部分"><a href="#單曲感想-部分" class="headerlink" title="單曲感想 (部分)"></a>單曲感想 (部分)</h3><p><strong>描き続けた君へ</strong>: 開場便是堪稱情緒代名曲的至不懈繪畫的你, 而正如前文所述, 修平先生給本曲增加了將近一分半的額外導入段落, 把現場的氣氛烘托致極. 聽到情緒聲音的瞬間相信很多觀眾都與我一樣渾身戰慄, 比起初次聽到本曲時已經接近終場的感動, 那想必是期待已久的願望終於實現, 而且是超水平實現時激動的雀躍外顯.</p>
+<p><strong>ディメンション</strong>: 開場部分觀眾們整齊劃一的呼喊完全體現出了現地表演的魅力. 過渡橋段的華彩是齋藤先生大放異彩的舞臺.</p>
+<p><strong>システムズコア</strong>: 如果因為某種不可告人的原因在會場裡居然有人昏昏欲睡, 那麼在聽到這首歌之後他必然會精神百倍. 咖啡因含量 100%, 短小精悍的 wake up call.</p>
+<p><strong>ラピスのお人形</strong>: 開頭引入採用了一段非常爵士的鍵盤, 無縫接入舞曲風的青金石, 讓人不得不讚歎修平先生和春捲飯的天才.</p>
+<p><strong>グレイスケイル</strong>: 《色彩》中我最喜歡的一曲, 如今 samayuzame 的曲子在這張專輯裡有些鶴立雞群, 但在這場演出就裡顯得無比融洽. 現場改變版把橋接部分做了大幅調整, 效果器拉滿的吉他與耳語搬的吟唱結合, 雖然情緒平靜但依然讓人覺得皮膚過電. 和下一首敘述者的華爾茲一道為維護 ｢虛擬黑暗歌手｣ 做了最後一點努力 (笑).</p>
+<p><strong>此処に棘と死を</strong>: 本曲無論是放在《色彩》中還是本場演出中都是最為異質的存在, 但由於嶄新的演出形式 ⸺ stand mic performance ⸺ 以及管樂器的加入使得原有些格格不入的本曲得到了完美展現. 不得不說情緒的學習和表演能力真的好強, 世上彷彿沒有她無法駕馭的風格.</p>
+<p><strong>いろはに咲きて</strong>: 原本在吹奏薩克斯風的<a href="https://www.julius-keilwerth.com/artist/kosei-nagata/">永田昴生</a>先生此時換上了長笛, 為本曲注入了強力的和風, 聽到此處我又差點忍不住拍手叫好了, 不知道這是修平先生還是山田先生的主意, 真的是天才.</p>
+<p><strong>シリウスの心臓</strong>: 我聽到前奏響起打擊樂器的聲音時心理就咯噔一聲, 暗叫不妙. 必須說實話 ⸺ 這次的天狼星心臟的改編是歷次 live 中我最不滿的. 究其原因還是打擊樂器､ 吉他與貝斯的加入一定程度上摧毀了本曲試圖營造的氛圍. 本曲原本的鋼琴獨奏配樂具有極強的敘事性, 前幾次改編中加入的絃樂做到了對敘事性的大幅強化. 我大概能理解修平先生想要讓這首情緒最廣為人知的曲目呈現出更加宏大的感覺, 但很可惜這個嘗試在我看來是失敗的, 打擊樂器與電吉他､ 貝斯的加入為配樂引入了電子元素和與鋼琴､ 絃樂完全不搭調的強節奏感, 擾亂了已經被構建的敘事風格, 產生了失衡. 另一大問題是在副歌二的部分樂隊 + 歌聲開始引發了一點注意力爭搶, 進一步破壞了一直以來的情感塑造, 這個問題顯然是去掉打擊樂､ 吉他與貝斯就可以直接解決的. 也許修平先生想要探索天狼星這個 ｢框架｣ 能夠承載的上限, 我也一直認為這首曲子是非常豐儉由人可塑性強大的, 但這次挑戰顯然觸及了這個框架的上限. (我認為我也不算天狼星保守派, 因為我是非常非常贊成往編曲中加入絃樂組的)</p>
+<p><strong>アンビバレント</strong>: 一直以來我都認為<a href="https://www.maosasagawa.jp/">笹川真生</a>是一位非常需要對電波的作曲家, 而很可惜他為理芽做的很多曲對我而言都對不上電波. 但 Ambivalent 裡他收斂了很多, 讓本曲變得容易接受得多, 而且配合<a href="https://www.youtube.com/watch?v=9lxqrgViCXk">有些魔性的 MV</a>, 十分洗腦. Live 版依然利用了樂隊編成豐富的優勢, 伴奏比單曲版要豐滿不少.</p>
+<p><strong>ANGELIC</strong>: 片尾曲仙人香椎老師在 Anima Ⅱ 的力作, 過去一年來我重複聆聽次數最多的曲子, 本次以更高規格的樂隊呈現. 對於打擊樂器的加入我略有一點不滿, 但沒有天狼星那麼不滿, 蓋因原本香椎老師是讓鋼琴承擔了部分打擊樂器的職責, 今次打擊樂器加入反倒有些眾神歸位的感覺, 並不會覺得怪異. 演出專用新衣裝 Edelweiss 優雅華貴, 與本曲氣質相得益彰.</p>
+<p><strong>ARCADIA</strong>: 片尾曲仙人香椎老師在 Anima I 的力作. 令人驚喜的是樂隊介紹前奏的迴歸 (Anima Ⅱ 裡樂隊介紹前奏消失了, 那段時間神椿其他 live 裡也基本都不見樂隊介紹前奏), 讓人長吁一口氣. 我對隨著情緒的介紹一個個加入演奏, 最後匯聚成宏大樂章的樂隊介紹形態不能更喜愛了. 這首歌大概很難被ヰ組客觀評價, 因為腦子裡出現 MV 場景會瞬間化為感動的潮水衝破所有理智, 是目前三首片尾曲中分量最沉重的. 不知道會場裡有多少人和我一樣隨著旋律進入高潮而無法控制地流下眼淚.</p>
+<p><strong>かたちなきもの</strong>: 比起不懈繪畫, 我從內心深處更認同本曲才是 ｢ヰ世界情緒主題曲｣, 但本次演出裡混音出了一點小事故, 薩克斯風的音量在很長一段都嚴重蓋過了所有其他樂器與歌聲, 使得現場的體驗有些下降.</p>
+<p><strong>みらいのかたち</strong>: 結合著之前的 MC, 非常有片尾曲感的曲子, 比起前面讓人激動､ 幸福地落淚而言本曲更傾向於平靜地落淚. 這首歌被排在無形之物後必然是深思熟慮的對仗, 從象徵過去的無形之寶物, 到尚未定型的未來之形狀, 本次 live 以對美好未來的嚮往畫上句號, 可以說再完美不過了.</p>
+<p><strong>ETERNAL</strong>: 很大程度上在結尾曲播出時我的眼淚已經流乾了, 聽著身邊的觀測者們隨著鋼琴伴奏鼓掌, 在關鍵演職人員出現在 staff roll 的時候爆發出熱烈的掌聲和歡呼時我卻深陷於這片尾曲中不能自拔. 私心認為後半段純音樂版因為去掉了鼓點而獲得了更高的一致性, 可惜線上錄影的版本裡有觀眾們激動地鼓掌歡呼的聲音沒法用來合成, 不然多少要試試看.</p>
+<p><img src="/2024-10/TripToTokyoAnima/%7FLastFMSep2024.avif"></p>
+<hr>
+<p>東京遊記系列: <a href="https://novadng.studio/2024-10/TripToTokyo1/">Part  Ⅰ</a>,  <a href="https://novadng.studio/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="https://novadng.studio/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Music</tag>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN ⸺ ℤƒ 碎碎念</title>
+    <url>/2024-09/ZfAndMoreLens/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
+<p>GAS (Gear Acquisition Syndrome) is REAL</p>
+</blockquote>
+<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
+<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
+<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
+<p>甚至有兩頭⋯⋯</p>
+</blockquote>
+<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
+<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
+<p><img src="/2024-09/ZfAndMoreLens/Grip.avif"></p>
+<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
+<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
+<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
+<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+viewfinder.avif"></p>
+<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
+<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
+<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
+<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+180.avif"></p>
+<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022-01/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Zf+4014.avif"></p>
+<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022-09/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
+<ol>
+<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
+</li>
+<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
+</li>
+<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
+</li>
+</ol>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+heliar40.avif"></p>
+<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+105.avif"></p>
+<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
+<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
+<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
+<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+FE40.avif"></p>
+<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
+<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
+<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
+<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
+<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理.</p>
+<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
+<p><img src="/2024-09/ZfAndMoreLens/ZfGripZM50.avif"></p>
+]]></content>
+      <tags>
+        <tag>Photography</tag>
+        <tag>Gadget</tag>
       </tags>
   </entry>
   <entry>
@@ -1487,61 +1542,6 @@
       <tags>
         <tag>Gadget</tag>
         <tag>thoughts</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN ⸺ ℤƒ 碎碎念</title>
-    <url>/2024-09/ZfAndMoreLens/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
-<p>GAS (Gear Acquisition Syndrome) is REAL</p>
-</blockquote>
-<p>作為多年的相機肉體廚 (?), 購買器材時我看中的從來都是美貌 &gt; 效能, 尼康於去年發表的 ℤƒ 作為 Dƒ 以來睽違十年的復古機身, 效能上看基本不落後於時代, 剛剛看到 ℤƒ 公開的時候我確實有當年看到 Dƒ 時的即視感 ⸺ 同樣是落後一代 CMOS + 最新一代影象處理器, 主打復古情懷的機器, 但 ℤƒ 的定位比 Dƒ 要低一檔, 這點在 Z6 Ⅲ 公佈時也更加明顯了, 這次尼康也不再固執, 選擇了順應時代潮流, 沒有封印這片 CMOS 和影像處理器的影片拍攝能力. 而我理所當然對 ℤƒ 垂涎已久, 終於在今年 618 拿下.</p>
-<p>仔細使用之後我的結論是, ℤƒ 與 Dƒ 在理念上來說, 比起相似更多是迥異. 而我作為 Dƒ 十年的用家, 對此的確有很多感想. (正文裡就不用 ℤƒ 了, 笑)</p>
-<h3 id="房間裡的大象"><a href="#房間裡的大象" class="headerlink" title="房間裡的大象"></a>房間裡的大象</h3><blockquote>
-<p>甚至有兩頭⋯⋯</p>
-</blockquote>
-<p>Zƒ 作為相機本身最大的問題應該就是它的人體工學設計了. 對於這個問題我應該可以直接下結論: Zƒ 在<strong>官方出廠狀態</strong>下, 有且只有在配合原生小型鏡頭或轉接 E&#x2F;M 口小型鏡頭時能達成可以接受的握持感, 一旦轉接 F 鏡及其他法蘭距較長的單反鏡或原本體型就較長的鏡頭, 握持感就瞬間變得難以接受.</p>
-<p>而尼康當然本就知道機身設計的 ｢正確｣ 方式 ⸺ 看看 Dƒ 的人體工程學設計:</p>
-<p><img src="/2024-09/ZfAndMoreLens/Grip.avif"></p>
-<p>Zƒ 原本的後蓋在拇指區域是平坦的. 木質的凸起指柄是我在拿到相機之後額外裝著的, 這個指柄巨幅提升了前述難以接受場合下的持握感. 而作為對比, FM3ᴀ 等機身平坦的老膠片機有著過片杆可以起到指柄的作用, 且機身本就比 Zƒ 輕巧許多, 而更現代的 D 系&#x2F;Z 系也在拇指區域做了凸起. 尼康絕對是知道拇指握持區域哪怕一個小突起都能極大提升握持感, 而<strong>僅在日本銷售</strong>的附加握把 <a href="https://www.nikon-image.com/products/accessory/body/120808310/">Z f-GR1</a> 就带有指柄. <del>甚至連徠卡都在數位 M 機背部做了凸起</del>而尼康這種把理應整合在機身上的功能單獨拆分成配件的思路是我無論如何也不能接受的.</p>
-<p>而手感問題在轉接 F 鏡時變得愈發嚴重. 因為需要接近 3cm 長的 FTZ 轉接環, 而這個轉接環又基本上是一個空心金屬筒, 导致轉接後的相機 + 鏡頭的重量分部就變成兩頭重, 中心輕的啞鈴狀, 相較之下單反的反光鏡箱雖然也是一個空心區域, 但其上有五稜鏡組和測光元件, 其下有相位對焦模組和 AF 驅動馬達, 重量分佈合理性遠遠勝於 Zƒ + FTZ.</p>
-<p>除了手感之外, 還有一個沒有那麼明顯 ⸺ 不如說, 被尼康刻意隱瞞的問題. 無論妳往 Dƒ 上裝什麼鏡頭, 機身的相位對焦輔助 (▶︎ ● ◀︎) 都會正常啟用, 告知使用者是否成功對焦以及, 如果沒有對上, 應該往哪個方向調整對焦環. 同樣的功能也存在與 Zƒ 中 ⸺ <strong>唯用家必須採用帶有 CPU 的鏡頭才能啟用相位對焦輔助</strong>, 如果轉接的是 AI-S 或者 Auto 鏡頭, 或者用其他不能溝通焦距 &amp; 光圈資料的轉接環, 相位對焦輔助就不會啟動 (雖然仍舊可以啟用手動對焦人臉&#x2F;物體識別). 這一點沒有在尼康任何官方材料中說明.</p>
-<p>但比較有趣的反而是, 如果使用諸如 M-Z 6-bit 接環之類的可以跟機身溝通鏡頭焦距光圈情報的轉接環, 則可以順利啟用相位對焦輔助. 有說法認為相位對焦輔助需要獲取這些情報才能保證精確性, 我無法證實這個說法的準確性, 但 Zƒ 本就可以透過選單設定告知相機當前使用鏡頭的焦距與最大光圈 (比起 Dƒ 只能儲存十個鏡頭資訊來說, Zƒ 提供了 20 個欄位, 這點好評), 所以我不認為這是一個合理的說法.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+viewfinder.avif"></p>
-<p>撇開上述兩個客觀的問題之外, 還有一個主觀問題: FTZ 轉接環和機身審美對不上⋯⋯ 尼康的現代機身及鏡頭使用的工程塑膠&#x2F;鎂鋁合金塗裝表面效果與 Zƒ 的人工飾皮 + 黑漆黃銅差太遠了, 造型上格格不入. 尼康做樣子推出的兩款 SE 鏡頭也是全身塑膠, 摸起來手感無比廉價, 和機身相去萬里. 這也直接導致了我沒有購買任何原生 Z 鏡頭, 轉而選擇全部轉接的路線. (當然, 我還是有計劃購入 Voigtländer Macro-APO Lanthar 65&#x2F;2 或者確善能以後可能會推出的其他原生 Z 鏡, 但那都是後話了)</p>
-<p>尼康的這些選擇令人難以理解, 尤其是在與 Dƒ 對比的情況下 ⸺ Dƒ 有更加飽滿的握把和指柄, 帶有可以驅動 D 鏡頭的對焦馬達, 甚至連光圈聯動杆都可以被摺疊而使用 60 年代的 Auto 鏡頭, 可以說是真正開箱即用的對老 F 鏡友好的相機. 反觀 Zƒ, 雖然和 Dƒ 一樣有著復古外觀, 但對轉接老 F 鏡並不友好.</p>
-<p>最後補一個不算大象的小問題: 肩屏. 雖然 Dƒ 的肩屏也非常小, 但至少確實可以顯示更多關鍵資訊 (電池和剩餘的拍攝張數). Zƒ 的 LCD 熒幕<strong>只能</strong>顯示光圈, 而如果採用無法溝通光圈數值的手動鏡, 這個螢幕就完全廢了, 而且它也不像 Dƒ 那樣帶有背光燈⋯⋯ 不知道尼康有無可能透過韌體更新的方式開放這個熒幕顯示更多內容的能力 (雖然不管怎麼說也只能顯示數字, 但至少可以顯示剩餘電量或者拍攝張數?).</p>
-<p>題外話, Zƒ (710g) + 轉接環 (130g) + 手柄 (100g) + AI 180&#x2F;2.8S ED (790g) 居然比 Dƒ 組合 (1600g) 要重 200g…</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+180.avif"></p>
-<h3 id="Zf-❤︎-M-Lens"><a href="#Zf-❤︎-M-Lens" class="headerlink" title="Zƒ ❤︎ M Lens"></a>Zƒ ❤︎ M Lens</h3><p>Zƒ 比起 Dƒ ⸺ 或者說, Z 系統比起 F 系統最大的優勢之一就是鏡頭的選擇幾乎變得毫無限制. 而若妳打算用 Zƒ 來轉接 M 鏡, 就會驚訝地發現這才是 Zƒ 最為發光發熱的狀況. 首先 M 系統的法蘭距比 F 系統要短很多, 所以哪怕使用的是沒有任何附加功能的空心金屬筒轉接環, 裝著 M 鏡時的平衡感也遠勝過哪怕使用最輕巧的 F 鏡. 而由於要防止遮擋太多取景窗視野, M 鏡本就大多更為小巧, 裝著後整個機身看起來也更加協調 ⸺ 哪怕是我手頭最小的 F 鏡 <a href="https://novadng.studio/2022-01/Standard_Obsession/">AI Nikkor 45&#x2F;2.8P</a> 在加上 3CM 長的轉接環後都比我手頭最大的 M 鏡 + 轉接環組合要大不少. 我想這應該同樣也會適用於其他短法蘭距系統的轉接, 而很多 M 鏡本身就是黃銅黑漆的塗裝, 在 Zƒ 上亦顯得渾然天成.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Zf+4014.avif"></p>
-<p>我認為這裡特別需要提一下 TechArt Pro TZM-02 轉接環. 我在之前的文章 <a href="https://novadng.studio/2022-09/LM-EA9/">Photography is FUN —— LM-EA9, 邪道的终点</a>中介紹過同公司推出的 M 轉 E 自動對焦接環, 而 TZM-02 可以說是 LM-EA9 的 ｢完整版｣. 儘管在機械效能上 TZM 與 LM-EA 幾乎是完全相同的, 但</p>
-<ol>
-<li><p>Z 卡口本身直徑就更大一些, 讓 TZM 裝著在 Z 機身上沒有任何額外凸起  ⸺ 相較之下由於 E 卡口當初設計比較保守, LM-EA9 的外徑比 E 口金屬座圈還要大一些, 在 α7C 這樣的機器上看起來還蠻顯眼的.</p>
-</li>
-<li><p>更重要的是, 不知道是因為 Z 卡口開放的引數比較多, 還是被破解得比較徹底, LM-EA9 在影片拍攝模式下是不工作的, 但 TZM 在 Zƒ 上就可以於影片模式下繼續對焦. 大概是出於同樣的原因, TZM 的使用上比 LM-EA9 要更符合直覺得多, 雖然同樣是依靠光圈數值來設定焦距, 在 LM-EA9 上設定焦距需要先設定光圈 - 空拍一張 - 把光圈調回 ƒ&#x2F;2 才能正常拍攝, TZM 上則是直接將光圈設定到對應數值即可. 而 TZM 也不存在 LM-EA9 上那 ｢只能對畫面正中 1&#x2F;3 區域自動對焦｣ 的限制, 在哪怕畫面最邊角也可以順利自動對焦.</p>
-</li>
-<li><p>託最新影像處理器的福, Zƒ 的自動對焦效能比 α7C 大幅強化, 在同樣複雜的狀況下 TZM 都能正確找到焦點, 而很少出現反覆 hunting 或者乾脆直接對焦失敗的狀況. 但我沒有測試在索尼最新的機身上 LM-EA9 是否也有同樣優異的表現.</p>
-</li>
-</ol>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+heliar40.avif"></p>
-<p>可以說, 總體而言 TZM-02 的使用體驗比 LM-EA9 好了不止一個檔次. 同樣是轉接 M 鏡, 正如前文已經提過的, 由於 LM-EA9 在索尼機身上只能使用畫面中心區域對焦, 而且難以簡單使用快捷鍵改變對焦方式, 導致我更願意在 7C 上使用不帶電子觸點的 Voigtländer Macro Adapter. 而 7C 要改變放大區域又相對比較麻煩, 導致在既需要速度又需要精度的情況下就難免手忙腳亂. Zƒ 的狀況下, TZM 會被識別為一個正常的帶有 CPU 的鏡頭, 所以可以順利啟動相位對焦輔助, 配合 Zƒ 的 MF 人臉識別, 進可直接自動對焦, 退可手動對焦 + 相位輔助, 拍攝體驗比起之前用 α7C 時要舒適太多. 甚至透過疊加一個 F-M 接環, 用家還可以為 F 手動鏡啟用相位對焦輔助, 這點上甚至比官方的 FTZ 接環還要便利 (雖然這接環疊疊樂外觀上確實是很醜)⋯⋯</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+105.avif"></p>
-<h3 id="Zf-❤︎-FE-Lens"><a href="#Zf-❤︎-FE-Lens" class="headerlink" title="Zƒ ❤︎ FE Lens"></a>Zƒ ❤︎ FE Lens</h3><p>尼康雖然也已經於去年開放了 Z 卡口授權, 但目前優質的第三方鏡頭還寥寥無幾. 而索尼的 FE 系統經過近十年的積累, 早已擁有了極為龐大的自動對焦鏡頭群, 而由於 Z 系統法蘭距比 E 要短一點, 第三方廠家得以在這 2mm 空間裡塞入一套電路板, 讓 Z 機可以使用 E 鏡的絕大多數功能.</p>
-<p>市面上常見的 E-Z 產品主要是 TechArt 的 TZE-01&#x2F;02 和 Megadap 的 ETZ21&#x2F;Pro. Phillip Reeve 上有一篇<a href="https://phillipreeve.net/blog/review-megadap-etz-21-pro-vs-techart-tze-01-using-sony-e-lenses-on-nikon-z-cameras/">非常詳盡的對比介紹</a>, 我就不複述其中內容了, 簡單來說就是目前狀況下 ETZ21 Pro 的相容性和效能都比 TZE-01&#x2F;02 要強. 於是我就選購了 Megadap 的產品, 目前使用的效果是完全符合預期的 ⸺ 我只有兩枚 FE 鏡, 使用上沒遇到任何問題.</p>
-<p>甚至, 因為 Z 系統提供了 ｢用不同按鍵啟動不同對焦模式｣ 的功能, 在 FE 40&#x2F;2.5 上我可以利用鏡身上的按鈕啟動廣域自動識別對焦或者單點精確 AF-S, 而 AF-ON 按鈕啟動正常的對焦功能 (我常用的是 3D 追蹤), 達成很多方便的操作, 而索尼 G 鏡上的光圈環又補齊了 Nikkor Z 鏡在 Zƒ 上最缺的一環, 簡直天造地設.</p>
-<p><img src="/2024-09/ZfAndMoreLens/Z%C6%92+FE40.avif"></p>
-<p>可惜的是如果採用了 E-Z 轉接環, 就必然會失去三防的效力, 這大概是此方案最大的短板了吧. 這個時候難免會有些懷念以前使用 α7C + 40&#x2F;2.5G 的時候可以放心在小雨中拍照的體驗. 另一個短板是由於 E 系統 CMOS 濾鏡組厚度和 Z 系統不同 (Z 系統要薄一點), 為 E 系統設計的鏡頭在 Z 機上表現難免會下降一些, 尤其是接近邊角的部分更加明顯. 但對於 FE 40&#x2F;2.5G 和 Sigma 90&#x2F;2.8 這兩枚本就不是頂級畫質的鏡頭而言這點損失反倒不算很明顯, 我覺得完全可以接受.</p>
-<h3 id="復古設計的贊否"><a href="#復古設計的贊否" class="headerlink" title="復古設計的贊否"></a>復古設計的贊否</h3><p>既然提到了光圈環, 正好可以進入復古設計的話題. 很多批評者認為尼康在設計 Zƒ 和 Dƒ 機身時過於保守, 不敢像富士一樣乾脆直接取消 PSAM 僅以旋鈕控制. 但首先尼康自從進入 G 時代以來就基本沒有發表過自帶光圈環的鏡頭了, 像富士那樣用撥輪讓光圈進入自動模式反而很麻煩; 其次同時使用旋鈕和 PSAM 在一定程度上起到了預設檔位的作用, 在快速切換自動和某個固定數值時反而更加便利. 這點我在交替使用 FA 和 FM3ᴀ 時就有所體會 ⸺ FM3ᴀ 沒有 PSAM 檔位, 快門改出 A 檔需要解鎖, 有時會有些煩人; FA 就可以和 Dƒ Zƒ 一樣平時把快門撥盤放在 1&#x2F;125 或者 1&#x2F;60 然後把模式撥去 A 檔, 需要手動的時候就可以直接使用預設的快門, 十分便利.</p>
-<p>雖然我贊同保留 PSAM, 但 Zƒ 的轉盤設定上同樣不令我滿意. 按照 FM 系列機器的傳統, ISO 與曝光補償都應該位於軍艦部左側, 而事實上 Dƒ 也正是如此設計的 ⸺ 右側原本是過片撥杆的位置則改成了 PSAM 撥盤. 而 Zƒ 則把 PSAM 改成了 ISO 盤底部的撥杆, 而且取消了 Dƒ 上的模式切換鎖定 (Dƒ 需要提起 PSAM 撥盤才能切換模式, 在當年也是一個被詬病的設計, 因為沒有明確的檔位提示所以幾乎無法盲操作), 原本過片杆的位置則改為了曝光補償. 我不太能理解尼康這樣更改的用意何在 ⸺ 普遍的說法認為這是在某些程度上希望提升單手操控性, 但哪怕是使用最輕巧的 Z 鏡或者轉接最輕便的 M 鏡, 單手操作時變更曝光補償依然是非常痛苦的.</p>
-<p>去除 Dƒ 上的驅動模式選擇撥杆則是不至於很難接受的改變, 畢竟原本在 Dƒ 上這個撥杆基本長年處於 Q 模式 (安靜模式), 在去掉反光鏡之後 Q 模式就沒什麼存在價值了. 實話說我還蠻喜歡快速切換黑白模式功能的 ⸺ 就像<a href="https://novadng.studio/2022/05/30/Pen-F-pitfalls/">奧林巴斯 Pen-F</a> 上的創意撥盤我也經常撥去單色模式玩. 而且黑白模式下不單能使用自帶的三種預設模式, 還可以套用其他自定義黑白風格, 我自己就從 <a href="https://nikonpc.com/">Nikon Picture Control Editor</a> 裡匯入了幾套不錯的黑白菲林模擬, 玩的不亦樂乎.</p>
-<p>最後再抱怨一回在我看來復古設計最大的問題 ⸺  尼康自身並沒有一套與之審美匹配的鏡頭&#x2F;轉接方案. 前文提過, SE 40&#x2F;2 和 28&#x2F;2,8 都是全身塑膠的便宜貨, 其他 Z 鏡都是工程塑膠&#x2F;鎂鋁合金外表, 和 Zƒ 壓根不搭調. FTZ 轉接 G&#x2F;E 鏡頭也是同理.</p>
-<p>目前看来和 Zƒ 機身審美最搭調的原生鏡頭头恐怕是 ArtraLab 設計的 <a href="https://www.artralab.hk/products/presaleartralab-nonikkor-mc-35mm-f1-4-full-frame-1960s">Nonnikkor 35mm ƒ&#x2F;1.4 1960’s ver.</a>. 然而這枚鏡頭是沒有任何觸點的純手動鏡頭且畫質也相當一般, 拿它來掛機總覺得是相當得不償失⋯⋯ 現在只能期待福倫達能出幾枚 SL Ⅱs 風格的 Z 鏡頭了. 之前 DX 兩枚鏡頭在審美上大概是因為非全幅所以依然有焊屁股的感覺, 而且品控似乎也難以令人滿意的樣子. 想來也是諷刺, Zƒ 釋出已經十月有餘, 舉目四望居然難覓一枚審美和功能上都滿足它的原生鏡頭⋯⋯</p>
-<p><img src="/2024-09/ZfAndMoreLens/ZfGripZM50.avif"></p>
-]]></content>
-      <tags>
-        <tag>Photography</tag>
-        <tag>Gadget</tag>
       </tags>
   </entry>
 </search>
