@@ -10,6 +10,17 @@
         local("iAWriterQuattroV.ttf"),
 }
 
+/* iA-Serif-Bold - latin */
+@font-face {
+    font-family: "iA Serif Bold";
+    font-style: Bolder;
+    font-weight: 800;
+    src: url("../fonts/iASerif-BoldS.woff2");
+    src:
+        local("iA Serif Bold S"),
+        local("iASerif-BoldS.woff2"),
+}
+
 /* Redaction - latin */
 @font-face {
     font-family: "Redaction";
