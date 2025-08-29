@@ -206,9 +206,10 @@ body {
     font-weight: 400;
     font-family:
         "iA Writer Quattro",
-        "Inter",
+        Inter,
         "HYQiHei-45S",
         FZYouHei,
+        "IBM Plex Sans SC",
         "Ten Mincho Antique",
         Source Han Sans SC,
         -apple-system,
@@ -236,7 +237,7 @@ h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family:
-        "Roboto Slab",
+        "Redaction-Bold",
         "DM Serif Display",
         Charter,
         "Bitstream Charter",
