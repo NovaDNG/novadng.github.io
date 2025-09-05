@@ -1,6 +1,6 @@
 /* iA-writer-quattro-variable - latin */
 @font-face {
-    font-family: "iA Writer Quattro";
+    font-family: "iA Writer Quattro V";
     font-style: normal;
     font-weight: 400 900;
     font-display: swap;
@@ -268,7 +268,7 @@ body.darkmode li p code {
 /* blockquote */
 blockquote {
     font-family:
-        "iA Writer Quattro",
+        "iA Writer Quattro V",
         "Inter",
         "HYQiHei-55S",
         FZYouHei,
