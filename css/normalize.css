@@ -106,8 +106,9 @@ strong {
 code,
 kbd,
 samp {
-  font-family: "IBM Plex Mono", monospace; /* 1 */
+  font-family: "IBM Plex Mono", "Cascadia Code", "Fira Code", "iA Writer Mono", "Roboto Mono", monospace; /* 1 */
   font-size: 1em; /* 2 */
+  font-variant-numeric: tabular-nums;
 }
 
 /**
