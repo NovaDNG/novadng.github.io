@@ -4,10 +4,11 @@
     font-style: normal;
     font-weight: 400 900;
     font-display: swap;
-    src: url("../fonts/iAWriterQuattroV.ttf");
+    src: url("../fonts/iAWriterQuattroV.ttf")
+    format("truetype"),
     src:
         local("iA Writer Quattro V"),
-        local("iAWriterQuattroV.ttf"),
+        local("iAWriterQuattroV.ttf");
 }
 
 /* iA-Serif-Bold - latin */
@@ -15,10 +16,11 @@
     font-family: "iA Serif Bold";
     font-style: Bolder;
     font-weight: 800;
-    src: url("../fonts/iASerif-BoldS.woff2");
+    src: url("../fonts/iASerif-BoldS.woff2")
+    format("woff2"),
     src:
         local("iA Serif Bold S"),
-        local("iASerif-BoldS.woff2"),
+        local("iASerif-BoldS.woff2");
 }
 
 /* Redaction - latin */
