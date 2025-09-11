@@ -3,15 +3,15 @@
     font-family: "iA Writer Quattro V";
     font-style: normal;
     font-weight: 400 900;
-    font-display: swap;
-    src: url("../fonts/iAWriterQuattroV.ttf")
-    format("truetype");
+    /* font-display: swap; */
     src:
-        local("iA Writer Quattro V"),
-        local("iAWriterQuattroV.ttf");
+        local(""),
+        local("iAWriterQuattroV.ttf"),
+        url("../fonts/iAWriterQuattroV.ttf")
+        format("truetype");
 }
 
-/* iA-Serif-Bold - latin */
+/* iA-Serif-Bold - latin
 @font-face {
     font-family: "iA Serif Bold";
     font-style: Bolder;
@@ -21,7 +21,7 @@
     src: 
         local("iA Serif Bold S"),
         local("iASerif-BoldS.woff2");
-}
+} */
 
 /* Redaction - latin */
 @font-face {
@@ -108,12 +108,12 @@
             format("svg"); /* Legacy iOS */
 }
 
-/* html {
+html {
     overflow: auto;
-} */
+} 
 
 img {
-    max-width: 120%;
+    max-width: 100%;
     -webkit-box-shadow: 0 6px 12px
         rgba(80, 0, 0, 0.16);
     -moz-box-shadow: 0 6px 12px
