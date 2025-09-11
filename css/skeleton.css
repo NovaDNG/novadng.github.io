@@ -62,7 +62,7 @@
     }
 
     .three.columns {
-        width: 20%;
+        width: 22%;
     }
 
     .four.columns {
@@ -74,7 +74,7 @@
     }
 
     .six.columns {
-        width: 64%;
+        width: 48%;
     }
 
     .seven.columns {
@@ -86,7 +86,7 @@
     }
 
     .nine.columns {
-        width: 80%;
+        width: 96%;
     }
 
     .ten.columns {
@@ -193,10 +193,6 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
     font-size: 62.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
 }
 
 body {
@@ -234,8 +230,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
     font-family:
         "Redaction-Bold",
         "DM Serif Display",
@@ -636,6 +632,7 @@ hr {
     display: table;
     clear: both;
 }
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
