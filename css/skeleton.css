@@ -202,7 +202,6 @@ body {
     font-weight: 400;
     font-family:
         "iA Writer Quattro V",
-        Inter,
         "HYQiHei-45S",
         FZYouHei,
         "IBM Plex Sans SC",
@@ -234,10 +233,8 @@ h6 {
     margin-bottom: 2.5rem;
     font-family:
         "Redaction-Bold",
-        "DM Serif Display",
         "EB Garamond",
         Charter,
-        "Bitstream Charter",
         "HYXuanSong",
         "FZYouSongJ GBK",
         "Ten Mincho",
