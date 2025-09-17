@@ -11,18 +11,6 @@
         format("truetype");
 }
 
-/* iA-Serif-Bold - latin
-@font-face {
-    font-family: "iA Serif Bold";
-    font-style: Bolder;
-    font-weight: 800;
-    src: url("../fonts/iASerif-BoldS.woff2")
-    format("woff2");
-    src: 
-        local("iA Serif Bold S"),
-        local("iASerif-BoldS.woff2");
-} */
-
 /* Redaction - latin */
 @font-face {
     font-family: "Redaction";
@@ -59,54 +47,46 @@
 }
 
 /* dm-serif-display-regular - latin */
-@font-face {
+/*@font-face {
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/dm-serif-display-v4-latin-regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/dm-serif-display-v4-latin-regular.eot");
     src:
         local("DM Serif Display Regular"),
         local("DMSerifDisplay-Regular"),
         url("../fonts/dm-serif-display-v4-latin-regular.eot?#iefix")
         format("embedded-opentype"),
-        /* IE6-IE8 */
         url("../fonts/dm-serif-display-v4-latin-regular.woff2")
         format("woff2"),
-        /* Super Modern Browsers */
         url("../fonts/dm-serif-display-v4-latin-regular.woff")
         format("woff"),
-        /* Modern Browsers */
         url("../fonts/dm-serif-display-v4-latin-regular.ttf")
         format("truetype"),
-        /* Safari, Android, iOS */
         url("../fonts/dm-serif-display-v4-latin-regular.svg#DMSerifDisplay")
-        format("svg"); /* Legacy iOS */
-}
+        format("svg");
+} */
 
 /* inter-regular - latin */
-@font-face {
+/* @font-face {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-variant: tabular-nums;
-    src: url("../fonts/inter-v2-latin-regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/inter-v2-latin-regular.eot");
     src:
         local(""),
         url("../fonts/inter-v2-latin-regular.eot?#iefix")
             format("embedded-opentype"),
-        /* IE6-IE8 */
             url("../fonts/inter-v2-latin-regular.woff2")
             format("woff2"),
-        /* Super Modern Browsers */
             url("../fonts/inter-v2-latin-regular.woff")
             format("woff"),
-        /* Modern Browsers */
             url("../fonts/inter-v2-latin-regular.ttf")
             format("truetype"),
-        /* Safari, Android, iOS */
             url("../fonts/inter-v2-latin-regular.svg#Inter")
-            format("svg"); /* Legacy iOS */
-}
+            format("svg"); 
+} */
 
 html {
     overflow: auto;
