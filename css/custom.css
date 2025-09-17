@@ -5,7 +5,7 @@
     font-weight: 400 900;
     /* font-display: swap; */
     src:
-        local(""),
+        local("iA Writer Quattro V"),
         local("iAWriterQuattroV.ttf"),
         url("../fonts/iAWriterQuattroV.ttf")
         format("truetype");
@@ -34,6 +34,16 @@
             format("woff2"); /* Super Modern Browsers */
 }
 
+/* Redaction Italic - latin */
+@font-face {
+    font-family: "Redaction-Italic";
+    font-style: italic;
+    font-weight: 400;
+    src:
+        local("Redaction-Italic"),
+        url("../fonts/Redaction-Italic.woff2")
+            format("woff2"); /* Super Modern Browsers */
+}
 /* Plex Mono - latin */
 @font-face {
     font-family: "IBM Plex Mono";
@@ -41,7 +51,7 @@
     font-weight: 400;
     src:
         local("IBM Plex Mono"),
-        local("IBMPlexMono"),
+        local("IBMPlexMono-regular.otf"),
         url("../fonts/IBMPlexMono-Regular.woff2")
             format("woff2"); /* Super Modern Browsers */
 }
