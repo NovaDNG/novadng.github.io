@@ -320,13 +320,15 @@ a:not(.icon) {
     text-decoration-thickness: 2px;
     background-size: 100% 200%;
     transition: background-position 0.2s
-        ease-in-out;
+        ease-out;
 }
 
 a:hover:not(.icon),
 a:focus:not(.icon) {
     background-position: 0 100%;
     color: #e9e6e2;
+    transition: all 0.33s
+        ease-out;
 }
 
 /* a:hover {
