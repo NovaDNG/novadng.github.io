@@ -146,23 +146,52 @@
       <div onclick=setDarkMode(true) id="darkBtn">✶</div>
       <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
       <script >
-        if (localStorage.getItem('preferredTheme') == 'dark') {
-          setDarkMode(true)
-        }
-        function setDarkMode(isDark) {
-          var darkBtn = document.getElementById('darkBtn')
-          var lightBtn = document.getElementById('lightBtn')
-          if (isDark) {
-            lightBtn.style.display = "block"
-            darkBtn.style.display = "none"
-            localStorage.setItem('preferredTheme', 'dark');
-          } else {
-            lightBtn.style.display = "none"
-            darkBtn.style.display = "block"
-            localStorage.removeItem('preferredTheme');
-          }
-          document.body.classList.toggle("darkmode");
-        }
+ (function () {
+  var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function applyTheme(isDark) {
+    var darkBtn = document.getElementById('darkBtn');
+    var lightBtn = document.getElementById('lightBtn');
+
+    // Apply body class deterministically
+    document.body.classList.toggle('darkmode', isDark);
+
+    // Toggle button visibility using the existing `hidden` class
+    if (darkBtn && lightBtn) {
+      if (isDark) {
+        lightBtn.classList.remove('hidden');
+        darkBtn.classList.add('hidden');
+      } else {
+        lightBtn.classList.add('hidden');
+        darkBtn.classList.remove('hidden');
+      }
+    }
+  }
+
+  // Expose a stable setter for user clicks (pins preference)
+  window.setDarkMode = function (isDark) {
+    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
+    applyTheme(isDark);
+  };
+
+  function initTheme() {
+    var stored = localStorage.getItem('preferredTheme');
+    if (stored === 'dark') return applyTheme(true);
+    if (stored === 'light') return applyTheme(false);
+    // No stored preference: follow system
+    return applyTheme(media.matches);
+  }
+
+  // Live update when following system (no stored preference)
+  media.addEventListener('change', function (e) {
+    if (!localStorage.getItem('preferredTheme')) {
+      applyTheme(e.matches);
+    }
+  });
+
+  // Initial paint
+  initTheme();
+})();
       </script>
     </h1>
   </div>

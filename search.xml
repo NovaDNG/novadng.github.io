@@ -323,32 +323,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN ⸺ LM-EA9, 邪道的终点</title>
-    <url>/2022-09/LM-EA9/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
-<p>一直以来我都在追求着小型的镜头, 而正如<a href="/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
-<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
-<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
-<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 ⸺ 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
-<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
-<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
-<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
-<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 ⸺ 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
-<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ⸺  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>琴凳上的吟遊詩人 ⸺ 酔シグレ簡介</title>
     <url>/2025-03/Minstrel-Yoishigure/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
@@ -486,34 +460,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN ⸺ Pen F 避坑指南</title>
-    <url>/2022-05/Pen-F-pitfalls/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-05/Pen-F-pitfalls/r-d1-df--pen-f_52087660201_o.avif"></p>
-<blockquote>
-<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
-</blockquote>
-<p>我对 Micro 4&#x2F;3 系统的印象其实一直不怎么样 ⸺ 在 2013~14 年间父上大人曾经使用过一台松下 G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯 E-M1. 在我的认知中 G3 和 E-M1 这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的 APS-C 入门单反小很多, 但彼时 M43 系统的缺点依然十分明显 ⸺ 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
-<p>时间推进到 2016 年, 我手头上已经有了 Df 和 X100T 两台机器, 因此基本不再关心新发布的相机了. 然而 Pen-F 的发布还是给我留下了深刻的印象 ⸺ 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C 相机的前提下再购入M4&#x2F;3 系统, 所以便没有考虑购入. </p>
-<p>又过了这么多年, 如今已经是 2022 年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的 OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购买 Pen-F 的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师的 ASMR</a> 时的冲动消费, 并没有什么特别的理由. </p>
-<p>拿到 Pen-F 并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了 2022 年, Pen-F 那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的 Df 和 α7C, Pen-F 除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍 Pen-F 的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被 Pen-F 性感身姿诱惑的潜在购买者指明一些坑.</p>
-<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管 Pen-F 有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调整 ISO 和白平衡的方式 (Df 有 ISO 盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄 JPEG 的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 ⸺ 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
-<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了 EVF 旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成 ISO&#x2F;快门速度拨盘算了. </p>
-<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用 Pen-F 之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对 Pen-F 的期望值. 实际到手之后我很快发现了一个问题: 我转接了 VM 50&#x2F;1.5 给 Pen-F 使用, 由于半幅裁切基本上已经相当于 100mm 等效, 在对焦时如果不开防抖会受到很大影响; 然而 Pen-F 的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
-<p><img src="/2022-05/Pen-F-pitfalls/pen-f-w-vm-5015_52087906959_o.avif"></p>
-<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动 ISO&#x2F;快门速度策略并不能设置为降低快门速度换取低 ISO, 导致 P&#x2F;A&#x2F;S 模式下这防抖模式很难体现出优势, 我甚至关闭了自动 ISO ⸺ 实话说 Pen-F 的画面细腻度确实不高, 如果放大到 200% 即使在 ISO 200 (最低原生 ISO) 时暗部都有一些噪点, 这表现甚至还不如我的 R-D1. 相比之下索尼在菜单里提供了自动 ISO 策略调整可以让用户降低快门速度换取低 ISO, 使用时感受就比奥林巴斯好上许多.  </p>
-<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接 M 口手动头使用, 但是我也同时购入了一枚二手松下 15&#x2F;1,7 作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在 Df, X100T, GR 和 α7C 上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的 AFL 按钮, Pen-F 却没有这么一个方便的按钮.</p>
-<p><img src="/2022-05/Pen-F-pitfalls/pen-f-back_52095381440_o.avif"></p>
-<p>后拨轮附近的几个按钮里 Fn1 太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是 Pen-F 就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
-<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F 的电池容量只有 1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数 EVF 的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数 EVF, Pen-F 的续航才会变成比较正常的状态. </p>
-<p>和续航相关还有一个问题: 如果系统设置里启用了自动 EVF&#x2F;屏幕切换, 那么即使用户合上了屏幕, 眼睛离开 EVF 的时候 EVF 也会熄灭, 此时任何操作都是无效的, 不能像 α7C 那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
-<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了 threaded 的尼康 Df 和富士 X100 系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1 虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
-<p><img src="/2022-05/Pen-F-pitfalls/olympus-pen-f_52081318447_o.avif"></p>
-<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 安装在索尼&#x2F;尼康等其他相机热靴上时均无法启用, 着实非常可惜.</p>
-<p>Pen-F 对 SD 卡的读写速度体感非常慢, 同一张卡 Pen-F 拍摄和删除照片的速度都比 Df&#x2F;α7C 慢很多 (尚未在 GR 上测试同一张卡, 但估计也是比 GR 慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对 SD 卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为 Pen-F 的 UI 导致了这种迟缓. </p>
-<p>顺便, 如果你在使用索尼的 ToughCard, 你会发现 Pen-F 的卡槽和 ToughCard 结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
-<p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15&#x2F;1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
-<hr>
-<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
+    <title>Photography is FUN ⸺ LM-EA9, 邪道的终点</title>
+    <url>/2022-09/LM-EA9/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是 Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的 Voigtländer 近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对于 Helliar 40&#x2F;2.8 而言这就是它唯一的对焦手段了. 这使得我的 Helliar 40&#x2F;2.8 一直处于一个有些尴尬的状态. </p>
+<p>这种状态一直持续到我看到 TechArt 正式发布了新的自动对焦转接环, 今天的主角 <a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于 E 卡口的开放性, TechArt Pro 已经做过 M-E 自动对焦环了, 但是上一代 LM-EA7 依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比 Voigtländer 近摄环要大多少了. </p>
+<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 ⸺ 它居然需要依靠 <strong>Micro-USB</strong> 数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的 DualShock 4 数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的 Voigtländer 近摄环和 R-D1s 都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在 LM-EA9 上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
+<p>首先它的对焦并不是完全线性的 (比起原生 E 口自动对焦镜头, 比如 40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康 AF-D 镜头.  </p>
+<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>体感上, 它对焦的速度也挺接近那些 AF-D 时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt 官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用 LM-EA9 自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换 AF&#x2F;MF 快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
+<p>另外的注意事项就是光圈设置. 因为 LM-EA9 并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为 f&#x2F;2 时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的 EXIF 信息里全部都会显示拍摄光圈为 f&#x2F;2. </p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C 因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的 Voigtländer 初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少 LM-EA9 需要移动的距离, 提升对焦速度. </p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何 FLE (浮动对焦组) 镜头, 那么 LM-EA9 很有可能会对画质产生负面影响. 而我手头没有任何 FLE 镜头, 所以自然完全无需担心了. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 ⸺ 至少比起没有电子部件的近摄环. 我用它拍了大概 400 张左右的照片就用掉了 α7C 一半的电量, 而相较之下近摄环拍 800 多张才消耗掉近半电量. 我还没试过用 40&#x2F;2.5G 或者 90&#x2F;2.8 DGDN 拍那么多照片, 以后有机会的话会试试看. </p>
+<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ⸺  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过 TechArt 后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -565,6 +530,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Photography is FUN ⸺ Pen F 避坑指南</title>
+    <url>/2022-05/Pen-F-pitfalls/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-05/Pen-F-pitfalls/r-d1-df--pen-f_52087660201_o.avif"></p>
+<blockquote>
+<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
+</blockquote>
+<p>我对 Micro 4&#x2F;3 系统的印象其实一直不怎么样 ⸺ 在 2013~14 年间父上大人曾经使用过一台松下 G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯 E-M1. 在我的认知中 G3 和 E-M1 这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的 APS-C 入门单反小很多, 但彼时 M43 系统的缺点依然十分明显 ⸺ 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
+<p>时间推进到 2016 年, 我手头上已经有了 Df 和 X100T 两台机器, 因此基本不再关心新发布的相机了. 然而 Pen-F 的发布还是给我留下了深刻的印象 ⸺ 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C 相机的前提下再购入M4&#x2F;3 系统, 所以便没有考虑购入. </p>
+<p>又过了这么多年, 如今已经是 2022 年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的 OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购买 Pen-F 的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师的 ASMR</a> 时的冲动消费, 并没有什么特别的理由. </p>
+<p>拿到 Pen-F 并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了 2022 年, Pen-F 那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的 Df 和 α7C, Pen-F 除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍 Pen-F 的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被 Pen-F 性感身姿诱惑的潜在购买者指明一些坑.</p>
+<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管 Pen-F 有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调整 ISO 和白平衡的方式 (Df 有 ISO 盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄 JPEG 的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 ⸺ 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
+<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了 EVF 旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成 ISO&#x2F;快门速度拨盘算了. </p>
+<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用 Pen-F 之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对 Pen-F 的期望值. 实际到手之后我很快发现了一个问题: 我转接了 VM 50&#x2F;1.5 给 Pen-F 使用, 由于半幅裁切基本上已经相当于 100mm 等效, 在对焦时如果不开防抖会受到很大影响; 然而 Pen-F 的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
+<p><img src="/2022-05/Pen-F-pitfalls/pen-f-w-vm-5015_52087906959_o.avif"></p>
+<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动 ISO&#x2F;快门速度策略并不能设置为降低快门速度换取低 ISO, 导致 P&#x2F;A&#x2F;S 模式下这防抖模式很难体现出优势, 我甚至关闭了自动 ISO ⸺ 实话说 Pen-F 的画面细腻度确实不高, 如果放大到 200% 即使在 ISO 200 (最低原生 ISO) 时暗部都有一些噪点, 这表现甚至还不如我的 R-D1. 相比之下索尼在菜单里提供了自动 ISO 策略调整可以让用户降低快门速度换取低 ISO, 使用时感受就比奥林巴斯好上许多.  </p>
+<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接 M 口手动头使用, 但是我也同时购入了一枚二手松下 15&#x2F;1,7 作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在 Df, X100T, GR 和 α7C 上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的 AFL 按钮, Pen-F 却没有这么一个方便的按钮.</p>
+<p><img src="/2022-05/Pen-F-pitfalls/pen-f-back_52095381440_o.avif"></p>
+<p>后拨轮附近的几个按钮里 Fn1 太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是 Pen-F 就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
+<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F 的电池容量只有 1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数 EVF 的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数 EVF, Pen-F 的续航才会变成比较正常的状态. </p>
+<p>和续航相关还有一个问题: 如果系统设置里启用了自动 EVF&#x2F;屏幕切换, 那么即使用户合上了屏幕, 眼睛离开 EVF 的时候 EVF 也会熄灭, 此时任何操作都是无效的, 不能像 α7C 那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
+<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了 threaded 的尼康 Df 和富士 X100 系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1 虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
+<p><img src="/2022-05/Pen-F-pitfalls/olympus-pen-f_52081318447_o.avif"></p>
+<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 安装在索尼&#x2F;尼康等其他相机热靴上时均无法启用, 着实非常可惜.</p>
+<p>Pen-F 对 SD 卡的读写速度体感非常慢, 同一张卡 Pen-F 拍摄和删除照片的速度都比 Df&#x2F;α7C 慢很多 (尚未在 GR 上测试同一张卡, 但估计也是比 GR 慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对 SD 卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为 Pen-F 的 UI 导致了这种迟缓. </p>
+<p>顺便, 如果你在使用索尼的 ToughCard, 你会发现 Pen-F 的卡槽和 ToughCard 结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
+<p>虽然奥林巴斯和松下都是 M43 联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下的 15&#x2F;1.7 镜头上的光圈环在 Pen-F 上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
+<hr>
+<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的 Pen-F 流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Photography is FUN ⸺ Standard Obsession Ⅲ</title>
     <url>/2024-10/Standard-Obsession-3/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Nikkor-H-Auto-50mm-f-2"><a href="#Nikkor-H-Auto-50mm-f-2" class="headerlink" title="Nikkor-H Auto 50mm ƒ&#x2F;2"></a>Nikkor-H Auto 50mm ƒ&#x2F;2</h3><p>我知道, 我知道⋯⋯ 我已經有這枚鏡頭的完全上位替代 <a href="/2022-01/Standard-Obsession/">AI Nikkor 50mm ƒ&#x2F;1.8 S</a> 了, 但是⋯⋯ 隨著時間經過, 我愈發認為 AI 風格的塑膠皮對焦環令人難以忍受, 而 Auto 鏡頭的金屬對焦環則越看越順眼⋯⋯ 於是我終於在閒魚上低價購入了這枚差不多 60 歲高齡的老鏡. 這枚鏡頭和我之前買的其他尼康老鏡最大的不同就是, 它是一枚 ｢官改｣ 鏡. </p>
@@ -592,96 +592,6 @@
 <p>要論現代, 這枚 65&#x2F;2 在設計時間上其實早於 90&#x2F;2.8 APO-Skopar, Z 卡口版本雖然於 2022 年推出, 但光學系統和 17 年面世的 E 卡口版本並無區別, 而 90&#x2F;2.8 則是大約 21 年底面世, 光學系統算是全新設計了. 但是 90&#x2F;2.8 的 APO 標打得相對更寬鬆, 在色散以外的部分表現其實普普, 而由於偏長焦也不太便於用來拍攝產品, 而比起傳奇的 Nikkor 105&#x2F;2.5 她又並無太多的個性可言, 所以在我手上一直是冷宮狀態. </p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720320622733" title="Macro Apo Lanthar 65/2"><img src="https://live.staticflickr.com/65535/54023309174_6e59ab555d_b.jpg" alt="Macro Apo Lanthar 65/2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>有趣的是雖然它是打著 Macro 旗號買來的鏡頭, 我用它 90% 的情境都是普通距離, 微距的樣片好像一張都找不到⋯⋯ 不過說道微距, 推薦一下維卓仕家的 <a href="https://viltrox.com/products/viltrox-dg-z-brass-bayonet-auto-focus-af-macro-extension-tube-ring-set-12mm-24mm-for-nikon-z6-z7-z50-z-mount-mirrorless-camera">Z 口微距延長環</a>, 這應該是市面上唯一一款帶電子觸點, 這樣能保證我在對焦時能看到合焦提示, 極大提升便利度. 可惜這款延長環的筒身是塑膠製, 手感其實很爛, 卡口雖然官方說是金屬製, 但我怎麼看都覺得像是塑膠鍍上一層金屬漆⋯⋯ 算了, 反正它能做到將 65&#x2F;2 的放大率撐到接近 1:1, 也不貴, 不能要求太多了. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN ⸺ Standard Obsession</title>
-    <url>/2022-01/Standard-Obsession/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>就在不久之前, 我拿到了心心念念的 Voigtlander 40&#x2F;2, 这是我手头第八个 ｢标准焦段｣ 的镜头了 (如果不算 SX-70 的等效 60mm 镜头的话) ⸺ 之前的分别是 Nikkor 50&#x2F;1.8G, Ricoh GR IIIx, Nikkor AI-S 50&#x2F;1.8, Nikkor 45&#x2F;2.8P, Zeiss ZM 50&#x2F;1.5, Helios-44 58&#x2F;2, Pentax 43&#x2F;1.9. 用了这么久这些 ｢标准镜头｣, 我觉得可以写篇文章谈谈他们了. </p>
-<p><img src="/2022-01/Standard-Obsession/pancakes_51759971875_o.avif"></p>
-<p><strong>Disclaimer</strong>: 我不是一个靠摄影吃饭的人, 我对器材的追求基本是乐趣 &gt; 性能, 虽然如果能同时满足两者自然是最好, 但通常需要满足这两者就得加钱, 所以⋯⋯</p>
-<h3 id="AF-S-Nikkor-50mm-f-1-8G"><a href="#AF-S-Nikkor-50mm-f-1-8G" class="headerlink" title="AF-S Nikkor 50mm f&#x2F;1.8G"></a>AF-S Nikkor 50mm f&#x2F;1.8G</h3><p>这是在购买 Df 的时候一同入手的套机头. 这枚 2011 年发布的镜头在我购买 Df 时 (2014 年) 算是非常新的设计了, 各种硬性指标都非常优秀. 前组在大部分时候都深深陷在镜筒中, 被保护得非常好, 绝大多数时候也不需要使用那个附带的笨拙而廉价的遮光罩. 它无言地陪伴我度过了六七年的时光, 经历了各种风吹雨打甚至还有一次摔落 (虽然只有不到半米的高度), 依旧可靠. 全塑料的外壳虽然看起来非常廉价而且非常容易脏, 但是也让它极为轻便. 尽管我现在已经不将它作为挂机镜头了, 它还是在我的包里会有一席之地. </p>
-<p>那么, 既然 50&#x2F;1.8G 这么好, 为什么我会接下来买那么多焦段类似的其他镜头呢? 概括来说的话应该有三点: </p>
-<ul>
-<li>其一, 我对<a href="/2021-03/yearning-for-a-tiny-smartphone/">小设备</a>有着迷之执着 ⸺ 然而在尼康单反上追求小好像从根本上就搞错了什么, 基本上单反比起微单就已经是庞然巨物了, 况且若是追求小当初我应该去买宾得才是, 现在再来后悔感觉也为时已晚⋯⋯ 但是 Df 又是唯一一台有着复古外观 + 操作方式的全画幅数码单反, 我还是非常喜欢它的. </li>
-<li>其次, 50&#x2F;1.8G 是一枚几乎没有个性的镜头 ⸺ 现代先进的光学设计基本抹去了所有可能出现的光学问题, 在成像几乎完美的同时也使得它几乎没有任何个性. 当然很多时候 ｢个性｣ 从现实的角度上来说其实都是光学缺陷, 但我们应该扬长避短而不是认为光学缺陷就是世界末日. </li>
-<li>最后, 算前一点的延续, 作为一个摄影爱好者, 我在追求记录时光的同时更想要的是从中寻求乐趣. 50&#x2F;1.8G 在这方面可以说是一枚没有乐趣的镜头 ⸺ 无论是成像还是操作都很无趣. 虽然 Df 机身为摄影提供了不少乐趣, 但我还是想追求更有趣的镜头.</li>
-</ul>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295618346" title="Cambridge tour"><img src="https://live.staticflickr.com/65535/51787672422_8aef1feb10_h.jpg" alt="Cambridge tour"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="AI-Nikkor-50mm-f-1-8S"><a href="#AI-Nikkor-50mm-f-1-8S" class="headerlink" title="AI Nikkor 50mm f&#x2F;1.8S"></a>AI Nikkor 50mm f&#x2F;1.8S</h3><p>在寻找迷你镜头的时候, 我第一个瞄准的就是 AI Nikkor 50mm f&#x2F;1.8S. </p>
-<p><img src="/2022-01/Standard-Obsession/nikon-pancake_51740205140_o.avif"></p>
-<p>在尼康的官方网站上有一个很有趣的专栏叫 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/index.html">｢尼克尔镜头的一千零一夜｣</a>, 其中就<a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0060/">介绍</a>了这枚非常小巧精致的镜头. 从光学的角度来看它算是 50&#x2F;1.8G 的父辈, 但是没有自动对焦系统和省去了 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0063/">｢必要之恶｣</a>, 它的体积比起 50&#x2F;1.8G 要小得多: </p>
-<p><img src="/2022-01/Standard-Obsession/5018g-5018s-4528p_51788971709_o.avif"></p>
-<p>↑ 如前文所说变得脏兮兮的 50&#x2F;1.8G, 用酒精棉都擦不干净, 是塑胶本身白化了</p>
-<p>虽然没有使用非球面镜片, 但是相对先进的光学设计带来了小巧的整体结构 ⸺ 仅仅 <strong>27mm</strong> 的厚度, 而且在保证了较大光圈的前提下全开时相比 50&#x2F;1.8G 并没有太大差距, 可用性极高. 而全金属的镜筒在手感上比全塑料的 50&#x2F;1.8G 好上十万八千里, 尤其是顺滑的对焦环更是令人爱不释手. </p>
-<p>这枚镜头在当时作为推广入门级单反相机的伴生物 (Nikon 50mm f&#x2F;1.8 Series E, 光学性能上只有镀膜有区别, 外壳换成了全塑料), 价格极其便宜, 由于产量巨大的关系存世量也极多, 属于便宜大碗的好镜头, 某种程度上我甚至想推荐所有尼康单反用户都入手一枚 ⸺ 不过话虽如此, 老 AI-S 镜头和很多非旗舰机身都不兼容了, 如今它的实用价值确实日渐式微. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295624370" title="AI Nikkor 50/1.8S"><img src="https://live.staticflickr.com/65535/51790435845_248d954245_h.jpg" alt="AI Nikkor 50/1.8S"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>可惜我的这枚镜头在入手时光圈环就有些运作不畅, 经常会卡在一个近似 f&#x2F;1.9 的位置, 导致 bokeh 产生奇怪的裁切, 不久前送修去了. 购买二手老头难免会遇到这样的状况, 只能说能去线下亲自摸一回的话可以避免很多这样的小问题. </p>
-<h3 id="AI-Nikkor-45mm-f-2-8P"><a href="#AI-Nikkor-45mm-f-2-8P" class="headerlink" title="AI Nikkor 45mm f&#x2F;2.8P"></a>AI Nikkor 45mm f&#x2F;2.8P</h3><p>比起海量生产, 便宜大碗的 50&#x2F;1.8S, 这枚伴随着一台传说级别的机身 — FM3A — 而诞生的 45&#x2F;2.8P 就相对来说没那么广为人知了. 我手上的 Df 在设计上有很多继承自 FM3A 的元素, 这也是让我觉得 45&#x2F;2.8P 会是一个绝配的因素. </p>
-<p><img src="/2022-01/Standard-Obsession/nikon-df_51738486367_o.avif"></p>
-<p>这镜头本体比 50&#x2F;1.8S 还要更薄, 真的是不折不扣的 pancake lens 了. 虽然不知道为什么尼康研发部门在已经有 50&#x2F;1.8S 这个可以说极致轻薄的镜头的情况下还要再花费心思研发一款新的轻薄镜头⋯⋯ 难道是因为 1997 年时宾得推出了比 50&#x2F;1.8S 薄 0.5mm, 光学素质更好, 而且还带自动对焦的 FA 43mm f&#x2F;1.9 Limited? (笑) 尼康自己的开发人员也在一千零一夜里如此打趣: </p>
-<blockquote>
-<p>重厚長大のイメージのあるニッコールレンズだが <a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">¹</a></p>
-</blockquote>
-<p>直译就是尼克尔镜头总是给人留下又重又厚又长又大的印象 ⸺ 很不幸的是时至今日除了 ｢重｣ 这一点因为换用了全塑料镜筒有所改善 (以牺牲了手感为代价), 另外三点毫无改善. 这时再看 45&#x2F;2.8P 就显得有些无奈又好笑了. </p>
-<p>抛开历史和现实来看 45&#x2F;2.8P, 这枚镜头无疑是非常有特色的: 它只有令人惊讶的 <strong>17mm</strong> 厚, 而为了保证对焦环手感, 镜筒基本直接被对焦环和光圈环一分为二, 导致它的装卸体验十分糟糕 (这点上 Voigtlander 40&#x2F;2 就取得了更好的平衡, 下文会提到); 它在全开光圈的状态下画面中心分辨率相当可靠, 越靠近边缘则毫无意外地有些劣化, 而它光学上最大的弱点应该是彗差严重 ⸺ 但这反而可以说是一种很有味道的特色, 只要你不试图用它来全开光圈拍建筑或者风光, 这个问题其实很难被注意到. f&#x2F;2.8 的最大光圈其实对对焦准确度相对宽容, 虽然焦外的柔化也因此变得不那么强烈, 但是配合手感上佳的对焦环操作, 使用体验还是非常优秀的. </p>
-<p>45&#x2F;2.8P 的另一大特色就是那形状奇异的遮光罩了. 尼康自己的开发者戏称它为 ｢藤壶遮光罩｣ (フジツボフード<a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">¹</a>), 着实准确. 这个遮光罩允许我在大部分时间不使用镜头盖而不担心镜头前组镜片受到污染, 又几乎没有增加多少体积. </p>
-<p><img src="/2022-01/Standard-Obsession/nikon-pancake_51739953379_o.avif"></p>
-<p>有趣的是, 由于和 Voigtlander 40&#x2F;2 口径相同, 这两枚镜头可以互换遮光罩, 也导致 45&#x2F;2.8P 可以顺带使用 Voigtlander 40&#x2F;2 的近摄镜, 让它具有了一定程度的近摄能力: </p>
-<p><img src="https://live.staticflickr.com/65535/51791796840_6cd7fb9d4a_h.jpg" alt="45/2.8P _gallery &lt;"></p>
-<p><img src="https://live.staticflickr.com/65535/51791430244_6f1514d028_h.jpg" alt="45/2.8P w/ closeup lens _gallery &gt;"></p>
-<p>当然, 其实 50&#x2F;1.8S 也可以用 40&#x2F;2 的遮光罩和近摄镜, 这三枚镜头的滤镜口径都是 52mm, 混搭配件也是乐趣无穷. 眼尖的读者应该已经看出来了, 我给 50&#x2F;1.8S 默认搭配的天光滤镜就是原本搭配 45&#x2F;2.8P 的银色边框款. </p>
-<p><img src="/2022-01/Standard-Obsession/nikkor-4528p_51807804194_o.avif"></p>
-<p>这枚镜头由于存世不久具有一定稀有价值, 价格被炒得有点高, 如果你不是像我一样病态的追求小镜头, 其实是不建议购买的. </p>
-<h3 id="Ricoh-GR-IIIx"><a href="#Ricoh-GR-IIIx" class="headerlink" title="Ricoh GR IIIx"></a>Ricoh GR IIIx</h3><p><img src="/2022-01/Standard-Obsession/gr-iiix-vs-iphone-12-mini_51788433271_o.avif"></p>
-<p>一图胜千言. 在没有任何外置装备的前提下, GR IIIx 这 110×62×35mm 的尺寸可以轻松地装进我的几乎所有普通口袋. 等效 40&#x2F;2.8 的镜头是完全重新设计的, 但是某种程度上又是一种传承. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791877550/in/dateposted/" title="GR0004731-80 sec at f - 2.8"><img src="https://live.staticflickr.com/65535/51791877550_b49013c3ce_h.jpg" alt="GR0004731-80 sec at f - 2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>40mm 对我来说已经可以算是广角了 (等效 35mm 的 X100T 对我来说就是超广角⋯⋯), 足以用来应付我绝大多数日常拍照的需求. 毕竟 ｢手头的相机才是最好的相机｣, 虽然我没有把它带到浴室里, 但自从入手了 GR IIIx 之后每次出门我都必定会带上它. </p>
-<p><img src="/2022-01/Standard-Obsession/gr-iiix-w-pentax-43-finder_51784842727_o.avif"></p>
-<p>实际使用的状态. 宾得的这个 43mm 取景器虽然给它增加了一点高度, 但是放进冬天外套的口袋还是毫无压力的. 外置取景器可以让我不用再盯着屏幕, 而是像使用旁轴相机一样操作 GR IIIx, 极大提升了使用体验. </p>
-<p>GR IIIx 还有一个优点就是极近的最近对焦距离, 可以某种程度地充当微距镜头. 事实上, 前文大部分设备的照片都是由 GR IIIx 拍摄的. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295636512" title="Camera Museum"><img src="https://live.staticflickr.com/65535/51790193352_a56713a87d_b.jpg" alt="Camera Museum"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Zeiss-C-Sonnar-T-1-5-50-ZM"><a href="#Zeiss-C-Sonnar-T-1-5-50-ZM" class="headerlink" title="Zeiss C Sonnar T* 1.5&#x2F;50 ZM"></a>Zeiss C Sonnar T* 1.5&#x2F;50 ZM</h3><p><img src="/2022-01/Standard-Obsession/zeiss-c-sonnar-t-1550-zm_51739950944_o.avif"></p>
-<p>徕卡 M 口本来就不缺各种小巧的镜头了, 无论是本家还是全世界其他光学大厂都为 M 口设计过小巧玲珑的镜头, 而在 50mm 焦段里蔡司这枚 Sonnar 又是其中佼佼者, 55.5×38mm 的体积比徕卡本家的所有大光圈 50mm 镜头都要娇小 ⸺ 虽然我在购买这枚镜头的时候尚不知晓福伦达 <a href="https://www.cosina.co.jp/voigtlander/vm-mount/nokton-vintage-line-50mm-f1-5-aspherical-ii/">Nokton 1:1,5&#x2F;50 II</a> 的存在. </p>
-<p><img src="/2022-01/Standard-Obsession/r-d1s-w-5015-zm_51739543383_o.avif"></p>
-<p>↑ 尽管比福伦达 Nokton 50&#x2F;1.5 II 大了那么一丢丢, 50&#x2F;1.5 ZM 也已经够小巧了</p>
-<p>这枚镜头继承了 1932 年经典的松纳结构, 配上二十一世纪的新材料和镀膜技术, 算是经典重生. 不过毕竟是 90 年前的光学设计, 以今天的眼光来看缺陷其实是很明显的: 它在全开光圈的时候真的很软 (尤其是在无限远时), 即使是画面最中心的部分分辨率和对比度也不算优秀; 然而这也是它的一大特色, 由这光学缺陷造就了优秀的氛围控制. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51738485872/in/album-72177720295596066/" title="Zeiss C Sonnar 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738485872_e162b0ec74_h.jpg" alt="Zeiss C Sonnar 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>这枚镜头的边缘可以说是非常糟糕的, 不过我完全不在意 ⸺ 我的 R-D1s 是 APS-C CCD, 完美规避了边缘严重的暗角､ 分辨率和对比度下降等问题. 在光圈收到 f&#x2F;4 之后, 画面软的问题也基本得到解决, 可以用来拍摄风景和建筑了. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791375393/in/dateposted/" title="Zeiss C Sonnar T* 1.5/50 ZM"><img src="https://live.staticflickr.com/65535/51791375393_a0cbf621ad_h.jpg" alt="Zeiss C Sonnar T* 1.5/50 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>它的另一个特色, 是特殊的光圈叶片形状. 在前面的照片里很容易就可以看出在光圈收缩之后, ZM 50&#x2F;1.5 形成的光圈形状是一个锯盘型, 这个形状也完美地反映到了收缩光圈后的 bokeh 上. 我个人是不太喜欢这种锯盘型的 bokeh, 不过这只是我的个人喜好而已. </p>
-<p>这个镜头还有一个非常邪道的玩法 ⸺ 如果你用它反接, 会得到一个仿佛向外扩散的焦外虚化, 效果非常有趣: </p>
-<p><img src="/2022-01/Standard-Obsession/zeiss-5015-zm-reverse_51785578386_o.avif"></p>
-<p>最后, 这支镜头也是我手头所有手动光圈环的镜头里唯一一个有 1&#x2F;3 光圈档位的镜头, 在只支持整档变换快门速度和 ISO 的 R-D1s 上对于控制精确曝光显得格外方便. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295596066" title="Zeiss 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738489767_c8a2748b6b_h.jpg" alt="Zeiss 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<h3 id="Helios-44-58mm-f-2"><a href="#Helios-44-58mm-f-2" class="headerlink" title="Helios-44 58mm f&#x2F;2"></a>Helios-44 58mm f&#x2F;2</h3><p>这个镜头就真的纯粹是当做玩具收来的了, 毕竟价格真的够便宜, 也很容易就能买到. 关于它的故事在网上已经遍地都是我就不再重复了. 由于光学缺陷而造成强烈的螺旋状焦外为无数爱好者津津乐道, 成片确实十分惊艳. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295613639" title="Helios-44"><img src="https://live.staticflickr.com/65535/51740199705_dd3cfa0ad2_h.jpg" alt="Helios-44"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>↑ Helios-44 的相册</p>
-<p>这枚镜头的光圈控制是由两个光圈环来进行的: 在镜头最前端标有光圈值, 手感非常紧实, 旋转到整档时会有段位感的环是光圈预设环, 旋转它并不会改变镜头当前的光圈; 在它下方没有标注数字, 只有纹路的环则是真正的光圈环, 它完全没有段位感, 旋转它可以在最大光圈和之前预设的光圈之间无级调整. 我一般是把预设光圈放在 f&#x2F;5.6 的状态, 反正实际使用的时候基本都是全开以追求那独特的焦外散景. </p>
-<p>这枚镜头由于在不同时期由不同的工厂生产, 不同批次之间区别还挺大, 某种程度上也产生了一种 Helios-44 版本学<a href="https://www.youtube.com/watch?v=qnJ23-i6bgw" title="The Helios 44-2 Lens Version You should Avoid Buying">²</a>. 我只是纯粹捡便宜货好玩, 也不敢说自己对此有多么了解, 但是这些不同版本的 Helios-44 据我了解光学性能应该都十分类似, 最多就是后期版本镀膜可能有所变化和光圈叶片数量不同而已. 当然另一个问题就是这些 Helios-44 的成色大多十分糟糕, 成色好的则被炒得价格奇高, 失去了它作为玩具的价值. </p>
-<h3 id="SMC-Pentax-L-1-1-9-43mm-Special"><a href="#SMC-Pentax-L-1-1-9-43mm-Special" class="headerlink" title="SMC Pentax-L 1:1,9 43mm Special"></a>SMC Pentax-L 1:1,9 43mm Special</h3><p>某种意义上算是一枚邪典镜头? 曾经是单反上最小体积下画质最好的 FA 43&#x2F;1.9 Limited 被做成螺口特别版之后既失去了自动对焦, 体积上的优势也荡然无存, 尽管光学上依然是十分优异的, 但是整个镜头的存在意义变得十分迷幻, 在网上也几乎找不到相关的资料. 坊间留下的传闻基本都是因为宾得本来就喜欢做各种 ｢限定｣､ ｢特别｣ 镜头, 当时饱受好评的 FA 43&#x2F;1.9 自然逃不过特别版的魔爪, 于是就有了这支十分迷幻的 43 special. </p>
-<p><img src="/2022-01/Standard-Obsession/dsc_14811-160-sec-at-f---20_51755586713_o.avif"></p>
-<p>这镜头的镜筒设计和普通的徕卡镜头并无区别, 对焦环的指柄弧面手感十分舒适, 对焦环本身顺滑平稳, 对焦手感上佳, 在 R-D1s 的 APS-C 传感器上等效 65mm 也更接近标准焦段的效果. 但这枚镜头附赠的镜头盖是螺口镜头盖, 平常使用十分不便, 我基本都是把镜头盖单独丢在包里的口袋, 用一枚紫外滤镜来充作镜头保护. 和徕卡的 Summicron 50 类似, 它也有内置的遮光罩, 但是这个遮光罩的拉出手感与徕卡比就相去甚远, 略显生涩. </p>
-<p>还有一个可能逼死强迫症的问题是, 使用 L39 to M mount 转接环把这枚镜头转接到 R-D1s 上的时候, 完全拧紧后镜头刻度的位置并不是朝着 12 点方向的, 而是在一个 11 点左右的位置, 如果说视觉上的观感还算可以接受的话, 由此导致的对焦拨杆的默认位置和其他 M 口镜头有所偏移, 实在是非常难以接受了⋯⋯ </p>
-<p><img src="/2022-01/Standard-Obsession/r-d1s_51792613841_o.avif"></p>
-<p>这个镜头还附赠了一个 43&#x2F;50mm 线框的取景器, 就是之前我放在 GR IIIx 上的那个. 虽然它并不是专为 GR IIIx 设计的, 但是它们搭配起来却莫名合拍, 所以我现在就直接把它挂在 GR IIIx 上用了. </p>
-<p><img src="/2022-01/Standard-Obsession/4350-finder_51791678937_o.avif"></p>
-<h3 id="Voigtlander-40mm-f-2-SL-II"><a href="#Voigtlander-40mm-f-2-SL-II" class="headerlink" title="Voigtlander 40mm f&#x2F;2 SL II"></a>Voigtlander 40mm f&#x2F;2 SL II</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295635305" title="Pentax 43/1.9 L Special"><img src="https://live.staticflickr.com/65535/51791054678_3122d1e24d_h.jpg" alt="Pentax 43/1.9 L Special"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>一枚在迷你身材和优异画质两个领域都取得夺目成就的镜头. 它的体积介于尼康的 50&#x2F;1.8S 与 45&#x2F;2.8P 之间 ⸺ <strong>24.5mm</strong>, 而它的光学素质远在 45&#x2F;2.8P 之上, 比 50&#x2F;1.8S 也好上不少, 虽然不如 50&#x2F;1.8S 那么便宜但也还算是不错的价格, 简直是一枚完美的镜头. 可惜不知道确善能脑子哪根筋搭错了, 几年前停产了这款镜头, 上线了一款光学结构相同 (据我所知应该是) 但是体积增大不少 (厚度变成了 37.5mm) 的新款, 让我有点担心这枚镜头以后会开始涨价. </p>
-<p><img src="/2022-01/Standard-Obsession/gr0003471-80-sec-at-f---28_51755586693_o.avif"></p>
-<p>这镜头在结构上更接近 50&#x2F;1.8S, 光圈环和对焦环之间有一条纤细带纹路的固定结构, 这使得它的装卸手感比 45&#x2F;2.8P 要好得多. </p>
-<p><img src="/2022-01/Standard-Obsession/nikon-df-w-voigtlander-402_51807443911_o.avif"></p>
-<p>这枚镜头采用了一枚双面非球面镜片, 各种像差都得到了不错的修正, 除了全开光圈在对焦无限远时分辨率略有些下降之外, 基本可以说是完美的 ⸺ 就连全开光圈时的画面边缘都相当锐利, 细节丰富. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791020833/in/album-72177720295637523/" title="DSC_15031-160 sec at f - 2.0"><img src="https://live.staticflickr.com/65535/51791020833_1acf6e4df6_h.jpg" alt="DSC_15031-160 sec at f - 2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>它唯一的缺陷, 或者说特色, 却也正是由这枚非球面镜片引起: 它的 bokeh 有非常明显的 ｢洋葱圈｣. 只要画面中出现 bokeh, 洋葱圈就相当明显, 觉得它是特色还是缺陷就看个人爱好了. 就我个人来说洋葱圈是比 ZM 50&#x2F;1.5 的锯盘要容易接受. </p>
-<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791282894/in/album-72177720295637523/" title="w/ closeup filter ƒ/2.0"><img src="https://live.staticflickr.com/65535/51791282894_9277e0db6f_h.jpg" alt="w/ closeup filter ƒ/2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>但是它在光圈上还有一个优点: 它有着独特的光圈叶片设计, 让它在 f&#x2F;5.6 时也可以呈现圆形光圈, 如果你对圆形 bokeh ball 有奇怪的追求的话, 这枚镜头应该会非常对你的胃口. </p>
-<p><img src="/2022-01/Standard-Obsession/voigtlander-402_51806487157_o.avif"></p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>以上就是我目前收集的 ｢标准镜头｣ 们了, 如果还有机会的话我希望可以买一个福伦达的 Nokton 50&#x2F;1.5 VM, 不过这个需求并没有很强烈, 不知何时才会成真. </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -1025,102 +935,93 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 2025 (六月篇) Part Ⅰ</title>
-    <url>/2025-06/TripToTokyo2025JunPart1/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart1/Skyline.avif"></p>
-<p>就像<a href="/2025-03/TripToTokyo2025Part3/">上次遊記</a>的結尾中提到的那樣, <a href="/2025-03/Minstrel-Yoishigure/">香音老師</a>的 <a href="https://yoishigure2021.fanbox.cc/posts/9507490">Fanbox Live</a> 如期於六月八日舉辦, 我也以此為契機再次來到了東京. 比起前兩次, 這次除開出發到達在東京停留的時間就只有四天, 好在幸運女神眷顧, 有很多在此期間舉辦的活動, 而且奇蹟般地時間上並無衝突, 所以比起上次一週多的悠閒遊玩, 這次可以說是馬不停蹄地連軸轉, 對於身體和精神都有點考驗. </p>
-<p>相機與鏡頭的攜帶上, 本次我完全放棄了 F 單反, 改成了三機四鏡的配置 ⸺ Zƒ 裝著 TZM-02, 與 R-D1s 和 Hexar RF 共用三枚 M 鏡頭: 星耀 28mm ƒ&#x2F;2.8 餅乾廣角, 福倫達 35mm ƒ&#x2F;1.5 VM 小廣角與福倫達 90mm ƒ&#x2F;2 VM 中長焦. 這幾枚鏡頭都極為小巧, 讓我即使同時揹著三機三鏡在東京漫步也絲毫不覺得肩上有壓力. 不過為了應付潛在的拍攝風光需求, 我還是帶上了新入手的蔡司 15mm ƒ&#x2F;2.8 以備不測, 事實證明這是最大的錯誤決定, 要是換成福倫達 21mm ƒ&#x2F;4 P 就好了⋯⋯ 至於緣由, 估計到 part Ⅲ 裡就會說明.</p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/202506loadout.avif" alt="下次就帶這些"></p>
-<h3 id="Day-0-六月五日-星期四-成田-南麻布"><a href="#Day-0-六月五日-星期四-成田-南麻布" class="headerlink" title="Day 0, 六月五日, 星期四, 成田 - 南麻布"></a>Day 0, 六月五日, 星期四, 成田 - 南麻布</h3><p><img src="/2025-06/TripToTokyo2025JunPart1/15mmStreetview.avif"></p>
-<p>這次選擇了直飛成田的航班, 省去了浪費在轉機上的時間, 但成田去市區的快速列車半小時左右才發車一班, 在海關大排長龍後等到快五點我才到達住處. 話雖如此, 這也比前兩次雖然落地羽田但都在晚上十點過後才到達住處要早太多了. 因為不想浪費太多時間和金錢在通勤上, 這次我沒有選擇和前兩次一樣住在立會川, 而是選擇了離市中心更近的南麻布. 挑選住處時雖然完全沒注意到, 但這地方比我想象中的更接近市中心, 不但可以從天台近距離觀賞到東京塔, 距離慶應義塾大學大概就只有十分鐘的腳程, 巴士和電車通勤也無比方便, 可以說位置絕佳了. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/TokyoTowerNightView.avif" alt="從屋頂眺望東京塔 _gallery &lt;"></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/koboji.avif" alt="弘法寺 _gallery &gt;"></p>
-<p>安頓好行李後我就興致勃勃地帶上相機去天台拍東京塔, 緊接著趁著太陽尚有餘暉去慶大散步. 慶大的面積不算寬廣, 體感和 UCA 相距不遠, 繞行一圈不過也就 40m 的樣子. 和慶大緊連著的是義大利使館, 還有藏在一個轉角裡, 建築設計非常現代毫無佛寺感的弘法寺. 學校有一圈存在感不是特別強的牆把它與東京隔開, 但並不是很生硬的分割, 在遠離主幹道的部分依然會感覺他與旁邊的住宅融為了一體. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/KeioSt.avif" alt="慶應旁的道路"></p>
-<p>逛完一圈慶大之後, 我在旁邊一個楔形岔路裡, 造型古樸而<a href="https://tabelog.com/tokyo/A1314/A131402/13013982/">歷史悠久的居酒屋</a>吃了晚餐, 回到住處倒頭便睡. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Tsunokuniya.avif" alt="津國屋"></p>
-<h3 id="Day-1-六月六日-星期五-虎ノ門-水道-池袋"><a href="#Day-1-六月六日-星期五-虎ノ門-水道-池袋" class="headerlink" title="Day 1, 六月六日, 星期五, 虎ノ門 - 水道 - 池袋"></a>Day 1, 六月六日, 星期五, 虎ノ門 - 水道 - 池袋</h3><p><img src="/2025-06/TripToTokyo2025JunPart1/TokyoNodeGallery.avif"></p>
-<p>一路向北的一天 (?). 早上九點多出門去位於虎ノ門的 TOKYO NODE GALLERY 觀看<a href="https://exhibition-ah-neo.jp/">デザインあ展 neo</a>. デザインあ是 NHK 上一檔面向大眾 (尤其是兒童) 普及設計知識的節目, 是已經播送了十五年的常青樹. 我大概是在十年前從<a href="https://www.thetype.com/typechat/">字談字暢</a>瞭解到了這個節目, 因為在國內收看困難所以只能斷斷續續看了一些台灣&#x2F;香港引進的集數, 但即便如此我也一直對該節目抱有很高好感, 畢竟好設計要從娃娃抓起嘛 (笑). </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Entry.avif"></p>
-<p>TOKYO NODE 位於虎之門之丘車站大樓 45 層, 一進車站大樓就能看到巨大的あ字海報, 大樓各處也遍佈著あ字裝飾和指示牌. 雖然 45 層也算是挺高的樓層了, 但展會現場完全沒有窗戶所以只有在入場和離場前能俯瞰東京市景 ⸺ 當然, 來這裡的重點肯定不是東京市景. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Items.avif"></p>
-<p>會場內果不其然有非常多兒童, 從嬰兒車裡的到小學低年級居多, 或許等到週末會看到更多學生年齡層的青少年吧. 雖然兒童很多, 但噪音控制意外地還算不錯, 沒有讓人覺得特別煩躁, 大概是因為孩童們大多在聚精會神地與展品進行互動. 展覽估計有超過一半的展品是被設計來互動的, 比起在電視上觀看, 實際上手體驗一些設計對於兒童來說當然是更加直觀的. デザインあ本就提倡從日常出發思考設計, 而這些以日常出發設計的小道具以實體呈現在眼前, 能夠 360 度觀看, 更能感受到它們的巧妙. 在互動區裡還有圍場, 讓來訪者可以親身體驗<a href="https://dessin-ah.jp/">デッサンあ</a>並看到自己的大作被放在投影牆和網頁上展示, 參與感滿點. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/DessinAh.avif"></p>
-<p>除了展示節目中出現過的道具與各種互動裝置, 現場還有兩個特別的展示空間. 其一是一個正方形的放映廳, 四面牆上由投影放映特別製作的相連影像, 讓我瞬間覺得彷彿回到了 teamLab Borderless. 其二是帶有攝像頭捕捉現場觀眾反饋的設計辯論環節　“Design Dotchi de Show”, 以投影在幕牆上播放 ｢學校供應牛奶應該用玻璃瓶還是利樂包｣ 辯論, 邀請觀眾站到地面上畫有相應顏色的區域, 觀看的孩童們都樂在其中. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Room2.avif"></p>
-<hr>
-<p>逛完デザインあ展 neo, 我繼續向北移動, 搭電車前往初次來東京時<a href="/2024-10/TripToTokyo3/">已經造訪過</a>的印刷博物館. 之所以再次造訪是因為這裡正在舉辦<a href="https://www.printing-museum.org/collection/exhibition/t20250123.php">特展 ｢黑之藝術｣</a> ⸺ 專注介紹古登堡發明活字後德意志地區印刷文化的展覽. 正好之後我還有打算去參加金属活字鋳造会社物販会, 臨時抱佛腳惡補一點十五世紀出版知識以備不測 (?). 而且當年我在學校裡做了 <a href="/Works/">Albrecht Type Nova</a>, 某種程度上我也可以自稱 ｢黑之藝術門徒｣, 自然對這個主題抱有額外的親近感. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Grayscale.avif"></p>
-<p>和上次的<a href="https://www.printing-museum.org/collection/exhibition/g20240720.php">活字銀河</a>不一樣, 黑之藝術展是付費展覽, 設定在地下的迷宮中. 而地面的展廳展示的是 <a href="https://www.toppan.com/ja/joho/gainfo/graphictrial/2025/">Graphic Trial 2025</a>, 算是凸版社自家的技術展覽, 其實內容也非常有趣, 展現了很多在日常生活中幾乎不可能看到的印刷技法. 我最感興趣的無疑是佔據了一整面牆的超多層偏光疊加印刷實驗, 只是稍微偏轉視線就能看到不同的畫面, 以此技術為基礎進行技術拓展來承載內容表現, 效果令人稱道. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/ColorandTexture.avif"></p>
-<p>交錢進入地下迷宮, 在進入黑之藝術展示空間前還能看到一個很小的角落被裝飾成了書店的樣子, 那是京極夏彦館長就任記念展示. 我對京極夏彦並不瞭解, 他的作品就只看過動畫化的 ｢魍魎之匣｣, 所以沒有在這裡逗留. 再往前穿過一半的迷宮就能看到黑之藝術展區了, 這個區域用黑色帷幕隔開, 入口也掛著印著巨大哥特體的幔帳, 營造出一股神秘感. 實際上印刷術在剛剛被發明時, 被稱為 „Die Schwarze Kunst(黑色技藝, 即魔法&#x2F;巫術)“, 和布展氛圍很是相稱. 而當走進布幔之中看到展品時就能明白, 這次的展品花大力氣從各地搬來了很多十五十六世紀出版物珍品, 看一次便值回票價. </p>
-<p>展覽從古登堡發明活字之前的雕版時代開始, 一直到二戰時期結束, 展現了德意志地區印刷業的獨特文化. 除了印刷博物館原本的藏品之外, 很多珍貴的藏品來自德國的<a href="https://www.mainz.de/microsite/gutenberg-museum/splash-page.php">古登堡博物館</a>和<a href="https://www.offenbach.de/klingspor-museum">克林斯波博物館</a>, 這些平時分散在世界各地的珍品共同為觀者構建了非常清晰的德意志地區印刷出版業的文脈.  </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/DieSchwarzeKunst.avif"></p>
-<p>除了這些展品之外, 我印象最深的其實是一道分割布幔上印的文字: „Gott grüß die Kunst (上帝保佑技藝)“, 這是德意志地區印刷從業者的問候語, 聽起來非常帥氣 (?). 看完展覽後, 我又去紀念品店打算買些小禮物回國送人, 這一看可出問題了, 沒想到因應黑之藝術展覽, 紀念品店更新了一大波紀念品, 我根本控制不住自己, 一口氣又買了好多 tchotchke… 湊巧紀念品店對於 ｢身著黑之時裝｣ 的顧客有每件商品優惠 50 日元的活動, 而我當天正好穿著 <a href="https://www.thetype.com/2024/10/26216/">The Type 的 T 恤</a>, 便因此替錢包減輕了一丁點負擔. </p>
-<hr>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/wax.avif"></p>
-<p>離開印刷博物館後我繼續向北造訪每次來東京都會去的涉谷 Sunshine City. 這次天文台的新節目 ｢貓星夜｣ 我並不是很感興趣, 但老節目似乎也沒有專門花錢重新看一遍的必要, 所以就沒去天象館. 倒是在去太陽城的路上路過了一家筆墨紙硯專營店<a href="https://fairynote.jp/">魔法雑貨・シーリングスタンプ専門店 Fairy{note.}</a> ⸺ 準確地說它是一家封蠟專門店, 只不過除了封蠟之外也順便賣一些氣質相符的文房具以及雜貨, 我看到招牌覺得香音老師絕對會很喜歡就一頭鑽了進去. 店內的封蠟琳琅滿目, 對於我這樣的門外漢來說資訊量爆炸, 雖然有想過可以買一點贈予香音老師, 但又覺得比起我這樣半吊子的選擇, 香音老師自己肯定早就買了合適的, 遂作罷. 不過我還是買了一些信紙自用. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/PianoPendant.avif"></p>
-<p>之後就是參觀水族館和展望台了. 和前兩次去不同, 這段時間太陽城和名偵探柯南系列有做聯動, 各個設施中都放置了聯動相關的立牌等飾物. 我對名偵探柯南系列興趣缺缺, 就沒有多加關注. 除了多出來的柯南相關飾物, 這次在水族館裡還看到了醜萌醜萌的換毛企鵝, 真是值回票價 (笑)</p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Penguin.avif"></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/WallofJellyfish.avif" alt="無論看多少次都非常治癒的水母牆"></p>
-<p>不單單是換毛企鵝, 這次去展望台時本來覺得天氣略有些陰沉, 多半是看不到富士山和落日了, 沒想到雲層似乎是專門在富士山的方向開了個小口, 讓我成功看到了富士山 ⸺ 儘管天氣不是很好導致只能看出輪廓, 但還是覺得非常開心, 總算是彌補了之前每次登高都無法看到富士山的遺憾. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/SkylinewithFujisan.avif"></p>
-<hr>
-<p>從展望台離開, 我看了一下導航發現現在去買膠捲的話剛好能趕上閉店, 就急忙去<a href="https://tokyocamera.net/">東京 Camera</a>. 然而到了店內一看各類正片早已售罄,  只好各買一卷富士 400 和 Acros Ⅱ. 之後回到住處, 在附近<a href="https://tabelog.com/tokyo/A1316/A131602/13080611/">覓食</a>時發現了一款名為<a href="https://www.sekitoba.co.jp/">赤兔馬</a>的燒酒, 本來是出於獵奇的心態點了一杯, 卻發現味道意外地非常柔和醇厚, 和名字看起來截然相反, 又是意外之喜. </p>
-<hr>
-<p>東京遊記 2025 六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
+    <title>Photography is FUN ⸺ Standard Obsession</title>
+    <url>/2022-01/Standard-Obsession/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>就在不久之前, 我拿到了心心念念的 Voigtlander 40&#x2F;2, 这是我手头第八个 ｢标准焦段｣ 的镜头了 (如果不算 SX-70 的等效 60mm 镜头的话) ⸺ 之前的分别是 Nikkor 50&#x2F;1.8G, Ricoh GR IIIx, Nikkor AI-S 50&#x2F;1.8, Nikkor 45&#x2F;2.8P, Zeiss ZM 50&#x2F;1.5, Helios-44 58&#x2F;2, Pentax 43&#x2F;1.9. 用了这么久这些 ｢标准镜头｣, 我觉得可以写篇文章谈谈他们了. </p>
+<p><img src="/2022-01/Standard-Obsession/pancakes_51759971875_o.avif"></p>
+<p><strong>Disclaimer</strong>: 我不是一个靠摄影吃饭的人, 我对器材的追求基本是乐趣 &gt; 性能, 虽然如果能同时满足两者自然是最好, 但通常需要满足这两者就得加钱, 所以⋯⋯</p>
+<h3 id="AF-S-Nikkor-50mm-f-1-8G"><a href="#AF-S-Nikkor-50mm-f-1-8G" class="headerlink" title="AF-S Nikkor 50mm f&#x2F;1.8G"></a>AF-S Nikkor 50mm f&#x2F;1.8G</h3><p>这是在购买 Df 的时候一同入手的套机头. 这枚 2011 年发布的镜头在我购买 Df 时 (2014 年) 算是非常新的设计了, 各种硬性指标都非常优秀. 前组在大部分时候都深深陷在镜筒中, 被保护得非常好, 绝大多数时候也不需要使用那个附带的笨拙而廉价的遮光罩. 它无言地陪伴我度过了六七年的时光, 经历了各种风吹雨打甚至还有一次摔落 (虽然只有不到半米的高度), 依旧可靠. 全塑料的外壳虽然看起来非常廉价而且非常容易脏, 但是也让它极为轻便. 尽管我现在已经不将它作为挂机镜头了, 它还是在我的包里会有一席之地. </p>
+<p>那么, 既然 50&#x2F;1.8G 这么好, 为什么我会接下来买那么多焦段类似的其他镜头呢? 概括来说的话应该有三点: </p>
+<ul>
+<li>其一, 我对<a href="/2021-03/yearning-for-a-tiny-smartphone/">小设备</a>有着迷之执着 ⸺ 然而在尼康单反上追求小好像从根本上就搞错了什么, 基本上单反比起微单就已经是庞然巨物了, 况且若是追求小当初我应该去买宾得才是, 现在再来后悔感觉也为时已晚⋯⋯ 但是 Df 又是唯一一台有着复古外观 + 操作方式的全画幅数码单反, 我还是非常喜欢它的. </li>
+<li>其次, 50&#x2F;1.8G 是一枚几乎没有个性的镜头 ⸺ 现代先进的光学设计基本抹去了所有可能出现的光学问题, 在成像几乎完美的同时也使得它几乎没有任何个性. 当然很多时候 ｢个性｣ 从现实的角度上来说其实都是光学缺陷, 但我们应该扬长避短而不是认为光学缺陷就是世界末日. </li>
+<li>最后, 算前一点的延续, 作为一个摄影爱好者, 我在追求记录时光的同时更想要的是从中寻求乐趣. 50&#x2F;1.8G 在这方面可以说是一枚没有乐趣的镜头 ⸺ 无论是成像还是操作都很无趣. 虽然 Df 机身为摄影提供了不少乐趣, 但我还是想追求更有趣的镜头.</li>
+</ul>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295618346" title="Cambridge tour"><img src="https://live.staticflickr.com/65535/51787672422_8aef1feb10_h.jpg" alt="Cambridge tour"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="AI-Nikkor-50mm-f-1-8S"><a href="#AI-Nikkor-50mm-f-1-8S" class="headerlink" title="AI Nikkor 50mm f&#x2F;1.8S"></a>AI Nikkor 50mm f&#x2F;1.8S</h3><p>在寻找迷你镜头的时候, 我第一个瞄准的就是 AI Nikkor 50mm f&#x2F;1.8S. </p>
+<p><img src="/2022-01/Standard-Obsession/nikon-pancake_51740205140_o.avif"></p>
+<p>在尼康的官方网站上有一个很有趣的专栏叫 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/index.html">｢尼克尔镜头的一千零一夜｣</a>, 其中就<a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0060/">介绍</a>了这枚非常小巧精致的镜头. 从光学的角度来看它算是 50&#x2F;1.8G 的父辈, 但是没有自动对焦系统和省去了 <a href="https://www.nikon.com.cn/microsite/nikkorcom/story/0063/">｢必要之恶｣</a>, 它的体积比起 50&#x2F;1.8G 要小得多: </p>
+<p><img src="/2022-01/Standard-Obsession/5018g-5018s-4528p_51788971709_o.avif"></p>
+<p>↑ 如前文所说变得脏兮兮的 50&#x2F;1.8G, 用酒精棉都擦不干净, 是塑胶本身白化了</p>
+<p>虽然没有使用非球面镜片, 但是相对先进的光学设计带来了小巧的整体结构 ⸺ 仅仅 <strong>27mm</strong> 的厚度, 而且在保证了较大光圈的前提下全开时相比 50&#x2F;1.8G 并没有太大差距, 可用性极高. 而全金属的镜筒在手感上比全塑料的 50&#x2F;1.8G 好上十万八千里, 尤其是顺滑的对焦环更是令人爱不释手. </p>
+<p>这枚镜头在当时作为推广入门级单反相机的伴生物 (Nikon 50mm f&#x2F;1.8 Series E, 光学性能上只有镀膜有区别, 外壳换成了全塑料), 价格极其便宜, 由于产量巨大的关系存世量也极多, 属于便宜大碗的好镜头, 某种程度上我甚至想推荐所有尼康单反用户都入手一枚 ⸺ 不过话虽如此, 老 AI-S 镜头和很多非旗舰机身都不兼容了, 如今它的实用价值确实日渐式微. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295624370" title="AI Nikkor 50/1.8S"><img src="https://live.staticflickr.com/65535/51790435845_248d954245_h.jpg" alt="AI Nikkor 50/1.8S"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>可惜我的这枚镜头在入手时光圈环就有些运作不畅, 经常会卡在一个近似 f&#x2F;1.9 的位置, 导致 bokeh 产生奇怪的裁切, 不久前送修去了. 购买二手老头难免会遇到这样的状况, 只能说能去线下亲自摸一回的话可以避免很多这样的小问题. </p>
+<h3 id="AI-Nikkor-45mm-f-2-8P"><a href="#AI-Nikkor-45mm-f-2-8P" class="headerlink" title="AI Nikkor 45mm f&#x2F;2.8P"></a>AI Nikkor 45mm f&#x2F;2.8P</h3><p>比起海量生产, 便宜大碗的 50&#x2F;1.8S, 这枚伴随着一台传说级别的机身 — FM3A — 而诞生的 45&#x2F;2.8P 就相对来说没那么广为人知了. 我手上的 Df 在设计上有很多继承自 FM3A 的元素, 这也是让我觉得 45&#x2F;2.8P 会是一个绝配的因素. </p>
+<p><img src="/2022-01/Standard-Obsession/nikon-df_51738486367_o.avif"></p>
+<p>这镜头本体比 50&#x2F;1.8S 还要更薄, 真的是不折不扣的 pancake lens 了. 虽然不知道为什么尼康研发部门在已经有 50&#x2F;1.8S 这个可以说极致轻薄的镜头的情况下还要再花费心思研发一款新的轻薄镜头⋯⋯ 难道是因为 1997 年时宾得推出了比 50&#x2F;1.8S 薄 0.5mm, 光学素质更好, 而且还带自动对焦的 FA 43mm f&#x2F;1.9 Limited? (笑) 尼康自己的开发人员也在一千零一夜里如此打趣: </p>
+<blockquote>
+<p>重厚長大のイメージのあるニッコールレンズだが <a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">¹</a></p>
+</blockquote>
+<p>直译就是尼克尔镜头总是给人留下又重又厚又长又大的印象 ⸺ 很不幸的是时至今日除了 ｢重｣ 这一点因为换用了全塑料镜筒有所改善 (以牺牲了手感为代价), 另外三点毫无改善. 这时再看 45&#x2F;2.8P 就显得有些无奈又好笑了. </p>
+<p>抛开历史和现实来看 45&#x2F;2.8P, 这枚镜头无疑是非常有特色的: 它只有令人惊讶的 <strong>17mm</strong> 厚, 而为了保证对焦环手感, 镜筒基本直接被对焦环和光圈环一分为二, 导致它的装卸体验十分糟糕 (这点上 Voigtlander 40&#x2F;2 就取得了更好的平衡, 下文会提到); 它在全开光圈的状态下画面中心分辨率相当可靠, 越靠近边缘则毫无意外地有些劣化, 而它光学上最大的弱点应该是彗差严重 ⸺ 但这反而可以说是一种很有味道的特色, 只要你不试图用它来全开光圈拍建筑或者风光, 这个问题其实很难被注意到. f&#x2F;2.8 的最大光圈其实对对焦准确度相对宽容, 虽然焦外的柔化也因此变得不那么强烈, 但是配合手感上佳的对焦环操作, 使用体验还是非常优秀的. </p>
+<p>45&#x2F;2.8P 的另一大特色就是那形状奇异的遮光罩了. 尼康自己的开发者戏称它为 ｢藤壶遮光罩｣ (フジツボフード<a href="https://www.nikon-image.com/enjoy/life/historynikkor/0078/" title="第七十八夜 AI Nikkor 45mm F2.8P">¹</a>), 着实准确. 这个遮光罩允许我在大部分时间不使用镜头盖而不担心镜头前组镜片受到污染, 又几乎没有增加多少体积. </p>
+<p><img src="/2022-01/Standard-Obsession/nikon-pancake_51739953379_o.avif"></p>
+<p>有趣的是, 由于和 Voigtlander 40&#x2F;2 口径相同, 这两枚镜头可以互换遮光罩, 也导致 45&#x2F;2.8P 可以顺带使用 Voigtlander 40&#x2F;2 的近摄镜, 让它具有了一定程度的近摄能力: </p>
+<p><img src="https://live.staticflickr.com/65535/51791796840_6cd7fb9d4a_h.jpg" alt="45/2.8P _gallery &lt;"></p>
+<p><img src="https://live.staticflickr.com/65535/51791430244_6f1514d028_h.jpg" alt="45/2.8P w/ closeup lens _gallery &gt;"></p>
+<p>当然, 其实 50&#x2F;1.8S 也可以用 40&#x2F;2 的遮光罩和近摄镜, 这三枚镜头的滤镜口径都是 52mm, 混搭配件也是乐趣无穷. 眼尖的读者应该已经看出来了, 我给 50&#x2F;1.8S 默认搭配的天光滤镜就是原本搭配 45&#x2F;2.8P 的银色边框款. </p>
+<p><img src="/2022-01/Standard-Obsession/nikkor-4528p_51807804194_o.avif"></p>
+<p>这枚镜头由于存世不久具有一定稀有价值, 价格被炒得有点高, 如果你不是像我一样病态的追求小镜头, 其实是不建议购买的. </p>
+<h3 id="Ricoh-GR-IIIx"><a href="#Ricoh-GR-IIIx" class="headerlink" title="Ricoh GR IIIx"></a>Ricoh GR IIIx</h3><p><img src="/2022-01/Standard-Obsession/gr-iiix-vs-iphone-12-mini_51788433271_o.avif"></p>
+<p>一图胜千言. 在没有任何外置装备的前提下, GR IIIx 这 110×62×35mm 的尺寸可以轻松地装进我的几乎所有普通口袋. 等效 40&#x2F;2.8 的镜头是完全重新设计的, 但是某种程度上又是一种传承. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791877550/in/dateposted/" title="GR0004731-80 sec at f - 2.8"><img src="https://live.staticflickr.com/65535/51791877550_b49013c3ce_h.jpg" alt="GR0004731-80 sec at f - 2.8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>40mm 对我来说已经可以算是广角了 (等效 35mm 的 X100T 对我来说就是超广角⋯⋯), 足以用来应付我绝大多数日常拍照的需求. 毕竟 ｢手头的相机才是最好的相机｣, 虽然我没有把它带到浴室里, 但自从入手了 GR IIIx 之后每次出门我都必定会带上它. </p>
+<p><img src="/2022-01/Standard-Obsession/gr-iiix-w-pentax-43-finder_51784842727_o.avif"></p>
+<p>实际使用的状态. 宾得的这个 43mm 取景器虽然给它增加了一点高度, 但是放进冬天外套的口袋还是毫无压力的. 外置取景器可以让我不用再盯着屏幕, 而是像使用旁轴相机一样操作 GR IIIx, 极大提升了使用体验. </p>
+<p>GR IIIx 还有一个优点就是极近的最近对焦距离, 可以某种程度地充当微距镜头. 事实上, 前文大部分设备的照片都是由 GR IIIx 拍摄的. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295636512" title="Camera Museum"><img src="https://live.staticflickr.com/65535/51790193352_a56713a87d_b.jpg" alt="Camera Museum"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Zeiss-C-Sonnar-T-1-5-50-ZM"><a href="#Zeiss-C-Sonnar-T-1-5-50-ZM" class="headerlink" title="Zeiss C Sonnar T* 1.5&#x2F;50 ZM"></a>Zeiss C Sonnar T* 1.5&#x2F;50 ZM</h3><p><img src="/2022-01/Standard-Obsession/zeiss-c-sonnar-t-1550-zm_51739950944_o.avif"></p>
+<p>徕卡 M 口本来就不缺各种小巧的镜头了, 无论是本家还是全世界其他光学大厂都为 M 口设计过小巧玲珑的镜头, 而在 50mm 焦段里蔡司这枚 Sonnar 又是其中佼佼者, 55.5×38mm 的体积比徕卡本家的所有大光圈 50mm 镜头都要娇小 ⸺ 虽然我在购买这枚镜头的时候尚不知晓福伦达 <a href="https://www.cosina.co.jp/voigtlander/vm-mount/nokton-vintage-line-50mm-f1-5-aspherical-ii/">Nokton 1:1,5&#x2F;50 II</a> 的存在. </p>
+<p><img src="/2022-01/Standard-Obsession/r-d1s-w-5015-zm_51739543383_o.avif"></p>
+<p>↑ 尽管比福伦达 Nokton 50&#x2F;1.5 II 大了那么一丢丢, 50&#x2F;1.5 ZM 也已经够小巧了</p>
+<p>这枚镜头继承了 1932 年经典的松纳结构, 配上二十一世纪的新材料和镀膜技术, 算是经典重生. 不过毕竟是 90 年前的光学设计, 以今天的眼光来看缺陷其实是很明显的: 它在全开光圈的时候真的很软 (尤其是在无限远时), 即使是画面最中心的部分分辨率和对比度也不算优秀; 然而这也是它的一大特色, 由这光学缺陷造就了优秀的氛围控制. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51738485872/in/album-72177720295596066/" title="Zeiss C Sonnar 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738485872_e162b0ec74_h.jpg" alt="Zeiss C Sonnar 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>这枚镜头的边缘可以说是非常糟糕的, 不过我完全不在意 ⸺ 我的 R-D1s 是 APS-C CCD, 完美规避了边缘严重的暗角､ 分辨率和对比度下降等问题. 在光圈收到 f&#x2F;4 之后, 画面软的问题也基本得到解决, 可以用来拍摄风景和建筑了. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791375393/in/dateposted/" title="Zeiss C Sonnar T* 1.5/50 ZM"><img src="https://live.staticflickr.com/65535/51791375393_a0cbf621ad_h.jpg" alt="Zeiss C Sonnar T* 1.5/50 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>它的另一个特色, 是特殊的光圈叶片形状. 在前面的照片里很容易就可以看出在光圈收缩之后, ZM 50&#x2F;1.5 形成的光圈形状是一个锯盘型, 这个形状也完美地反映到了收缩光圈后的 bokeh 上. 我个人是不太喜欢这种锯盘型的 bokeh, 不过这只是我的个人喜好而已. </p>
+<p>这个镜头还有一个非常邪道的玩法 ⸺ 如果你用它反接, 会得到一个仿佛向外扩散的焦外虚化, 效果非常有趣: </p>
+<p><img src="/2022-01/Standard-Obsession/zeiss-5015-zm-reverse_51785578386_o.avif"></p>
+<p>最后, 这支镜头也是我手头所有手动光圈环的镜头里唯一一个有 1&#x2F;3 光圈档位的镜头, 在只支持整档变换快门速度和 ISO 的 R-D1s 上对于控制精确曝光显得格外方便. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295596066" title="Zeiss 50/1.5 ZM"><img src="https://live.staticflickr.com/65535/51738489767_c8a2748b6b_h.jpg" alt="Zeiss 50/1.5 ZM"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<h3 id="Helios-44-58mm-f-2"><a href="#Helios-44-58mm-f-2" class="headerlink" title="Helios-44 58mm f&#x2F;2"></a>Helios-44 58mm f&#x2F;2</h3><p>这个镜头就真的纯粹是当做玩具收来的了, 毕竟价格真的够便宜, 也很容易就能买到. 关于它的故事在网上已经遍地都是我就不再重复了. 由于光学缺陷而造成强烈的螺旋状焦外为无数爱好者津津乐道, 成片确实十分惊艳. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295613639" title="Helios-44"><img src="https://live.staticflickr.com/65535/51740199705_dd3cfa0ad2_h.jpg" alt="Helios-44"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>↑ Helios-44 的相册</p>
+<p>这枚镜头的光圈控制是由两个光圈环来进行的: 在镜头最前端标有光圈值, 手感非常紧实, 旋转到整档时会有段位感的环是光圈预设环, 旋转它并不会改变镜头当前的光圈; 在它下方没有标注数字, 只有纹路的环则是真正的光圈环, 它完全没有段位感, 旋转它可以在最大光圈和之前预设的光圈之间无级调整. 我一般是把预设光圈放在 f&#x2F;5.6 的状态, 反正实际使用的时候基本都是全开以追求那独特的焦外散景. </p>
+<p>这枚镜头由于在不同时期由不同的工厂生产, 不同批次之间区别还挺大, 某种程度上也产生了一种 Helios-44 版本学<a href="https://www.youtube.com/watch?v=qnJ23-i6bgw" title="The Helios 44-2 Lens Version You should Avoid Buying">²</a>. 我只是纯粹捡便宜货好玩, 也不敢说自己对此有多么了解, 但是这些不同版本的 Helios-44 据我了解光学性能应该都十分类似, 最多就是后期版本镀膜可能有所变化和光圈叶片数量不同而已. 当然另一个问题就是这些 Helios-44 的成色大多十分糟糕, 成色好的则被炒得价格奇高, 失去了它作为玩具的价值. </p>
+<h3 id="SMC-Pentax-L-1-1-9-43mm-Special"><a href="#SMC-Pentax-L-1-1-9-43mm-Special" class="headerlink" title="SMC Pentax-L 1:1,9 43mm Special"></a>SMC Pentax-L 1:1,9 43mm Special</h3><p>某种意义上算是一枚邪典镜头? 曾经是单反上最小体积下画质最好的 FA 43&#x2F;1.9 Limited 被做成螺口特别版之后既失去了自动对焦, 体积上的优势也荡然无存, 尽管光学上依然是十分优异的, 但是整个镜头的存在意义变得十分迷幻, 在网上也几乎找不到相关的资料. 坊间留下的传闻基本都是因为宾得本来就喜欢做各种 ｢限定｣､ ｢特别｣ 镜头, 当时饱受好评的 FA 43&#x2F;1.9 自然逃不过特别版的魔爪, 于是就有了这支十分迷幻的 43 special. </p>
+<p><img src="/2022-01/Standard-Obsession/dsc_14811-160-sec-at-f---20_51755586713_o.avif"></p>
+<p>这镜头的镜筒设计和普通的徕卡镜头并无区别, 对焦环的指柄弧面手感十分舒适, 对焦环本身顺滑平稳, 对焦手感上佳, 在 R-D1s 的 APS-C 传感器上等效 65mm 也更接近标准焦段的效果. 但这枚镜头附赠的镜头盖是螺口镜头盖, 平常使用十分不便, 我基本都是把镜头盖单独丢在包里的口袋, 用一枚紫外滤镜来充作镜头保护. 和徕卡的 Summicron 50 类似, 它也有内置的遮光罩, 但是这个遮光罩的拉出手感与徕卡比就相去甚远, 略显生涩. </p>
+<p>还有一个可能逼死强迫症的问题是, 使用 L39 to M mount 转接环把这枚镜头转接到 R-D1s 上的时候, 完全拧紧后镜头刻度的位置并不是朝着 12 点方向的, 而是在一个 11 点左右的位置, 如果说视觉上的观感还算可以接受的话, 由此导致的对焦拨杆的默认位置和其他 M 口镜头有所偏移, 实在是非常难以接受了⋯⋯ </p>
+<p><img src="/2022-01/Standard-Obsession/r-d1s_51792613841_o.avif"></p>
+<p>这个镜头还附赠了一个 43&#x2F;50mm 线框的取景器, 就是之前我放在 GR IIIx 上的那个. 虽然它并不是专为 GR IIIx 设计的, 但是它们搭配起来却莫名合拍, 所以我现在就直接把它挂在 GR IIIx 上用了. </p>
+<p><img src="/2022-01/Standard-Obsession/4350-finder_51791678937_o.avif"></p>
+<h3 id="Voigtlander-40mm-f-2-SL-II"><a href="#Voigtlander-40mm-f-2-SL-II" class="headerlink" title="Voigtlander 40mm f&#x2F;2 SL II"></a>Voigtlander 40mm f&#x2F;2 SL II</h3><p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720295635305" title="Pentax 43/1.9 L Special"><img src="https://live.staticflickr.com/65535/51791054678_3122d1e24d_h.jpg" alt="Pentax 43/1.9 L Special"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>一枚在迷你身材和优异画质两个领域都取得夺目成就的镜头. 它的体积介于尼康的 50&#x2F;1.8S 与 45&#x2F;2.8P 之间 ⸺ <strong>24.5mm</strong>, 而它的光学素质远在 45&#x2F;2.8P 之上, 比 50&#x2F;1.8S 也好上不少, 虽然不如 50&#x2F;1.8S 那么便宜但也还算是不错的价格, 简直是一枚完美的镜头. 可惜不知道确善能脑子哪根筋搭错了, 几年前停产了这款镜头, 上线了一款光学结构相同 (据我所知应该是) 但是体积增大不少 (厚度变成了 37.5mm) 的新款, 让我有点担心这枚镜头以后会开始涨价. </p>
+<p><img src="/2022-01/Standard-Obsession/gr0003471-80-sec-at-f---28_51755586693_o.avif"></p>
+<p>这镜头在结构上更接近 50&#x2F;1.8S, 光圈环和对焦环之间有一条纤细带纹路的固定结构, 这使得它的装卸手感比 45&#x2F;2.8P 要好得多. </p>
+<p><img src="/2022-01/Standard-Obsession/nikon-df-w-voigtlander-402_51807443911_o.avif"></p>
+<p>这枚镜头采用了一枚双面非球面镜片, 各种像差都得到了不错的修正, 除了全开光圈在对焦无限远时分辨率略有些下降之外, 基本可以说是完美的 ⸺ 就连全开光圈时的画面边缘都相当锐利, 细节丰富. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791020833/in/album-72177720295637523/" title="DSC_15031-160 sec at f - 2.0"><img src="https://live.staticflickr.com/65535/51791020833_1acf6e4df6_h.jpg" alt="DSC_15031-160 sec at f - 2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>它唯一的缺陷, 或者说特色, 却也正是由这枚非球面镜片引起: 它的 bokeh 有非常明显的 ｢洋葱圈｣. 只要画面中出现 bokeh, 洋葱圈就相当明显, 觉得它是特色还是缺陷就看个人爱好了. 就我个人来说洋葱圈是比 ZM 50&#x2F;1.5 的锯盘要容易接受. </p>
+<p><a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/geoffreyr/51791282894/in/album-72177720295637523/" title="w/ closeup filter ƒ/2.0"><img src="https://live.staticflickr.com/65535/51791282894_9277e0db6f_h.jpg" alt="w/ closeup filter ƒ/2.0"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>但是它在光圈上还有一个优点: 它有着独特的光圈叶片设计, 让它在 f&#x2F;5.6 时也可以呈现圆形光圈, 如果你对圆形 bokeh ball 有奇怪的追求的话, 这枚镜头应该会非常对你的胃口. </p>
+<p><img src="/2022-01/Standard-Obsession/voigtlander-402_51806487157_o.avif"></p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>以上就是我目前收集的 ｢标准镜头｣ 们了, 如果还有机会的话我希望可以买一个福伦达的 Nokton 50&#x2F;1.5 VM, 不过这个需求并没有很强烈, 不知何时才会成真. </p>
 ]]></content>
       <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>東京遊記 2025 (六月篇) Part Ⅱ</title>
-    <url>/2025-06/TripToTokyo2025JunPart2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart2/TokyoMetropolitanTheatre.avif" alt="東京芸術劇場"></p>
-<h3 id="Day-2-六月七日-星期六-池袋-千代田-新宿"><a href="#Day-2-六月七日-星期六-池袋-千代田-新宿" class="headerlink" title="Day 2, 六月七日, 星期六, 池袋 - 千代田 - 新宿"></a>Day 2, 六月七日, 星期六, 池袋 - 千代田 - 新宿</h3><p>嗯? 怎麼又是池袋? 不是前一天才去過太陽城的嗎? 會發出這樣疑問的讀者, 恭喜! 你的記憶力很好, 也有認真閱讀 Part Ⅰ~ 今天來池袋的目的是聖地巡禮 ⸺ 香音老師的<a href="https://yoishigure2021.fanbox.cc/posts/9746463">小說</a>中提及的現實存在的地點<a href="https://www.fukuroshosabo.com/home">梟書茶房</a>, 同時也是香音老師曾說過自己非常中意 (甚至帶妹妹同去) 的地方. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/TheatrePoster.avif"></p>
-<p><img src="/Frames/Tokyo2025jun/07700018.avif"></p>
-<p>因為小說裡提過本店客流量巨大, 入店需要大排長隊, 我和 <a href="https://twitter.com/O5c4r2017">Oscar</a> 十點左右就到 Esola 樓下等待, 卻發現別說店門沒開了, 連大樓都還沒開始營業, 我們只能踱步到附近的池袋西口公園 Global Ring 等待. 好在公園也是在小說裡登場過的, 坐在兩位主人公等待的地方, 饒有興致地觀察著周遭來往的人群以及形態各異的雕像與建築, 時間很快就來到了預定開店的十點半. Esola 的電梯果然大排長龍, 我們一邊慶幸自己來得還算早一邊登上四樓. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/cafeentry.avif"></p>
-<p>如名字所述, 梟書茶房是圍繞著書與茶展開的. 一進店就能看到陳列在門口的巨大的書架與書桌, 上面放置著上千本書. 然而時至今日, 書店賣咖啡或者咖啡館賣書早已不是新鮮概念, 梟書茶房與普通書店&#x2F;咖啡館最大的區別是, 這些書全都經過主理人的重新包裝, 隱去原本的封面, 重新套上一層書封, 而在那書封上寫了主理人的推薦以及編號來讓讀者選購 ⸺ 書封, ふくろ (fukuro), フクロウ (fukurou), 梟⋯⋯ 你是不是也同樣露出了會心的微笑呢? </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/inner.avif"><br><img src="/2025-06/TripToTokyo2025JunPart2/shelf.avif"></p>
-<p>拋去書房的部分, 作為茶房的本店相較之下就沒有那麼特別了, 不過店內在書架對面有一個區域被裝修成了非常像圖書館中閱覽區&#x2F;自修室的樣子, 獨自前來的顧客若是在這裡拿上本書一邊閱讀一邊啜飲咖啡或許能假裝自己在圖書館而不是咖啡廳中吧. 無怪乎既喜歡書又熱愛咖啡歐蕾的香音老師會如此中意本店. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/Library.avif"></p>
-<p>我與 Oscar 都打算在這裡解決早午餐, 各自點了飲品與餐點. 運氣很好地碰上店裡的夏季新品裡有夏威夷咖啡 (名字非常片假名地獄 ⸺ ハワイコナ　エクストラファンシー　ブレンド), 味道意外地非常對我的胃口. 不過除了咖啡以外的其他食物就普普, 並不能與他們的價格相襯. 酒足飯飽 (?) 後, 我們從梟書茶房離開, 分別繼續各自的行程. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/3cups.avif"></p>
-<hr>
-<p>下午的行程首先是參加相機博物館開展的<a href="https://www.jcii-cameramuseum.jp/academy/2025/04/16/36812/">愛普生 R-D1 研究講演會</a>, 這也是我本次會攜帶 R-D1s 的理由. 實際上來場人數眾多, 我非常慶幸自己在成田機場等電車的時候就打電話預約, 否則可能還真找不到座位. 參會者幾乎全是中老年男性, 非常符合刻板印象 (?). 到場嘉賓裡除了前愛普生開發 R-D1 的負責人, 還有索尼､ 適馬､ 佳能和確善能的高管. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/EpsonGuest.avif"></p>
-<p>講演會本身不知道是不是因為考慮到聽眾們都年事已高, 節奏非常緩慢, 讓我有些昏昏欲睡; 但的確披露了很多我完全不曾瞭解的內幕情報, 還展示了不少內部資料, 很有收穫. 有些出乎意料的是徠卡在德國本部的博物館中還專門展出了一台 R-D1, 並說明 ｢本機激勵了徠卡工程師突破數碼化難關, 最終開發出 M8｣. 我還發現參加者除了幾乎人手一台 R-D1, 理光 GR3 的數量也非常之多, 有趣. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/Satou.avif"></p>
-<blockquote>
-<p>每回確善能推出新品時都會在 <a href="https://www.youtube.com/@cosina_promotion">YouTube</a> 露面的佐藤先生在翻閱主講者帶來的補充材料, 旁邊就是愛普生的前開發負責人枝常先生</p>
-</blockquote>
-<p>講演會結束之後我也順便逛了一下 JCII 相機博物館. 比起<a href="https://www.cameramuseum.uk/">倫敦的相機博物館</a>, 本店的藏品更加豐富, 而且也更加聚焦在日本的相機產業發展上. 我去的時候館內正在舉辦展覽 ｢昭和１００年記念 昭和のカメラ物語　第一部：1926-1954｣, 展出了很多不為人所知的, 日本相機在風行全球之前的製品. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/ResTest.avif"></p>
-<blockquote>
-<p>在相機博物館裡的測試標版, 我用 Voigtlander APO-Ultron 90mm ƒ&#x2F;2 拍了一張, 除了暗角嚴重之外解析度是真的很不錯</p>
-</blockquote>
-<hr>
-<p>離開了相機博物館之後, 我繼續前往<a href="https://www.honzukuri.org/">本づくりハウス</a>參加金属活字鋳造会社物販会. 活動正好在這週末舉辦, 我又對在 2025 年新制作一款金屬活字這件事情感到非常著迷, 於是果斷參加了. 有些出乎意料的是本づくりハウス基本上就是一所民宅, 內部比預想要更加狹小, 在放下三個參展商的展台之後室內就幾乎沒有多少容納觀客的空間了. 幾位參觀者在不多的空間裡騰挪, 還有字體制造商的訪客縮在角落與展商做行業交流. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/byakuninisshu.avif"></p>
-<p>甫一入場我就看到一位面相神似字談字暢<a href="https://www.thetype.com/author/ericliu/">主播 Eric</a> 的觀客, 但我臉盲晚期重度不敢確認便沒能上前打招呼, 等他離場之後才在群裡確認到就是本人⋯⋯ 作為金屬活字鑄造會社物販會, 自然也会展出各社作品, 比如來自<a href="http://sasaki-katsuji.com/">佐佐木活字店</a>, 近期在 YouTube 上爆火的歌曲 <a href="https://www.youtube.com/watch?v=a8dgNdJVluc">｢怪獸｣ MV</a> 標題所用的活版. 因為造型非常現代, 又融合了黑體與明朝體的特徵, 我在觀賞 MV 時完全沒能意識到這居然是活版印刷產物, 在看到實物時大吃一驚. (當然, 如果你之前看過<a href="https://www.youtube.com/watch?v=wfBSnOy-LQA">怪獸 MV 的預告</a>的話或許就不會感到吃驚了)</p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/Kaijuu.avif"></p>
-<p>我最感興趣的部分自然是來自<a href="https://tkatuji.theshop.jp/">築地活字</a>的展示了 AK Renaissance Pb 的展台. 除了可供購買的成品活字之外, 展台上還放置了設計稿以及尚在試作中的 9pt 和 21pt 母版, 以及築地活字的其他作品. 大概是因為現場全是活字, 築地的設計師自制的一個用來檢驗基線對齊的小工具反而得到了更多的關注. 我與設計師聊了一聊, 得知 AK Renaissance 暫時沒有開發 smallcaps 的計劃, 悲劇⋯⋯</p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/Deivce.avif"></p>
-<p>現場能夠以比網店售價略便宜一些的價格購買 AK Renaissance, 要是我有錢的話就買大全套 (42,000 日元!) 了, 還好築地也知道更多人買來只是收藏觀賞, 所以可以單獨購買一個活字. 於是我便買了 NovaDNG 以及幾個造型獨特的自由合字 (還有非常漂亮的 ampersand). 除了 AK Renaissance Pb 之外, 築地的展台還展示了宋朝體和各種花形活字. 其中貓足跡的活字大受好評, 被單獨拿出作為商品 ｢活字貓｣ 販售, 我也買了一份作為禮物.</p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/NovaDNG.avif"></p>
-<p>更出乎預料的是正當我準備離場時, 身旁イワタ社的來訪者從包裡拿出了剛剛發表不久的 <a href="https://www.iwatafont.co.jp/font/iwata-clip-studio-comic/">IWATA Clip Studio Comic</a> 樣冊, 豎耳一聽發現居然是開發部的<a href="https://x.com/KAN0U">狩野先生</a>, 於是我就這樣蹭聽了半小時業界交流會⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart2/Iwata.avif"> </p>
-<hr>
-<p>雖然離開物販會時還不算很晚, 但我不打算安排更多活動了, 畢竟體力還得要為本次最重要的活動 ⸺ 明天的酔シグレ fanbox live 準備. 我在住處附近的<a href="https://tabelog.com/tokyo/A1316/A131602/13279638/">一家以醃漬和熏製食物為賣點的料理店</a>簡單吃了晚餐, 回到住處洗漱完畢躺在床上, 激動地等待週日來臨. </p>
-<hr>
-<p>東京遊記 2025 六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
       </tags>
   </entry>
   <entry>
@@ -1196,62 +1097,99 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 2025 (六月篇) Part Ⅳ</title>
-    <url>/2025-06/TripToTokyo2025JunPart4/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart4/Tokyo1AM.avif"></p>
-<h3 id="Day-4-六月九日-星期一-相模原-江之島-港區"><a href="#Day-4-六月九日-星期一-相模原-江之島-港區" class="headerlink" title="Day 4, 六月九日, 星期一, 相模原 - 江之島 - 港區"></a>Day 4, 六月九日, 星期一, 相模原 - 江之島 - 港區</h3><p>旅途的最後一天. 儘管前一晚上滿腦子都是 fanbox live 的迴響沒能好好睡覺, 但我還是在九點出門搭上電車前往今天的第一個目的地, <a href="https://umick.com/">海福雜貨</a>. 不知為何海福雜貨所在的相模原東林間區有好多家雜貨店, 本次自然不可能一一造訪, 只能選取我關注時間最長的海福雜貨了. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/Umifront.avif"></p>
-<p>海福雜貨比之前造訪的 fairy:note 又要大上不少, 但店內的空間利用率遠高於 fairy:note, 給人帶來的擁擠感甚至遠超本づくりハウス. 一進店就會意識到目之所及的每一個角落都塞滿了各種商品, 包括屋頂上都掛滿了各式各樣的裝飾或商品. 我趕緊去前台把郵差包給寄存了, 否則恐怕肯定會碰倒些什麼吧. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/pen.avif"></p>
-<p>海福雜貨裡展示和售賣的商品真的品類過於繁雜, 對得起 ｢雜貨｣ 這一名號, 即便是走馬觀花地看也足以消遣一整天時間了, 更別說我對其中很多門類都頗有興趣. 一層的雜貨多少算是有些主題, 比如說一些櫃子上全是戒指, 一些櫃子上全是項鍊, 還有一個角落全都是墨水羽毛筆等書寫工具等等. 但因為商品實在是過於琳琅滿目, 總覺得對我的認知負擔也有點大, 看久了甚至覺得有點頭昏腦脹, 我想起存包的時候店主說過二樓咖啡館稍後開店, 便打算暫時離開一樓, 去二樓的咖啡館休息一下. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/cramp.avif"></p>
+    <title>東京遊記 2025 (六月篇) Part Ⅱ</title>
+    <url>/2025-06/TripToTokyo2025JunPart2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart2/TokyoMetropolitanTheatre.avif" alt="東京芸術劇場"></p>
+<h3 id="Day-2-六月七日-星期六-池袋-千代田-新宿"><a href="#Day-2-六月七日-星期六-池袋-千代田-新宿" class="headerlink" title="Day 2, 六月七日, 星期六, 池袋 - 千代田 - 新宿"></a>Day 2, 六月七日, 星期六, 池袋 - 千代田 - 新宿</h3><p>嗯? 怎麼又是池袋? 不是前一天才去過太陽城的嗎? 會發出這樣疑問的讀者, 恭喜! 你的記憶力很好, 也有認真閱讀 Part Ⅰ~ 今天來池袋的目的是聖地巡禮 ⸺ 香音老師的<a href="https://yoishigure2021.fanbox.cc/posts/9746463">小說</a>中提及的現實存在的地點<a href="https://www.fukuroshosabo.com/home">梟書茶房</a>, 同時也是香音老師曾說過自己非常中意 (甚至帶妹妹同去) 的地方. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/TheatrePoster.avif"></p>
+<p><img src="/Frames/Tokyo2025jun/07700018.avif"></p>
+<p>因為小說裡提過本店客流量巨大, 入店需要大排長隊, 我和 <a href="https://twitter.com/O5c4r2017">Oscar</a> 十點左右就到 Esola 樓下等待, 卻發現別說店門沒開了, 連大樓都還沒開始營業, 我們只能踱步到附近的池袋西口公園 Global Ring 等待. 好在公園也是在小說裡登場過的, 坐在兩位主人公等待的地方, 饒有興致地觀察著周遭來往的人群以及形態各異的雕像與建築, 時間很快就來到了預定開店的十點半. Esola 的電梯果然大排長龍, 我們一邊慶幸自己來得還算早一邊登上四樓. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/cafeentry.avif"></p>
+<p>如名字所述, 梟書茶房是圍繞著書與茶展開的. 一進店就能看到陳列在門口的巨大的書架與書桌, 上面放置著上千本書. 然而時至今日, 書店賣咖啡或者咖啡館賣書早已不是新鮮概念, 梟書茶房與普通書店&#x2F;咖啡館最大的區別是, 這些書全都經過主理人的重新包裝, 隱去原本的封面, 重新套上一層書封, 而在那書封上寫了主理人的推薦以及編號來讓讀者選購 ⸺ 書封, ふくろ (fukuro), フクロウ (fukurou), 梟⋯⋯ 你是不是也同樣露出了會心的微笑呢? </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/inner.avif"><br><img src="/2025-06/TripToTokyo2025JunPart2/shelf.avif"></p>
+<p>拋去書房的部分, 作為茶房的本店相較之下就沒有那麼特別了, 不過店內在書架對面有一個區域被裝修成了非常像圖書館中閱覽區&#x2F;自修室的樣子, 獨自前來的顧客若是在這裡拿上本書一邊閱讀一邊啜飲咖啡或許能假裝自己在圖書館而不是咖啡廳中吧. 無怪乎既喜歡書又熱愛咖啡歐蕾的香音老師會如此中意本店. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/Library.avif"></p>
+<p>我與 Oscar 都打算在這裡解決早午餐, 各自點了飲品與餐點. 運氣很好地碰上店裡的夏季新品裡有夏威夷咖啡 (名字非常片假名地獄 ⸺ ハワイコナ　エクストラファンシー　ブレンド), 味道意外地非常對我的胃口. 不過除了咖啡以外的其他食物就普普, 並不能與他們的價格相襯. 酒足飯飽 (?) 後, 我們從梟書茶房離開, 分別繼續各自的行程. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/3cups.avif"></p>
+<hr>
+<p>下午的行程首先是參加相機博物館開展的<a href="https://www.jcii-cameramuseum.jp/academy/2025/04/16/36812/">愛普生 R-D1 研究講演會</a>, 這也是我本次會攜帶 R-D1s 的理由. 實際上來場人數眾多, 我非常慶幸自己在成田機場等電車的時候就打電話預約, 否則可能還真找不到座位. 參會者幾乎全是中老年男性, 非常符合刻板印象 (?). 到場嘉賓裡除了前愛普生開發 R-D1 的負責人, 還有索尼､ 適馬､ 佳能和確善能的高管. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/EpsonGuest.avif"></p>
+<p>講演會本身不知道是不是因為考慮到聽眾們都年事已高, 節奏非常緩慢, 讓我有些昏昏欲睡; 但的確披露了很多我完全不曾瞭解的內幕情報, 還展示了不少內部資料, 很有收穫. 有些出乎意料的是徠卡在德國本部的博物館中還專門展出了一台 R-D1, 並說明 ｢本機激勵了徠卡工程師突破數碼化難關, 最終開發出 M8｣. 我還發現參加者除了幾乎人手一台 R-D1, 理光 GR3 的數量也非常之多, 有趣. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/Satou.avif"></p>
 <blockquote>
-<p>極繁主義不過如此</p>
+<p>每回確善能推出新品時都會在 <a href="https://www.youtube.com/@cosina_promotion">YouTube</a> 露面的佐藤先生在翻閱主講者帶來的補充材料, 旁邊就是愛普生的前開發負責人枝常先生</p>
 </blockquote>
-<p>要進入咖啡店必須經過二樓的分室. 二樓原本應該是作為儲藏間使用, 門的高度甚至不到我的肩膀, 必須彎腰才能進入室內. 進入室內我大為震驚, 二樓的藏品密度竟更甚於一樓, 如果說一樓還保留了最低限度的秩序感, 二樓就更像是一個稍微有點分類的儲藏間了, 從頭頂到腳邊<strong>每一寸</strong>空間都擺滿了各種難以分類的商品, 恐怕會引發密集恐懼患者當場昏倒, 但也很有可能會令極繁愛好者欣喜若狂. 我猜這應該也會是香音老師中意的地點. 對我而言最大的問題反倒是天花板上掛著的各種飾品和商品太容易碰到頭, 在其中我基本只能全程貓著腰行動. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/Bottles.avif" alt="Bottles _gallery &lt;"></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/ToCafe.avif" alt="To Cafe _gallery &gt;"></p>
-<p>略有些堅難地穿過分室進入咖啡廳, 咖啡廳所在的空間總算是沒有那麼擁擠了. 時間將近正午, 於是我便在咖啡歐蕾之外點了簡單午餐, 然後在沙發上落座放鬆一下資訊過載的大腦和眼睛. 不一會兒午餐就被端了上來, 是附帶小酒精爐和鑄鐵鍋的烤吐司, 我可以自己選擇中意的烤吐司焦度, 也能自己選擇要塗多少黃油和果醬, 頗有玩心, 很符合雜貨店的氣質. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/toast.avif"></p>
-<p>飽餐一頓後我回到店裡購買了一些作為禮物的商品, 拿回包, 繼續向著江之島行進. </p>
-<hr>
-<p>之所以突然想去江之島, 是因為前陣子在中國上映了孤獨搖滾劇場版, 而後篇中專門給了江之島旅遊場景很長的戲份. 本來我週一就沒有其他安排, 不如趁機聖地巡禮一番. 而且不僅是江之島, 我對新江之島水族館也是興味盎然, 從電車上下來就直奔水族館. 新江之島水族館比起太陽城水族館要大了幾個級別, 很有可能是我造訪過最大的水族館了. 週一的水族館遊客不算很多, 我得以非常盡興地觀賞. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/Tank.avif"> </p>
+<p>講演會結束之後我也順便逛了一下 JCII 相機博物館. 比起<a href="https://www.cameramuseum.uk/">倫敦的相機博物館</a>, 本店的藏品更加豐富, 而且也更加聚焦在日本的相機產業發展上. 我去的時候館內正在舉辦展覽 ｢昭和１００年記念 昭和のカメラ物語　第一部：1926-1954｣, 展出了很多不為人所知的, 日本相機在風行全球之前的製品. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/ResTest.avif"></p>
 <blockquote>
-<p>人類幼崽 for scale</p>
-</blockquote>
-<p>如果說太陽城水族館的賣點是空中企鵝, 那新江之島水族館的賣點應該就是各色水母了. 從一入館就看到水母 × 紫陽花的宣傳活動, 以及放著小水母供遊客合影的特製水缸. 本館以相模灣海洋生態為切入點, 展出了豐富多彩的科普內容. 館中央更是有佔地兩層樓的超巨大水缸, 引人駐足. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/morejellyfish.avif" alt="More Jellyfish _gallery &gt;"></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/Jellyfish.avif" alt="Jellyfish _gallery &lt;"></p>
-<p>除了超大水缸, 新江之島水族館還有一個專門展示水母的圓形展廳, 踱步其中就能感受到被水母全方位包圍的感覺. 在太陽城水族館時看到水母牆時已經覺得非常驚豔, 這 360° 水母廳簡直幸福感爆表. </p>
-<p>當然, 這裡也有企鵝, 只不過比起在室外或者在天空般水缸中的企鵝, 在冷氣房中的企鵝就顯得有些普通了. 不論如何, 企鵝還是可愛, 永遠看不膩. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/penguin.avif"></p>
-<p>除了展示海洋生物, 新江之島水族館還專門開闢了一個地下空間用以展示日本的深海探索裝置, 深海 2000. 另外, 館內還有一個區域專門展示日本皇室對海洋研究的獨特興趣 ⸺ 我倒是早就對明仁天皇的蝦虎魚研究有所耳聞, 只是沒想到這居然是家學淵源. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/Sub.avif"></p>
-<p>最後不得不提水族館的紀念品商店. 本店比太陽城水族館的要大上許多, 商品的數量也多了一個量級, 然而除卻在兩遍都有販賣的類似商品, 它們的精緻程度卻遠不如太陽城水族館. 我看了一圈, 興致缺缺, 沒有購買任何紀念品便離開了. </p>
-<hr>
-<p>從水族館出來時已經在下著中雨. 我非常猶豫是否應該繼續按照原計劃前往江之島 ⸺ 畢竟票都已經買好了, 不去的話感覺浪費了 (雖然可以退票, 但是電車票錢⋯⋯), 而且四點回家也有點為時過早. 猶豫了一小會兒, 我決定相信包包的防雨能力, 冒雨前往江之島. 在雨中小跑十幾分鍾後, 我終於穿過弁天橋踏入島上. </p>
-<p><img src="/Frames/Tokyo2025jun/enoshimagate.avif"></p>
-<p>一上島映入眼簾的便是商店街, 一瞬間讓我產生了來到鼓浪嶼龍頭路的錯覺. 儘管雨還在下, 商店街依然摩肩接踵人滿為患, 而根據聲音判斷似乎大多數還是中國來的遊客. 我從人群中穿過時有了一個小發現: 江之島上的中國遊客但凡有拿著相機的, 全都是所謂的 ｢CCD 相機｣ <del>(AKA. 垃圾)</del>, 看到這種情況我開始理解富士為什麼會在 2025 年推出 X-half 了⋯⋯我當然沒有在商店街做任何停留, 繼續小跑著前往海之燭燈塔. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/enoshima.avif"> </p>
-<p>一路上的風景其實都很美麗, 尤其是因為途經神社並一路往上, 風景的層次感也很強. 可惜因為下雨而我帶著的鏡頭全都不防雨, 我不敢隨意把相機掏出來. 這時候就特別希望有一枚帶有耐候性的鏡頭了⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/shrine.avif"></p>
-<p>頂著忽大忽小的雨, 總算來到了海之燭, 迎接我的卻是 ｢因為天候問題室外展望台不開放｣ 通告, 讓人十分洩氣. 但不論如何已經到這裡了, 我還是坐上電梯來到室內展望台. 可以想象天氣晴好時這裡的視野應該十分遼闊, 但當下只能看到烏雲密佈. 也有幾位其他遊客和我一道在這個時間登上展望台, 但都很快就悻悻離去. 我也沒有在展望台上停留太久, 眼看雨勢似乎減小, 便離開了江之島. </p>
-<p><img src="/Frames/Tokyo2025jun/seacandleobserver.avif"></p>
-<hr>
-<p>回到住處之後我早早盥洗完畢躺在床上, 但完全不能入睡, 一想到這次東京之行竟然以落湯雞作為終結實在是心有不甘, 到了一點左右突發奇想, 打算去看一趟凌晨的東京塔. </p>
-<p>因為從住處前往車站或者去慶應的路上都能在建築群間看到東京塔若隱若現, 所以不需要地圖我也能走到塔的所在. 凌晨一點的港區和大井完全不同, 依然算得上燈火通明, 只是街上空空如也, 非常舒適. 東京塔的照明燈也早已全部熄滅, 只剩下航空指示燈還在閃爍, 從遠處看去更顯威壓. 可惜東京塔水族館已經閉館, 不然下次來多少得去一次. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/TokyoTower_Panorama-1.avif"></p>
-<p>一路走到東京塔腳下, 突然想到這也算是少女歌劇聖地巡禮了, 下意識露出微笑. 六月夜晚的東京尚略有涼意, 空無一人的塔底令我心情舒暢, 但在塔底徘徊了一陣, 看著靜寂的街道和失去燈光的東京塔, 心中又不免生出一股空虛 ⸺ 這<strong>就是</strong>旅程的終末了. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/Towerbase.avif"></p>
-<hr>
-<p>在 fanbox live 結束後, 香音老師把一摞信封放在物販區的角落讓感興趣的聽眾自行領取. 其中記載的內容我早已知曉, 而今天起這就不再只屬於幾個人的 ｢秘密｣. 看著這秘密實際呈現在眼前, 我思索著這個決定對香音老師的意味, 思緒與那天香音老師歌聲琴聲的迴響交織, 久久不能平息⋯⋯</p>
-<p><img src="/2025-06/TripToTokyo2025JunPart4/invitation.avif"></p>
-<blockquote>
-<p>I invite you to my secret</p>
+<p>在相機博物館裡的測試標版, 我用 Voigtlander APO-Ultron 90mm ƒ&#x2F;2 拍了一張, 除了暗角嚴重之外解析度是真的很不錯</p>
 </blockquote>
 <hr>
-<p>東京遊記 2025 六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a> </p>
+<p>離開了相機博物館之後, 我繼續前往<a href="https://www.honzukuri.org/">本づくりハウス</a>參加金属活字鋳造会社物販会. 活動正好在這週末舉辦, 我又對在 2025 年新制作一款金屬活字這件事情感到非常著迷, 於是果斷參加了. 有些出乎意料的是本づくりハウス基本上就是一所民宅, 內部比預想要更加狹小, 在放下三個參展商的展台之後室內就幾乎沒有多少容納觀客的空間了. 幾位參觀者在不多的空間裡騰挪, 還有字體制造商的訪客縮在角落與展商做行業交流. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/byakuninisshu.avif"></p>
+<p>甫一入場我就看到一位面相神似字談字暢<a href="https://www.thetype.com/author/ericliu/">主播 Eric</a> 的觀客, 但我臉盲晚期重度不敢確認便沒能上前打招呼, 等他離場之後才在群裡確認到就是本人⋯⋯ 作為金屬活字鑄造會社物販會, 自然也会展出各社作品, 比如來自<a href="http://sasaki-katsuji.com/">佐佐木活字店</a>, 近期在 YouTube 上爆火的歌曲 <a href="https://www.youtube.com/watch?v=a8dgNdJVluc">｢怪獸｣ MV</a> 標題所用的活版. 因為造型非常現代, 又融合了黑體與明朝體的特徵, 我在觀賞 MV 時完全沒能意識到這居然是活版印刷產物, 在看到實物時大吃一驚. (當然, 如果你之前看過<a href="https://www.youtube.com/watch?v=wfBSnOy-LQA">怪獸 MV 的預告</a>的話或許就不會感到吃驚了)</p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/Kaijuu.avif"></p>
+<p>我最感興趣的部分自然是來自<a href="https://tkatuji.theshop.jp/">築地活字</a>的展示了 AK Renaissance Pb 的展台. 除了可供購買的成品活字之外, 展台上還放置了設計稿以及尚在試作中的 9pt 和 21pt 母版, 以及築地活字的其他作品. 大概是因為現場全是活字, 築地的設計師自制的一個用來檢驗基線對齊的小工具反而得到了更多的關注. 我與設計師聊了一聊, 得知 AK Renaissance 暫時沒有開發 smallcaps 的計劃, 悲劇⋯⋯</p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/Deivce.avif"></p>
+<p>現場能夠以比網店售價略便宜一些的價格購買 AK Renaissance, 要是我有錢的話就買大全套 (42,000 日元!) 了, 還好築地也知道更多人買來只是收藏觀賞, 所以可以單獨購買一個活字. 於是我便買了 NovaDNG 以及幾個造型獨特的自由合字 (還有非常漂亮的 ampersand). 除了 AK Renaissance Pb 之外, 築地的展台還展示了宋朝體和各種花形活字. 其中貓足跡的活字大受好評, 被單獨拿出作為商品 ｢活字貓｣ 販售, 我也買了一份作為禮物.</p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/NovaDNG.avif"></p>
+<p>更出乎預料的是正當我準備離場時, 身旁イワタ社的來訪者從包裡拿出了剛剛發表不久的 <a href="https://www.iwatafont.co.jp/font/iwata-clip-studio-comic/">IWATA Clip Studio Comic</a> 樣冊, 豎耳一聽發現居然是開發部的<a href="https://x.com/KAN0U">狩野先生</a>, 於是我就這樣蹭聽了半小時業界交流會⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart2/Iwata.avif"> </p>
+<hr>
+<p>雖然離開物販會時還不算很晚, 但我不打算安排更多活動了, 畢竟體力還得要為本次最重要的活動 ⸺ 明天的酔シグレ fanbox live 準備. 我在住處附近的<a href="https://tabelog.com/tokyo/A1316/A131602/13279638/">一家以醃漬和熏製食物為賣點的料理店</a>簡單吃了晚餐, 回到住處洗漱完畢躺在床上, 激動地等待週日來臨. </p>
+<hr>
+<p>東京遊記 2025 六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 2025 (六月篇) Part Ⅰ</title>
+    <url>/2025-06/TripToTokyo2025JunPart1/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart1/Skyline.avif"></p>
+<p>就像<a href="/2025-03/TripToTokyo2025Part3/">上次遊記</a>的結尾中提到的那樣, <a href="/2025-03/Minstrel-Yoishigure/">香音老師</a>的 <a href="https://yoishigure2021.fanbox.cc/posts/9507490">Fanbox Live</a> 如期於六月八日舉辦, 我也以此為契機再次來到了東京. 比起前兩次, 這次除開出發到達在東京停留的時間就只有四天, 好在幸運女神眷顧, 有很多在此期間舉辦的活動, 而且奇蹟般地時間上並無衝突, 所以比起上次一週多的悠閒遊玩, 這次可以說是馬不停蹄地連軸轉, 對於身體和精神都有點考驗. </p>
+<p>相機與鏡頭的攜帶上, 本次我完全放棄了 F 單反, 改成了三機四鏡的配置 ⸺ Zƒ 裝著 TZM-02, 與 R-D1s 和 Hexar RF 共用三枚 M 鏡頭: 星耀 28mm ƒ&#x2F;2.8 餅乾廣角, 福倫達 35mm ƒ&#x2F;1.5 VM 小廣角與福倫達 90mm ƒ&#x2F;2 VM 中長焦. 這幾枚鏡頭都極為小巧, 讓我即使同時揹著三機三鏡在東京漫步也絲毫不覺得肩上有壓力. 不過為了應付潛在的拍攝風光需求, 我還是帶上了新入手的蔡司 15mm ƒ&#x2F;2.8 以備不測, 事實證明這是最大的錯誤決定, 要是換成福倫達 21mm ƒ&#x2F;4 P 就好了⋯⋯ 至於緣由, 估計到 part Ⅲ 裡就會說明.</p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/202506loadout.avif" alt="下次就帶這些"></p>
+<h3 id="Day-0-六月五日-星期四-成田-南麻布"><a href="#Day-0-六月五日-星期四-成田-南麻布" class="headerlink" title="Day 0, 六月五日, 星期四, 成田 - 南麻布"></a>Day 0, 六月五日, 星期四, 成田 - 南麻布</h3><p><img src="/2025-06/TripToTokyo2025JunPart1/15mmStreetview.avif"></p>
+<p>這次選擇了直飛成田的航班, 省去了浪費在轉機上的時間, 但成田去市區的快速列車半小時左右才發車一班, 在海關大排長龍後等到快五點我才到達住處. 話雖如此, 這也比前兩次雖然落地羽田但都在晚上十點過後才到達住處要早太多了. 因為不想浪費太多時間和金錢在通勤上, 這次我沒有選擇和前兩次一樣住在立會川, 而是選擇了離市中心更近的南麻布. 挑選住處時雖然完全沒注意到, 但這地方比我想象中的更接近市中心, 不但可以從天台近距離觀賞到東京塔, 距離慶應義塾大學大概就只有十分鐘的腳程, 巴士和電車通勤也無比方便, 可以說位置絕佳了. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/TokyoTowerNightView.avif" alt="從屋頂眺望東京塔 _gallery &lt;"></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/koboji.avif" alt="弘法寺 _gallery &gt;"></p>
+<p>安頓好行李後我就興致勃勃地帶上相機去天台拍東京塔, 緊接著趁著太陽尚有餘暉去慶大散步. 慶大的面積不算寬廣, 體感和 UCA 相距不遠, 繞行一圈不過也就 40m 的樣子. 和慶大緊連著的是義大利使館, 還有藏在一個轉角裡, 建築設計非常現代毫無佛寺感的弘法寺. 學校有一圈存在感不是特別強的牆把它與東京隔開, 但並不是很生硬的分割, 在遠離主幹道的部分依然會感覺他與旁邊的住宅融為了一體. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/KeioSt.avif" alt="慶應旁的道路"></p>
+<p>逛完一圈慶大之後, 我在旁邊一個楔形岔路裡, 造型古樸而<a href="https://tabelog.com/tokyo/A1314/A131402/13013982/">歷史悠久的居酒屋</a>吃了晚餐, 回到住處倒頭便睡. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Tsunokuniya.avif" alt="津國屋"></p>
+<h3 id="Day-1-六月六日-星期五-虎ノ門-水道-池袋"><a href="#Day-1-六月六日-星期五-虎ノ門-水道-池袋" class="headerlink" title="Day 1, 六月六日, 星期五, 虎ノ門 - 水道 - 池袋"></a>Day 1, 六月六日, 星期五, 虎ノ門 - 水道 - 池袋</h3><p><img src="/2025-06/TripToTokyo2025JunPart1/TokyoNodeGallery.avif"></p>
+<p>一路向北的一天 (?). 早上九點多出門去位於虎ノ門的 TOKYO NODE GALLERY 觀看<a href="https://exhibition-ah-neo.jp/">デザインあ展 neo</a>. デザインあ是 NHK 上一檔面向大眾 (尤其是兒童) 普及設計知識的節目, 是已經播送了十五年的常青樹. 我大概是在十年前從<a href="https://www.thetype.com/typechat/">字談字暢</a>瞭解到了這個節目, 因為在國內收看困難所以只能斷斷續續看了一些台灣&#x2F;香港引進的集數, 但即便如此我也一直對該節目抱有很高好感, 畢竟好設計要從娃娃抓起嘛 (笑). </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Entry.avif"></p>
+<p>TOKYO NODE 位於虎之門之丘車站大樓 45 層, 一進車站大樓就能看到巨大的あ字海報, 大樓各處也遍佈著あ字裝飾和指示牌. 雖然 45 層也算是挺高的樓層了, 但展會現場完全沒有窗戶所以只有在入場和離場前能俯瞰東京市景 ⸺ 當然, 來這裡的重點肯定不是東京市景. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Items.avif"></p>
+<p>會場內果不其然有非常多兒童, 從嬰兒車裡的到小學低年級居多, 或許等到週末會看到更多學生年齡層的青少年吧. 雖然兒童很多, 但噪音控制意外地還算不錯, 沒有讓人覺得特別煩躁, 大概是因為孩童們大多在聚精會神地與展品進行互動. 展覽估計有超過一半的展品是被設計來互動的, 比起在電視上觀看, 實際上手體驗一些設計對於兒童來說當然是更加直觀的. デザインあ本就提倡從日常出發思考設計, 而這些以日常出發設計的小道具以實體呈現在眼前, 能夠 360 度觀看, 更能感受到它們的巧妙. 在互動區裡還有圍場, 讓來訪者可以親身體驗<a href="https://dessin-ah.jp/">デッサンあ</a>並看到自己的大作被放在投影牆和網頁上展示, 參與感滿點. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/DessinAh.avif"></p>
+<p>除了展示節目中出現過的道具與各種互動裝置, 現場還有兩個特別的展示空間. 其一是一個正方形的放映廳, 四面牆上由投影放映特別製作的相連影像, 讓我瞬間覺得彷彿回到了 teamLab Borderless. 其二是帶有攝像頭捕捉現場觀眾反饋的設計辯論環節　“Design Dotchi de Show”, 以投影在幕牆上播放 ｢學校供應牛奶應該用玻璃瓶還是利樂包｣ 辯論, 邀請觀眾站到地面上畫有相應顏色的區域, 觀看的孩童們都樂在其中. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Room2.avif"></p>
+<hr>
+<p>逛完デザインあ展 neo, 我繼續向北移動, 搭電車前往初次來東京時<a href="/2024-10/TripToTokyo3/">已經造訪過</a>的印刷博物館. 之所以再次造訪是因為這裡正在舉辦<a href="https://www.printing-museum.org/collection/exhibition/t20250123.php">特展 ｢黑之藝術｣</a> ⸺ 專注介紹古登堡發明活字後德意志地區印刷文化的展覽. 正好之後我還有打算去參加金属活字鋳造会社物販会, 臨時抱佛腳惡補一點十五世紀出版知識以備不測 (?). 而且當年我在學校裡做了 <a href="/Works/">Albrecht Type Nova</a>, 某種程度上我也可以自稱 ｢黑之藝術門徒｣, 自然對這個主題抱有額外的親近感. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Grayscale.avif"></p>
+<p>和上次的<a href="https://www.printing-museum.org/collection/exhibition/g20240720.php">活字銀河</a>不一樣, 黑之藝術展是付費展覽, 設定在地下的迷宮中. 而地面的展廳展示的是 <a href="https://www.toppan.com/ja/joho/gainfo/graphictrial/2025/">Graphic Trial 2025</a>, 算是凸版社自家的技術展覽, 其實內容也非常有趣, 展現了很多在日常生活中幾乎不可能看到的印刷技法. 我最感興趣的無疑是佔據了一整面牆的超多層偏光疊加印刷實驗, 只是稍微偏轉視線就能看到不同的畫面, 以此技術為基礎進行技術拓展來承載內容表現, 效果令人稱道. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/ColorandTexture.avif"></p>
+<p>交錢進入地下迷宮, 在進入黑之藝術展示空間前還能看到一個很小的角落被裝飾成了書店的樣子, 那是京極夏彦館長就任記念展示. 我對京極夏彦並不瞭解, 他的作品就只看過動畫化的 ｢魍魎之匣｣, 所以沒有在這裡逗留. 再往前穿過一半的迷宮就能看到黑之藝術展區了, 這個區域用黑色帷幕隔開, 入口也掛著印著巨大哥特體的幔帳, 營造出一股神秘感. 實際上印刷術在剛剛被發明時, 被稱為 „Die Schwarze Kunst(黑色技藝, 即魔法&#x2F;巫術)“, 和布展氛圍很是相稱. 而當走進布幔之中看到展品時就能明白, 這次的展品花大力氣從各地搬來了很多十五十六世紀出版物珍品, 看一次便值回票價. </p>
+<p>展覽從古登堡發明活字之前的雕版時代開始, 一直到二戰時期結束, 展現了德意志地區印刷業的獨特文化. 除了印刷博物館原本的藏品之外, 很多珍貴的藏品來自德國的<a href="https://www.mainz.de/microsite/gutenberg-museum/splash-page.php">古登堡博物館</a>和<a href="https://www.offenbach.de/klingspor-museum">克林斯波博物館</a>, 這些平時分散在世界各地的珍品共同為觀者構建了非常清晰的德意志地區印刷出版業的文脈.  </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/DieSchwarzeKunst.avif"></p>
+<p>除了這些展品之外, 我印象最深的其實是一道分割布幔上印的文字: „Gott grüß die Kunst (上帝保佑技藝)“, 這是德意志地區印刷從業者的問候語, 聽起來非常帥氣 (?). 看完展覽後, 我又去紀念品店打算買些小禮物回國送人, 這一看可出問題了, 沒想到因應黑之藝術展覽, 紀念品店更新了一大波紀念品, 我根本控制不住自己, 一口氣又買了好多 tchotchke… 湊巧紀念品店對於 ｢身著黑之時裝｣ 的顧客有每件商品優惠 50 日元的活動, 而我當天正好穿著 <a href="https://www.thetype.com/2024/10/26216/">The Type 的 T 恤</a>, 便因此替錢包減輕了一丁點負擔. </p>
+<hr>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/wax.avif"></p>
+<p>離開印刷博物館後我繼續向北造訪每次來東京都會去的涉谷 Sunshine City. 這次天文台的新節目 ｢貓星夜｣ 我並不是很感興趣, 但老節目似乎也沒有專門花錢重新看一遍的必要, 所以就沒去天象館. 倒是在去太陽城的路上路過了一家筆墨紙硯專營店<a href="https://fairynote.jp/">魔法雑貨・シーリングスタンプ専門店 Fairy{note.}</a> ⸺ 準確地說它是一家封蠟專門店, 只不過除了封蠟之外也順便賣一些氣質相符的文房具以及雜貨, 我看到招牌覺得香音老師絕對會很喜歡就一頭鑽了進去. 店內的封蠟琳琅滿目, 對於我這樣的門外漢來說資訊量爆炸, 雖然有想過可以買一點贈予香音老師, 但又覺得比起我這樣半吊子的選擇, 香音老師自己肯定早就買了合適的, 遂作罷. 不過我還是買了一些信紙自用. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/PianoPendant.avif"></p>
+<p>之後就是參觀水族館和展望台了. 和前兩次去不同, 這段時間太陽城和名偵探柯南系列有做聯動, 各個設施中都放置了聯動相關的立牌等飾物. 我對名偵探柯南系列興趣缺缺, 就沒有多加關注. 除了多出來的柯南相關飾物, 這次在水族館裡還看到了醜萌醜萌的換毛企鵝, 真是值回票價 (笑)</p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Penguin.avif"></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/WallofJellyfish.avif" alt="無論看多少次都非常治癒的水母牆"></p>
+<p>不單單是換毛企鵝, 這次去展望台時本來覺得天氣略有些陰沉, 多半是看不到富士山和落日了, 沒想到雲層似乎是專門在富士山的方向開了個小口, 讓我成功看到了富士山 ⸺ 儘管天氣不是很好導致只能看出輪廓, 但還是覺得非常開心, 總算是彌補了之前每次登高都無法看到富士山的遺憾. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/SkylinewithFujisan.avif"></p>
+<hr>
+<p>從展望台離開, 我看了一下導航發現現在去買膠捲的話剛好能趕上閉店, 就急忙去<a href="https://tokyocamera.net/">東京 Camera</a>. 然而到了店內一看各類正片早已售罄,  只好各買一卷富士 400 和 Acros Ⅱ. 之後回到住處, 在附近<a href="https://tabelog.com/tokyo/A1316/A131602/13080611/">覓食</a>時發現了一款名為<a href="https://www.sekitoba.co.jp/">赤兔馬</a>的燒酒, 本來是出於獵奇的心態點了一杯, 卻發現味道意外地非常柔和醇厚, 和名字看起來截然相反, 又是意外之喜. </p>
+<hr>
+<p>東京遊記 2025 六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
@@ -1316,38 +1254,62 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記 2025 (二月篇) PART Ⅰ</title>
-    <url>/2025-02/TripToTokyo2025Part1/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-02/TripToTokyo2025Part1/chitose.avif"></p>
+    <title>東京遊記 2025 (六月篇) Part Ⅳ</title>
+    <url>/2025-06/TripToTokyo2025JunPart4/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart4/Tokyo1AM.avif"></p>
+<h3 id="Day-4-六月九日-星期一-相模原-江之島-港區"><a href="#Day-4-六月九日-星期一-相模原-江之島-港區" class="headerlink" title="Day 4, 六月九日, 星期一, 相模原 - 江之島 - 港區"></a>Day 4, 六月九日, 星期一, 相模原 - 江之島 - 港區</h3><p>旅途的最後一天. 儘管前一晚上滿腦子都是 fanbox live 的迴響沒能好好睡覺, 但我還是在九點出門搭上電車前往今天的第一個目的地, <a href="https://umick.com/">海福雜貨</a>. 不知為何海福雜貨所在的相模原東林間區有好多家雜貨店, 本次自然不可能一一造訪, 只能選取我關注時間最長的海福雜貨了. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/Umifront.avif"></p>
+<p>海福雜貨比之前造訪的 fairy:note 又要大上不少, 但店內的空間利用率遠高於 fairy:note, 給人帶來的擁擠感甚至遠超本づくりハウス. 一進店就會意識到目之所及的每一個角落都塞滿了各種商品, 包括屋頂上都掛滿了各式各樣的裝飾或商品. 我趕緊去前台把郵差包給寄存了, 否則恐怕肯定會碰倒些什麼吧. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/pen.avif"></p>
+<p>海福雜貨裡展示和售賣的商品真的品類過於繁雜, 對得起 ｢雜貨｣ 這一名號, 即便是走馬觀花地看也足以消遣一整天時間了, 更別說我對其中很多門類都頗有興趣. 一層的雜貨多少算是有些主題, 比如說一些櫃子上全是戒指, 一些櫃子上全是項鍊, 還有一個角落全都是墨水羽毛筆等書寫工具等等. 但因為商品實在是過於琳琅滿目, 總覺得對我的認知負擔也有點大, 看久了甚至覺得有點頭昏腦脹, 我想起存包的時候店主說過二樓咖啡館稍後開店, 便打算暫時離開一樓, 去二樓的咖啡館休息一下. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/cramp.avif"></p>
 <blockquote>
-<p>是的, 時隔半年我又來東京旅遊了. </p>
+<p>極繁主義不過如此</p>
 </blockquote>
-<h4 id="Day-1-十月"><a href="#Day-1-十月" class="headerlink" title="Day -1, 十月"></a>Day -1, 十月</h4><p>這次來東京的理由和上次可以說完全一致 ⸺ 又是碰到了香音老師和情緒的活動正好差不多時間舉辦. 只不過這次的優先順序反過來, 香音老師是音樂會, 情緒的是展覽. 基本上在得知兩者開辦時間的當下我就決定了要來東京. 總體的準備和<a href="/2024-10/TripToTokyo1/">上次</a>基本一致, 就不贅述了. 區別最大的地方是因為冬天所以需要帶的衣服變多了, 乾脆順理成章地多帶了一個雙肩包, 這樣相機和鏡頭就可以裝進專門的斜跨包裡了, 這讓幾天下來肩膀的體驗比上次好了一大截. 而帶的鏡頭倒是沒什麼變化, 除了把上次的 90&#x2F;2.8 DG DN 換成了 Auto Nikkor 20&#x2F;3.5, 然後把 Zƒ 的掛機鏡頭換成了 65&#x2F;2.  </p>
-<h3 id="Day-1-二月十五日-池袋-保谷"><a href="#Day-1-二月十五日-池袋-保谷" class="headerlink" title="Day 1, 二月十五日, 池袋 - 保谷"></a>Day 1, 二月十五日, 池袋 - 保谷</h3><p>因為晚上要去保谷坐電車無論如何都會經過池袋, 我就打算先在池袋讀度過上午和下午. 選擇的地點是上次已經去過的太陽城水族館與柯美天象館, 不過這次增加了一個<a href="https://sunshinecity.jp/observatory/">太陽城 60 層展望臺</a>. 水族館和天象館的體驗和上次比起來差了一些, 蓋因週末人變得更多了. 好在企鵝還是那麼可愛, 星空還是那麼療愈. 有趣的是這天不知道遇上什麼活動, 池袋站周邊有巨量 coser, 太陽城也被抹上了一到異色. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54360285394/in/dateposted/" title="DSC_6878-0.0 mm f-0.0"><img src="https://live.staticflickr.com/65535/54360285394_275c513a80_b.jpg" alt="DSC_6878-0.0 mm f-0.0"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>展望臺的最大特色應該是雖然位於室內, 但是有試圖營造出公園的感覺 (可能也因此有一大堆小朋友) 以及可以在天氣晴好時看到富士山 ⸺ 然而我去的哪天雖然還算晴朗, 但西南方向隱隱有些雲層遮蔽了富士山, 轉了一圈感覺沒希望看到, 我只能悻悻離去. 不過在臨走前我福至心靈, 突然想到要給香音老師買花, 便順路拐進了<a href="https://benelic.com/flowermiffy/juicegarden_ikebukuro/">太陽城的一家花店</a>, 買了一束藍白色調的花. 準備完全之後便動身前往保谷. 在此之前我先在池袋站與同樣是從中國來東京看演出的酔シグレ同好 <a href="https://x.com/O5c4r2017">Oscar</a> 會和, 一通去往<a href="https://www.komorebi-hall.jp/">保谷樹影大禮堂</a>. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54360303903/in/photostream/" title="DSC_7055-65mm f-2"><img src="https://live.staticflickr.com/65535/54360303903_9b5345a68d_b.jpg" alt="DSC_7055-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>和上次吟遊詩人聯動咖啡不同, 本次活動畢竟是在音樂廳裡舉辦的古典 Live, 來參加的觀眾大多西裝革履. 還好為了應付這種狀況我倒是也戴了領帶不至於太格格不入. 本來想在演出結束時直接上臺獻花, 詢問了工作人員之後被告知果然是不可以的⋯⋯ 只好把花與其他禮物一併交給現場工作人員, 等演出結束後統一送上. 演出所在的小禮堂如名字所描述, 比起我習慣看到的音樂廳來說容積確實小了很多, 總共可容納的觀眾數量大概只有二百人出頭. 不過小禮堂的好處就是我雖然運氣很不好抽到了一個很靠近邊角的坐席, 實際上離舞臺的距離也並沒有很遠 (Oscar 這個運氣爆棚的傢伙抽到了第三排幾乎正中的坐席, 實在是令人羨慕嫉妒⋯⋯). 觀眾們入場坐定後, 演出便準時開始了. </p>
-<p>演出的構成與去年的第一次古典 live 相同, 依然是由主唱, 鋼琴, 長笛與吉他共演. 登臺的演出者們都身著禮服, 在舞臺燈光下更顯熠熠生輝, 而兩側的射燈開啟後我才發現或許坐在邊角並不完全只有壞處, 因為這個方向可以看到被射燈投影在側壁上的演出者側影 (正面的話會被遮擋出入口的屏風擋住). 香音老師率先進行演出, 以無麥克, 歌劇唱法演唱了吟遊詩人人生錄的引入曲 <em>Prelude</em>. 在歌聲響起的瞬間, 我感受到了與去年在 <a href="/2024-10/TripToTokyoAnima/">Anima Ⅲ</a> 上體驗到的截然不同的觸電感, 渾身汗毛直豎. 全力全開的香音老師似乎非常輕鬆地就把歌聲灌滿了整個會場, 甚至讓我感覺她的歌聲直接鑽進了我的肺部, 而我肺中的空氣與香音老師的歌聲發生了共鳴. 這是前所未有的體驗 ⸺ 這兩年參加了這麼多線下 live, 我當然早已理解 live 現場的震撼, 而在此之前我也聽過更多的古典音樂會, 但從未有一次體會到彷彿身體被操控的感受. </p>
-<p>重新編曲後鋼琴與長笛的搭配也是天作之合, 並不只是簡單地簡化原本的樂器分配, 而是重新配置了鋼琴與長笛的比重, 全無任何一絲 ｢啊, 這裡原本應該還有點什麼⋯⋯｣ 之感. 後面加入的吉他也並不是直接照搬原曲的吉他, 而是適當地分配了一些原本鋪墊旋律的部分給鋼琴和長笛, 也因此吉他得以更多地加入 golpe 和 bartok pizzicato 以及更多我叫不出名字的獨特技巧, 感覺甚至比原本更加豐滿. 演出中還有幾段令人印象非常深刻的長笛獨奏, 擔當長笛演奏的北爪千尋小姐展現出超絕技巧, 讓人不禁想拍手叫好, 而且, 經過重新提煉後的編曲更加凸顯出了香音老師的個人風格, 為整場演出紮下了堅實的基礎. 這就帶來了今晚最大的遺憾 ⸺ 香音老師雖然曾經自稱擅長彈唱, 但晚上彈鋼琴與演唱依然是完全分開的, 雖然橫山希小姐負責的鋼琴也出色地完成了任務, 但比起長笛和吉他在原本的基礎上增色, 大概是顧慮到幾個樂器複雜度都很高的話可能會有衝突, 鋼琴的編曲選擇了簡化, 失去了一些特色. 不知道什麼時候才能親眼欣賞到香音老師的彈唱啊⋯⋯ </p>
-<p>另一個有點小驚喜的環節是曲目與演唱者的安排. 香音老師選擇將大半曲目交給並非原唱的嘉賓演唱, 其中有些發生了強烈的化學反應. 我最喜歡的組合應該是<a href="https://www.youtube.com/@muto.k___">むﾄ</a>演唱的<a href="https://www.youtube.com/watch?v=7n4q8w8GlLI">空中樓閣</a>, 還有むﾄ和 Lucia 合唱夜捨人意外地相性很不錯⋯⋯ 可以說是預料之外情理之內的成分居多. 說起來むﾄ和 Lucia 身著的禮服裙也是黑白對應, 在自我介紹時分別自稱墮天使和女神⋯⋯ 有趣的組合. </p>
-<p>舞臺上最大的驚喜還有臨近結束時香音老師真的登臺演唱了<a href="https://www.youtube.com/watch?v=uBVUNSHqgeg">鬼灯の忘れ形見</a>. 香音老師曾說過自己一直非常希望祖母能看到自己在舞臺上演唱, 但祖母已經在去年十月逝世, 沒有機會看到香音老師登臺演出. 香音老師把這首歌獻給祖母, 並在這舞臺上演唱了本曲. 作為同樣在近期失去了祖母的人, 我再次與香音老師的歌聲與本曲的歌詞共鳴, 在會場聽得淚流滿面, 必須竭盡全力才能抑制住啜泣聲. </p>
-<p>就和上次參加 Anima Ⅲ 一樣, 離開會場時我覺得自己的腦中只剩下香音老師的歌聲, 除此之外無法思考任何事物, 而和上次不同的是, 這次我甚至覺得自己的雙腿也在微微顫抖. 我與 Oscar 重新會和, <a href="https://maps.app.goo.gl/NbwXRcF94Uq1hTJeA">找地方</a>吃了夜宵, 然後分別回家. </p>
-<p>一夜無眠. </p>
-<h3 id="Day-2-二月十六日-品川"><a href="#Day-2-二月十六日-品川" class="headerlink" title="Day 2, 二月十六日, 品川"></a>Day 2, 二月十六日, 品川</h3><p>補睡到大道寂滅 (?)</p>
-<p>醒來後大部分時間在整理昨天的照片. 感覺腦子裡依然充滿了昨天演唱會的種種, 手腳似乎都無法順利移動了. </p>
-<h3 id="Day-3-二月十七日-品川-池袋"><a href="#Day-3-二月十七日-品川-池袋" class="headerlink" title="Day 3, 二月十七日, 品川 - 池袋"></a>Day 3, 二月十七日, 品川 - 池袋</h3><p>為了節約體力, 全部的行程只有看了兩場電影: 機動戦士Gundam GQuuuuuuX -Beginning- 與<a href="https://make-a-girl.com/">メイクアガール</a>. 高達是一場很奇妙的體驗, 它的前半段與後半段有著巨大的割裂感, 但它給我的感覺又不像水星的魔女 EP0 和後面的集數那樣糟糕, 讓人很期待四月將會上映的正片後續. 但是這元祖高達&#x2F;紅高達的 reimagination 還是讓我難以接受⋯⋯ メイクアガール應該算是安田現象個人炫技的作品吧, 劇情上我覺得非常老套, 但畫面確實很有趣. 不知道什麼時候還能看到安田現象再給情緒做一個 MV… </p>
-<h3 id="Day-4-二月十八日-身延"><a href="#Day-4-二月十八日-身延" class="headerlink" title="Day 4, 二月十八日, 身延"></a>Day 4, 二月十八日, 身延</h3><p>為了彌補上次在東京完全沒機會看到富士山的遺憾, 這次我打算直接去一趟富士山腳下的本棲湖 (順便也可以算一次搖曳露營聖地巡禮⋯⋯?).我既不想當日往返讓行程變得緊張, 又沒有開車, 也沒有露營的經驗, 最後選擇了在湖邊的酒店住宿一晚, 次日返程. 東京坐電車 + 巴士到本棲湖邊需要三個小時以上, 不過電車的後半段 (富士急) 與巴士上大部分時間都可以看到富士山了, 體驗倒是不壞. 到本棲湖後我把行李放在酒店就立刻動身前往<a href="https://kouan-motosuko.com/">浩庵</a>露營場. 一路上在縣道邊緣就可以看到富士山時不時在樹叢或山間探頭, 讓人的期待愈發高漲. 如果完全不停下的話大概只要 40 分鐘就能走到露營場, 但我不時停下拍照, 就花了將近一個半小時. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54339012875/in/dateposted/" title="DSC_7249-0.0 mm f-0.0"><img src="https://live.staticflickr.com/65535/54339012875_8ac46417b0_b.jpg" alt="DSC_7249-0.0 mm f-0.0"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>富士山的確是非常美麗的. 她的形狀非常規整, 就像是被刻意設定成這樣的形狀擺放在此處一般. 再加上湖水中的倒影, 顯得更加引人注目. 一路上山頂的部分都有一層雲朵遮擋, 仿若面紗一般. 但是在我從露營場往回走的路上, 在夕陽幾乎完全沉入地平線時, 雲層終於散去, 我得以一睹富士山的全貌. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54338808429/in/photostream/" title="DSC_7334-65mm f-2"><img src="https://live.staticflickr.com/65535/54338808429_efa4005c58_b.jpg" alt="DSC_7334-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>拍了一堆照片後, 我心滿意足地回到酒店, 趕上六點的晚餐時間, 飽餐一頓之後去大浴場泡澡 ⸺ 這是我第一次進入公共大浴場, 也算是挺新奇的體驗了吧. 如同傳聞, 進入浴場時不能穿著任何衣物, 在淋浴區先把身體沖洗乾淨後進入大浴池. 酒店提供了浴袍, 於是我選擇先在自己的房間裡淋浴完再穿上浴袍來到大浴場, 在沖淋區稍作沖洗便進入浴池. 酒店的宣傳說他們在浴池裡加入了各種礦物浴鹽和火山岩, 雖然我非常懷疑這些東西對於皮膚是否真的有那麼多益處, 但泡進浴池的確是全身舒暢. 泡了一陣後我開始四下打量周圍, 發現這裡還有冰水池與桑拿房, 這下不得不體驗一下了. 從浴池出來之後我快速走進冰水池, 冰水的刺激讓我差點叫出聲. 照理說我應該在裡面至少待 15 秒, 於是我心裡默數密西西比秒, 度過了感覺無比漫長的 15 秒, 逃也似的衝出冷水池, 鑽進桑拿房. 桑拿房的溫度雖然也只有 46℃, 但蒸汽繚繞, 體感比實際上高了不少, 甚至會讓剛剛經受冰水池洗禮的皮膚有些隱隱作痛. 因為不知道已經蒸了多久, 所以我乾脆在心中默默播放シリウスの心臓, 直到播放三個版本才起身, 回到冰水池, 又默數十五密西西比秒, 逃出冰水池, 到淋浴區用溫水恢復體溫, 結束了這次體驗. </p>
-<p>回到房間過了一會兒, 我就開始準備晚上的重頭戲 ⸺ 去拍湖水中倒映著富士山月升. 本日的月升時間是十點五十分左右, 我便在十點出頭離開酒店, 重新踏上縣道. 本以為此行最大的阻礙應該是山麓接近零下的低溫, 但在我走十分鐘之後發現大錯特錯. 縣道雖然修得很好, 但燈的數量實在是壓倒性的不足. 從酒店剛出來的地方大概是幾百米有一個路燈, 雖然中間會有幾乎全黑的路段但好歹能看到下一盞燈; 穿過本棲隧道之後燈的數量就更少了, 變得大約一公里才有一個, 中間有很長一段看不到任何燈光的路段. 在漆黑的縣道上行走確實能體會到人 DNA 裡刻印著對黑暗的恐懼 ⸺ 白天路過的樹影都彷彿張牙舞爪的鬼怪, 風與樹枝搖動的聲音也讓我內心惶惶不安, 頗有點杯弓蛇影. 但或許也拜這黑暗所賜, 我在縣道上看到了人生目前所見最美麗的星空. 與幾天前在滿天看到的投影出的虛假星空完全不同, 層次感與清晰度都有雲泥之別, 甚至感覺如果更用力 (?) 看就可以看到更多隱約忽閃的星光. 而這無數星星構成的龐大虛空的確是似乎要將我吸入一樣, 讓我難以離開視線⋯⋯ 如果沒有從路邊山上傳來的詭異的哺乳動物喘息聲的話, 我或許真的可以靠著這星空一直走到浩庵露營場. 但是在聽到了那彷彿垂死掙扎般喘息的怪聲之後我不由回想起了下午路過的小心有熊的告示牌, 好不容易被星空驅散的恐懼感又重新佔據大腦. 我猶豫了一會兒, 考慮到這路上幾乎沒有任何人, 也沒有燈光, 如果真的遇到熊那就叫天不應叫地不靈, 還是決定放棄原定計劃, 返回酒店. 於是我一刻也不敢停留, 用最快的速度折返. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54360318439/in/dateposted/" title="DSC_7362-Enhanced-NR-65mm f-2"><img src="https://live.staticflickr.com/65535/54360318439_a01c1c2fa4_b.jpg" alt="DSC_7362-Enhanced-NR-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>回到酒店後果不其然渾身已經被冷汗浸透了, 我本來覺得可能回來就趕不上大浴場的使用期限了, 但因為提前折返倒是變得時間充裕了. 更驚喜的是深夜的大浴場空無一人, 我開心地包場使用, 不需要在心中播放シリウスの心臓而是可以像中年男人 (?) 一樣直接唱出來, 爽爆 (?)</p>
-<p><img src="/2025-02/TripToTokyo2025Part1/Screenshot_20250219_012608_Samsung_Health.avif" alt="飆高的心率"></p>
+<p>要進入咖啡店必須經過二樓的分室. 二樓原本應該是作為儲藏間使用, 門的高度甚至不到我的肩膀, 必須彎腰才能進入室內. 進入室內我大為震驚, 二樓的藏品密度竟更甚於一樓, 如果說一樓還保留了最低限度的秩序感, 二樓就更像是一個稍微有點分類的儲藏間了, 從頭頂到腳邊<strong>每一寸</strong>空間都擺滿了各種難以分類的商品, 恐怕會引發密集恐懼患者當場昏倒, 但也很有可能會令極繁愛好者欣喜若狂. 我猜這應該也會是香音老師中意的地點. 對我而言最大的問題反倒是天花板上掛著的各種飾品和商品太容易碰到頭, 在其中我基本只能全程貓著腰行動. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/Bottles.avif" alt="Bottles _gallery &lt;"></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/ToCafe.avif" alt="To Cafe _gallery &gt;"></p>
+<p>略有些堅難地穿過分室進入咖啡廳, 咖啡廳所在的空間總算是沒有那麼擁擠了. 時間將近正午, 於是我便在咖啡歐蕾之外點了簡單午餐, 然後在沙發上落座放鬆一下資訊過載的大腦和眼睛. 不一會兒午餐就被端了上來, 是附帶小酒精爐和鑄鐵鍋的烤吐司, 我可以自己選擇中意的烤吐司焦度, 也能自己選擇要塗多少黃油和果醬, 頗有玩心, 很符合雜貨店的氣質. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/toast.avif"></p>
+<p>飽餐一頓後我回到店裡購買了一些作為禮物的商品, 拿回包, 繼續向著江之島行進. </p>
 <hr>
-<p>東京遊記 2025 系列: <a href="/2025-03/TripToTokyo2025Part2/">Part Ⅱ</a>, <a href="/2025-03/TripToTokyo2025Part3/">Part Ⅲ</a></p>
+<p>之所以突然想去江之島, 是因為前陣子在中國上映了孤獨搖滾劇場版, 而後篇中專門給了江之島旅遊場景很長的戲份. 本來我週一就沒有其他安排, 不如趁機聖地巡禮一番. 而且不僅是江之島, 我對新江之島水族館也是興味盎然, 從電車上下來就直奔水族館. 新江之島水族館比起太陽城水族館要大了幾個級別, 很有可能是我造訪過最大的水族館了. 週一的水族館遊客不算很多, 我得以非常盡興地觀賞. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/Tank.avif"> </p>
+<blockquote>
+<p>人類幼崽 for scale</p>
+</blockquote>
+<p>如果說太陽城水族館的賣點是空中企鵝, 那新江之島水族館的賣點應該就是各色水母了. 從一入館就看到水母 × 紫陽花的宣傳活動, 以及放著小水母供遊客合影的特製水缸. 本館以相模灣海洋生態為切入點, 展出了豐富多彩的科普內容. 館中央更是有佔地兩層樓的超巨大水缸, 引人駐足. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/morejellyfish.avif" alt="More Jellyfish _gallery &gt;"></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/Jellyfish.avif" alt="Jellyfish _gallery &lt;"></p>
+<p>除了超大水缸, 新江之島水族館還有一個專門展示水母的圓形展廳, 踱步其中就能感受到被水母全方位包圍的感覺. 在太陽城水族館時看到水母牆時已經覺得非常驚豔, 這 360° 水母廳簡直幸福感爆表. </p>
+<p>當然, 這裡也有企鵝, 只不過比起在室外或者在天空般水缸中的企鵝, 在冷氣房中的企鵝就顯得有些普通了. 不論如何, 企鵝還是可愛, 永遠看不膩. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/penguin.avif"></p>
+<p>除了展示海洋生物, 新江之島水族館還專門開闢了一個地下空間用以展示日本的深海探索裝置, 深海 2000. 另外, 館內還有一個區域專門展示日本皇室對海洋研究的獨特興趣 ⸺ 我倒是早就對明仁天皇的蝦虎魚研究有所耳聞, 只是沒想到這居然是家學淵源. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/Sub.avif"></p>
+<p>最後不得不提水族館的紀念品商店. 本店比太陽城水族館的要大上許多, 商品的數量也多了一個量級, 然而除卻在兩遍都有販賣的類似商品, 它們的精緻程度卻遠不如太陽城水族館. 我看了一圈, 興致缺缺, 沒有購買任何紀念品便離開了. </p>
+<hr>
+<p>從水族館出來時已經在下著中雨. 我非常猶豫是否應該繼續按照原計劃前往江之島 ⸺ 畢竟票都已經買好了, 不去的話感覺浪費了 (雖然可以退票, 但是電車票錢⋯⋯), 而且四點回家也有點為時過早. 猶豫了一小會兒, 我決定相信包包的防雨能力, 冒雨前往江之島. 在雨中小跑十幾分鍾後, 我終於穿過弁天橋踏入島上. </p>
+<p><img src="/Frames/Tokyo2025jun/enoshimagate.avif"></p>
+<p>一上島映入眼簾的便是商店街, 一瞬間讓我產生了來到鼓浪嶼龍頭路的錯覺. 儘管雨還在下, 商店街依然摩肩接踵人滿為患, 而根據聲音判斷似乎大多數還是中國來的遊客. 我從人群中穿過時有了一個小發現: 江之島上的中國遊客但凡有拿著相機的, 全都是所謂的 ｢CCD 相機｣ <del>(AKA. 垃圾)</del>, 看到這種情況我開始理解富士為什麼會在 2025 年推出 X-half 了⋯⋯我當然沒有在商店街做任何停留, 繼續小跑著前往海之燭燈塔. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/enoshima.avif"> </p>
+<p>一路上的風景其實都很美麗, 尤其是因為途經神社並一路往上, 風景的層次感也很強. 可惜因為下雨而我帶著的鏡頭全都不防雨, 我不敢隨意把相機掏出來. 這時候就特別希望有一枚帶有耐候性的鏡頭了⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/shrine.avif"></p>
+<p>頂著忽大忽小的雨, 總算來到了海之燭, 迎接我的卻是 ｢因為天候問題室外展望台不開放｣ 通告, 讓人十分洩氣. 但不論如何已經到這裡了, 我還是坐上電梯來到室內展望台. 可以想象天氣晴好時這裡的視野應該十分遼闊, 但當下只能看到烏雲密佈. 也有幾位其他遊客和我一道在這個時間登上展望台, 但都很快就悻悻離去. 我也沒有在展望台上停留太久, 眼看雨勢似乎減小, 便離開了江之島. </p>
+<p><img src="/Frames/Tokyo2025jun/seacandleobserver.avif"></p>
+<hr>
+<p>回到住處之後我早早盥洗完畢躺在床上, 但完全不能入睡, 一想到這次東京之行竟然以落湯雞作為終結實在是心有不甘, 到了一點左右突發奇想, 打算去看一趟凌晨的東京塔. </p>
+<p>因為從住處前往車站或者去慶應的路上都能在建築群間看到東京塔若隱若現, 所以不需要地圖我也能走到塔的所在. 凌晨一點的港區和大井完全不同, 依然算得上燈火通明, 只是街上空空如也, 非常舒適. 東京塔的照明燈也早已全部熄滅, 只剩下航空指示燈還在閃爍, 從遠處看去更顯威壓. 可惜東京塔水族館已經閉館, 不然下次來多少得去一次. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/TokyoTower_Panorama-1.avif"></p>
+<p>一路走到東京塔腳下, 突然想到這也算是少女歌劇聖地巡禮了, 下意識露出微笑. 六月夜晚的東京尚略有涼意, 空無一人的塔底令我心情舒暢, 但在塔底徘徊了一陣, 看著靜寂的街道和失去燈光的東京塔, 心中又不免生出一股空虛 ⸺ 這<strong>就是</strong>旅程的終末了. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/Towerbase.avif"></p>
+<hr>
+<p>在 fanbox live 結束後, 香音老師把一摞信封放在物販區的角落讓感興趣的聽眾自行領取. 其中記載的內容我早已知曉, 而今天起這就不再只屬於幾個人的 ｢秘密｣. 看著這秘密實際呈現在眼前, 我思索著這個決定對香音老師的意味, 思緒與那天香音老師歌聲琴聲的迴響交織, 久久不能平息⋯⋯</p>
+<p><img src="/2025-06/TripToTokyo2025JunPart4/invitation.avif"></p>
+<blockquote>
+<p>I invite you to my secret</p>
+</blockquote>
+<hr>
+<p>東京遊記 2025 六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a> </p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
@@ -1382,6 +1344,44 @@
 <p>這個地方絕對是值得下次再來遊覽一次的, 更何況本次其中一個裝置 ｢Light Sculpture｣ 還在維護中沒能親身體驗. 由於變化的部分<a href="https://www.teamlab.art/jp/e/tokyo/">實在是太多了</a>, 就算我非常貪心想一次性全部看完恐怕是不太可行, 在把我能找到的設施都觀賞完一圈後我就戀戀不捨地離開了. </p>
 <hr>
 <p>東京遊記 2025 系列: <a href="/2025-02/TripToTokyo2025Part1/">Part Ⅰ</a>, <a href="/2025-03/TripToTokyo2025Part3/">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記 2025 (二月篇) PART Ⅰ</title>
+    <url>/2025-02/TripToTokyo2025Part1/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-02/TripToTokyo2025Part1/chitose.avif"></p>
+<blockquote>
+<p>是的, 時隔半年我又來東京旅遊了. </p>
+</blockquote>
+<h4 id="Day-1-十月"><a href="#Day-1-十月" class="headerlink" title="Day -1, 十月"></a>Day -1, 十月</h4><p>這次來東京的理由和上次可以說完全一致 ⸺ 又是碰到了香音老師和情緒的活動正好差不多時間舉辦. 只不過這次的優先順序反過來, 香音老師是音樂會, 情緒的是展覽. 基本上在得知兩者開辦時間的當下我就決定了要來東京. 總體的準備和<a href="/2024-10/TripToTokyo1/">上次</a>基本一致, 就不贅述了. 區別最大的地方是因為冬天所以需要帶的衣服變多了, 乾脆順理成章地多帶了一個雙肩包, 這樣相機和鏡頭就可以裝進專門的斜跨包裡了, 這讓幾天下來肩膀的體驗比上次好了一大截. 而帶的鏡頭倒是沒什麼變化, 除了把上次的 90&#x2F;2.8 DG DN 換成了 Auto Nikkor 20&#x2F;3.5, 然後把 Zƒ 的掛機鏡頭換成了 65&#x2F;2.  </p>
+<h3 id="Day-1-二月十五日-池袋-保谷"><a href="#Day-1-二月十五日-池袋-保谷" class="headerlink" title="Day 1, 二月十五日, 池袋 - 保谷"></a>Day 1, 二月十五日, 池袋 - 保谷</h3><p>因為晚上要去保谷坐電車無論如何都會經過池袋, 我就打算先在池袋讀度過上午和下午. 選擇的地點是上次已經去過的太陽城水族館與柯美天象館, 不過這次增加了一個<a href="https://sunshinecity.jp/observatory/">太陽城 60 層展望臺</a>. 水族館和天象館的體驗和上次比起來差了一些, 蓋因週末人變得更多了. 好在企鵝還是那麼可愛, 星空還是那麼療愈. 有趣的是這天不知道遇上什麼活動, 池袋站周邊有巨量 coser, 太陽城也被抹上了一到異色. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54360285394/in/dateposted/" title="DSC_6878-0.0 mm f-0.0"><img src="https://live.staticflickr.com/65535/54360285394_275c513a80_b.jpg" alt="DSC_6878-0.0 mm f-0.0"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>展望臺的最大特色應該是雖然位於室內, 但是有試圖營造出公園的感覺 (可能也因此有一大堆小朋友) 以及可以在天氣晴好時看到富士山 ⸺ 然而我去的哪天雖然還算晴朗, 但西南方向隱隱有些雲層遮蔽了富士山, 轉了一圈感覺沒希望看到, 我只能悻悻離去. 不過在臨走前我福至心靈, 突然想到要給香音老師買花, 便順路拐進了<a href="https://benelic.com/flowermiffy/juicegarden_ikebukuro/">太陽城的一家花店</a>, 買了一束藍白色調的花. 準備完全之後便動身前往保谷. 在此之前我先在池袋站與同樣是從中國來東京看演出的酔シグレ同好 <a href="https://x.com/O5c4r2017">Oscar</a> 會和, 一通去往<a href="https://www.komorebi-hall.jp/">保谷樹影大禮堂</a>. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54360303903/in/photostream/" title="DSC_7055-65mm f-2"><img src="https://live.staticflickr.com/65535/54360303903_9b5345a68d_b.jpg" alt="DSC_7055-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>和上次吟遊詩人聯動咖啡不同, 本次活動畢竟是在音樂廳裡舉辦的古典 Live, 來參加的觀眾大多西裝革履. 還好為了應付這種狀況我倒是也戴了領帶不至於太格格不入. 本來想在演出結束時直接上臺獻花, 詢問了工作人員之後被告知果然是不可以的⋯⋯ 只好把花與其他禮物一併交給現場工作人員, 等演出結束後統一送上. 演出所在的小禮堂如名字所描述, 比起我習慣看到的音樂廳來說容積確實小了很多, 總共可容納的觀眾數量大概只有二百人出頭. 不過小禮堂的好處就是我雖然運氣很不好抽到了一個很靠近邊角的坐席, 實際上離舞臺的距離也並沒有很遠 (Oscar 這個運氣爆棚的傢伙抽到了第三排幾乎正中的坐席, 實在是令人羨慕嫉妒⋯⋯). 觀眾們入場坐定後, 演出便準時開始了. </p>
+<p>演出的構成與去年的第一次古典 live 相同, 依然是由主唱, 鋼琴, 長笛與吉他共演. 登臺的演出者們都身著禮服, 在舞臺燈光下更顯熠熠生輝, 而兩側的射燈開啟後我才發現或許坐在邊角並不完全只有壞處, 因為這個方向可以看到被射燈投影在側壁上的演出者側影 (正面的話會被遮擋出入口的屏風擋住). 香音老師率先進行演出, 以無麥克, 歌劇唱法演唱了吟遊詩人人生錄的引入曲 <em>Prelude</em>. 在歌聲響起的瞬間, 我感受到了與去年在 <a href="/2024-10/TripToTokyoAnima/">Anima Ⅲ</a> 上體驗到的截然不同的觸電感, 渾身汗毛直豎. 全力全開的香音老師似乎非常輕鬆地就把歌聲灌滿了整個會場, 甚至讓我感覺她的歌聲直接鑽進了我的肺部, 而我肺中的空氣與香音老師的歌聲發生了共鳴. 這是前所未有的體驗 ⸺ 這兩年參加了這麼多線下 live, 我當然早已理解 live 現場的震撼, 而在此之前我也聽過更多的古典音樂會, 但從未有一次體會到彷彿身體被操控的感受. </p>
+<p>重新編曲後鋼琴與長笛的搭配也是天作之合, 並不只是簡單地簡化原本的樂器分配, 而是重新配置了鋼琴與長笛的比重, 全無任何一絲 ｢啊, 這裡原本應該還有點什麼⋯⋯｣ 之感. 後面加入的吉他也並不是直接照搬原曲的吉他, 而是適當地分配了一些原本鋪墊旋律的部分給鋼琴和長笛, 也因此吉他得以更多地加入 golpe 和 bartok pizzicato 以及更多我叫不出名字的獨特技巧, 感覺甚至比原本更加豐滿. 演出中還有幾段令人印象非常深刻的長笛獨奏, 擔當長笛演奏的北爪千尋小姐展現出超絕技巧, 讓人不禁想拍手叫好, 而且, 經過重新提煉後的編曲更加凸顯出了香音老師的個人風格, 為整場演出紮下了堅實的基礎. 這就帶來了今晚最大的遺憾 ⸺ 香音老師雖然曾經自稱擅長彈唱, 但晚上彈鋼琴與演唱依然是完全分開的, 雖然橫山希小姐負責的鋼琴也出色地完成了任務, 但比起長笛和吉他在原本的基礎上增色, 大概是顧慮到幾個樂器複雜度都很高的話可能會有衝突, 鋼琴的編曲選擇了簡化, 失去了一些特色. 不知道什麼時候才能親眼欣賞到香音老師的彈唱啊⋯⋯ </p>
+<p>另一個有點小驚喜的環節是曲目與演唱者的安排. 香音老師選擇將大半曲目交給並非原唱的嘉賓演唱, 其中有些發生了強烈的化學反應. 我最喜歡的組合應該是<a href="https://www.youtube.com/@muto.k___">むﾄ</a>演唱的<a href="https://www.youtube.com/watch?v=7n4q8w8GlLI">空中樓閣</a>, 還有むﾄ和 Lucia 合唱夜捨人意外地相性很不錯⋯⋯ 可以說是預料之外情理之內的成分居多. 說起來むﾄ和 Lucia 身著的禮服裙也是黑白對應, 在自我介紹時分別自稱墮天使和女神⋯⋯ 有趣的組合. </p>
+<p>舞臺上最大的驚喜還有臨近結束時香音老師真的登臺演唱了<a href="https://www.youtube.com/watch?v=uBVUNSHqgeg">鬼灯の忘れ形見</a>. 香音老師曾說過自己一直非常希望祖母能看到自己在舞臺上演唱, 但祖母已經在去年十月逝世, 沒有機會看到香音老師登臺演出. 香音老師把這首歌獻給祖母, 並在這舞臺上演唱了本曲. 作為同樣在近期失去了祖母的人, 我再次與香音老師的歌聲與本曲的歌詞共鳴, 在會場聽得淚流滿面, 必須竭盡全力才能抑制住啜泣聲. </p>
+<p>就和上次參加 Anima Ⅲ 一樣, 離開會場時我覺得自己的腦中只剩下香音老師的歌聲, 除此之外無法思考任何事物, 而和上次不同的是, 這次我甚至覺得自己的雙腿也在微微顫抖. 我與 Oscar 重新會和, <a href="https://maps.app.goo.gl/NbwXRcF94Uq1hTJeA">找地方</a>吃了夜宵, 然後分別回家. </p>
+<p>一夜無眠. </p>
+<h3 id="Day-2-二月十六日-品川"><a href="#Day-2-二月十六日-品川" class="headerlink" title="Day 2, 二月十六日, 品川"></a>Day 2, 二月十六日, 品川</h3><p>補睡到大道寂滅 (?)</p>
+<p>醒來後大部分時間在整理昨天的照片. 感覺腦子裡依然充滿了昨天演唱會的種種, 手腳似乎都無法順利移動了. </p>
+<h3 id="Day-3-二月十七日-品川-池袋"><a href="#Day-3-二月十七日-品川-池袋" class="headerlink" title="Day 3, 二月十七日, 品川 - 池袋"></a>Day 3, 二月十七日, 品川 - 池袋</h3><p>為了節約體力, 全部的行程只有看了兩場電影: 機動戦士Gundam GQuuuuuuX -Beginning- 與<a href="https://make-a-girl.com/">メイクアガール</a>. 高達是一場很奇妙的體驗, 它的前半段與後半段有著巨大的割裂感, 但它給我的感覺又不像水星的魔女 EP0 和後面的集數那樣糟糕, 讓人很期待四月將會上映的正片後續. 但是這元祖高達&#x2F;紅高達的 reimagination 還是讓我難以接受⋯⋯ メイクアガール應該算是安田現象個人炫技的作品吧, 劇情上我覺得非常老套, 但畫面確實很有趣. 不知道什麼時候還能看到安田現象再給情緒做一個 MV… </p>
+<h3 id="Day-4-二月十八日-身延"><a href="#Day-4-二月十八日-身延" class="headerlink" title="Day 4, 二月十八日, 身延"></a>Day 4, 二月十八日, 身延</h3><p>為了彌補上次在東京完全沒機會看到富士山的遺憾, 這次我打算直接去一趟富士山腳下的本棲湖 (順便也可以算一次搖曳露營聖地巡禮⋯⋯?).我既不想當日往返讓行程變得緊張, 又沒有開車, 也沒有露營的經驗, 最後選擇了在湖邊的酒店住宿一晚, 次日返程. 東京坐電車 + 巴士到本棲湖邊需要三個小時以上, 不過電車的後半段 (富士急) 與巴士上大部分時間都可以看到富士山了, 體驗倒是不壞. 到本棲湖後我把行李放在酒店就立刻動身前往<a href="https://kouan-motosuko.com/">浩庵</a>露營場. 一路上在縣道邊緣就可以看到富士山時不時在樹叢或山間探頭, 讓人的期待愈發高漲. 如果完全不停下的話大概只要 40 分鐘就能走到露營場, 但我不時停下拍照, 就花了將近一個半小時. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54339012875/in/dateposted/" title="DSC_7249-0.0 mm f-0.0"><img src="https://live.staticflickr.com/65535/54339012875_8ac46417b0_b.jpg" alt="DSC_7249-0.0 mm f-0.0"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>富士山的確是非常美麗的. 她的形狀非常規整, 就像是被刻意設定成這樣的形狀擺放在此處一般. 再加上湖水中的倒影, 顯得更加引人注目. 一路上山頂的部分都有一層雲朵遮擋, 仿若面紗一般. 但是在我從露營場往回走的路上, 在夕陽幾乎完全沉入地平線時, 雲層終於散去, 我得以一睹富士山的全貌. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54338808429/in/photostream/" title="DSC_7334-65mm f-2"><img src="https://live.staticflickr.com/65535/54338808429_efa4005c58_b.jpg" alt="DSC_7334-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>拍了一堆照片後, 我心滿意足地回到酒店, 趕上六點的晚餐時間, 飽餐一頓之後去大浴場泡澡 ⸺ 這是我第一次進入公共大浴場, 也算是挺新奇的體驗了吧. 如同傳聞, 進入浴場時不能穿著任何衣物, 在淋浴區先把身體沖洗乾淨後進入大浴池. 酒店提供了浴袍, 於是我選擇先在自己的房間裡淋浴完再穿上浴袍來到大浴場, 在沖淋區稍作沖洗便進入浴池. 酒店的宣傳說他們在浴池裡加入了各種礦物浴鹽和火山岩, 雖然我非常懷疑這些東西對於皮膚是否真的有那麼多益處, 但泡進浴池的確是全身舒暢. 泡了一陣後我開始四下打量周圍, 發現這裡還有冰水池與桑拿房, 這下不得不體驗一下了. 從浴池出來之後我快速走進冰水池, 冰水的刺激讓我差點叫出聲. 照理說我應該在裡面至少待 15 秒, 於是我心裡默數密西西比秒, 度過了感覺無比漫長的 15 秒, 逃也似的衝出冷水池, 鑽進桑拿房. 桑拿房的溫度雖然也只有 46℃, 但蒸汽繚繞, 體感比實際上高了不少, 甚至會讓剛剛經受冰水池洗禮的皮膚有些隱隱作痛. 因為不知道已經蒸了多久, 所以我乾脆在心中默默播放シリウスの心臓, 直到播放三個版本才起身, 回到冰水池, 又默數十五密西西比秒, 逃出冰水池, 到淋浴區用溫水恢復體溫, 結束了這次體驗. </p>
+<p>回到房間過了一會兒, 我就開始準備晚上的重頭戲 ⸺ 去拍湖水中倒映著富士山月升. 本日的月升時間是十點五十分左右, 我便在十點出頭離開酒店, 重新踏上縣道. 本以為此行最大的阻礙應該是山麓接近零下的低溫, 但在我走十分鐘之後發現大錯特錯. 縣道雖然修得很好, 但燈的數量實在是壓倒性的不足. 從酒店剛出來的地方大概是幾百米有一個路燈, 雖然中間會有幾乎全黑的路段但好歹能看到下一盞燈; 穿過本棲隧道之後燈的數量就更少了, 變得大約一公里才有一個, 中間有很長一段看不到任何燈光的路段. 在漆黑的縣道上行走確實能體會到人 DNA 裡刻印著對黑暗的恐懼 ⸺ 白天路過的樹影都彷彿張牙舞爪的鬼怪, 風與樹枝搖動的聲音也讓我內心惶惶不安, 頗有點杯弓蛇影. 但或許也拜這黑暗所賜, 我在縣道上看到了人生目前所見最美麗的星空. 與幾天前在滿天看到的投影出的虛假星空完全不同, 層次感與清晰度都有雲泥之別, 甚至感覺如果更用力 (?) 看就可以看到更多隱約忽閃的星光. 而這無數星星構成的龐大虛空的確是似乎要將我吸入一樣, 讓我難以離開視線⋯⋯ 如果沒有從路邊山上傳來的詭異的哺乳動物喘息聲的話, 我或許真的可以靠著這星空一直走到浩庵露營場. 但是在聽到了那彷彿垂死掙扎般喘息的怪聲之後我不由回想起了下午路過的小心有熊的告示牌, 好不容易被星空驅散的恐懼感又重新佔據大腦. 我猶豫了一會兒, 考慮到這路上幾乎沒有任何人, 也沒有燈光, 如果真的遇到熊那就叫天不應叫地不靈, 還是決定放棄原定計劃, 返回酒店. 於是我一刻也不敢停留, 用最快的速度折返. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54360318439/in/dateposted/" title="DSC_7362-Enhanced-NR-65mm f-2"><img src="https://live.staticflickr.com/65535/54360318439_a01c1c2fa4_b.jpg" alt="DSC_7362-Enhanced-NR-65mm f-2"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>回到酒店後果不其然渾身已經被冷汗浸透了, 我本來覺得可能回來就趕不上大浴場的使用期限了, 但因為提前折返倒是變得時間充裕了. 更驚喜的是深夜的大浴場空無一人, 我開心地包場使用, 不需要在心中播放シリウスの心臓而是可以像中年男人 (?) 一樣直接唱出來, 爽爆 (?)</p>
+<p><img src="/2025-02/TripToTokyo2025Part1/Screenshot_20250219_012608_Samsung_Health.avif" alt="飆高的心率"></p>
+<hr>
+<p>東京遊記 2025 系列: <a href="/2025-03/TripToTokyo2025Part2/">Part Ⅱ</a>, <a href="/2025-03/TripToTokyo2025Part3/">Part Ⅲ</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
