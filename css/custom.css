@@ -209,7 +209,8 @@ img {
 
 .mt-2 {
     margin-top: 5rem;
-    line-height: 1.15em;
+    /* line-height: 1.15em;*/
+    width: 96vw;
 }
 
 .mt-3 {
