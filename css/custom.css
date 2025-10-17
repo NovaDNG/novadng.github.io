@@ -98,6 +98,10 @@
             format("svg"); 
 } */
 
+:root {
+    text-autospace: normal;
+}
+
 html {
     overflow: auto;
 } 
