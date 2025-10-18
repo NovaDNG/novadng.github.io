@@ -276,6 +276,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Photography is FUN ⸺ LM-EA9, 邪道的终点</title>
+    <url>/2022-09/LM-EA9/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的Voigtländer近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对Helliar 40&#x2F;2.8而言这就是它唯一的对焦手段了. 这使得我的Helliar 40&#x2F;2.8一直处于一个有些尴尬的状态. </p>
+<p>这种状态一直持续到我看到TechArt正式发布了新的自动对焦转接环, 今天的主角<a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于E卡口的开放性, TechArt Pro已经做过M-E自动对焦环了, 但是上一代LM-EA7依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比Voigtländer近摄环要大多少了. </p>
+<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 ⸺ 它居然需要依靠<strong>Micro-USB</strong>数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的DualShock 4数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的Voigtländer近摄环和R-D1s都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在LM-EA9上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
+<p>首先它的对焦并不是完全线性的 (比起原生E口自动对焦镜头, 比如40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康AF-D镜头.  </p>
+<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>体感上, 它对焦的速度也挺接近那些AF-D时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用LM-EA9自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换AF&#x2F;MF快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
+<p>另外的注意事项就是光圈设置. 因为LM-EA9并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为f&#x2F;2时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的EXIF信息里全部都会显示拍摄光圈为f&#x2F;2. </p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的Voigtländer初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少LM-EA9需要移动的距离, 提升对焦速度. </p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何FLE (浮动对焦组) 镜头, 那何LM-EA9很有可能会对画质产生负面影响. 而我手头没有任何FLE镜头, 所以自然完全无需担心了. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 ⸺ 至少比起没有电子部件的近摄环. 我用它拍了大概400张左右的照片就用掉了α7C一半的电量, 而相较之下近摄环拍800多张才消耗掉近半电量. 我还没试过用40&#x2F;2.5G或90&#x2F;2.8 DGDN拍那么多照片, 以后有机会的话会试试看. </p>
+<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ⸺  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过TechArt后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Photography is FUN ⸺ 更多尼康老鏡頭</title>
     <url>/2024-03/EvenMoreNikkokrVintageLens/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>這幾個月我又陸續入手了一些尼康老鏡頭⋯⋯ 它們分別是Nikkor-N･C Auto 1:2.8 f&#x3D;24mm; Nikkor-O･C Auto 1:2 f&#x3D;35mm; AI Nikkor*ED 180mm 1:2.8 S. 當然, 還有一點很重要的是我又購入了一部FM3ᴀ.</p>
@@ -375,32 +401,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN ⸺ LM-EA9, 邪道的终点</title>
-    <url>/2022-09/LM-EA9/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"></p>
-<p>一直以来我都在追求着小型的镜头, 而正如<a href="/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的Voigtländer近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对Helliar 40&#x2F;2.8而言这就是它唯一的对焦手段了. 这使得我的Helliar 40&#x2F;2.8一直处于一个有些尴尬的状态. </p>
-<p>这种状态一直持续到我看到TechArt正式发布了新的自动对焦转接环, 今天的主角<a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于E卡口的开放性, TechArt Pro已经做过M-E自动对焦环了, 但是上一代LM-EA7依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比Voigtländer近摄环要大多少了. </p>
-<p><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"></p>
-<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 ⸺ 它居然需要依靠<strong>Micro-USB</strong>数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的DualShock 4数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的Voigtländer近摄环和R-D1s都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在LM-EA9上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
-<p>首先它的对焦并不是完全线性的 (比起原生E口自动对焦镜头, 比如40&#x2F;2.5G), 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康AF-D镜头.  </p>
-<iframe width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p>体感上, 它对焦的速度也挺接近那些AF-D时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用LM-EA9自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换AF&#x2F;MF快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为LM-EA9并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为f&#x2F;2时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的EXIF信息里全部都会显示拍摄光圈为f&#x2F;2. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
-<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的Voigtländer初代近摄环差不多, 算是一个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少LM-EA9需要移动的距离, 提升对焦速度. </p>
-<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何FLE (浮动对焦组) 镜头, 那何LM-EA9很有可能会对画质产生负面影响. 而我手头没有任何FLE镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 ⸺ 至少比起没有电子部件的近摄环. 我用它拍了大概400张左右的照片就用掉了α7C一半的电量, 而相较之下近摄环拍800多张才消耗掉近半电量. 我还没试过用40&#x2F;2.5G或90&#x2F;2.8 DGDN拍那么多照片, 以后有机会的话会试试看. </p>
-<p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ⸺  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过TechArt后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photography is FUN ⸺ 一些尼康老鏡頭</title>
     <url>/2023-12/MoreNikkorVintageLens/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>這一年來我又陸續購入了一些老鏡頭, 其中比較值得一提的是Nikkor-P Auto 1:2.5 f&#x3D;105mm, Nikkor-S･C Auto 55mm ƒ&#x2F;1.2和AI Micro-Nikkor 55mm ƒ&#x2F;2.8 S. 從命名上也可以看出這幾枚鏡頭來自六､ 七十年代, 都是比父上大人還要年長的存在了. 它們都是那個年代裡極具特色的存在, 即使放在今天也絲毫不會過時的有趣鏡頭.</p>
@@ -486,6 +486,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Photography is FUN ⸺ Pen F避坑指南</title>
+    <url>/2022-05/Pen-F-pitfalls/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-05/Pen-F-pitfalls/r-d1-df--pen-f_52087660201_o.avif"></p>
+<blockquote>
+<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
+</blockquote>
+<p>我对Micro 4&#x2F;3系统的印象其实一直不怎么样 ⸺ 在2013~14年间父上大人曾经使用过一台松下G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯E-M1. 在我的认知中G3和E-M1这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的APS-C入门单反小很多, 但彼时M43系统的缺点依然十分明显 ⸺ 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
+<p>时间推进到2016年, 我手头上已经有了Df和X100T两台机器, 因此基本不再关心新发布的相机了. 然而Pen-F的发布还是给我留下了深刻的印象 ⸺ 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C相机的前提下再购入M4&#x2F;3系统, 所以便没有考虑购入. </p>
+<p>又过了这么多年, 如今已经是2022年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购入Pen-F的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师ASMR</a>时的冲动消费, 并没有什么特别的理由. </p>
+<p>拿到Pen-F并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了2022年, Pen-F那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的Df和α7C, Pen-F除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍Pen-F的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被Pen-F性感身姿诱惑的潜在购买者指明一些坑.</p>
+<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管Pen-F有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调节ISO和白平衡的方式 (Df有ISO盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄JPEG的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 ⸺ 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
+<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了EVF旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成ISO&#x2F;快门速度拨盘算了. </p>
+<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用Pen-F之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对Pen-F的期望值. 实际到手之后我很快发现了一个问题: 我转接了VM 50&#x2F;1.5给Pen-F使用, 由于半幅裁切基本上已经相当于100mm等效, 在对焦时如果不开防抖会受到很大影响; 然而Pen-F的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
+<p><img src="/2022-05/Pen-F-pitfalls/pen-f-w-vm-5015_52087906959_o.avif"></p>
+<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动ISO&#x2F;快门速度策略并不能设置为降低快门速度换取低ISO, 导致P&#x2F;A&#x2F;S模式下这防抖模式很难体现出优势, 我甚至关闭了自动ISO ⸺ 实话说Pen-F的画面细腻度确实不高, 如果放大动200% 即使在ISO 200 (最低原生ISO) 时暗部都有一些噪点, 这表现甚至还不如我的R-D1. 相比之下索尼在菜单里提供了自动ISO策略调整可以让用户降低快门速度换取低ISO, 使用时感受就比奥林巴斯好上许多.  </p>
+<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接M口手动头使用, 但是我也同时购入了一枚二手松下15&#x2F;1,7作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在Df, X100T, GR和α7C上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的AFL按钮, Pen-F却没有这么一个方便的按钮.</p>
+<p><img src="/2022-05/Pen-F-pitfalls/pen-f-back_52095381440_o.avif"></p>
+<p>后拨轮附近的几个按钮里Fn1太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是Pen-F就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
+<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F的电池容量只有1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数EVF的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数EVF, Pen-F的续航才会变成比较正常的状态. </p>
+<p>和续航相关还有一个问题: 如果系统设置里启用了自动EVF&#x2F;屏幕切换, 那么即使用户合上了屏幕, 眼睛离开EVF的时侯EVF也会熄灭, 此时任何操作都是无效的, 不能像 α7C那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
+<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了快门线螺纹的尼康Df和富士X100系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
+<p><img src="/2022-05/Pen-F-pitfalls/olympus-pen-f_52081318447_o.avif"></p>
+<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 安装在索尼&#x2F;尼康等其他相机热靴上时均无法启用, 着实非常可惜.</p>
+<p>Pen-F对SD卡的读写速度体感非常慢, 同一张卡Pen-F拍摄和删除照片的速度都比Df&#x2F;α7C慢很多 (尚未在GR上测试同一张卡, 但估计也是比GR慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对SD卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为Pen-F的UI导致了这种迟缓. </p>
+<p>顺便, 如果你在使用索尼的ToughCard, 你会发现Pen-F的卡槽与ToughCard结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
+<p>虽然奥林巴斯和松下都是M43联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下15&#x2F;1.7镜头上的光圈环在Pen-F上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
+<hr>
+<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的Pen-F流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
+        <tag>Photography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Photography is FUN ⸺ Standard Obsession Ⅱ</title>
     <url>/2022-09/Standard-Obsession-2/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>这篇文章主要是补完一些这半年里我新入手的标准镜, 它们分别是Voigtländer 40&#x2F;2.8, Voigtländer 50&#x2F;1.5 Ⅰ &amp; Ⅱ, 还有索尼FE 40&#x2F;2.5. </p>
@@ -523,41 +558,6 @@
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/albums/72177720300365134" title="FE 40/2.5 G"><img src="https://live.staticflickr.com/65535/52198008387_b3c6c84b3c_b.jpg" alt="FE 40/2.5 G"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
 <p>虽然在上篇里我提过之所以抛弃了50&#x2F;1.8G的一个原因就是它太现代, 太无趣了, 但40&#x2F;2,5G在操控性上比50&#x2F;1.8G好上无数倍, 而金属的镜筒又使得它的操控感更上一层楼. 它甚至最后还具备一定的防滴能力可以防范遇到的小雨, 实在是非常令人安心. 现了40&#x2F;2,5G作为以备不时之需的最终防线待在我的包里. </p>
 <h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>目前来看我应该暂时不会收其它的标准镜头了 ⸺ 尽管我很想这么说, 但是这几天Meyer Optik又发了新的Biotar 58&#x2F;1,5 II<a href="https://www.meyer-optik-goerlitz.com/en/lenses/biotar-58-f1.5-ii">³</a>… 咕, 比起我手上的那枚Helios-44, 这东西才是正牌货呀! 恐怕我对标准镜头的渴求一时半会儿还是无法停止吧⋯⋯ </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
-        <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN ⸺ Pen F避坑指南</title>
-    <url>/2022-05/Pen-F-pitfalls/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2022-05/Pen-F-pitfalls/r-d1-df--pen-f_52087660201_o.avif"></p>
-<blockquote>
-<p>  没办法, 我对这种风格的相机就是没有抵抗力啊!</p>
-</blockquote>
-<p>我对Micro 4&#x2F;3系统的印象其实一直不怎么样 ⸺ 在2013~14年间父上大人曾经使用过一台松下G3, 我也趁此机会上手用了一阵, 另外母上大人也有一些同事购买了奥林巴斯E-M1. 在我的认知中G3和E-M1这样的相机都是非常矛盾的存在: 它们的体积实际上并没有比当时主流的APS-C入门单反小很多, 但彼时M43系统的缺点依然十分明显 ⸺ 比如基本不可用的高感以及对于套机头来说基本不存在的浅景深, 导致了我对这个系统的印象一直颇为糟糕. </p>
-<p>时间推进到2016年, 我手头上已经有了Df和X100T两台机器, 因此基本不再关心新发布的相机了. 然而Pen-F的发布还是给我留下了深刻的印象 ⸺ 谁会不喜欢这样性感又可爱的机身呢? 然而当年我还认为没有理由在已经有全幅 &amp; APS-C相机的前提下再购入M4&#x2F;3系统, 所以便没有考虑购入. </p>
-<p>又过了这么多年, 如今已经是2022年了, 奥林巴斯已经将影像业务转卖, 曾经的奥林巴斯影像变成了现在的OM-System, 看到这个新闻的时候还是不免有些唏嘘. 至于购入Pen-F的动机⋯⋯ 其实是某天晚上收听<a href="https://www.youtube.com/watch?v=iJQABui7d9w">沙树老师ASMR</a>时的冲动消费, 并没有什么特别的理由. </p>
-<p>拿到Pen-F并拆封的时候我的心情无疑是复杂的. 一方面, 即使到了2022年, Pen-F那充满机械感的机身看起来依旧性感, 另一方面我又觉得比起我手头的Df和α7C, Pen-F除了外观之外恐怕就真的是一无是处了. 不幸的是, 在接下来的使用里, 这个想法很快得到了验证. 虽然已经看过了无数篇介绍Pen-F的文章, 但以下这些问题似乎从来没有被提到过, 于是我便产生了应该写下此文章的想法, 希望能给未来被Pen-F性感身姿诱惑的潜在购买者指明一些坑.</p>
-<h3 id="1-低于预期的操作便捷度"><a href="#1-低于预期的操作便捷度" class="headerlink" title="1. 低于预期的操作便捷度"></a>1. 低于预期的操作便捷度</h3><p>尽管Pen-F有前后拨轮, 创意拨杆, 曝光补偿拨盘与模式拨盘, 我还是偶尔会觉得不够用: 没有快速调节ISO和白平衡的方式 (Df有ISO盘), 而创意拨杆的功能不能自定义, 对于一个基本不怎么拍摄JPEG的用户来说创意拨杆和创意模式拨盘基本上就完全失去了作用 ⸺ 真的不是我不想用, 是这创意模式真的十分鸡肋, 它不像富士那样直接提供了经典胶片风格模拟, 而自己调整色调操作又十分繁琐, 在新机上手一段时间后也就只剩下黑白模式还算勉强有点作用了. </p>
-<p>而奥林巴斯这复古的设计又选择了模仿卷片把手将电源键放在了EVF旁, 导致了单手状态基本不可能完成开机动作, 使得操作便捷性远远没有想象中的那么高. 可能关于操作性上唯一值得夸奖的一点是模式拨盘上提供了多达四种用户自定义模式, 还算比较实用, 否则我会觉得不如把模式拨盘改成ISO&#x2F;快门速度拨盘算了. </p>
-<h3 id="2-烦人的五轴防抖噪音"><a href="#2-烦人的五轴防抖噪音" class="headerlink" title="2. 烦人的五轴防抖噪音"></a>2. 烦人的五轴防抖噪音</h3><p>在使用Pen-F之前我已经用过了 α7C, 体验过了基本上算是最新锐的机身防抖, 而且奥林巴斯也一贯是以机身防抖效果出色闻名, 也拉高了我对Pen-F的期望值. 实际到手之后我很快发现了一个问题: 我转接了VM 50&#x2F;1.5给Pen-F使用, 由于半幅裁切基本上已经相当于100mm等效, 在对焦时如果不开防抖会受到很大影响; 然而Pen-F的防抖系统如果设置为半按快门就启动, 就会在半按快门时听到非常明显的防抖元件运作噪音, 体验十分糟糕. 而且如果开启了半按快门启动防抖, 机身发热便出奇严重, 使这个功能基本处于不可用状态. </p>
-<p><img src="/2022-05/Pen-F-pitfalls/pen-f-w-vm-5015_52087906959_o.avif"></p>
-<p>实际拍摄时的防抖效果确实很不错, 然而奥林巴斯的自动ISO&#x2F;快门速度策略并不能设置为降低快门速度换取低ISO, 导致P&#x2F;A&#x2F;S模式下这防抖模式很难体现出优势, 我甚至关闭了自动ISO ⸺ 实话说Pen-F的画面细腻度确实不高, 如果放大动200% 即使在ISO 200 (最低原生ISO) 时暗部都有一些噪点, 这表现甚至还不如我的R-D1. 相比之下索尼在菜单里提供了自动ISO策略调整可以让用户降低快门速度换取低ISO, 使用时感受就比奥林巴斯好上许多.  </p>
-<h3 id="3-无处安放的背部对焦按钮"><a href="#3-无处安放的背部对焦按钮" class="headerlink" title="3. 无处安放的背部对焦按钮"></a>3. 无处安放的背部对焦按钮</h3><p>虽然我主要是转接M口手动头使用, 但是我也同时购入了一枚二手松下15&#x2F;1,7作为广角端补充. 我一直以来都习惯于使用背部按钮对焦 — 即将快门按钮设置为测光锁与释放快门, 启动对焦则交给另外一个完全独立的按钮实现. 在Df, X100T, GR和α7C上, 后拨轮附近右手大拇指最经常放置的位置都有一个专门的AFL按钮, Pen-F却没有这么一个方便的按钮.</p>
-<p><img src="/2022-05/Pen-F-pitfalls/pen-f-back_52095381440_o.avif"></p>
-<p>后拨轮附近的几个按钮里Fn1太靠右, 按起来很不顺手, 放大按钮和菜单键太靠下离太近了, 放在那个位置太经常误触到菜单了; 最后翻来覆去试了好几次, 发现反倒是景深预览按钮才是最顺手的位置⋯⋯ 于是Pen-F就成为了我手上唯一一台背部对焦按钮不在大拇指位置的机器了⋯⋯ </p>
-<h3 id="4-悲剧的续航"><a href="#4-悲剧的续航" class="headerlink" title="4. 悲剧的续航"></a>4. 悲剧的续航</h3><p>Pen-F的电池容量只有1,220mAh, 仅看数字似乎还说得过去, 但如果你打开了半按快门启动防抖和高帧数EVF的话, 那续航和机身发热就成了笑话, 拍摄几十张照片后机身就热得发烫, 而且发热还在机身背部大拇指平时放的地方, 体验极其糟糕. 如果关闭防抖和高帧数EVF, Pen-F的续航才会变成比较正常的状态. </p>
-<p>和续航相关还有一个问题: 如果系统设置里启用了自动EVF&#x2F;屏幕切换, 那么即使用户合上了屏幕, 眼睛离开EVF的时侯EVF也会熄灭, 此时任何操作都是无效的, 不能像 α7C那样做一点基本的盲操作. 不过这个问题关闭自动切换可解, 不算什么大碍. </p>
-<h3 id="5-一些其他令人不满的小问题"><a href="#5-一些其他令人不满的小问题" class="headerlink" title="5. 一些其他令人不满的小问题"></a>5. 一些其他令人不满的小问题</h3><p>首当其冲, 这快门按钮会和拨盘一起旋转, 导致额外旋入的快门按钮每次在操作过拨盘之后都会松动, 我只好放弃了使用额外快门按钮. 这也让我觉得非常困惑, 同样做了快门线螺纹的尼康Df和富士X100系列没有把拨盘与快门按钮集成所以基本不会导致快门线插入之后松动, R-D1虽然快门按钮和快门速度转盘集成但是两者不会同时旋转所以调整快门不会导致快门线松脱. </p>
-<p><img src="/2022-05/Pen-F-pitfalls/olympus-pen-f_52081318447_o.avif"></p>
-<p>随机附赠的小型闪光灯使用的是奥林巴斯规格的四针脚热靴, 安装在索尼&#x2F;尼康等其他相机热靴上时均无法启用, 着实非常可惜.</p>
-<p>Pen-F对SD卡的读写速度体感非常慢, 同一张卡Pen-F拍摄和删除照片的速度都比Df&#x2F;α7C慢很多 (尚未在GR上测试同一张卡, 但估计也是比GR慢很多), 虽然我基本不在机器上直接操作而且平时也基本都是单张拍摄, 但遇到删照片要等个半天还是有点烦躁的. 扫了一眼网上其他人的测试, 理论上来说这台机器对SD卡的读写速度和我的卡的理论读写速度都不应该造成如此缓慢的结果, 只能解释为Pen-F的UI导致了这种迟缓. </p>
-<p>顺便, 如果你在使用索尼的ToughCard, 你会发现Pen-F的卡槽与ToughCard结合相当紧密, 想要取出卡时难以操作, 会有卡被卡槽卡死的错觉, 非常恐怖. </p>
-<p>虽然奥林巴斯和松下都是M43联盟的创建者, 但两者在制造镜头的时候还是留了一点小心思. 我手头这枚松下15&#x2F;1.7镜头上的光圈环在Pen-F上就毫无作用, 无论拧到什么数值都不会被机身识别, 永远由机身控制. 还好使用拨轮还是可以正常控制光圈, 所以并不影响正常使用. </p>
-<hr>
-<p>如果看完了以上这些抱怨你依然觉得为了颜值这些都是小问题, 那么不用犹豫了, 二手市场有很多品相不错甚至快门数都没很高的Pen-F流通, 或许也侧面证明了它完全做一个装饰品使用的宿命. 作为一个颜控, 我还是希望索尼､ 尼康或者佳能能出一台全画幅复古造型无反来满足这个似乎并不是很大的市场啊⋯⋯ </p>
 ]]></content>
       <tags>
         <tag>Gadget</tag>
@@ -823,7 +823,7 @@
 </blockquote>
 <p>在打定心思瞄準15mm ƒ&#x2F;2 M口版本後, 我就賣掉了蔡司15mm ⸺ 比起放在家裡吃灰, 它值得更好的去處. <strong>Venus Optics Laowa 15mm ƒ&#x2F;2 D-Dreamer LM</strong>到手之後我發現它甚至遠超我的預期: </p>
 <p><img src="/2025-09/StepIntoUWA3/LaowaOnZf.avif" alt="Laowa 15mm ƒ/2 on Zƒ"></p>
-<p>感知最顯著的是因適配無反結構帶來的體型改變, 由蔡司的 (不含轉接環) <code>103mm × 113mm, 730g</code> 銳減到 <code>63mm × 71mm, 418g</code>, 雖然遠不如星耀28&#x2F;2.8那般袖珍, 但因為強烈的對比而顯得比實際更小巧. 並且它有針對旁軸相機做出調整, 對焦環在0.7m (絕大多數M口相機聯動的最近對焦距離) 會有一個非常輕柔的頓感, 足夠作為提示又不至於影響連續對焦手感, 好評; </p>
+<p>感知最顯著的是因適配無反結構帶來的體型改變, 由蔡司的 (不含轉接環) <code>103mm × 113mm, 730g</code>銳減到<code>63mm × 71mm, 418g</code>, 雖然遠不如星耀28&#x2F;2.8那般袖珍, 但因為強烈的對比而顯得比實際更小巧. 並且它有針對旁軸相機做出調整, 對焦環在0.7m (絕大多數M口相機聯動的最近對焦距離) 會有一個非常輕柔的頓感, 足夠作為提示又不至於影響連續對焦手感, 好評; </p>
 <p><img src="/2025-09/StepIntoUWA3/UWAPortrait.avif" alt="UWA Portrait"></p>
 <p>它的近攝能力也非常可觀, 比起蔡司最近0.25m, 1:9的放大率, 它能做到0.145m, 1:4. 雖然相質有些微劣化, 但在極近對焦距離以及ƒ&#x2F;2光圈加持下虛化量也相當可觀 (當然, 在這樣張上也能看出前面提到的人像恐怖谷效果⋯⋯); </p>
 <p><img src="/2025-09/StepIntoUWA3/Boat.avif" alt="Boat"></p>
@@ -922,106 +922,6 @@
       <tags>
         <tag>Gadget</tag>
         <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>東京遊記PART Ⅰ</title>
-    <url>/2024-10/TripToTokyo1/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052125636/in/album-72177720321005949" title="DSC_0706-40 mm"><img src="https://live.staticflickr.com/65535/54052125636_6efba503a3_b.jpg"  alt="DSC_0706-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>這篇遊記意味著東京之行的徹底完結. 這兩個月間我仍然沉浸在這次旅行的餘韻中不願甦醒; 另一方面, 這一週值得記錄的東西太多, 提筆便感到千萬思緒湧上心頭不知從何道來. 但我知道不論如何, 總是得為這段回憶親手畫上句號, 從美夢中醒來. </p>
-<h4 id="Day-1-五月"><a href="#Day-1-五月" class="headerlink" title="Day -1, 五月"></a>Day -1, 五月</h4><p>為什麼明明對日本文化如此熱衷卻時至今日都還沒去過日本, 以前這個問題時常會浮現在我的心頭, 尤其是每當看到朋友們分享各自的日本行跡時. 後來我給自己的解釋是, 我需要一個更強的規劃一次旅遊的動力. 在五月的時候這個動力終於出現 ⸺ 我順利抽中了<a href="https://kamitsubaki.jp/news/2024/04/25/3372/">ヰ世界情緒初次線下個人演唱會Anima Ⅲ</a>門票, 以此為契機我開始規劃這次長達一週的旅遊. </p>
-<p>實際上決定把日本之行擴充到七日後, 我思考的第一個問題是 ⸺ 應該帶什麼鏡頭? </p>
-<p>除了在文章裡提到過的鏡頭, 這幾年我陸陸續續收集了<a href="/Now/">二十餘枚鏡頭</a>, 除卻幾枚玩具性質和收藏性質的也還有橫跨三四個系統, 十餘枚的選擇範圍. 本著最大化相容性和減少冗餘的原則, 我決定只帶一臺數碼機 ⸺ Zƒ⸺ 和一臺菲林機 ⸺ FA, 再帶上F轉Z接環確保Zƒ能覆蓋儘可能多的場景. </p>
-<p>鏡頭選擇上, 我最終確定了從廣到長Voigtländer 40&#x2F;1.4 VM (最小最輕便的大光圈Zƒ掛機頭), Sigma 90&#x2F;2.8 DG DN (手頭最可靠的自動對焦鏡, 且還算輕便), Nikkor-P Auto 105&#x2F;2.5 (FA&#x2F;FM3ᴀ 上最慣用的掛機頭, 之前也帶去哈爾濱&#x2F;長白山過, 久經考驗的戰士), Zeiss APO-Sonnar 135&#x2F;2 (當時手頭畫質最好的鏡頭). 只看數字的話妳或許會認為105&#x2F;2.5這個選擇有些尷尬, 它作為FA的掛機頭在輕便上不如90&#x2F;2.8, 質素上不及135&#x2F;2, 也許應該換成35&#x2F;2或24&#x2F;2.8其中一枚來讓FA也有廣角能力的, 但我在東京的市街中穿行時又確實用105&#x2F;2.5攝下不少滿意的影像, 故我不認為這是一個錯誤的選擇. </p>
-<p>但我還是做出了一個重大錯誤決定 ⸺ 把 <a href="https://www.thinktankphoto.com/products/retrospective-7-v2-0">ThinkTank Retrospective 7</a> 作為唯一攝影包背去了. 這個包雖然是很好的單肩包, 但我在旅途中更經常採用的是sling&#x2F;messenger的方式斜挎, 在這種方式下Retrospective的舒適度其實很差, 基本上每一小時左右我的肩膀便會开始感到不堪重负, 而每一次調節揹帶&#x2F;換肩都在提醒着我: 如果再讓我選擇一次的話, 一定要提前買一款messenger bag或者把Peak Design Sling塞進行李箱⋯⋯ </p>
-<p>做好了各種準備 ⸺ 簽證之類的問題大概有很強時效性, 而且在小紅書等平臺也有詳盡教程 (中國的ヰ組也有一篇<a href="https://anima3-guide.isekaijoucho.moe/">非常詳盡的教程</a>, 值得參考), 在此略過不表 ⸺ 就只剩下在興奮與忐忑中等待八月的到來.</p>
-<h3 id="Day-0-八月五日-星期一-羽田-立會川"><a href="#Day-0-八月五日-星期一-羽田-立會川" class="headerlink" title="Day 0, 八月五日, 星期一, 羽田 - 立會川"></a>Day 0, 八月五日, 星期一, 羽田 - 立會川</h3><p>乘機 - 轉機 - 入境 - 京急線到住處毫無波瀾略過不表, 唯一小起伏是在羽田車站上車前沒好好看站臺標識差點一頭扎進女性專用車廂了. 到達住處 (Airbnb) 已經十點左右了, 但我按耐不住好奇心把行李一放就帶上相機出門逛街去了. 夜間的立會川行人稀少, 商業街的店鋪也都歇業, 有時我會覺得自己看起來像個不法分子, 但我果然還是很享受在空無一人的街道上漫步的感覺. 立會川的居民區各處細節與風格和倫敦明明風馬牛不相及, 但整體感受上卻莫名相似, 讓走在街上的我產生了回到英國的錯覺. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052436754/in/album-72177720321005949" title="DSC_0654-40 mm"><img src="https://live.staticflickr.com/65535/54052436754_7f0554d6c5_b.jpg" alt="DSC_0654-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>雖然是夜間, 但街燈的亮度依然足夠照亮很多本就設計得非常醒目的警示標語和圖示, <a href="https://www.mlit.go.jp/sogoseisaku/barrierfree/content/001727468.pdf">這些標識的設計</a>多有獨到之處, 除了警示之外還能看到四處貼著各種奇形怪狀的符號與圖示, 這些圖示有著獨特的活力, 使空無一人的街道顯得生機勃勃. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051238972/in/album-72177720321005949/" title="DSC_0637-40 mm"><img src="https://live.staticflickr.com/65535/54051238972_aaf09b8f3d_b.jpg" alt="DSC_0637-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>夜晚的探險止於住處兩公里開外的全家燈光, 口乾舌燥的我毫無抵抗地被鉤了進去. 這也是來日本之後我第一次開口說日語. 雖然只是簡單的 ｢不需要袋子, 刷信用卡｣ 但成功說出口並看到店員毫無猶豫地迴應了我的要求, 還是感覺鬆了一口氣. 之後的一週裡我和當地人的幾乎所有交流都是透過這三腳貓日語交流, 雖然期間的確遇到了一些問題 (Day 2詳述) 但總體而言居然並無大礙, 的確讓我產生了 ｢難道我日語水平其實還可以?｣ 的錯覺⋯⋯</p>
-<h3 id="Day-1-八月六日-星期二-品川-秋葉原"><a href="#Day-1-八月六日-星期二-品川-秋葉原" class="headerlink" title="Day 1, 八月六日, 星期二, 品川 - 秋葉原"></a>Day 1, 八月六日, 星期二, 品川 - 秋葉原</h3><p>按照計劃, 本日的行程應該是去參拜 (?) 尼康總部, 物色一些膠捲和老鏡. 我選擇的住處離尼康新總部非常近, 步行十五分鐘左右即可到達, 但我打算先在附近的相機店買一些膠捲. 很不幸地, 在品川找到的兩家中古相機店雖然都有出售膠捲, 但同時也只接受現金付款, 我不得不在路上的一家照片沖印店裡購買了一卷富士400急用 (為通關便利我沒有在FA裡裝上膠捲, 也沒有帶膠捲). </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069016123/in/album-72177720321005949" title="DSC_0718-40 mm"><img src="https://live.staticflickr.com/65535/54069016123_245a37e098_b.jpg" alt="DSC_0718-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>尼康總部所在, 路名 ｢光學大道｣, 不愧是日本光學⋯⋯</p>
-</blockquote>
-<p>距那家店不遠就是尼康新總部. 當時搬遷工作還在進行中, 附近街道上不時能看到佩戴尼康工牌的人士搬著箱子或推著小車神色匆匆地來往. 雖然知道尼康博物館還未重新開張, 但我還是忍不住走進了辦公樓大堂, 詢問了保安相關事項, 得到了保安的 ｢兩個月後再來吧｣ 答覆後才戀戀不捨離開. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068748251/in/album-72177720321005949/" title="65510029-"><img src="https://live.staticflickr.com/65535/54068748251_e06c68c673_b.jpg" alt="65510029-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>從尼康總部門口經過的JK</p>
-</blockquote>
-<hr>
-<p>說到中古相機鏡頭, 果然還是得去秋葉原啊. 秋葉原和品川相比之下簡直是兩個世界, 熙攘喧鬧得讓我有些頭大. 好在拐進旁邊的小巷之後喧嚷程度銳減, 而我盯上的幾家相機店恰好都在這些小巷中. </p>
-<p>整個下午的時間我都在秋葉原的數家中古相機店裡抑制著自己爆買的衝動流連. 我是有打算購入一枚 (左右?) 的中古廣角鏡, 最後我也如願在<a href="https://tokyocamera.net/">東京CAMERA</a> 買到了一枚比較冷門的Voigtländer 28&#x2F;1.9 LTM版. 本店的鏡頭收藏著實豐富, 我差點就把持不住斥巨資購入另一枚<a href="https://lens-db.com/cosina-tokyo-kogaku-auto-topcor-58mm-f14-2003/">Auto-Topcon 58mm ƒ&#x2F;1.4</a>了⋯⋯ 真是危險. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069089279/in/album-72177720321005949/" title="DSC_0749-40 mm"><img src="https://live.staticflickr.com/65535/54069089279_1c454e9dc5_b.jpg" alt="DSC_0749-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>東京CAMERA的販賣品之一, 黃金FA, 價格令人咋舌, 和它一比我手頭的普通FA就顯得灰頭土臉 wwwww</p>
-</blockquote>
-<hr>
-<p>天色漸暗時我離開了秋葉原 ⸺ 包裡裝著剛買的鏡頭以及大概夠我揮霍一年量的各類膠捲. 回家之後自然是迫不及待換上了新 (入手的中古) 鏡頭出門又溜了一圈, 順便物色晚餐. 在一家<a href="https://maps.app.goo.gl/4B5bTCoNw6mXYw8Y8">提供食物, 名字霸氣的酒吧</a>用餐後下起了陣雨. 有些意外地從酒吧老闆處得到了一把小雨傘讓我得以安全回家, 順便拍了一些雨中夜景. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052429799/in/album-72177720321005949" title="DSC_0790-25 mm"><img src="https://live.staticflickr.com/65535/54052429799_d0e90fea5d_b.jpg" alt="DSC_0790-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>雨後的商店街確實呈現了和昨天截然不同的質感, 地面雖然有不少積水的反光但踩上去卻基本沒有水花, 也不怎麼打滑, 大概是因為雨量並不算很大吧. 可惜這LTM卡口鏡頭毫無密封令我不敢在雨中停留, 三步並作兩步快速回到了住處. </p>
-<p>躺在床上, 腦中預演著期待已久的明日行程和回味著今天遇到的人與事, 聽著窗外的雨聲進入了夢鄉. </p>
-<h3 id="Day-2-八月七日-星期三-橫須賀-橫濱"><a href="#Day-2-八月七日-星期三-橫須賀-橫濱" class="headerlink" title="Day 2, 八月七日, 星期三, 橫須賀 - 橫濱"></a>Day 2, 八月七日, 星期三, 橫須賀 - 橫濱</h3><p>由於我的貪心, 今天的行程有點緊張. 按照計劃, 我提著屆時在會場分發的各種情緒周邊先坐電車來到橫濱的演出場地 ⸺ 國際平和會議場附近的車站, 把周邊存入儲物櫃之後再輕裝前往橫須賀遊覽. 所幸昨夜的雨雲已經散去, 天氣還算不錯, 在我到達橫須賀的時候天氣甚至變得十分晴朗而炎熱, 走到三笠公園時我基本已經汗流浹背. </p>
-<p>紀念艦上的遊客寥寥無幾, 我登上舷梯來到甲板入口. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052115846/in/album-72177720321005949" title="65510026-"><img src="https://live.staticflickr.com/65535/54052115846_02646f1c6d_b.jpg" alt="65510026-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>東鄉平八郎青銅像與三笠紀念館</p>
-</blockquote>
-<p>門票我早已提前買好, 本以為直接出示QR碼便能進入, 沒想到樂天英文版和日文版的資料沒有共通, 工作人員也不清楚到底遇到了什麼問題.  我們花了好一會兒才釐清了狀況, 成功切換賬號找到了入場憑證, 這個時候就難免感嘆自己的日語水平還遠未夠班了. </p>
-<p>艦上風景實際上我早在各種歷史紀錄片和導覽文章裡看過數遍, 而且三笠和貝爾法斯特不同, 已經完全固定在基座上了, 所以很大程度上並不算是 ｢船｣ 了, 但實際站在甲板上時還是十分激動. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052500379/in/album-72177720321005949" title="DSC_0860-40 mm"><img src="https://live.staticflickr.com/65535/54052500379_47011e6d15_b.jpg" alt="DSC_0860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>三笠畢竟是前無畏時代的設計, 艙室佈置和我參觀過的其他現代戰艦截然不同, 還保留著讓人想起風帆戰艦時代的感覺. 儘管不能攀上桅杆進入嘹望臺, 但在艦橋上方的平臺已經足夠獲得很好的視野. 橫須賀的海岸線一覽無遺. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051309252/in/album-72177720321005949/" title="DSC_0875-40 mm"><img src="https://live.staticflickr.com/65535/54051309252_1db0b60206_b.jpg" alt="DSC_0875-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p>艦上理所當然地花費了大量筆墨介紹了 ｢皇國興廢在此一戰｣ 與東鄉平八郎的歷史, 作為 ｢愛國主義教育基地｣ 的確是能讓人感受到心潮澎湃. 不過比起這些, 更令我感興趣的是下層甲板裡巨量的聯合艦隊船模. 雖然我覺得紀念艦裡有船模大概是再理所當然不過的事, 但能在這裡看到從日俄戰爭到二戰幾乎全部日本軍艦的模型還是令我感到十分震撼. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54067942037/in/album-72177720321005949" title="DSC_0891-40 mm"><img src="https://live.staticflickr.com/65535/54067942037_3fcf8ebf5c_b.jpg" alt="DSC_0891-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>我最喜歡的重巡洋艦 ⸺ 高雄級. </p>
-</blockquote>
-<p>這些模型的開模雖然略有些粗糙, 但製作得十分精細, 幾乎可以和Wilhelmshaven Maritime Museum的船模比肩 (Wilhelmshaven勝在有不少1&#x2F;300甚至1&#x2F;100模型, 細節量恐怖); 十倍勝過英國的National Maritime Museum裡相同大小的船模 (1&#x2F;100 KGV細節量依然可觀); 十萬倍勝過Queensland Maritime Museum中的船模 (昆士蘭那邊的甚至有不少基本的史實錯誤, 還有看起來簡直是魔改架空的船⋯⋯ 而且還是1&#x2F;300!). </p>
-<hr>
-<p>在花費了遠超過計劃的時間端詳完船模之後, 我急匆匆趕往附近的海軍咖哩本店. 作為極負盛名的海軍咖哩本店自然是免不了要排隊, 好在我並沒有等待太久. 海軍咖哩的份量看起來平平無奇, 飢腸轆轆的我還多點了一瓶<a href="https://dreambeer.jp/ec/beer/detail/117">横須賀フォレストジンジャー</a>, 但是一開始進食才發現這咖哩的飽腹感迷之強勁, 吃了不到一半我就覺得十分飽足, 暗叫不妙. 計算了一下時間之後我覺得可以慢慢吃, 於是經過了大約45分鐘的苦戰, 我總算是吃完了這看起來微不足道的一份牛肉咖哩⋯⋯ </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069167604/in/album-72177720321005949" title="DSC_0942-40 mm"><img src="https://live.staticflickr.com/65535/54069167604_3999af9672_b.jpg" alt="DSC_0942-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>相信我, 這一份咖哩真的可以頂一整天到深夜</p>
-</blockquote>
-<hr>
-<p>字面意思上的酒足飯飽之後我開始動身前往橫濱. 剛下電車便看到身著神椿服飾的人們向著橫濱國際平和會議場前進, 而我順利取回早上寄存的周邊之後也匯入他們向著會場移動. 身邊散發著觀測者氣息的人越來越多, 等到我來到會場後的廣場時, 出現在我面前的便是觀測者的海洋. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052624305/in/album-72177720321005949" title="DSC_0946-40 mm"><img src="https://live.staticflickr.com/65535/54052624305_7111a08773_b.jpg" alt="DSC_0946-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>會場後廣場所見的風景</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069305912/in/dateposted/" title="IMG_6943-EDIT"><img src="https://live.staticflickr.com/65535/54069305912_cd282ab425_b.jpg" alt="IMG_6943-EDIT"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>其他觀測者拍攝的我. 帽子上的anemone和領子上的nemophila是<a href="https://space.bilibili.com/2018843453">於素</a>老師的手筆</p>
-</blockquote>
-<p>我積攢了半年的社交能量便在此時派上了用場 ⸺ 本次我帶著來自<a href="https://x.com/ShiraishiKanoya">白石老師</a>製作的周邊分發, 並錄下收到周邊的觀測者對 ｢最喜歡情緒哪首歌? 為什麼?｣ 兩個問題的答案. 健忘的我臨行前又把錄音筆丟在家裡, 這次只好用iPhone頂著嘈雜的人聲與海風錄製, 好在最後基本上都能聽清. 白石老師收到這些錄音之後稍作剪輯發了出來.</p>
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113272984443193&bvid=BV19V2WY5E45&cid=26205359116&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:100%;max-width:550px;overflow:hidden;background:transparent;"></iframe>
-
-<pre><code>充滿回憶的聲音
-</code></pre>
-<hr>
-<p>在進行了一下午, 大概有我平時兩年份的社交之後, 暮色漸沉, 入場的時間到了. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051227557/in/album-72177720321005949" title="65510012-"><img src="https://live.staticflickr.com/65535/54051227557_7b9bb0ee7e_b.jpg" alt="65510012-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>港口的夕陽</p>
-</blockquote>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052623985/in/dateposted-public/" title="DSC_1029-40 mm"><img src="https://live.staticflickr.com/65535/54052623985_a8f6e7bdba_b.jpg" alt="DSC_1029-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>開演前</p>
-</blockquote>
-<p>儘管在Anima Ⅲ 之前我已經在國內參加過幾場不同規模的live, 這次演出給我帶來的震撼依然遠勝於之前任何一場. 十人規模的豪華樂隊讓伴奏的表現力暴增, 情緒自己的歌唱也迴應了大家的期待, 令我數度流淚. 不單是音樂, 情緒充滿力量的話語同樣另所有觀眾動容, 我相信在場的不少觀測者都從這次演出中汲取了充分的創作動力. </p>
-<p>任何的文字記敘在當晚的演出面前都顯得蒼白無力. 當我隨著散場的人流走出會場時耳邊似乎仍然迴響著她的歌聲與話語 ⸺ 不如說直到今天這迴響仍未消散. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052502279/in/album-72177720321005949" title="DSC_1040-40 mm"><img src="https://live.staticflickr.com/65535/54052502279_03dfabc30d_b.jpg" alt="DSC_1040-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<blockquote>
-<p>散場之後的橫濱港口</p>
-</blockquote>
-<p>一夜無眠. </p>
-<hr>
-<p>東京遊記系列: <a href="/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
       </tags>
   </entry>
   <entry>
@@ -1148,6 +1048,106 @@
       </tags>
   </entry>
   <entry>
+    <title>東京遊記PART Ⅰ</title>
+    <url>/2024-10/TripToTokyo1/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052125636/in/album-72177720321005949" title="DSC_0706-40 mm"><img src="https://live.staticflickr.com/65535/54052125636_6efba503a3_b.jpg"  alt="DSC_0706-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>這篇遊記意味著東京之行的徹底完結. 這兩個月間我仍然沉浸在這次旅行的餘韻中不願甦醒; 另一方面, 這一週值得記錄的東西太多, 提筆便感到千萬思緒湧上心頭不知從何道來. 但我知道不論如何, 總是得為這段回憶親手畫上句號, 從美夢中醒來. </p>
+<h4 id="Day-1-五月"><a href="#Day-1-五月" class="headerlink" title="Day -1, 五月"></a>Day -1, 五月</h4><p>為什麼明明對日本文化如此熱衷卻時至今日都還沒去過日本, 以前這個問題時常會浮現在我的心頭, 尤其是每當看到朋友們分享各自的日本行跡時. 後來我給自己的解釋是, 我需要一個更強的規劃一次旅遊的動力. 在五月的時候這個動力終於出現 ⸺ 我順利抽中了<a href="https://kamitsubaki.jp/news/2024/04/25/3372/">ヰ世界情緒初次線下個人演唱會Anima Ⅲ</a>門票, 以此為契機我開始規劃這次長達一週的旅遊. </p>
+<p>實際上決定把日本之行擴充到七日後, 我思考的第一個問題是 ⸺ 應該帶什麼鏡頭? </p>
+<p>除了在文章裡提到過的鏡頭, 這幾年我陸陸續續收集了<a href="/Now/">二十餘枚鏡頭</a>, 除卻幾枚玩具性質和收藏性質的也還有橫跨三四個系統, 十餘枚的選擇範圍. 本著最大化相容性和減少冗餘的原則, 我決定只帶一臺數碼機 ⸺ Zƒ⸺ 和一臺菲林機 ⸺ FA, 再帶上F轉Z接環確保Zƒ能覆蓋儘可能多的場景. </p>
+<p>鏡頭選擇上, 我最終確定了從廣到長Voigtländer 40&#x2F;1.4 VM (最小最輕便的大光圈Zƒ掛機頭), Sigma 90&#x2F;2.8 DG DN (手頭最可靠的自動對焦鏡, 且還算輕便), Nikkor-P Auto 105&#x2F;2.5 (FA&#x2F;FM3ᴀ 上最慣用的掛機頭, 之前也帶去哈爾濱&#x2F;長白山過, 久經考驗的戰士), Zeiss APO-Sonnar 135&#x2F;2 (當時手頭畫質最好的鏡頭). 只看數字的話妳或許會認為105&#x2F;2.5這個選擇有些尷尬, 它作為FA的掛機頭在輕便上不如90&#x2F;2.8, 質素上不及135&#x2F;2, 也許應該換成35&#x2F;2或24&#x2F;2.8其中一枚來讓FA也有廣角能力的, 但我在東京的市街中穿行時又確實用105&#x2F;2.5攝下不少滿意的影像, 故我不認為這是一個錯誤的選擇. </p>
+<p>但我還是做出了一個重大錯誤決定 ⸺ 把 <a href="https://www.thinktankphoto.com/products/retrospective-7-v2-0">ThinkTank Retrospective 7</a> 作為唯一攝影包背去了. 這個包雖然是很好的單肩包, 但我在旅途中更經常採用的是sling&#x2F;messenger的方式斜挎, 在這種方式下Retrospective的舒適度其實很差, 基本上每一小時左右我的肩膀便會开始感到不堪重负, 而每一次調節揹帶&#x2F;換肩都在提醒着我: 如果再讓我選擇一次的話, 一定要提前買一款messenger bag或者把Peak Design Sling塞進行李箱⋯⋯ </p>
+<p>做好了各種準備 ⸺ 簽證之類的問題大概有很強時效性, 而且在小紅書等平臺也有詳盡教程 (中國的ヰ組也有一篇<a href="https://anima3-guide.isekaijoucho.moe/">非常詳盡的教程</a>, 值得參考), 在此略過不表 ⸺ 就只剩下在興奮與忐忑中等待八月的到來.</p>
+<h3 id="Day-0-八月五日-星期一-羽田-立會川"><a href="#Day-0-八月五日-星期一-羽田-立會川" class="headerlink" title="Day 0, 八月五日, 星期一, 羽田 - 立會川"></a>Day 0, 八月五日, 星期一, 羽田 - 立會川</h3><p>乘機 - 轉機 - 入境 - 京急線到住處毫無波瀾略過不表, 唯一小起伏是在羽田車站上車前沒好好看站臺標識差點一頭扎進女性專用車廂了. 到達住處 (Airbnb) 已經十點左右了, 但我按耐不住好奇心把行李一放就帶上相機出門逛街去了. 夜間的立會川行人稀少, 商業街的店鋪也都歇業, 有時我會覺得自己看起來像個不法分子, 但我果然還是很享受在空無一人的街道上漫步的感覺. 立會川的居民區各處細節與風格和倫敦明明風馬牛不相及, 但整體感受上卻莫名相似, 讓走在街上的我產生了回到英國的錯覺. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052436754/in/album-72177720321005949" title="DSC_0654-40 mm"><img src="https://live.staticflickr.com/65535/54052436754_7f0554d6c5_b.jpg" alt="DSC_0654-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>雖然是夜間, 但街燈的亮度依然足夠照亮很多本就設計得非常醒目的警示標語和圖示, <a href="https://www.mlit.go.jp/sogoseisaku/barrierfree/content/001727468.pdf">這些標識的設計</a>多有獨到之處, 除了警示之外還能看到四處貼著各種奇形怪狀的符號與圖示, 這些圖示有著獨特的活力, 使空無一人的街道顯得生機勃勃. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051238972/in/album-72177720321005949/" title="DSC_0637-40 mm"><img src="https://live.staticflickr.com/65535/54051238972_aaf09b8f3d_b.jpg" alt="DSC_0637-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>夜晚的探險止於住處兩公里開外的全家燈光, 口乾舌燥的我毫無抵抗地被鉤了進去. 這也是來日本之後我第一次開口說日語. 雖然只是簡單的 ｢不需要袋子, 刷信用卡｣ 但成功說出口並看到店員毫無猶豫地迴應了我的要求, 還是感覺鬆了一口氣. 之後的一週裡我和當地人的幾乎所有交流都是透過這三腳貓日語交流, 雖然期間的確遇到了一些問題 (Day 2詳述) 但總體而言居然並無大礙, 的確讓我產生了 ｢難道我日語水平其實還可以?｣ 的錯覺⋯⋯</p>
+<h3 id="Day-1-八月六日-星期二-品川-秋葉原"><a href="#Day-1-八月六日-星期二-品川-秋葉原" class="headerlink" title="Day 1, 八月六日, 星期二, 品川 - 秋葉原"></a>Day 1, 八月六日, 星期二, 品川 - 秋葉原</h3><p>按照計劃, 本日的行程應該是去參拜 (?) 尼康總部, 物色一些膠捲和老鏡. 我選擇的住處離尼康新總部非常近, 步行十五分鐘左右即可到達, 但我打算先在附近的相機店買一些膠捲. 很不幸地, 在品川找到的兩家中古相機店雖然都有出售膠捲, 但同時也只接受現金付款, 我不得不在路上的一家照片沖印店裡購買了一卷富士400急用 (為通關便利我沒有在FA裡裝上膠捲, 也沒有帶膠捲). </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069016123/in/album-72177720321005949" title="DSC_0718-40 mm"><img src="https://live.staticflickr.com/65535/54069016123_245a37e098_b.jpg" alt="DSC_0718-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>尼康總部所在, 路名 ｢光學大道｣, 不愧是日本光學⋯⋯</p>
+</blockquote>
+<p>距那家店不遠就是尼康新總部. 當時搬遷工作還在進行中, 附近街道上不時能看到佩戴尼康工牌的人士搬著箱子或推著小車神色匆匆地來往. 雖然知道尼康博物館還未重新開張, 但我還是忍不住走進了辦公樓大堂, 詢問了保安相關事項, 得到了保安的 ｢兩個月後再來吧｣ 答覆後才戀戀不捨離開. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54068748251/in/album-72177720321005949/" title="65510029-"><img src="https://live.staticflickr.com/65535/54068748251_e06c68c673_b.jpg" alt="65510029-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>從尼康總部門口經過的JK</p>
+</blockquote>
+<hr>
+<p>說到中古相機鏡頭, 果然還是得去秋葉原啊. 秋葉原和品川相比之下簡直是兩個世界, 熙攘喧鬧得讓我有些頭大. 好在拐進旁邊的小巷之後喧嚷程度銳減, 而我盯上的幾家相機店恰好都在這些小巷中. </p>
+<p>整個下午的時間我都在秋葉原的數家中古相機店裡抑制著自己爆買的衝動流連. 我是有打算購入一枚 (左右?) 的中古廣角鏡, 最後我也如願在<a href="https://tokyocamera.net/">東京CAMERA</a> 買到了一枚比較冷門的Voigtländer 28&#x2F;1.9 LTM版. 本店的鏡頭收藏著實豐富, 我差點就把持不住斥巨資購入另一枚<a href="https://lens-db.com/cosina-tokyo-kogaku-auto-topcor-58mm-f14-2003/">Auto-Topcon 58mm ƒ&#x2F;1.4</a>了⋯⋯ 真是危險. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069089279/in/album-72177720321005949/" title="DSC_0749-40 mm"><img src="https://live.staticflickr.com/65535/54069089279_1c454e9dc5_b.jpg" alt="DSC_0749-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>東京CAMERA的販賣品之一, 黃金FA, 價格令人咋舌, 和它一比我手頭的普通FA就顯得灰頭土臉 wwwww</p>
+</blockquote>
+<hr>
+<p>天色漸暗時我離開了秋葉原 ⸺ 包裡裝著剛買的鏡頭以及大概夠我揮霍一年量的各類膠捲. 回家之後自然是迫不及待換上了新 (入手的中古) 鏡頭出門又溜了一圈, 順便物色晚餐. 在一家<a href="https://maps.app.goo.gl/4B5bTCoNw6mXYw8Y8">提供食物, 名字霸氣的酒吧</a>用餐後下起了陣雨. 有些意外地從酒吧老闆處得到了一把小雨傘讓我得以安全回家, 順便拍了一些雨中夜景. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052429799/in/album-72177720321005949" title="DSC_0790-25 mm"><img src="https://live.staticflickr.com/65535/54052429799_d0e90fea5d_b.jpg" alt="DSC_0790-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>雨後的商店街確實呈現了和昨天截然不同的質感, 地面雖然有不少積水的反光但踩上去卻基本沒有水花, 也不怎麼打滑, 大概是因為雨量並不算很大吧. 可惜這LTM卡口鏡頭毫無密封令我不敢在雨中停留, 三步並作兩步快速回到了住處. </p>
+<p>躺在床上, 腦中預演著期待已久的明日行程和回味著今天遇到的人與事, 聽著窗外的雨聲進入了夢鄉. </p>
+<h3 id="Day-2-八月七日-星期三-橫須賀-橫濱"><a href="#Day-2-八月七日-星期三-橫須賀-橫濱" class="headerlink" title="Day 2, 八月七日, 星期三, 橫須賀 - 橫濱"></a>Day 2, 八月七日, 星期三, 橫須賀 - 橫濱</h3><p>由於我的貪心, 今天的行程有點緊張. 按照計劃, 我提著屆時在會場分發的各種情緒周邊先坐電車來到橫濱的演出場地 ⸺ 國際平和會議場附近的車站, 把周邊存入儲物櫃之後再輕裝前往橫須賀遊覽. 所幸昨夜的雨雲已經散去, 天氣還算不錯, 在我到達橫須賀的時候天氣甚至變得十分晴朗而炎熱, 走到三笠公園時我基本已經汗流浹背. </p>
+<p>紀念艦上的遊客寥寥無幾, 我登上舷梯來到甲板入口. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052115846/in/album-72177720321005949" title="65510026-"><img src="https://live.staticflickr.com/65535/54052115846_02646f1c6d_b.jpg" alt="65510026-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>東鄉平八郎青銅像與三笠紀念館</p>
+</blockquote>
+<p>門票我早已提前買好, 本以為直接出示QR碼便能進入, 沒想到樂天英文版和日文版的資料沒有共通, 工作人員也不清楚到底遇到了什麼問題.  我們花了好一會兒才釐清了狀況, 成功切換賬號找到了入場憑證, 這個時候就難免感嘆自己的日語水平還遠未夠班了. </p>
+<p>艦上風景實際上我早在各種歷史紀錄片和導覽文章裡看過數遍, 而且三笠和貝爾法斯特不同, 已經完全固定在基座上了, 所以很大程度上並不算是 ｢船｣ 了, 但實際站在甲板上時還是十分激動. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052500379/in/album-72177720321005949" title="DSC_0860-40 mm"><img src="https://live.staticflickr.com/65535/54052500379_47011e6d15_b.jpg" alt="DSC_0860-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>三笠畢竟是前無畏時代的設計, 艙室佈置和我參觀過的其他現代戰艦截然不同, 還保留著讓人想起風帆戰艦時代的感覺. 儘管不能攀上桅杆進入嘹望臺, 但在艦橋上方的平臺已經足夠獲得很好的視野. 橫須賀的海岸線一覽無遺. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051309252/in/album-72177720321005949/" title="DSC_0875-40 mm"><img src="https://live.staticflickr.com/65535/54051309252_1db0b60206_b.jpg" alt="DSC_0875-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>艦上理所當然地花費了大量筆墨介紹了 ｢皇國興廢在此一戰｣ 與東鄉平八郎的歷史, 作為 ｢愛國主義教育基地｣ 的確是能讓人感受到心潮澎湃. 不過比起這些, 更令我感興趣的是下層甲板裡巨量的聯合艦隊船模. 雖然我覺得紀念艦裡有船模大概是再理所當然不過的事, 但能在這裡看到從日俄戰爭到二戰幾乎全部日本軍艦的模型還是令我感到十分震撼. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54067942037/in/album-72177720321005949" title="DSC_0891-40 mm"><img src="https://live.staticflickr.com/65535/54067942037_3fcf8ebf5c_b.jpg" alt="DSC_0891-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>我最喜歡的重巡洋艦 ⸺ 高雄級. </p>
+</blockquote>
+<p>這些模型的開模雖然略有些粗糙, 但製作得十分精細, 幾乎可以和Wilhelmshaven Maritime Museum的船模比肩 (Wilhelmshaven勝在有不少1&#x2F;300甚至1&#x2F;100模型, 細節量恐怖); 十倍勝過英國的National Maritime Museum裡相同大小的船模 (1&#x2F;100 KGV細節量依然可觀); 十萬倍勝過Queensland Maritime Museum中的船模 (昆士蘭那邊的甚至有不少基本的史實錯誤, 還有看起來簡直是魔改架空的船⋯⋯ 而且還是1&#x2F;300!). </p>
+<hr>
+<p>在花費了遠超過計劃的時間端詳完船模之後, 我急匆匆趕往附近的海軍咖哩本店. 作為極負盛名的海軍咖哩本店自然是免不了要排隊, 好在我並沒有等待太久. 海軍咖哩的份量看起來平平無奇, 飢腸轆轆的我還多點了一瓶<a href="https://dreambeer.jp/ec/beer/detail/117">横須賀フォレストジンジャー</a>, 但是一開始進食才發現這咖哩的飽腹感迷之強勁, 吃了不到一半我就覺得十分飽足, 暗叫不妙. 計算了一下時間之後我覺得可以慢慢吃, 於是經過了大約45分鐘的苦戰, 我總算是吃完了這看起來微不足道的一份牛肉咖哩⋯⋯ </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069167604/in/album-72177720321005949" title="DSC_0942-40 mm"><img src="https://live.staticflickr.com/65535/54069167604_3999af9672_b.jpg" alt="DSC_0942-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>相信我, 這一份咖哩真的可以頂一整天到深夜</p>
+</blockquote>
+<hr>
+<p>字面意思上的酒足飯飽之後我開始動身前往橫濱. 剛下電車便看到身著神椿服飾的人們向著橫濱國際平和會議場前進, 而我順利取回早上寄存的周邊之後也匯入他們向著會場移動. 身邊散發著觀測者氣息的人越來越多, 等到我來到會場後的廣場時, 出現在我面前的便是觀測者的海洋. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052624305/in/album-72177720321005949" title="DSC_0946-40 mm"><img src="https://live.staticflickr.com/65535/54052624305_7111a08773_b.jpg" alt="DSC_0946-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>會場後廣場所見的風景</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54069305912/in/dateposted/" title="IMG_6943-EDIT"><img src="https://live.staticflickr.com/65535/54069305912_cd282ab425_b.jpg" alt="IMG_6943-EDIT"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>其他觀測者拍攝的我. 帽子上的anemone和領子上的nemophila是<a href="https://space.bilibili.com/2018843453">於素</a>老師的手筆</p>
+</blockquote>
+<p>我積攢了半年的社交能量便在此時派上了用場 ⸺ 本次我帶著來自<a href="https://x.com/ShiraishiKanoya">白石老師</a>製作的周邊分發, 並錄下收到周邊的觀測者對 ｢最喜歡情緒哪首歌? 為什麼?｣ 兩個問題的答案. 健忘的我臨行前又把錄音筆丟在家裡, 這次只好用iPhone頂著嘈雜的人聲與海風錄製, 好在最後基本上都能聽清. 白石老師收到這些錄音之後稍作剪輯發了出來.</p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113272984443193&bvid=BV19V2WY5E45&cid=26205359116&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:100%;max-width:550px;overflow:hidden;background:transparent;"></iframe>
+
+<pre><code>充滿回憶的聲音
+</code></pre>
+<hr>
+<p>在進行了一下午, 大概有我平時兩年份的社交之後, 暮色漸沉, 入場的時間到了. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54051227557/in/album-72177720321005949" title="65510012-"><img src="https://live.staticflickr.com/65535/54051227557_7b9bb0ee7e_b.jpg" alt="65510012-"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>港口的夕陽</p>
+</blockquote>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052623985/in/dateposted-public/" title="DSC_1029-40 mm"><img src="https://live.staticflickr.com/65535/54052623985_a8f6e7bdba_b.jpg" alt="DSC_1029-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>開演前</p>
+</blockquote>
+<p>儘管在Anima Ⅲ 之前我已經在國內參加過幾場不同規模的live, 這次演出給我帶來的震撼依然遠勝於之前任何一場. 十人規模的豪華樂隊讓伴奏的表現力暴增, 情緒自己的歌唱也迴應了大家的期待, 令我數度流淚. 不單是音樂, 情緒充滿力量的話語同樣另所有觀眾動容, 我相信在場的不少觀測者都從這次演出中汲取了充分的創作動力. </p>
+<p>任何的文字記敘在當晚的演出面前都顯得蒼白無力. 當我隨著散場的人流走出會場時耳邊似乎仍然迴響著她的歌聲與話語 ⸺ 不如說直到今天這迴響仍未消散. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052502279/in/album-72177720321005949" title="DSC_1040-40 mm"><img src="https://live.staticflickr.com/65535/54052502279_03dfabc30d_b.jpg" alt="DSC_1040-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<blockquote>
+<p>散場之後的橫濱港口</p>
+</blockquote>
+<p>一夜無眠. </p>
+<hr>
+<p>東京遊記系列: <a href="/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>東京遊記2025 (六月篇) Part Ⅱ</title>
     <url>/2025-06/TripToTokyo2025JunPart2/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart2/TokyoMetropolitanTheatre.avif" alt="東京芸術劇場"></p>
@@ -1190,64 +1190,6 @@
 <p>雖然離開物販會時還不算很晚, 但我不打算安排更多活動了, 畢竟體力還得要為本次最重要的活動 ⸺ 明天的酔シグレ fanbox live準備. 我在住處附近的<a href="https://tabelog.com/tokyo/A1316/A131602/13279638/">一家以醃漬和熏製食物為賣點的料理店</a>簡單吃了晚餐, 回到住處洗漱完畢躺在床上, 激動地等待週日來臨. </p>
 <hr>
 <p>東京遊記2025六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
-]]></content>
-      <tags>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>東京遊記2025 (六月篇) Part Ⅲ</title>
-    <url>/2025-06/TripToTokyo2025JunPart3/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart3/magnify.avif"></p>
-<h3 id="Day-3-六月八日-星期日-涉谷-墨田"><a href="#Day-3-六月八日-星期日-涉谷-墨田" class="headerlink" title="Day 3, 六月八日, 星期日, 涉谷 - 墨田"></a>Day 3, 六月八日, 星期日, 涉谷 - 墨田</h3><p>終於到了本次日本之旅的最核心, Yoishigure Fanbox Live vol.1. 按照計劃我與Oscar先來到涉谷Parco會面, 順便逛逛那裡的任天堂總店. 然而我們還是小看了週日任天堂店的人流, 店內完全是水洩不通, 我們連穿過店內都感到有些吃力, 更別說駐足觀看各個商品和展示品, 只能草草瞥了一圈離開. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Godzilla.avif"></p>
-<blockquote>
-<p>任天堂店旁邊的哥吉拉</p>
-</blockquote>
-<p>從Parco出來我們就去附近的<a href="https://oreryushio.co.jp/?page_id=797">拉麵店</a>填肚子, 心想離會場這麼近時間肯定是充裕的. 沒想到在涉谷附近居然無處尋覓一家合適的花店, 要麼是只賣居家擺放用的花要麼就是週日關店歇業, 我們只好放棄了送花的選項 ⸺ 後來進入會場後也發現今回似乎沒人送花了, 看來大家的想法都差不多⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Gee-ge.avif"></p>
-<p>登上 <a href="http://gee-ge.net/">Gee-ge</a> 所在的四層, 發現入口是一個極其狹窄的樓梯間, livehouse的門也非常不起眼, 寬度基本上不能容納二人同時進入. 稍待片刻便到了入場時間, 我和Oscar因為排隊的位置靠前所以最先進入livehouse. Livehouse內的空間也確實不大, 比上回的保谷小音樂廳更袖珍, 官網上說能容納60人看起來應該是個很接近的數字. 話說回來在2025年參加這樣的活動居然只能用現金支付, 還好參與人數不多否則Gee-ge要堵車到樓下吧. 我在交門票錢的時候覺得來幫忙分送特典, 戴著口罩的工作人員眉宇間氣質和香音老師很像, 還以為是香音老師居然在演出前來幫忙, 對她鞠了一躬, 沒想到在演出結束後的回顧直播上香音老師透露那是她妹妹⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/poster.avif"></p>
-<p>在交完門票錢領完特典和飲料後, Oscar發現座位似乎並沒有編號, 於是拉著我徑直奔向第一排 ⸺ 在這裡我離鋼琴的距離不過三米出頭, 這輩子都沒有離演出者這麼近過, 可算徹底彌補了上次Classical Live vol.2沒能近距離觀賞香音老師彈琴的遺憾. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Piano.avif"></p>
-<p>就坐後屏息等待不久, 香音老師便施然入場. 本次她穿著的藍灰連身長裙與我讓amayouri老師繪製的插繪中禮服風格異曲同工, 都是在腰部鏤空的設計, 不知道是香音老師刻意選擇還是巧合. </p>
-<p>沒有開場白, 燈光師調暗了觀眾席照明後香音老師便開始了演奏. 雖然之前已經分別見識過了香音老師彈琴與歌唱, 但彈唱確實是第一次觀賞. 在我的座位無法看到香音老師手指的動作, 非常可惜, 但人也不能太貪心⋯⋯ 除了最開始的一曲大概因為凝重的氣氛讓香音老師比較明顯地彈錯一個音外, 整場演出基本沒有明顯的失誤. 香音老師的表情平靜而自信, 僅在彈錯音符時略微蹙眉, 而她的歌聲依舊澄澈, 雖然不像演唱歌劇時那樣穿透力強勁, 但更加平靜和緩的歌聲倒是比較符合本次live的 ｢居家氛圍｣. </p>
-<p>一曲結束, 香音老師直接在琴凳上側身, 面對觀眾開始MC. MC氛圍輕鬆, 感覺和直播沒什麼區別, 也說了希望大家不用拘謹, 該喝水喝水, 想創造類似爵士酒吧氛圍. 這麼一想, 這次演出說不定是十月的預演⋯⋯ 本次演出的曲目裡, 除了香音老師已經決定必然會唱的之外, 還有四首由fanbox成員們票選的曲目. 可惜我投的曲目只有夜明けを乞う。入選了 ⸺ 不如說要從各15曲中選出兩首實在過於困難了! 即便如此我還是很高興能看到Daily Note被放在候選名單裡, 縱使心知選它的人大概不會很多. </p>
-<p>幾首沒能位列前茅的曲子也進入了歌單中倒算是預料之外情理之中, 而其中最為驚喜則是瑠華姐姐演唱的返し唄 ⸺ 沒錯, 酔シグレ活動全勤獎的瑠華姐姐本次也沒有缺席, 登台獻唱了二首半 (二首獨唱, 一首合唱). 瑠華姐姐在舞台上的站位距離我的座位大概只有不到二米, 字面意思的觸手可及. 瑠華姐姐和香音老師一樣穿著素色的洗練長裙, 但和香音老師搭配了典雅的高跟鞋不同, 瑠華姐姐搭配的是略有些朋克風格的黑色長靴, 這個組合顯得非常帥氣. 至於為什麼突然改口稱瑠華姐姐, 那是因為近距離觀賞瑠華小姐演出後被她散發的姐姐氣場所折服, 不由自主⋯⋯</p>
-<p>香音老師的獨唱曲以藍悼花作為結束. 香音老師是真的很喜歡藍悼花, 之前聯動咖啡廳的解密也是以藍悼花作為謎底⋯⋯ 而藍悼花結束後, 瑠華姐姐重新登台, 與香音老師再次合唱了あまりある残像, 二人的配合依舊天衣無縫, 為本次演出畫上了完美的句號. </p>
-<p>但本次演唱會和上次不同, 我們被允許向香音老師面呈禮物, 而香音老師也會親手為我們分送fanbox成員特殊紀念品, 所以演出結束後香音老師和瑠華姐姐並沒有離場, 而是直接穿過觀眾席來到了位於livehouse入口附近的物販區. 我和Oscar互相給對方鼓勁一邊慢騰騰地排隊購買物販, 心中七上八下忐忑不安⋯⋯ 排隊時我就觀察著香音老師, 發現她能記得參會者們的很多情報, 比如某位聽眾同時還是Eye&#x2F;Lucia&#x2F;つぐ的粉絲, 並作出相應的評論. 而且每個人與香音老師對話的時間似乎也沒什麼限制. </p>
-<p>我非常軟弱地讓Oscar排在前面, 希望擠出哪怕多一點的時間做心理準備; 這當然是毫無意義的, 畢竟在香音老師對我開口說話的瞬間這些準備就全都化為虛無, 只剩下喜悅與激動. 我與Oscar一道語無倫次地對香音老師表示感謝與喜愛, 一邊將禮物交給香音老師 ⸺  Oscar贈送的是外觀復古而華麗的懷錶, 我贈送的則是玻璃工藝的蘸水筆, 這些都是香音老師曾經說過喜愛的物品, 也是我們討論過後得出的結果. 香音老師非常熱情地當場開啟包裝盒檢視, 並向我們表示感謝, 隨後也親手將fanbox成員的特典交給我們. 我在香音老師面前張口結舌, 除了鞠躬如搗蒜之外什麼話也說不出來, 只有在最後離開前祝願香音老師之後在歌劇那邊的演出也一帆風順. </p>
-<p>我和Oscar幾近逃也一般離開了Gee-ge, 一邊後悔著沒有抓住機會同香音老師多聊一些, 一面又為得到香音老師的感謝與鼓勵沾沾自喜, 兩人不約而同地發出了怪笑&#x2F;怪聲. </p>
-<hr>
-<p>一面在腦中回味著fanbox live的餘韻, 我一邊登上電車前往Book&amp;Design參加<a href="https://book-design.jp/events/699/">『欧文書体　基礎知識と使い方』刊行記念「小林章と欧文書体展」</a>. 與本づくりハウス相比, Book&amp;Design的展示廳就顯得寬敞明亮, 空間充裕, 令人心曠神怡了 ⸺ 當然不是說本づくりハウス讓人心情低落, 但的確是顯得過於擁擠 (這又何嘗不是一種foreshadowing…). 展廳兩側的牆上掛滿了小林章先生過去字型作品樣張的大幅印刷, 中間的島台上則放置了他的著作, 手稿以及使用了他設計的字型進行排印的出版物､ 商品, 而這些著作旁還放了一次性手套與消毒液供感興趣的觀客翻閱. 我到場時場內觀客數量寥寥無幾, 大家都專心致志地觀賞著牆上和桌上的展品. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/ITCLuna.avif" alt="ITC Luna"></p>
-<blockquote>
-<p>專門被拉出來展示的ITC Luna月圖形</p>
-</blockquote>
-<p>當我看完第一面牆上的字型見本時, 小林章先生來到了會場. 他先向在場所有人簡單問候, 接著便開門見山地表示如果有問題歡迎直接向本人提出, 如果提出了好問題的話還會得到他親自頒發的 ｢好問題獎｣. 於是大家便蜂擁到小林章先生身邊提出各式問題. 因為字型樣張掛在牆上, 所以很多提問都直接與字型的細節設計相關, 小林章先生連連表示好問題, 作為好問題獎的禮物很快便見底. 我也抓住機會詢問了與Zapf先生手稿相關的問題, 拿到最後一支好問題獎. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/ZapfAmpersand.avif" alt="Zapf先生的手稿"></p>
-<p>在第一波問題問完之後, 小林章先生向現場工作人員要了個一次性碗, 然後踱步到島台擺放使用了他設計的字型做包裝的商品展示區, 隨手拿起了一包糖果便拆開倒入碗中, 和大家說: ｢這是我在德國時的客戶開發的糖果, 是德國人喜歡的酸味糖, 特色當然就是特別的酸, 但我非常中意, 你們也不用客氣來嚐嚐看呀~｣ 我正為居然可以現場吃展品而震驚, 其他觀客們早已各自拿了一顆糖果吃了起來, 其中不少人果然面露難色並感嘆真的好酸, 小林章先生笑逐顏開並自己也抓了一顆放進嘴裡樂在其中. 我也拿了一顆品嚐, 確實是符合我對德國酸味糖的印象 ⸺ 畢竟我在澳大利亞和英國留學時已經吃過不少不同品牌但都來自德國的酸味糖了, 對嗜酸的我來說這點程度倒不算什麼, 但在展會上能夠吃展品果然是全新的體驗. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/SourCandy.avif"></p>
-<blockquote>
-<p>一臉壞笑 (?) 開啟酸味糖的小林章先生, 有興趣的讀者也可以自己去網拍上買一包來嚐嚐. 順帶一提我在澳大利亞和英國時吃得最多的是Trolli和Haribo, hitschies反而很少見</p>
-</blockquote>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Publishing.avif"></p>
-<blockquote>
-<p>出版物展區還擺放了被翻譯成不同文字的著作, Eric主播翻譯的簡體中文版赫然在列</p>
-</blockquote>
-<p>隨著小林章先生到場, 觀客數量也逐漸增加, 和昨天一樣也有不少日本字型製作公司人士前來參觀. 小林章先生是真的很喜歡酸酸糖, 在聊天或被提問的間隙空閒時遍會自己抓一顆酸酸糖吃, 讓我倍感親近. 不過已經觀賞完了所有展品, 提問也獲得了解答, 我也沒打算聽太久業界交流, 便找機會讓小林章先生替我簽了個名, 然後離開了Book&amp;Design展覽廳. </p>
-<hr>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/AsakusaSkytree.avif"></p>
-<p>因為Book&amp;Design最近的車站是淺草站, 而走到路邊發現全是遊客的我不想走進人潮, 於是便向著人潮的反向散步, 沿著墨田河順流而下. 沒走多遠發現河對岸有<a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%9B%E3%83%BC%E3%83%AB">一棟頂著造型非常喜感雕像的建築</a>, 好奇心驅使下我便過橋去一探究竟, 才發現原來這就是朝日啤酒大樓群. 仔細一看導覽牌上寫著朝日啤酒總部大樓頂樓有一個展望酒廊, 這下不得不造訪一趟了. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Skytree_Pano.avif"></p>
-<p>展望酒廊名喚Sky Room, 空間也並不大, 提供各類啤酒以及下酒小食. 酒廊裡的客人似乎都只是把這裡當做拍照打卡點, 像我一樣點了一堆小食打算當晚餐熬到落日的人算是個異類吧. 我雖然並不是啤酒愛好者, 但朝日超爽啤酒 (<a href="https://www.youtube.com/watch?v=iizLYJInM0I">｢銀色的傢伙｣</a>) 鼎鼎大名還是有所耳聞的, 這次喝到倒也確實不負期待, 口感清爽, 但略嫌清淡, 沒那麼對我的胃口. 倒是生啤和黑生啤因為有更多苦味和麥芽香氣更對我胃口. 然而不知不覺我就在日落之前喝進1.5L的啤酒, 恐怖⋯⋯ </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Sunset.avif"></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart3/Afterglow.avif"></p>
-<blockquote>
-<p>一邊喝酒一邊看晚霞果然還是太中年男性了⋯⋯</p>
-</blockquote>
-<hr>
-<p>東京遊記2025六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
@@ -1310,6 +1252,64 @@
 </blockquote>
 <hr>
 <p>東京遊記2025六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart3/">Part Ⅲ</a> </p>
+]]></content>
+      <tags>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>東京遊記2025 (六月篇) Part Ⅲ</title>
+    <url>/2025-06/TripToTokyo2025JunPart3/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/2025-06/TripToTokyo2025JunPart3/magnify.avif"></p>
+<h3 id="Day-3-六月八日-星期日-涉谷-墨田"><a href="#Day-3-六月八日-星期日-涉谷-墨田" class="headerlink" title="Day 3, 六月八日, 星期日, 涉谷 - 墨田"></a>Day 3, 六月八日, 星期日, 涉谷 - 墨田</h3><p>終於到了本次日本之旅的最核心, Yoishigure Fanbox Live vol.1. 按照計劃我與Oscar先來到涉谷Parco會面, 順便逛逛那裡的任天堂總店. 然而我們還是小看了週日任天堂店的人流, 店內完全是水洩不通, 我們連穿過店內都感到有些吃力, 更別說駐足觀看各個商品和展示品, 只能草草瞥了一圈離開. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Godzilla.avif"></p>
+<blockquote>
+<p>任天堂店旁邊的哥吉拉</p>
+</blockquote>
+<p>從Parco出來我們就去附近的<a href="https://oreryushio.co.jp/?page_id=797">拉麵店</a>填肚子, 心想離會場這麼近時間肯定是充裕的. 沒想到在涉谷附近居然無處尋覓一家合適的花店, 要麼是只賣居家擺放用的花要麼就是週日關店歇業, 我們只好放棄了送花的選項 ⸺ 後來進入會場後也發現今回似乎沒人送花了, 看來大家的想法都差不多⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Gee-ge.avif"></p>
+<p>登上 <a href="http://gee-ge.net/">Gee-ge</a> 所在的四層, 發現入口是一個極其狹窄的樓梯間, livehouse的門也非常不起眼, 寬度基本上不能容納二人同時進入. 稍待片刻便到了入場時間, 我和Oscar因為排隊的位置靠前所以最先進入livehouse. Livehouse內的空間也確實不大, 比上回的保谷小音樂廳更袖珍, 官網上說能容納60人看起來應該是個很接近的數字. 話說回來在2025年參加這樣的活動居然只能用現金支付, 還好參與人數不多否則Gee-ge要堵車到樓下吧. 我在交門票錢的時候覺得來幫忙分送特典, 戴著口罩的工作人員眉宇間氣質和香音老師很像, 還以為是香音老師居然在演出前來幫忙, 對她鞠了一躬, 沒想到在演出結束後的回顧直播上香音老師透露那是她妹妹⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/poster.avif"></p>
+<p>在交完門票錢領完特典和飲料後, Oscar發現座位似乎並沒有編號, 於是拉著我徑直奔向第一排 ⸺ 在這裡我離鋼琴的距離不過三米出頭, 這輩子都沒有離演出者這麼近過, 可算徹底彌補了上次Classical Live vol.2沒能近距離觀賞香音老師彈琴的遺憾. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Piano.avif"></p>
+<p>就坐後屏息等待不久, 香音老師便施然入場. 本次她穿著的藍灰連身長裙與我讓amayouri老師繪製的插繪中禮服風格異曲同工, 都是在腰部鏤空的設計, 不知道是香音老師刻意選擇還是巧合. </p>
+<p>沒有開場白, 燈光師調暗了觀眾席照明後香音老師便開始了演奏. 雖然之前已經分別見識過了香音老師彈琴與歌唱, 但彈唱確實是第一次觀賞. 在我的座位無法看到香音老師手指的動作, 非常可惜, 但人也不能太貪心⋯⋯ 除了最開始的一曲大概因為凝重的氣氛讓香音老師比較明顯地彈錯一個音外, 整場演出基本沒有明顯的失誤. 香音老師的表情平靜而自信, 僅在彈錯音符時略微蹙眉, 而她的歌聲依舊澄澈, 雖然不像演唱歌劇時那樣穿透力強勁, 但更加平靜和緩的歌聲倒是比較符合本次live的 ｢居家氛圍｣. </p>
+<p>一曲結束, 香音老師直接在琴凳上側身, 面對觀眾開始MC. MC氛圍輕鬆, 感覺和直播沒什麼區別, 也說了希望大家不用拘謹, 該喝水喝水, 想創造類似爵士酒吧氛圍. 這麼一想, 這次演出說不定是十月的預演⋯⋯ 本次演出的曲目裡, 除了香音老師已經決定必然會唱的之外, 還有四首由fanbox成員們票選的曲目. 可惜我投的曲目只有夜明けを乞う。入選了 ⸺ 不如說要從各15曲中選出兩首實在過於困難了! 即便如此我還是很高興能看到Daily Note被放在候選名單裡, 縱使心知選它的人大概不會很多. </p>
+<p>幾首沒能位列前茅的曲子也進入了歌單中倒算是預料之外情理之中, 而其中最為驚喜則是瑠華姐姐演唱的返し唄 ⸺ 沒錯, 酔シグレ活動全勤獎的瑠華姐姐本次也沒有缺席, 登台獻唱了二首半 (二首獨唱, 一首合唱). 瑠華姐姐在舞台上的站位距離我的座位大概只有不到二米, 字面意思的觸手可及. 瑠華姐姐和香音老師一樣穿著素色的洗練長裙, 但和香音老師搭配了典雅的高跟鞋不同, 瑠華姐姐搭配的是略有些朋克風格的黑色長靴, 這個組合顯得非常帥氣. 至於為什麼突然改口稱瑠華姐姐, 那是因為近距離觀賞瑠華小姐演出後被她散發的姐姐氣場所折服, 不由自主⋯⋯</p>
+<p>香音老師的獨唱曲以藍悼花作為結束. 香音老師是真的很喜歡藍悼花, 之前聯動咖啡廳的解密也是以藍悼花作為謎底⋯⋯ 而藍悼花結束後, 瑠華姐姐重新登台, 與香音老師再次合唱了あまりある残像, 二人的配合依舊天衣無縫, 為本次演出畫上了完美的句號. </p>
+<p>但本次演唱會和上次不同, 我們被允許向香音老師面呈禮物, 而香音老師也會親手為我們分送fanbox成員特殊紀念品, 所以演出結束後香音老師和瑠華姐姐並沒有離場, 而是直接穿過觀眾席來到了位於livehouse入口附近的物販區. 我和Oscar互相給對方鼓勁一邊慢騰騰地排隊購買物販, 心中七上八下忐忑不安⋯⋯ 排隊時我就觀察著香音老師, 發現她能記得參會者們的很多情報, 比如某位聽眾同時還是Eye&#x2F;Lucia&#x2F;つぐ的粉絲, 並作出相應的評論. 而且每個人與香音老師對話的時間似乎也沒什麼限制. </p>
+<p>我非常軟弱地讓Oscar排在前面, 希望擠出哪怕多一點的時間做心理準備; 這當然是毫無意義的, 畢竟在香音老師對我開口說話的瞬間這些準備就全都化為虛無, 只剩下喜悅與激動. 我與Oscar一道語無倫次地對香音老師表示感謝與喜愛, 一邊將禮物交給香音老師 ⸺  Oscar贈送的是外觀復古而華麗的懷錶, 我贈送的則是玻璃工藝的蘸水筆, 這些都是香音老師曾經說過喜愛的物品, 也是我們討論過後得出的結果. 香音老師非常熱情地當場開啟包裝盒檢視, 並向我們表示感謝, 隨後也親手將fanbox成員的特典交給我們. 我在香音老師面前張口結舌, 除了鞠躬如搗蒜之外什麼話也說不出來, 只有在最後離開前祝願香音老師之後在歌劇那邊的演出也一帆風順. </p>
+<p>我和Oscar幾近逃也一般離開了Gee-ge, 一邊後悔著沒有抓住機會同香音老師多聊一些, 一面又為得到香音老師的感謝與鼓勵沾沾自喜, 兩人不約而同地發出了怪笑&#x2F;怪聲. </p>
+<hr>
+<p>一面在腦中回味著fanbox live的餘韻, 我一邊登上電車前往Book&amp;Design參加<a href="https://book-design.jp/events/699/">『欧文書体　基礎知識と使い方』刊行記念「小林章と欧文書体展」</a>. 與本づくりハウス相比, Book&amp;Design的展示廳就顯得寬敞明亮, 空間充裕, 令人心曠神怡了 ⸺ 當然不是說本づくりハウス讓人心情低落, 但的確是顯得過於擁擠 (這又何嘗不是一種foreshadowing…). 展廳兩側的牆上掛滿了小林章先生過去字型作品樣張的大幅印刷, 中間的島台上則放置了他的著作, 手稿以及使用了他設計的字型進行排印的出版物､ 商品, 而這些著作旁還放了一次性手套與消毒液供感興趣的觀客翻閱. 我到場時場內觀客數量寥寥無幾, 大家都專心致志地觀賞著牆上和桌上的展品. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/ITCLuna.avif" alt="ITC Luna"></p>
+<blockquote>
+<p>專門被拉出來展示的ITC Luna月圖形</p>
+</blockquote>
+<p>當我看完第一面牆上的字型見本時, 小林章先生來到了會場. 他先向在場所有人簡單問候, 接著便開門見山地表示如果有問題歡迎直接向本人提出, 如果提出了好問題的話還會得到他親自頒發的 ｢好問題獎｣. 於是大家便蜂擁到小林章先生身邊提出各式問題. 因為字型樣張掛在牆上, 所以很多提問都直接與字型的細節設計相關, 小林章先生連連表示好問題, 作為好問題獎的禮物很快便見底. 我也抓住機會詢問了與Zapf先生手稿相關的問題, 拿到最後一支好問題獎. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/ZapfAmpersand.avif" alt="Zapf先生的手稿"></p>
+<p>在第一波問題問完之後, 小林章先生向現場工作人員要了個一次性碗, 然後踱步到島台擺放使用了他設計的字型做包裝的商品展示區, 隨手拿起了一包糖果便拆開倒入碗中, 和大家說: ｢這是我在德國時的客戶開發的糖果, 是德國人喜歡的酸味糖, 特色當然就是特別的酸, 但我非常中意, 你們也不用客氣來嚐嚐看呀~｣ 我正為居然可以現場吃展品而震驚, 其他觀客們早已各自拿了一顆糖果吃了起來, 其中不少人果然面露難色並感嘆真的好酸, 小林章先生笑逐顏開並自己也抓了一顆放進嘴裡樂在其中. 我也拿了一顆品嚐, 確實是符合我對德國酸味糖的印象 ⸺ 畢竟我在澳大利亞和英國留學時已經吃過不少不同品牌但都來自德國的酸味糖了, 對嗜酸的我來說這點程度倒不算什麼, 但在展會上能夠吃展品果然是全新的體驗. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/SourCandy.avif"></p>
+<blockquote>
+<p>一臉壞笑 (?) 開啟酸味糖的小林章先生, 有興趣的讀者也可以自己去網拍上買一包來嚐嚐. 順帶一提我在澳大利亞和英國時吃得最多的是Trolli和Haribo, hitschies反而很少見</p>
+</blockquote>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Publishing.avif"></p>
+<blockquote>
+<p>出版物展區還擺放了被翻譯成不同文字的著作, Eric主播翻譯的簡體中文版赫然在列</p>
+</blockquote>
+<p>隨著小林章先生到場, 觀客數量也逐漸增加, 和昨天一樣也有不少日本字型製作公司人士前來參觀. 小林章先生是真的很喜歡酸酸糖, 在聊天或被提問的間隙空閒時遍會自己抓一顆酸酸糖吃, 讓我倍感親近. 不過已經觀賞完了所有展品, 提問也獲得了解答, 我也沒打算聽太久業界交流, 便找機會讓小林章先生替我簽了個名, 然後離開了Book&amp;Design展覽廳. </p>
+<hr>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/AsakusaSkytree.avif"></p>
+<p>因為Book&amp;Design最近的車站是淺草站, 而走到路邊發現全是遊客的我不想走進人潮, 於是便向著人潮的反向散步, 沿著墨田河順流而下. 沒走多遠發現河對岸有<a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%89%E3%83%A9%E3%82%A4%E3%83%9B%E3%83%BC%E3%83%AB">一棟頂著造型非常喜感雕像的建築</a>, 好奇心驅使下我便過橋去一探究竟, 才發現原來這就是朝日啤酒大樓群. 仔細一看導覽牌上寫著朝日啤酒總部大樓頂樓有一個展望酒廊, 這下不得不造訪一趟了. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Skytree_Pano.avif"></p>
+<p>展望酒廊名喚Sky Room, 空間也並不大, 提供各類啤酒以及下酒小食. 酒廊裡的客人似乎都只是把這裡當做拍照打卡點, 像我一樣點了一堆小食打算當晚餐熬到落日的人算是個異類吧. 我雖然並不是啤酒愛好者, 但朝日超爽啤酒 (<a href="https://www.youtube.com/watch?v=iizLYJInM0I">｢銀色的傢伙｣</a>) 鼎鼎大名還是有所耳聞的, 這次喝到倒也確實不負期待, 口感清爽, 但略嫌清淡, 沒那麼對我的胃口. 倒是生啤和黑生啤因為有更多苦味和麥芽香氣更對我胃口. 然而不知不覺我就在日落之前喝進1.5L的啤酒, 恐怖⋯⋯ </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Sunset.avif"></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart3/Afterglow.avif"></p>
+<blockquote>
+<p>一邊喝酒一邊看晚霞果然還是太中年男性了⋯⋯</p>
+</blockquote>
+<hr>
+<p>東京遊記2025六月篇系列: <a href="/2025-06/TripToTokyo2025JunPart1/">Part Ⅰ</a>, <a href="/2025-06/TripToTokyo2025JunPart2/">Part Ⅱ</a>, <a href="/2025-06/TripToTokyo2025JunPart4/">Part Ⅳ</a></p>
 ]]></content>
       <tags>
         <tag>Travel</tag>
@@ -1428,6 +1428,44 @@
       </tags>
   </entry>
   <entry>
+    <title>東京遊記PART Anima Ⅲ</title>
+    <url>/2024-10/TripToTokyoAnima/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>雖然<a href="/2024-10/TripToTokyo1">上篇</a>結尾我自覺任何文字記錄對於這場演出而言都是多餘的, 但這兩個月我的Anima Ⅲ 戒斷反應日趨嚴重, 還是忍不住想寫些廢話記錄這次演出.</p>
+<h3 id="樂隊"><a href="#樂隊" class="headerlink" title="樂隊"></a>樂隊</h3><p><img src="/2024-10/TripToTokyoAnima/Anima3band.avif"></p>
+<blockquote>
+<p>功勞榜</p>
+</blockquote>
+<p>本場演出樂隊的核心成員 (鍵盤吉他貝斯鼓大提琴) 都是觀測者們耳熟能詳的老朋友了, 其中大提琴<a href="https://x.com/GOSHU27">伊藤修平</a>先生更是從初代Anima一路走來的核心成員 (band master), 屬於看到他們登臺就可以安心的存在.</p>
+<p>樂隊裡最亮眼的角色大概非鍵盤<a href="https://www.wataru-saito.com/">斎藤渉</a>先生莫屬了. 因為一頭標誌性的長髮與彈奏時專注入迷的神態而被觀測者們熟知, 在很多曲目的過渡橋段裡都有齋藤先生的華彩, 我作為鋼琴愛好者是聽得相當過癮恨不得當場鼓掌叫好.</p>
+<p>絃樂組自從在不可解参 (想) 裡進行了一次擴編後就保持了兩把小提琴, 一把中提琴和一把大提琴的規模. 情緒的很多老歌與絃樂組的相性都極好, 普通的伴奏裡增加配樂厚度, 對一些樂曲高潮部分表現力強化還有一些過渡橋段的加花效果都是有目共睹的.</p>
+<p>本次的樂隊改編也仍然是由修平先生完成, 因為加入了小號和薩克斯所以管樂器改編由更加專業的小號手<a href="https://6335ab21df400.site123.me/">山田丈造</a>進行. 大體來說我是非常喜歡修平先生的改編風格, 因應Live氛圍在很多曲子前加入了巧思密集的前奏應該是一大特色, 讓我們在初次聆聽時無法瞬間辨認出開演的曲目, 增加了驚喜的感覺. 而且樂隊改編時還極大改善了某些曲子原本的弱點 (比如說⋯⋯ 香椎老師的鼓點), 真是錦上添花的妙筆. 但也依舊存在每首曲子結束時都加入了冗長的收尾, 顯得拖泥帶水的問題. 雖然我覺得在現場配合觀眾的歡呼氣氛確實很好, 但個人並不喜歡.</p>
+<h3 id="舞臺"><a href="#舞臺" class="headerlink" title="舞臺"></a>舞臺</h3><p>橫濱國際平和會議場的<a href="https://www.pacifico.co.jp/guide/convention">國家禮堂</a>觀眾席分為三層, 總共可容納5,000名觀眾, 我的座位位於二層靠右, 總體而言視野還算良好, 音響效果也算不錯, 要和之前參加的livehouse演出相比那就好不知道多少倍了.</p>
+<p>演出的舞臺被分為上下兩層, 樂隊都集中在下層, 中間是作為主要演出區域的雙層熒幕. 我坐在右側所以左側的樂隊成員略有些難以看清, 不過好在舞臺上方還有副熒幕, 有時會播放樂隊成員的特寫.</p>
+<p>實話說我很不喜歡神椿的現場演出, 這兩個熒幕給神椿的場景設計加上了巨大的枷鎖. 全虛擬的演出雖然犧牲了觀眾的臨場體驗, 但在舞臺設計上能夠天馬行空, 做出現實裡無論如何都無法看到的場景 ⸺ 不可解弍Q2､ 花譜畢業live和不可解参 (想) 都是我心目中無法磨滅的至高體驗. 和前面提到的幾場演出裡從精緻美觀到豪華壯麗的場景相比, Anima Ⅲ 的舞臺設計就只能用樸素來形容了, 雖然能體驗到不少巧思, 但終歸是被兩個熒幕的表現效果所限制.</p>
+<h3 id="單曲感想-部分"><a href="#單曲感想-部分" class="headerlink" title="單曲感想 (部分)"></a>單曲感想 (部分)</h3><p><strong>描き続けた君へ</strong>: 開場便是堪稱情緒代名曲的致不懈繪畫的你, 而正如前文所述, 修平先生給本曲增加了將近一分半的額外導入段落, 把現場的氣氛烘托致極. 聽到情緒聲音的瞬間相信很多觀眾都與我一樣渾身戰慄, 比起初次聽到本曲時已經接近終場的感動, 那想必是期待已久的願望終於實現, 而且是超水平實現時激動的雀躍外顯.</p>
+<p><strong>ディメンション</strong>: 開場部分觀眾們整齊劃一的呼喊完全體現出了現地表演的魅力. 過渡橋段的華彩是齋藤先生大放異彩的舞臺.</p>
+<p><strong>システムズコア</strong>: 如果因為某種不可告人的原因在會場裡居然有人昏昏欲睡, 那麼在聽到這首歌之後他必然會精神百倍. 咖啡因含量100%, 短小精悍的wake up call.</p>
+<p><strong>ラピスのお人形</strong>: 開頭引入採用了一段非常爵士的鍵盤, 無縫接入舞曲風的青金石, 讓人不得不讚歎修平先生和春捲飯的天才.</p>
+<p><strong>グレイスケイル</strong>: 《色彩》中我最喜歡的一曲, 如今samayuzame的曲子在這張專輯裡有些鶴立雞群, 但在這場演出就裡顯得無比融洽. 現場改編版把橋接部分做了大幅調整, 效果器拉滿的吉他與耳語搬的吟唱結合, 雖然情緒平靜但依然讓人覺得皮膚過電. 和下一首敘述者的華爾茲一道為維護 ｢虛擬黑暗歌手｣ 做了最後一點努力 (笑).</p>
+<p><strong>此処に棘と死を</strong>: 本曲無論是放在《色彩》中還是本場演出中都是最為異質的存在, 但由於嶄新的演出形式 ⸺ stand mic performance ⸺ 以及管樂器的加入使得原有些格格不入的本曲得到了完美展現. 不得不說情緒的學習和表演能力真的好強, 世上彷彿沒有她無法駕馭的風格.</p>
+<p><strong>いろはに咲きて</strong>: 原本在吹奏薩克斯風的<a href="https://www.julius-keilwerth.com/artist/kosei-nagata/">永田昴生</a>先生此時換上了長笛, 為本曲注入了強力的和風, 聽到此處我又差點忍不住拍手叫好了, 不知道這是修平先生還是山田先生的主意, 真的是天才.</p>
+<p><strong>シリウスの心臓</strong>: 我聽到前奏響起打擊樂器的聲音時心理就咯噔一聲, 暗叫不妙. 必須說實話 ⸺ 這次的天狼星心臟的改編是歷次live中我最不滿的. 究其原因還是打擊樂器､ 吉他與貝斯的加入一定程度上摧毀了本曲試圖營造的氛圍. 本曲原本的鋼琴獨奏配樂具有極強的敘事性, 前幾次改編中加入的絃樂做到了對敘事性的大幅強化. 我大概能理解修平先生想要讓這首情緒最廣為人知的曲目呈現出更加宏大的感覺, 但很可惜這個嘗試在我看來是失敗的, 打擊樂器與電吉他､ 貝斯的加入為配樂引入了電子元素和與鋼琴､ 絃樂完全不搭調的強節奏感, 擾亂了已經被構建的敘事風格, 產生了失衡. 另一大問題是在副歌二的部分樂隊 + 歌聲開始引發了一點注意力爭搶, 進一步破壞了一直以來的情感塑造, 這個問題顯然是去掉打擊樂､ 吉他與貝斯就可以直接解決的. 也許修平先生想要探索天狼星這個 ｢框架｣ 能夠承載的上限, 我也一直認為這首曲子是非常豐儉由人可塑性強大的, 但這次挑戰顯然觸及了這個框架的上限. (我認為我也不算天狼星保守派, 因為我是非常非常贊成往編曲中加入絃樂組的)</p>
+<p><strong>アンビバレント</strong>: 一直以來我都認為<a href="https://www.maosasagawa.jp/">笹川真生</a>是一位非常需要對電波的作曲家, 而很可惜他為理芽做的很多曲對我而言都對不上電波. 但Ambivalent裡他收斂了很多, 讓本曲變得容易接受得多, 而且配合<a href="https://www.youtube.com/watch?v=9lxqrgViCXk">有些魔性的MV</a>, 十分洗腦. Live版依然利用了樂隊編成豐富的優勢, 伴奏比單曲版要豐滿不少.</p>
+<p><strong>ANGELIC</strong>: 片尾曲仙人香椎老師在Anima Ⅱ 的力作, 過去一年來我重複聆聽次數最多的曲子, 本次以更高規格的樂隊呈現. 對於打擊樂器的加入我略有一點不滿, 但沒有天狼星那麼不滿, 蓋因原本香椎老師是讓鋼琴承擔了部分打擊樂器的職責, 今次打擊樂器加入反倒有些眾神歸位的感覺, 並不會覺得怪異. 演出專用新衣裝Edelweiss優雅華貴, 與本曲氣質相得益彰.</p>
+<p><strong>ARCADIA</strong>: 片尾曲仙人香椎老師在Anima I的力作. 令人驚喜的是樂隊介紹前奏的迴歸 (Anima Ⅱ 裡樂隊介紹前奏消失了, 那段時間神椿其他live裡也基本都不見樂隊介紹前奏), 讓人長吁一口氣. 我對隨著情緒的介紹一個個加入演奏, 最後匯聚成宏大樂章的樂隊介紹形態不能更喜愛了. 這首歌大概很難被ヰ組客觀評價, 因為腦子裡出現MV場景會瞬間化為感動的潮水衝破所有理智, 是目前三首片尾曲中分量最沉重的. 不知道會場裡有多少人和我一樣隨著旋律進入高潮而無法控制地流下眼淚.</p>
+<p><strong>かたちなきもの</strong>: 比起不懈繪畫, 我從內心深處更認同本曲才是 ｢ヰ世界情緒主題曲｣, 但本次演出裡混音出了一點小事故, 薩克斯風的音量在很長一段都嚴重蓋過了所有其他樂器與歌聲, 使得現場的體驗有些下降.</p>
+<p><strong>みらいのかたち</strong>: 結合著之前的MC, 非常有片尾曲感的曲子, 比起前面讓人激動､ 幸福地落淚而言本曲更傾向於平靜地落淚. 這首歌被排在無形之物後必然是深思熟慮的對仗, 從象徵過去的無形之寶物, 到尚未定型的未來之形狀, 本次live以對美好未來的嚮往畫上句號, 可以說再完美不過了.</p>
+<p><strong>ETERNAL</strong>: 很大程度上在結尾曲播出時我的眼淚已經流乾了, 聽著身邊的觀測者們隨著鋼琴伴奏鼓掌, 在關鍵演職人員出現在staff roll的時候爆發出熱烈的掌聲和歡呼時我卻深陷於這片尾曲中不能自拔. 私心認為後半段純音樂版因為去掉了鼓點而獲得了更高的一致性, 可惜線上錄影的版本裡有觀眾們激動地鼓掌歡呼的聲音沒法用來合成, 不然多少要試試看.</p>
+<p><img src="/2024-10/TripToTokyoAnima/%7FLastFMSep2024.avif"></p>
+<hr>
+<p>東京遊記系列: <a href="/2024-10/TripToTokyo1/">Part Ⅰ</a>,  <a href="/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>Music</tag>
+        <tag>Travel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>東京遊記PART Ⅲ</title>
     <url>/2024-10/TripToTokyo3/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052612018/in/album-72177720321005949" title="DSC_2006-40 mm"><img src="https://live.staticflickr.com/65535/54052612018_8b96386d0d_b.jpg"  alt="DSC_2006-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -1486,44 +1524,6 @@
       </tags>
   </entry>
   <entry>
-    <title>東京遊記PART Anima Ⅲ</title>
-    <url>/2024-10/TripToTokyoAnima/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>雖然<a href="/2024-10/TripToTokyo1">上篇</a>結尾我自覺任何文字記錄對於這場演出而言都是多餘的, 但這兩個月我的Anima Ⅲ 戒斷反應日趨嚴重, 還是忍不住想寫些廢話記錄這次演出.</p>
-<h3 id="樂隊"><a href="#樂隊" class="headerlink" title="樂隊"></a>樂隊</h3><p><img src="/2024-10/TripToTokyoAnima/Anima3band.avif"></p>
-<blockquote>
-<p>功勞榜</p>
-</blockquote>
-<p>本場演出樂隊的核心成員 (鍵盤吉他貝斯鼓大提琴) 都是觀測者們耳熟能詳的老朋友了, 其中大提琴<a href="https://x.com/GOSHU27">伊藤修平</a>先生更是從初代Anima一路走來的核心成員 (band master), 屬於看到他們登臺就可以安心的存在.</p>
-<p>樂隊裡最亮眼的角色大概非鍵盤<a href="https://www.wataru-saito.com/">斎藤渉</a>先生莫屬了. 因為一頭標誌性的長髮與彈奏時專注入迷的神態而被觀測者們熟知, 在很多曲目的過渡橋段裡都有齋藤先生的華彩, 我作為鋼琴愛好者是聽得相當過癮恨不得當場鼓掌叫好.</p>
-<p>絃樂組自從在不可解参 (想) 裡進行了一次擴編後就保持了兩把小提琴, 一把中提琴和一把大提琴的規模. 情緒的很多老歌與絃樂組的相性都極好, 普通的伴奏裡增加配樂厚度, 對一些樂曲高潮部分表現力強化還有一些過渡橋段的加花效果都是有目共睹的.</p>
-<p>本次的樂隊改編也仍然是由修平先生完成, 因為加入了小號和薩克斯所以管樂器改編由更加專業的小號手<a href="https://6335ab21df400.site123.me/">山田丈造</a>進行. 大體來說我是非常喜歡修平先生的改編風格, 因應Live氛圍在很多曲子前加入了巧思密集的前奏應該是一大特色, 讓我們在初次聆聽時無法瞬間辨認出開演的曲目, 增加了驚喜的感覺. 而且樂隊改編時還極大改善了某些曲子原本的弱點 (比如說⋯⋯ 香椎老師的鼓點), 真是錦上添花的妙筆. 但也依舊存在每首曲子結束時都加入了冗長的收尾, 顯得拖泥帶水的問題. 雖然我覺得在現場配合觀眾的歡呼氣氛確實很好, 但個人並不喜歡.</p>
-<h3 id="舞臺"><a href="#舞臺" class="headerlink" title="舞臺"></a>舞臺</h3><p>橫濱國際平和會議場的<a href="https://www.pacifico.co.jp/guide/convention">國家禮堂</a>觀眾席分為三層, 總共可容納5,000名觀眾, 我的座位位於二層靠右, 總體而言視野還算良好, 音響效果也算不錯, 要和之前參加的livehouse演出相比那就好不知道多少倍了.</p>
-<p>演出的舞臺被分為上下兩層, 樂隊都集中在下層, 中間是作為主要演出區域的雙層熒幕. 我坐在右側所以左側的樂隊成員略有些難以看清, 不過好在舞臺上方還有副熒幕, 有時會播放樂隊成員的特寫.</p>
-<p>實話說我很不喜歡神椿的現場演出, 這兩個熒幕給神椿的場景設計加上了巨大的枷鎖. 全虛擬的演出雖然犧牲了觀眾的臨場體驗, 但在舞臺設計上能夠天馬行空, 做出現實裡無論如何都無法看到的場景 ⸺ 不可解弍Q2､ 花譜畢業live和不可解参 (想) 都是我心目中無法磨滅的至高體驗. 和前面提到的幾場演出裡從精緻美觀到豪華壯麗的場景相比, Anima Ⅲ 的舞臺設計就只能用樸素來形容了, 雖然能體驗到不少巧思, 但終歸是被兩個熒幕的表現效果所限制.</p>
-<h3 id="單曲感想-部分"><a href="#單曲感想-部分" class="headerlink" title="單曲感想 (部分)"></a>單曲感想 (部分)</h3><p><strong>描き続けた君へ</strong>: 開場便是堪稱情緒代名曲的致不懈繪畫的你, 而正如前文所述, 修平先生給本曲增加了將近一分半的額外導入段落, 把現場的氣氛烘托致極. 聽到情緒聲音的瞬間相信很多觀眾都與我一樣渾身戰慄, 比起初次聽到本曲時已經接近終場的感動, 那想必是期待已久的願望終於實現, 而且是超水平實現時激動的雀躍外顯.</p>
-<p><strong>ディメンション</strong>: 開場部分觀眾們整齊劃一的呼喊完全體現出了現地表演的魅力. 過渡橋段的華彩是齋藤先生大放異彩的舞臺.</p>
-<p><strong>システムズコア</strong>: 如果因為某種不可告人的原因在會場裡居然有人昏昏欲睡, 那麼在聽到這首歌之後他必然會精神百倍. 咖啡因含量100%, 短小精悍的wake up call.</p>
-<p><strong>ラピスのお人形</strong>: 開頭引入採用了一段非常爵士的鍵盤, 無縫接入舞曲風的青金石, 讓人不得不讚歎修平先生和春捲飯的天才.</p>
-<p><strong>グレイスケイル</strong>: 《色彩》中我最喜歡的一曲, 如今samayuzame的曲子在這張專輯裡有些鶴立雞群, 但在這場演出就裡顯得無比融洽. 現場改編版把橋接部分做了大幅調整, 效果器拉滿的吉他與耳語搬的吟唱結合, 雖然情緒平靜但依然讓人覺得皮膚過電. 和下一首敘述者的華爾茲一道為維護 ｢虛擬黑暗歌手｣ 做了最後一點努力 (笑).</p>
-<p><strong>此処に棘と死を</strong>: 本曲無論是放在《色彩》中還是本場演出中都是最為異質的存在, 但由於嶄新的演出形式 ⸺ stand mic performance ⸺ 以及管樂器的加入使得原有些格格不入的本曲得到了完美展現. 不得不說情緒的學習和表演能力真的好強, 世上彷彿沒有她無法駕馭的風格.</p>
-<p><strong>いろはに咲きて</strong>: 原本在吹奏薩克斯風的<a href="https://www.julius-keilwerth.com/artist/kosei-nagata/">永田昴生</a>先生此時換上了長笛, 為本曲注入了強力的和風, 聽到此處我又差點忍不住拍手叫好了, 不知道這是修平先生還是山田先生的主意, 真的是天才.</p>
-<p><strong>シリウスの心臓</strong>: 我聽到前奏響起打擊樂器的聲音時心理就咯噔一聲, 暗叫不妙. 必須說實話 ⸺ 這次的天狼星心臟的改編是歷次live中我最不滿的. 究其原因還是打擊樂器､ 吉他與貝斯的加入一定程度上摧毀了本曲試圖營造的氛圍. 本曲原本的鋼琴獨奏配樂具有極強的敘事性, 前幾次改編中加入的絃樂做到了對敘事性的大幅強化. 我大概能理解修平先生想要讓這首情緒最廣為人知的曲目呈現出更加宏大的感覺, 但很可惜這個嘗試在我看來是失敗的, 打擊樂器與電吉他､ 貝斯的加入為配樂引入了電子元素和與鋼琴､ 絃樂完全不搭調的強節奏感, 擾亂了已經被構建的敘事風格, 產生了失衡. 另一大問題是在副歌二的部分樂隊 + 歌聲開始引發了一點注意力爭搶, 進一步破壞了一直以來的情感塑造, 這個問題顯然是去掉打擊樂､ 吉他與貝斯就可以直接解決的. 也許修平先生想要探索天狼星這個 ｢框架｣ 能夠承載的上限, 我也一直認為這首曲子是非常豐儉由人可塑性強大的, 但這次挑戰顯然觸及了這個框架的上限. (我認為我也不算天狼星保守派, 因為我是非常非常贊成往編曲中加入絃樂組的)</p>
-<p><strong>アンビバレント</strong>: 一直以來我都認為<a href="https://www.maosasagawa.jp/">笹川真生</a>是一位非常需要對電波的作曲家, 而很可惜他為理芽做的很多曲對我而言都對不上電波. 但Ambivalent裡他收斂了很多, 讓本曲變得容易接受得多, 而且配合<a href="https://www.youtube.com/watch?v=9lxqrgViCXk">有些魔性的MV</a>, 十分洗腦. Live版依然利用了樂隊編成豐富的優勢, 伴奏比單曲版要豐滿不少.</p>
-<p><strong>ANGELIC</strong>: 片尾曲仙人香椎老師在Anima Ⅱ 的力作, 過去一年來我重複聆聽次數最多的曲子, 本次以更高規格的樂隊呈現. 對於打擊樂器的加入我略有一點不滿, 但沒有天狼星那麼不滿, 蓋因原本香椎老師是讓鋼琴承擔了部分打擊樂器的職責, 今次打擊樂器加入反倒有些眾神歸位的感覺, 並不會覺得怪異. 演出專用新衣裝Edelweiss優雅華貴, 與本曲氣質相得益彰.</p>
-<p><strong>ARCADIA</strong>: 片尾曲仙人香椎老師在Anima I的力作. 令人驚喜的是樂隊介紹前奏的迴歸 (Anima Ⅱ 裡樂隊介紹前奏消失了, 那段時間神椿其他live裡也基本都不見樂隊介紹前奏), 讓人長吁一口氣. 我對隨著情緒的介紹一個個加入演奏, 最後匯聚成宏大樂章的樂隊介紹形態不能更喜愛了. 這首歌大概很難被ヰ組客觀評價, 因為腦子裡出現MV場景會瞬間化為感動的潮水衝破所有理智, 是目前三首片尾曲中分量最沉重的. 不知道會場裡有多少人和我一樣隨著旋律進入高潮而無法控制地流下眼淚.</p>
-<p><strong>かたちなきもの</strong>: 比起不懈繪畫, 我從內心深處更認同本曲才是 ｢ヰ世界情緒主題曲｣, 但本次演出裡混音出了一點小事故, 薩克斯風的音量在很長一段都嚴重蓋過了所有其他樂器與歌聲, 使得現場的體驗有些下降.</p>
-<p><strong>みらいのかたち</strong>: 結合著之前的MC, 非常有片尾曲感的曲子, 比起前面讓人激動､ 幸福地落淚而言本曲更傾向於平靜地落淚. 這首歌被排在無形之物後必然是深思熟慮的對仗, 從象徵過去的無形之寶物, 到尚未定型的未來之形狀, 本次live以對美好未來的嚮往畫上句號, 可以說再完美不過了.</p>
-<p><strong>ETERNAL</strong>: 很大程度上在結尾曲播出時我的眼淚已經流乾了, 聽著身邊的觀測者們隨著鋼琴伴奏鼓掌, 在關鍵演職人員出現在staff roll的時候爆發出熱烈的掌聲和歡呼時我卻深陷於這片尾曲中不能自拔. 私心認為後半段純音樂版因為去掉了鼓點而獲得了更高的一致性, 可惜線上錄影的版本裡有觀眾們激動地鼓掌歡呼的聲音沒法用來合成, 不然多少要試試看.</p>
-<p><img src="/2024-10/TripToTokyoAnima/%7FLastFMSep2024.avif"></p>
-<hr>
-<p>東京遊記系列: <a href="/2024-10/TripToTokyo1/">Part Ⅰ</a>,  <a href="/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="/2024-10/TripToTokyo3">Part Ⅲ</a></p>
-]]></content>
-      <tags>
-        <tag>Music</tag>
-        <tag>Travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photography is FUN ⸺ ℤƒ碎碎念</title>
     <url>/2024-09/ZfAndMoreLens/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
@@ -1576,70 +1576,6 @@
       <tags>
         <tag>Gadget</tag>
         <tag>Photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>reMarkable 2 ⸺ 糟糕的阅读器, 完美的速写本</title>
-    <url>/2021-03/reMarkable-2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="我的e-ink设备使用历程"><a href="#我的e-ink设备使用历程" class="headerlink" title="我的e-ink设备使用历程"></a>我的e-ink设备使用历程</h3><p><img src="/2021-03/reMarkable-2/iriver-story_51061528238_o.avif"></p>
-<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的QWERTY键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过e-ink设备了. </p>
-<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在2017年中旬, 我就从朋友的口中了解到reMarkable这个产品的存在 ⸺ 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对e-ink设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 ⸺ 曾经我对iPad Pro抱有这样的期待, 在iPad Pro终究还是太大且沉, Apple Pencil的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
-<p><img src="/2021-03/reMarkable-2/44923.avif" alt="equil smartpen"></p>
-<p>虽然equil的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
-<p>而e-ink笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购入reMarkable 1代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
-<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到2020年, reMarkable在三月时宣布了reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到Batch 8, 等到差不多12月初才收到. </p>
-<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 ⸺ 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比11比iPad Pro还略大一点的机身, 重量却感觉似乎不比iPad的一半 (夸张了, 471g vs 403g). reMarkable的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代Apple pencil好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的4,096级压感和倾斜感应, 用起来非常得心应手. </p>
-<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
-<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
-<p><img src="/2021-03/reMarkable-2/51061764988_fdea9a24be_o.avif"></p>
-<blockquote>
-<p>部分网格预览</p>
-</blockquote>
-<p><img src="/2021-03/reMarkable-2/51061666508_a03e60169d_o.avif"></p>
-<blockquote>
-<p>上课做笔记用的大号网格</p>
-</blockquote>
-<p>reMarkable内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
-<p>另外, reMarkable内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 ⸺ 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
-<p><img src="/2021-03/reMarkable-2/50999813030_69c14c3a28_o.avif" alt="书法练习"></p>
-<blockquote>
-<p>模拟平头笔的手感怪怪的</p>
-</blockquote>
-<p>说完了写就该说画了. reMarkable作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
-<p><img src="/2021-03/reMarkable-2/51062480106_b881a3fc4e_o.avif" alt="速写练习"></p>
-<blockquote>
-<p>感谢<a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">伊那老师</a> (</p>
-</blockquote>
-<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
-<p><img src="/2021-03/reMarkable-2/51062467122_5692e6f85c_o.avif"></p>
-<p>reMarkable的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
-<p>另外, 如果你在菜单里选择了LiveView (beta), 再在别的设备上启动reMarkable客户端, 就可以在电脑&#x2F;手机上实时预览reMarkable上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
-<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是reMarkable的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是reMarkable作为阅读器和它们完全没有一战之力 ⸺ 不是说用它阅读的体验不好, reMarkable的屏幕分辨率高达1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable必须使用专门的程序把pdf&#x2F;epub文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说将reMarkable甩下了几万里. 雪上加霜的是, 即使是阅读普通的pdf, reMarkable在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
-<p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
-<blockquote>
-<p>现在就加入 <a href="https://www.thetype.com/members/">The Type会员</a>吧!</p>
-</blockquote>
-<p>话虽如此, 我还是用它读了不少东西 ⸺ 毕竟e-ink屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome扩展, 可是我这里从来没有成功过⋯⋯ </p>
-<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类Linux系统, 所以用户可以比较容易地为它添加多语言支持 ⸺ 然而对于我这种几百年没开过ssh的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为reMarkable添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
-<p>首先你的电脑需要支持ssh. 另外还需要准备好想要支持的语言的字体. 准备好ssh和字体文件之后, 打开reMarkable的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面General information的底部就会写着本机的IP地址与SSH密码. 之后进入终端&#x2F;ssh客户端</p>
-<pre><code class="hljs plaintext">ssh root@&lt;你的.reMarkable.IP.地址&gt;</code></pre>
-
-<p>然后输入密码, 即可进入reMarkable的根目录. </p>
-<p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
-<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 ⸺ 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
-<p>新开一个终端窗口, 如果你准备的字体有提供truetpye格式文件 (ttf), 直接使用scp命令往remarkable原有的文件夹里传输准备好的字体: </p>
-<pre><code class="hljs plaintext">scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:/usr/share/fonts/ttf/</code></pre>
-
-<p>便可以了. 如果你的字体只有otf或ttc等等, 那么回到前一个终端窗口, </p>
-<pre><code class="hljs plaintext">cd /usr/share/fonts/</code></pre>
-
-<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的otf&#x2F;ttc根据你的字体格式来选择), 之后就按照前面传输ttf相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
-<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启reMarkable就可以获得对应的语言支持. 不过, reMarkable目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
-<p>如果你想研究更多如何在reMarkable上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux下的字体调校指南</a>. </p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从reMarkable 1推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的e-ink产品, 但是在我看来reMarkable 2依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
-]]></content>
-      <tags>
-        <tag>Gadget</tag>
       </tags>
   </entry>
   <entry>
@@ -1705,6 +1641,70 @@
       <tags>
         <tag>Gadget</tag>
         <tag>thoughts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>reMarkable 2 ⸺ 糟糕的阅读器, 完美的速写本</title>
+    <url>/2021-03/reMarkable-2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="我的e-ink设备使用历程"><a href="#我的e-ink设备使用历程" class="headerlink" title="我的e-ink设备使用历程"></a>我的e-ink设备使用历程</h3><p><img src="/2021-03/reMarkable-2/iriver-story_51061528238_o.avif"></p>
+<p>在高中的时候 (~2011), 父亲的一位朋友送给我了一台iriver Story. 它方正轻盈的设计令我爱不释手, 用它阅读了非常多论文和小说. 这台设备的主要功能是阅读, 但是它的QWERTY键盘也使得其能够被作为一个输入设备, 记点简单的笔记. 可惜好景不长, 在高三的某一天它的屏幕被某个同学的一记肘击打坏, 自那以后我就非常长时间没有再使用过e-ink设备了. </p>
+<h3 id="reMarkable-1"><a href="#reMarkable-1" class="headerlink" title="reMarkable 1"></a>reMarkable 1</h3><p>早在2017年中旬, 我就从朋友的口中了解到reMarkable这个产品的存在 ⸺ 当时引发讨论的是它几乎没有延迟的手写体验, 有些打破了我们对e-ink设备刷新缓慢反应迟钝的刻板印象. 我一直想要一个便携且数字化的素描本 ⸺ 曾经我对iPad Pro抱有这样的期待, 在iPad Pro终究还是太大且沉, Apple Pencil的握持手感与书写感受我也不能接受, 便一直没有买. 很久以前极客公园的产品观察家曾经有一个奖品是 <a href="https://www.myequil.com/smartpen2/">equil Smartpen</a>, 它通过特制的笔与接收器把使用者的笔迹电子化, 思路相当有趣. </p>
+<p><img src="/2021-03/reMarkable-2/44923.avif" alt="equil smartpen"></p>
+<p>虽然equil的思路很有趣, 但是这支笔和接收器需要装在一个专门的收纳盒中, 而这收纳盒又不能被放入大部分笔盒&#x2F;笔袋中, 每次开始记录时都需要先设置接收器, 总而言之使用体验挺不好的, 我在玩过一两次之后就将它束之高阁, 现在甚至都快忘记有过这么一个玩意儿存在了. </p>
+<p>而e-ink笔记本的话就不一样了, 它不需要额外的使用, 续航可以高达一个月, 拿出来就能用不需要额外的设置, 应该会是个更好的选择. 但最终我还是没有购入reMarkable 1代, 原因已经有点不记得了, 但是很大概率是因为它的笔尾端不是橡皮 (非常鸡毛蒜皮, 非常符合我的个性吧). </p>
+<h3 id="reMarkable-2"><a href="#reMarkable-2" class="headerlink" title="reMarkable 2"></a>reMarkable 2</h3><p>快进到2020年, reMarkable在三月时宣布了reMarkable 2. 这时我已经关注了这个团队, 第一时间得知了消息, 并发现它们采用了全新的, 更加硬朗的设计, 而且改善了巨量一代中的小问题, 完全命中我的好球区, 于是我便毫不犹豫地打算购买. reMarkable 2的产能因为瘟疫的缘故不是很高, 采用分批发送的方式发货, 我因为预定时手慢的缘故被排到Batch 8, 等到差不多12月初才收到. </p>
+<p>拆开盒子拿出机器之后, 我就被这机器精致的设计震惊了. ｢书脊｣ 位置的深灰色金属条触感冰凉而细腻, 握起来无比舒适 ⸺ 不过如果你是左撇子的话可能就会觉得有些遗憾了. 它正反面的磨砂塑料质感也感觉像是纸张一般, 更重要的是, 这比11比iPad Pro还略大一点的机身, 重量却感觉似乎不比iPad的一半 (夸张了, 471g vs 403g). reMarkable的笔虽然是塑料外壳, 但做了磨砂处理, 手感比一代Apple pencil好得多, 内部埋藏了磁铁可以吸附在平板的侧面, 也因此获得了不错的重量感. 而且这支笔不需要充电, 有着非常够用的4,096级压感和倾斜感应, 用起来非常得心应手. </p>
+<p>金属的电源按钮手感扎实, 开机之后显示了简短的欢迎界面后就进入了主屏幕. </p>
+<h3 id="写-画"><a href="#写-画" class="headerlink" title="写 &amp; 画"></a>写 &amp; 画</h3><p>先说写的部分. reMarkable内置了很多不同的网格模版, 这对于上课记笔记和练字之类的工作来说非常方便. </p>
+<p><img src="/2021-03/reMarkable-2/51061764988_fdea9a24be_o.avif"></p>
+<blockquote>
+<p>部分网格预览</p>
+</blockquote>
+<p><img src="/2021-03/reMarkable-2/51061666508_a03e60169d_o.avif"></p>
+<blockquote>
+<p>上课做笔记用的大号网格</p>
+</blockquote>
+<p>reMarkable内置了手写识别的功能, 不过只支持英文, 我目前没怎么用到过这个功能, 不过英文的识别率倒是蛮高的. </p>
+<p>另外, reMarkable内置的笔尖类型里除了常见的圆珠笔, 勾线笔, 马克笔, 铅笔, 笔刷和记号笔之外, 还支持平头笔 (设备里是叫书法笔Calligraphy pen), 这对于我这个字体学徒来说简直是大好消息 ⸺ 虽是这么说, 我到现在也还没能摸透平头笔书法, 所以写出来的东西还是非常糟糕⋯⋯ </p>
+<p><img src="/2021-03/reMarkable-2/50999813030_69c14c3a28_o.avif" alt="书法练习"></p>
+<blockquote>
+<p>模拟平头笔的手感怪怪的</p>
+</blockquote>
+<p>说完了写就该说画了. reMarkable作为素描本的体验非常之好, 可以说是令人爱不释手的程度. 拿到它不久之后, 我就试着用它来进行了<a href="https://www.youtube.com/watch?v=UbxbpkLIf4E">速写练习</a>: </p>
+<p><img src="/2021-03/reMarkable-2/51062480106_b881a3fc4e_o.avif" alt="速写练习"></p>
+<blockquote>
+<p>感谢<a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">伊那老师</a> (</p>
+</blockquote>
+<p>除了速写之外, 我也试着用它来进行偶尔的插画: </p>
+<p><img src="/2021-03/reMarkable-2/51062467122_5692e6f85c_o.avif"></p>
+<p>reMarkable的绘画支持纯黑和灰两级灰阶, 比起市面上一些支持六七级灰阶的产品略有些不足, 不过速写的时候绝大多数只会用到黑色, 用图层 + 灰色也可以实现上图这样简单的阴影效果, 我对此并没有什么不满. </p>
+<p>另外, 如果你在菜单里选择了LiveView (beta), 再在别的设备上启动reMarkable客户端, 就可以在电脑&#x2F;手机上实时预览reMarkable上的作画&#x2F;书写&#x2F;注记, 是个非常方便的小功能. </p>
+<h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是reMarkable的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是reMarkable作为阅读器和它们完全没有一战之力 ⸺ 不是说用它阅读的体验不好, reMarkable的屏幕分辨率高达1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable必须使用专门的程序把pdf&#x2F;epub文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说将reMarkable甩下了几万里. 雪上加霜的是, 即使是阅读普通的pdf, reMarkable在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
+<p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
+<blockquote>
+<p>现在就加入 <a href="https://www.thetype.com/members/">The Type会员</a>吧!</p>
+</blockquote>
+<p>话虽如此, 我还是用它读了不少东西 ⸺ 毕竟e-ink屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome扩展, 可是我这里从来没有成功过⋯⋯ </p>
+<h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类Linux系统, 所以用户可以比较容易地为它添加多语言支持 ⸺ 然而对于我这种几百年没开过ssh的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为reMarkable添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
+<p>首先你的电脑需要支持ssh. 另外还需要准备好想要支持的语言的字体. 准备好ssh和字体文件之后, 打开reMarkable的设置 &gt; Help &gt; Copyrights and licenses, 在默认页面General information的底部就会写着本机的IP地址与SSH密码. 之后进入终端&#x2F;ssh客户端</p>
+<pre><code class="hljs plaintext">ssh root@&lt;你的.reMarkable.IP.地址&gt;</code></pre>
+
+<p>然后输入密码, 即可进入reMarkable的根目录. </p>
+<p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
+<p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 ⸺ 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
+<p>新开一个终端窗口, 如果你准备的字体有提供truetpye格式文件 (ttf), 直接使用scp命令往remarkable原有的文件夹里传输准备好的字体: </p>
+<pre><code class="hljs plaintext">scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:/usr/share/fonts/ttf/</code></pre>
+
+<p>便可以了. 如果你的字体只有otf或ttc等等, 那么回到前一个终端窗口, </p>
+<pre><code class="hljs plaintext">cd /usr/share/fonts/</code></pre>
+
+<p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的otf&#x2F;ttc根据你的字体格式来选择), 之后就按照前面传输ttf相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
+<p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启reMarkable就可以获得对应的语言支持. 不过, reMarkable目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
+<p>如果你想研究更多如何在reMarkable上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux下的字体调校指南</a>. </p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从reMarkable 1推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的e-ink产品, 但是在我看来reMarkable 2依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
+]]></content>
+      <tags>
+        <tag>Gadget</tag>
       </tags>
   </entry>
 </search>
