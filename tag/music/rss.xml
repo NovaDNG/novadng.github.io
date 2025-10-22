@@ -7,8 +7,8 @@
         <language>en,zh-CN,zh-TW,default</language>
         <pubDate>Tue, 11 Mar 2025 08:19:05 +0800</pubDate>
         <lastBuildDate>Tue, 11 Mar 2025 08:19:05 +0800</lastBuildDate>
-        <category>Photography</category>
         <category>Gadget</category>
+        <category>Photography</category>
         <category>Music</category>
         <category>Travel</category>
         <category>thoughts</category>
@@ -122,7 +122,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;那麼在正式開始前, 你應該要對CeVIO AI有一些基本的瞭解. 夜輪老師有翻譯了&lt;a href=&#34;https://cevio-user-guide-unofficial.github.io/CeVIO-AI/&#34;&gt;官方使用者指南&lt;/a&gt;, 天雨大佬也寫了一系列&lt;a href=&#34;https://www.bilibili.com/read/readlist/rl508759&#34;&gt;基礎入門指南&lt;/a&gt;, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力.&lt;/p&gt;
 &lt;h3 id=&#34;1-CeVIO-AI之外&#34;&gt;1. CeVIO AI之外&lt;/h3&gt;
-&lt;p&gt;CeVIO AI本身畢竟不是一款正經的DAW, 你難免會需要藉助其的DAW以及各種輔助工具的幫助 ⸺ 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: &lt;a href=&#34;https://supermegaultragroovy.com/products/capo/&#34;&gt;capo&lt;/a&gt;. 很可惜的是, 這款應用目前只支的macOS的iOS. 或者你用來搭的CeVIO AI的正的DAW有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高.&lt;/p&gt;
+&lt;p&gt;CeVIO AI本身畢竟不是一款正經的DAW, 你難免會需要藉助其他DAW以及各種輔助工具的幫助 ⸺ 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: &lt;a href=&#34;https://supermegaultragroovy.com/products/capo/&#34;&gt;capo&lt;/a&gt;. 很可惜的是, 這款應用目前只支援macOS和iOS. 或者你用來搭配CeVIO AI的正經DAW有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;SCR-20221209-e4n.avif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;capo的介面&lt;/p&gt;
@@ -146,7 +146,7 @@
 &lt;p&gt;注意最開頭那個額外的 ｢は｣&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;4-填詞&#34;&gt;4. 填詞&lt;/h3&gt;
-&lt;p&gt;很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為reference. 如果你的DAW沒有這樣的功能, 那 &lt;a href=&#34;https://vocalremover.org&#34;&gt;vocalremover&lt;/a&gt; 能提供一個效果堪用的工具.&lt;/p&gt;
+&lt;p&gt;很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為reference. 如果你的DAW沒有這樣的功能, 那&lt;a href=&#34;https://vocalremover.org&#34;&gt;vocalremover&lt;/a&gt;能提供一個效果堪用的工具.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;SCR-20221209-fo9.avif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;｢たまま｣ 被我拆成了 ｢たあままあ｣&lt;/p&gt;
@@ -172,7 +172,7 @@
 &lt;h3 id=&#34;8-氣聲-Whisper-Voice&#34;&gt;8. 氣聲 (Whisper Voice)&lt;/h3&gt;
 &lt;p&gt;這個裏技是由&lt;a href=&#34;https://twitter.com/NayutalieN/status/1429683978064207875&#34;&gt;奶油糖星人&lt;/a&gt;最早發現的, 感謝他!&lt;/p&gt;
 &lt;p&gt;首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效.&lt;/p&gt;
-&lt;p&gt;確定適用範圍後, 你需要在強弱標尺 (DYNAMICS) 上在開始處雙擊, 將強弱記號改成pp成ppp, 然後在結束處恢復為正常 (預設為N). 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 (まとめ選択ツール / Collectively Selection Tool) 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 (往上移動一個八度). 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留.&lt;/p&gt;
+&lt;p&gt;確定適用範圍後, 你需要在強弱標尺 (DYNAMICS) 上在開始處雙擊, 將強弱記號改成pp或者ppp, 然後在結束處恢復為正常 (預設為N). 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 (まとめ選択ツール / Collectively Selection Tool) 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 (往上移動一個八度). 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;SCR-20221209-egj.avif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;SCR-20221209-epz.avif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
