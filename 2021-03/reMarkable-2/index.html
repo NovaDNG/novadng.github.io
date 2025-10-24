@@ -276,7 +276,7 @@
 <h3 id="读"><a href="#读" class="headerlink" title="读"></a>读</h3><p>虽说阅读器并不是reMarkable的强项, 但是既然它可以被用来阅读那肯定就会被用来作为阅读器和市面上其他大牌阅读器比较. 遗憾的是reMarkable作为阅读器和它们完全没有一战之力 ⸺ 不是说用它阅读的体验不好, reMarkable的屏幕分辨率高达1,872 × 1,404, 226dpi, 用来阅读时非常细腻悦目. 然而要怎么把你想读的东西弄到它上面才是问题所在: reMarkable必须使用专门的程序把pdf&#x2F;epub文件同步到它上面, 非常不方便 (这服务在大陆貌似还被墙了). 更别提现在很多阅读器还具备同步微信公众号等高端功能, 可以说将reMarkable甩下了几万里. 雪上加霜的是, 即使是阅读普通的pdf, reMarkable在连续翻页的时候也会略有卡顿, 感受十分糟糕. </p>
 <p><img src="/2021-03/reMarkable-2/type-is-beautiful-_51062563897_o.avif"></p>
 <blockquote>
-<p>现在就加入 <a href="https://www.thetype.com/members/">The Type会员</a>吧!</p>
+<p>现在就加入<a href="https://www.thetype.com/members/">The Type会员</a>吧!</p>
 </blockquote>
 <p>话虽如此, 我还是用它读了不少东西 ⸺ 毕竟e-ink屏幕的阅读体验是真的好, 如果你一次性把要读的东西全部都丢进去的话也可以很长时间不用再开那专门应用了. reMarkable还推出了一个 <a href="https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh">read on reMarkable</a> Chrome扩展, 可是我这里从来没有成功过⋯⋯ </p>
 <h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><p>reMarkable从一代开始就默认不支持中文 (或者说不支持英文之外的所有语言), 所幸它采用的是一个类Linux系统, 所以用户可以比较容易地为它添加多语言支持 ⸺ 然而对于我这种几百年没开过ssh的用户来说, 不能用图形界面轻松完成的任务就算是非常困难了. 估计有不少和我一样的对编程几乎没有了解的用户就被劝退在了这一步. 所以我简单介绍一下如何为reMarkable添加其他语言支持 (<a href="https://www.reddit.com/r/RemarkableTablet/comments/7rohka/installing_multilingual_fonts_success/">参考资料</a>). </p>
@@ -286,7 +286,7 @@
 <p>然后输入密码, 即可进入reMarkable的根目录. </p>
 <p><img src="/2021-03/reMarkable-2/50999647715_ca4c191574_o.avif"></p>
 <p>成功之后, 就可以通过终端命令来访问各种文件了. 我们需先看看这个版本的系统里字体文件被存放在哪个目录 (为防意外). 输入 <code>fc-list</code> 会得到一大排结果, 里面就会包含目前机器上字体文件的存放路径 ⸺ 在我这里是 <code>/usr/share/fonts/</code>. 了解这个信息后, 我们就可以往里面添加字体了. </p>
-<p>新开一个终端窗口, 如果你准备的字体有提供truetpye格式文件 (ttf), 直接使用scp命令往remarkable原有的文件夹里传输准备好的字体: </p>
+<p>新开一个终端窗口, 如果你准备的字体有提供truetpye格式文件 (ttf), 直接使用 <code>scp</code> 命令往remarkable原有的文件夹里传输准备好的字体: </p>
 <pre><code class="hljs plaintext">scp &lt;你的字体所在的完整路径&gt; root@&lt;你的.reMarkable.IP.地址&gt;:/usr/share/fonts/ttf/</code></pre>
 
 <p>便可以了. 如果你的字体只有otf或ttc等等, 那么回到前一个终端窗口, </p>
@@ -294,7 +294,7 @@
 
 <p>进入字体文件夹, <code>mkdir otf/ttc</code> (后面的otf&#x2F;ttc根据你的字体格式来选择), 之后就按照前面传输ttf相同的命令, 只不过最后的路径改成你新建的文件夹即可. </p>
 <p>传输完文件后, 再次输入 <code>fc-list</code> 便会发现刚刚上传的字体已经自动被系统识别并对应到相应的语言&#x2F;风格上了. 大功告成, 之后只需要重启reMarkable就可以获得对应的语言支持. 不过, reMarkable目前不支持切换字体, 所以每一个语言 + 样式只要上传一个字体即可, 传多了也只是占用空间而已. </p>
-<p>如果你想研究更多如何在reMarkable上倒腾字体, 那么推荐阅读这篇 <a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux下的字体调校指南</a>. </p>
+<p>如果你想研究更多如何在reMarkable上倒腾字体, 那么推荐阅读这篇<a href="https://szclsya.me/zh-cn/posts/fonts/linux-config-guide/">Linux下的字体调校指南</a>. </p>
 <h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>自从reMarkable 1推出后, 市面上如雨后春笋般涌现出了不少这类专注手写体验的e-ink产品, 但是在我看来reMarkable 2依然是它们中最好的一个. 它的书写和绘画体验都十分接近纸笔, 没有任何乱七八糟花里胡哨的功能, 在完成本职工作这一件事上可以说无懈可击. </p>
 
   <p><a class="classtest-link" href="/tags/Gadget/" rel="tag">Gadget</a> — Mar 22, 2021</p>
