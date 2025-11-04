@@ -196,7 +196,7 @@ html {
 }
 
 body {
-    font-size: 1.6em;
+    font-size: 1.67rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
@@ -258,7 +258,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.33rem;
     line-height: 1.3;
 }
 
