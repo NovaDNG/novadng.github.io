@@ -491,3 +491,19 @@ a[data-flickr-embed] > .flickr-embed-frame,
 
 /* a[data-flickr-embed] { overflow: visible; } */
 
+center {
+    font-family:
+        "EB Garamond",
+        "Redaction",
+        Charter,
+        "HYXuanSong",
+        "FZYouSongJ GBK",
+        "Ten Mincho",
+        "Ten Mincho Antique",
+        "Source Han Serif VF",
+        -apple-system,
+        BlinkMacSystemFont,
+        serif;
+    font-weight: 500;
+    font-size: 1.55rem;
+}
