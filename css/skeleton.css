@@ -503,12 +503,14 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-    list-style: circle outside;
+    list-style: "\2726\0020" outside;
     margin-left: 2rem;
 }
-
+li::marker {
+  color: #E2001A;
+}
 ol {
-    list-style: decimal outside;
+    list-style: upper-roman outside;
     margin-left: 2rem;
 }
 
