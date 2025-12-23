@@ -134,6 +134,8 @@ sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
+  font-family: Berkeley Mono, monospace;
+  font-weight: 600;
 }
 
 sub {
