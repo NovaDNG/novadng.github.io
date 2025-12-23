@@ -134,7 +134,7 @@ img {
 
 .lit {
     font-size: 85%;
-    font-family: "Berkeley Mono", monospace;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
     font-weight: 600;
     margin-bottom: -12px;
     margin-top: 8px;
@@ -148,7 +148,7 @@ img {
 }
 
 .post-meta {
-    font-family: "Berkeley Mono", monospace;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
     font-weight: 600;
 }
 

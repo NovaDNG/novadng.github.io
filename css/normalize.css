@@ -62,7 +62,7 @@ hr {
  */
 
 pre {
-  font-family: "IBM Plex Mono", monospace; /* 1 */
+  font-family: "Berkeley Mono", "IBM Plex Mono", -apple-system, BlinkMacSystemFont, san-serif; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -120,7 +120,7 @@ small {
   color: color-mix(in srgb, currentColor 56%, transparent);
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Berkeley Mono", monospace;
+  font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
 }
 
 /**
@@ -134,7 +134,7 @@ sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  font-family: Berkeley Mono, monospace;
+  font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
   font-weight: 600;
 }
 

@@ -83,13 +83,13 @@
 
     .eight.columns {
         width: 65.3333333333%;
-        font-family: "Berkeley Mono", monospace;
+        font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
         font-weight: 600;
     }
 
     .nine.columns {
         width: 96%;
-        font-family: "Berkeley Mono", monospace;
+        font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
     }
 
     .ten.columns {
@@ -559,11 +559,13 @@ td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #a0a09d;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
 }
 
 th:first-child,
 td:first-child {
     padding-left: 0;
+    font-weight: 600;
 }
 
 th:last-child,
