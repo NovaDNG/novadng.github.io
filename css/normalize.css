@@ -120,7 +120,7 @@ small {
   color: color-mix(in srgb, currentColor 56%, transparent);
   font-weight: 600;
   text-transform: uppercase;
-  font-family: Berkeley Mono, monospace;
+  font-family: "Berkeley Mono", monospace;
 }
 
 /**

@@ -133,8 +133,9 @@ img {
 }
 
 .lit {
-    font-size: 1.33rem;
-    font-weight: 800;
+    font-size: 85%;
+    font-family: "Berkeley Mono", monospace;
+    font-weight: 600;
     margin-bottom: -12px;
     margin-top: 8px;
     line-height: 1.1;
