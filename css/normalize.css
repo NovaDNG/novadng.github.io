@@ -106,7 +106,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: "IBM Plex Mono", "Cascadia Code", "Fira Code", "iA Writer Mono", "Roboto Mono", monospace; /* 1 */
+  font-family: "Berkeley Mono", "IBM Plex Mono", "Cascadia Code", "Fira Code", "iA Writer Mono", "Roboto Mono", monospace; /* 1 */
   font-size: 1em; /* 2 */
   font-variant-numeric: tabular-nums;
 }
@@ -120,6 +120,7 @@ small {
   color: color-mix(in srgb, currentColor 56%, transparent);
   font-weight: 600;
   text-transform: uppercase;
+  font-family: Berkeley Mono, monospace;
 }
 
 /**

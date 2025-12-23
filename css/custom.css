@@ -11,6 +11,28 @@
         format("truetype");
 }
 
+/* Berkeley Mono - latin */
+@font-face {
+    font-family: "Berkeley Mono";
+    font-style: monospace;
+    font-weight: 400;
+    src:
+        local("Berkeley Mono"),
+        local("BerkeleyMono-Regular"),
+        url("../fonts/BerkeleyMono-Regular.woff2")
+            format("woff2"); 
+}
+@font-face {
+    font-family: "Berkeley Mono";
+    font-style: monospace;
+    font-weight: 600;
+    src:
+        local("Berkeley Mono"),
+        local("BerkeleyMono-Bold"),
+        url("../fonts/BerkeleyMono-Bold.woff2")
+            format("woff2"); 
+}
+
 /* Redaction - latin */
 @font-face {
     font-family: "Redaction";
@@ -20,10 +42,8 @@
         local("Redaction"),
         local("Redaction-Regular"),
         url("../fonts/Redaction-Regular.woff2")
-            format("woff2"); /* Super Modern Browsers */
+            format("woff2"); 
 }
-
-/* Redaction Bold - latin */
 @font-face {
     font-family: "Redaction-Bold";
     font-style: bold;
@@ -31,10 +51,8 @@
     src:
         local("Redaction-Bold"),
         url("../fonts/Redaction-Bold.woff2")
-            format("woff2"); /* Super Modern Browsers */
+            format("woff2"); 
 }
-
-/* Redaction Italic - latin */
 @font-face {
     font-family: "Redaction-Italic";
     font-style: italic;
@@ -42,8 +60,9 @@
     src:
         local("Redaction-Italic"),
         url("../fonts/Redaction-Italic.woff2")
-            format("woff2"); /* Super Modern Browsers */
+            format("woff2");
 }
+
 /* Plex Mono - latin */
 @font-face {
     font-family: "IBM Plex Mono";
@@ -53,50 +72,9 @@
         local("IBM Plex Mono"),
         local("IBMPlexMono-regular.otf"),
         url("../fonts/IBMPlexMono-Regular.woff2")
-            format("woff2"); /* Super Modern Browsers */
-}
+            format("woff2"); 
+} 
 
-/* dm-serif-display-regular - latin */
-/*@font-face {
-    font-family: "DM Serif Display";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/dm-serif-display-v4-latin-regular.eot");
-    src:
-        local("DM Serif Display Regular"),
-        local("DMSerifDisplay-Regular"),
-        url("../fonts/dm-serif-display-v4-latin-regular.eot?#iefix")
-        format("embedded-opentype"),
-        url("../fonts/dm-serif-display-v4-latin-regular.woff2")
-        format("woff2"),
-        url("../fonts/dm-serif-display-v4-latin-regular.woff")
-        format("woff"),
-        url("../fonts/dm-serif-display-v4-latin-regular.ttf")
-        format("truetype"),
-        url("../fonts/dm-serif-display-v4-latin-regular.svg#DMSerifDisplay")
-        format("svg");
-} */
-
-/* inter-regular - latin */
-/* @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-variant: tabular-nums;
-    src: url("../fonts/inter-v2-latin-regular.eot");
-    src:
-        local(""),
-        url("../fonts/inter-v2-latin-regular.eot?#iefix")
-            format("embedded-opentype"),
-            url("../fonts/inter-v2-latin-regular.woff2")
-            format("woff2"),
-            url("../fonts/inter-v2-latin-regular.woff")
-            format("woff"),
-            url("../fonts/inter-v2-latin-regular.ttf")
-            format("truetype"),
-            url("../fonts/inter-v2-latin-regular.svg#Inter")
-            format("svg"); 
-} */
 
 :root {
     text-autospace: normal;
@@ -166,6 +144,11 @@ img {
 
 .little-svg {
     fill: #fff;
+}
+
+.post-meta {
+    font-family: "Berkeley Mono", monospace;
+    font-weight: 600;
 }
 
 .ml-0 {
