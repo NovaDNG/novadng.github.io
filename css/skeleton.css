@@ -558,6 +558,7 @@ th,
 td {
     padding: 12px 15px;
     text-align: left;
+    vertical-align: top;
     border-bottom: 1px solid #a0a09d;
     font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
 }
