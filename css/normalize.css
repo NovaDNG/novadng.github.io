@@ -62,7 +62,7 @@ hr {
  */
 
 pre {
-  font-family: "Berkeley Mono", "IBM Plex Mono", -apple-system, BlinkMacSystemFont, san-serif; /* 1 */
+  font-family: "Berkeley Mono", "IBM Plex Mono", -apple-system, BlinkMacSystemFont, sans-serif; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -94,8 +94,8 @@ abbr[title] {
 
 b,
 strong {
-  font-family: "iA Writer Quattro V", "HYQiHei-70S", FZYouHei, "Ten Mincho Antique", Source Han Sans SC, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 900;
+  font-family: "iA Writer Quattro V", "HYQiHei-70S", FZYouHei, "Ten Mincho", Source Han Sans SC, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
 }
 
 /**
@@ -111,17 +111,6 @@ samp {
   font-variant-numeric: tabular-nums;
 }
 
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 85%;
-  color: color-mix(in srgb, currentColor 56%, transparent);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
-}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -134,7 +123,7 @@ sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
+  font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
 }
 

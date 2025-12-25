@@ -1,85 +1,7 @@
-/* iA-writer-quattro-variable - latin */
-@font-face {
-    font-family: "iA Writer Quattro V";
-    font-style: normal;
-    font-weight: 400 900;
-    /* font-display: swap; */
-    src:
-        local("iA Writer Quattro V"),
-        local("iAWriterQuattroV.ttf"),
-        url("../fonts/iAWriterQuattroV.ttf")
-        format("truetype");
-}
-
-/* EB Garamond - latin */
-@font-face {
-    font-family: "EB Garamond";
-    font-style: normal;
-    font-weight: 400 800;
-    /* font-display: swap; */
-    src:
-        local("EB Garamond"),
-        local("EBGaramond-VariableFont_wght.ttf"),
-        url("../fonts/EBGaramond-VariableFont_wght.ttf")
-        format("truetype");
-}
-
-/* Berkeley Mono - latin */
-@font-face {
-    font-family: "Berkeley Mono";
-    font-style: monospace;
-    font-weight: 400;
-    src:
-        local("Berkeley Mono"),
-        local("BerkeleyMono-Regular"),
-        url("../fonts/BerkeleyMono-Regular.woff2")
-            format("woff2"); 
-}
-@font-face {
-    font-family: "Berkeley Mono";
-    font-style: monospace;
-    font-weight: 600;
-    src:
-        local("Berkeley Mono"),
-        local("BerkeleyMono-Bold"),
-        url("../fonts/BerkeleyMono-Bold.woff2")
-            format("woff2"); 
-}
-
-/* Redaction - latin */
-@font-face {
-    font-family: "Redaction";
-    font-style: normal;
-    font-weight: 400;
-    src:
-        local("Redaction"),
-        local("Redaction-Regular"),
-        url("../fonts/Redaction-Regular.woff2")
-            format("woff2"); 
-}
-@font-face {
-    font-family: "Redaction-Bold";
-    font-style: bold;
-    font-weight: 800;
-    src:
-        local("Redaction-Bold"),
-        url("../fonts/Redaction-Bold.woff2")
-            format("woff2"); 
-}
-@font-face {
-    font-family: "Redaction-Italic";
-    font-style: italic;
-    font-weight: 400;
-    src:
-        local("Redaction-Italic"),
-        url("../fonts/Redaction-Italic.woff2")
-            format("woff2");
-}
-
 /* Plex Mono - latin 
 @font-face {
     font-family: "IBM Plex Mono";
-    font-style: monospace;
+    font-style: normal;
     font-weight: 400;
     src:
         local("IBM Plex Mono"),
@@ -145,24 +67,8 @@ img {
     margin-left: 0;
 }
 
-.lit {
-    font-size: 85%;
-    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
-    font-weight: 600;
-    margin-bottom: -12px;
-    margin-top: 8px;
-    line-height: 1.1;
-    text-transform: uppercase;
-    color: color-mix(in srgb, currentColor 56%, transparent)
-}
-
 .little-svg {
     fill: #fff;
-}
-
-.post-meta {
-    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, san-serif;
-    font-weight: 600;
 }
 
 .ml-0 {
@@ -262,40 +168,6 @@ li p code {
 
 body.darkmode li p code {
     background-color: rgb(65, 65, 65);
-}
-
-/* blockquote */
-blockquote {
-    font-family:
-        "Redaction",
-        "EB Garamond",
-        Charter,
-        "HYXuanSong",
-        "FZYouSongJ GBK",
-        "Ten Mincho",
-        "Ten Mincho Antique",
-        "Source Han Serif VF",
-        -apple-system,
-        BlinkMacSystemFont,
-        serif;
-    font-weight: 400;
-    font-variant-numeric: oldstyle-nums;
-    background-color: rgba(148, 148, 149, 0.08);
-    margin: -0.5em 0px 1em 0px;
-    padding: 1.1em 20px 1px 20px;
-}
-
-blockquote footer {
-    font-family: "Berkeley Mono", "IBM Plex Mono";
-    font-variant: tabular-nums;
-    font-size: 16px;
-    padding-bottom: 10px;
-    margin-top: -10px;
-}
-
-blockquote footer cite:before {
-    content: "—";
-    padding: 0 0.5em;
 }
 
 /* Scroll bar */
@@ -488,19 +360,3 @@ a[data-flickr-embed] > .flickr-embed-frame,
 
 /* a[data-flickr-embed] { overflow: visible; } */
 
-center {
-    font-family:
-        "EB Garamond",
-        "Redaction",
-        Charter,
-        "HYXuanSong",
-        "FZYouSongJ GBK",
-        "Ten Mincho",
-        "Ten Mincho Antique",
-        "Source Han Serif VF",
-        -apple-system,
-        BlinkMacSystemFont,
-        serif;
-    font-weight: 500;
-    font-size: 1.55rem;
-}

@@ -1,0 +1,77 @@
+/* iA-writer-quattro-variable - latin */
+@font-face {
+    font-family: "iA Writer Quattro V";
+    font-style: normal;
+    font-weight: 400 900;
+    /* font-display: swap; */
+    src:
+        local("iA Writer Quattro V"),
+        local("iAWriterQuattroV.ttf"),
+        url("../fonts/iAWriterQuattroV.ttf")
+        format("truetype");
+}
+
+/* EB Garamond - latin */
+@font-face {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 400 800;
+    /* font-display: swap; */
+    src:
+        local("EB Garamond"),
+        local("EBGaramond-VariableFont_wght.ttf"),
+        url("../fonts/EBGaramond-VariableFont_wght.ttf")
+        format("truetype");
+}
+
+/* Berkeley Mono - latin */
+@font-face {
+    font-family: "Berkeley Mono";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Berkeley Mono"),
+        local("BerkeleyMono-Regular"),
+        url("../fonts/BerkeleyMono-Regular.woff2")
+            format("woff2"); 
+}
+@font-face {
+    font-family: "Berkeley Mono";
+    font-style: normal;
+    font-weight: 600;
+    src:
+        local("Berkeley Mono"),
+        local("BerkeleyMono-Bold"),
+        url("../fonts/BerkeleyMono-Bold.woff2")
+            format("woff2"); 
+}
+
+/* Redaction - latin */
+@font-face {
+    font-family: "Redaction";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Redaction"),
+        local("Redaction-Regular"),
+        url("../fonts/Redaction-Regular.woff2")
+            format("woff2"); 
+}
+@font-face {
+    font-family: "Redaction-Bold";
+    font-style: normal;
+    font-weight: 800;
+    src:
+        local("Redaction-Bold"),
+        url("../fonts/Redaction-Bold.woff2")
+            format("woff2"); 
+}
+@font-face {
+    font-family: "Redaction-Italic";
+    font-style: italic;
+    font-weight: 400;
+    src:
+        local("Redaction-Italic"),
+        url("../fonts/Redaction-Italic.woff2")
+            format("woff2");
+}

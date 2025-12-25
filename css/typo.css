@@ -1,0 +1,83 @@
+center {
+    font-family:
+        "EB Garamond",
+        "Redaction",
+        Charter,
+        "HYXuanSong",
+        "FZYouSongJ GBK",
+        "Ten Mincho",
+        "Ten Mincho Antique",
+        "Source Han Serif VF",
+        -apple-system,
+        BlinkMacSystemFont,
+        serif;
+    font-weight: 500;
+    font-size: 1.55rem;
+}
+
+/* blockquote */
+blockquote {
+    font-family:
+        "Redaction",
+        "EB Garamond",
+        Charter,
+        "HYXuanSong",
+        "FZYouSongJ GBK",
+        "Ten Mincho",
+        "Ten Mincho Antique",
+        "Source Han Serif VF",
+        -apple-system,
+        BlinkMacSystemFont,
+        serif;
+    font-weight: 400;
+    font-variant-numeric: oldstyle-nums;
+    background-color: rgba(148, 148, 149, 0.08);
+    margin: -0.5em 0px 1em 0px;
+    padding: 1.1em 20px 1px 20px;
+}
+
+blockquote footer {
+    font-family: "Berkeley Mono", "IBM Plex Mono";
+    font-variant: tabular-nums;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
+
+blockquote footer cite:before {
+    content: "—";
+    padding: 0 0.5em;
+}
+
+small {
+    font-size: 85%;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    color: color-mix(in srgb, currentColor 56%, transparent);
+    text-transform: uppercase;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+}
+
+.lit {
+    font-size: 85%;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    color: color-mix(in srgb, currentColor 56%, 
+    margin-bottom: -12px;
+    margin-top: 8px;
+    line-height: 1.1;
+    text-transform: uppercase;transparent);
+}
+
+.post-meta {
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+}
