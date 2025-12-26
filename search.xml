@@ -337,10 +337,15 @@
 <p><img src="brassring.avif" alt="Brass"></p>
 <p>首先必須大贊一番它的設計: 比起各種以銅合金或者鎂鋁合金製成､ 基本上就是一根黑筒的其他轉接環, 它用一條幾乎純粹裝飾用的黃銅帶齒環發出了自己的宣告 ⸺ 在滿足功能的前提下不必犧牲設計, 這才是最適合Zƒ的轉接環!</p>
 <p>比起M與Z口之間的空隙, F與Z口之間的30.5mm空間簡直大得沒邊了, 完全足夠放入機身通訊用的晶片. 但同樣的, 不知為何事到如今才有廠商做出帶晶片服務於Auto或AI/S鏡頭的轉接環. 在此之前即使以尼康官方的FTZ/II轉接環轉接手動鏡, 也無法觸發相位對焦輔助. 而黃銅雖然更重, 但稍許緩解了其他轉接環造成的啞鈴手感, 我認為是可以接受的妥協.</p>
+<p><img src="lenspar.avif" alt=""></p>
+<center>在一個txt檔案中編輯鏡頭資訊</center></br>
+<p><img src="exif.avif" alt=""></p>
+<center>匯入Lightroom後顯示的訊息</center></br>
 <p>這款產品由於是在M轉Z環面世後才開始研發, Boryoza加入了一些新的功能: 藉由USB連結計算機, 用家可以自定義鏡頭名稱了. 尼康雖然在四月的更新裡為Zƒ加入了為手動鏡命名的功能, 但本功能只針對純機械鏡頭生效, 而悖論是當用家採用了純機械鏡頭, 便無法享受相位對焦輔助. Boryoza最終採用了不那麼方便但切實有效的手段做到了這個功能, 對於metadata強迫症用家簡直是天大的福音.</p>
 <p><img src="Dfvf.avif" alt="Inside Dƒ OVF _gallery &lt;"><br>
 <img src="Zfvf.avif" alt="Inside Zƒ EVF _gallery &gt;"></p>
-<p><img src="FM3Avf.avif" alt="Inside FM3ᴀ OVF"></p>
+<center>左Dƒ, 右Zƒ. 雖然Zƒ對焦要方便很多但OVF果然還是比EVF要明亮很多</center></br>
+<p><img src="FM3Avf.avif" alt="Inside FM3ᴀ OVF _gallery &gt;&lt;"></p>
 <center>額外提供一個 FM3ᴀ 的作為對照組</center></br>
 <p>既然是轉接Auto/AI/S鏡, 那要談論使用體驗標杆自然得是Dƒ. 我的Dƒ可不是普通的Dƒ, 它經過對焦屏和目鏡改造, 換上了<a href="https://www.focusingscreen.com/privacy.php?osCsid=aue7sgmelt598r0i1gapi1lru4#:~:text=8.K3%20Focusing%20Screen">K-3磨砂裂像屏</a> + <a href="https://nij.nikon.com/products/lineup/accessory/finder/dk-17m/">放大目鏡DK-17M</a>, 我可以自豪地宣稱它有SLR上最強的手動對焦體驗 (也許你會想說 ｢DK-17M才 ×1.2的放大倍率算什麼最強啊!｣ 但比起<a href="https://nij.nikon.com/cms/products/accessory/finder/dg-2/img/product_01_g.png">DG-2</a><sup>[PNG]</sup>讓相機體積變大且構圖極為不便, DK-17M可以說完勝. 如果你有更好的方案, 歡迎在評論中提出). 即便如此, Dƒ也無法擺脫所有單反觀景器對焦的缺陷: K-3的裂像微稜鏡區域只佔畫面最中心2.3%, 離開了這一小片區域就需要依賴觀景器下方的相位對焦提示 ⸺ 當初我之所以給Dƒ裝上K-3就是為了避免注意力在畫面主體與對焦提示間來回移動, 而Dƒ的相位對焦點也僅僅覆蓋了畫面中心不到15%, 若主體不在這中心區域, 還是需要將畫面中心對準主體, 對焦後重新構圖. 儘管大部分時候我的Dƒ對焦體驗已算上佳, 總會遇上edge case (pun intended), 無法至臻完美.</p>
 <p>而在使用Zƒ + Boryoza組合時, 體驗和前文所述M轉Z上大致相同: 藉由Zƒ的主體偵測, 對焦框大部分情況直接會出現在主體上, 我可以完全不改變構圖直接轉動對焦環 (因為使用的是尼康自家的鏡頭, 可以按照 ▶︎ ● ◀︎ 的提示直接擰對焦環, 不需要做頭腦體操了!) 到對焦框變綠即可, 全程注意力完全不需要變化, 極為舒適. 若還不放心也可以按 + 鍵直接放大對焦點確認, 無論是便利性還是準確度都強於Dƒ. 這套組合讓我的F收藏得以重新活躍, 終於驅散了我對Zƒ最後的怨念.</p>
