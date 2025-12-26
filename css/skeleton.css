@@ -621,11 +621,20 @@ form {
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
+/* hr {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     border-width: 0;
     border-top: 1pt solid #919191;
+} */
+
+hr {
+    background: radial-gradient(#919191 .5px,transparent 1px) 0 0/3px 3px,var(--dynamic-bg-color, transparent);
+    height: 0.9rem;
+    max-height: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: none;
 }
 
 /* Clearing
