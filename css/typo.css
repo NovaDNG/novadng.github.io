@@ -70,14 +70,15 @@ sub, sup {
     font-size: 85%;
     font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
-    color: color-mix(in srgb, currentColor 56%, 
+    color: color-mix(in srgb, currentColor 56%, transparent);
     margin-bottom: -12px;
     margin-top: 8px;
     line-height: 1.1;
-    text-transform: uppercase;transparent);
+    text-transform: uppercase;transparent;
 }
 
 .post-meta {
     font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 600;
+    color: color-mix(in srgb, currentColor 87%, transparent);
 }
