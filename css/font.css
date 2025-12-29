@@ -75,3 +75,32 @@
         url("../fonts/Redaction-Italic.woff2")
             format("woff2");
 }
+
+/* Ten */
+@font-face {
+    font-family: ten-mincho-antique, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: ten-mincho-antique, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Toppan */
+@font-face {
+    font-family: toppan-bunkyu-midashi-min-st, serif;
+    font-weight: 900;
+    font-style: normal;
+}
