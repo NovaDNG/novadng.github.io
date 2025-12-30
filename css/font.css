@@ -11,17 +11,26 @@
         format("truetype");
 }
 
-/* EB Garamond - latin */
+/* EB Garamond */
 @font-face {
-    font-family: "EB Garamond";
+    font-family: "EB-Garamond", serif;
     font-style: normal;
-    font-weight: 400 800;
-    /* font-display: swap; */
-    src:
-        local("EB Garamond"),
-        local("EBGaramond-VariableFont_wght.ttf"),
-        url("../fonts/EBGaramond-VariableFont_wght.ttf")
-        format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "eb-garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "eb-garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "eb-garamond", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* Berkeley Mono - latin */

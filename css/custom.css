@@ -295,7 +295,7 @@ body.darkmode {
 @media (min-width: 550px) {
     .container img:not(.icon):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]),
     .container video,
-    .container iframe:not(.giscus-frame):not(.giscus),
+    .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]),
     .container embed,
     .container object {
       width: 120%;
@@ -361,3 +361,17 @@ a[data-flickr-embed] > .flickr-embed-frame,
 
 /* a[data-flickr-embed] { overflow: visible; } */
 
+img.noshadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/* Twitter embed: cancel global iframe centering */
+.twitter-tweet-rendered,
+.twitter-tweet-rendered iframe[id^="twitter-widget-"] {
+  left: auto !important;
+  transform: none !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
