@@ -238,6 +238,7 @@ body {
     overflow-x: hidden;
     transition: all 0.3s ease-in-out;
     background: #eae6e2;
+    text-rendering: geometricPrecision;
 }
 
 body.darkmode {
