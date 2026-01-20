@@ -95,7 +95,7 @@ img {
 }
 
 .mb-2 {
-    margin-bottom: 8px;
+    margin-bottom: 5rem;
 }
 
 .mb-3 {
@@ -264,6 +264,30 @@ body.darkmode {
 
 .hidden {
     display: none;
+}
+
+/* Theme-switching pheader logo crossfade */
+#logoLight,
+#logoDark {
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* default (light mode) */
+#logoLight {
+    opacity: 1;
+}
+#logoDark {
+    opacity: 0;
+    position: absolute;
+}
+
+/* dark mode */
+body.darkmode #logoLight {
+    opacity: 0;
+    pointer-events: none;
+}
+body.darkmode #logoDark {
+    opacity: 1;
 }
 
 #comments {
