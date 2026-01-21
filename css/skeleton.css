@@ -27,9 +27,9 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 720px;
+    max-width: 768px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 32px;
     box-sizing: border-box;
 }
 
