@@ -229,26 +229,97 @@
 <p>東京遊記2024系列: <a href="/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="/2024-10/TripToTokyo3">Part Ⅲ</a></p>
 
   <p class="post-meta"><a class="classtest-link" href="/tags/Travel/" rel="tag">Travel</a> — Oct 15, 2024</p>
-  
-    <hr>
-    <script src="https://giscus.app/client.js"
-    data-repo="NovaDNG/novadng.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU="
-    data-category="General"
-    data-category-id="DIC_kwDOFL94d84CmgFx"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="catppuccin_latte"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-</script>
-  
-  
+  <hr>
+
+
+  <div id="giscus"></div>
+  <script>
+    (function () {
+      function isDarkMode() {
+        // 1) Current DOM state (may be set a bit later during page boot)
+        if (document.body && document.body.classList.contains('darkmode')) return true;
+
+        // 2) Persisted preference (key names vary by theme implementations)
+        try {
+          var v = localStorage.getItem('theme')
+            || localStorage.getItem('color-mode')
+            || localStorage.getItem('colorMode')
+            || localStorage.getItem('darkmode')
+            || localStorage.getItem('darkMode');
+          if (v != null) {
+            v = String(v).toLowerCase();
+            if (v === 'dark' || v === '1' || v === 'true') return true;
+            if (v === 'light' || v === '0' || v === 'false') return false;
+          }
+        } catch (e) {
+          // ignore storage access issues
+        }
+
+        // 3) System preference fallback
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function getGiscusTheme() {
+        return isDarkMode() ? 'noborder_dark' : 'noborder_light';
+      }
+
+      // Load giscus with the correct initial theme.
+      var container = document.getElementById('giscus');
+      if (!container) return;
+
+      var s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+
+      s.setAttribute('data-repo', 'NovaDNG/novadng.github.io');
+      s.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=');
+      s.setAttribute('data-category', 'General');
+      s.setAttribute('data-category-id', 'DIC_kwDOFL94d84CmgFx');
+      s.setAttribute('data-mapping', 'pathname');
+      s.setAttribute('data-strict', '0');
+      s.setAttribute('data-reactions-enabled', '1');
+      s.setAttribute('data-emit-metadata', '0');
+      s.setAttribute('data-input-position', 'top');
+      s.setAttribute('data-theme', getGiscusTheme());
+      s.setAttribute('data-lang', 'en');
+      s.setAttribute('data-loading', 'lazy');
+
+      container.appendChild(s);
+
+      // Update theme after load (and whenever the site theme changes)
+      function postSetTheme(theme) {
+        var iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return false;
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          'https://giscus.app'
+        );
+        return true;
+      }
+
+      function syncTheme() {
+        postSetTheme(getGiscusTheme());
+      }
+
+      // Poll briefly until iframe exists (first load)
+      var tries = 0;
+      var timer = setInterval(function () {
+        tries += 1;
+        if (postSetTheme(getGiscusTheme()) || tries > 40) {
+          clearInterval(timer);
+        }
+      }, 150);
+
+      // Observe body class changes (your theme switch toggles `body.darkmode`)
+      var mo = new MutationObserver(function () {
+        syncTheme();
+      });
+      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    })();
+  </script>
+
+
 
           <div class="row mt-2">
   
