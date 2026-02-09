@@ -368,19 +368,30 @@ body.darkmode #logoDark {
     }
 }
 
-/* Print fixes 
 @media print {
-  .container img:not(.icon),
+  /* Hide site chrome */
+  #pheader,
+  header,
+  #header,
+  footer,
+  #footer,
+  .giscus,
+  iframe.giscus-frame,
+  .mode {
+    display: none !important;
+  }
+
+  .container img,
   .container video,
   .container iframe,
   .container embed,
   .container object {
     width: 100% !important;
     max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    left: auto !important;
+    transform: none !important;
   }
-} */
+}
 
 a[data-flickr-embed] { display: inline-block; line-height: 0; }
 
