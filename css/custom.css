@@ -380,7 +380,12 @@ body.darkmode #logoDark {
   .mode {
     display: none !important;
   }
-
+  img:not([alt~="_gallery"]) {
+    max-width: 66.67% !important;
+    width: 66.67% !important;
+    transorm: none !important;
+  }
+/* restore width
   .container img,
   .container video,
   .container iframe,
@@ -390,7 +395,7 @@ body.darkmode #logoDark {
     max-width: 100% !important;
     left: auto !important;
     transform: none !important;
-  }
+  } */
 }
 
 a[data-flickr-embed] { display: inline-block; line-height: 0; }
