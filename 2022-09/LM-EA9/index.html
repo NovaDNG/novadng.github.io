@@ -163,26 +163,97 @@
 <p>虽然说了很多它的缺点 (倒不如说好像通篇都在说缺点吧) ⸺  毕竟我第一次正式使用它就是在一个光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过TechArt后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等下一代产品了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的.</p>
 
   <p class="post-meta"><a class="classtest-link" href="/tags/Gadget/" rel="tag">Gadget</a>, <a class="classtest-link" href="/tags/Photography/" rel="tag">Photography</a> — Sep 10, 2022</p>
-  <% if (theme.giscus.enable){ %>
-    <hr>
-    <script src="https://giscus.app/client.js"
-    data-repo="NovaDNG/novadng.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU="
-    data-category="General"
-    data-category-id="DIC_kwDOFL94d84CmgFx"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="catppuccin_latte"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-</script>
-  <% } %>
-  
+  <hr>
+
+
+  <div id="giscus"></div>
+  <script>
+    (function () {
+      function isDarkMode() {
+        // 1) Current DOM state (may be set a bit later during page boot)
+        if (document.body && document.body.classList.contains('darkmode')) return true;
+
+        // 2) Persisted preference (key names vary by theme implementations)
+        try {
+          var v = localStorage.getItem('theme')
+            || localStorage.getItem('color-mode')
+            || localStorage.getItem('colorMode')
+            || localStorage.getItem('darkmode')
+            || localStorage.getItem('darkMode');
+          if (v != null) {
+            v = String(v).toLowerCase();
+            if (v === 'dark' || v === '1' || v === 'true') return true;
+            if (v === 'light' || v === '0' || v === 'false') return false;
+          }
+        } catch (e) {
+          // ignore storage access issues
+        }
+
+        // 3) System preference fallback
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function getGiscusTheme() {
+        return isDarkMode() ? 'noborder_dark' : 'noborder_light';
+      }
+
+      // Load giscus with the correct initial theme.
+      var container = document.getElementById('giscus');
+      if (!container) return;
+
+      var s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+
+      s.setAttribute('data-repo', 'NovaDNG/novadng.github.io');
+      s.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=');
+      s.setAttribute('data-category', 'General');
+      s.setAttribute('data-category-id', 'DIC_kwDOFL94d84CmgFx');
+      s.setAttribute('data-mapping', 'pathname');
+      s.setAttribute('data-strict', '0');
+      s.setAttribute('data-reactions-enabled', '1');
+      s.setAttribute('data-emit-metadata', '0');
+      s.setAttribute('data-input-position', 'top');
+      s.setAttribute('data-theme', getGiscusTheme());
+      s.setAttribute('data-lang', 'en');
+      s.setAttribute('data-loading', 'lazy');
+
+      container.appendChild(s);
+
+      // Update theme after load (and whenever the site theme changes)
+      function postSetTheme(theme) {
+        var iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return false;
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          'https://giscus.app'
+        );
+        return true;
+      }
+
+      function syncTheme() {
+        postSetTheme(getGiscusTheme());
+      }
+
+      // Poll briefly until iframe exists (first load)
+      var tries = 0;
+      var timer = setInterval(function () {
+        tries += 1;
+        if (postSetTheme(getGiscusTheme()) || tries > 40) {
+          clearInterval(timer);
+        }
+      }, 150);
+
+      // Observe body class changes (your theme switch toggles `body.darkmode`)
+      var mo = new MutationObserver(function () {
+        syncTheme();
+      });
+      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    })();
+  </script>
+
+
 
           <footer id="site-footer" class="site-footer">
   <div id="footer" class="row mt-2">
