@@ -173,97 +173,26 @@
 <p>有趣的是雖然它是打著Macro旗號買來的鏡頭, 我用它90%的情境都是普通距離, 微距的樣片好像一張都找不到⋯⋯ 不過說道微距, 推薦一下維卓仕家的<a href="https://viltrox.com/products/viltrox-dg-z-brass-bayonet-auto-focus-af-macro-extension-tube-ring-set-12mm-24mm-for-nikon-z6-z7-z50-z-mount-mirrorless-camera">Z口微距延長環</a>, 這應該是市面上唯一一款帶電子觸點, 這樣能保證我在對焦時能看到合焦提示, 極大提升便利度. 可惜這款延長環的筒身是塑膠製, 手感其實很爛, 卡口雖然官方說是金屬製, 但我怎麼看都覺得像是塑膠鍍上一層金屬漆⋯⋯ 算了, 反正它能做到將65/2的放大率撐到接近1:1, 也不貴, 不能要求太多了.</p>
 
   <p class="post-meta"><a class="classtest-link" href="/tags/Gadget/" rel="tag">Gadget</a>, <a class="classtest-link" href="/tags/Photography/" rel="tag">Photography</a> — Oct 28, 2024</p>
-  <hr>
-
-
-  <div id="giscus"></div>
-  <script>
-    (function () {
-      function isDarkMode() {
-        // 1) Current DOM state (may be set a bit later during page boot)
-        if (document.body && document.body.classList.contains('darkmode')) return true;
-
-        // 2) Persisted preference (key names vary by theme implementations)
-        try {
-          var v = localStorage.getItem('theme')
-            || localStorage.getItem('color-mode')
-            || localStorage.getItem('colorMode')
-            || localStorage.getItem('darkmode')
-            || localStorage.getItem('darkMode');
-          if (v != null) {
-            v = String(v).toLowerCase();
-            if (v === 'dark' || v === '1' || v === 'true') return true;
-            if (v === 'light' || v === '0' || v === 'false') return false;
-          }
-        } catch (e) {
-          // ignore storage access issues
-        }
-
-        // 3) System preference fallback
-        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
-
-      function getGiscusTheme() {
-        return isDarkMode() ? 'noborder_dark' : 'noborder_light';
-      }
-
-      // Load giscus with the correct initial theme.
-      var container = document.getElementById('giscus');
-      if (!container) return;
-
-      var s = document.createElement('script');
-      s.src = 'https://giscus.app/client.js';
-      s.async = true;
-      s.crossOrigin = 'anonymous';
-
-      s.setAttribute('data-repo', 'NovaDNG/novadng.github.io');
-      s.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=');
-      s.setAttribute('data-category', 'General');
-      s.setAttribute('data-category-id', 'DIC_kwDOFL94d84CmgFx');
-      s.setAttribute('data-mapping', 'pathname');
-      s.setAttribute('data-strict', '0');
-      s.setAttribute('data-reactions-enabled', '1');
-      s.setAttribute('data-emit-metadata', '0');
-      s.setAttribute('data-input-position', 'top');
-      s.setAttribute('data-theme', getGiscusTheme());
-      s.setAttribute('data-lang', 'en');
-      s.setAttribute('data-loading', 'lazy');
-
-      container.appendChild(s);
-
-      // Update theme after load (and whenever the site theme changes)
-      function postSetTheme(theme) {
-        var iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return false;
-        iframe.contentWindow.postMessage(
-          { giscus: { setConfig: { theme: theme } } },
-          'https://giscus.app'
-        );
-        return true;
-      }
-
-      function syncTheme() {
-        postSetTheme(getGiscusTheme());
-      }
-
-      // Poll briefly until iframe exists (first load)
-      var tries = 0;
-      var timer = setInterval(function () {
-        tries += 1;
-        if (postSetTheme(getGiscusTheme()) || tries > 40) {
-          clearInterval(timer);
-        }
-      }, 150);
-
-      // Observe body class changes (your theme switch toggles `body.darkmode`)
-      var mo = new MutationObserver(function () {
-        syncTheme();
-      });
-      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-    })();
-  </script>
-
-
+  <% if (theme.giscus.enable){ %>
+    <hr>
+    <script src="https://giscus.app/client.js"
+    data-repo="NovaDNG/novadng.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU="
+    data-category="General"
+    data-category-id="DIC_kwDOFL94d84CmgFx"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="catppuccin_latte"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script>
+  <% } %>
+  
 
           <footer id="site-footer" class="site-footer">
   <div id="footer" class="row mt-2">
