@@ -145,45 +145,115 @@
         <div class="trans">
             <h2 class="mt-3">Kamitsubaki City Under Construction</h2>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/Frames/KCUC/08320026.avif"></p>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/Frames/KCUC/08320026.avif" alt=""></p>
 <p><img src="/Frames/KCUC/08320021.avif" alt="Read _gallery &lt;"></p>
 <p><img src="/Frames/KCUC/Doll.avif" alt="Doll _gallery &gt;"></p>
-<p><img src="/Frames/KCUC/Trio.avif"></p>
-<p><img src="/Frames/KCUC/Theatre.avif"></p>
-<p><img src="/Frames/KCUC/Downstairs.avif"></p>
-<p><img src="/Frames/KCUC/Waiting.avif"></p>
+<p><img src="/Frames/KCUC/Trio.avif" alt=""></p>
+<p><img src="/Frames/KCUC/Theatre.avif" alt=""></p>
+<p><img src="/Frames/KCUC/Downstairs.avif" alt=""></p>
+<p><img src="/Frames/KCUC/Waiting.avif" alt=""></p>
 <p><img src="/Frames/KCUC/Passby.avif" alt="Pass _gallery &lt;"></p>
 <p><img src="/Frames/KCUC/08330024.avif" alt="Beach _gallery &gt;"></p>
-<p><img src="/Frames/KCUC/Letsplay.avif"></p>
-<p><img src="/Frames/KCUC/08330026.avif"></p>
-<p><img src="/Frames/KCUC/08330013.avif"></p>
-<p><img src="/Frames/KCUC/reaching.avif"></p>
-<p><img src="/Frames/KCUC/08330008.avif"></p>
-<p><img src="/Frames/KCUC/waterplay.avif"></p>
+<p><img src="/Frames/KCUC/Letsplay.avif" alt=""></p>
+<p><img src="/Frames/KCUC/08330026.avif" alt=""></p>
+<p><img src="/Frames/KCUC/08330013.avif" alt=""></p>
+<p><img src="/Frames/KCUC/reaching.avif" alt=""></p>
+<p><img src="/Frames/KCUC/08330008.avif" alt=""></p>
+<p><img src="/Frames/KCUC/waterplay.avif" alt=""></p>
 <p><img src="/Frames/KCUC/Trailing.avif" alt="Trailing _gallery &lt;"></p>
 <p><img src="/Frames/KCUC/Watching.avif" alt="Watching _gallery &gt;"></p>
-<p><img src="/Frames/KCUC/SeasideKafu.avif"></p>
+<p><img src="/Frames/KCUC/SeasideKafu.avif" alt=""></p>
 
-  <% if (theme.giscus.enable){ %>
-    <hr>
-    <script src="https://giscus.app/client.js"
-    data-repo="NovaDNG/novadng.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU="
-    data-category="General"
-    data-category-id="DIC_kwDOFL94d84CmgFx"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="catppuccin_latte"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-</script>
-  <% } %>
   
+<hr>
+  <div id="giscus"></div>
+  <script>
+    (function () {
+      function isDarkMode() {
+        // 1) Current DOM state (may be set a bit later during page boot)
+        if (document.body && document.body.classList.contains('darkmode')) return true;
+
+        // 2) Persisted preference (key names vary by theme implementations)
+        try {
+          var v = localStorage.getItem('theme')
+            || localStorage.getItem('color-mode')
+            || localStorage.getItem('colorMode')
+            || localStorage.getItem('darkmode')
+            || localStorage.getItem('darkMode');
+          if (v != null) {
+            v = String(v).toLowerCase();
+            if (v === 'dark' || v === '1' || v === 'true') return true;
+            if (v === 'light' || v === '0' || v === 'false') return false;
+          }
+        } catch (e) {
+          // ignore storage access issues
+        }
+
+        // 3) System preference fallback
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function getGiscusTheme() {
+        return isDarkMode() ? 'noborder_dark' : 'noborder_light';
+      }
+
+      // Load giscus with the correct initial theme.
+      var container = document.getElementById('giscus');
+      if (!container) return;
+
+      var s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+
+      s.setAttribute('data-repo', 'NovaDNG/novadng.github.io');
+      s.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=');
+      s.setAttribute('data-category', 'General');
+      s.setAttribute('data-category-id', 'DIC_kwDOFL94d84CmgFx');
+      s.setAttribute('data-mapping', 'pathname');
+      s.setAttribute('data-strict', '0');
+      s.setAttribute('data-reactions-enabled', '1');
+      s.setAttribute('data-emit-metadata', '0');
+      s.setAttribute('data-input-position', 'top');
+      s.setAttribute('data-theme', getGiscusTheme());
+      s.setAttribute('data-lang', 'en');
+      s.setAttribute('data-loading', 'lazy');
+
+      container.appendChild(s);
+
+      // Update theme after load (and whenever the site theme changes)
+      function postSetTheme(theme) {
+        var iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return false;
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          'https://giscus.app'
+        );
+        return true;
+      }
+
+      function syncTheme() {
+        postSetTheme(getGiscusTheme());
+      }
+
+      // Poll briefly until iframe exists (first load)
+      var tries = 0;
+      var timer = setInterval(function () {
+        tries += 1;
+        if (postSetTheme(getGiscusTheme()) || tries > 40) {
+          clearInterval(timer);
+        }
+      }, 150);
+
+      // Observe body class changes (your theme switch toggles `body.darkmode`)
+      var mo = new MutationObserver(function () {
+        syncTheme();
+      });
+      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    })();
+  </script>
+
+
           <footer id="site-footer" class="site-footer">
   <div id="footer" class="row mt-2">
   
