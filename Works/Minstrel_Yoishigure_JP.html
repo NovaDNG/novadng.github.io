@@ -201,94 +201,142 @@ b, strong {
 <p>本記事は<a href="https://x.com/O5c4r2017">Oscarさん</a>とChatGPT, Claudeの協力を得て作成されました。</p>
 
   
-<hr>
+  <hr>
   <div id="giscus"></div>
+
   <script>
     (function () {
+      var GISCUS_ORIGIN = 'https://giscus.app';
+      var THEMES = {
+        light: 'catppuccin_latte',
+        dark: 'transparent_dark'
+      };
+
+      function getPreferredThemeValue() {
+        try {
+          return localStorage.getItem('preferredTheme');
+        } catch (e) {
+          return null;
+        }
+      }
+
       function isDarkMode() {
-        // 1) Current DOM state (may be set a bit later during page boot)
+        // 1) Current DOM state (may be applied very early or slightly later)
         if (document.body && document.body.classList.contains('darkmode')) return true;
 
-        // 2) Persisted preference (key names vary by theme implementations)
-        try {
-          var v = localStorage.getItem('theme')
-            || localStorage.getItem('color-mode')
-            || localStorage.getItem('colorMode')
-            || localStorage.getItem('darkmode')
-            || localStorage.getItem('darkMode');
-          if (v != null) {
-            v = String(v).toLowerCase();
-            if (v === 'dark' || v === '1' || v === 'true') return true;
-            if (v === 'light' || v === '0' || v === 'false') return false;
-          }
-        } catch (e) {
-          // ignore storage access issues
+        // 2) Persisted preference (your theme uses preferredTheme)
+        var v = getPreferredThemeValue();
+        if (v != null) {
+          v = String(v).toLowerCase();
+          if (v === 'dark' || v === '1' || v === 'true') return true;
+          if (v === 'light' || v === '0' || v === 'false') return false;
         }
 
         // 3) System preference fallback
-        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
       }
 
       function getGiscusTheme() {
-        return isDarkMode() ? 'noborder_dark' : 'noborder_light';
+        return isDarkMode() ? THEMES.dark : THEMES.light;
       }
 
-      // Load giscus with the correct initial theme.
-      var container = document.getElementById('giscus');
-      if (!container) return;
+      function getIframe() {
+        return document.querySelector('iframe.giscus-frame');
+      }
 
-      var s = document.createElement('script');
-      s.src = 'https://giscus.app/client.js';
-      s.async = true;
-      s.crossOrigin = 'anonymous';
-
-      s.setAttribute('data-repo', 'NovaDNG/novadng.github.io');
-      s.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=');
-      s.setAttribute('data-category', 'General');
-      s.setAttribute('data-category-id', 'DIC_kwDOFL94d84CmgFx');
-      s.setAttribute('data-mapping', 'pathname');
-      s.setAttribute('data-strict', '0');
-      s.setAttribute('data-reactions-enabled', '1');
-      s.setAttribute('data-emit-metadata', '0');
-      s.setAttribute('data-input-position', 'top');
-      s.setAttribute('data-theme', getGiscusTheme());
-      s.setAttribute('data-lang', 'en');
-      s.setAttribute('data-loading', 'lazy');
-
-      container.appendChild(s);
-
-      // Update theme after load (and whenever the site theme changes)
       function postSetTheme(theme) {
-        var iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return false;
+        var iframe = getIframe();
+        if (!iframe || !iframe.contentWindow) return false;
         iframe.contentWindow.postMessage(
           { giscus: { setConfig: { theme: theme } } },
-          'https://giscus.app'
+          GISCUS_ORIGIN
         );
         return true;
       }
 
-      function syncTheme() {
-        postSetTheme(getGiscusTheme());
+      function waitForIframe(maxMs) {
+        return new Promise(function (resolve) {
+          var start = performance.now();
+          (function tick() {
+            if (getIframe()) return resolve(true);
+            if (performance.now() - start > maxMs) return resolve(false);
+            requestAnimationFrame(tick);
+          })();
+        });
       }
 
-      // Poll briefly until iframe exists (first load)
-      var tries = 0;
-      var timer = setInterval(function () {
-        tries += 1;
-        if (postSetTheme(getGiscusTheme()) || tries > 40) {
-          clearInterval(timer);
-        }
-      }, 150);
+      function loadGiscus() {
+        var container = document.getElementById('giscus');
+        if (!container) return;
+        if (container.getAttribute('data-loaded') === '1') return;
+        container.setAttribute('data-loaded', '1');
 
-      // Observe body class changes (your theme switch toggles `body.darkmode`)
+        var cfg = {
+          repo: 'NovaDNG/novadng.github.io',
+          repoId: 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=',
+          category: 'General',
+          categoryId: 'DIC_kwDOFL94d84CmgFx',
+          mapping: 'pathname',
+          strict: '0',
+          reactionsEnabled: '1',
+          emitMetadata: '0',
+          inputPosition: 'top',
+          theme: getGiscusTheme(),
+          lang: 'en',
+          loading: 'lazy'
+        };
+
+        var s = document.createElement('script');
+        s.src = GISCUS_ORIGIN + '/client.js';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+
+        s.setAttribute('data-repo', cfg.repo);
+        s.setAttribute('data-repo-id', cfg.repoId);
+        s.setAttribute('data-category', cfg.category);
+        s.setAttribute('data-category-id', cfg.categoryId);
+        s.setAttribute('data-mapping', cfg.mapping);
+        s.setAttribute('data-strict', cfg.strict);
+        s.setAttribute('data-reactions-enabled', cfg.reactionsEnabled);
+        s.setAttribute('data-emit-metadata', cfg.emitMetadata);
+        s.setAttribute('data-input-position', cfg.inputPosition);
+        s.setAttribute('data-theme', cfg.theme);
+        s.setAttribute('data-lang', cfg.lang);
+        s.setAttribute('data-loading', cfg.loading);
+
+        container.appendChild(s);
+
+        // Once iframe exists, force-sync theme once (covers dark-on-first-load)
+        waitForIframe(6000).then(function () {
+          postSetTheme(getGiscusTheme());
+        });
+      }
+
+      // Boot
+      loadGiscus();
+
+      // React to theme toggles (your theme switch toggles `body.darkmode`)
       var mo = new MutationObserver(function () {
-        syncTheme();
+        postSetTheme(getGiscusTheme());
       });
       mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+      // React to system theme changes (if user never set preferredTheme)
+      if (window.matchMedia) {
+        var mql = window.matchMedia('(prefers-color-scheme: dark)');
+        // Safari uses addListener
+        if (mql.addEventListener) {
+          mql.addEventListener('change', function () {
+            postSetTheme(getGiscusTheme());
+          });
+        } else if (mql.addListener) {
+          mql.addListener(function () {
+            postSetTheme(getGiscusTheme());
+          });
+        }
+      }
     })();
   </script>
-
 
           <footer id="site-footer" class="site-footer">
   <div id="footer" class="row mt-2">
