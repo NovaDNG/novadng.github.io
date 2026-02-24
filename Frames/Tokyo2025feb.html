@@ -146,175 +146,57 @@
             <h2 class="mt-3">Tokyo (Feburary 2025)</h2>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Blogpost: <a href="/2025-02/TripToTokyo2025Part1">東京遊記2025 (二月篇)</a></p>
-<p><img src="/Frames/Tokyo2025feb/chitose.avif" alt=""></p>
+<p><img src="/Frames/Tokyo2025feb/chitose.avif"></p>
 <p><img src="/Frames/Tokyo2025feb/rail.avif" alt="Railway _gallery &lt;"></p>
 <p><img src="/Frames/Tokyo2025feb/saka.avif" alt="Slope _gallery &gt;"></p>
-<p><img src="/Frames/Tokyo2025feb/frame.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/fish.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/rainbowfish.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/3fish.avif" alt=""></p>
+<p><img src="/Frames/Tokyo2025feb/frame.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/fish.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/rainbowfish.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/3fish.avif"></p>
 <p><img src="/Frames/Tokyo2025feb/burnner.avif" alt="_gallery &lt;"></p>
 <p><img src="/Frames/Tokyo2025feb/tunnel.avif" alt="_gallery &gt;"></p>
-<p><img src="/Frames/Tokyo2025feb/wait.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/mountainpass.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/Fujicloud.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/motosukopano.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/pinkfuji.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/fujidusk.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/Fujisan.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/fujiroad.avif" alt=""></p>
+<p><img src="/Frames/Tokyo2025feb/wait.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/mountainpass.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/Fujicloud.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/motosukopano.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/pinkfuji.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/fujidusk.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/Fujisan.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/fujiroad.avif"></p>
 <p><img src="/Frames/Tokyo2025feb/starryfuji.avif" alt="Starry Fuji _gallery &lt;"></p>
 <p><img src="/Frames/Tokyo2025feb/starrail.avif" alt="Fuji Starrail _gallery &gt;"></p>
-<p><img src="/Frames/Tokyo2025feb/starry.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/fumikiri.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/Tower.avif" alt=""></p>
+<p><img src="/Frames/Tokyo2025feb/starry.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/fumikiri.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/Tower.avif"></p>
 <p><img src="/Frames/Tokyo2025feb/towerwithcityscape.avif" alt="_gallery &gt;"></p>
 <p><img src="/Frames/Tokyo2025feb/towerwithcityscapevelvia.avif" alt="_gallery &lt;"></p>
-<p><img src="/Frames/Tokyo2025feb/touch.avif" alt=""></p>
+<p><img src="/Frames/Tokyo2025feb/touch.avif"></p>
 <p><img src="/Frames/Tokyo2025feb/sunset.avif" alt="_gallery &gt;"></p>
 <p><img src="/Frames/Tokyo2025feb/SunsetVelvia.avif" alt="_gallery &lt;"></p>
-<p><img src="/Frames/Tokyo2025feb/nightstreet.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/hakuju.avif" alt=""></p>
-<p><img src="/Frames/Tokyo2025feb/skytree.avif" alt=""></p>
+<p><img src="/Frames/Tokyo2025feb/nightstreet.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/hakuju.avif"></p>
+<p><img src="/Frames/Tokyo2025feb/skytree.avif"></p>
 
+  <% if (theme.giscus.enable){ %>
+    <hr>
+    <script src="https://giscus.app/client.js"
+    data-repo="NovaDNG/novadng.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU="
+    data-category="General"
+    data-category-id="DIC_kwDOFL94d84CmgFx"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="catppuccin_latte"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script>
+  <% } %>
   
-  <hr>
-  <div id="giscus"></div>
-
-  <script>
-    (function () {
-      var GISCUS_ORIGIN = 'https://giscus.app';
-      var THEMES = {
-        light: 'catppuccin_latte',
-        dark: 'transparent_dark'
-      };
-
-      function getPreferredThemeValue() {
-        try {
-          return localStorage.getItem('preferredTheme');
-        } catch (e) {
-          return null;
-        }
-      }
-
-      function isDarkMode() {
-        // 1) Current DOM state (may be applied very early or slightly later)
-        if (document.body && document.body.classList.contains('darkmode')) return true;
-
-        // 2) Persisted preference (your theme uses preferredTheme)
-        var v = getPreferredThemeValue();
-        if (v != null) {
-          v = String(v).toLowerCase();
-          if (v === 'dark' || v === '1' || v === 'true') return true;
-          if (v === 'light' || v === '0' || v === 'false') return false;
-        }
-
-        // 3) System preference fallback
-        return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-      }
-
-      function getGiscusTheme() {
-        return isDarkMode() ? THEMES.dark : THEMES.light;
-      }
-
-      function getIframe() {
-        return document.querySelector('iframe.giscus-frame');
-      }
-
-      function postSetTheme(theme) {
-        var iframe = getIframe();
-        if (!iframe || !iframe.contentWindow) return false;
-        iframe.contentWindow.postMessage(
-          { giscus: { setConfig: { theme: theme } } },
-          GISCUS_ORIGIN
-        );
-        return true;
-      }
-
-      function waitForIframe(maxMs) {
-        return new Promise(function (resolve) {
-          var start = performance.now();
-          (function tick() {
-            if (getIframe()) return resolve(true);
-            if (performance.now() - start > maxMs) return resolve(false);
-            requestAnimationFrame(tick);
-          })();
-        });
-      }
-
-      function loadGiscus() {
-        var container = document.getElementById('giscus');
-        if (!container) return;
-        if (container.getAttribute('data-loaded') === '1') return;
-        container.setAttribute('data-loaded', '1');
-
-        var cfg = {
-          repo: 'NovaDNG/novadng.github.io',
-          repoId: 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=',
-          category: 'General',
-          categoryId: 'DIC_kwDOFL94d84CmgFx',
-          mapping: 'pathname',
-          strict: '0',
-          reactionsEnabled: '1',
-          emitMetadata: '0',
-          inputPosition: 'top',
-          theme: getGiscusTheme(),
-          lang: 'en',
-          loading: 'lazy'
-        };
-
-        var s = document.createElement('script');
-        s.src = GISCUS_ORIGIN + '/client.js';
-        s.async = true;
-        s.crossOrigin = 'anonymous';
-
-        s.setAttribute('data-repo', cfg.repo);
-        s.setAttribute('data-repo-id', cfg.repoId);
-        s.setAttribute('data-category', cfg.category);
-        s.setAttribute('data-category-id', cfg.categoryId);
-        s.setAttribute('data-mapping', cfg.mapping);
-        s.setAttribute('data-strict', cfg.strict);
-        s.setAttribute('data-reactions-enabled', cfg.reactionsEnabled);
-        s.setAttribute('data-emit-metadata', cfg.emitMetadata);
-        s.setAttribute('data-input-position', cfg.inputPosition);
-        s.setAttribute('data-theme', cfg.theme);
-        s.setAttribute('data-lang', cfg.lang);
-        s.setAttribute('data-loading', cfg.loading);
-
-        container.appendChild(s);
-
-        // Once iframe exists, force-sync theme once (covers dark-on-first-load)
-        waitForIframe(6000).then(function () {
-          postSetTheme(getGiscusTheme());
-        });
-      }
-
-      // Boot
-      loadGiscus();
-
-      // React to theme toggles (your theme switch toggles `body.darkmode`)
-      var mo = new MutationObserver(function () {
-        postSetTheme(getGiscusTheme());
-      });
-      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-
-      // React to system theme changes (if user never set preferredTheme)
-      if (window.matchMedia) {
-        var mql = window.matchMedia('(prefers-color-scheme: dark)');
-        // Safari uses addListener
-        if (mql.addEventListener) {
-          mql.addEventListener('change', function () {
-            postSetTheme(getGiscusTheme());
-          });
-        } else if (mql.addListener) {
-          mql.addListener(function () {
-            postSetTheme(getGiscusTheme());
-          });
-        }
-      }
-    })();
-  </script>
-
           <footer id="site-footer" class="site-footer">
   <div id="footer" class="row mt-2">
   
