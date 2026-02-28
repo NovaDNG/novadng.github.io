@@ -341,14 +341,17 @@ body.darkmode #logoDark {
     }
 
     .container p:has(img[alt~="_gallery"]) {
-      /* Contain floated gallery images so following text won't wrap around them */
-      display: flow-root;
       width: 120%;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       margin-block: 0;
       font-size: 0;
+    }
+
+    /* Keep text after gallery from wrapping around floated images */
+    .container p:has(img[alt~="_gallery"]) + p:not(:has(img[alt~="_gallery"])) {
+      clear: both;
     }
 
     .container a:has(> img:not(.icon):not([alt~="_gallery"])) {
