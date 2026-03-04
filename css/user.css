@@ -1,0 +1,143 @@
+/* Restore browser/OS native scrollbars */
+* {
+  scrollbar-width: auto;  /* Firefox */
+  scrollbar-color: auto;  /* Firefox */
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb:active {
+  all: revert; /* Chromium/Safari: revert to UA defaults */
+}
+
+:root {
+  --tategaki-pane-height: min(64vh, 800px);
+  --tategaki-column-gap: clamp(2.4rem, 3vw, 4.2rem);
+  --tategaki-flow-gap: 1.8em;
+  --tategaki-text-size: 125%;
+  --tategaki-line-height: 2;
+}
+
+.tategaki-stage {
+  width: 84vw;
+  max-width: 84vw;
+  margin-left: calc(50% - 42vw);
+  margin-right: calc(50% - 42vw);
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.tategaki-scroll {
+  width: 100%;
+  height: var(--tategaki-pane-height);
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-gutter: stable both-edges;
+  padding-bottom: 1rem;
+}
+
+.tategaki-content {
+  font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", -apple-system, BlinkMacSystemFont, serif;
+  font-feature-settings: halt;
+  margin-right: 2rem;
+}
+
+.tategaki-content {
+  writing-mode: vertical-rl;
+/*  text-orientation: mixed; */
+  width: max-content;
+  height: 100%;
+  font-size: var(--tategaki-text-size);
+  line-height: var(--tategaki-line-height);
+}
+
+.tategaki-content > * {
+  margin: 0 0 0 var(--tategaki-flow-gap);
+}
+
+.tategaki-content :is(p, li, blockquote) {
+  word-break: auto-phrase;
+  text-wrap: pretty;
+}
+
+.tategaki-content .tcy {
+  text-combine-upright: all;
+  -webkit-text-combine: horizontal;
+  text-orientation: upright;
+}
+
+.tategaki-content :is(h1, h2, h3, h4, h5, h6) {
+  text-align: start;
+  line-height: 1.45;
+  margin: 0 0 0 calc(var(--tategaki-flow-gap) * 1.25);
+}
+
+.tategaki-content blockquote,
+.tategaki-content ul,
+.tategaki-content ol,
+.tategaki-content pre,
+.tategaki-content figure,
+.tategaki-content table,
+.tategaki-content iframe {
+  margin: 0 0 0 var(--tategaki-flow-gap);
+}
+
+.tategaki-content :is(code, pre, table, iframe) {
+  writing-mode: horizontal-tb;
+}
+
+.tategaki-content img {
+  max-height: 72vh;
+  width: auto;
+}
+
+.tategaki-content hr {
+  height: 100%;
+  width: 1px;
+  margin: 0 0 0 var(--tategaki-column-gap);
+}
+
+@media (max-width: 900px) {
+  .tategaki-stage {
+    min-height: auto;
+    margin: 1.6rem 0 2.8rem;
+  }
+
+  .tategaki-scroll {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .tategaki-content {
+    writing-mode: horizontal-tb;
+    width: 100%;
+    height: auto;
+    letter-spacing: normal;
+  }
+
+  .tategaki-content > * {
+    margin: 0 0 1.6rem;
+  }
+
+  .tategaki-content :is(h1, h2, h3, h4, h5, h6) {
+    margin: 0 0 1.8rem;
+  }
+
+  .tategaki-content img {
+    max-height: none;
+  }
+
+  .tategaki-content hr {
+    height: 1px;
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

@@ -4,7 +4,7 @@ code[class*="language-"] {
   color: #d4d4d4;
   font-size: 13px;
   text-shadow: none;
-  font-family: "Berkeley Mono", "IBM Plex Mono", "Fira Code", "Jetbrain Mono", "Cascadia Code", Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  font-family: "Berkeley Mono", "IBM Plex Mono", "Fira Code", "JetBrains Mono", "Cascadia Code", Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
   direction: ltr;
   text-align: left;
   white-space: pre-wrap;
@@ -278,7 +278,8 @@ pre[class*="language-"] > code[class*="language-"] {
   position: absolute;
   left: 0;
   right: 0;
-  padding: inherit 0;
+  padding-block: inherit; 
+  padding-inline: 0;
   margin-top: 1em;
   background: #f7ebc6;
   box-shadow: inset 5px 0 0 #f7d87c;

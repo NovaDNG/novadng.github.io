@@ -388,7 +388,7 @@ body.darkmode #logoDark {
   img:not([alt~="_gallery"]) {
     max-width: 66.67% !important;
     width: 66.67% !important;
-    transorm: none !important;
+    transform: none !important;
   }
 /* restore width
   .container img,
