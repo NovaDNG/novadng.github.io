@@ -153,7 +153,7 @@
   <div class="tategaki-scroll js-tategaki-scroll">
     <article class="tategaki-content">
       <p><a href="https://www.youtube.com/watch?v=CvA9yIerLKI">歌詞來源</a></p>
-<p>「人為何會做夢？」<br>「是因為手中擁有的東西還不夠麼？」<br>旅人默然不答，背對那無法重來的過去</p>
+<p>「人為何做夢？」<br>「是因為手中擁有的東西還不夠麼？」<br>旅人默然不答，背對那無法重來的過去</p>
 <p>幼時在白色的畫布上，無論畫下什麼都被允許<br>謊言自尊現實混合，這顏料什麼也無法繪出</p>
 <p>只有生命必然終結，這是被約定的唯一<ruby>真實<rt>證明</rt></ruby><br>「如果能用這首歌拯救世界的話」<br>癲狂般幸福之夢的，一塊碎片為我我殘留</p>
 <p>人無論何時皆孤獨，為排遣寂寞沉溺於愛<br>「難道妳就不寂寞麼？」<br>「我想知道生存的意義」</p>
@@ -167,11 +167,14 @@
 <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
-    var TCY_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
+    var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
+    var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
+    var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
     var TCY_BOUNDARY_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
 
     function canUseTcyToken(token) {
       if (!token) return false;
+      if (TCY_TIME_PATTERN.test(token)) return true; // time-like tokens (e.g. 2:26)
       if (!/[A-Za-zＡ-Ｚａ-ｚ]/.test(token)) return true; // pure digits
       if (/[0-9０-９]/.test(token)) return true; // mixed letter+digit
       if (/[A-ZＡ-Ｚ]/.test(token)) return true; // acronym-like tokens (e.g. MC)
@@ -198,8 +201,7 @@
         if (!parent || parent.nodeType !== 1) continue;
         if (parent.closest('script, style, code, pre, textarea, rt')) continue;
         if (parent.classList && parent.classList.contains('tcy')) continue;
-        TCY_PATTERN.lastIndex = 0;
-        if (!TCY_PATTERN.test(node.nodeValue)) continue;
+        if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
 
         textNodes.push(node);
       }
