@@ -167,14 +167,19 @@
 <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
-    var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
-    var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
+    var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
+    var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
     var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
+    var TCY_MATH_PATTERN = /^[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}$/;
     var TCY_BOUNDARY_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
+    var LATIN_PATTERN = /[A-Za-zＡ-Ｚａ-ｚ]/;
+    var CJK_PATTERN = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
+    var TCY_MAX_COMPRESS_RATIO = 2;
 
     function canUseTcyToken(token) {
       if (!token) return false;
       if (TCY_TIME_PATTERN.test(token)) return true; // time-like tokens (e.g. 2:26)
+      if (TCY_MATH_PATTERN.test(token)) return true; // symbol + digits (e.g. ±0)
       if (!/[A-Za-zＡ-Ｚａ-ｚ]/.test(token)) return true; // pure digits
       if (/[0-9０-９]/.test(token)) return true; // mixed letter+digit
       if (/[A-ZＡ-Ｚ]/.test(token)) return true; // acronym-like tokens (e.g. MC)
@@ -187,9 +192,73 @@
       return !TCY_BOUNDARY_PATTERN.test(prev) && !TCY_BOUNDARY_PATTERN.test(next);
     }
 
+    function isWesternOnlyText(text) {
+      if (!text) return false;
+      if (!LATIN_PATTERN.test(text)) return false;
+      return !CJK_PATTERN.test(text);
+    }
+
+    function isBracketWrappedLatinToken(text, start, end, token) {
+      if (!token || !/^[A-Za-zＡ-Ｚａ-ｚ]{2,4}$/.test(token)) return false;
+      var prev = start > 0 ? text.charAt(start - 1) : '';
+      var next = end < text.length ? text.charAt(end) : '';
+      var openBrackets = /[(（\[［{｛「『【〈《]/;
+      var closeBrackets = /[)）\]］}｝」』】〉》]/;
+      return openBrackets.test(prev) && closeBrackets.test(next);
+    }
+
+    function isPartOfWesternPhrase(text, start, end, token) {
+      if (!token || !LATIN_PATTERN.test(token)) return false;
+      var isSpace = function (ch) {
+        return ch === ' ' || ch === '\u3000' || /\s/.test(ch);
+      };
+
+      var i = start - 1;
+      while (i >= 0 && isSpace(text.charAt(i))) i--;
+      var prevNonSpace = i >= 0 ? text.charAt(i) : '';
+
+      var j = end;
+      while (j < text.length && isSpace(text.charAt(j))) j++;
+      var nextNonSpace = j < text.length ? text.charAt(j) : '';
+
+      return LATIN_PATTERN.test(prevNonSpace) || LATIN_PATTERN.test(nextNonSpace);
+    }
+
+    function shouldKeepNaturalWidth(token, contextEl, cache) {
+      if (!token) return false;
+      if (TCY_TIME_PATTERN.test(token)) return true;
+
+      if (cache && cache.has(token)) return cache.get(token);
+      if (!contextEl) return false;
+
+      var probe = document.createElement('span');
+      probe.textContent = token;
+      probe.style.position = 'absolute';
+      probe.style.visibility = 'hidden';
+      probe.style.pointerEvents = 'none';
+      probe.style.whiteSpace = 'nowrap';
+      probe.style.writingMode = 'horizontal-tb';
+      probe.style.textOrientation = 'mixed';
+      probe.style.font = 'inherit';
+      probe.style.letterSpacing = 'inherit';
+      probe.style.wordSpacing = 'inherit';
+      probe.style.lineHeight = '1';
+
+      contextEl.appendChild(probe);
+      var naturalWidth = probe.getBoundingClientRect().width;
+      probe.remove();
+
+      var fontSize = parseFloat(window.getComputedStyle(contextEl).fontSize) || 16;
+      var keepNatural = naturalWidth > fontSize * TCY_MAX_COMPRESS_RATIO;
+
+      if (cache) cache.set(token, keepNatural);
+      return keepNatural;
+    }
+
     function applyTcy(root) {
       if (!root || root.dataset.tcyEnhanced === '1') return;
       root.dataset.tcyEnhanced = '1';
+      var tokenDecisionCache = new Map();
 
       var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
       var textNodes = [];
@@ -201,6 +270,7 @@
         if (!parent || parent.nodeType !== 1) continue;
         if (parent.closest('script, style, code, pre, textarea, rt')) continue;
         if (parent.classList && parent.classList.contains('tcy')) continue;
+        if (isWesternOnlyText(node.nodeValue)) continue;
         if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
 
         textNodes.push(node);
@@ -218,9 +288,12 @@
           var token = match[0];
           var start = match.index;
           var end = start + token.length;
+          var forceTcy = isBracketWrappedLatinToken(text, start, end, token);
 
           if (!canUseTcyToken(token)) continue;
+          if (isPartOfWesternPhrase(text, start, end, token)) continue;
           if (!isTokenBoundary(text, start, end)) continue;
+          if (shouldKeepNaturalWidth(token, root, tokenDecisionCache)) continue;
 
           if (start > lastIndex) {
             fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
