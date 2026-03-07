@@ -157,7 +157,7 @@
 <p>桔梗色的天空廣闊延伸，「所失之物為何？」妳問道<br>窺視著黑曜石的地圖，莫名令人懷念，那景色</p>
 <p>白鳥飛舞的停車場中，孤身一人，真正的幸福該往何處尋找？<br>哀傷也好寂寞也好，喜悅也好溫柔也好<br>因為已經知曉而感到痛苦</p>
 <p>和妳一起的話，馳騁環遊世界也不無可能<br>向著龍膽花盛開的山丘那邊<br>將那天未能對妳言說的話語<br>當下，仍在尋找</p>
-<p>掬起水晶般沙礫,「妳想要的是什麼？」我問道<br>舉起沒有目的地的車票，向著幾萬年前的光芒</p>
+<p>掬起水晶般沙礫，「妳想要的是什麼？」我問道<br>舉起沒有目的地的車票，向著幾萬年前的光芒</p>
 <p>逞強地笑著，說著「沒關係」邊點頭<br>妳的身影朦朧</p>
 <p>在銀河的盡頭，天蠍之火迸發<br>為了真正的幸福，燃燒這身軀<br>想成為這照亮黑夜的紅色光芒</p>
 <p>「又一次，只剩下妳我二人了呢｣<br>「無論何處都一同前往吧｣<br>雙眼，睜開，那裡只有溫柔的夢<br>被遺留下</p>
@@ -169,6 +169,12 @@
   <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
     var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
 
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
@@ -323,6 +329,7 @@
         node.parentNode.replaceChild(fragment, node);
       });
     }
+    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
@@ -331,7 +338,7 @@
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
 
-      applyTcy(content);
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;

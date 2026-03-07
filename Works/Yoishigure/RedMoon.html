@@ -154,7 +154,7 @@
     <div class="tategaki-scroll js-tategaki-scroll">
       <article class="tategaki-content">
         <h2 id="紅月"><a href="#紅月" class="headerlink" title="紅月"></a>紅月</h2><p><a href="https://linkco.re/GnPQmAaD/songs/2005327/lyrics">歌詞來源</a></p>
-<p>冬日的深夜中<br>明月之影於五線譜上溢出<br>堆積如山的樂譜<br>鍵盤前的孤影<br>失常的調律<br>無法奏響的 <ruby>A<rt>La</rt></ruby> 音</p>
+<p>冬日的深夜中<br>明月之影於五線譜上溢出<br>堆積如山的樂譜<br>鍵盤前的孤影<br>失常的調律<br>無法奏響的<span class="tcy"><ruby>A<rt>La</rt></ruby></span>音</p>
 <p>妳的手彈奏的音樂<br>將世界塗上別樣色彩<br>這首歌又有何價值？<br>從伸出的指間逸出</p>
 <p>同這枯涸的心一道<br>曾渴望被愛<br>在無盡的旅途中<br>心願僅此唯一<br>仰望著赤色之月，輕語著</p>
 <p>夏日的回憶，在溫柔的日暮時分<br>隨口哼出的歌聲<br>妳我交握的手<br>歡樂地微笑的二人<br>欸？從何時起<br>就已徹底遺忘<br>以我聲音紡織而成這首歌<br>能否傳達到某處？<br>運轉的世界中 沒有答案<br>任憑暮色引導</p>
@@ -166,6 +166,12 @@
   <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
     var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
 
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
@@ -320,6 +326,7 @@
         node.parentNode.replaceChild(fragment, node);
       });
     }
+    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
@@ -328,7 +335,7 @@
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
 
-      applyTcy(content);
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;

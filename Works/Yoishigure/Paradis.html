@@ -159,7 +159,7 @@
 <p>飄雪的午後 伸出的手<br>在下沉的心跳之底 殘留的世界<br>與溫柔的雨一道 被沖刷流逝<br>唯獨妳已不在 我正深刻咀嚼</p>
 <p>將無論如何都不會消失的 珍貴的某物<br>就此遺忘 填補空白<br>將嶄新的日常 裝作無事發生<br>活下去，在弔唁的盡頭</p>
 <p>與妳共度的時光宛若飄雪<br>虛幻淡薄地融化 凝為露滴<br>｢就算我不在也沒關係了｣ 如此說著<br>將那月那星那花那雨那無波暮海<br>全部擁入懷中<br>放開雙手</p>
-<p>放開了手⋯⋯ Ah…</p>
+<p>放開了手⋯⋯ <span class="tcy">Ah</span>…</p>
 
       </article>
     </div>
@@ -167,6 +167,12 @@
   <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
     var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
 
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
@@ -321,6 +327,7 @@
         node.parentNode.replaceChild(fragment, node);
       });
     }
+    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
@@ -329,7 +336,7 @@
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
 
-      applyTcy(content);
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;

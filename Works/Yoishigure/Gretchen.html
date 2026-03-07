@@ -166,6 +166,12 @@
   <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
     var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
 
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
@@ -320,6 +326,7 @@
         node.parentNode.replaceChild(fragment, node);
       });
     }
+    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
@@ -328,7 +335,7 @@
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
 
-      applyTcy(content);
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;

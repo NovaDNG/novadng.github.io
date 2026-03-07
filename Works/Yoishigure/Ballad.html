@@ -157,7 +157,7 @@
 <p>這是為只留下「要活下去啊」<br>這種傲慢至極的詛咒便消逝的妳<br>接下來由我唱出的<br>讓妳蘇生的那首歌</p>
 <p>「妳的歌擁有動人心弦的力量」什麼的<br>別隨口說出這麼不負責任的話語<br>破碎的內心<br>拼命地蒐集碎片<br>滿身泥濘地怨恨妳<br>這種慟哭<br>怎麼可能是美麗的</p>
 <p>心依然在痛著<br>依然在抽搐著<br>反正這人生終將迎來死亡，即便如此<br>就算勉強裝出笑臉<br>也只會感到永遠的空虛<br>吶 仍然 依舊<br>還要繼續下去麼？<br>已經怎樣都無所謂了<br>早已破爛不堪了<br>不想重振旗鼓<br>只有「救救我」無論如何說不出口<br>調換真正的渴望<br>妳啊 妳為何<br>能那般活著呢</p>
-<p>「喜歡的東西」是什麼呢？<br>「想做的事情」是什麼呢？<br>能讓一端懸著21克的天平<br>平衡的東西又是什麼呢？</p>
+<p>「喜歡的東西」是什麼呢？<br>「想做的事情」是什麼呢？<br>能讓一端懸著<span class="tcy">21</span>克的天平<br>平衡的東西又是什麼呢？</p>
 <p>掏出的心臟 盤桓在耳邊<br>震動著鼓膜<br>奪走了呼吸<br>那抹殺妳的歌<br>我怎麼可能唱出</p>
 <p>心依然在痛著<br>依然在抽搐著<br>反正這人生終將迎來死亡，即便如此<br>就算心臟凍結<br>就算情感褪色<br>吶仍然 依舊<br>還要繼續下去麼？<br>沒有絲毫價值<br>沒有絲毫力量<br>若我的歌尚存任何意義<br>「請相信我」仍然無法說出口<br>取而代之的唯一一件事<br>就是將妳 留下的歌<br>的記憶 的感情 交織混合<br>反芻 直到喉嚨深處<br>將那執念與詛咒的話語<br>全部融合<br>直到這顆心不再跳動<br>直到再起不能的那天<br>直到最後<br>嗚呼</p>
 
@@ -167,6 +167,12 @@
   <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
     var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
 
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
@@ -321,6 +327,7 @@
         node.parentNode.replaceChild(fragment, node);
       });
     }
+    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
@@ -329,7 +336,7 @@
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
 
-      applyTcy(content);
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;
