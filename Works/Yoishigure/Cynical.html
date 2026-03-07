@@ -149,10 +149,11 @@
 <h2 class="mt-3">ヒネクレ真理学</h2>
 
 
-<section class="tategaki-stage">
-  <div class="tategaki-scroll js-tategaki-scroll">
-    <article class="tategaki-content">
-      <h2 id="扭曲作態真理學"><a href="#扭曲作態真理學" class="headerlink" title="扭曲作態真理學"></a>扭曲作態真理學</h2><p><a href="https://linkco.re/H9vQTpc7/songs/1542969/lyrics">歌詞來源</a></p>
+  
+  <section class="tategaki-stage">
+    <div class="tategaki-scroll js-tategaki-scroll">
+      <article class="tategaki-content">
+        <h2 id="扭曲作態真理學"><a href="#扭曲作態真理學" class="headerlink" title="扭曲作態真理學"></a>扭曲作態真理學</h2><p><a href="https://linkco.re/H9vQTpc7/songs/1542969/lyrics">歌詞來源</a></p>
 <p>只在結論對自己有利時相信的占卜，｢一生的請求｣ 也太多了吧？<br>好聽的話就像天上掉的陷阱，千載難逢的機遇在何處？</p>
 <p>被 ｢不能休息｣ 感染的世界，光靠努力已無法實現夢想<br>人的內在是最重要的，但外表總得有及格分吧？</p>
 <p>認真的人總是吃虧，總有人說被欺負的人難道就沒錯？<br>無論做什麼還是不做什麼，批判和抱怨總會雲集而來<br>裝作謙虛審慎，將虛偽的面具，一把剝下</p>
@@ -162,12 +163,14 @@
 <p>妳的世界我也想看看，重疊的後悔<ruby>Remind<rt>提醒</rt></ruby>… 著我<br>出生的那刻起全部已經註定，人生百年不過一瞬<br>強顏歡笑令人心痛，蜂擁而至的期待將靈魂堵塞<br>比起對神明大人祈禱不如踏出確實一步</p>
 <p>在不安中想死的今天，幾年後肯定會忘光光吧<br>既然這樣，如此這般，可以自由地活下去嗎？<br>妳的世界我也想看看，將摘出的話語<ruby>Loading<rt>載入</rt></ruby>…<br>相遇的時間地點全部是命運，希望什麼的無法看見<br>深入骨髓的惡意痛徹心扉，身邊盡是光說不做的傢伙<br>在神明大人的骰子，決定下命運之前<br>用我們的雙手來開拓無限的未來</p>
 
-    </article>
-  </div>
-</section>
-<script>
+      </article>
+    </div>
+  </section>
+  <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
     var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
     var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
@@ -197,15 +200,6 @@
       if (!text) return false;
       if (!LATIN_PATTERN.test(text)) return false;
       return !CJK_PATTERN.test(text);
-    }
-
-    function isBracketWrappedLatinToken(text, start, end, token) {
-      if (!token || !/^[A-Za-zＡ-Ｚａ-ｚ]{2,4}$/.test(token)) return false;
-      var prev = start > 0 ? text.charAt(start - 1) : '';
-      var next = end < text.length ? text.charAt(end) : '';
-      var openBrackets = /[(（\[［{｛「『【〈《]/;
-      var closeBrackets = /[)）\]］}｝」』】〉》]/;
-      return openBrackets.test(prev) && closeBrackets.test(next);
     }
 
     function isPartOfWesternPhrase(text, start, end, token) {
@@ -256,11 +250,7 @@
       return keepNatural;
     }
 
-    function applyTcy(root) {
-      if (!root || root.dataset.tcyEnhanced === '1') return;
-      root.dataset.tcyEnhanced = '1';
-      var tokenDecisionCache = new Map();
-
+    function collectCandidateTextNodes(root) {
       var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
       var textNodes = [];
 
@@ -269,7 +259,7 @@
         var parent = node.parentNode;
 
         if (!parent || parent.nodeType !== 1) continue;
-        if (parent.closest('script, style, code, pre, textarea, rt')) continue;
+        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
         if (parent.classList && parent.classList.contains('tcy')) continue;
         if (isWesternOnlyText(node.nodeValue)) continue;
         if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
@@ -277,44 +267,59 @@
         textNodes.push(node);
       }
 
+      return textNodes;
+    }
+
+    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var hasReplacement = false;
+      var match;
+
+      TCY_PATTERN.lastIndex = 0;
+
+      while ((match = TCY_PATTERN.exec(text)) !== null) {
+        var token = match[0];
+        var start = match.index;
+        var end = start + token.length;
+
+        if (!canUseTcyToken(token)) continue;
+        if (isPartOfWesternPhrase(text, start, end, token)) continue;
+        if (!isTokenBoundary(text, start, end)) continue;
+        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var span = document.createElement('span');
+        span.className = 'tcy';
+        span.textContent = token;
+        fragment.appendChild(span);
+
+        lastIndex = end;
+        hasReplacement = true;
+      }
+
+      if (!hasReplacement) return null;
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return fragment;
+    }
+
+    function applyTcy(root) {
+      if (!root || root.dataset.tcyEnhanced === '1') return;
+      root.dataset.tcyEnhanced = '1';
+
+      var tokenDecisionCache = new Map();
+      var textNodes = collectCandidateTextNodes(root);
+
       textNodes.forEach(function (node) {
-        var text = node.nodeValue;
-        var fragment = document.createDocumentFragment();
-        var lastIndex = 0;
-        TCY_PATTERN.lastIndex = 0;
-        var match;
-        var hasReplacement = false;
-
-        while ((match = TCY_PATTERN.exec(text)) !== null) {
-          var token = match[0];
-          var start = match.index;
-          var end = start + token.length;
-          var forceTcy = isBracketWrappedLatinToken(text, start, end, token);
-
-          if (!canUseTcyToken(token)) continue;
-          if (isPartOfWesternPhrase(text, start, end, token)) continue;
-          if (!isTokenBoundary(text, start, end)) continue;
-          if (shouldKeepNaturalWidth(token, root, tokenDecisionCache)) continue;
-
-          if (start > lastIndex) {
-            fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
-          }
-
-          var span = document.createElement('span');
-          span.className = 'tcy';
-          span.textContent = token;
-          fragment.appendChild(span);
-
-          lastIndex = end;
-          hasReplacement = true;
-        }
-
-        if (!hasReplacement) return;
-
-        if (lastIndex < text.length) {
-          fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
-        }
-
+        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
+        if (!fragment) return;
         node.parentNode.replaceChild(fragment, node);
       });
     }

@@ -1,7 +1,7 @@
 /* Restore browser/OS native scrollbars */
 * {
-  scrollbar-width: auto;  /* Firefox */
-  scrollbar-color: auto;  /* Firefox */
+  scrollbar-width: auto; /* Firefox */
+  scrollbar-color: auto; /* Firefox */
 }
 
 ::-webkit-scrollbar,
@@ -21,6 +21,7 @@
   --tategaki-line-height: 2;
 }
 
+/* Desktop: vertical layout + horizontal scrolling canvas */
 .tategaki-stage {
   width: 80vw;
   max-width: 80vw;
@@ -42,13 +43,11 @@
   padding-bottom: 1rem;
 }
 
+/* Desktop: tategaki article body */
 .tategaki-content {
   font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", -apple-system, BlinkMacSystemFont, serif;
   font-feature-settings: halt;
   margin-right: 2rem;
-}
-
-.tategaki-content {
   writing-mode: vertical-rl;
 /*  text-orientation: mixed; */
   width: max-content;
@@ -103,6 +102,7 @@
   margin: 0 0 0 var(--tategaki-column-gap);
 }
 
+/* Mobile fallback: return to normal horizontal flow */
 @media (max-width: 900px) {
   .tategaki-stage {
     min-height: auto;

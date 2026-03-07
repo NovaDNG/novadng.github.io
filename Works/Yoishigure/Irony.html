@@ -149,10 +149,11 @@
 <h2 class="mt-3">哀色あいろにい (feat. わかばやし)</h2>
 
 
-<section class="tategaki-stage">
-  <div class="tategaki-scroll js-tategaki-scroll">
-    <article class="tategaki-content">
-      <h2 id="哀藍反諷"><a href="#哀藍反諷" class="headerlink" title="哀藍反諷"></a>哀藍反諷</h2><p><a href="https://linkco.re/2zXfyn1g/songs/2466183/lyrics">歌詞來源</a></p>
+  
+  <section class="tategaki-stage">
+    <div class="tategaki-scroll js-tategaki-scroll">
+      <article class="tategaki-content">
+        <h2 id="哀藍反諷"><a href="#哀藍反諷" class="headerlink" title="哀藍反諷"></a>哀藍反諷</h2><p><a href="https://linkco.re/2zXfyn1g/songs/2466183/lyrics">歌詞來源</a></p>
 <p>否定，諷刺，化為藍色 始終自憐<br>欺騙自己才能活著</p>
 <p>被意外阻塞的希望･野心 妳一句話便給予我救贖<br>想要回報的愛･一寸 彆扭怪癖的妳那溫暖令人眷戀</p>
 <p>如亡羊補牢般 無法挽回的感傷<br>仰望星空時 誰都不想起 一定是幸福吧</p>
@@ -164,12 +165,14 @@
 <p>否定，諷刺，明明是愛 我卻始終感到寂寞<br>如想填補逸失的某物般呼吸<br>否定，諷刺，化為藍色 始終自憐<br>欺騙自己才能活著</p>
 <p>欺騙著 繼續欺騙<br>漫無目的彷徨著</p>
 
-    </article>
-  </div>
-</section>
-<script>
+      </article>
+    </div>
+  </section>
+  <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
     var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
     var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
@@ -199,15 +202,6 @@
       if (!text) return false;
       if (!LATIN_PATTERN.test(text)) return false;
       return !CJK_PATTERN.test(text);
-    }
-
-    function isBracketWrappedLatinToken(text, start, end, token) {
-      if (!token || !/^[A-Za-zＡ-Ｚａ-ｚ]{2,4}$/.test(token)) return false;
-      var prev = start > 0 ? text.charAt(start - 1) : '';
-      var next = end < text.length ? text.charAt(end) : '';
-      var openBrackets = /[(（\[［{｛「『【〈《]/;
-      var closeBrackets = /[)）\]］}｝」』】〉》]/;
-      return openBrackets.test(prev) && closeBrackets.test(next);
     }
 
     function isPartOfWesternPhrase(text, start, end, token) {
@@ -258,11 +252,7 @@
       return keepNatural;
     }
 
-    function applyTcy(root) {
-      if (!root || root.dataset.tcyEnhanced === '1') return;
-      root.dataset.tcyEnhanced = '1';
-      var tokenDecisionCache = new Map();
-
+    function collectCandidateTextNodes(root) {
       var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
       var textNodes = [];
 
@@ -271,7 +261,7 @@
         var parent = node.parentNode;
 
         if (!parent || parent.nodeType !== 1) continue;
-        if (parent.closest('script, style, code, pre, textarea, rt')) continue;
+        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
         if (parent.classList && parent.classList.contains('tcy')) continue;
         if (isWesternOnlyText(node.nodeValue)) continue;
         if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
@@ -279,44 +269,59 @@
         textNodes.push(node);
       }
 
+      return textNodes;
+    }
+
+    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var hasReplacement = false;
+      var match;
+
+      TCY_PATTERN.lastIndex = 0;
+
+      while ((match = TCY_PATTERN.exec(text)) !== null) {
+        var token = match[0];
+        var start = match.index;
+        var end = start + token.length;
+
+        if (!canUseTcyToken(token)) continue;
+        if (isPartOfWesternPhrase(text, start, end, token)) continue;
+        if (!isTokenBoundary(text, start, end)) continue;
+        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var span = document.createElement('span');
+        span.className = 'tcy';
+        span.textContent = token;
+        fragment.appendChild(span);
+
+        lastIndex = end;
+        hasReplacement = true;
+      }
+
+      if (!hasReplacement) return null;
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return fragment;
+    }
+
+    function applyTcy(root) {
+      if (!root || root.dataset.tcyEnhanced === '1') return;
+      root.dataset.tcyEnhanced = '1';
+
+      var tokenDecisionCache = new Map();
+      var textNodes = collectCandidateTextNodes(root);
+
       textNodes.forEach(function (node) {
-        var text = node.nodeValue;
-        var fragment = document.createDocumentFragment();
-        var lastIndex = 0;
-        TCY_PATTERN.lastIndex = 0;
-        var match;
-        var hasReplacement = false;
-
-        while ((match = TCY_PATTERN.exec(text)) !== null) {
-          var token = match[0];
-          var start = match.index;
-          var end = start + token.length;
-          var forceTcy = isBracketWrappedLatinToken(text, start, end, token);
-
-          if (!canUseTcyToken(token)) continue;
-          if (isPartOfWesternPhrase(text, start, end, token)) continue;
-          if (!isTokenBoundary(text, start, end)) continue;
-          if (shouldKeepNaturalWidth(token, root, tokenDecisionCache)) continue;
-
-          if (start > lastIndex) {
-            fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
-          }
-
-          var span = document.createElement('span');
-          span.className = 'tcy';
-          span.textContent = token;
-          fragment.appendChild(span);
-
-          lastIndex = end;
-          hasReplacement = true;
-        }
-
-        if (!hasReplacement) return;
-
-        if (lastIndex < text.length) {
-          fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
-        }
-
+        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
+        if (!fragment) return;
         node.parentNode.replaceChild(fragment, node);
       });
     }

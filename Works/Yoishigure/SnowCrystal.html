@@ -149,21 +149,24 @@
 <h2 class="mt-3">スノウ・クリスタル</h2>
 
 
-<section class="tategaki-stage">
-  <div class="tategaki-scroll js-tategaki-scroll">
-    <article class="tategaki-content">
-      <h2 id="雪之晶"><a href="#雪之晶" class="headerlink" title="雪之晶"></a>雪之晶</h2><p><a href="https://linkco.re/GnPQmAaD/songs/2005326/lyrics">歌詞來源</a></p>
+  
+  <section class="tategaki-stage">
+    <div class="tategaki-scroll js-tategaki-scroll">
+      <article class="tategaki-content">
+        <h2 id="雪之晶"><a href="#雪之晶" class="headerlink" title="雪之晶"></a>雪之晶</h2><p><a href="https://linkco.re/GnPQmAaD/songs/2005326/lyrics">歌詞來源</a></p>
 <p>將他者視作惡人<br>想將自己視作正確<br>每人重要之物各不相同<br>明明早應理解<br>懷抱何種夢想生存至今<br>我以外的人生<br>我毫不瞭解<br>只留下冬日樹叢般寂寥<br>保持著美麗</p>
 <p>為了不憎惡任何人<br>這記憶也好傷痕也好都僅屬於我<br>在言語完全消失前<br>數千本數萬冊<br><ruby>人生錄<rt>童話</rt></ruby><br>為了不再丟失它們</p>
 <p>無論多麼消磨心神<br>也有無法傳達的信念<br>即便如此也紡織不絕<br>只因這唯我不可<br>想要如此相信</p>
 <p>為了讓妳不至遺忘<br>即便年華流轉也不願改變的事物<br>在雪停歇前<br>數千本數萬冊<br><ruby>人生錄<rt>童話</rt></ruby><br>定將，妳看。在此世中<br>傳遍</p>
 
-    </article>
-  </div>
-</section>
-<script>
+      </article>
+    </div>
+  </section>
+  <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
     var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
     var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
@@ -193,15 +196,6 @@
       if (!text) return false;
       if (!LATIN_PATTERN.test(text)) return false;
       return !CJK_PATTERN.test(text);
-    }
-
-    function isBracketWrappedLatinToken(text, start, end, token) {
-      if (!token || !/^[A-Za-zＡ-Ｚａ-ｚ]{2,4}$/.test(token)) return false;
-      var prev = start > 0 ? text.charAt(start - 1) : '';
-      var next = end < text.length ? text.charAt(end) : '';
-      var openBrackets = /[(（\[［{｛「『【〈《]/;
-      var closeBrackets = /[)）\]］}｝」』】〉》]/;
-      return openBrackets.test(prev) && closeBrackets.test(next);
     }
 
     function isPartOfWesternPhrase(text, start, end, token) {
@@ -252,11 +246,7 @@
       return keepNatural;
     }
 
-    function applyTcy(root) {
-      if (!root || root.dataset.tcyEnhanced === '1') return;
-      root.dataset.tcyEnhanced = '1';
-      var tokenDecisionCache = new Map();
-
+    function collectCandidateTextNodes(root) {
       var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
       var textNodes = [];
 
@@ -265,7 +255,7 @@
         var parent = node.parentNode;
 
         if (!parent || parent.nodeType !== 1) continue;
-        if (parent.closest('script, style, code, pre, textarea, rt')) continue;
+        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
         if (parent.classList && parent.classList.contains('tcy')) continue;
         if (isWesternOnlyText(node.nodeValue)) continue;
         if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
@@ -273,44 +263,59 @@
         textNodes.push(node);
       }
 
+      return textNodes;
+    }
+
+    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var hasReplacement = false;
+      var match;
+
+      TCY_PATTERN.lastIndex = 0;
+
+      while ((match = TCY_PATTERN.exec(text)) !== null) {
+        var token = match[0];
+        var start = match.index;
+        var end = start + token.length;
+
+        if (!canUseTcyToken(token)) continue;
+        if (isPartOfWesternPhrase(text, start, end, token)) continue;
+        if (!isTokenBoundary(text, start, end)) continue;
+        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var span = document.createElement('span');
+        span.className = 'tcy';
+        span.textContent = token;
+        fragment.appendChild(span);
+
+        lastIndex = end;
+        hasReplacement = true;
+      }
+
+      if (!hasReplacement) return null;
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return fragment;
+    }
+
+    function applyTcy(root) {
+      if (!root || root.dataset.tcyEnhanced === '1') return;
+      root.dataset.tcyEnhanced = '1';
+
+      var tokenDecisionCache = new Map();
+      var textNodes = collectCandidateTextNodes(root);
+
       textNodes.forEach(function (node) {
-        var text = node.nodeValue;
-        var fragment = document.createDocumentFragment();
-        var lastIndex = 0;
-        TCY_PATTERN.lastIndex = 0;
-        var match;
-        var hasReplacement = false;
-
-        while ((match = TCY_PATTERN.exec(text)) !== null) {
-          var token = match[0];
-          var start = match.index;
-          var end = start + token.length;
-          var forceTcy = isBracketWrappedLatinToken(text, start, end, token);
-
-          if (!canUseTcyToken(token)) continue;
-          if (isPartOfWesternPhrase(text, start, end, token)) continue;
-          if (!isTokenBoundary(text, start, end)) continue;
-          if (shouldKeepNaturalWidth(token, root, tokenDecisionCache)) continue;
-
-          if (start > lastIndex) {
-            fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
-          }
-
-          var span = document.createElement('span');
-          span.className = 'tcy';
-          span.textContent = token;
-          fragment.appendChild(span);
-
-          lastIndex = end;
-          hasReplacement = true;
-        }
-
-        if (!hasReplacement) return;
-
-        if (lastIndex < text.length) {
-          fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
-        }
-
+        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
+        if (!fragment) return;
         node.parentNode.replaceChild(fragment, node);
       });
     }

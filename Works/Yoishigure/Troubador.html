@@ -149,10 +149,11 @@
 <h2 class="mt-3">Troubador (feat. 樹里)</h2>
 
 
-<section class="tategaki-stage">
-  <div class="tategaki-scroll js-tategaki-scroll">
-    <article class="tategaki-content">
-      <h2 id="吟遊詩人"><a href="#吟遊詩人" class="headerlink" title="吟遊詩人"></a>吟遊詩人</h2><p><a href="https://linkco.re/2zXfyn1g/songs/2466176/lyrics">歌詞來源</a></p>
+  
+  <section class="tategaki-stage">
+    <div class="tategaki-scroll js-tategaki-scroll">
+      <article class="tategaki-content">
+        <h2 id="吟遊詩人"><a href="#吟遊詩人" class="headerlink" title="吟遊詩人"></a>吟遊詩人</h2><p><a href="https://linkco.re/2zXfyn1g/songs/2466176/lyrics">歌詞來源</a></p>
 <p>於孤獨之路行進 無邪的背影<br>將汙穢而衰弱的 那人群分開<br>凡庸物色的世界之類<br>彷彿毫無興趣般</p>
 <p>｢一日將盡｣ 這樣的尊貴<br>為不至失落而告知妳<br>將憂愁迷茫與痛苦 一併汲取 一飲而盡</p>
 <p>妳懷抱的全部事物 哪怕一件也好 請讓我揹負<br>為保妳的高潔不被毀壞<br>以話語為名的誠實 以歌謠為名的思念<br>祈禱許願 這靈魂能得以休憩</p>
@@ -161,12 +162,14 @@
 <p>｢託付給妳了｣ 這句話 幾遍令妳痛苦<br>無翳雙眸所凝視的<ruby>未來<rt>前方</rt></ruby><br>一定是美麗的罷</p>
 <p>託付給妳的這份生命 總有一天會交給某人⋯⋯<br>懷抱的全部事物 哪怕一件也好 請讓我揹負<br>為保妳的高潔不被毀壞<br>以話語為名的誠實 以歌謠為名的思念<br>祈禱許願 這靈魂能得以休憩</p>
 
-    </article>
-  </div>
-</section>
-<script>
+      </article>
+    </div>
+  </section>
+  <script>
   (function () {
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+
     var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
     var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
     var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
@@ -196,15 +199,6 @@
       if (!text) return false;
       if (!LATIN_PATTERN.test(text)) return false;
       return !CJK_PATTERN.test(text);
-    }
-
-    function isBracketWrappedLatinToken(text, start, end, token) {
-      if (!token || !/^[A-Za-zＡ-Ｚａ-ｚ]{2,4}$/.test(token)) return false;
-      var prev = start > 0 ? text.charAt(start - 1) : '';
-      var next = end < text.length ? text.charAt(end) : '';
-      var openBrackets = /[(（\[［{｛「『【〈《]/;
-      var closeBrackets = /[)）\]］}｝」』】〉》]/;
-      return openBrackets.test(prev) && closeBrackets.test(next);
     }
 
     function isPartOfWesternPhrase(text, start, end, token) {
@@ -255,11 +249,7 @@
       return keepNatural;
     }
 
-    function applyTcy(root) {
-      if (!root || root.dataset.tcyEnhanced === '1') return;
-      root.dataset.tcyEnhanced = '1';
-      var tokenDecisionCache = new Map();
-
+    function collectCandidateTextNodes(root) {
       var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
       var textNodes = [];
 
@@ -268,7 +258,7 @@
         var parent = node.parentNode;
 
         if (!parent || parent.nodeType !== 1) continue;
-        if (parent.closest('script, style, code, pre, textarea, rt')) continue;
+        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
         if (parent.classList && parent.classList.contains('tcy')) continue;
         if (isWesternOnlyText(node.nodeValue)) continue;
         if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
@@ -276,44 +266,59 @@
         textNodes.push(node);
       }
 
+      return textNodes;
+    }
+
+    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var hasReplacement = false;
+      var match;
+
+      TCY_PATTERN.lastIndex = 0;
+
+      while ((match = TCY_PATTERN.exec(text)) !== null) {
+        var token = match[0];
+        var start = match.index;
+        var end = start + token.length;
+
+        if (!canUseTcyToken(token)) continue;
+        if (isPartOfWesternPhrase(text, start, end, token)) continue;
+        if (!isTokenBoundary(text, start, end)) continue;
+        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var span = document.createElement('span');
+        span.className = 'tcy';
+        span.textContent = token;
+        fragment.appendChild(span);
+
+        lastIndex = end;
+        hasReplacement = true;
+      }
+
+      if (!hasReplacement) return null;
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return fragment;
+    }
+
+    function applyTcy(root) {
+      if (!root || root.dataset.tcyEnhanced === '1') return;
+      root.dataset.tcyEnhanced = '1';
+
+      var tokenDecisionCache = new Map();
+      var textNodes = collectCandidateTextNodes(root);
+
       textNodes.forEach(function (node) {
-        var text = node.nodeValue;
-        var fragment = document.createDocumentFragment();
-        var lastIndex = 0;
-        TCY_PATTERN.lastIndex = 0;
-        var match;
-        var hasReplacement = false;
-
-        while ((match = TCY_PATTERN.exec(text)) !== null) {
-          var token = match[0];
-          var start = match.index;
-          var end = start + token.length;
-          var forceTcy = isBracketWrappedLatinToken(text, start, end, token);
-
-          if (!canUseTcyToken(token)) continue;
-          if (isPartOfWesternPhrase(text, start, end, token)) continue;
-          if (!isTokenBoundary(text, start, end)) continue;
-          if (shouldKeepNaturalWidth(token, root, tokenDecisionCache)) continue;
-
-          if (start > lastIndex) {
-            fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
-          }
-
-          var span = document.createElement('span');
-          span.className = 'tcy';
-          span.textContent = token;
-          fragment.appendChild(span);
-
-          lastIndex = end;
-          hasReplacement = true;
-        }
-
-        if (!hasReplacement) return;
-
-        if (lastIndex < text.length) {
-          fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
-        }
-
+        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
+        if (!fragment) return;
         node.parentNode.replaceChild(fragment, node);
       });
     }
