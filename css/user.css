@@ -103,6 +103,24 @@
   margin: 0 0 0 var(--tategaki-column-gap);
 }
 
+/* Vertical writing mode: animate link highlight along horizontal axis. */
+@media (min-width: 901px) {
+  .tategaki-content a:not(.icon) {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 50%,
+      var(--link-hover-accent, #e2001a) 50%
+    );
+    background-size: 200% 100%;
+    background-position: 100% 0;
+  }
+
+  .tategaki-content a:hover:not(.icon),
+  .tategaki-content a:focus:not(.icon) {
+    background-position: 0 0;
+  }
+}
+
 /* Mobile fallback: return to normal horizontal flow */
 @media (max-width: 900px) {
   .tategaki-stage {

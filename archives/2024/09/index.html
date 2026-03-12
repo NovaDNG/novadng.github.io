@@ -95,11 +95,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <style>
   a:not(.icon) {
-    text-decoration-color: #E2001A;
+    --link-hover-accent: #E2001A;
+    text-decoration-color: var(--link-hover-accent);
     background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 50%,
-      #E2001A 50%
+      var(--link-hover-accent) 50%
     );
   }
   blockquote {
@@ -133,6 +134,7 @@
     border: 1px solid #E2001A;
   }
 </style>
+
 
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="NovaDNG Studio" type="application/atom+xml">
 <link rel="alternate" href="/rss.xml" title="NovaDNG Studio" type="application/rss+xml">
