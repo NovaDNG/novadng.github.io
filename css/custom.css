@@ -436,3 +436,9 @@ img.noshadow {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Let only the parent link paint underline; avoid separate sub/sup runs. */
+a:not(.icon) sub,
+a:not(.icon) sup {
+  text-decoration-line: none;
+}
