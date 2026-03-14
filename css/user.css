@@ -45,7 +45,7 @@
 
 /* Desktop: tategaki article body */
 .tategaki-content {
-  font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", -apple-system, BlinkMacSystemFont, serif;
+  font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
   font-feature-settings: halt;
   text-autospace: normal;
   margin-right: 2rem;
