@@ -447,6 +447,7 @@ a:not(.icon) sup {
 .depth-breadcrumb {
   margin-top: 5rem;
   margin-bottom: 1.2rem;
+  font-family: "Berkeley Mono", "HYQiHei-50S", FZYouHei_GBK, "IBM Plex Sans SC", "Source Han Sans SC", -apple-system,  BlinkMacSystemFont, sans-serif;
 }
 
 .depth-breadcrumb__sep {
