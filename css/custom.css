@@ -442,3 +442,24 @@ a:not(.icon) sub,
 a:not(.icon) sup {
   text-decoration-line: none;
 }
+
+/* Breadcrumb */
+.depth-breadcrumb {
+  margin-top: 5rem;
+  margin-bottom: 1.2rem;
+}
+
+.depth-breadcrumb__sep {
+  margin: 0 0.55rem;
+  opacity: 0.67;
+  font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, monospace;
+  font-weight: 600;
+}
+
+.depth-breadcrumb__current {
+  opacity: 0.56;
+}
+
+body.darkmode .depth-breadcrumb {
+  color: rgba(178, 181, 184, 0.85);
+}
