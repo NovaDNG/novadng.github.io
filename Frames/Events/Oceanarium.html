@@ -13,7 +13,7 @@
   
   <title>Singapore Oceanarium - NovaDNG</title>
   
-  <link rel="canonical" href="https://novadng.studio/Frames/Oceanarium.html">
+  <link rel="canonical" href="https://novadng.studio/Frames/Events/Oceanarium.html">
   
   <meta name="description" content="">
   
@@ -28,7 +28,7 @@
   
   <meta property="og:description" content="">
   
-  <meta property="og:url" content="https://novadng.studio/Frames/Oceanarium.html" />
+  <meta property="og:url" content="https://novadng.studio/Frames/Events/Oceanarium.html" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Singapore Oceanarium - NovaDNG">
@@ -38,7 +38,7 @@
   
   <meta name="twitter:image" content="https://novadng.studioundefined">
   
-  <meta name="twitter:url" content="https://novadng.studio/Frames/Oceanarium.html" />
+  <meta name="twitter:url" content="https://novadng.studio/Frames/Events/Oceanarium.html" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -141,6 +141,7 @@
 </head>
 
 <body>
+  
   <div class="container">
     <div class="row">
       <div>
@@ -189,6 +190,11 @@
       
       
         <a href="/Frames">Frames</a>
+      
+    
+      <span class="depth-breadcrumb__sep">></span>
+      
+        <a href="/Frames/Events">Events &amp; Trips</a>
       
     
       <span class="depth-breadcrumb__sep">></span>
@@ -392,121 +398,6 @@
 
   </div>
 </footer>
-          
-            <div id="pheader" class="pheader">
-<div class="twelve columns">
-  <div class="row">
-    <div class="nine columns nav left">
-      <a href="/"  class="ml">Home</a>
-      
-        
-        <a href="/Works" class="ml">Works</a>
-        
-      
-        
-        <a href="/Frames" class="ml">Frames</a>
-        
-      
-        
-        <a href="/Commissions" class="ml">Commissions</a>
-        
-      
-        
-        <a href="/About" class="ml">About</a>
-        
-      
-        
-        <a href="/Now" class="ml">Now</a>
-        
-      
-        
-        <a href="/atom.xml" class="ml">RSS</a>
-        
-      
-      
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h3 class="mt-2 mb-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">✶</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
-      <script >
-  (function () {
-  var media = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function applyTheme(isDark) {
-    var darkBtn = document.getElementById('darkBtn');
-    var lightBtn = document.getElementById('lightBtn');
-
-    // Apply body class deterministically
-    document.body.classList.toggle('darkmode', isDark);
-
-    // Toggle button visibility using the existing `hidden` class
-    if (darkBtn && lightBtn) {
-      if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
-      } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
-      }
-    }
-  }
-
-  // Expose a stable setter for user clicks (pins preference)
-  window.setDarkMode = function (isDark) {
-    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
-    applyTheme(isDark);
-  };
-
-  function initTheme() {
-    var stored = localStorage.getItem('preferredTheme');
-    if (stored === 'dark') return applyTheme(true);
-    if (stored === 'light') return applyTheme(false);
-    // No stored preference: follow system
-    return applyTheme(media.matches);
-  }
-
-  // Live update when following system (no stored preference)
-  media.addEventListener('change', function (e) {
-    if (!localStorage.getItem('preferredTheme')) {
-      applyTheme(e.matches);
-    }
-  });
-
-  // Initial paint
-  initTheme();
-})();
-      </script>
-    </h3>
-  </div>
-
-  <div class="six columns ml-1">
-    <h3 class="mb-2">
-      NovaDNG Studio
-    </h3>
-  </div>
-
-</div>
-
-<div class="row mb-2">
-  <div class="twelve columns">
-    <img src="/images/pheader.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoLight"/>
-    <img src="/images/pheader_dark.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoDark"/>
-  </div>
-</div>
-</div>
           
         </div>
       </div>

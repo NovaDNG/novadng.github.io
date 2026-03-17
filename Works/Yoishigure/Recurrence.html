@@ -141,6 +141,7 @@
 </head>
 
 <body>
+  
   <div class="container">
     <div class="row">
       <div>
@@ -156,15 +157,15 @@
     <div class="tategaki-scroll js-tategaki-scroll">
       <article class="tategaki-content">
         <p><a href="https://linkco.re/M10snhNc/songs/2559937/lyrics">歌詞來源</a></p>
-<p>想再次與妳，共睹那溫柔朝霞<br>連結延續　無止盡地　直到天涯</p>
+<p>想再次與妳，共睹那溫柔朝霞<br>連結延續　無止盡地　無邊無際</p>
 <p>昨日與今日有何區別？<br>重疊的殘影中　隱約透著憂鬱的景色</p>
 <p>即便凝望一切這雙眸依舊笑春風<br>珍重事物與心境　卻已不知何處去</p>
 <p>增加一分　又失去一分<br>紡織名為「當下」的時光<br>想有朝一日再步上那道路<br>伴著妳那令人懷念的氣息</p>
-<p>仰望浮雲長空的此刻<br>這孤寂終將化作回憶<br>想再次與妳，共睹那溫柔朝霞<br>連結延續　無止盡地　直到天涯</p>
-<p>相逢總是緣分天定<br>目的地、時機、做出的選擇<br>若有些微差錯<br>或許妳的身影便不在我的歲月中描畫吧？</p>
+<p>仰望浮雲長空的此刻<br>這孤寂終將化作回憶<br>想再次與妳，共睹那溫柔朝霞<br>連結延續　無止盡地　無邊無際</p>
+<p>相逢總是緣分註定<br>目的地、時機、做出的選擇<br>若有些微偏差<br>妳的身影便不會畫進我的歲月吧？</p>
 <p>相識一人　又陌路一人<br>推進名為「當下」的時光<br>寶箱中填滿<br>視如拱璧與「妳」的約定</p>
 <p>佇立夕霧之中的此刻<br>這痛切從喉間湧過<br>正因「今日」不再重現<br>邁步前行　請不必畏懼</p>
-<p>仰望浮雲長空的此刻<br>這孤寂終將化作回憶<br>想再次與妳，共睹那溫柔明日<br>連結延續　無止盡地　直到天涯</p>
+<p>仰望浮雲長空的此刻<br>這孤寂終將化作回憶<br>想再次與妳，共睹那溫柔明日<br>連結延續　無止盡地　無邊無際</p>
 
       </article>
     </div>
@@ -625,121 +626,6 @@
 
   </div>
 </footer>
-          
-            <div id="pheader" class="pheader">
-<div class="twelve columns">
-  <div class="row">
-    <div class="nine columns nav left">
-      <a href="/"  class="ml">Home</a>
-      
-        
-        <a href="/Works" class="ml">Works</a>
-        
-      
-        
-        <a href="/Frames" class="ml">Frames</a>
-        
-      
-        
-        <a href="/Commissions" class="ml">Commissions</a>
-        
-      
-        
-        <a href="/About" class="ml">About</a>
-        
-      
-        
-        <a href="/Now" class="ml">Now</a>
-        
-      
-        
-        <a href="/atom.xml" class="ml">RSS</a>
-        
-      
-      
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h3 class="mt-2 mb-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">✶</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
-      <script >
-  (function () {
-  var media = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function applyTheme(isDark) {
-    var darkBtn = document.getElementById('darkBtn');
-    var lightBtn = document.getElementById('lightBtn');
-
-    // Apply body class deterministically
-    document.body.classList.toggle('darkmode', isDark);
-
-    // Toggle button visibility using the existing `hidden` class
-    if (darkBtn && lightBtn) {
-      if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
-      } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
-      }
-    }
-  }
-
-  // Expose a stable setter for user clicks (pins preference)
-  window.setDarkMode = function (isDark) {
-    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
-    applyTheme(isDark);
-  };
-
-  function initTheme() {
-    var stored = localStorage.getItem('preferredTheme');
-    if (stored === 'dark') return applyTheme(true);
-    if (stored === 'light') return applyTheme(false);
-    // No stored preference: follow system
-    return applyTheme(media.matches);
-  }
-
-  // Live update when following system (no stored preference)
-  media.addEventListener('change', function (e) {
-    if (!localStorage.getItem('preferredTheme')) {
-      applyTheme(e.matches);
-    }
-  });
-
-  // Initial paint
-  initTheme();
-})();
-      </script>
-    </h3>
-  </div>
-
-  <div class="six columns ml-1">
-    <h3 class="mb-2">
-      NovaDNG Studio
-    </h3>
-  </div>
-
-</div>
-
-<div class="row mb-2">
-  <div class="twelve columns">
-    <img src="/images/pheader.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoLight"/>
-    <img src="/images/pheader_dark.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoDark"/>
-  </div>
-</div>
-</div>
           
         </div>
       </div>

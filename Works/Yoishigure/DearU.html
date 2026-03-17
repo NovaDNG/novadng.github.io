@@ -141,6 +141,7 @@
 </head>
 
 <body>
+  
   <div class="container">
     <div class="row">
       <div>
@@ -156,12 +157,12 @@
     <div class="tategaki-scroll js-tategaki-scroll">
       <article class="tategaki-content">
         <h2 id="致妳"><a href="#致妳" class="headerlink" title="致妳"></a>致妳</h2><p><a href="https://linkco.re/Q76Xtn5y/songs/2426312/lyrics">歌詞來源</a></p>
-<p>漸趨消逝　漸趨淡薄<br>曾「珍重」的妳那殘影<br>這戀情無處憑依<br>唯有風化後悄然埋葬</p>
-<p>不經意佇立良久　暮色漸晚的天空<br>染上紫陽花的顏色　蔓延無邊<br>不經意想起　與妳共賞的這景色<br>那曾是　更溫和安詳的</p>
-<p>「即便沒有妳也能活下去」<br>當初斷然推開妳的人是我<br>再無交集的前路<br>我視而不見<br>妳想必也是如此吧？</p>
+<p>漸趨消逝　漸趨淡薄<br>曾「珍重」的妳那殘影<br>這戀情無所歸依<br>唯有風化後悄然埋葬</p>
+<p>驀然佇足　暮色不退的晚空<br>染上紫陽花的顏色　蔓延無邊<br>驀然想起　與妳共賞的這景色<br>那曾是　更溫和安詳的</p>
+<p>「即便沒有妳也能活下去」<br>當初斷然推開妳的人是我<br>再無交集的前路<br>我視而不見<br>妳也是吧？</p>
 <p>漸趨消逝　漸趨淡薄<br>曾「珍重」的妳那殘影<br>這戀情無處憑依　唯有風化後悄然埋葬<br>「不要離開」「請等等我」<br>將挽留的話語<br>在演職員名單的角落<br>悄悄寫下</p>
-<p>週而復始　沒有妳的一日<br>在那車站共同眺望的夕陽已盡<br>依然存於　心底最深處的<br>是那抹溫暖而幸福的色彩</p>
-<p>「只要和妳便能活下去」<br>那夜裡妳如是說　飲下淚水<br>縱然想牽起那雙手<br>也無法棄這夢想於不顧<br>也曾渴望普通的幸福⋯⋯</p>
+<p>週而復始　沒有妳的一日<br>不再於那車站共同眺望夕陽<br>依然存於　心底最深處的<br>是那溫暖微小的幸福色彩</p>
+<p>「只要和妳便能活下去」<br>那夜裡妳如是說　飲下淚水<br>縱然想牽起那雙手<br>也無法棄這夢想於不顧<br>也曾渴望平凡的幸福⋯⋯</p>
 <p>這就是最後時刻了<br>與「幸會」時相同季節<br>在這一切皆變化的世界<br>那段道路<br>那景色那氣味那天空那聲色那笑容全部<br>從這雙手中零落殆盡</p>
 <p>漸趨消逝　漸趨淡薄<br>曾「珍重」的妳那殘影<br>這戀情無處憑依　唯有風化後悄然埋葬<br>「不要離開」「請等等我」<br>將挽留的話語<br>在演職員名單開始前傳達給妳</p>
 <p>願妳，在夢中幸福</p>
@@ -625,121 +626,6 @@
 
   </div>
 </footer>
-          
-            <div id="pheader" class="pheader">
-<div class="twelve columns">
-  <div class="row">
-    <div class="nine columns nav left">
-      <a href="/"  class="ml">Home</a>
-      
-        
-        <a href="/Works" class="ml">Works</a>
-        
-      
-        
-        <a href="/Frames" class="ml">Frames</a>
-        
-      
-        
-        <a href="/Commissions" class="ml">Commissions</a>
-        
-      
-        
-        <a href="/About" class="ml">About</a>
-        
-      
-        
-        <a href="/Now" class="ml">Now</a>
-        
-      
-        
-        <a href="/atom.xml" class="ml">RSS</a>
-        
-      
-      
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h3 class="mt-2 mb-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">✶</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
-      <script >
-  (function () {
-  var media = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function applyTheme(isDark) {
-    var darkBtn = document.getElementById('darkBtn');
-    var lightBtn = document.getElementById('lightBtn');
-
-    // Apply body class deterministically
-    document.body.classList.toggle('darkmode', isDark);
-
-    // Toggle button visibility using the existing `hidden` class
-    if (darkBtn && lightBtn) {
-      if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
-      } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
-      }
-    }
-  }
-
-  // Expose a stable setter for user clicks (pins preference)
-  window.setDarkMode = function (isDark) {
-    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
-    applyTheme(isDark);
-  };
-
-  function initTheme() {
-    var stored = localStorage.getItem('preferredTheme');
-    if (stored === 'dark') return applyTheme(true);
-    if (stored === 'light') return applyTheme(false);
-    // No stored preference: follow system
-    return applyTheme(media.matches);
-  }
-
-  // Live update when following system (no stored preference)
-  media.addEventListener('change', function (e) {
-    if (!localStorage.getItem('preferredTheme')) {
-      applyTheme(e.matches);
-    }
-  });
-
-  // Initial paint
-  initTheme();
-})();
-      </script>
-    </h3>
-  </div>
-
-  <div class="six columns ml-1">
-    <h3 class="mb-2">
-      NovaDNG Studio
-    </h3>
-  </div>
-
-</div>
-
-<div class="row mb-2">
-  <div class="twelve columns">
-    <img src="/images/pheader.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoLight"/>
-    <img src="/images/pheader_dark.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoDark"/>
-  </div>
-</div>
-</div>
           
         </div>
       </div>

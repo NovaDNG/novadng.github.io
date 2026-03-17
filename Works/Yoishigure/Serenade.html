@@ -141,6 +141,7 @@
 </head>
 
 <body>
+  
   <div class="container">
     <div class="row">
       <div>
@@ -159,7 +160,7 @@
 <p>我降世的<ruby>啼哭<rt>聲音</rt></ruby>　是不被期望的開端<br>對月祈願的那些日子　原來全是錯誤</p>
 <p>在命定的<ruby>無限<rt>夢幻</rt></ruby>中　渴求的身影掠過視界<br>想知曉這雀躍心情的名字　緊緊依附妳所給予的幸福</p>
 <p>被紅線緊繫的妳　輕柔將手纏上我凍僵的指尖<br>面帶微笑依偎於我的身影<br>是令月亮也一見鍾情　與我相遇的光</p>
-<p>心底渴求的愛之<ruby>結晶<rt>碎片</rt></ruby>　遲早連同世界一起將我摧毀<br>「一起走吧」妳說著伸出手<br>將我這偽物　的眼淚輕柔拭去<br>牽起那雙手　去往天涯⋯⋯</p>
+<p>心底渴求的愛之<ruby>結晶<rt>碎片</rt></ruby>　遲早連同世界一起將我摧毀<br>「一起走吧」妳牽我離去<br>將我這偽物　的眼淚輕柔拭去<br>牽起那雙手　去往天涯⋯⋯</p>
 <p>年幼少女那扭曲的願望　「我想要，求求妳，愛我吧。」<br>為破舊人偶　飾以緞帶<br>決定了　妳就是我的王子殿下</p>
 <p><ruby>利底亞<rt>Lydia</rt></ruby>⋯⋯<ruby>萊莉亞<rt>Liria</rt></ruby>⋯⋯<ruby>米亞<rt>Mia</rt></ruby>⋯⋯<br><ruby>啊<rt>Uh</rt></ruby>⋯⋯</p>
 <p>被紅線操縱的妳　映入我瞳中總是輕柔微笑<br>在這扭曲的世界裡　我終究知曉了真相<br>妳渴求我　的理由</p>
@@ -638,121 +639,6 @@
 
   </div>
 </footer>
-          
-            <div id="pheader" class="pheader">
-<div class="twelve columns">
-  <div class="row">
-    <div class="nine columns nav left">
-      <a href="/"  class="ml">Home</a>
-      
-        
-        <a href="/Works" class="ml">Works</a>
-        
-      
-        
-        <a href="/Frames" class="ml">Frames</a>
-        
-      
-        
-        <a href="/Commissions" class="ml">Commissions</a>
-        
-      
-        
-        <a href="/About" class="ml">About</a>
-        
-      
-        
-        <a href="/Now" class="ml">Now</a>
-        
-      
-        
-        <a href="/atom.xml" class="ml">RSS</a>
-        
-      
-      
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h3 class="mt-2 mb-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">✶</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
-      <script >
-  (function () {
-  var media = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function applyTheme(isDark) {
-    var darkBtn = document.getElementById('darkBtn');
-    var lightBtn = document.getElementById('lightBtn');
-
-    // Apply body class deterministically
-    document.body.classList.toggle('darkmode', isDark);
-
-    // Toggle button visibility using the existing `hidden` class
-    if (darkBtn && lightBtn) {
-      if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
-      } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
-      }
-    }
-  }
-
-  // Expose a stable setter for user clicks (pins preference)
-  window.setDarkMode = function (isDark) {
-    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
-    applyTheme(isDark);
-  };
-
-  function initTheme() {
-    var stored = localStorage.getItem('preferredTheme');
-    if (stored === 'dark') return applyTheme(true);
-    if (stored === 'light') return applyTheme(false);
-    // No stored preference: follow system
-    return applyTheme(media.matches);
-  }
-
-  // Live update when following system (no stored preference)
-  media.addEventListener('change', function (e) {
-    if (!localStorage.getItem('preferredTheme')) {
-      applyTheme(e.matches);
-    }
-  });
-
-  // Initial paint
-  initTheme();
-})();
-      </script>
-    </h3>
-  </div>
-
-  <div class="six columns ml-1">
-    <h3 class="mb-2">
-      NovaDNG Studio
-    </h3>
-  </div>
-
-</div>
-
-<div class="row mb-2">
-  <div class="twelve columns">
-    <img src="/images/pheader.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoLight"/>
-    <img src="/images/pheader_dark.avif"
-         alt="Logo"
-         style="max-width: 128px; height: auto;"
-         class="noshadow"
-         id="logoDark"/>
-  </div>
-</div>
-</div>
           
         </div>
       </div>
