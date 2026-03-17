@@ -441,6 +441,28 @@ img.noshadow {
 a:not(.icon) sub,
 a:not(.icon) sup {
   text-decoration-line: none;
+  text-decoration: none;
+}
+
+/* If link text is enlarged inside a child element (e.g. [**text**](...)),
+   mirror the hover background on that child so the fill reaches the taller glyph box. */
+a:not(.icon) > strong,
+a:not(.icon) > b {
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-position 0.2s ease-out;
+}
+
+a:hover:not(.icon) > strong,
+a:hover:not(.icon) > b,
+a:focus:not(.icon) > strong,
+a:focus:not(.icon) > b {
+  background-position: inherit;
+  transition: all 0.28s ease-out;
 }
 
 /* Breadcrumb */

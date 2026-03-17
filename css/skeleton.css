@@ -334,7 +334,7 @@ a:hover:not(.icon),
 a:focus:not(.icon) {
     background-position: 0 100%;
     color: #e9e6e2;
-    transition: all 0.33s
+    transition: all 0.28s
         ease-out;
 }
 
