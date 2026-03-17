@@ -166,7 +166,8 @@ li p code {
     font-size: 85%;
 }
 
-body.darkmode li p code {
+body.darkmode li p code,
+html.darkmode body li p code {
     background-color: rgb(65, 65, 65);
 }
 
@@ -241,7 +242,8 @@ body {
     text-rendering: geometricPrecision;
 }
 
-body.darkmode {
+body.darkmode,
+html.darkmode body {
     background: rgb(25, 25, 26);
     color: rgb(151, 154, 156);
 }
@@ -293,11 +295,13 @@ body.darkmode {
 }
 
 /* dark mode */
-body.darkmode #logoLight {
+body.darkmode #logoLight,
+html.darkmode #logoLight {
     opacity: 0;
     pointer-events: none;
 }
-body.darkmode #logoDark {
+body.darkmode #logoDark,
+html.darkmode #logoDark {
     opacity: 1;
 }
 
@@ -483,6 +487,7 @@ a:focus:not(.icon) > b {
   opacity: 0.56;
 }
 
-body.darkmode .depth-breadcrumb {
+body.darkmode .depth-breadcrumb,
+html.darkmode .depth-breadcrumb {
   color: rgba(178, 181, 184, 0.85);
 }
