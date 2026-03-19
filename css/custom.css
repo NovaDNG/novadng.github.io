@@ -16,7 +16,7 @@
 }
 
 html {
-    overflow: auto;
+    overflow: overlay;
 } 
 
 img {

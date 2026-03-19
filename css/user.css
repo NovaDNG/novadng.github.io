@@ -130,7 +130,7 @@
 
   .tategaki-scroll {
     height: auto;
-    overflow: visible;
+    overflow: overlay;
     padding-bottom: 0;
   }
 
