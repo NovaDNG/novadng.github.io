@@ -221,20 +221,27 @@
 <p>歡笑的風捎來<br>夏日橙光</p>
 <p>延伸的航跡雲留下<br>往昔的景色<br>與令人懷念的音色<br>聽見了妳的聲音　與那份約定</p>
 <p>再一次說出<br>對照十次的答案<br>沙漏流逝　內心焦灼<br>邁步奔走</p>
-<p>歡笑的風捎來<br>清澈的夏之氣息　交織混合<br>舞動的　砂礫<br>彷彿觸手可及<br>恣意綻放的雲朵<br>朝那燃作橙色的季節<br>漸漸融化</p>
+<p>歡笑的風捎來<br>清澈的夏之氣息　交織混合<br>舞動的　砂礫<br>彷彿觸手可及<br>恣意綻放的雲朵<br>朝那燃作<a class="color-link" style="--link-color: #ee7800; --link-hover-accent:#ee7800" href="https://www.colordic.org/colorsample/2241">橙色</a>的季節<br>漸漸融化</p>
 <p>追逐著　當時描繪的自己<br>驀然回首已將其超越<br>那麼之後該往何處去<br>踩動踏板　輪轉如飛</p>
 <p>轉動幾百回　接著<br>千里之外　甚至更遠<br>映照著我們的彩繪玻璃<br>此番季節　循環不息</p>
-<p>縱身躍入冰涼川流<br>一如往昔<br>水面湧動　波光粼粼<br>正如我們<br>永不休止的流動<br>朝著橙色陽光<br>奔騰而去</p>
+<p>縱身躍入冰涼川流<br>一如往昔<br>水面湧動　波光粼粼<br>正如我們<br>永不休止的流動<br>朝著<a class="color-link" style="--link-color: #ee7800; --link-hover-accent:#ee7800" href="https://www.colordic.org/colorsample/2241">橙色</a>陽光<br>奔騰而去</p>
 <p>曾經攜手同行<br>如今被大人的壁障隔開<br>曾如汽水般迸發的日常<br>始終在玻璃杯中<br>朝著各自的花季<br>朝著各自的未來<br>連結</p>
 <p>歡笑的風捎來</p>
-<p>騰空而起　照亮夜空的煙火<br>瀰漫的香氣<br>舞動的光芒　升騰著<br>彷彿觸手可及<br>恣意綻放的色彩<br>朝那燃作橙色的季節<br>漸漸融化</p>
+<p>騰空而起　照亮夜空的煙火<br>瀰漫的香氣<br>舞動的光芒　升騰著<br>彷彿觸手可及<br>恣意綻放的色彩<br>朝那燃作<a class="color-link" style="--link-color: #ee7800; --link-hover-accent:#ee7800" href="https://www.colordic.org/colorsample/2241">橙色</a>的季節<br>漸漸融化</p>
 
       </article>
     </div>
   </section>
   <script>
   (function () {
+    // Mobile breakpoint used to disable desktop-only horizontal scrolling behavior.
     var mobileQuery = window.matchMedia('(max-width: 900px)');
+    // Detect ruby base text that contains Latin letters/digits and needs manual inter-script spacing.
+    var RUBY_LATIN_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
+
+    // -------------------------------------------------------------------------
+    // Legacy auto-TCY pipeline (kept for reference, currently disabled).
+    // -------------------------------------------------------------------------
     /*
      * Auto TCY detection (disabled by design).
      * Use manual markup in markdown instead:
@@ -401,6 +408,7 @@
       if (!el || el.dataset.tategakiBound === '1') return;
       el.dataset.tategakiBound = '1';
 
+      // Runtime state for one tategaki scroll container.
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
       var isProgrammaticScroll = false;
@@ -408,6 +416,46 @@
 
       // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
+      // -----------------------------------------------------------------------
+      // Ruby autospace compensation:
+      // Add a class on ruby nodes whose base text includes Latin/digits.
+      // CSS then applies a 0.125ic side gap to mimic inter-script spacing.
+      // -----------------------------------------------------------------------
+      applyRubyAutospace(content);
+
+      // Extract ruby base text (exclude rt/rp annotations).
+      function getRubyBaseText(rubyEl) {
+        var base = '';
+        var nodes = rubyEl.childNodes;
+
+        for (var i = 0; i < nodes.length; i++) {
+          var node = nodes[i];
+          if (node.nodeType === 1) {
+            var tag = node.tagName ? node.tagName.toUpperCase() : '';
+            if (tag === 'RT' || tag === 'RP') continue;
+          }
+          base += node.textContent || '';
+        }
+
+        return base;
+      }
+
+      // Idempotently tag ruby nodes that need manual inter-script gap.
+      function applyRubyAutospace(root) {
+        if (!root || root.dataset.rubyAutospaceEnhanced === '1') return;
+        root.dataset.rubyAutospaceEnhanced = '1';
+
+        var rubies = root.querySelectorAll('ruby');
+        for (var i = 0; i < rubies.length; i++) {
+          var ruby = rubies[i];
+          var base = getRubyBaseText(ruby).trim();
+          if (!base) continue;
+          if (!RUBY_LATIN_PATTERN.test(base)) continue;
+          ruby.classList.add('ruby-latin-gap');
+        }
+      }
+
+      // Set scrollLeft while suppressing "user interacted" detection.
       function setProgrammaticScrollLeft(next) {
         if (el.scrollLeft === next) return;
         isProgrammaticScroll = true;
@@ -417,6 +465,7 @@
         });
       }
 
+      // Keep vertical-rl content initially aligned to the rightmost column.
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;
 
@@ -426,11 +475,14 @@
         setProgrammaticScrollLeft(maxScrollLeft);
       }
 
+      // Store viewport position as offset from the right edge.
+      // This makes position restoration stable when content width changes.
       function captureRightOffset() {
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         pendingRightOffset = maxScrollLeft - el.scrollLeft;
       }
 
+      // Restore previous viewport position after details open/close reflow.
       function restoreFromRightOffset() {
         if (pendingRightOffset == null) return;
 
@@ -446,12 +498,16 @@
         setProgrammaticScrollLeft(next);
       }
 
+      // Any non-programmatic scroll means user has taken control;
+      // stop future auto realignment.
       el.addEventListener('scroll', function () {
         if (isProgrammaticScroll) return;
         userInteracted = true;
       }, { passive: true });
 
       if (content) {
+        // Intercept summary click to avoid native toggle jitter.
+        // We toggle details manually and immediately restore scroll position.
         content.addEventListener('click', function (event) {
           var target = event.target;
           if (!target || !target.closest) return;
@@ -469,6 +525,8 @@
           restoreFromRightOffset();
         }, true);
 
+        // Keep keyboard accessibility behavior (Enter/Space on summary)
+        // while preserving the same anti-jitter scroll restoration.
         content.addEventListener('keydown', function (event) {
           var target = event.target;
           if (!target || !target.closest) return;
@@ -487,6 +545,7 @@
         }, true);
       }
 
+      // Map vertical wheel gesture to horizontal movement in desktop tategaki view.
       el.addEventListener('wheel', function (event) {
         if (mobileQuery.matches) return;
         if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
@@ -502,17 +561,19 @@
         el.scrollLeft = next;
       }, { passive: false });
 
+      // Shared initializer used by first paint and viewport mode changes.
       function initializeViewport() {
         scrollToRightEdge();
       }
 
-      // Ensure vertical-rl content starts from the rightmost column.
+      // Multi-pass initialization for stable first paint alignment.
       initializeViewport();
       requestAnimationFrame(initializeViewport);
       requestAnimationFrame(function () {
         requestAnimationFrame(initializeViewport);
       });
 
+      // Re-run initialization only on viewport-level changes.
       window.addEventListener('load', initializeViewport, { once: true });
       window.addEventListener('resize', initializeViewport);
       // Intentionally avoid observing content size changes.
@@ -525,6 +586,7 @@
       }
     }
 
+    // Bind all tategaki scrollers rendered on the page.
     document.querySelectorAll('.js-tategaki-scroll').forEach(bindWheelToHorizontalScroll);
   })();
 </script>

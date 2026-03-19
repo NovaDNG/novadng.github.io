@@ -21,6 +21,28 @@
   --tategaki-line-height: 2;
 }
 
+/* color link */
+a.color-link:not(.icon) {
+  color: var(--link-color, currentColor);
+  text-decoration: none;
+  font-weight: bolder;
+  transition: background-position 0.2s ease-out;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 50%,
+    var(--link-hover-accent, #e2001a) 50%
+  );
+  background-size: 100% 200%;
+  background-position: 0 0;
+}
+
+a.color-link:hover:not(.icon),
+a.color-link:focus:not(.icon) {
+  background-position: 0 100%;
+  color: #E9E6E2;
+  transition: all 0.2s ease-out;
+}
+
 /* Desktop: vertical layout + horizontal scrolling canvas */
 .tategaki-stage {
   width: 80vw;
@@ -72,6 +94,7 @@
   text-combine-upright: all;
   -webkit-text-combine: horizontal;
   text-orientation: upright;
+  margin-inline: 0.125ic;
 }
 
 .tategaki-content :is(h1, h2, h3, h4, h5, h6) {
@@ -107,6 +130,10 @@
 
 /* Vertical writing mode: animate link highlight along horizontal axis. */
 @media (min-width: 901px) {
+  .tategaki-content ruby.ruby-latin-gap {
+    padding-inline: 0.125ic;
+  }
+
   .tategaki-content a:not(.icon) {
     background-image: linear-gradient(
       to left,
@@ -151,6 +178,7 @@
   .tategaki-content {
     writing-mode: horizontal-tb;
     width: 96%;
+    text-autospace: normal;
     height: auto;
     letter-spacing: normal;
     margin-left: 0;

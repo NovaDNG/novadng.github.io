@@ -466,7 +466,7 @@ a:hover:not(.icon) > b,
 a:focus:not(.icon) > strong,
 a:focus:not(.icon) > b {
   background-position: inherit;
-  transition: all 0.28s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 /* Breadcrumb */
