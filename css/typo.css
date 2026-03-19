@@ -34,7 +34,7 @@ blockquote {
     font-variant-numeric: oldstyle-nums;
     background-color: rgba(148, 148, 149, 0.08);
     margin: -0.5em 0px 1em 0px;
-    padding: 1.1em 20px 1px 20px;
+    padding: 1em 20px 1px 20px;
 }
 
 blockquote footer {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 
 <head>
 
@@ -218,6 +218,13 @@
     <div class="tategaki-scroll js-tategaki-scroll">
       <article class="tategaki-content">
         <h2 id="紫丁香飾章"><a href="#紫丁香飾章" class="headerlink" title="紫丁香飾章"></a>紫丁香飾章</h2><p><a href="https://www.youtube.com/watch?v=gYckk3duxw8">歌詞來源</a></p>
+<p>曾說「明日也要一起活著」<br>彼此立誓　那遙遠天邊的夢</p>
+<p>幸福背後總有誰的淚水<br>將其舀起　飲盡那不幸<br>不得回報的心意與愛與溫柔<br>妳與我僅一線之隔</p>
+<p>回憶總顯得溫暖<br>現實卻總令人窒息<br>唯有妳身旁才是歸處</p>
+<p>曾說「明日也要一起活著」<br>彼此立誓　那遙遠天边的夢<br>帶來幸福的五瓣白花<br>吞下它的人　是妳</p>
+<p>永遠無法相連的<a href="https://irocore.com/aomurasaki/">青紫色</a><ruby>Lilac<rt>紫丁香</rt></ruby><br>那凜然堅毅綻放的花香<br>卻无人能承托那美麗之蓝<br>究竟是什麼將妳我的命運分開？</p>
+<p>一個人是如此寂寞　拜託了　誰來關注我<br>沒有勇氣示弱　那向我伸來的手　又是誰的？</p>
+<p>曾說「明日也要一起活著」<br>彼此立下泡影般的夢<br>每一朵花　都在與孤獨戰鬥<br>請繼續注視這朵花　愛它吧……</p>
 
       </article>
     </div>
@@ -393,8 +400,19 @@
 
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
+      var isProgrammaticScroll = false;
+      var pendingRightOffset = null;
 
       // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
+
+      function setProgrammaticScrollLeft(next) {
+        if (el.scrollLeft === next) return;
+        isProgrammaticScroll = true;
+        el.scrollLeft = next;
+        requestAnimationFrame(function () {
+          isProgrammaticScroll = false;
+        });
+      }
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;
@@ -402,16 +420,69 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        el.scrollLeft = maxScrollLeft;
+        setProgrammaticScrollLeft(maxScrollLeft);
       }
 
-      el.addEventListener('mousedown', function () {
+      function captureRightOffset() {
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        pendingRightOffset = maxScrollLeft - el.scrollLeft;
+      }
+
+      function restoreFromRightOffset() {
+        if (pendingRightOffset == null) return;
+
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        if (maxScrollLeft <= 0) {
+          pendingRightOffset = null;
+          return;
+        }
+
+        var next = maxScrollLeft - pendingRightOffset;
+        next = Math.max(0, Math.min(maxScrollLeft, next));
+        pendingRightOffset = null;
+        setProgrammaticScrollLeft(next);
+      }
+
+      el.addEventListener('scroll', function () {
+        if (isProgrammaticScroll) return;
         userInteracted = true;
       }, { passive: true });
 
-      el.addEventListener('touchstart', function () {
-        userInteracted = true;
-      }, { passive: true });
+      if (content) {
+        content.addEventListener('click', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          var details = summary.closest('details');
+          if (!details) return;
+
+          // Prevent native toggle so we can restore scroll position in the same task.
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+
+          details.open = !details.open;
+          restoreFromRightOffset();
+        }, true);
+
+        content.addEventListener('keydown', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+
+          var details = summary.closest('details');
+          if (!details) return;
+
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+          details.open = !details.open;
+          restoreFromRightOffset();
+        }, true);
+      }
 
       el.addEventListener('wheel', function (event) {
         if (mobileQuery.matches) return;
@@ -440,14 +511,9 @@
       });
 
       window.addEventListener('load', initializeViewport, { once: true });
-
-      if (window.ResizeObserver) {
-        var ro = new ResizeObserver(function () {
-          initializeViewport();
-        });
-        ro.observe(el);
-        if (content) ro.observe(content);
-      }
+      window.addEventListener('resize', initializeViewport);
+      // Intentionally avoid observing content size changes.
+      // Expanding/collapsing <details> changes content width and should not force re-alignment.
 
       if (mobileQuery.addEventListener) {
         mobileQuery.addEventListener('change', initializeViewport);

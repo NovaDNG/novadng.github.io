@@ -117,7 +117,7 @@ samp {
  * all browsers.
  */
 
-sub,
+/* sub,
 sup {
   font-size: 75%;
   line-height: 0;
@@ -125,7 +125,7 @@ sup {
   vertical-align: baseline;
   font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
-}
+} */
 
 sub {
   bottom: -0.25em;

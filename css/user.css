@@ -39,6 +39,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
+  overflow-anchor: none;
   scrollbar-gutter: stable both-edges;
   padding-bottom: 1rem;
 }
@@ -48,6 +49,7 @@
   font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
   font-feature-settings: halt;
   text-autospace: normal;
+  margin-left: auto;
   margin-right: 2rem;
   writing-mode: vertical-rl;
 /*  text-orientation: mixed; */
@@ -119,6 +121,18 @@
   .tategaki-content a:focus:not(.icon) {
     background-position: 0 0;
   }
+
+  .tategaki-content blockquote {
+    border-left: 0;
+    border-top: 8px solid var(--link-hover-accent, #e2001a);
+    padding: 1em 1em 1em 0.87em;
+    margin: 0 0 0 1em;
+  }
+
+  .tategaki-content blockquote > p {
+    margin-block: 0;
+    margin-inline: 0;
+  }
 }
 
 /* Mobile fallback: return to normal horizontal flow */
@@ -136,9 +150,10 @@
 
   .tategaki-content {
     writing-mode: horizontal-tb;
-    width: 100%;
+    width: 96%;
     height: auto;
     letter-spacing: normal;
+    margin-left: 0;
   }
 
   .tategaki-content > * {

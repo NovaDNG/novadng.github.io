@@ -212,7 +212,6 @@ body {
         "HYQiHei-50S",
         FZYouHei_GBK,
         "IBM Plex Sans SC",
-        "Ten Mincho Antique",
         "Source Han Sans SC",
         -apple-system,
         BlinkMacSystemFont,
@@ -227,6 +226,7 @@ body {
     font-variant-numeric: oldstyle-nums;
     color: #4c4c4f;
 }
+body:lang(ja) {font-family: "Ten Mincho Antique", "Hiragino Serif", "Ten Mincho Text","Source Han Sans VF" sans-serif; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -334,7 +334,7 @@ a:hover:not(.icon),
 a:focus:not(.icon) {
     background-position: 0 100%;
     color: #e9e6e2;
-    transition: all 0.28s
+    transition: all 0.2s
         ease-out;
 }
 

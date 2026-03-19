@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 
 <head>
 
@@ -217,8 +217,23 @@
   <section class="tategaki-stage">
     <div class="tategaki-scroll js-tategaki-scroll">
       <article class="tategaki-content">
-        <h2 id="片尾字幕"><a href="#片尾字幕" class="headerlink" title="片尾字幕"></a>片尾字幕</h2><p>夕暮れ 帳越しのフロア<br>終幕 告げる音が消えてく<br>心躍る 昭和もうおしまい<br>去りゆく人 切なさが胸を閉める<br>どんな時間も いつか終わりが来るからきっと<br>寂しい愛おしいって思えるの?<br>今を 今日を もっと先の私が<br>ふっと 幸せだったねって笑えるように生きたい<br>きっと どんなに好きがたてもずっと<br>変わらないものがあるよね<br>アルバムに挟んでしおりみたいに<br>君の記憶を 彩ってますように<br>誰も いなくなったステージ<br>にぎやかな あの時間が夢のよう<br>思い出を 大切にする君に<br>預けたい この幸福な記憶を<br>気づけば 大人になって<br>あっという間に歳をとって<br>そばにいる人 移ろってゆくけれど<br>ほんのひとときだって<br>私の旅路に 君がいてくれてよかった<br>あって そっと 伝えたい<br>私の旅路に 彼女に 彼女に 彼女に 彼女に<br>正しい 写真を 彼女に 彼女に 彼女に 彼女に 彼女に 彼女に прог<br>残りは刺激と<br>穏やかな夢で<br>優しい思い出<br>懐かしい記憶の中で<br>きっとどんなに月日が経っても<br>ずっと変わらないものがあるんだって<br>アルバムに挟んだ絞りみたいに<br>君のチョークを彩れますように</p>
+        <h2 id="片尾字幕"><a href="#片尾字幕" class="headerlink" title="片尾字幕"></a>片尾字幕</h2><blockquote>
+<p>感謝樹里小姐提供歌詞</p>
+</blockquote>
+<details>
+    <summary><span class="tcy">JP</span></summary>
+夕暮れ 帷越しの客席〔フロアー〕
+終幕 告げる音が消えてく
+心躍る 演目〔ショー〕はもうおしまい
+去り行く人 切なさが胸を締める
 
+<p>どんな時間もいつか<br>終わりが来るからきっと<br>寂しい、愛おしいって思えるの？<br>“今”を“今日”を もっと未来〔さき〕の私がふっと<br>「幸せだったね」って笑えるように生きたい</p>
+<p>きっと どんなに月日が経っても<br>ずっと 変わらないものがあるよね<br>アルバムに挟んだ栞みたいに<br>君の記憶を彩れますように</p>
+<p>誰も いなくなった舞台〔ステージ〕<br>賑やかな あの時間が夢のよう<br>思い出を 大切にする君に<br>預けたい この幸福な記憶を</p>
+<p>気づけば大人になって<br>あっという間に歳を取って<br>側にいる人移ろっていくけれど<br>ほんのひと時だって 私の旅路に<br>「君がいてくれてよかった」って そっと伝えたい</p>
+<p>名残惜しいけど…<br>鮮やかな夢で…<br>優しい思い出…<br>懐かしい記憶の中で…</p>
+<p>きっと どんなに月日が経っても<br>ずっと 変わらないものがあるんだって<br>アルバムに挟んだ栞みたいに<br>君の記憶を彩れますように</p>
+</summary>
       </article>
     </div>
   </section>
@@ -393,8 +408,19 @@
 
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
+      var isProgrammaticScroll = false;
+      var pendingRightOffset = null;
 
       // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
+
+      function setProgrammaticScrollLeft(next) {
+        if (el.scrollLeft === next) return;
+        isProgrammaticScroll = true;
+        el.scrollLeft = next;
+        requestAnimationFrame(function () {
+          isProgrammaticScroll = false;
+        });
+      }
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;
@@ -402,16 +428,69 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        el.scrollLeft = maxScrollLeft;
+        setProgrammaticScrollLeft(maxScrollLeft);
       }
 
-      el.addEventListener('mousedown', function () {
+      function captureRightOffset() {
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        pendingRightOffset = maxScrollLeft - el.scrollLeft;
+      }
+
+      function restoreFromRightOffset() {
+        if (pendingRightOffset == null) return;
+
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        if (maxScrollLeft <= 0) {
+          pendingRightOffset = null;
+          return;
+        }
+
+        var next = maxScrollLeft - pendingRightOffset;
+        next = Math.max(0, Math.min(maxScrollLeft, next));
+        pendingRightOffset = null;
+        setProgrammaticScrollLeft(next);
+      }
+
+      el.addEventListener('scroll', function () {
+        if (isProgrammaticScroll) return;
         userInteracted = true;
       }, { passive: true });
 
-      el.addEventListener('touchstart', function () {
-        userInteracted = true;
-      }, { passive: true });
+      if (content) {
+        content.addEventListener('click', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          var details = summary.closest('details');
+          if (!details) return;
+
+          // Prevent native toggle so we can restore scroll position in the same task.
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+
+          details.open = !details.open;
+          restoreFromRightOffset();
+        }, true);
+
+        content.addEventListener('keydown', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+
+          var details = summary.closest('details');
+          if (!details) return;
+
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+          details.open = !details.open;
+          restoreFromRightOffset();
+        }, true);
+      }
 
       el.addEventListener('wheel', function (event) {
         if (mobileQuery.matches) return;
@@ -440,14 +519,9 @@
       });
 
       window.addEventListener('load', initializeViewport, { once: true });
-
-      if (window.ResizeObserver) {
-        var ro = new ResizeObserver(function () {
-          initializeViewport();
-        });
-        ro.observe(el);
-        if (content) ro.observe(content);
-      }
+      window.addEventListener('resize', initializeViewport);
+      // Intentionally avoid observing content size changes.
+      // Expanding/collapsing <details> changes content width and should not force re-alignment.
 
       if (mobileQuery.addEventListener) {
         mobileQuery.addEventListener('change', initializeViewport);

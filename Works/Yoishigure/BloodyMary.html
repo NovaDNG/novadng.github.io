@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 
 <head>
 
@@ -421,8 +421,19 @@
 
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
+      var isProgrammaticScroll = false;
+      var pendingRightOffset = null;
 
       // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
+
+      function setProgrammaticScrollLeft(next) {
+        if (el.scrollLeft === next) return;
+        isProgrammaticScroll = true;
+        el.scrollLeft = next;
+        requestAnimationFrame(function () {
+          isProgrammaticScroll = false;
+        });
+      }
 
       function scrollToRightEdge() {
         if (mobileQuery.matches || userInteracted) return;
@@ -430,16 +441,69 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        el.scrollLeft = maxScrollLeft;
+        setProgrammaticScrollLeft(maxScrollLeft);
       }
 
-      el.addEventListener('mousedown', function () {
+      function captureRightOffset() {
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        pendingRightOffset = maxScrollLeft - el.scrollLeft;
+      }
+
+      function restoreFromRightOffset() {
+        if (pendingRightOffset == null) return;
+
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        if (maxScrollLeft <= 0) {
+          pendingRightOffset = null;
+          return;
+        }
+
+        var next = maxScrollLeft - pendingRightOffset;
+        next = Math.max(0, Math.min(maxScrollLeft, next));
+        pendingRightOffset = null;
+        setProgrammaticScrollLeft(next);
+      }
+
+      el.addEventListener('scroll', function () {
+        if (isProgrammaticScroll) return;
         userInteracted = true;
       }, { passive: true });
 
-      el.addEventListener('touchstart', function () {
-        userInteracted = true;
-      }, { passive: true });
+      if (content) {
+        content.addEventListener('click', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          var details = summary.closest('details');
+          if (!details) return;
+
+          // Prevent native toggle so we can restore scroll position in the same task.
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+
+          details.open = !details.open;
+          restoreFromRightOffset();
+        }, true);
+
+        content.addEventListener('keydown', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+
+          var details = summary.closest('details');
+          if (!details) return;
+
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+          details.open = !details.open;
+          restoreFromRightOffset();
+        }, true);
+      }
 
       el.addEventListener('wheel', function (event) {
         if (mobileQuery.matches) return;
@@ -468,14 +532,9 @@
       });
 
       window.addEventListener('load', initializeViewport, { once: true });
-
-      if (window.ResizeObserver) {
-        var ro = new ResizeObserver(function () {
-          initializeViewport();
-        });
-        ro.observe(el);
-        if (content) ro.observe(content);
-      }
+      window.addEventListener('resize', initializeViewport);
+      // Intentionally avoid observing content size changes.
+      // Expanding/collapsing <details> changes content width and should not force re-alignment.
 
       if (mobileQuery.addEventListener) {
         mobileQuery.addEventListener('change', initializeViewport);
