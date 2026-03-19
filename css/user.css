@@ -26,7 +26,9 @@ a.color-link:not(.icon) {
   color: var(--link-color, currentColor);
   text-decoration: none;
   font-weight: bolder;
-  transition: background-position 0.2s ease-out;
+  transition:
+    color 0.2s ease-out,
+    background-position 0.2s ease-out;
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0) 50%,
@@ -40,7 +42,6 @@ a.color-link:hover:not(.icon),
 a.color-link:focus:not(.icon) {
   background-position: 0 100%;
   color: #E9E6E2;
-  transition: all 0.2s ease-out;
 }
 
 /* Desktop: vertical layout + horizontal scrolling canvas */
