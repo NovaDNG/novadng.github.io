@@ -44,6 +44,34 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  
+  
+  <style id="critical-yoi-float-nav">
+    @keyframes yoiFadeOnly {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .page-yoishigure .trans {
+      animation-name: yoiFadeOnly;
+    }
+
+    .yoi-float-nav {
+      position: fixed;
+      top: 8rem;
+      right: max(1.2rem, calc((100vw - 960px) / 2 - 12rem));
+      z-index: 24;
+      max-width: min(44rem, calc(100vw - 2rem));
+    }
+
+    @media (max-width: 1380px) {
+      .yoi-float-nav {
+        display: none;
+      }
+    }
+  </style>
+  
+
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script>
@@ -62,18 +90,38 @@
     var media = window.matchMedia('(prefers-color-scheme: dark)');
     var root = document.documentElement;
 
-    function syncThemeControls(isDark) {
-      var darkBtn = document.getElementById('darkBtn');
-      var lightBtn = document.getElementById('lightBtn');
+    function collectThemeButtons() {
+      var darkBtns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-role="dark"]'));
+      var lightBtns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-role="light"]'));
 
-      if (!darkBtn || !lightBtn) return;
+      var legacyDarkBtn = document.getElementById('darkBtn');
+      var legacyLightBtn = document.getElementById('lightBtn');
+
+      if (legacyDarkBtn && darkBtns.indexOf(legacyDarkBtn) === -1) {
+        darkBtns.push(legacyDarkBtn);
+      }
+      if (legacyLightBtn && lightBtns.indexOf(legacyLightBtn) === -1) {
+        lightBtns.push(legacyLightBtn);
+      }
+
+      return {
+        darkBtns: darkBtns,
+        lightBtns: lightBtns
+      };
+    }
+
+    function syncThemeControls(isDark) {
+      var controls = collectThemeButtons();
+      var darkBtns = controls.darkBtns;
+      var lightBtns = controls.lightBtns;
+      if (!darkBtns.length && !lightBtns.length) return;
 
       if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
+        lightBtns.forEach(function (el) { el.classList.remove('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.add('hidden'); });
       } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
+        lightBtns.forEach(function (el) { el.classList.add('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.remove('hidden'); });
       }
     }
 
@@ -192,7 +240,7 @@
   input[type="password"]:focus,
   textarea:focus,
   select:focus {
-    border: 1px solid #E2001A;
+    /* border: 1px solid #E2001A; */
   }
 </style>
 
@@ -201,7 +249,7 @@
 <link rel="alternate" href="/rss.xml" title="NovaDNG Studio" type="application/rss+xml">
 </head>
 
-<body>
+<body class="page-yoishigure">
   
   <div class="container">
     <div class="row">
@@ -213,6 +261,434 @@
 <h2 class="mt-3">酔シグレ関連</h2>
 
 
+  <aside class="yoi-float-nav" aria-label="Yoishigure section navigation">
+  <div class="yoi-float-nav__head">
+    <h4 class="yoi-float-nav__title">快速導覽</h4>
+    <div class="yoi-float-nav__theme" aria-label="Theme switch">
+      <button
+        type="button"
+        class="yoi-float-nav__theme-btn"
+        data-theme-role="dark"
+        onclick="setDarkMode(true)"
+      >✶</button>
+      <button
+        type="button"
+        class="yoi-float-nav__theme-btn hidden"
+        data-theme-role="light"
+        onclick="setDarkMode(false)"
+      >❂</button>
+    </div>
+  </div>
+  <div class="yoi-float-nav__search" role="search" aria-label="搜尋本頁內容">
+    <input
+      type="search"
+      class="yoi-float-nav__search-input"
+      placeholder="搜尋"
+      spellcheck="false"
+      autocomplete="off"
+    >
+    <div class="yoi-float-nav__search-meta">
+      <span class="yoi-float-nav__search-count" aria-live="polite"></span>
+      <button type="button" class="yoi-float-nav__search-btn" data-yoi-search-nav="-1" aria-label="Previous match">⮝</button>
+      <button type="button" class="yoi-float-nav__search-btn" data-yoi-search-nav="1" aria-label="Next match">⮟</button>
+    </div>
+  </div>
+  
+    
+      
+        <h3 class="yoi-float-nav__h yoi-float-nav__h3">
+          <a class="color-link" href="#Intro">簡介</a>
+        </h3>
+      
+    
+      
+        <h3 class="yoi-float-nav__h yoi-float-nav__h3">
+          <a class="color-link" href="#歌詞翻譯">歌詞翻譯</a>
+        </h3>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#misc">專輯未收入</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#Regret">Regret</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#Assort">Assort</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#吟遊詩人の置き手紙">吟遊詩人の置き手紙</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#吟遊詩人の人生録">吟遊詩人の人生録</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#ポスト・ポラリス">ポスト・ポラリス</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#吟遊詩人シリーズ">吟遊詩人シリーズ</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#或る音楽家の手記">或る音楽家の手記</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#Lyolite">Lyolite</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#木下珠子">木下珠子</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#菅崎樹里">菅崎樹里</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#Lucia">Lucia</a>
+        </h4>
+      
+    
+      
+        <h4 class="yoi-float-nav__h yoi-float-nav__h4">
+          <a class="color-link" href="#其他樂曲提供">其他樂曲提供</a>
+        </h4>
+      
+    
+      
+        <h3 class="yoi-float-nav__h yoi-float-nav__h3">
+          <a class="color-link" href="#文章">文章</a>
+        </h3>
+      
+    
+      
+        <h3 class="yoi-float-nav__h yoi-float-nav__h3">
+          <a class="color-link" href="#Commissions">Commissions</a>
+        </h3>
+      
+    
+      
+        <h3 class="yoi-float-nav__h yoi-float-nav__h3">
+          <a class="color-link" href="#Misc">Misc</a>
+        </h3>
+      
+    
+  
+</aside>
+
+<script>
+  (function () {
+    function openAncestorDetails(node) {
+      if (!node || !node.closest) return;
+      var details = node.closest('details');
+      while (details) {
+        details.open = true;
+        var parent = details.parentElement;
+        details = parent && parent.closest ? parent.closest('details') : null;
+      }
+    }
+
+    function initYoiInPageSearch() {
+      var nav = document.querySelector('.yoi-float-nav');
+      if (!nav || nav.dataset.searchBound === '1') return;
+      nav.dataset.searchBound = '1';
+
+      var scope = document.querySelector('body.page-yoishigure .trans');
+      if (!scope) return;
+
+      var input = nav.querySelector('.yoi-float-nav__search-input');
+      var countEl = nav.querySelector('.yoi-float-nav__search-count');
+      var buttons = Array.prototype.slice.call(nav.querySelectorAll('[data-yoi-search-nav]'));
+      if (!input || !countEl || !buttons.length) return;
+
+      var MARK_SELECTOR = 'mark.yoi-page-search-hit';
+      var META_SELECTOR = '[data-yoi-search], a[title]';
+      var META_MATCH_CLASS = 'yoi-page-search-hit-meta';
+      var hits = [];
+      var activeIndex = -1;
+      var metaHits = [];
+
+      function collectCurrentMarks() {
+        return Array.prototype.slice.call(scope.querySelectorAll(MARK_SELECTOR));
+      }
+
+      function clearMarks() {
+        var marks = collectCurrentMarks();
+        var touchedParents = [];
+        marks.forEach(function (mark) {
+          var parent = mark.parentNode;
+          if (parent && touchedParents.indexOf(parent) === -1) touchedParents.push(parent);
+          mark.replaceWith(document.createTextNode(mark.textContent || ''));
+        });
+
+        touchedParents.forEach(function (parent) {
+          if (parent && parent.normalize) parent.normalize();
+        });
+      }
+
+      function clearMetaHits() {
+        if (!metaHits.length) return;
+        metaHits.forEach(function (el) {
+          el.classList.remove(META_MATCH_CLASS);
+          el.classList.remove('is-active');
+        });
+        metaHits = [];
+      }
+
+      function updateCount() {
+        if (!hits.length) {
+          countEl.textContent = input.value.trim() ? 'No match' : '';
+          buttons.forEach(function (btn) { btn.disabled = true; });
+          return;
+        }
+
+        countEl.textContent = String(activeIndex + 1) + ' / ' + String(hits.length);
+        buttons.forEach(function (btn) { btn.disabled = false; });
+      }
+
+      function setActive(index, shouldScroll) {
+        if (!hits.length) {
+          activeIndex = -1;
+          updateCount();
+          return;
+        }
+
+        if (activeIndex >= 0 && hits[activeIndex]) {
+          hits[activeIndex].classList.remove('is-active');
+        }
+
+        activeIndex = (index % hits.length + hits.length) % hits.length;
+        var active = hits[activeIndex];
+        active.classList.add('is-active');
+        openAncestorDetails(active);
+
+        if (shouldScroll) {
+          active.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        }
+
+        updateCount();
+      }
+
+      function highlight(query) {
+        clearMarks();
+        clearMetaHits();
+        hits = [];
+        activeIndex = -1;
+
+        if (!query) {
+          updateCount();
+          return;
+        }
+
+        var needle = query.toLocaleLowerCase();
+        var walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+          acceptNode: function (node) {
+            if (!node || !node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+            var parent = node.parentElement;
+            if (!parent) return NodeFilter.FILTER_REJECT;
+            if (parent.closest('.yoi-float-nav')) return NodeFilter.FILTER_REJECT;
+            if (parent.closest('.yoi-embed-modal')) return NodeFilter.FILTER_REJECT;
+            if (parent.closest('script, style, code, pre, textarea, noscript')) return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;
+          }
+        });
+
+        var nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+
+        nodes.forEach(function (node) {
+          var raw = node.nodeValue || '';
+          var lower = raw.toLocaleLowerCase();
+          var found = lower.indexOf(needle);
+          if (found === -1) return;
+
+          var frag = document.createDocumentFragment();
+          var start = 0;
+
+          while (found !== -1) {
+            if (found > start) {
+              frag.appendChild(document.createTextNode(raw.slice(start, found)));
+            }
+
+            var mark = document.createElement('mark');
+            mark.className = 'yoi-page-search-hit';
+            mark.textContent = raw.slice(found, found + query.length);
+            frag.appendChild(mark);
+            hits.push(mark);
+
+            start = found + query.length;
+            found = lower.indexOf(needle, start);
+          }
+
+          if (start < raw.length) {
+            frag.appendChild(document.createTextNode(raw.slice(start)));
+          }
+
+          node.parentNode.replaceChild(frag, node);
+        });
+
+        var metaCandidates = Array.prototype.slice.call(scope.querySelectorAll(META_SELECTOR));
+        metaCandidates.forEach(function (el) {
+          var meta = '';
+          if (el.hasAttribute && el.hasAttribute('data-yoi-search')) {
+            meta += ' ' + String(el.getAttribute('data-yoi-search') || '');
+          }
+          if (el.tagName === 'A' && el.hasAttribute && el.hasAttribute('title')) {
+            meta += ' ' + String(el.getAttribute('title') || '');
+          }
+          meta = meta.trim().toLocaleLowerCase();
+          if (!meta || meta.indexOf(needle) === -1) return;
+          if (el.querySelector && el.querySelector(MARK_SELECTOR)) return;
+          el.classList.add(META_MATCH_CLASS);
+          metaHits.push(el);
+          hits.push(el);
+        });
+
+        if (hits.length) {
+          setActive(0, true);
+        } else {
+          updateCount();
+        }
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var step = Number(btn.getAttribute('data-yoi-search-nav')) || 1;
+          setActive(activeIndex + step, true);
+        });
+      });
+
+      input.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter') return;
+        event.preventDefault();
+        if (!hits.length) return;
+        setActive(activeIndex + (event.shiftKey ? -1 : 1), true);
+      });
+
+      input.addEventListener('input', function () {
+        highlight(input.value.trim());
+      });
+
+      input.addEventListener('search', function () {
+        highlight(input.value.trim());
+      });
+
+      updateCount();
+    }
+
+    function initYoiFloatNavScrollspy() {
+      var nav = document.querySelector('.yoi-float-nav');
+      if (!nav || nav.dataset.scrollspyBound === '1') return;
+      nav.dataset.scrollspyBound = '1';
+
+      var rows = Array.prototype.slice.call(nav.querySelectorAll('.yoi-float-nav__h'));
+      var entries = rows.map(function (row) {
+        var link = row.querySelector('a[href^="#"]');
+        if (!link) return null;
+
+        var rawId = (link.getAttribute('href') || '').slice(1);
+        if (!rawId) return null;
+
+        var decodedId = rawId;
+        try { decodedId = decodeURIComponent(rawId); } catch (e) {}
+
+        var target = document.getElementById(decodedId) || document.getElementById(rawId);
+        if (!target) return null;
+
+        return { row: row, link: link, target: target };
+      }).filter(Boolean);
+
+      if (!entries.length) return;
+
+      function setActive(activeEntry) {
+        entries.forEach(function (entry) {
+          entry.row.classList.toggle('is-active', entry === activeEntry);
+        });
+      }
+
+      function updateActiveByScroll() {
+        var active = entries[0];
+        var threshold = Math.max(120, window.innerHeight * 0.22);
+
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].target.getBoundingClientRect().top - threshold <= 0) {
+            active = entries[i];
+          } else {
+            break;
+          }
+        }
+
+        setActive(active);
+      }
+
+      var ticking = false;
+      function requestUpdate() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          ticking = false;
+          updateActiveByScroll();
+        });
+      }
+
+      entries.forEach(function (entry) {
+        entry.link.addEventListener('click', function () {
+          setActive(entry);
+        });
+      });
+
+      window.addEventListener('scroll', requestUpdate, { passive: true });
+      window.addEventListener('resize', requestUpdate);
+      requestUpdate();
+    }
+
+    function init() {
+      initYoiFloatNavScrollspy();
+      initYoiInPageSearch();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init, { once: true });
+      return;
+    }
+
+    init();
+  })();
+</script>
+
+
+
+
   
   <style>
 strong { 
@@ -221,27 +697,68 @@ strong {
   color: color-mix(in srgb, currentColor 72%, transparent); 
   font-size: x-large; 
   text-wrap-mode: nowrap;}
+
+.yoi-nav-anchor-only {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink) {
+  color: #007bbb;
+  text-decoration: none;
+  transition:
+    color 0.2s ease-out,
+    background-position 0.2s ease-out;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #007bbb 50%
+  );
+  background-size: 100% 200%;
+  background-position: 0 0;
+}
+
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink):hover,
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink):focus,
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a.yoi-page-search-hit-meta.is-active:not(.icon):not(.headerlink) {
+  background-position: 0 100%;
+  color: #E9E6E2;
+}
+
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a.yoi-page-search-hit-meta:not(.is-active):not(:hover):not(:focus):not(.icon):not(.headerlink) {
+  background-position: 0 0;
+  text-decoration: underline #007bbb 2px;
+}
+
+body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb; }
+
 </style>
 
+<h3 id="Intro" class="yoi-nav-anchor-only">簡介</h3>
 
 <p><a href="/2025-03/Minstrel-Yoishigure/">酔シグレ</a>乃香音主導之音樂企劃, 於2021年啟動, 最初由香音與H組成, 後逐漸發展為以香音為核心的創作項目. 香音自三歲起學習鋼琴, 並在音樂院校研修古典鋼琴與聲樂; 她將這份扎實底子帶入流行､ Vocaloid與敘事性創作之中, 並透過與多位歌手､ 繪師合作, 編織出如 ｢現代吟遊詩人｣ 般兼具故事感與連結力的創作世界. </p>
-<p>本頁面集中歸檔與酔シグレ相關的各類資源. </p>
+<p>本頁面集中歸檔NovaDNG創作的酔シグレ相關各類資源. </p>
 <details>
     <summary>快速入坑</summary></br>
-
-<p><a href="/Works/Yoishigure/DailyNote" target="_blank">Daily Note</a></p>
+  
+<p><a href="/Works/Yoishigure/DailyNote" title="2021-08-06 | Daily Note" target="_blank">Daily Note</a></p>
 <audio controls preload="none">
   <source src="/Works/Yoishigure/DailyNote.m4a" type="audio/mp4">
   此瀏覽器不支援音訊播放. <a href="/Works/Yoishigure/DailyNote.m4a">下載音訊檔</a>
 </audio></br></br>
 
-<p><a href="/Works/Yoishigure/Sylphid" target="_blank">ロスト・シルフィード</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></p>
+<p><a href="/Works/Yoishigure/Sylphid" title="2023-12-27 | ロスト・シルフィード (feat. Lucia)" target="_blank">ロスト・シルフィード</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></p>
 <audio controls preload="none">
   <source src="/Works/Yoishigure/LostSylphid.m4a" type="audio/mp4">
   此瀏覽器不支援音訊播放. <a href="/Works/Yoishigure/LostSylphid.m4a">下載音訊檔</a>
 </audio></br></br>
 
-<p><a href="/Works/Yoishigure/PrayForDawn" target="_blank">夜明けを乞う。</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></p>
+<p><a href="/Works/Yoishigure/PrayForDawn" title="2024-12-22 | 夜明けを乞う。(feat. むﾄ)" target="_blank">夜明けを乞う。</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></p>
 <audio controls preload="none">
   <source src="/Works/Yoishigure/PrayForDawn.m4a" type="audio/mp4">
   此瀏覽器不支援音訊播放. <a href="/Works/Yoishigure/PrayForDawn.m4a">下載音訊檔</a>
@@ -250,103 +767,134 @@ strong {
 
 <p>Links: <a href="https://twitter.com/yoishigure2021">Twitter <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(Main)</span></a>&#8195;<code>･</code>&#8195;<a href="https://twitter.com/kioku20180614">Twitter <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(Sub)</span></a>&#8195;<code>･</code>&#8195;<a href="https://www.youtube.com/channel/UC6LfIWARVzv6l2OexwbKNHw">YouTube</a>&#8195;<code>･</code>&#8195;<a href="https://www.tunecore.co.jp/artists/Yoishigure">Discography</a>&#8195;<code>･</code>&#8195;<a href="https://www.minstrel-record-1223.com/">吟遊詩人シリーズ公式HP</a></br></br></p>
 <p><code>#</code>&NoBreak;<a href="#%E6%AD%8C%E8%A9%9E%E7%BF%BB%E8%AD%AF"><strong>歌詞翻譯</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E6%96%87%E7%AB%A0"><strong>文章</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Commissions"><strong>約稿</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Misc"><strong>其他</strong></a></p>
-<h3 id="歌詞翻譯"><a href="#歌詞翻譯" class="headerlink" title="歌詞翻譯"></a>歌詞翻譯</h3><p><code>#</code>&NoBreak;<a href="#Regret"><strong>Regret</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Assort"><strong>Assort</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%81%AE%E7%BD%AE%E3%81%8D%E6%89%8B%E7%B4%99"><strong>吟遊詩人の置き手紙</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%81%AE%E4%BA%BA%E7%94%9F%E9%8C%B2"><strong>吟遊詩人の人生録</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E3%83%9B%E3%82%9A%E3%82%B9%E3%83%88%E3%83%BB%E3%83%9B%E3%82%9A%E3%83%A9%E3%83%AA%E3%82%B9"><strong>ポスト・ポラリス</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E5%90%9F%E9%81%8A%E8%A9%A9%E4%BA%BA%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"><strong>吟遊詩人シリーズ單曲</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E6%88%96%E3%82%8B%E9%9F%B3%E6%A5%BD%E5%AE%B6%E3%81%AE%E6%89%8B%E8%A8%98"><strong>或る音楽家の手記</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Lyolite"><strong>Lyolite</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E6%9C%A8%E4%B8%8B%E7%8F%A0%E5%AD%90"><strong>木下珠子</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E8%8F%85%E5%B4%8E%E6%A8%B9%E9%87%8C"><strong>菅崎樹里</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#%E5%85%B6%E4%BB%96%E6%A8%82%E6%9B%B2%E6%8F%90%E4%BE%9B"><strong>其他樂曲提供</strong></a></p>
-<hr>
-<p><a href="/Works/Yoishigure/PrayForDawn">夜明けを乞う。<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></a></p>
-<p><a href="/Works/Yoishigure/MementoLeftBehind">鬼灯の忘れ形見</a></p>
-<p><a href="/Works/Yoishigure/ZrO2">ZrO<sub>2</sub> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. H)</span></a></p>
-<hr>
-<p><a href="/Works/Yoishigure/Neige">from.Neige</a></p>
-<p><a href="/Works/Yoishigure/Castaway">夜拾人</a></p>
-<p><a href="/Works/Yoishigure/404Trigger">404 TRIGGER</a></p>
-<hr>
-<p><a href="/Works/Yoishigure/IdeaL">アイディアル feat.とのま</a></p>
-<p><a href="/Works/Yoishigure/TransparentFlight">透飛行 feat.こうめい</a></p>
-<p><a href="/Works/Yoishigure/MirageMoon">幻夜月 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 焔魔るり)</span></a></p>
-<p><a href="/Works/Yoishigure/JardinSecret">Jardin Secret <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia &amp; 皇美緒奈)</span></a></p>
-<p><a href="/Works/Yoishigure/Highrise">空中楼閣 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. ARuA)</span></a></p>
-<p><a href="/Works/Yoishigure/Etoile">Etoile</a></p>
-<p><a href="/Works/Yoishigure/StupidWishes">愚想 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Ten.)</span></a></p>
-<p><a href="/Works/Yoishigure/Reflection">透彩リフレクション</a></p>
-<p><a href="/Works/Yoishigure/Overhaul">オーバーホール</a></p>
-<p><a href="/Works/Yoishigure/PlusMinus0">±0</a></p>
-<p><a href="/Works/Yoishigure/SummerOrange">サマー・オレンジ <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 酔シグレ &amp; ふるーり)</span></a></p>
-<p><a href="/Works/Yoishigure/Serenade">月の小夜曲 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
-<details>
-    <summary>Upcoming <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(本宮瑠華)</span></summary>
-<a href="/Works/Yoishigure/GhostLeg">阿彌陀籤</a>
-</details>
+<h3 id="歌詞翻譯"><a href="#歌詞翻譯" class="headerlink" title="歌詞翻譯"></a>歌詞翻譯</h3><details>
+  <summary>目錄</summary>
+  <code>#</code>&NoBreak;<a href="#Regret"><strong>Regret</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Assort"><strong>Assort</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#吟遊詩人の置き手紙"><strong>吟遊詩人の置き手紙</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#吟遊詩人の人生録"><strong>吟遊詩人の人生録</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#ポスト・ポラリス"><strong>ポスト・ポラリス</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#吟遊詩人シリーズ"><strong>吟遊詩人系列單曲</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#或る音楽家の手記"><strong>或る音楽家の手記</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Lyolite"><strong>Lyolite</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#木下珠子"><strong>木下珠子</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#菅崎樹里"><strong>菅崎樹里</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#Lucia"><strong>Lucia</strong></a>&#8195;&#8195;<code>#</code>&NoBreak;<a href="#其他樂曲提供"><strong>其他樂曲提供</strong></a>
+  
+  <hr>
+</details></br>
 
 
-<h4 id="Regret"><a href="#Regret" class="headerlink" title="Regret"></a>Regret</h4><p><a href="/Works/Yoishigure/DailyNote">Daily Note</a></p>
-<p><a href="/Works/Yoishigure/Alma">Alma</a></p>
-<p><a href="/Works/Yoishigure/Straining">心濾し</a></p>
-<p><a href="/Works/Yoishigure/Justice">正義の名も嘘も</a></p>
-<p><a href="/Works/Yoishigure/1cm">１センチ</a></p>
-<p><a href="/Works/Yoishigure/Insomnia">インソムニア</a></p>
-<p><a href="/Works/Yoishigure/Cynical">ヒネクレ真理学</a></p>
-<p><a href="/Works/Yoishigure/Passed">過ぎて世</a></p>
-<h4 id="Assort"><a href="#Assort" class="headerlink" title="Assort"></a>Assort</h4><p><a href="/Works/Yoishigure/Angel">テンセイテンシ</a></p>
-<p><a href="/Works/Yoishigure/Antares">Antares <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
-<p><a href="/Works/Yoishigure/Visible">ビジブル・ネバーエンド</a></p>
-<p><a href="/Works/Yoishigure/SideI">Side.I <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. ふりかけ)</span></a></p>
-<h4 id="吟遊詩人の置き手紙"><a href="#吟遊詩人の置き手紙" class="headerlink" title="吟遊詩人の置き手紙"></a>吟遊詩人の置き手紙</h4><p><a href="/Works/Yoishigure/EDEN">EDEN</a></p>
-<p><a href="/Works/Yoishigure/Ariadne">アリアドネの盃</a></p>
-<p><a href="/Works/Yoishigure/FalseGod">偽神咄 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
-<p><a href="/Works/Yoishigure/DesireDesigner">Desire Designer <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 七海うらら)</span></a></p>
-<p><a href="/Works/Yoishigure/Hameln">ハーメルンの夢拐い</a></p>
-<p><a href="/Works/Yoishigure/Overflow">あまりある残像 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
-<p><a href="/Works/Yoishigure/Milte">ミルテの花冠 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 樹里)</span></a></p>
-<p><a href="/Works/Yoishigure/Minstrel">Minstrel <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華 &amp; 香音)</span></a></p>
-<p><a href="/Works/Yoishigure/Indifferent">インディファレント <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. みょみょ)</span></a></p>
-<p><a href="/Works/Yoishigure/GiveBack">返し唄 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
-<p><a href="/Works/Yoishigure/SnowCrystal">スノウ・クリスタル</a></p>
-<p><a href="/Works/Yoishigure/RedMoon">赤い月 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
-<h4 id="吟遊詩人の人生録"><a href="#吟遊詩人の人生録" class="headerlink" title="吟遊詩人の人生録"></a>吟遊詩人の人生録</h4><p><a href="/Works/Yoishigure/CrecentRem">クレセント・レム</a></p>
-<p><a href="/Works/Yoishigure/Pity">最果ての憐歌 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
-<p><a href="/Works/Yoishigure/Nightmare">Nightmare <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 結城碧)</span></a></p>
-<p><a href="/Works/Yoishigure/Voyage">廻航 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華 &amp; 香音)</span></a></p>
-<p><a href="/Works/Yoishigure/SnowMirror">雪華鏡 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Eye)</span></a></p>
-<p><a href="/Works/Yoishigure/Troubador">Troubador <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 樹里)</span></a></p>
-<p><a href="/Works/Yoishigure/Irony">哀色あいろにい <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. わかばやし)</span></a></p>
-<p><a href="/Works/Yoishigure/Starlight">スターライトと星の海 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. みょみょ)</span></a></p>
-<p><a href="/Works/Yoishigure/Cycle">輪音</a></p>
-<p><a href="/Works/Yoishigure/Sylphid">ロスト・シルフィード <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
-<p><a href="/Works/Yoishigure/Paradis">Paradis <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
-<h4 id="ポスト・ポラリス"><a href="#ポスト・ポラリス" class="headerlink" title="ポスト・ポラリス"></a>ポスト・ポラリス</h4><p><a href="/Works/Yoishigure/PostPolaris">ポスト・ポラリス <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. わかばやし &amp; みょみょ)</span></a></p>
-<p><a href="/Works/Yoishigure/Loneliness">寂しさの行き先 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. わかばやし &amp; みょみょ)</span></a></p>
-<h4 id="吟遊詩人シリーズ"><a href="#吟遊詩人シリーズ" class="headerlink" title="吟遊詩人シリーズ"></a>吟遊詩人シリーズ</h4><p><a href="/Works/Yoishigure/WalzChronus">ワルツ・クロノス <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia, 結城碧 &amp; 樹里)</span></a></p>
-<p><a href="/Works/Yoishigure/RecordOfLife">Record of life</a></p>
-<h4 id="或る音楽家の手記"><a href="#或る音楽家の手記" class="headerlink" title="或る音楽家の手記"></a>或る音楽家の手記</h4><p><a href="/Works/Yoishigure/Ballad">僕の譚詩曲を聴いて <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Ten.)</span></a></p>
+<h4 id="misc" class="yoi-nav-anchor-only">專輯未收入</h4>
+
+<p><a href="/Works/Yoishigure/PlusMinus0" title="2021-08-14 | ±0 | 曲名統一祭 | v_flower">±0</a></p>
+<p><a href="/Works/Yoishigure/Neige" title="2021-12-26 | from.Neige (feat. 可不) | 曲繪統一祭 | まかぎ祭 | 可不">from.Neige</a></p>
+<p><a href="/Works/Yoishigure/Castaway" title="2022-06-06 | 夜捨人 (feat. 樹里 &amp; 香音) | 可不">夜拾人</a></p>
+<p><a href="/Works/Yoishigure/404Trigger" title="2022-08-28 | 404 TRIGGER | 鏡音レン×鏡音リン">404 TRIGGER</a></p>
+<p><a href="/Works/Yoishigure/SummerOrange" title="2022-09-27 | サマー・オレンジ (feat. 酔シグレ &amp; ふるーり)">サマー・オレンジ <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 酔シグレ &amp; ふるーり)</span></a></p>
+<p><a href="/Works/Yoishigure/IdeaL" title="2023-04-16 | アイディアル feat.とのま | v_flower">アイディアル feat.とのま</a></p>
+<p><a href="/Works/Yoishigure/TransparentFlight" title="2023-06-08 | 透飛行 feat.こうめい">透飛行 feat.こうめい</a></p>
+<p><a href="/Works/Yoishigure/Highrise" title="2023-07-07 | 空中楼閣 (feat. ARuA) | チームシグレル | Arua | Mesopotamia | めにい | ToM | 金子歩">空中楼閣 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. ARuA)</span></a></p>
+<p><a href="/Works/Yoishigure/Etoile" title="2023-08-15 | Etoile | チーム ROI | 天羽ユウ | 葉月透 | にっくきゆう | 餅路チオ">Etoile</a></p>
+<p><a href="/Works/Yoishigure/Reflection" title="2023-08-31 | 透彩リフレクション | チーム青春エクスプロージョン | エニル | みかみ茉姫 | 青砥イヴ | はちえ | ToM | 初音ミク×可不">透彩リフレクション</a></p>
+<p><a href="/Works/Yoishigure/Overhaul" title="2023-09-19 | オーバーホール | 初音ミク">オーバーホール</a></p>
+<p>ACCHIevement-アチーブメント- feat. 狐子×星界 無色透名祭 2023-11-02</p>
+<p><a href="/Works/Yoishigure/Serenade" title="2024-01-07 | 月の小夜曲 (feat. Lucia)">月の小夜曲 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
+<p><a href="/Works/Yoishigure/PrayForDawn" title="2024-12-22 | 夜明けを乞う。(feat. むﾄ)">夜明けを乞う。<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></a></p>
+<p><a href="/Works/Yoishigure/MementoLeftBehind" title="2025-01-11 | 鬼灯の忘れ形見">鬼灯の忘れ形見</a></p>
+<p><a href="/Works/Yoishigure/ZrO2" title="2025-03-29 | ジルコニア (feat. H) | Hinageshi">ZrO<sub>2</sub> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. H)</span></a></p>
+<p><a href="/Works/Yoishigure/MirageMoon" title="2025-09-10 | 幻夜月 (feat. 焔魔るり)">幻夜月 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 焔魔るり)</span></a></p>
+<p><a href="/Works/Yoishigure/StupidWishes" title="2025-10-03 | 愚想 (feat. Ten.)">愚想 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Ten.)</span></a></p>
+<p><a href="/Works/Yoishigure/JardinSecret" title="2026-01-30 | Jardin Secret (feat. Lucia &amp; 皇美緒奈)">Jardin Secret <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia &amp; 皇美緒奈)</span></a></p>
+<p>紡ぎ星​ 星芒サインポスト | 或夢 | ぷちの | korona | ぴにょ | ToM 2024-07-04</p>
+<p>ネガポジ論争 feat. 初音ミク×鏡音リン 2024-11-29</p>
+<h4 id="Regret"><a href="#Regret" class="headerlink" title="Regret"></a>Regret</h4><p><a href="/Works/Yoishigure/Alma" title="2021-08-06 | Alma | Hinageshi | 初音ミク">Alma</a></p>
+<p><a href="/Works/Yoishigure/Straining" title="2021-08-06 | 心濾し | IA">心濾し</a></p>
+<p><a href="/Works/Yoishigure/Justice" title="2021-08-06 | 正義の名も嘘も | Hinageshi | IA×flower">正義の名も嘘も</a></p>
+<p><a href="/Works/Yoishigure/1cm" title="2021-08-06 | 一センチ | Hinageshi">１センチ</a></p>
+<p><a href="/Works/Yoishigure/Insomnia" title="2021-08-06 | インソムニア | Eye">インソムニア</a></p>
+<p><a href="/Works/Yoishigure/Cynical" title="2021-08-06 | ヒネクレ真理学 | Hinageshi | わかばやし | みょみょ">ヒネクレ真理学</a></p>
+<p><a href="/Works/Yoishigure/Passed" title="2021-08-06 | 過ぎて世 | Hinageshi | IA×flower">過ぎて世</a></p>
+<p><a href="/Works/Yoishigure/DailyNote" title="2021-08-06 | Daily Note">Daily Note</a></p>
+<h4 id="Assort"><a href="#Assort" class="headerlink" title="Assort"></a>Assort</h4><p><a href="/Works/Yoishigure/Angel" title="2022-08-14 | テンセイテンシ | Hinageshi | 初音ミク×可不">テンセイテンシ</a></p>
+<p><a href="/Works/Yoishigure/Antares" title="2022-08-14 | Antares (feat. 瑠華)">Antares <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
+<p><a href="/Works/Yoishigure/Visible" title="2022-02-07 | ビジブル・ネバーエンド | 初音ミク">ビジブル・ネバーエンド</a></p>
+<p><a href="/Works/Yoishigure/SideI" title="2022-08-14 | Side.I（feat. ふりかけ） | 可不">Side.I <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. ふりかけ)</span></a></p>
+<h4 id="吟遊詩人の置き手紙"><a href="#吟遊詩人の置き手紙" class="headerlink" title="吟遊詩人の置き手紙"></a>吟遊詩人の置き手紙</h4><p><a href="/Works/Yoishigure/EDEN" title="2022-04-24 | EDEN | 可不">EDEN</a></p>
+<p><a href="/Works/Yoishigure/Ariadne" title="2022-02-06 | アリアドネの盃 | 可不">アリアドネの盃</a></p>
+<p><a href="/Works/Yoishigure/FalseGod" title="2022-12-23 | 偽神咄 (feat. 瑠華)">偽神咄 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
+<p><a href="/Works/Yoishigure/DesireDesigner" title="2022-12-23 | Desire Designer (feat. 七海うらら)">Desire Designer <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 七海うらら)</span></a></p>
+<p><a href="/Works/Yoishigure/Hameln" title="2022-12-23 | ハーメルンの夢拐い | 可不">ハーメルンの夢拐い</a></p>
+<p><a href="/Works/Yoishigure/Overflow" title="2022-12-23 | あまりある残像 (feat. 瑠華)">あまりある残像 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
+<p><a href="/Works/Yoishigure/Milte" title="2022-12-23 | ミルテの花冠 (feat. 樹里)">ミルテの花冠 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 樹里)</span></a></p>
+<p><a href="/Works/Yoishigure/Minstrel" title="2022-12-23 | Minstrel (feat. 瑠華 &amp; 香音)">Minstrel <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華 &amp; 香音)</span></a></p>
+<p><a href="/Works/Yoishigure/Indifferent" title="2022-12-23 | インディファレント (feat. みょみょ)">インディファレント <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. みょみょ)</span></a></p>
+<p><a href="/Works/Yoishigure/GiveBack" title="2022-12-23 | 返し唄 (feat. Lucia)">返し唄 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
+<p><a href="/Works/Yoishigure/SnowCrystal" title="2022-12-23 | スノウ・クリスタル">スノウ・クリスタル</a></p>
+<p><a href="/Works/Yoishigure/RedMoon" title="2022-12-23 | 赤い月 (feat. 瑠華)">赤い月 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
+<h4 id="吟遊詩人の人生録"><a href="#吟遊詩人の人生録" class="headerlink" title="吟遊詩人の人生録"></a>吟遊詩人の人生録</h4><p><a href="/Works/Yoishigure/CrecentRem" title="2023-12-27 | クレセント・レム | 可不">クレセント・レム</a></p>
+<p><a href="/Works/Yoishigure/Pity" title="2023-12-27 | 最果ての憐歌 (feat. 瑠華)">最果ての憐歌 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
+<p><a href="/Works/Yoishigure/Nightmare" title="2023-12-27 | Nightmare (feat. 結城碧)">Nightmare <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 結城碧)</span></a></p>
+<p><a href="/Works/Yoishigure/Voyage" title="2023-12-27 | 廻航 (feat. 瑠華 &amp; 香音)">廻航 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華 &amp; 香音)</span></a></p>
+<p><a href="/Works/Yoishigure/SnowMirror" title="2023-12-27 | 雪華鏡 (feat. Eye)">雪華鏡 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Eye)</span></a></p>
+<p><a href="/Works/Yoishigure/Troubador" title="2023-12-27 | Troubador (feat. 樹里)">Troubador <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 樹里)</span></a></p>
+<p><a href="/Works/Yoishigure/Irony" title="2023-12-27 | 哀色あいろにい (feat. わかばやし)">哀色あいろにい <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. わかばやし)</span></a></p>
+<p><a href="/Works/Yoishigure/Starlight" title="2023-12-27 | スターライトと星の海 (feat. みょみょ)">スターライトと星の海 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. みょみょ)</span></a></p>
+<p><a href="/Works/Yoishigure/Cycle" title="2023-12-27 | 輪音">輪音</a></p>
+<p><a href="/Works/Yoishigure/Sylphid" title="2023-12-27 | ロスト・シルフィード (feat. Lucia)">ロスト・シルフィード <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
+<p><a href="/Works/Yoishigure/Paradis" title="2023-12-27 | Paradis (feat. 瑠華) | 星界">Paradis <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. 瑠華)</span></a></p>
+<h4 id="ポスト・ポラリス"><a href="#ポスト・ポラリス" class="headerlink" title="ポスト・ポラリス"></a>ポスト・ポラリス</h4><p><a href="/Works/Yoishigure/PostPolaris" title="2025-09-19 | ポスト・ポラリス (feat. わかばやし &amp; みょみょ)">ポスト・ポラリス <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. わかばやし &amp; みょみょ)</span></a></p>
+<p><a href="/Works/Yoishigure/Loneliness" title="2025-09-19 | 寂しさの行き先 (feat. わかばやし &amp; みょみょ)">寂しさの行き先 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. わかばやし &amp; みょみょ)</span></a></p>
+<h4 id="吟遊詩人シリーズ"><a href="#吟遊詩人シリーズ" class="headerlink" title="吟遊詩人シリーズ"></a>吟遊詩人シリーズ</h4><p><a href="/Works/Yoishigure/WalzChronus" title="2026-01-17 | ワルツ・クロノス (feat. Lucia, 結城碧 &amp; 樹里)">ワルツ・クロノス <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia, 結城碧 &amp; 樹里)</span></a></p>
+<p><a href="/Works/Yoishigure/RecordOfLife" title="2024-05-19 | Record Of Life | 本宮瑠華 | 菅崎樹里 | 七海うらら | Lucia | みょみょ | Eye | わかばやし | 結城碧">Record of life</a></p>
+<h4 id="或る音楽家の手記"><a href="#或る音楽家の手記" class="headerlink" title="或る音楽家の手記"></a>或る音楽家の手記</h4><p><a href="/Works/Yoishigure/Ballad" title="2026-02-07 | 僕の譚詩曲を聴いて (feat. Ten.)">僕の譚詩曲を聴いて <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Ten.)</span></a></p>
 <details>
     <summary>Upcoming</summary>
 <a href="/Works/Yoishigure/MemorialName">憶名 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat.)</span></a>
 </details>
 
 
-<h4 id="Lyolite"><a href="#Lyolite" class="headerlink" title="Lyolite"></a>Lyolite</h4><p><a href="/Works/Yoishigure/Lyolite">リオライト</a></p>
-<p><a href="/Works/Yoishigure/Ondine">Ondine</a></p>
-<p><a href="/Works/Yoishigure/Recurrence">再巡</a></p>
-<p><a href="/Works/Yoishigure/DreamScale">レーヴェの秤</a></p>
-<p><a href="/Works/Yoishigure/Gretchen">Gretchen</a></p>
-<h4 id="木下珠子"><a href="#木下珠子" class="headerlink" title="木下珠子"></a>木下珠子</h4><p><a href="/Works/Yoishigure/DearU">Dear U</a></p>
-<p><a href="/Works/Yoishigure/Nadir">Nadir</a></p>
-<p><a href="/Works/Yoishigure/Beginning">はじまり</a></p>
-<h4 id="菅崎樹里"><a href="#菅崎樹里" class="headerlink" title="菅崎樹里"></a>菅崎樹里</h4><p><a href="/Works/Yoishigure/Infinity">夢幻</a></p>
-<p><a href="/Works/Yoishigure/Endroll">エンドロール</a></p>
-<h4 id="其他樂曲提供"><a href="#其他樂曲提供" class="headerlink" title="其他樂曲提供"></a>其他樂曲提供</h4><p>[そらねこ] <a href="/Works/Yoishigure/FriendshipGraffiti">友愛グラフィティ</a></p>
-<p>[弦月藤士郎] <a href="/Works/Yoishigure/MidnightDancehall">ミッドナイト・ダンスホール</a></p>
-<p>[eili] <a href="/Works/Yoishigure/VEGA">VEGA</a></p>
-<p>[イオス・コーディエ] <a href="/Works/Yoishigure/BloodyMary">Bloody Mary</a></p>
-<p>[イオス・コーディエ] <a href="/Works/Yoishigure/SinisterOrigin">イワクツキ</a></p>
-<p>[Yus] <a href="/Works/Yoishigure/ChantingofSin">罪の詠唱</a></p>
-<p>[ツキミカド] <a href="/Works/Yoishigure/LasterA">Last erA</a></p>
-<p>[みかみ茉姫] <a href="/Works/Yoishigure/GarnetWalz">Garnet walz</a></p>
-<p>[小絃] <a href="/Works/Yoishigure/coda">coda</a></p>
-<p>[小絃] <a href="/Works/Yoishigure/Dawn">暁</a></p>
-<p>[或夢 - um -] <a href="/Works/Yoishigure/Nerine">ネリネ</a></p>
-<p>[餅路チオ] <a href="/Works/Yoishigure/Lycorias">リュコリアス</a></p>
-<p>[うさこ。] <a href="/Works/Yoishigure/DecorationLila">リラの勲章</a></p>
+<h4 id="Lyolite"><a href="#Lyolite" class="headerlink" title="Lyolite"></a>Lyolite</h4><p><a href="/Works/Yoishigure/Lyolite" title="2023-05-28 | リオライト">リオライト</a></p>
+<p><a href="/Works/Yoishigure/Ondine" title="2024-02-24 | Ondine">Ondine</a></p>
+<p><a href="/Works/Yoishigure/Recurrence" title="2024-02-24 | 再巡">再巡</a></p>
+<p><a href="/Works/Yoishigure/DreamScale" title="2024-02-24 | レーヴェの秤">レーヴェの秤</a></p>
+<p><a href="/Works/Yoishigure/Gretchen" title="2025-12-29 | Gretchen">Gretchen</a></p>
+<h4 id="木下珠子"><a href="#木下珠子" class="headerlink" title="木下珠子"></a>木下珠子</h4><p><a href="/Works/Yoishigure/DearU" title="2023-10-29 | Dear U">Dear U</a></p>
+<p><a href="/Works/Yoishigure/Nadir" title="2024-11-16 | Nadir">Nadir</a></p>
+<p><a href="/Works/Yoishigure/Beginning" title="2023-10-29 | はじまり">はじまり</a></p>
+<h4 id="菅崎樹里"><a href="#菅崎樹里" class="headerlink" title="菅崎樹里"></a>菅崎樹里</h4><p><a href="/Works/Yoishigure/Infinity" title="2023-09-26 | 夢幻">夢幻</a></p>
+<p><a href="/Works/Yoishigure/Endroll" title="2023-09-26 | エンドロール">エンドロール</a></p>
+<h4 id="Lucia"><a href="#Lucia" class="headerlink" title="Lucia"></a>Lucia</h4><p>藍悼花</p>
+<p>朱灯音</p>
+<h4 id="其他樂曲提供"><a href="#其他樂曲提供" class="headerlink" title="其他樂曲提供"></a>其他樂曲提供</h4><p>[そらねこ] <a href="/Works/Yoishigure/FriendshipGraffiti" title="2022-12-26 | 友愛グラフィティ">友愛グラフィティ</a></p>
+<p>[弦月藤士郎] <a href="/Works/Yoishigure/MidnightDancehall" title="2024-09-15 | ミッドナイト・ダンスホール">ミッドナイト・ダンスホール</a></p>
+<p>[eili] <a href="/Works/Yoishigure/VEGA" title="2023-12-25 | VEGA">VEGA</a></p>
+<p>[イオス・コーディエ] <a href="/Works/Yoishigure/BloodyMary" title="2024-11-11 | Bloody Mary">Bloody Mary</a></p>
+<p>[イオス・コーディエ] <a href="/Works/Yoishigure/SinisterOrigin" title="2025-06-17 | イワクツキ">イワクツキ</a></p>
+<p>[Yus] <a href="/Works/Yoishigure/ChantingofSin" title="2025-10-01 | 罪の詠唱">罪の詠唱</a></p>
+<p>[ツキミカド] <a href="/Works/Yoishigure/LasterA" title="2024-07-23 | Last erA">Last erA</a></p>
+<p>[みかみ茉姫] <a href="/Works/Yoishigure/GarnetWalz" title="2023-06-21 | Garnet Walz">Garnet walz</a></p>
+<p>[小絃] <a href="/Works/Yoishigure/coda" title="2024-04-09 | coda">coda</a></p>
+<p>[小絃] <a href="/Works/Yoishigure/Dawn" title="2025-04-09 | 暁">暁</a></p>
+<p>[或夢 - um -] <a href="/Works/Yoishigure/Nerine" title="2025-06-06 | ネリネ">ネリネ</a></p>
+<p>[餅路チオ] <a href="/Works/Yoishigure/Lycorias" title="2024-11-24 | リュコリアス">リュコリアス</a></p>
+<p>[うさこ。] <a href="/Works/Yoishigure/DecorationLila" title="2025-04-17 | リラの勲章">リラの勲章</a></p>
+<p>[白針うに] <a href="/Works/Yoishigure/Re" title="2022-06-01 | Re:">Re:</a></p>
+<p>[沢野ぽぷら] 泡沫セカイ​</p>
+<p>[一夜すみ] 短夜​</p>
+<details>
+    <summary>Upcoming</summary>
+[本宮瑠華] <a href="/Works/Yoishigure/GhostLeg">阿彌陀籤</a>
+</details></br>
+
+<details>
+    <summary>其他名義</summary>
+<h4>うたたね</h4>
+
+<p>Bouvardia</p>
+<p>今は、ただ</p>
+<p>Chante avec moi</p>
+<p>Serenade</p>
+<p>翡翠の鏡</p>
+<p><a href="/Works/Yoishigure/">つむぎ詠</a></p>
+<p>千夜の嘘</p>
+<p>Barcarola</p>
+<p>Empty rain</p>
+<p>童心</p>
+<p>Front line</p>
+</details>
+
+
 <h3 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h3><p><a href="/Works/Yoishigure/Minstrel_Yoishigure_JP">ピアノスツールに座る吟遊詩人 ⸺ 酔シグレの紹介</a></p>
 <p>[Travelogue] <a href="/2024-10/TripToTokyo3/#Day-6-%E5%85%AB%E6%9C%88%E5%8D%81%E4%B8%80%E6%97%A5-%E6%98%9F%E6%9C%9F%E6%97%A5-%E6%9D%B1%E6%B1%A0%E8%A2%8B">吟遊詩人コラボカフェ</a></p>
 <p>[Travelogue] <a href="/2025-02/TripToTokyo2025Part1/">Classical Live 2025</a></p>
@@ -367,6 +915,395 @@ strong {
 
 <h3 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h3><p><a href="/Works/Yoishigure/DailyNoteMC">Daily Note MC</a></p>
 
+
+
+
+  <div class="yoi-embed-modal" hidden aria-hidden="true">
+  <div class="yoi-embed-modal__backdrop" data-yoi-embed-close></div>
+  <div class="yoi-embed-modal__dialog" role="dialog" aria-modal="true" aria-label="Tategaki preview">
+    <div class="yoi-embed-modal__toolbar">
+      <button type="button" class="yoi-embed-modal__close" data-yoi-embed-close aria-label="關閉">×</button>
+    </div>
+    <iframe class="yoi-embed-modal__frame" title="Tategaki preview" loading="lazy"></iframe>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var modal = document.querySelector('.yoi-embed-modal');
+    if (!modal) return;
+
+    var frame = modal.querySelector('.yoi-embed-modal__frame');
+    var closeTriggers = Array.prototype.slice.call(modal.querySelectorAll('[data-yoi-embed-close]'));
+    var parsing = false;
+    var clickToken = 0;
+    var openingLink = null;
+    var fitTimer = 0;
+    var closeTimer = 0;
+    var embedPaneHeightPx = 0;
+    var EMBED_CLOSE_ANIM_MS = 200;
+    var MIN_TATEGAKI_WIDTH = 920;
+    var EMBED_VIEWPORT_RATIO = 0.94;
+    var EMBED_DEFAULT_WIDTH = 1120;
+    var EMBED_DEFAULT_HEIGHT_RATIO = 0.66;
+
+    var styleHrefs = Array.prototype.slice.call(document.querySelectorAll('link[rel="stylesheet"]'))
+      .map(function (link) { return link.getAttribute('href'); })
+      .filter(Boolean);
+
+    function escapeHtml(text) {
+      return String(text || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function safeInlineScript(text) {
+      return String(text || '').replace(/<\/script/gi, '<\\/script');
+    }
+
+    function isYoishigureDetailLink(anchor) {
+      if (!anchor || !anchor.href) return false;
+      if (anchor.closest('.yoi-float-nav')) return false;
+      if (anchor.closest('.yoi-embed-modal')) return false;
+      if (anchor.hasAttribute('download')) return false;
+
+      var rawHref = anchor.getAttribute('href') || '';
+      if (!rawHref || rawHref.charAt(0) === '#') return false;
+
+      var url;
+      try {
+        url = new URL(anchor.href, window.location.href);
+      } catch (e) {
+        return false;
+      }
+
+      if (url.origin !== window.location.origin) return false;
+      if (!/^\/Works\/Yoishigure\//.test(url.pathname)) return false;
+      if (/\/Works\/Yoishigure\/?$/i.test(url.pathname)) return false;
+      if (/\.m4a$/i.test(url.pathname)) return false;
+
+      return true;
+    }
+
+    function findTategakiScript(doc) {
+      var scripts = Array.prototype.slice.call(doc.querySelectorAll('script'));
+      for (var i = 0; i < scripts.length; i++) {
+        var text = scripts[i].textContent || '';
+        if (text.indexOf("var mobileQuery = window.matchMedia('(max-width: 900px)')") !== -1) {
+          return text;
+        }
+      }
+      return '';
+    }
+
+    function canOpenEmbedInViewport() {
+      return Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO) >= MIN_TATEGAKI_WIDTH;
+    }
+
+    function setOpeningState(next) {
+      if (next) {
+        document.documentElement.classList.add('yoi-embed-opening');
+      } else {
+        document.documentElement.classList.remove('yoi-embed-opening');
+      }
+    }
+
+    function setOpeningLink(anchor) {
+      clearOpeningLink();
+      openingLink = anchor;
+      openingLink.classList.add('yoi-embed-opening-link');
+      openingLink.style.setProperty('background-image', 'none', 'important');
+      openingLink.style.setProperty('transition', 'none', 'important');
+      openingLink.style.setProperty('color', window.getComputedStyle(openingLink).color, 'important');
+    }
+
+    function clearOpeningLink() {
+      if (!openingLink) return;
+      openingLink.classList.remove('yoi-embed-opening-link');
+      openingLink.style.removeProperty('background-image');
+      openingLink.style.removeProperty('transition');
+      openingLink.style.removeProperty('color');
+      openingLink = null;
+    }
+
+    function computeEmbedPaneHeight() {
+      return Math.max(300, Math.min(800, Math.floor(window.innerHeight * 0.64)));
+    }
+
+    function applyFramePresetSize() {
+      var maxWidth = Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO);
+      var maxHeight = Math.floor(window.innerHeight * 0.86);
+      var width = Math.min(maxWidth, Math.max(MIN_TATEGAKI_WIDTH, EMBED_DEFAULT_WIDTH));
+      embedPaneHeightPx = computeEmbedPaneHeight();
+      var preferredHeight = Math.max(embedPaneHeightPx + 8, Math.floor(window.innerHeight * EMBED_DEFAULT_HEIGHT_RATIO));
+      var height = Math.min(maxHeight, Math.max(460, preferredHeight));
+      frame.style.width = width + 'px';
+      frame.style.height = height + 'px';
+      frame.style.opacity = '0';
+    }
+
+    function buildEmbedHtml(stageHtml, scriptText, title, paneHeightPx) {
+      var cssLinks = styleHrefs.map(function (href) {
+        return '<link rel="stylesheet" href="' + escapeHtml(href) + '">';
+      }).join('\n');
+
+      var themeBootstrap = [
+        '(function () {',
+        '  var media = window.matchMedia("(prefers-color-scheme: dark)");',
+        '  var stored = null;',
+        '  try { stored = localStorage.getItem("preferredTheme"); } catch (e) {}',
+        '  var isDark = stored === "dark" || (stored !== "light" && media.matches);',
+        '  if (isDark) {',
+        '    document.documentElement.classList.add("darkmode");',
+        '    if (document.body) document.body.classList.add("darkmode");',
+        '  }',
+        '})();'
+      ].join('\n');
+
+      return [
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
+        '<base href="' + escapeHtml(window.location.origin + '/') + '">',
+        '<title>' + escapeHtml(title || 'Tategaki Preview') + '</title>',
+        cssLinks,
+        '<style>',
+        '  html, body {',
+        '    margin: 0;',
+        '    padding: 0;',
+        '    background: transparent;',
+        '    overflow: overlay;',
+        '  }',
+        '  .yoi-embed-root {',
+        '    width: 100%;',
+        '    --tategaki-pane-height: ' + Math.max(300, Math.floor(paneHeightPx || 0)) + 'px;',
+        '  }',
+        '  .yoi-embed-root .tategaki-stage {',
+        '    width: 100% !important;',
+        '    max-width: none !important;',
+        '    margin-top: 0 !important;',
+        '    margin-bottom: 0 !important;',
+        '    margin-left: 0 !important;',
+        '    margin-right: 0 !important;',
+        '  }',
+        '  .yoi-embed-root .tategaki-scroll {',
+        '    overflow-x: overlay !important;',
+        '    overflow-y: hidden !important;',
+        '    scrollbar-gutter: auto !important;',
+        '    padding-bottom: 0 !important;',
+        '  }',
+        '</style>',
+        '<script>' + safeInlineScript(themeBootstrap) + '<\/script>',
+        '</head>',
+        '<body>',
+        '<div class="yoi-embed-root">',
+        stageHtml,
+        '</div>',
+        scriptText ? '<script>' + safeInlineScript(scriptText) + '<\/script>' : '',
+        '</body>',
+        '</html>'
+      ].join('\n');
+    }
+
+    function fitFrameHeightToContent(token) {
+      if (token !== clickToken) return;
+      if (!frame || !frame.contentDocument) return;
+
+      var doc = frame.contentDocument;
+      var root = doc.querySelector('.yoi-embed-root');
+      var body = doc.body;
+      var html = doc.documentElement;
+      var measured = 0;
+
+      if (root && root.getBoundingClientRect) {
+        measured = Math.ceil(root.getBoundingClientRect().height);
+      }
+      measured = Math.max(
+        measured,
+        body ? Math.ceil(body.scrollHeight) : 0,
+        html ? Math.ceil(html.scrollHeight) : 0
+      );
+      if (!measured) return;
+
+      var maxHeight = Math.floor(window.innerHeight * 0.86);
+      var targetHeight = Math.min(maxHeight, Math.max(420, measured + 2));
+      frame.style.height = targetHeight + 'px';
+    }
+
+    function openModal() {
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+      modal.hidden = false;
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.classList.add('yoi-embed-open');
+      modal.classList.remove('is-visible');
+      requestAnimationFrame(function () {
+        modal.classList.add('is-visible');
+      });
+    }
+
+    function finalizeCloseModal() {
+      modal.hidden = true;
+      modal.setAttribute('aria-hidden', 'true');
+      frame.removeAttribute('src');
+      frame.removeAttribute('srcdoc');
+      frame.style.width = '';
+      frame.style.height = '';
+      frame.style.opacity = '';
+      if (fitTimer) {
+        window.clearTimeout(fitTimer);
+        fitTimer = 0;
+      }
+      parsing = false;
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.documentElement.classList.remove('yoi-embed-open');
+      setOpeningState(false);
+      clearOpeningLink();
+    }
+
+    function closeModal(immediate) {
+      clickToken += 1;
+      parsing = false;
+      modal.classList.remove('is-visible');
+      frame.style.opacity = '0';
+
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+
+      if (immediate === true) {
+        finalizeCloseModal();
+        return;
+      }
+
+      closeTimer = window.setTimeout(function () {
+        closeTimer = 0;
+        finalizeCloseModal();
+      }, EMBED_CLOSE_ANIM_MS);
+    }
+
+    async function openPreview(anchor) {
+      var url = new URL(anchor.href, window.location.href);
+      var token = ++clickToken;
+      parsing = true;
+      applyFramePresetSize();
+      openModal();
+      frame.removeAttribute('src');
+      frame.removeAttribute('srcdoc');
+      if (anchor.blur) anchor.blur();
+
+      try {
+        var response = await fetch(url.pathname, { credentials: 'same-origin' });
+        if (!response.ok) throw new Error('Fetch failed');
+
+        var html = await response.text();
+        if (token !== clickToken) return;
+
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var stage = doc.querySelector('.tategaki-stage');
+        if (!stage) {
+          closeModal(true);
+          window.location.href = url.href;
+          return;
+        }
+
+        var scriptText = findTategakiScript(doc);
+        var embedHtml = buildEmbedHtml(
+          stage.outerHTML,
+          scriptText,
+          doc.title || anchor.textContent || '',
+          embedPaneHeightPx || computeEmbedPaneHeight()
+        );
+        frame.addEventListener('load', function onFrameLoad() {
+          if (token !== clickToken) return;
+          fitFrameHeightToContent(token);
+          if (fitTimer) window.clearTimeout(fitTimer);
+          fitTimer = window.setTimeout(function () {
+            fitFrameHeightToContent(token);
+          }, 160);
+          var frameDoc = frame.contentDocument;
+          if (frameDoc && frameDoc.fonts && frameDoc.fonts.ready && typeof frameDoc.fonts.ready.then === 'function') {
+            frameDoc.fonts.ready.then(function () {
+              fitFrameHeightToContent(token);
+            }).catch(function () {});
+          }
+          frame.style.opacity = '1';
+        }, { once: true });
+        frame.srcdoc = embedHtml;
+      } catch (e) {
+        closeModal(true);
+        window.location.href = url.href;
+      } finally {
+        if (token === clickToken) parsing = false;
+      }
+    }
+
+    closeTriggers.forEach(function (trigger) {
+      trigger.addEventListener('click', function (event) {
+        if (event) event.preventDefault();
+        closeModal(false);
+      });
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !modal.hidden) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      var anchor = event.target && event.target.closest ? event.target.closest('a') : null;
+      if (!anchor) return;
+      if (!isYoishigureDetailLink(anchor)) return;
+      if (!canOpenEmbedInViewport()) {
+        setOpeningState(false);
+        clearOpeningLink();
+        return;
+      }
+      if (parsing) {
+        event.preventDefault();
+        return;
+      }
+
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        setOpeningState(false);
+        clearOpeningLink();
+        return;
+      }
+
+      setOpeningLink(anchor);
+      setOpeningState(true);
+      event.preventDefault();
+      openPreview(anchor);
+    });
+
+    document.addEventListener('pointerdown', function (event) {
+      if (event.button !== 0) return;
+      var anchor = event.target && event.target.closest ? event.target.closest('a') : null;
+      if (!anchor) return;
+      if (!isYoishigureDetailLink(anchor)) return;
+      if (!canOpenEmbedInViewport()) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (parsing) return;
+
+      setOpeningLink(anchor);
+      setOpeningState(true);
+      event.preventDefault();
+      openPreview(anchor);
+    }, true);
+  })();
+</script>
 
 
 
@@ -587,6 +1524,53 @@ strong {
     </div>
 
   </div>
+  <script>
+    (function () {
+      var DETAILS_ANIM_MS = 200;
+
+      function isNativeSummary(el) {
+        return el && el.tagName === 'SUMMARY' && el.parentElement && el.parentElement.tagName === 'DETAILS';
+      }
+
+      function toggleDetailsWithCloseAnim(details) {
+        if (!details || details.classList.contains('is-closing')) return;
+
+        if (details.open) {
+          details.classList.add('is-closing');
+          window.setTimeout(function () {
+            details.open = false;
+            details.classList.remove('is-closing');
+          }, DETAILS_ANIM_MS);
+          return;
+        }
+
+        details.open = true;
+      }
+
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        if (!target || !target.closest) return;
+
+        var summary = target.closest('summary');
+        if (!isNativeSummary(summary)) return;
+        if (summary.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(summary.parentElement);
+      }, true);
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+        var target = event.target;
+        if (!isNativeSummary(target)) return;
+        if (target.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(target.parentElement);
+      }, true);
+    })();
+  </script>
   <script src="/js/nanobar.min.js"></script>
   <script>
     var options = {

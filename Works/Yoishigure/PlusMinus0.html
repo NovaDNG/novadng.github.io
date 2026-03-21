@@ -44,6 +44,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  
+  
+
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script>
@@ -62,18 +65,38 @@
     var media = window.matchMedia('(prefers-color-scheme: dark)');
     var root = document.documentElement;
 
-    function syncThemeControls(isDark) {
-      var darkBtn = document.getElementById('darkBtn');
-      var lightBtn = document.getElementById('lightBtn');
+    function collectThemeButtons() {
+      var darkBtns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-role="dark"]'));
+      var lightBtns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-role="light"]'));
 
-      if (!darkBtn || !lightBtn) return;
+      var legacyDarkBtn = document.getElementById('darkBtn');
+      var legacyLightBtn = document.getElementById('lightBtn');
+
+      if (legacyDarkBtn && darkBtns.indexOf(legacyDarkBtn) === -1) {
+        darkBtns.push(legacyDarkBtn);
+      }
+      if (legacyLightBtn && lightBtns.indexOf(legacyLightBtn) === -1) {
+        lightBtns.push(legacyLightBtn);
+      }
+
+      return {
+        darkBtns: darkBtns,
+        lightBtns: lightBtns
+      };
+    }
+
+    function syncThemeControls(isDark) {
+      var controls = collectThemeButtons();
+      var darkBtns = controls.darkBtns;
+      var lightBtns = controls.lightBtns;
+      if (!darkBtns.length && !lightBtns.length) return;
 
       if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
+        lightBtns.forEach(function (el) { el.classList.remove('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.add('hidden'); });
       } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
+        lightBtns.forEach(function (el) { el.classList.add('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.remove('hidden'); });
       }
     }
 
@@ -192,7 +215,7 @@
   input[type="password"]:focus,
   textarea:focus,
   select:focus {
-    border: 1px solid #E2001A;
+    /* border: 1px solid #E2001A; */
   }
 </style>
 
@@ -211,6 +234,8 @@
           
 
 <h2 class="mt-3">±0</h2>
+
+
 
 
   
@@ -407,6 +432,7 @@
       var userInteracted = false;
       var isProgrammaticScroll = false;
       var pendingRightOffset = null;
+      var DETAILS_ANIM_MS = 200;
 
       // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
@@ -500,6 +526,23 @@
       }, { passive: true });
 
       if (content) {
+        function toggleDetailsWithAnimation(details) {
+          if (!details || details.classList.contains('is-closing')) return;
+
+          if (details.open) {
+            details.classList.add('is-closing');
+            window.setTimeout(function () {
+              details.open = false;
+              details.classList.remove('is-closing');
+              restoreFromRightOffset();
+            }, DETAILS_ANIM_MS);
+            return;
+          }
+
+          details.open = true;
+          restoreFromRightOffset();
+        }
+
         // Intercept summary click to avoid native toggle jitter.
         // We toggle details manually and immediately restore scroll position.
         content.addEventListener('click', function (event) {
@@ -515,8 +558,7 @@
           userInteracted = true;
           captureRightOffset();
 
-          details.open = !details.open;
-          restoreFromRightOffset();
+          toggleDetailsWithAnimation(details);
         }, true);
 
         // Keep keyboard accessibility behavior (Enter/Space on summary)
@@ -534,8 +576,7 @@
           event.preventDefault();
           userInteracted = true;
           captureRightOffset();
-          details.open = !details.open;
-          restoreFromRightOffset();
+          toggleDetailsWithAnimation(details);
         }, true);
       }
 
@@ -584,6 +625,7 @@
     document.querySelectorAll('.js-tategaki-scroll').forEach(bindWheelToHorizontalScroll);
   })();
 </script>
+
 
 
 
@@ -810,6 +852,53 @@
     </div>
 
   </div>
+  <script>
+    (function () {
+      var DETAILS_ANIM_MS = 200;
+
+      function isNativeSummary(el) {
+        return el && el.tagName === 'SUMMARY' && el.parentElement && el.parentElement.tagName === 'DETAILS';
+      }
+
+      function toggleDetailsWithCloseAnim(details) {
+        if (!details || details.classList.contains('is-closing')) return;
+
+        if (details.open) {
+          details.classList.add('is-closing');
+          window.setTimeout(function () {
+            details.open = false;
+            details.classList.remove('is-closing');
+          }, DETAILS_ANIM_MS);
+          return;
+        }
+
+        details.open = true;
+      }
+
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        if (!target || !target.closest) return;
+
+        var summary = target.closest('summary');
+        if (!isNativeSummary(summary)) return;
+        if (summary.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(summary.parentElement);
+      }, true);
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+        var target = event.target;
+        if (!isNativeSummary(target)) return;
+        if (target.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(target.parentElement);
+      }, true);
+    })();
+  </script>
   <script src="/js/nanobar.min.js"></script>
   <script>
     var options = {
