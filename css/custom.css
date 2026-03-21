@@ -854,31 +854,9 @@ html.darkmode .yoi-embed-modal__dialog {
   background: rgba(25, 25, 26, 0.96);
 }
 
-html.yoi-embed-open .tategaki-content a:hover:not(.icon),
-html.yoi-embed-open .tategaki-content a:focus:not(.icon),
-html.yoi-embed-open .tategaki-content a:active:not(.icon) {
-  background-image: none !important;
-  background-position: 100% 0 !important;
-  color: inherit !important;
-  transition: none !important;
-}
-
-.tategaki-content a.yoi-embed-opening-link:not(.icon),
-.tategaki-content a.yoi-embed-opening-link:hover:not(.icon),
-.tategaki-content a.yoi-embed-opening-link:focus:not(.icon),
-.tategaki-content a.yoi-embed-opening-link:active:not(.icon) {
-  background-image: none !important;
-  background-position: 100% 0 !important;
-  color: inherit !important;
-  transition: none !important;
-}
-
+html.yoi-embed-open .tategaki-content a:not(.icon),
 html.yoi-embed-opening .tategaki-content a:not(.icon),
-html.yoi-embed-opening .tategaki-content a:not(.icon):hover,
-html.yoi-embed-opening .tategaki-content a:not(.icon):focus,
-html.yoi-embed-opening .tategaki-content a:not(.icon):active {
-  background-image: none !important;
-  color: inherit !important;
+.tategaki-content a.yoi-embed-opening-link:not(.icon) {
   transition: none !important;
 }
 
