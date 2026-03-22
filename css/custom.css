@@ -17,6 +17,7 @@
 
 html {
     overflow: overlay;
+    scroll-behavior: smooth;
     background: #eae6e2;
     transition: background-color 0.2s ease-in-out;
 } 

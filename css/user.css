@@ -57,6 +57,7 @@ a.color-link:focus:not(.icon) {
 }
 
 .tategaki-scroll {
+  position: relative;
   width: 100%;
   height: var(--tategaki-pane-height);
   overflow-x: auto;
