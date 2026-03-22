@@ -576,6 +576,15 @@
           hits.push(el);
         });
 
+        hits.sort(function (a, b) {
+          if (a === b) return 0;
+          if (!a || !b || !a.compareDocumentPosition) return 0;
+          var pos = a.compareDocumentPosition(b);
+          if (pos & Node.DOCUMENT_POSITION_PRECEDING) return 1;
+          if (pos & Node.DOCUMENT_POSITION_FOLLOWING) return -1;
+          return 0;
+        });
+
         if (hits.length) {
           setActive(0, true);
         } else {
@@ -748,19 +757,19 @@ body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb;
 <details>
     <summary>快速入坑</summary></br>
   
-<p><a href="/Works/Yoishigure/DailyNote" title="2021-08-06 | Daily Note" target="_blank">Daily Note</a></p>
+<p><a href="/Works/Yoishigure/DailyNote">Daily Note</a></p>
 <audio controls preload="none">
   <source src="/Works/Yoishigure/DailyNote.m4a" type="audio/mp4">
   此瀏覽器不支援音訊播放. <a href="/Works/Yoishigure/DailyNote.m4a">下載音訊檔</a>
 </audio></br></br>
 
-<p><a href="/Works/Yoishigure/Sylphid" title="2023-12-27 | ロスト・シルフィード (feat. Lucia)" target="_blank">ロスト・シルフィード</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></p>
+<p><a href="/Works/Yoishigure/Sylphid">ロスト・シルフィード</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></p>
 <audio controls preload="none">
   <source src="/Works/Yoishigure/LostSylphid.m4a" type="audio/mp4">
   此瀏覽器不支援音訊播放. <a href="/Works/Yoishigure/LostSylphid.m4a">下載音訊檔</a>
 </audio></br></br>
 
-<p><a href="/Works/Yoishigure/PrayForDawn" title="2024-12-22 | 夜明けを乞う。(feat. むﾄ)" target="_blank">夜明けを乞う。</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></p>
+<p><a href="/Works/Yoishigure/PrayForDawn">夜明けを乞う。</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></p>
 <audio controls preload="none">
   <source src="/Works/Yoishigure/PrayForDawn.m4a" type="audio/mp4">
   此瀏覽器不支援音訊播放. <a href="/Works/Yoishigure/PrayForDawn.m4a">下載音訊檔</a>
@@ -791,7 +800,7 @@ body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb;
 <p><a href="/Works/Yoishigure/Reflection" title="2023-08-31 | 透彩リフレクション | VocaDuo2023 | チーム青春エクスプロージョン | エニル | みかみ茉姫 | 青砥イヴ | はちえ | ToM | 初音ミク×可不">透彩リフレクション</a></p>
 <p><a href="/Works/Yoishigure/Overhaul" title="2023-09-19 | オーバーホール | 初音ミク | プロセカNEXT">オーバーホール</a></p>
 <p><a href="/Works/Yoishigure/ACCHIevement" title="feat. 狐子×星界 | 無色透名祭 | 2023-11-02">ACCHIevement-アチーブメント-</a></p>
-<p><a href="/Works/Yoishigure/Serenade" title="2024-01-07 | 月の小夜曲 (feat. Lucia)">月の小夜曲 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
+<p><a href="/Works/Yoishigure/LunarSerenade" title="2024-01-07 | 月の小夜曲 (feat. Lucia)">月の小夜曲 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. Lucia)</span></a></p>
 <p><a href="/Works/Yoishigure/ConnectingStar" title="2024-07-04 | VocaDuo2024 | 星芒サインポスト | 或夢 | ぷちの | korona | ぴにょ | ToM">紡ぎ星</a></p>
 <p>ネガポジ論争 feat. 初音ミク×鏡音リン | 2024-11-29　| プロセカNEXT</p>
 <p><a href="/Works/Yoishigure/PrayForDawn" title="2024-12-22 | 夜明けを乞う。(feat. むﾄ)">夜明けを乞う。<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(feat. むﾄ)</span></a></p>
@@ -850,10 +859,12 @@ body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb;
 <p><a href="/Works/Yoishigure/Ondine" title="2024-02-24 | Ondine | Coffret">Ondine</a></p>
 <p><a href="/Works/Yoishigure/Recurrence" title="2024-02-24 | 再巡 | Coffret">再巡</a></p>
 <p><a href="/Works/Yoishigure/DreamScale" title="2024-02-24 | レーヴェの秤 | Coffret">レーヴェの秤</a></p>
+<hr>
 <p><a href="/Works/Yoishigure/Gretchen" title="2025-12-29 | Gretchen">Gretchen</a></p>
 <h4 id="木下珠子"><a href="#木下珠子" class="headerlink" title="木下珠子"></a>木下珠子</h4><p><a href="/Works/Yoishigure/DearU" title="2023-10-29 | Dear U">Dear U</a></p>
-<p><a href="/Works/Yoishigure/Nadir" title="2024-11-16 | Nadir">Nadir</a></p>
 <p><a href="/Works/Yoishigure/Beginning" title="2023-10-29 | はじまり">はじまり</a></p>
+<hr>
+<p><a href="/Works/Yoishigure/Nadir" title="2024-11-16 | Nadir | M3-2024秋">Nadir</a></p>
 <h4 id="菅崎樹里"><a href="#菅崎樹里" class="headerlink" title="菅崎樹里"></a>菅崎樹里</h4><p><a href="/Works/Yoishigure/Infinity" title="2023-09-26 | 夢幻">夢幻</a></p>
 <p><a href="/Works/Yoishigure/Endroll" title="2023-09-26 | エンドロール">エンドロール</a></p>
 <h4 id="Lucia"><a href="#Lucia" class="headerlink" title="Lucia"></a>Lucia</h4><p>藍悼花 2022-05-22 | Harmonics | プロセカNEXT | 初音ミク</p>
@@ -869,31 +880,38 @@ body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb;
 <p>[みかみ茉姫] <a href="/Works/Yoishigure/GarnetWalz" title="2023-06-21 | Garnet Walz">Garnet walz</a></p>
 <p>[小絃] <a href="/Works/Yoishigure/coda" title="2024-04-09 | coda">coda</a></p>
 <p>[沢野ぽぷら] 泡沫セカイ​ 2024-08-18</p>
-<p>[一夜すみ] 短夜​ 2024-08-06</p>
+<p>[一夜すみ] <a href="/Works/Yoishigure/ShortSummerNight" title="2024-08-06">短夜</a></p>
 <p>[小絃] <a href="/Works/Yoishigure/Dawn" title="2025-04-09 | 暁">暁</a></p>
 <p>[或夢 - um -] <a href="/Works/Yoishigure/Nerine" title="2025-06-06 | ネリネ">ネリネ</a></p>
 <p>[餅路チオ] <a href="/Works/Yoishigure/Lycorias" title="2024-11-24 | リュコリアス">リュコリアス</a></p>
 <p>[うさこ。] <a href="/Works/Yoishigure/DecorationLila" title="2025-04-17 | リラの勲章">リラの勲章</a></p>
 <details>
     <summary>Upcoming</summary>
-[本宮瑠華] <a href="/Works/Yoishigure/GhostLeg" title="2025-12-21">Ghost Let</a>
+[本宮瑠華] <a href="/Works/Yoishigure/GhostLeg" title="2025-12-21 | ゆったりまったり">Ghost Let</a>
 </details></br>
 
 <details>
     <summary>其他名義</summary>
 <h4>うたたね</h4>
 
+<p>2021-10-24 | うたたね</p>
 <p>Bouvardia</p>
 <p>今は、ただ</p>
 <p>Chante avec moi</p>
-<p>Serenade</p>
-<p>翡翠の鏡</p>
-<p><a href="/Works/Yoishigure/">つむぎ詠</a></p>
+<p><a href="/Work/Yoishigure/Serenade" title="2021-10-24">Serenade</a></p>
+<p>2021-03-06 翡翠の鏡</p>
+<hr>
+
+<p><a href="/Works/Yoishigure/" title="2022-07-23">つむぎ詠</a></p>
+<p>2023-10-29 | M3-2023秋 | In sail!</p>
 <p>千夜の嘘</p>
 <p>Barcarola</p>
 <p>Empty rain</p>
 <p>童心</p>
+<hr>
+
 <p>Front line</p>
+<p>2025-07-21 Iris </p>
 </details>
 
 
