@@ -593,7 +593,9 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft + event.deltaY));
+        // In vertical-rl reading flow, invert wheel Y mapping so natural
+        // up/down gesture direction matches expected page progression.
+        var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft - event.deltaY));
         if (next === el.scrollLeft) return;
 
         userInteracted = true;
