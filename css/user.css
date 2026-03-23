@@ -45,6 +45,26 @@ a.color-link:focus:not(.icon) {
   color: #E9E6E2;
 }
 
+/* Yoishigure: mirror the parent hover fill onto strong/b, but keep timing in sync. */
+body.page-yoishigure a:not(.icon) > strong,
+body.page-yoishigure a:not(.icon) > b,
+body.page-yoishigure a:hover:not(.icon) > strong,
+body.page-yoishigure a:hover:not(.icon) > b,
+body.page-yoishigure a:focus:not(.icon) > strong,
+body.page-yoishigure a:focus:not(.icon) > b {
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition:
+    color 0.2s ease-out,
+    background-position 0.2s ease-out;
+  color: inherit;
+  text-decoration: inherit;
+}
+
 /* Desktop: vertical layout + horizontal scrolling canvas */
 .tategaki-stage {
   width: 80vw;
