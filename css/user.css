@@ -34,7 +34,8 @@ a.color-link:not(.icon) {
     rgba(0, 0, 0, 0) 50%,
     var(--link-hover-accent, #e2001a) 50%
   );
-  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  background-size: 100% calc(200% + 2px);
   background-position: 0 0;
 }
 
