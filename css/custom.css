@@ -338,7 +338,7 @@ html.darkmode #logoDark {
     .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]),
     .container embed,
     .container object {
-      width: 120%;
+      width: min(120%, 100vw);
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -346,7 +346,7 @@ html.darkmode #logoDark {
     }
 
     .container p:has(img[alt~="_gallery"]) {
-      width: 120%;
+      width: min(120%, 100vw);
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -654,7 +654,6 @@ html.darkmode .depth-breadcrumb {
   align-items: center;
   line-height: 1.25;
   font-size: 2rem;
-  margin-right: 1em;
 }
 
 .yoi-float-nav__theme-btn {
@@ -965,6 +964,7 @@ html.yoi-embed-opening .tategaki-content a:not(.icon),
   /* Match theme button size to the toggle buttons */
   .yoi-float-nav__theme {
     font-size: 2.4rem;
+    padding: 1em;
   }
 
   /* Show toggle buttons on mobile */
@@ -974,7 +974,7 @@ html.yoi-embed-opening .tategaki-content a:not(.icon),
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin: 0;
+    margin: 0 0 0 1em;
     padding: 0 0.8rem;
     height: 4.4rem;
     border: 0;
