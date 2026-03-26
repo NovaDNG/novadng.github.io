@@ -13,10 +13,13 @@
 
 :root {
     text-autospace: normal;
+    --shadow-default: 0 6px 12px rgba(80, 0, 0, 0.16);
+    /* Single source of truth — keep in sync with DETAILS_ANIM_MS reads in layout.ejs and tategaki_script.ejs */
+    --details-anim-ms: 200;
 }
 
 html {
-    overflow: overlay;
+    overflow: auto;
     scroll-behavior: smooth;
     background: #eae6e2;
     transition: background-color 0.2s ease-in-out;
@@ -28,11 +31,7 @@ html.darkmode {
 
 img {
     max-width: 100%;
-    -webkit-box-shadow: 0 6px 12px
-        rgba(80, 0, 0, 0.16);
-    -moz-box-shadow: 0 6px 12px
-        rgba(80, 0, 0, 0.16);
-    box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
+    box-shadow: var(--shadow-default);
     margin-bottom: -1%;
 }
 
@@ -178,24 +177,16 @@ html.darkmode body li p code {
     background-color: rgb(65, 65, 65);
 }
 
-/* Scroll bar 
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+/* Mode toggle column — constrain width so the icon stays tight */
+.mode-col {
+    max-width: 50px;
 }
-
-::-webkit-scrollbar-thumb {
-    background: rgb(128 128 128 / 56%);
-}
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgb(128 128 128 / 16%);
-}
-
-::-webkit-scrollbar-thumb:active {
-    background-color: rgb(128 128 128 / 100%);
-} */
 
 /* Footer */
+a.footer-link {
+    text-decoration: none;
+}
+
 a.footer-link:hover,
 a.footer-link:focus {
     cursor: pointer;
@@ -204,7 +195,8 @@ a.footer-link:focus {
 .svg-hov {
     transition: all 0.2s ease-in-out;
 }
-.svg-hov:hover {
+.svg-hov:hover,
+.svg-hov:focus {
     transform: translateY(-3px);
     transition: all 0.2s ease-in-out;
 }
@@ -290,6 +282,8 @@ html.darkmode body {
 /* Theme-switching pheader logo crossfade */
 #logoLight,
 #logoDark {
+    max-width: 128px;
+    height: auto;
     transition: opacity 0.7s ease-in-out;
 }
 
@@ -421,9 +415,7 @@ a[data-flickr-embed] > .flickr-embed-frame,
 .flickr-embed-frame {
   display: block;
   border: 0;
-  -webkit-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
-  -moz-box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
-  box-shadow: 0 6px 12px rgba(80, 0, 0, 0.16);
+  box-shadow: var(--shadow-default);
 }
 
 /* a[data-flickr-embed] { overflow: visible; } */
@@ -477,6 +469,76 @@ a:focus:not(.icon) > b {
   border-radius: 2px;
 }
 
+/* Yoishigure index page — zero-height anchor headings used as nav targets */
+.yoi-nav-anchor-only {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Yoishigure index page — link colour override (blue instead of red accent) */
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink) {
+  color: #007bbb;
+  text-decoration: none;
+  transition:
+    color 0.2s ease-out,
+    background-position 0.2s ease-out;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #007bbb 50%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% calc(200% + 2px);
+  background-position: 0 0;
+}
+
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink):hover,
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink):focus,
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a.yoi-page-search-hit-meta.is-active:not(.icon):not(.headerlink) {
+  background-position: 0 100%;
+  color: #E9E6E2;
+}
+
+body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a.yoi-page-search-hit-meta:not(.is-active):not(:hover):not(:focus):not(.icon):not(.headerlink) {
+  background-position: 0 0;
+  text-decoration: underline #007bbb 2px;
+}
+
+body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb; }
+
+/* Yoishigure lyric subpages — blue link accent in tategaki content.
+   --link-hover-accent must be on the <a> itself, not a container ancestor:
+   tcolor.ejs declares it on a:not(.icon) directly, so ancestor inheritance
+   loses the cascade. Higher specificity here overrides that declaration,
+   which also fixes background-image and text-decoration-color via var(). */
+body.page-yoishigure-sub .tategaki-content a:not(.icon):not(.headerlink):not(.color-link) {
+  --link-hover-accent: #007bbb;
+  color: #007bbb;
+  text-decoration: none;
+}
+
+body.page-yoishigure-sub .tategaki-content a:not(.icon):not(.headerlink):not(.color-link):hover,
+body.page-yoishigure-sub .tategaki-content a:not(.icon):not(.headerlink):not(.color-link):focus {
+  color: #E9E6E2;
+}
+
+/* Navigation and footer font overrides */
+@media (min-width: 550px) {
+    .nine.columns.nav {
+        font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .eight.columns {
+        font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 600;
+    }
+}
+
 /* Breadcrumb */
 .depth-breadcrumb {
   margin-top: 5rem;
@@ -503,7 +565,7 @@ html.darkmode .depth-breadcrumb {
 .yoi-float-nav {
   position: fixed;
   top: 8rem;
-  right: max(1.2rem, calc((100vw - 960px) / 2 - 16rem));
+  right: max(1.2rem, calc((100vw - 960px) / 2 - 13rem));
   z-index: 24;
   width: max-content;
   min-width: 20rem;
@@ -513,12 +575,13 @@ html.darkmode .depth-breadcrumb {
   overflow-x: auto;
   padding: 2rem 2rem 2rem;
   border-radius: 8px;
-  background: #EBE6E2;
-  box-shadow: 0 6px 12px rgba(0, 123, 187, 0.12);
+  background: #EBE6E2DE;
+  box-shadow: 0 6px 12px 4px rgba(0, 123, 187, 0.12);
+  backdrop-filter: blur(12px) saturate(56%);
   line-height: 1.35;
 }
 
-.yoi-float-nav__head {
+.yoi-float-nav__bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -589,8 +652,9 @@ html.darkmode .depth-breadcrumb {
 .yoi-float-nav__theme {
   display: inline-flex;
   align-items: center;
-  line-height: 1;
-  font-size: 1.87rem;
+  line-height: 1.25;
+  font-size: 2rem;
+  margin-right: 1em;
 }
 
 .yoi-float-nav__theme-btn {
@@ -666,8 +730,9 @@ html.darkmode .depth-breadcrumb {
 
 body.darkmode .yoi-float-nav,
 html.darkmode .yoi-float-nav {
-  background: rgba(25, 25, 26 , 0.87);
-  box-shadow: 0 6px 12px rgba(0, 123, 187, 0.12);
+  background: #19191ADE;
+  box-shadow: 0 6px 12px 4px rgba(0, 123, 187, 0.12);
+  backdrop-filter: blur(12px) saturate(67%);
 }
 
 body.darkmode .yoi-float-nav__h,
@@ -709,11 +774,11 @@ details > :not(summary) {
 }
 
 details[open] > :not(summary) {
-  animation: details-open 0.2s ease-in both;
+  animation: details-open calc(var(--details-anim-ms) * 1ms) ease-in both;
 }
 
 details.is-closing > :not(summary) {
-  animation: details-close 0.2s ease-in both;
+  animation: details-close calc(var(--details-anim-ms) * 1ms) ease-in both;
   pointer-events: none;
 }
 
@@ -744,15 +809,6 @@ html.darkmode .yoi-float-nav__h.is-active {
   color: color-mix(in srgb, rgb(0, 123, 187) 72%, transparent);
 }
 
-/* .yoi-float-nav::-webkit-scrollbar {
-  width: 6px;
-}
-
-.yoi-float-nav::-webkit-scrollbar-thumb {
-  background: rgba(120, 120, 120, 0.45);
-  border-radius: 99px;
-} */
-
 .yoi-embed-modal[hidden] {
   display: none;
 }
@@ -771,8 +827,8 @@ html.darkmode .yoi-float-nav__h.is-active {
 .yoi-embed-modal__backdrop {
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   opacity: 0;
   transition: opacity 0.2s ease-in;
 }
@@ -786,12 +842,12 @@ html.darkmode .yoi-float-nav__h.is-active {
   gap: 0.5rem;
   width: fit-content;
   max-width: 96vw;
-  max-height: calc(100vh - 5.2vh);
+  max-height: calc(100vh - 6vh);
   margin: 0;
   padding: 0.7rem;
   border-radius: 10px;
-  background: rgba(235, 231, 226, 0.96);
-  box-shadow: 0 8px 20px rgba(0, 123, 187, 0.12);
+  background: #EBE6E2DE;
+  box-shadow: 0 12px 24px 12px rgba(0, 123, 187, 0.12);
   opacity: 0;
   transform: translateY(8px);
   transition:
@@ -853,7 +909,7 @@ html.darkmode .yoi-float-nav__h.is-active {
 
 body.darkmode .yoi-embed-modal__dialog,
 html.darkmode .yoi-embed-modal__dialog {
-  background: rgba(25, 25, 26, 0.96);
+  background: #19191ADE;
 }
 
 html.yoi-embed-open .tategaki-content a:not(.icon),
@@ -862,8 +918,114 @@ html.yoi-embed-opening .tategaki-content a:not(.icon),
   transition: none !important;
 }
 
+/* Toggle buttons are mobile-only; hidden on desktop */
+.yoi-float-nav__list-toggle,
+.yoi-float-nav__search-toggle {
+  display: none;
+}
+
 @media (max-width: 1380px) {
+  /* Aside becomes one unified surface: backdrop-filter covers bar + panels
+     together because panels are normal flow children, not separate layers.
+     Anchored at bottom: 0; grows upward as panels open. */
   .yoi-float-nav {
+    top: unset;
+    right: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: unset;
+    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  /* Bar strip: always visible, pushed to the bottom of the flex column */
+  .yoi-float-nav__bar {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    padding: 0 1.2rem;
+    height: 4.4rem;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .yoi-float-nav__title {
     display: none;
+  }
+
+  /* Match theme button size to the toggle buttons */
+  .yoi-float-nav__theme {
+    font-size: 2.4rem;
+  }
+
+  /* Show toggle buttons on mobile */
+  .yoi-float-nav__list-toggle,
+  .yoi-float-nav__search-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0 0.8rem;
+    height: 4.4rem;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: inherit;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease-in;
+  }
+
+  /* Active state */
+  .yoi-float-nav.yoi--list-open .yoi-float-nav__list-toggle,
+  .yoi-float-nav.yoi--search-open .yoi-float-nav__search-toggle {
+    color: #007bbb;
+  }
+
+  /* Panels: collapsed above the bar by default.
+     On close: opacity fades first (0.2s), then height snaps to 0.
+     order pushes panels above the bar strip in the flex column. */
+  .yoi-float-nav__search,
+  .yoi-float-nav__list {
+    order: 1;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0 1.4rem;
+    margin: 0;
+    transition:
+      max-height 0s 0.2s,
+      opacity 0.2s ease,
+      padding 0s 0.2s;
+  }
+
+  .yoi-float-nav__list {
+    order: 2;
+  }
+
+  /* Open: height and opacity animate in simultaneously */
+  .yoi-float-nav.yoi--list-open .yoi-float-nav__list,
+  .yoi-float-nav.yoi--search-open .yoi-float-nav__search {
+    max-height: 60vh;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 1.2rem 1.4rem;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease;
   }
 }
