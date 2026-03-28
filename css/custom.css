@@ -577,7 +577,7 @@ html.darkmode .depth-breadcrumb {
   border-radius: 8px;
   background: #EBE6E2DE;
   box-shadow: 0 6px 12px 4px rgba(0, 123, 187, 0.12);
-  backdrop-filter: blur(12px) saturate(56%);
+  backdrop-filter: blur(8px) saturate(56%);
   line-height: 1.35;
 }
 
@@ -731,7 +731,7 @@ body.darkmode .yoi-float-nav,
 html.darkmode .yoi-float-nav {
   background: #19191ADE;
   box-shadow: 0 6px 12px 4px rgba(0, 123, 187, 0.12);
-  backdrop-filter: blur(12px) saturate(67%);
+  backdrop-filter: blur(8px) saturate(67%);
 }
 
 body.darkmode .yoi-float-nav__h,
@@ -995,7 +995,6 @@ html.yoi-embed-opening .tategaki-content a:not(.icon),
   }
 
   /* Panels: collapsed above the bar by default.
-     On close: opacity fades first (0.2s), then height snaps to 0.
      order pushes panels above the bar strip in the flex column. */
   .yoi-float-nav__search,
   .yoi-float-nav__list {
@@ -1007,9 +1006,8 @@ html.yoi-embed-opening .tategaki-content a:not(.icon),
     padding: 0 1.4rem;
     margin: 0;
     transition:
-      max-height 0s 0.2s,
-      opacity 0.2s ease,
-      padding 0s 0.2s;
+      max-height 0.3s ease,
+      opacity 0.2s ease;
   }
 
   .yoi-float-nav__list {

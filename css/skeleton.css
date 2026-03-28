@@ -200,7 +200,7 @@ html {
 }
 
 body {
-    font-size: 1.67rem;
+    font-size: 1.72rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
@@ -532,7 +532,7 @@ ul ol,
 ol ol,
 ol ul {
     margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%;
+    font-size: 87%;
 }
 
 li {

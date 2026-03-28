@@ -93,10 +93,12 @@ body.page-yoishigure a:focus:not(.icon) > b {
 .tategaki-content {
   font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
   font-feature-settings: halt;
+  font-variant-numeric: tabular-nums;
   text-autospace: normal;
   margin-left: auto;
   margin-right: 2rem;
   writing-mode: vertical-rl;
+
 /*  text-orientation: mixed; */
   width: max-content;
   height: 100%;
@@ -189,7 +191,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
 @media (max-width: 900px) {
   .tategaki-stage {
     min-height: auto;
-    margin: 1.6rem 0 2.8rem;
+    margin: 1.33rem 0 1.33rem;
   }
 
   .tategaki-scroll {

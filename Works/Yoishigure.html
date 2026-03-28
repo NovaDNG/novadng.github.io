@@ -653,7 +653,7 @@
 
   
   <style>
-/* Album/work name display — bold text rendered as large, light-weight sans */
+/* bold text rendered as large, light-weight sans */
 strong {
   font-family: "iA Writer Quattro V", "HYQiHei-50S", FZYouHei_GBK, "IBM Plex Sans SC", "Source Han Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
@@ -662,13 +662,58 @@ strong {
 }
 </style>
 
-<p>本頁面集中歸檔NovaDNG創作的<a href="/2025-03/Minstrel-Yoishigure">酔シグレ</a>相關各類資源. 酔シグレ是作曲家香音主導的音樂企劃. </p>
 <h3 id="Intro" class="yoi-nav-anchor-only">簡介</h3>
 
+<p>本頁面集中歸檔NovaDNG創作的<a href="/2025-03/Minstrel-Yoishigure">酔シグレ</a>相關各類資源. 酔シグレ是作曲家香音 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(KANON)</span> 主導的音樂企劃. 她從三歲學鋼琴, 音樂大學院畢業, 在瘟疫期間自學編曲軟體, 走入Vocaloid音樂的世界. </p>
+<center id="random-verse"></center></br>
 
-<center><a href="/Works/Yoishigure/Cycle"><strong>｢僅靠優美的音樂,是無法傳達給妳的.｣</strong></a></center></br>
+<script>
+const verses = [
+  { text: "｢僅靠優美的音樂,是無法傳達給妳的｣", href: "/Works/Yoishigure/Cycle" },
+  { text: "｢藝術是救不了人的｣", href: "/Works/Yoishigure/Lyolite" },
+  { text: "｢時下風行的失戀曲也好, 酸甜的詩歌也罷, 不對, 不應是那種陳腐之物｣", href: "/Works/Yoishigure/Neige" },
+  { text: "｢感情無法言語化, 愈是真心話愈是難以出口｣", href: "/Works/Yoishigure/Overhaul" },
+  { text: "｢總有一天會成為将他人內心救贖的重要『護身符』｣", href: "/Works/Yoishigure/ACCHIevement" },
+  { text: "｢無論何處, 無論何時, 星座都是將我們連結的絲線｣", href: "/Works/Yoishigure/ConnectingStar" },
+  { text: "｢對於那化為21克塵堊的自己, 我想終有一日會喜歡上｣", href: "/Works/Yoishigure/PrayForDawn" },
+  { text: "｢化作不同的形態, 如一封書信, 如一篇童話, 如與妳唱和的兒歌.｣", href: "/Works/Yoishigure/MementoLeftBehind" },
+  { text: "｢我無法成為鑽石, 只能保持這黯淡無光的模樣｣", href: "/Works/Yoishigure/ZrO2" },
+  { text: "｢別只看著被粉飾的外在, 聽著被斷章取義的真心, 就一副什麼都懂的樣子｣", href: "/Works/Yoishigure/StupidWishes" },
+  { text: "｢事到如今仍想延續那已經斬斷的夢想,也太可笑了吧?｣", href: "/Works/Yoishigure/Alma" },
+  { text: "｢櫻花飄散, 夕陽入海, 金木犀飄香, 冰封裡雪花紛飛, 幾經四季更迭我也不會遺忘｣", href: "/Works/Yoishigure/Straining" },
+  { text: "｢想為他人的幸福應援, 但心底忍不住嫉妒吧?｣", href: "/Works/Yoishigure/Cynical" },
+  { text: "｢正解, 捷徑, 終點, 未來, 無處可尋, 只有疑惑不斷擴散｣", href: "/Works/Yoishigure/Passed" },
+  { text: "｢在平凡的每日裡散落着, 永恆的碎片, 無形的寶物｣", href: "/Works/Yoishigure/DailyNote" },
+  { text: "｢嘲哳作响的心之正体, 请用平凡地温柔相告｣", href: "/Works/Yoishigure/Angel" },
+  { text: "｢人無論何時皆孤獨, 為排遣寂寞沉溺於愛｣", href: "/Works/Yoishigure/EDEN" },
+  { text: "｢熱情也好夢想也好, 對妳的愛也好, 不過是短暫的病症罷了｣", href: "/Works/Yoishigure/FalseGod" },
+  { text: "｢無需戰鬥的人生, 大家不都這麼度過嗎?｣", href: "/Works/Yoishigure/Hameln" },
+  { text: "｢若這痛楚終有一天消失殆盡, 至少留下以『妳』為名的傷跡｣", href: "/Works/Yoishigure/Minstrel" },
+  { text: "｢從幾萬冊中挑選的那條道路, 請用妳的步幅走完｣", href: "/Works/Yoishigure/GiveBack" },
+  { text: "｢正因喜愛, 更覺痛苦｣", href: "/Works/Yoishigure/RedMoon" },
+  { text: "｢為某人所紡織出的, 救贖般的話語, 那般鮮明美麗｣", href: "/Works/Yoishigure/Pity" },
+  { text: "｢將痛苦嫉妒與後悔化為歌謠, 共同訴說｣", href: "/Works/Yoishigure/Troubador" },
+  { text: "｢仰望星空時誰都不想起, 一定是幸福吧｣", href: "/Works/Yoishigure/Irony" },
+  { text: "｢此地天空湛藍, 微風清澈透明, 雲朵柔軟蓬鬆, 亦能望見白晝之月. 此刻妳在想著什麼?｣", href: "/Works/Yoishigure/Sylphid" },
+  { text: "｢將那月 那星 那花 那雨 那無波暮海, 全部擁入懷中, 放開雙手｣", href: "/Works/Yoishigure/Paradis" },
+  { text: "｢這種慟哭怎麼可能是美麗的｣", href: "/Works/Yoishigure/Ballad" },
+  { text: "｢時間如麻醉, 人是麻藥｣", href: "/Works/Yoishigure/MemorialName" },
+  { text: "｢若終將離去, 若終將變遷, 不如將我永遠囚於『當下』｣", href: "/Works/Yoishigure/Ondine" },
+  { text: "｢仰望浮雲長空的此刻, 這孤寂終將化作回憶｣", href: "/Works/Yoishigure/Recurrence" },
+  { text: "｢明月漸次黯淡, 星辰溺於暗夜｣", href: "/Works/Yoishigure/DreamScale" },
+  { text: "｢若能將此痛苦化作透明的墨, 在這朦朧藍色天空中寫盡｣", href: "/Works/Yoishigure/Nemophila" },
+  { text: "｢人總會自我中心, 對他人興味乏乏｣", href: "/Works/Yoishigure/FriendshipGraffiti" },
+  { text: "｢夏暮時涼風中搖曳的銀蓮花, 雨欲來鈍色天空賜下露滴｣", href: "/Works/Yoishigure/ShortSummerNight" },
+  { text: "｢想要相信我的音樂有其意義｣", href: "/Works/Yoishigure/Dawn" },
+  { text: "｢我消失後的世界想必會很美吧｣", href: "/Works/Yoishigure/Lycorias" },
+//  { text: "｢｣", href: "/Works/Yoishigure/" },
+];
+const v = verses[Math.floor(Math.random() * verses.length)];
+document.getElementById("random-verse").innerHTML =
+  `<a href="${v.href}"><strong>${v.text}</strong></a>`;
+</script>
 
-<p>香音老師在歌詞裡這麼寫道. 然後, 她花了五年反駁自己. 真心話說不出口, 就交給旋律; 脆弱掩藏不住, 就託付於音色各異的歌手們 ⸺ 不是什麼了不起的東西, 只是以紮實的古典素養為絲線, 把每個人都曾嚥下的感受認真紡織成歌. </p>
+<p>真心話說不出口, 就交給旋律; 脆弱掩藏不住, 就託付於音色各異的歌手們 ⸺ 不是什麼了不起的東西, 只是以紮實的古典素養為絲線, 把每個人都曾嚥下的感受認真紡織成歌. </p>
 <p>一人, 五年. 廿餘歌手, 十人十色. 兩張概念專輯, 百餘首歌. </p>
 <details>
     <summary>快速入坑</summary></br>
