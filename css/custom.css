@@ -3,10 +3,13 @@
    ============================================================ */
 
 :root {
-    text-autospace: normal;
     --shadow-default: 0 6px 12px rgba(80, 0, 0, 0.16);
     /* Single source of truth — keep in sync with DETAILS_ANIM_MS reads in layout.ejs and tategaki_script.ejs */
     --details-anim-ms: 200;
+}
+
+*, *::before, *::after {
+    text-autospace: normal;
     text-spacing-trim: space-first;
 }
 

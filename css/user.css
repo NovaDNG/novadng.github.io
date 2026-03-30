@@ -107,7 +107,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
 .tategaki-content {
   /* Font */
   font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
-  font-feature-settings: halt;
+  font-feature-settings: "halt" "vchw";
   font-variant-numeric: tabular-nums;
   font-size: var(--tategaki-text-size);
   line-height: var(--tategaki-line-height);
@@ -145,6 +145,9 @@ body.page-yoishigure a:focus:not(.icon) > b {
 .tategaki-content :is(h1, h2, h3, h4, h5, h6) {
   text-align: start;
   line-height: 1.45;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2.5rem;
   margin-block-end: calc(var(--tategaki-flow-gap) * 1.25);
 }
 
