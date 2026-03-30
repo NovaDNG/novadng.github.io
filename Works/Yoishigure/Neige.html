@@ -264,7 +264,6 @@
       // Add a class on ruby nodes whose base text includes Latin/digits.
       // CSS then applies a 0.125ic side gap to mimic inter-script spacing.
       // -----------------------------------------------------------------------
-      applyRubyAutospace(content);
 
       // Extract ruby base text (exclude rt/rp annotations).
       function getRubyBaseText(rubyEl) {
@@ -297,6 +296,12 @@
           ruby.classList.add('ruby-latin-gap');
         }
       }
+
+      applyRubyAutospace(content);
+
+      // -----------------------------------------------------------------------
+      // Scroll position helpers
+      // -----------------------------------------------------------------------
 
       // Set scrollLeft while suppressing "user interacted" detection.
       function setProgrammaticScrollLeft(next) {
@@ -341,6 +346,33 @@
         setProgrammaticScrollLeft(next);
       }
 
+      // -----------------------------------------------------------------------
+      // Details toggle with scroll restoration
+      // Intercepts native <details> toggle to prevent horizontal jitter while
+      // keeping keyboard accessibility intact.
+      // -----------------------------------------------------------------------
+
+      function toggleDetailsWithAnimation(details) {
+        if (!details || details.classList.contains('is-closing')) return;
+
+        if (details.open) {
+          details.classList.add('is-closing');
+          window.setTimeout(function () {
+            details.open = false;
+            details.classList.remove('is-closing');
+            restoreFromRightOffset();
+          }, DETAILS_ANIM_MS);
+          return;
+        }
+
+        details.open = true;
+        restoreFromRightOffset();
+      }
+
+      // -----------------------------------------------------------------------
+      // Event listeners
+      // -----------------------------------------------------------------------
+
       // Any non-programmatic scroll means user has taken control;
       // stop future auto realignment.
       el.addEventListener('scroll', function () {
@@ -349,25 +381,7 @@
       }, { passive: true });
 
       if (content) {
-        function toggleDetailsWithAnimation(details) {
-          if (!details || details.classList.contains('is-closing')) return;
-
-          if (details.open) {
-            details.classList.add('is-closing');
-            window.setTimeout(function () {
-              details.open = false;
-              details.classList.remove('is-closing');
-              restoreFromRightOffset();
-            }, DETAILS_ANIM_MS);
-            return;
-          }
-
-          details.open = true;
-          restoreFromRightOffset();
-        }
-
         // Intercept summary click to avoid native toggle jitter.
-        // We toggle details manually and immediately restore scroll position.
         content.addEventListener('click', function (event) {
           var target = event.target;
           if (!target || !target.closest) return;
@@ -376,16 +390,13 @@
           var details = summary.closest('details');
           if (!details) return;
 
-          // Prevent native toggle so we can restore scroll position in the same task.
           event.preventDefault();
           userInteracted = true;
           captureRightOffset();
-
           toggleDetailsWithAnimation(details);
         }, true);
 
-        // Keep keyboard accessibility behavior (Enter/Space on summary)
-        // while preserving the same anti-jitter scroll restoration.
+        // Keep keyboard accessibility (Enter/Space on summary) with the same scroll restoration.
         content.addEventListener('keydown', function (event) {
           var target = event.target;
           if (!target || !target.closest) return;
@@ -404,6 +415,8 @@
       }
 
       // Map vertical wheel gesture to horizontal movement in desktop tategaki view.
+      // In vertical-rl reading flow, invert wheel Y mapping so natural
+      // up/down gesture direction matches expected page progression.
       el.addEventListener('wheel', function (event) {
         if (mobileQuery.matches) return;
         if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
@@ -411,8 +424,6 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        // In vertical-rl reading flow, invert wheel Y mapping so natural
-        // up/down gesture direction matches expected page progression.
         var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft - event.deltaY));
         if (next === el.scrollLeft) return;
 
@@ -421,8 +432,50 @@
         el.scrollLeft = next;
       }, { passive: false });
 
-      // Shared initializer used by first paint and viewport mode changes.
+      // -----------------------------------------------------------------------
+      // Dynamic height: measure content to minimize text wrapping.
+      // In vertical-rl the container height controls column length.
+      // We temporarily unconstrain it, find the tallest child's natural
+      // height, then clamp between a floor and a viewport-relative cap.
+      // -----------------------------------------------------------------------
+      function computeAndApplyDynamicHeight() {
+        if (mobileQuery.matches) {
+          el.style.removeProperty('height');
+          return;
+        }
+
+        // In vertical-rl, height = inline size. Setting the content to
+        // `max-content` lets it size itself to the tallest column needed
+        // so that no soft wrapping occurs within any paragraph/stanza.
+        content.style.height = 'max-content';
+        void content.offsetHeight; // force synchronous layout
+        var idealH = content.offsetHeight;
+        content.style.height = ''; // restore CSS `height: 100%`
+
+        if (idealH <= 0) {
+          el.style.removeProperty('height');
+          return;
+        }
+
+        var target = Math.ceil(idealH) + 48; // breathing room for scrollbar gutter
+
+        // In an embed iframe the parent page controls the frame size,
+        // so skip the viewport cap here to avoid a circular constraint.
+        var isEmbed = el.closest('.yoi-embed-root');
+        if (!isEmbed) {
+          var cap = Math.floor(window.innerHeight * 0.8);
+          target = Math.max(240, Math.min(target, cap));
+        }
+
+        el.style.height = target + 'px';
+      }
+
+      // -----------------------------------------------------------------------
+      // Initialization
+      // -----------------------------------------------------------------------
+
       function initializeViewport() {
+        computeAndApplyDynamicHeight();
         scrollToRightEdge();
       }
 
@@ -433,16 +486,24 @@
         requestAnimationFrame(initializeViewport);
       });
 
-      // Re-run initialization only on viewport-level changes.
+      // Re-run on load and resize; intentionally avoid observing content size changes
+      // (expanding/collapsing <details> changes content width and should not force re-alignment).
       window.addEventListener('load', initializeViewport, { once: true });
       window.addEventListener('resize', initializeViewport);
-      // Intentionally avoid observing content size changes.
-      // Expanding/collapsing <details> changes content width and should not force re-alignment.
 
       if (mobileQuery.addEventListener) {
         mobileQuery.addEventListener('change', initializeViewport);
       } else if (mobileQuery.addListener) {
+        // Safari < 14 fallback
         mobileQuery.addListener(initializeViewport);
+      }
+
+      // Re-measure after fonts finish loading — glyph metrics affect column height.
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function () {
+          computeAndApplyDynamicHeight();
+          if (!userInteracted) scrollToRightEdge();
+        }).catch(function () {});
       }
     }
 
@@ -635,19 +696,19 @@
       
 
       
-      <a class="ml-0 footer-link icon" href="https://twitter.com/NovaDNG" target="_blank" rel="noreferrer" aria-label="Twitter">
+      <a class="footer-link icon" href="https://twitter.com/NovaDNG" target="_blank" rel="noreferrer" aria-label="Twitter">
         <svg class="twitter svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
       </a>
       
 
       
-      <a class="ml-0 footer-link icon" href="https://bsky.app/profile/novadng.studio" target="_blank" rel="noreferrer" aria-label="bluesky">
+      <a class="footer-link icon" href="https://bsky.app/profile/novadng.studio" target="_blank" rel="noreferrer" aria-label="bluesky">
         <svg class="bluesky svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><title>bluesky</title><g transform="translate(0 24) scale(0.0045 -0.0045)"><path d="M390 4706 c-136 -38 -201 -106 -247 -261 -25 -85 -24 -350 1 -645 2 -19 7 -71 10 -115 4 -44 9 -96 11 -115 2 -19 6 -71 10 -115 6 -84 23 -243 30 -285 2 -14 6 -52 10 -85 6 -53 13 -98 29 -171 11 -54 63 -166 111 -240 108 -167 281 -302 470 -369 28 -9 59 -21 70 -26 30 -13 181 -46 250 -55 33 -4 113 -8 177 -8 64 -1 114 -4 110 -7 -6 -4 -65 -17 -197 -43 -11 -2 -47 -11 -80 -21 -33 -9 -73 -20 -90 -24 -50 -14 -180 -68 -245 -103 -91 -49 -173 -119 -219 -188 -50 -75 -61 -112 -68 -217 -12 -180 93 -411 310 -681 222 -277 442 -450 663 -524 88 -29 233 -31 309 -4 180 64 333 229 473 511 77 155 189 454 247 664 19 67 29 76 39 34 9 -39 27 -100 91 -317 148 -494 305 -754 516 -850 74 -34 109 -40 219 -39 108 1 202 27 325 91 92 48 267 161 295 192 3 3 25 21 50 41 52 42 151 143 205 209 20 25 44 54 53 65 28 33 122 179 122 189 0 5 6 17 14 25 8 9 28 57 46 106 108 309 -13 558 -355 727 -130 65 -292 118 -435 144 -73 14 -54 19 68 20 254 1 468 53 660 160 241 135 421 396 447 649 4 38 8 72 10 75 2 5 5 28 20 168 3 23 7 61 10 85 2 23 7 74 11 112 3 39 7 86 9 105 2 19 7 76 10 125 4 50 8 106 10 125 20 204 26 480 13 558 -26 153 -80 247 -168 292 -203 104 -452 40 -817 -209 -131 -90 -162 -114 -248 -186 -319 -270 -683 -685 -967 -1105 -91 -134 -218 -344 -218 -360 0 -23 -18 -7 -39 36 -27 58 -135 231 -210 339 -64 93 -211 295 -226 311 -5 6 -21 26 -35 44 -14 18 -30 38 -35 44 -6 6 -39 46 -74 90 -124 152 -370 410 -511 536 -19 17 -44 39 -55 49 -218 194 -582 408 -762 446 -57 13 -189 13 -233 1z"/></g></svg>
       </a>
       
 
       
-      <a class="ml-0 footer-link icon" href="https://t.me/nova_dng" target="_blank" rel="noreferrer" aria-label="telegram">
+      <a class="footer-link icon" href="https://t.me/nova_dng" target="_blank" rel="noreferrer" aria-label="telegram">
         <svg class="telegram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
           <title>telegram</title>
           <g transform="scale(0.048 0.048)">
@@ -657,7 +718,7 @@
       
 
       
-      <a class="ml-0 footer-link icon" href="https://www.instagram.com/NovaDNG/" target="_blank" rel="noreferrer" aria-label="Instagram">
+      <a class="footer-link icon" href="https://www.instagram.com/NovaDNG/" target="_blank" rel="noreferrer" aria-label="Instagram">
         <svg class="instagram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
       </a>
       

@@ -1,17 +1,17 @@
-/* Restore browser/OS native scrollbars */
+/* ============================================================
+   SCROLLBAR
+   Restore browser/OS native scrollbar appearance.
+   ============================================================ */
+
 * {
-  scrollbar-width: auto; /* Firefox */
-  scrollbar-color: auto; /* Firefox */
+  scrollbar-width: auto;  /* Firefox */
+  scrollbar-color: auto;  /* Firefox */
 }
 
-::-webkit-scrollbar,
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-thumb:window-inactive,
-::-webkit-scrollbar-thumb:active {
-}
+
+/* ============================================================
+   VARIABLES
+   ============================================================ */
 
 :root {
   --tategaki-pane-height: min(64vh, 800px);
@@ -21,7 +21,13 @@
   --tategaki-line-height: 2;
 }
 
-/* color link */
+
+/* ============================================================
+   COLOR LINK
+   A special link variant that uses a CSS variable for its colour,
+   used for per-song accent colours on Yoishigure lyric pages.
+   ============================================================ */
+
 a.color-link:not(.icon) {
   color: var(--link-color, currentColor);
   text-decoration: none;
@@ -45,7 +51,7 @@ a.color-link:focus:not(.icon) {
   color: #E9E6E2;
 }
 
-/* Yoishigure: mirror the parent hover fill onto strong/b, but keep timing in sync. */
+/* Mirror the parent hover fill onto bold children on Yoishigure pages. */
 body.page-yoishigure a:not(.icon) > strong,
 body.page-yoishigure a:not(.icon) > b,
 body.page-yoishigure a:hover:not(.icon) > strong,
@@ -65,7 +71,14 @@ body.page-yoishigure a:focus:not(.icon) > b {
   text-decoration: inherit;
 }
 
-/* Desktop: vertical layout + horizontal scrolling canvas */
+
+/* ============================================================
+   TATEGAKI — DESKTOP
+   Vertical writing mode (writing-mode: vertical-rl) inside a
+   horizontally scrolling container. The stage breaks out of the
+   container's max-width so it can use more of the viewport.
+   ============================================================ */
+
 .tategaki-stage {
   width: 80vw;
   max-width: 80vw;
@@ -77,6 +90,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   margin-bottom: 4rem;
 }
 
+/* Scrollable viewport window — horizontal overflow, fixed height */
 .tategaki-scroll {
   position: relative;
   width: 100%;
@@ -89,25 +103,30 @@ body.page-yoishigure a:focus:not(.icon) > b {
   padding-bottom: 1rem;
 }
 
-/* Desktop: tategaki article body */
+/* Article body — vertical text flow, width determined by content */
 .tategaki-content {
+  /* Font */
   font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
   font-feature-settings: halt;
   font-variant-numeric: tabular-nums;
-  text-autospace: normal;
-  margin-left: auto;
-  margin-right: 2rem;
-  writing-mode: vertical-rl;
-
-/*  text-orientation: mixed; */
-  width: max-content;
-  height: 100%;
   font-size: var(--tategaki-text-size);
   line-height: var(--tategaki-line-height);
+  /* Writing */
+  writing-mode: vertical-rl;
+  text-autospace: normal;
+  text-spacing-trim: space-first;
+  /* Layout */
+  width: max-content;
+  height: 100%;
+  margin-left: auto;
+  margin-right: 2rem;
 }
 
+/* Flow gap between block children.
+   margin-block-end maps to margin-left in vertical-rl and margin-bottom in
+   horizontal-tb, so it rotates automatically with the writing mode. */
 .tategaki-content > * {
-  margin: 0 0 0 var(--tategaki-flow-gap);
+  margin-block-end: var(--tategaki-flow-gap);
 }
 
 .tategaki-content :is(p, li, blockquote) {
@@ -115,6 +134,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   text-wrap: pretty;
 }
 
+/* Tate-chu-yoko: upright rendering for short horizontal runs (numbers, abbreviations) */
 .tategaki-content .tcy {
   text-combine-upright: all;
   -webkit-text-combine: horizontal;
@@ -125,9 +145,10 @@ body.page-yoishigure a:focus:not(.icon) > b {
 .tategaki-content :is(h1, h2, h3, h4, h5, h6) {
   text-align: start;
   line-height: 1.45;
-  margin: 0 0 0 calc(var(--tategaki-flow-gap) * 1.25);
+  margin-block-end: calc(var(--tategaki-flow-gap) * 1.25);
 }
 
+/* Block elements that need the standard flow gap */
 .tategaki-content blockquote,
 .tategaki-content ul,
 .tategaki-content ol,
@@ -135,9 +156,10 @@ body.page-yoishigure a:focus:not(.icon) > b {
 .tategaki-content figure,
 .tategaki-content table,
 .tategaki-content iframe {
-  margin: 0 0 0 var(--tategaki-flow-gap);
+  margin-block-end: var(--tategaki-flow-gap);
 }
 
+/* Switch embedded code/tables back to horizontal flow */
 .tategaki-content :is(code, pre, table, iframe) {
   writing-mode: horizontal-tb;
 }
@@ -147,14 +169,16 @@ body.page-yoishigure a:focus:not(.icon) > b {
   width: auto;
 }
 
+/* Horizontal rule becomes a vertical column divider */
 .tategaki-content hr {
   height: 100%;
   width: 1px;
-  margin: 0 0 0 var(--tategaki-column-gap);
+  margin-block-end: var(--tategaki-column-gap);
 }
 
-/* Vertical writing mode: animate link highlight along horizontal axis. */
+/* Desktop-only: link highlight animates along the horizontal (block) axis */
 @media (min-width: 901px) {
+  /* Ruby with Latin base text gets side padding to mimic inter-script spacing */
   .tategaki-content ruby.ruby-latin-gap {
     padding-inline: 0.125ic;
   }
@@ -174,11 +198,16 @@ body.page-yoishigure a:focus:not(.icon) > b {
     background-position: 0 0;
   }
 
+  /* Blockquote: suppress the global left border (from tcolor.ejs); add top
+     border instead. border-top gives the accent stripe at the physical top
+     of the vertical column. margin-top: 0 resets the -0.5em from typo.css
+     which would otherwise clip the border behind overflow-y: hidden. */
   .tategaki-content blockquote {
     border-left: 0;
-    border-top: 8px solid var(--link-hover-accent, #e2001a);
+    border-top: 8px solid #e2001a;
+    margin-top: 0;
     padding: 1em 1em 1em 0.87em;
-    margin: 0 0 0 1em;
+    margin-block-end: 1em;
   }
 
   .tategaki-content blockquote > p {
@@ -187,46 +216,69 @@ body.page-yoishigure a:focus:not(.icon) > b {
   }
 }
 
-/* Mobile fallback: return to normal horizontal flow */
+
+/* ============================================================
+   TATEGAKI — MOBILE FALLBACK
+   Below 900px: revert to normal horizontal flow so the content
+   reads naturally without horizontal scrolling.
+   ============================================================ */
+
 @media (max-width: 900px) {
   .tategaki-stage {
     min-height: auto;
     width: 100%;
     max-width: 100%;
-    margin: 1.33rem 0 1.33rem;
+    margin: 1.33rem 0;
   }
 
   .tategaki-scroll {
     height: auto;
-    overflow: overlay;
+    overflow: auto;
     padding-bottom: 0;
   }
 
   .tategaki-content {
     writing-mode: horizontal-tb;
-    width: 100%;
     text-autospace: normal;
-    height: auto;
+    text-spacing-trim: space-first;
     letter-spacing: normal;
+    width: 100%;
+    height: auto;
     margin-left: 0;
     margin-right: 0;
   }
 
   .tategaki-content > * {
-    margin: 0 0 1.6rem;
+    margin-block-end: 1.6rem;
   }
 
   .tategaki-content :is(h1, h2, h3, h4, h5, h6) {
-    margin: 0 0 1.8rem;
+    margin-block-end: 1.8rem;
   }
 
   .tategaki-content img {
     max-height: none;
   }
 
+  /* Horizontal rule returns to a standard horizontal divider */
   .tategaki-content hr {
     height: 1px;
     width: 100%;
-    margin: 2rem 0;
+    margin-block: 2rem;
   }
+
+  /* Blockquote: left border in horizontal layout */
+  .tategaki-content blockquote {
+    border-top: 0;
+    border-left: 8px solid #e2001a;
+    padding: 1em 20px 1px 20px;
+  }
+}
+
+/* Yoishigure subpages use blue (#007bbb) for blockquote accents instead of
+   the blog theme red. One rule covers both desktop (border-top) and mobile
+   (border-left) since border-color sets the colour regardless of which side
+   is active. */
+body.page-yoishigure-sub .tategaki-content blockquote {
+  border-color: #007bbb;
 }
