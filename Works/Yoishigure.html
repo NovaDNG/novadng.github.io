@@ -1210,17 +1210,31 @@ document.getElementById("random-verse").innerHTML =
         frame.addEventListener('load', function onFrameLoad() {
           if (token !== clickToken) return;
           fitFrameHeightToContent(token);
-          if (fitTimer) window.clearTimeout(fitTimer);
-          fitTimer = window.setTimeout(function () {
+
+          function revealFrame() {
+            if (token !== clickToken) return;
             fitFrameHeightToContent(token);
-          }, 160);
-          var frameDoc = frame.contentDocument;
-          if (frameDoc && frameDoc.fonts && frameDoc.fonts.ready && typeof frameDoc.fonts.ready.then === 'function') {
-            frameDoc.fonts.ready.then(function () {
-              fitFrameHeightToContent(token);
-            }).catch(function () {});
+            frame.style.opacity = '1';
           }
-          frame.style.opacity = '1';
+
+          var frameDoc = frame.contentDocument;
+          var fontsReady = frameDoc && frameDoc.fonts && frameDoc.fonts.ready && typeof frameDoc.fonts.ready.then === 'function';
+
+          if (fontsReady) {
+            // Reveal after fonts load (height is final), with a safety timeout.
+            var revealed = false;
+            var safetyTimer = window.setTimeout(function () {
+              if (!revealed) { revealed = true; revealFrame(); }
+            }, 600);
+            frameDoc.fonts.ready.then(function () {
+              if (!revealed) { revealed = true; window.clearTimeout(safetyTimer); revealFrame(); }
+            }).catch(function () {
+              if (!revealed) { revealed = true; window.clearTimeout(safetyTimer); revealFrame(); }
+            });
+          } else {
+            // No font API — refit after a short delay then reveal.
+            window.setTimeout(revealFrame, 160);
+          }
         }, { once: true });
         frame.srcdoc = embedHtml;
       } catch (e) {
