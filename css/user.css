@@ -191,6 +191,8 @@ body.page-yoishigure a:focus:not(.icon) > b {
 @media (max-width: 900px) {
   .tategaki-stage {
     min-height: auto;
+    width: 100%;
+    max-width: 100%;
     margin: 1.33rem 0 1.33rem;
   }
 
@@ -202,11 +204,12 @@ body.page-yoishigure a:focus:not(.icon) > b {
 
   .tategaki-content {
     writing-mode: horizontal-tb;
-    width: 96%;
+    width: 100%;
     text-autospace: normal;
     height: auto;
     letter-spacing: normal;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .tategaki-content > * {

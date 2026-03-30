@@ -310,24 +310,22 @@ html.darkmode #logoDark {
     text-align: center;
 }
 
-#madewith {
-    text-align: center;
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    margin-bottom: 5em;
+    lien-height: 166%;
 }
 
-.posisi {
-    text-align: center;
+#madewith {
+    margin: 0;
 }
 
 @media (min-width: 550px) {
-    .posisi {
-        text-align: right;
-    }
-
     #comments {
-        text-align: left;
-    }
-
-    #madewith {
         text-align: left;
     }
 }
