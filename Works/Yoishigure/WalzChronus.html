@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
 
@@ -43,9 +42,6 @@
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  
 
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -141,6 +137,35 @@
 </script>
 
 
+  
+  <style id="critical-yoi-float-nav">
+    @keyframes yoiFadeOnly {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .page-yoishigure .trans {
+      animation-name: yoiFadeOnly;
+    }
+
+    .yoi-float-nav {
+      position: fixed;
+      top: 8rem;
+      right: max(1.2rem, calc((100vw - 960px) / 2 - 16rem));
+      z-index: 24;
+      width: max-content;
+      min-width: 20rem;
+      max-width: min(44rem, calc(100vw - 2rem));
+    }
+
+    @media (max-width: 1380px) {
+      .yoi-float-nav {
+        display: none;
+      }
+    }
+  </style>
+  
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
@@ -206,6 +231,17 @@
     background-color: #E2001A;
     border-color: #E2001A;
   }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    /* border: 1px solid #E2001A; */
+  }
 </style>
 
 
@@ -221,10 +257,9 @@
         
         <div class="trans">
           
+          
 
 <h2 class="mt-3">ワルツ・クロノス (feat. Lucia, 結城碧 & 樹里)</h2>
-
-
 
 
   
@@ -242,12 +277,177 @@
       </article>
     </div>
   </section>
-  <script data-tategaki-script>
+  <script>
   (function () {
     // Mobile breakpoint used to disable desktop-only horizontal scrolling behavior.
     var mobileQuery = window.matchMedia('(max-width: 900px)');
     // Detect ruby base text that contains Latin letters/digits and needs manual inter-script spacing.
     var RUBY_LATIN_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
+
+    // -------------------------------------------------------------------------
+    // Legacy auto-TCY pipeline (kept for reference, currently disabled).
+    // -------------------------------------------------------------------------
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
+    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+
+    var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
+    var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
+    var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
+    var TCY_MATH_PATTERN = /^[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}$/;
+    var TCY_BOUNDARY_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
+    var LATIN_PATTERN = /[A-Za-zＡ-Ｚａ-ｚ]/;
+    var CJK_PATTERN = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
+    var TCY_MAX_COMPRESS_RATIO = 2;
+
+    function canUseTcyToken(token) {
+      if (!token) return false;
+      if (TCY_TIME_PATTERN.test(token)) return true; // time-like tokens (e.g. 2:26)
+      if (TCY_MATH_PATTERN.test(token)) return true; // symbol + digits (e.g. ±0)
+      if (!/[A-Za-zＡ-Ｚａ-ｚ]/.test(token)) return true; // pure digits
+      if (/[0-9０-９]/.test(token)) return true; // mixed letter+digit
+      if (/[A-ZＡ-Ｚ]/.test(token)) return true; // acronym-like tokens (e.g. MC)
+      return false;
+    }
+
+    function isTokenBoundary(text, start, end) {
+      var prev = start > 0 ? text.charAt(start - 1) : '';
+      var next = end < text.length ? text.charAt(end) : '';
+      return !TCY_BOUNDARY_PATTERN.test(prev) && !TCY_BOUNDARY_PATTERN.test(next);
+    }
+
+    function isWesternOnlyText(text) {
+      if (!text) return false;
+      if (!LATIN_PATTERN.test(text)) return false;
+      return !CJK_PATTERN.test(text);
+    }
+
+    function isPartOfWesternPhrase(text, start, end, token) {
+      if (!token || !LATIN_PATTERN.test(token)) return false;
+      var isSpace = function (ch) {
+        return ch === ' ' || ch === '\u3000' || /\s/.test(ch);
+      };
+
+      var i = start - 1;
+      while (i >= 0 && isSpace(text.charAt(i))) i--;
+      var prevNonSpace = i >= 0 ? text.charAt(i) : '';
+
+      var j = end;
+      while (j < text.length && isSpace(text.charAt(j))) j++;
+      var nextNonSpace = j < text.length ? text.charAt(j) : '';
+
+      return LATIN_PATTERN.test(prevNonSpace) || LATIN_PATTERN.test(nextNonSpace);
+    }
+
+    function shouldKeepNaturalWidth(token, contextEl, cache) {
+      if (!token) return false;
+      if (TCY_TIME_PATTERN.test(token)) return true;
+
+      if (cache && cache.has(token)) return cache.get(token);
+      if (!contextEl) return false;
+
+      var probe = document.createElement('span');
+      probe.textContent = token;
+      probe.style.position = 'absolute';
+      probe.style.visibility = 'hidden';
+      probe.style.pointerEvents = 'none';
+      probe.style.whiteSpace = 'nowrap';
+      probe.style.writingMode = 'horizontal-tb';
+      probe.style.textOrientation = 'mixed';
+      probe.style.font = 'inherit';
+      probe.style.letterSpacing = 'inherit';
+      probe.style.wordSpacing = 'inherit';
+      probe.style.lineHeight = '1';
+
+      contextEl.appendChild(probe);
+      var naturalWidth = probe.getBoundingClientRect().width;
+      probe.remove();
+
+      var fontSize = parseFloat(window.getComputedStyle(contextEl).fontSize) || 16;
+      var keepNatural = naturalWidth > fontSize * TCY_MAX_COMPRESS_RATIO;
+
+      if (cache) cache.set(token, keepNatural);
+      return keepNatural;
+    }
+
+    function collectCandidateTextNodes(root) {
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+      var textNodes = [];
+
+      while (walker.nextNode()) {
+        var node = walker.currentNode;
+        var parent = node.parentNode;
+
+        if (!parent || parent.nodeType !== 1) continue;
+        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
+        if (parent.classList && parent.classList.contains('tcy')) continue;
+        if (isWesternOnlyText(node.nodeValue)) continue;
+        if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
+
+        textNodes.push(node);
+      }
+
+      return textNodes;
+    }
+
+    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var hasReplacement = false;
+      var match;
+
+      TCY_PATTERN.lastIndex = 0;
+
+      while ((match = TCY_PATTERN.exec(text)) !== null) {
+        var token = match[0];
+        var start = match.index;
+        var end = start + token.length;
+
+        if (!canUseTcyToken(token)) continue;
+        if (isPartOfWesternPhrase(text, start, end, token)) continue;
+        if (!isTokenBoundary(text, start, end)) continue;
+        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var span = document.createElement('span');
+        span.className = 'tcy';
+        span.textContent = token;
+        fragment.appendChild(span);
+
+        lastIndex = end;
+        hasReplacement = true;
+      }
+
+      if (!hasReplacement) return null;
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return fragment;
+    }
+
+    function applyTcy(root) {
+      if (!root || root.dataset.tcyEnhanced === '1') return;
+      root.dataset.tcyEnhanced = '1';
+
+      var tokenDecisionCache = new Map();
+      var textNodes = collectCandidateTextNodes(root);
+
+      textNodes.forEach(function (node) {
+        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
+        if (!fragment) return;
+        node.parentNode.replaceChild(fragment, node);
+      });
+    }
+    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
@@ -258,13 +458,16 @@
       var userInteracted = false;
       var isProgrammaticScroll = false;
       var pendingRightOffset = null;
-      var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;
+      var DETAILS_ANIM_MS = 200;
+
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
       // -----------------------------------------------------------------------
       // Ruby autospace compensation:
       // Add a class on ruby nodes whose base text includes Latin/digits.
       // CSS then applies a 0.125ic side gap to mimic inter-script spacing.
       // -----------------------------------------------------------------------
+      applyRubyAutospace(content);
 
       // Extract ruby base text (exclude rt/rp annotations).
       function getRubyBaseText(rubyEl) {
@@ -298,12 +501,6 @@
         }
       }
 
-      applyRubyAutospace(content);
-
-      // -----------------------------------------------------------------------
-      // Scroll position helpers
-      // -----------------------------------------------------------------------
-
       // Set scrollLeft while suppressing "user interacted" detection.
       function setProgrammaticScrollLeft(next) {
         if (el.scrollLeft === next) return;
@@ -319,7 +516,10 @@
         if (mobileQuery.matches || userInteracted) return;
 
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
-        if (maxScrollLeft <= 0) return;
+        if (maxScrollLeft <= 0) {
+          updateEdgeFadeState();
+          return;
+        }
 
         setProgrammaticScrollLeft(maxScrollLeft);
       }
@@ -338,6 +538,7 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) {
           pendingRightOffset = null;
+          updateEdgeFadeState();
           return;
         }
 
@@ -347,42 +548,34 @@
         setProgrammaticScrollLeft(next);
       }
 
-      // -----------------------------------------------------------------------
-      // Details toggle with scroll restoration
-      // Intercepts native <details> toggle to prevent horizontal jitter while
-      // keeping keyboard accessibility intact.
-      // -----------------------------------------------------------------------
-
-      function toggleDetailsWithAnimation(details) {
-        if (!details || details.classList.contains('is-closing')) return;
-
-        if (details.open) {
-          details.classList.add('is-closing');
-          window.setTimeout(function () {
-            details.open = false;
-            details.classList.remove('is-closing');
-            restoreFromRightOffset();
-          }, DETAILS_ANIM_MS);
-          return;
-        }
-
-        details.open = true;
-        restoreFromRightOffset();
-      }
-
-      // -----------------------------------------------------------------------
-      // Event listeners
-      // -----------------------------------------------------------------------
-
       // Any non-programmatic scroll means user has taken control;
       // stop future auto realignment.
       el.addEventListener('scroll', function () {
+        updateEdgeFadeState();
         if (isProgrammaticScroll) return;
         userInteracted = true;
       }, { passive: true });
 
       if (content) {
+        function toggleDetailsWithAnimation(details) {
+          if (!details || details.classList.contains('is-closing')) return;
+
+          if (details.open) {
+            details.classList.add('is-closing');
+            window.setTimeout(function () {
+              details.open = false;
+              details.classList.remove('is-closing');
+              restoreFromRightOffset();
+            }, DETAILS_ANIM_MS);
+            return;
+          }
+
+          details.open = true;
+          restoreFromRightOffset();
+        }
+
         // Intercept summary click to avoid native toggle jitter.
+        // We toggle details manually and immediately restore scroll position.
         content.addEventListener('click', function (event) {
           var target = event.target;
           if (!target || !target.closest) return;
@@ -391,13 +584,16 @@
           var details = summary.closest('details');
           if (!details) return;
 
+          // Prevent native toggle so we can restore scroll position in the same task.
           event.preventDefault();
           userInteracted = true;
           captureRightOffset();
+
           toggleDetailsWithAnimation(details);
         }, true);
 
-        // Keep keyboard accessibility (Enter/Space on summary) with the same scroll restoration.
+        // Keep keyboard accessibility behavior (Enter/Space on summary)
+        // while preserving the same anti-jitter scroll restoration.
         content.addEventListener('keydown', function (event) {
           var target = event.target;
           if (!target || !target.closest) return;
@@ -416,8 +612,6 @@
       }
 
       // Map vertical wheel gesture to horizontal movement in desktop tategaki view.
-      // In vertical-rl reading flow, invert wheel Y mapping so natural
-      // up/down gesture direction matches expected page progression.
       el.addEventListener('wheel', function (event) {
         if (mobileQuery.matches) return;
         if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
@@ -425,12 +619,13 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft - event.deltaY));
+        var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft + event.deltaY));
         if (next === el.scrollLeft) return;
 
         userInteracted = true;
         event.preventDefault();
         el.scrollLeft = next;
+        updateEdgeFadeState();
       }, { passive: false });
 
       // -----------------------------------------------------------------------
@@ -445,7 +640,7 @@
           return;
         }
 
-        // In vertical-rl, height = inline size. Setting the content to
+        // In vertical-rl, height = inline size.  Setting the content to
         // `max-content` lets it size itself to the tallest column needed
         // so that no soft wrapping occurs within any paragraph/stanza.
         content.style.height = 'max-content';
@@ -470,35 +665,32 @@
 
         el.style.height = target + 'px';
       }
-
-      // -----------------------------------------------------------------------
-      // Initialization
-      // -----------------------------------------------------------------------
-
+ 
+      // Shared initializer used by first paint and viewport mode changes.
       function initializeViewport() {
         computeAndApplyDynamicHeight();
         scrollToRightEdge();
       }
-
+ 
       // Multi-pass initialization for stable first paint alignment.
       initializeViewport();
       requestAnimationFrame(initializeViewport);
       requestAnimationFrame(function () {
         requestAnimationFrame(initializeViewport);
       });
-
-      // Re-run on load and resize; intentionally avoid observing content size changes
-      // (expanding/collapsing <details> changes content width and should not force re-alignment).
+ 
+      // Re-run initialization only on viewport-level changes.
       window.addEventListener('load', initializeViewport, { once: true });
       window.addEventListener('resize', initializeViewport);
-
+      // Intentionally avoid observing content size changes.
+      // Expanding/collapsing <details> changes content width and should not force re-alignment.
+ 
       if (mobileQuery.addEventListener) {
         mobileQuery.addEventListener('change', initializeViewport);
       } else if (mobileQuery.addListener) {
-        // Safari < 14 fallback
         mobileQuery.addListener(initializeViewport);
       }
-
+ 
       // Re-measure after fonts finish loading — glyph metrics affect column height.
       if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(function () {
@@ -512,7 +704,6 @@
     document.querySelectorAll('.js-tategaki-scroll').forEach(bindWheelToHorizontalScroll);
   })();
 </script>
-
 
 
 
@@ -724,6 +915,8 @@
       </a>
       
 
+      
+
     </div>
   
 </div>
@@ -738,6 +931,383 @@
     </div>
 
   </div>
+  
+  <div class="yoi-embed-modal" hidden aria-hidden="true">
+  <div class="yoi-embed-modal__backdrop" data-yoi-embed-close></div>
+  <div class="yoi-embed-modal__dialog" role="dialog" aria-modal="true" aria-label="Tategaki preview">
+    <div class="yoi-embed-modal__toolbar">
+      <button type="button" class="yoi-embed-modal__close" data-yoi-embed-close aria-label="關閉">⛌</button>
+    </div>
+    <iframe class="yoi-embed-modal__frame" title="Tategaki preview" loading="lazy"></iframe>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const modal = document.querySelector('.yoi-embed-modal');
+    if (!modal) return;
+
+    const frame = modal.querySelector('.yoi-embed-modal__frame');
+    const closeTriggers = [...modal.querySelectorAll('[data-yoi-embed-close]')];
+    let parsing = false;
+    let clickToken = 0;
+    let openingLink = null;
+    let fitTimer = 0;
+    let closeTimer = 0;
+    let embedPaneHeightPx = 0;
+
+    const EMBED_CLOSE_ANIM_MS = 200;
+    const MIN_TATEGAKI_WIDTH = 920;
+    const EMBED_VIEWPORT_RATIO = 0.94;
+    const EMBED_DEFAULT_WIDTH = 1120;
+    const EMBED_DEFAULT_HEIGHT_RATIO = 0.66;
+
+    const styleHrefs = [...document.querySelectorAll('link[rel="stylesheet"]')]
+      .map(link => link.getAttribute('href'))
+      .filter(Boolean);
+
+    function escapeHtml(text) {
+      return String(text || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function safeInlineScript(text) {
+      return String(text || '').replace(/<\/script/gi, '<\\/script');
+    }
+
+    function isYoishigureDetailLink(anchor) {
+      if (!anchor?.href) return false;
+      if (anchor.closest('.yoi-float-nav') || anchor.closest('.yoi-embed-modal')) return false;
+      if (anchor.hasAttribute('download')) return false;
+
+      const rawHref = anchor.getAttribute('href') || '';
+      if (!rawHref || rawHref.charAt(0) === '#') return false;
+
+      let url;
+      try {
+        url = new URL(anchor.href, window.location.href);
+      } catch (e) {
+        return false;
+      }
+
+      if (url.origin !== window.location.origin) return false;
+      if (!/^\/Works\/Yoishigure\//.test(url.pathname)) return false;
+      if (/\/Works\/Yoishigure\/?$/i.test(url.pathname)) return false;
+      if (/\.m4a$/i.test(url.pathname)) return false;
+
+      return true;
+    }
+
+    function findTategakiScript(doc) {
+      const script = [...doc.querySelectorAll('script')].find(s =>
+        (s.textContent || '').includes("var mobileQuery = window.matchMedia('(max-width: 900px)')")
+      );
+      return script ? script.textContent : '';
+    }
+
+    function canOpenEmbedInViewport() {
+      return Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO) >= MIN_TATEGAKI_WIDTH;
+    }
+
+    function setOpeningState(next) {
+      document.documentElement.classList.toggle('yoi-embed-opening', next);
+    }
+
+    function setOpeningLink(anchor) {
+      clearOpeningLink();
+      openingLink = anchor;
+      openingLink.classList.add('yoi-embed-opening-link');
+      openingLink.style.setProperty('transition', 'none', 'important');
+      const computed = window.getComputedStyle(openingLink);
+      openingLink.style.setProperty('color', computed.color, 'important');
+      openingLink.style.setProperty('background-image', computed.backgroundImage, 'important');
+      openingLink.style.setProperty('background-position', computed.backgroundPosition, 'important');
+      openingLink.style.setProperty('background-size', computed.backgroundSize, 'important');
+    }
+
+    function clearOpeningLink() {
+      if (!openingLink) return;
+      openingLink.classList.remove('yoi-embed-opening-link');
+      openingLink.style.removeProperty('background-image');
+      openingLink.style.removeProperty('background-position');
+      openingLink.style.removeProperty('background-size');
+      openingLink.style.removeProperty('transition');
+      openingLink.style.removeProperty('color');
+      openingLink = null;
+    }
+
+    function computeEmbedPaneHeight() {
+      return Math.max(300, Math.min(800, Math.floor(window.innerHeight * 0.64)));
+    }
+
+    function applyFramePresetSize() {
+      const maxWidth = Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO);
+      const maxHeight = Math.floor(window.innerHeight * 0.86);
+      const width = Math.min(maxWidth, Math.max(MIN_TATEGAKI_WIDTH, EMBED_DEFAULT_WIDTH));
+      embedPaneHeightPx = computeEmbedPaneHeight();
+      const preferredHeight = Math.max(embedPaneHeightPx + 8, Math.floor(window.innerHeight * EMBED_DEFAULT_HEIGHT_RATIO));
+      const height = Math.min(maxHeight, Math.max(460, preferredHeight));
+      frame.style.width = width + 'px';
+      frame.style.height = height + 'px';
+      frame.style.opacity = '0';
+    }
+
+    function buildEmbedHtml(stageHtml, scriptText, title) {
+      const cssLinks = styleHrefs
+        .map(href => `<link rel="stylesheet" href="${escapeHtml(href)}">`)
+        .join('\n');
+
+      const themeBootstrap = `(function () {
+  var media = window.matchMedia("(prefers-color-scheme: dark)");
+  var stored = null;
+  try { stored = localStorage.getItem("preferredTheme"); } catch (e) {}
+  var isDark = stored === "dark" || (stored !== "light" && media.matches);
+  if (isDark) {
+    document.documentElement.classList.add("darkmode");
+    if (document.body) document.body.classList.add("darkmode");
+  }
+})();`;
+
+      return `<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="${escapeHtml(window.location.origin + '/')}">
+<title>${escapeHtml(title || 'Tategaki Preview')}</title>
+${cssLinks}
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: auto;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+  .yoi-embed-root {
+    width: 100%;
+  }
+  .yoi-embed-root .tategaki-stage {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .yoi-embed-root .tategaki-scroll {
+    overflow-x: overlay !important;
+    overflow-y: hidden !important;
+    scrollbar-gutter: auto !important;
+    padding-bottom: 0 !important;
+  }
+</style>
+<script>${safeInlineScript(themeBootstrap)}<\/script>
+</head>
+<body class="page-yoishigure page-yoishigure-sub">
+<div class="yoi-embed-root">
+${stageHtml}
+</div>
+${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
+</body>
+</html>`;
+    }
+
+    function fitFrameHeightToContent(token) {
+      if (token !== clickToken || !frame?.contentDocument) return;
+
+      const doc = frame.contentDocument;
+      const root = doc.querySelector('.yoi-embed-root');
+
+      let measured = root ? Math.ceil(root.getBoundingClientRect().height) : 0;
+      if (!measured) {
+        measured = Math.max(
+          doc.body ? Math.ceil(doc.body.scrollHeight) : 0,
+          doc.documentElement ? Math.ceil(doc.documentElement.scrollHeight) : 0
+        );
+      }
+      if (!measured) return;
+
+      const maxHeight = Math.floor(window.innerHeight * 0.86);
+      frame.style.height = Math.min(maxHeight, Math.max(420, measured + 2)) + 'px';
+    }
+
+    function openModal() {
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+      modal.hidden = false;
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.classList.add('yoi-embed-open');
+      modal.classList.remove('is-visible');
+      requestAnimationFrame(() => modal.classList.add('is-visible'));
+    }
+
+    function finalizeCloseModal() {
+      modal.hidden = true;
+      modal.setAttribute('aria-hidden', 'true');
+      frame.removeAttribute('src');
+      frame.removeAttribute('srcdoc');
+      frame.style.width = '';
+      frame.style.height = '';
+      frame.style.opacity = '';
+      if (fitTimer) {
+        window.clearTimeout(fitTimer);
+        fitTimer = 0;
+      }
+      parsing = false;
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.documentElement.classList.remove('yoi-embed-open');
+      setOpeningState(false);
+      clearOpeningLink();
+    }
+
+    function closeModal(immediate) {
+      clickToken += 1;
+      parsing = false;
+      modal.classList.remove('is-visible');
+      frame.style.opacity = '0';
+
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+
+      if (immediate === true) {
+        finalizeCloseModal();
+        return;
+      }
+
+      closeTimer = window.setTimeout(() => {
+        closeTimer = 0;
+        finalizeCloseModal();
+      }, EMBED_CLOSE_ANIM_MS);
+    }
+
+    async function openPreview(anchor) {
+      const url = new URL(anchor.href, window.location.href);
+      const token = ++clickToken;
+      parsing = true;
+      applyFramePresetSize();
+      openModal();
+      frame.removeAttribute('src');
+      frame.removeAttribute('srcdoc');
+      anchor.blur?.();
+
+      try {
+        const response = await fetch(url.pathname, { credentials: 'same-origin' });
+        if (!response.ok) throw new Error('Fetch failed');
+
+        const html = await response.text();
+        if (token !== clickToken) return;
+
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const stage = doc.querySelector('.tategaki-stage');
+        if (!stage) {
+          closeModal(true);
+          window.location.href = url.href;
+          return;
+        }
+
+        const embedHtml = buildEmbedHtml(
+          stage.outerHTML,
+          findTategakiScript(doc),
+          doc.title || anchor.textContent || ''
+        );
+
+        frame.addEventListener('load', function onFrameLoad() {
+          if (token !== clickToken) return;
+          fitFrameHeightToContent(token);
+
+          function revealFrame() {
+            if (token !== clickToken) return;
+            fitFrameHeightToContent(token);
+            frame.style.opacity = '1';
+          }
+
+          const frameDoc = frame.contentDocument;
+          const fontsReady = typeof frameDoc?.fonts?.ready?.then === 'function';
+
+          if (fontsReady) {
+            // Reveal after fonts load (height is final), with a safety timeout.
+            let revealed = false;
+            const safetyTimer = window.setTimeout(() => {
+              if (!revealed) { revealed = true; revealFrame(); }
+            }, 600);
+            const onReady = () => {
+              if (!revealed) { revealed = true; window.clearTimeout(safetyTimer); revealFrame(); }
+            };
+            frameDoc.fonts.ready.then(onReady).catch(onReady);
+          } else {
+            // No font API — refit after a short delay then reveal.
+            window.setTimeout(revealFrame, 160);
+          }
+        }, { once: true });
+
+        frame.srcdoc = embedHtml;
+      } catch (e) {
+        closeModal(true);
+        window.location.href = url.href;
+      } finally {
+        if (token === clickToken) parsing = false;
+      }
+    }
+
+    closeTriggers.forEach(trigger => {
+      trigger.addEventListener('click', event => {
+        event?.preventDefault();
+        closeModal(false);
+      });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !modal.hidden) closeModal();
+    });
+
+    document.addEventListener('click', event => {
+      const anchor = event.target?.closest?.('a');
+      if (!anchor || !isYoishigureDetailLink(anchor)) return;
+      if (!canOpenEmbedInViewport()) {
+        setOpeningState(false);
+        clearOpeningLink();
+        return;
+      }
+      if (parsing) { event.preventDefault(); return; }
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        setOpeningState(false);
+        clearOpeningLink();
+        return;
+      }
+      setOpeningLink(anchor);
+      setOpeningState(true);
+      event.preventDefault();
+      openPreview(anchor);
+    });
+
+    document.addEventListener('pointerdown', event => {
+      if (event.button !== 0) return;
+      const anchor = event.target?.closest?.('a');
+      if (!anchor || !isYoishigureDetailLink(anchor)) return;
+      if (!canOpenEmbedInViewport()) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (parsing) return;
+      setOpeningLink(anchor);
+      setOpeningState(true);
+      event.preventDefault();
+      openPreview(anchor);
+    }, true);
+  })();
+</script>
+
+  
   <script>
     (function () {
       var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;

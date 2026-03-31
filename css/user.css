@@ -147,7 +147,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   line-height: 1.45;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 2.5rem;
+  margin-left: 0;
   margin-block-end: calc(var(--tategaki-flow-gap) * 1.25);
 }
 

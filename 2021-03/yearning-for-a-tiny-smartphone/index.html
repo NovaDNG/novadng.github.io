@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
 
@@ -43,9 +42,6 @@
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  
 
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -141,6 +137,8 @@
 </script>
 
 
+  
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
@@ -206,6 +204,17 @@
     background-color: #E2001A;
     border-color: #E2001A;
   }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    /* border: 1px solid #E2001A; */
+  }
 </style>
 
 
@@ -220,6 +229,7 @@
       <div>
         
         <div class="trans">
+          
           
 
 <h2 class="mt-3">追求小屏智能手机之路</h2>
@@ -473,6 +483,8 @@
       </a>
       
 
+      
+
     </div>
   
 </div>
@@ -486,42 +498,89 @@
   <div class="row">
     <div class="nine columns nav left">
       <a href="/">Home</a>
-
-  
-  <a href="/Works">Works</a>
-  
-
-  
-  <a href="/Frames">Frames</a>
-  
-
-  
-  <a href="/Commissions">Commissions</a>
-  
-
-  
-  <a href="/About">About</a>
-  
-
-  
-  <a href="/Now">Now</a>
-  
-
-  
-  <a href="/atom.xml">RSS</a>
-  
-
-
-
+      
+        
+        <a href="/Works">Works</a>
+        
+      
+        
+        <a href="/Frames">Frames</a>
+        
+      
+        
+        <a href="/Commissions">Commissions</a>
+        
+      
+        
+        <a href="/About">About</a>
+        
+      
+        
+        <a href="/Now">Now</a>
+        
+      
+        
+        <a href="/atom.xml">RSS</a>
+        
+      
+      
     </div>
   </div>
 </div>
 
 <div class="row">
-  <div class="two columns mode-col">
+  <div class="two columns" style="max-width: 50px">
     <h3 class="mt-2 mb-2 mode">
-      <div onclick="setDarkMode(true)" id="darkBtn">✶</div>
-      <div onclick="setDarkMode(false)" id="lightBtn" class="hidden">❂</div>
+      <div onclick=setDarkMode(true) id="darkBtn">✶</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
+      <script >
+  (function () {
+  var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function applyTheme(isDark) {
+    var darkBtn = document.getElementById('darkBtn');
+    var lightBtn = document.getElementById('lightBtn');
+
+    // Apply body class deterministically
+    document.body.classList.toggle('darkmode', isDark);
+
+    // Toggle button visibility using the existing `hidden` class
+    if (darkBtn && lightBtn) {
+      if (isDark) {
+        lightBtn.classList.remove('hidden');
+        darkBtn.classList.add('hidden');
+      } else {
+        lightBtn.classList.add('hidden');
+        darkBtn.classList.remove('hidden');
+      }
+    }
+  }
+
+  // Expose a stable setter for user clicks (pins preference)
+  window.setDarkMode = function (isDark) {
+    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
+    applyTheme(isDark);
+  };
+
+  function initTheme() {
+    var stored = localStorage.getItem('preferredTheme');
+    if (stored === 'dark') return applyTheme(true);
+    if (stored === 'light') return applyTheme(false);
+    // No stored preference: follow system
+    return applyTheme(media.matches);
+  }
+
+  // Live update when following system (no stored preference)
+  media.addEventListener('change', function (e) {
+    if (!localStorage.getItem('preferredTheme')) {
+      applyTheme(e.matches);
+    }
+  });
+
+  // Initial paint
+  initTheme();
+})();
+      </script>
     </h3>
   </div>
 
@@ -537,16 +596,17 @@
   <div class="twelve columns">
     <img decoding="async" loading="lazy" src="/images/pheader.avif"
          alt="Logo"
+         style="max-width: 128px; height: auto;"
          class="noshadow"
          id="logoLight"/>
     <img decoding="async" loading="lazy" src="/images/pheader_dark.avif"
          alt="Logo"
+         style="max-width: 128px; height: auto;"
          class="noshadow"
          id="logoDark"/>
   </div>
 </div>
 </div>
-
           
         </div>
       </div>
@@ -554,6 +614,7 @@
     </div>
 
   </div>
+  
   <script>
     (function () {
       var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;

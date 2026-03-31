@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
 
@@ -43,9 +42,6 @@
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  
 
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -141,6 +137,8 @@
 </script>
 
 
+  
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
@@ -206,6 +204,17 @@
     background-color: #E2001A;
     border-color: #E2001A;
   }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    /* border: 1px solid #E2001A; */
+  }
 </style>
 
 
@@ -221,10 +230,9 @@
         
         <div class="trans">
           
+          
 
 <h2 class="mt-3">Singapore Oceanarium</h2>
-
-
 
 
   
@@ -254,7 +262,6 @@
 <p><img decoding="async" loading="lazy" src="/Frames/Events/Oceanarium/Crab.avif"></p>
 <p><img decoding="async" loading="lazy" src="/Frames/Events/Oceanarium/Bone.avif"></p>
 <p><img decoding="async" loading="lazy" src="/Frames/Events/Oceanarium/Floating.avif"></p>
-
 
 
 
@@ -466,6 +473,8 @@
       </a>
       
 
+      
+
     </div>
   
 </div>
@@ -480,6 +489,7 @@
     </div>
 
   </div>
+  
   <script>
     (function () {
       var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;
