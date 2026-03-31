@@ -668,41 +668,97 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
    YOISHIGURE — FLOAT NAV (desktop sidebar / mobile bottom sheet)
    ============================================================ */
 
-/* Desktop: fixed panel to the right of the content column */
+/* Desktop: right-side collapsed rail expands leftward */
 .yoi-float-nav {
+    --yoi-nav-rail-width: 5.2rem;
+    --yoi-nav-open-width: min(32rem, calc(100vw - 1.2rem));
     position: fixed;
-    top: 8rem;
-    right: max(1.2rem, calc((100vw - 960px) / 2 - 13rem));
+    top: 6.7rem;
+    right: 0;
     z-index: 24;
-    width: max-content;
-    min-width: 20rem;
-    max-width: min(44rem, calc(100vw - 2rem));
+    width: var(--yoi-nav-rail-width);
+    max-width: calc(100vw - 0.8rem);
     max-height: calc(100vh - 8.2rem);
-    overflow-y: auto;
-    overflow-x: auto;
-    padding: 2rem 2rem 2rem;
+    overflow: hidden;
     border-radius: 8px;
     background: #EBE6E2DE;
-    box-shadow: 0 6px 12px 4px rgba(0, 123, 187, 0.12);
+    box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
     backdrop-filter: blur(8px) saturate(56%);
     line-height: 1.35;
+    display: grid;
+    grid-template-columns: var(--yoi-nav-rail-width) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    transition: all 0.2s ease-in;
+}
+
+.yoi-float-nav.yoi--desktop-open {
+    width: var(--yoi-nav-open-width);
+    max-height: calc(100vh - 8.2rem);
+    border-radius: 8px;
+}
+
+@media (min-width: 551px) {
+    .yoi-float-nav.yoi--desktop-collapsed,
+    .yoi-float-nav:not(.yoi--desktop-open) {
+        max-height: 18.67vh;
+        border-radius: 8px 0 0 8px;
+    }
 }
 
 .yoi-float-nav__bar {
+    grid-column: 1;
+    grid-row: 1 / span 2;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.8rem;
-    margin-bottom: 0.55rem;
+    justify-content: flex-start;
+    gap: 5rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
 .yoi-float-nav__title {
     margin: 0;
-    opacity: 0.9;
+    opacity: 0.72;
+}
+
+.yoi-float-nav__mobile-toggle-title {
+    display: none;
+    margin: 0;
+}
+
+.yoi-float-nav__desktop-toggle {
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font: inherit;
+    line-height: inherit;
+    transition: color 0.2s ease-in;
+}
+
+.yoi-float-nav.yoi--desktop-open .yoi-float-nav__desktop-toggle {
+    color: #007bbb;
 }
 
 .yoi-float-nav__search {
-    margin: 0.35rem 0 0.95rem;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 1.2rem 1.25rem 0.82rem 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(0.8rem);
+    pointer-events: none;
+    transition:
+        opacity 0.2s ease-in,
+        transform 0.2s ease-in;
 }
 
 .yoi-float-nav__search-input {
@@ -759,8 +815,9 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 .yoi-float-nav__theme {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     line-height: 1.25;
-    font-size: 2rem;
+    font-size: 2.33rem;
 }
 
 .yoi-float-nav__theme-btn {
@@ -783,6 +840,30 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 
 .yoi-float-nav__theme-btn.hidden {
     display: none;
+}
+
+.yoi-float-nav__list {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    min-height: 0;
+    padding: 0 1.25rem 1.2rem 1rem;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(0.8rem);
+    pointer-events: none;
+    transition:
+        opacity 0.2s ease-in,
+        transform 0.2s ease-in;
+}
+
+.yoi-float-nav.yoi--desktop-open .yoi-float-nav__search,
+.yoi-float-nav.yoi--desktop-open .yoi-float-nav__list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 .yoi-float-nav__h {
@@ -844,8 +925,13 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 body.darkmode .yoi-float-nav,
 html.darkmode .yoi-float-nav {
     background: #19191ADE;
-    box-shadow: 0 6px 12px 4px rgba(0, 123, 187, 0.12);
+    box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
     backdrop-filter: blur(8px) saturate(67%);
+}
+
+body.darkmode .yoi-float-nav__bar,
+html.darkmode .yoi-float-nav__bar {
+    border-right-color: color-mix(in srgb, rgb(151, 154, 156) 28%, transparent);
 }
 
 body.darkmode .yoi-float-nav__h,
@@ -865,9 +951,11 @@ html.darkmode .yoi-float-nav__search-input {
 }
 
 /* Mobile: nav collapses into a bottom sheet with a persistent bar strip */
-@media (max-width: 1380px) {
+@media (max-width: 550px) {
     /* Repositioned as a full-width bottom sheet anchored to the screen edge */
-    .yoi-float-nav {
+    .yoi-float-nav,
+    .yoi-float-nav.yoi--desktop-open,
+    .yoi-float-nav.yoi--desktop-collapsed {
         top: unset;
         right: unset;
         bottom: 0;
@@ -881,6 +969,7 @@ html.darkmode .yoi-float-nav__search-input {
         display: flex;
         flex-direction: column;
         line-height: 1;
+        transition: none;
     }
 
     /* Bar strip: always visible, pinned to the bottom of the flex column */
@@ -895,10 +984,15 @@ html.darkmode .yoi-float-nav__search-input {
         height: 4.4rem;
         flex-shrink: 0;
         margin-bottom: 0;
+        border-right: 0;
     }
 
-    .yoi-float-nav__title {
+    .yoi-float-nav__desktop-toggle {
         display: none;
+    }
+
+    .yoi-float-nav__mobile-toggle-title {
+        display: block;
     }
 
     .yoi-float-nav__theme {
@@ -913,17 +1007,16 @@ html.darkmode .yoi-float-nav__search-input {
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        margin: 0 0 0 1em;
+        margin: 0;
         padding: 0 0.8rem;
         height: 4.4rem;
         border: 0;
         border-radius: 4px;
         background: transparent;
         cursor: pointer;
-        font-size: 1.4rem;
+        font: inherit;
         color: inherit;
-        line-height: 1;
-        letter-spacing: 0.05em;
+        line-height: inherit;
         transition: color 0.2s ease-in;
     }
 
@@ -937,9 +1030,13 @@ html.darkmode .yoi-float-nav__search-input {
     .yoi-float-nav__search,
     .yoi-float-nav__list {
         order: 1;
+        grid-column: auto;
+        grid-row: auto;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
+        visibility: hidden;
+        transform: none;
         pointer-events: none;
         padding: 0 1.4rem;
         margin: 0;
@@ -957,6 +1054,7 @@ html.darkmode .yoi-float-nav__search-input {
         max-height: 60vh;
         overflow-y: auto;
         opacity: 1;
+        visibility: visible;
         pointer-events: auto;
         padding: 1.2rem 1.4rem;
         transition:

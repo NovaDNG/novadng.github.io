@@ -151,14 +151,13 @@
     .yoi-float-nav {
       position: fixed;
       top: 8rem;
-      right: max(1.2rem, calc((100vw - 960px) / 2 - 16rem));
+      right: 0;
       z-index: 24;
-      width: max-content;
-      min-width: 20rem;
-      max-width: min(44rem, calc(100vw - 2rem));
+      width: 4.9rem;
+      max-width: calc(100vw - 0.8rem);
     }
 
-    @media (max-width: 1380px) {
+    @media (max-width: 550px) {
       .yoi-float-nav {
         display: none;
       }
@@ -259,7 +258,6 @@
           
           <aside class="yoi-float-nav" aria-label="Yoishigure section navigation">
   <div class="yoi-float-nav__bar">
-    <h4 class="yoi-float-nav__title">快速導覽</h4>
     <div class="yoi-float-nav__theme" aria-label="Theme switch">
       <button
         type="button"
@@ -274,8 +272,15 @@
         onclick="setDarkMode(false)"
       >❂</button>
     </div>
-    <button class="yoi-float-nav__list-toggle" type="button" aria-label="導覽列表">目錄</button>
-    <button class="yoi-float-nav__search-toggle" type="button" aria-label="搜尋">搜尋</button>
+    <h4 class="yoi-float-nav__title">
+      <button class="yoi-float-nav__desktop-toggle" type="button" aria-label="快速導覽" aria-expanded="false">快速導覽</button>
+    </h4>
+    <h4 class="yoi-float-nav__mobile-toggle-title">
+      <button class="yoi-float-nav__list-toggle" type="button" aria-label="導覽列表">目錄</button>
+    </h4>
+    <h4 class="yoi-float-nav__mobile-toggle-title">
+      <button class="yoi-float-nav__search-toggle" type="button" aria-label="搜尋">搜尋</button>
+    </h4>
   </div>
   <div class="yoi-float-nav__search" role="search" aria-label="搜尋本頁內容">
     <input
@@ -637,11 +642,133 @@
       });
     }
 
+    function initDesktopToggle() {
+      var nav = document.querySelector('.yoi-float-nav');
+      if (!nav || nav.dataset.desktopToggleBound === '1') return;
+      nav.dataset.desktopToggleBound = '1';
+
+      var toggle = nav.querySelector('.yoi-float-nav__desktop-toggle');
+      if (!toggle) return;
+
+      var desktopQuery = window.matchMedia('(min-width: 551px)');
+      var DESKTOP_OPEN_GAP = 16;
+
+      function isDesktop() {
+        return desktopQuery.matches;
+      }
+
+      function measureContentRightEdge() {
+        var scope = document.querySelector('body.page-yoishigure .trans');
+        if (!scope) return null;
+
+        var measurableTags = {
+          H1: true,
+          H2: true,
+          H3: true,
+          H4: true,
+          P: true,
+          DETAILS: true,
+          BLOCKQUOTE: true,
+          UL: true,
+          OL: true,
+          TABLE: true,
+          CENTER: true
+        };
+
+        var maxRight = 0;
+        var found = false;
+        Array.prototype.forEach.call(scope.children, function (el) {
+          if (!el || !el.tagName || !measurableTags[el.tagName]) return;
+          if (el.classList && el.classList.contains('yoi-float-nav')) return;
+
+          var rect = el.getBoundingClientRect();
+          if (!rect || rect.width <= 1 || rect.height <= 1) return;
+          maxRight = Math.max(maxRight, rect.right);
+          found = true;
+        });
+
+        return found ? maxRight : null;
+      }
+
+      function measureOpenLeftEdge() {
+        var hadOpen = nav.classList.contains('yoi--desktop-open');
+        var hadCollapsed = nav.classList.contains('yoi--desktop-collapsed');
+        var prevTransition = nav.style.transition;
+
+        nav.style.transition = 'none';
+        nav.classList.add('yoi--desktop-open');
+        nav.classList.remove('yoi--desktop-collapsed');
+        var left = nav.getBoundingClientRect().left;
+
+        nav.classList.toggle('yoi--desktop-open', hadOpen);
+        nav.classList.toggle('yoi--desktop-collapsed', hadCollapsed);
+        nav.style.transition = prevTransition;
+
+        // Flush style after transition restoration.
+        void nav.offsetWidth;
+        return left;
+      }
+
+      function shouldDefaultOpen() {
+        var contentRight = measureContentRightEdge();
+        if (contentRight == null) return false;
+        var openLeft = measureOpenLeftEdge();
+        return openLeft - contentRight >= DESKTOP_OPEN_GAP;
+      }
+
+      function setDesktopOpen(open) {
+        nav.classList.toggle('yoi--desktop-open', open);
+        nav.classList.toggle('yoi--desktop-collapsed', !open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (!open && document.activeElement === toggle) {
+          toggle.blur();
+        }
+      }
+
+      function syncViewportState() {
+        if (!isDesktop()) {
+          nav.classList.remove('yoi--desktop-open');
+          nav.classList.remove('yoi--desktop-collapsed');
+          toggle.setAttribute('aria-expanded', 'false');
+          return;
+        }
+        setDesktopOpen(shouldDefaultOpen());
+      }
+
+      toggle.addEventListener('click', function () {
+        if (!isDesktop()) return;
+        setDesktopOpen(!nav.classList.contains('yoi--desktop-open'));
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!isDesktop()) return;
+        if (!nav.classList.contains('yoi--desktop-open')) return;
+        if (nav.contains(event.target)) return;
+        setDesktopOpen(false);
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (!isDesktop()) return;
+        if (!nav.classList.contains('yoi--desktop-open')) return;
+        if (event.key !== 'Escape') return;
+        setDesktopOpen(false);
+      });
+
+      if (desktopQuery.addEventListener) {
+        desktopQuery.addEventListener('change', syncViewportState);
+      } else if (desktopQuery.addListener) {
+        desktopQuery.addListener(syncViewportState);
+      }
+
+      syncViewportState();
+    }
+
     function init() {
       buildNavList();
       initYoiFloatNavScrollspy();
       initYoiInPageSearch();
       initMobileToggles();
+      initDesktopToggle();
     }
 
     if (document.readyState === 'loading') {

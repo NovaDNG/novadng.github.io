@@ -151,14 +151,13 @@
     .yoi-float-nav {
       position: fixed;
       top: 8rem;
-      right: max(1.2rem, calc((100vw - 960px) / 2 - 16rem));
+      right: 0;
       z-index: 24;
-      width: max-content;
-      min-width: 20rem;
-      max-width: min(44rem, calc(100vw - 2rem));
+      width: 4.9rem;
+      max-width: calc(100vw - 0.8rem);
     }
 
-    @media (max-width: 1380px) {
+    @media (max-width: 550px) {
       .yoi-float-nav {
         display: none;
       }
