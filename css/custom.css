@@ -246,13 +246,14 @@ img.noshadow {
         width: min(120%, 100vw);
         position: relative;
         left: 50%;
-        transform: translateX(-50%);
+        translate: -50% 0;
         margin-block: 0;
         font-size: 0;
     }
 
     /* Keep text after gallery from wrapping around floated images */
-    .container p:has(img[alt~="_gallery"]) + p:not(:has(img[alt~="_gallery"])) {
+    .container p:has(img[alt~="_gallery"]) + p:not(:has(img[alt~="_gallery"])),
+    .container p:has(img[alt~="_gallery"]) + blockquote {
         clear: both;
     }
 
