@@ -950,6 +950,7 @@
     if (!modal) return;
 
     const frame = modal.querySelector('.yoi-embed-modal__frame');
+    const dialog = modal.querySelector('.yoi-embed-modal__dialog');
     const closeTriggers = [...modal.querySelectorAll('[data-yoi-embed-close]')];
     let parsing = false;
     let clickToken = 0;
@@ -1149,6 +1150,9 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       document.documentElement.style.overflow = 'hidden';
       document.documentElement.classList.add('yoi-embed-open');
       modal.classList.remove('is-visible');
+      // Keep dialog hidden until content is sized; backdrop fades in immediately.
+      dialog.style.setProperty('opacity', '0', 'important');
+      dialog.style.setProperty('transform', 'translateY(8px)', 'important');
       requestAnimationFrame(() => modal.classList.add('is-visible'));
     }
 
@@ -1160,6 +1164,8 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       frame.style.width = '';
       frame.style.height = '';
       frame.style.opacity = '';
+      dialog.style.removeProperty('opacity');
+      dialog.style.removeProperty('transform');
       if (fitTimer) {
         window.clearTimeout(fitTimer);
         fitTimer = 0;
@@ -1232,6 +1238,9 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
           function revealFrame() {
             if (token !== clickToken) return;
             fitFrameHeightToContent(token);
+            // Release dialog inline overrides so CSS transition fades it in.
+            dialog.style.removeProperty('opacity');
+            dialog.style.removeProperty('transform');
             frame.style.opacity = '1';
           }
 
