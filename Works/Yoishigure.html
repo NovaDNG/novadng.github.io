@@ -157,6 +157,12 @@
       max-width: calc(100vw - 0.8rem);
     }
 
+    .yoi-float-nav.yoi--booting {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
     @media (max-width: 550px) {
       .yoi-float-nav {
         display: none;
@@ -256,7 +262,7 @@
         
         <div class="trans">
           
-          <aside class="yoi-float-nav" aria-label="Yoishigure section navigation">
+          <aside class="yoi-float-nav yoi--booting" aria-label="Yoishigure section navigation">
   <div class="yoi-float-nav__bar">
     <div class="yoi-float-nav__theme" aria-label="Theme switch">
       <button
@@ -763,12 +769,38 @@
       syncViewportState();
     }
 
+    function initFloatNavReveal() {
+      var nav = document.querySelector('.yoi-float-nav');
+      if (!nav || nav.dataset.revealBound === '1') return;
+      nav.dataset.revealBound = '1';
+
+      var REVEAL_DELAY_MS = 90;
+      var SAFETY_MS = 260;
+      var revealed = false;
+
+      function reveal() {
+        if (revealed) return;
+        revealed = true;
+        nav.classList.remove('yoi--booting');
+        nav.classList.add('yoi--ready');
+      }
+
+      // Reveal after layout/state computation settles, without waiting for webfonts.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          window.setTimeout(reveal, REVEAL_DELAY_MS);
+        });
+      });
+      window.setTimeout(reveal, SAFETY_MS);
+    }
+
     function init() {
       buildNavList();
       initYoiFloatNavScrollspy();
       initYoiInPageSearch();
       initMobileToggles();
       initDesktopToggle();
+      initFloatNavReveal();
     }
 
     if (document.readyState === 'loading') {

@@ -680,21 +680,34 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
     max-width: calc(100vw - 0.8rem);
     max-height: calc(100vh - 8.2rem);
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     background: #EBE6E2DE;
     box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
     backdrop-filter: blur(8px) saturate(56%);
     line-height: 1.35;
+    opacity: 1;
     display: grid;
     grid-template-columns: var(--yoi-nav-rail-width) minmax(0, 1fr);
     grid-template-rows: auto minmax(0, 1fr);
-    transition: all 0.2s ease-in;
+    transition:
+        width 0.2s ease-in,
+        max-height 0.2s ease-in,
+        opacity 0.2s ease-in,
+        box-shadow 0.2s ease-in;
+}
+
+@media (min-width: 551px) {
+    .yoi-float-nav.yoi--booting {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: none !important;
+    }
 }
 
 .yoi-float-nav.yoi--desktop-open {
     width: var(--yoi-nav-open-width);
     max-height: calc(100vh - 8.2rem);
-    border-radius: 8px;
 }
 
 @media (min-width: 551px) {
@@ -702,6 +715,7 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
     .yoi-float-nav:not(.yoi--desktop-open) {
         max-height: 18.67vh;
         border-radius: 8px 0 0 8px;
+        box-shadow: 2px 3px 4px 4px rgba(0, 123, 187, 0.16);
     }
 }
 
@@ -1086,8 +1100,8 @@ html.darkmode .yoi-float-nav__search-input {
 .yoi-embed-modal__backdrop {
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px) saturate(87%);
+    -webkit-backdrop-filter: blur(12px) saturate(87%);
     opacity: 0;
     transition: opacity 0.2s ease-in;
 }
