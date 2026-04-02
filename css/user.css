@@ -285,3 +285,8 @@ body.page-yoishigure a:focus:not(.icon) > b {
 body.page-yoishigure-sub .tategaki-content blockquote {
   border-color: #007bbb;
 }
+
+/* Reserve space for giscus comment widget to prevent layout shift on lazy load */
+#giscus {
+  min-height: 372px;
+}

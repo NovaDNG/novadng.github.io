@@ -187,6 +187,7 @@ html.darkmode body {
 
 img {
     max-width: 100%;
+    height: auto;
     box-shadow: var(--shadow-default);
     vertical-align: bottom; /* removes inline baseline gap without negative margin */
 }
@@ -386,7 +387,7 @@ html.darkmode a:not(.icon) ruby rt {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.25rem 1rem;
-    margin-bottom: 5em;
+    margin-bottom: 4rem;
     line-height: 166%;
 }
 
@@ -713,7 +714,7 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 @media (min-width: 551px) {
     .yoi-float-nav.yoi--desktop-collapsed,
     .yoi-float-nav:not(.yoi--desktop-open) {
-        max-height: 18.67vh;
+        max-height: 10.5em;
         border-radius: 8px 0 0 8px;
         box-shadow: 2px 3px 4px 4px rgba(0, 123, 187, 0.16);
     }
