@@ -221,7 +221,7 @@ img.noshadow {
 
     img[alt$="><"] {
         display: block;
-        margin: auto;
+        margin: auto auto 2% auto;
         float: none !important;
     }
 
@@ -575,6 +575,19 @@ details.is-closing > :not(summary) {
         max-width: 66.67% !important;
         width: 66.67% !important;
         transform: none !important;
+        position: static !important;
+        left: auto !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Gallery paragraphs use `translate` (not `transform`), so must be reset separately */
+    .container p:has(img[alt~="_gallery"]) {
+        translate: none !important;
+        left: auto !important;
+        position: static !important;
+        width: 100% !important;
     }
 }
 
