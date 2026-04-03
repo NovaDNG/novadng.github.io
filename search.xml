@@ -2227,7 +2227,7 @@
 <p>但与閱讀體驗的極致絲滑相比, 它的設定過程可是完全相反的極致痛苦. 和viwood建立在大家都很熟悉的Android平臺不同, X4由於採用低能耗的微控制器晶片ESP32, 導致算力低下無法處理複雜任務, 而上面執行的也是類似微控制器系統, 雖然对開發很友好, 但功能只能說簡陋, 而且想同時獲得優異的中文和英文閱讀體驗難如登天. 官方系統的功能略多, 可以直接和手機應用通訊来傳輸檔案, 以及製作桌布, 但閱讀時的排版效果奇差; 目前我選擇刷入的<a href="https://github.com/aBER0724/crosspoint-reader-cjk">Crosspoint-reader-CJK</a>雖然<strong>勉强</strong>能兼顧中英文閱讀, 但距離達到viwood的觀感还差得遠. 另外, 無論是官方系統還是Crosspoint, 它們的排版支援都近乎於0, epub比起txt的優勢基本僅剩目錄這一點了. </p>
 <p>好在官方維護很活躍, 系統更新頻繁, 也很重視社群反饋, 或許將來的哪一天可以不需要第三方系統也達到可用的體驗吧. 當然, 如果妳只閱讀純文字中文或英文書籍, 官方系統或Crosspoint的體驗就已經足夠. </p>
 <p><img src="/2026-04/yearning-for-e-ink/x4comment.avif" alt="養成系 _gallery ><" class="noshadow"><br/></p>
-<center><a href= “https://apps.apple.com/jp/app/xteink/id6754496214">官方應用</a>下的評論</center><br/>
+<center><a href= "https://apps.apple.com/jp/app/xteink/id6754496214">官方應用</a>下的評論</center><br/>
 
 <p>本裝置也可以閱讀漫畫, 但一來4.3”的螢幕讀漫畫體驗著實折磨, 二來這塊螢幕的灰階很糟糕, 比起viwoods本身支援16階 + 軟體最佳化閱讀漫畫體驗差得實在太遠, 三來也不像viwoods那樣可以非常便利地獲取最新漫畫, 屬實沒必要強求. 實際上, 因為系統功能極度匱乏, 若在閱讀時想做標註筆記就只能斷了這念頭, 故此這裝置也不太適合閱讀那些會需要註記的書籍, 更適合閱讀通俗小說之類的短平快讀物. </p>
 <p><img src="/2026-04/yearning-for-e-ink/x4viwoodsimg.avif"></p>
