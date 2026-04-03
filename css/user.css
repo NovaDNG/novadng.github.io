@@ -51,6 +51,10 @@ a.color-link:focus:not(.icon) {
   color: #E9E6E2;
 }
 
+a.color-link:not(.icon) ruby rt {
+  color: var(--link-color, currentColor);
+}
+
 /* Mirror the parent hover fill onto bold children on Yoishigure pages. */
 body.page-yoishigure a:not(.icon) > strong,
 body.page-yoishigure a:not(.icon) > b,
