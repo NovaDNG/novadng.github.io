@@ -29,7 +29,6 @@ body {
     text-rendering: geometricPrecision;
 }
 
-body.darkmode,
 html.darkmode body {
     background: transparent;
     color: rgb(151, 154, 156);
@@ -312,7 +311,6 @@ li p code {
     font-size: 85%;
 }
 
-body.darkmode li p code,
 html.darkmode body li p code {
     background-color: rgb(65, 65, 65);
 }
@@ -364,7 +362,6 @@ a:not(.icon) ruby rt {
     color: #4c4c4f;
 }
 
-body.darkmode a:not(.icon) ruby rt,
 html.darkmode a:not(.icon) ruby rt {
     color: rgb(151, 154, 156);
 }
@@ -460,13 +457,11 @@ a.footer-link:focus {
 #logoDark  { opacity: 0; }
 
 /* Dark mode: swap to dark logo */
-body.darkmode #logoLight,
 html.darkmode #logoLight {
     opacity: 0;
     pointer-events: none;
 }
 
-body.darkmode #logoDark,
 html.darkmode #logoDark {
     opacity: 1;
 }
@@ -508,7 +503,6 @@ html.darkmode #logoDark {
     opacity: 0.56;
 }
 
-body.darkmode .depth-breadcrumb,
 html.darkmode .depth-breadcrumb {
     color: rgba(178, 181, 184, 0.85);
 }
@@ -666,12 +660,10 @@ body.page-yoishigure mark.yoi-page-search-hit.is-active {
     color: #e9e6e2;
 }
 
-body.darkmode.page-yoishigure mark.yoi-page-search-hit,
 html.darkmode body.page-yoishigure mark.yoi-page-search-hit {
     background: color-mix(in srgb, #007bbb 38%, #19191a 62%);
 }
 
-body.darkmode.page-yoishigure mark.yoi-page-search-hit.is-active,
 html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
     background: #007bbb;
     color: #e9e6e2;
@@ -950,19 +942,16 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 }
 
 /* Dark mode overrides for float nav */
-body.darkmode .yoi-float-nav,
 html.darkmode .yoi-float-nav {
     background: #19191ADE;
     box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
     backdrop-filter: blur(8px) saturate(67%);
 }
 
-body.darkmode .yoi-float-nav__bar,
 html.darkmode .yoi-float-nav__bar {
     border-right-color: color-mix(in srgb, rgb(151, 154, 156) 28%, transparent);
 }
 
-body.darkmode .yoi-float-nav__h,
 html.darkmode .yoi-float-nav__h {
     color: color-mix(in srgb, rgb(151, 154, 156) 56%, transparent);
 }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
 
@@ -59,32 +60,10 @@
   <script>
   (function () {
     var media = window.matchMedia('(prefers-color-scheme: dark)');
-    var root = document.documentElement;
-
-    function collectThemeButtons() {
-      var darkBtns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-role="dark"]'));
-      var lightBtns = Array.prototype.slice.call(document.querySelectorAll('[data-theme-role="light"]'));
-
-      var legacyDarkBtn = document.getElementById('darkBtn');
-      var legacyLightBtn = document.getElementById('lightBtn');
-
-      if (legacyDarkBtn && darkBtns.indexOf(legacyDarkBtn) === -1) {
-        darkBtns.push(legacyDarkBtn);
-      }
-      if (legacyLightBtn && lightBtns.indexOf(legacyLightBtn) === -1) {
-        lightBtns.push(legacyLightBtn);
-      }
-
-      return {
-        darkBtns: darkBtns,
-        lightBtns: lightBtns
-      };
-    }
 
     function syncThemeControls(isDark) {
-      var controls = collectThemeButtons();
-      var darkBtns = controls.darkBtns;
-      var lightBtns = controls.lightBtns;
+      var darkBtns = document.querySelectorAll('[data-theme-role="dark"]');
+      var lightBtns = document.querySelectorAll('[data-theme-role="light"]');
       if (!darkBtns.length && !lightBtns.length) return;
 
       if (isDark) {
@@ -97,10 +76,7 @@
     }
 
     function applyTheme(isDark) {
-      root.classList.toggle('darkmode', isDark);
-      if (document.body) {
-        document.body.classList.toggle('darkmode', isDark);
-      }
+      document.documentElement.classList.toggle('darkmode', isDark);
       syncThemeControls(isDark);
     }
 
@@ -119,7 +95,7 @@
     applyTheme(preferredIsDark());
 
     document.addEventListener('DOMContentLoaded', function () {
-      applyTheme(root.classList.contains('darkmode'));
+      applyTheme(document.documentElement.classList.contains('darkmode'));
     }, { once: true });
 
     function handleSystemThemeChange(e) {
@@ -303,7 +279,7 @@
 
       function isDarkMode() {
         // 1) Current DOM state (may be applied very early or slightly later)
-        if (document.body && document.body.classList.contains('darkmode')) return true;
+        if (document.documentElement.classList.contains('darkmode')) return true;
 
         // 2) Persisted preference (your theme uses preferredTheme)
         var v = getPreferredThemeValue();
@@ -400,7 +376,7 @@
       var mo = new MutationObserver(function () {
         postSetTheme(getGiscusTheme());
       });
-      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+      mo.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 
       // React to system theme changes (if user never set preferredTheme)
       if (window.matchMedia) {
@@ -513,56 +489,8 @@
 <div class="row">
   <div class="two columns" style="max-width: 50px">
     <h3 class="mt-2 mb-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">✶</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>❂</div>
-      <script >
-  (function () {
-  var media = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function applyTheme(isDark) {
-    var darkBtn = document.getElementById('darkBtn');
-    var lightBtn = document.getElementById('lightBtn');
-
-    // Apply body class deterministically
-    document.body.classList.toggle('darkmode', isDark);
-
-    // Toggle button visibility using the existing `hidden` class
-    if (darkBtn && lightBtn) {
-      if (isDark) {
-        lightBtn.classList.remove('hidden');
-        darkBtn.classList.add('hidden');
-      } else {
-        lightBtn.classList.add('hidden');
-        darkBtn.classList.remove('hidden');
-      }
-    }
-  }
-
-  // Expose a stable setter for user clicks (pins preference)
-  window.setDarkMode = function (isDark) {
-    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
-    applyTheme(isDark);
-  };
-
-  function initTheme() {
-    var stored = localStorage.getItem('preferredTheme');
-    if (stored === 'dark') return applyTheme(true);
-    if (stored === 'light') return applyTheme(false);
-    // No stored preference: follow system
-    return applyTheme(media.matches);
-  }
-
-  // Live update when following system (no stored preference)
-  media.addEventListener('change', function (e) {
-    if (!localStorage.getItem('preferredTheme')) {
-      applyTheme(e.matches);
-    }
-  });
-
-  // Initial paint
-  initTheme();
-})();
-      </script>
+      <div data-theme-role="dark" onclick="setDarkMode(true)">✶</div>
+      <div data-theme-role="light" onclick="setDarkMode(false)" class="hidden">❂</div>
     </h3>
   </div>
 
