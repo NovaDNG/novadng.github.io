@@ -30,6 +30,9 @@
 
 a.color-link:not(.icon) {
   color: var(--link-color, currentColor);
+/*  text-shadow:
+    0 0px 2px color-mix(in srgb, contrast-color(Canvas) 16%, transparent),
+    0 2px 4px color-mix(in srgb, contrast-color(Canvas) 12%, transparent); */
   text-decoration: none;
   font-weight: bolder;
   transition:
@@ -51,7 +54,8 @@ a.color-link:focus:not(.icon) {
   color: #E9E6E2;
 }
 
-a.color-link:not(.icon) ruby rt {
+a.color-link:not(.icon) ruby rt,
+html.darkmode a.color-link:not(.icon) ruby rt {
   color: var(--link-color, currentColor);
 }
 
