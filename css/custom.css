@@ -956,12 +956,10 @@ html.darkmode .yoi-float-nav__h {
     color: color-mix(in srgb, rgb(151, 154, 156) 56%, transparent);
 }
 
-body.darkmode .yoi-float-nav__h.is-active,
 html.darkmode .yoi-float-nav__h.is-active {
     color: color-mix(in srgb, rgb(0, 123, 187) 72%, transparent);
 }
 
-body.darkmode .yoi-float-nav__search-input,
 html.darkmode .yoi-float-nav__search-input {
     background: color-mix(in srgb, #19191a 76%, transparent);
     border-color: color-mix(in srgb, rgb(151, 154, 156) 28%, transparent);
@@ -1184,7 +1182,6 @@ html.darkmode .yoi-float-nav__search-input {
     transform: translateY(0);
 }
 
-body.darkmode .yoi-embed-modal__dialog,
 html.darkmode .yoi-embed-modal__dialog {
     background: #19191ADE;
 }

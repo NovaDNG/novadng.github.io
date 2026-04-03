@@ -366,7 +366,7 @@ body { font-family: "EB-Garamond", -apple-system, BlinkMacSystemFont, serif; }
       // Boot
       loadGiscus();
 
-      // React to theme toggles (your theme switch toggles `body.darkmode`)
+      // React to theme toggles (theme switch toggles `html.darkmode`)
       var mo = new MutationObserver(function () {
         postSetTheme(getGiscusTheme());
       });
