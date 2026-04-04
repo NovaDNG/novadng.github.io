@@ -241,7 +241,7 @@
   
   
 <div id="page-header">
-  <center>以<a href="https://oklch.com/">OKLCH色彩空間</a>從465 色<a href="https://www.colordic.org/w">日本傳統色</a>中找出最接近的配色.</center><br/>
+  <center>以<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.4867 0.1223 282.01) 0%, oklch(0.5742 0.2339 26.83) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://oklch.com/">OKLCH色彩空間</a>從465 色<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.6749 0.127 237.51) 0%, oklch(0.8731 0.0321 308.05) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://www.colordic.org/w">日本傳統色</a>中找出最接近的配色.</center><br/>
 </div>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
@@ -351,6 +351,137 @@ function hexToRgb(hex) {
   var h = hex.replace('#','');
   return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
 }
+function clamp01(n) { return Math.min(1, Math.max(0, n)); }
+function clamp255(n) { return Math.min(255, Math.max(0, Math.round(n))); }
+function rgbToHex(rgb) {
+  return '#' + rgb.map(function(v){
+    var s = clamp255(v).toString(16);
+    return s.length === 1 ? '0' + s : s;
+  }).join('');
+}
+function parseHexColor(input) {
+  var s = input.trim().replace(/^#/, '');
+  if (!/^[0-9a-fA-F]+$/.test(s)) return null;
+  if (s.length === 3 || s.length === 4) {
+    return [
+      parseInt(s.charAt(0) + s.charAt(0), 16),
+      parseInt(s.charAt(1) + s.charAt(1), 16),
+      parseInt(s.charAt(2) + s.charAt(2), 16)
+    ];
+  }
+  if (s.length === 6 || s.length === 8) {
+    return [
+      parseInt(s.slice(0,2), 16),
+      parseInt(s.slice(2,4), 16),
+      parseInt(s.slice(4,6), 16)
+    ];
+  }
+  return null;
+}
+function parseHue(s) {
+  var v = s.trim().toLowerCase();
+  var n = parseFloat(v);
+  if (!isFinite(n)) return null;
+  if (v.endsWith('turn')) n *= 360;
+  else if (v.endsWith('rad')) n *= (180 / Math.PI);
+  else if (v.endsWith('grad')) n *= 0.9;
+  n = n % 360;
+  if (n < 0) n += 360;
+  return n;
+}
+function parseRatio(s) {
+  var v = s.trim().toLowerCase();
+  var n = parseFloat(v);
+  if (!isFinite(n)) return null;
+  if (v.endsWith('%') || n > 1) n /= 100;
+  return clamp01(n);
+}
+function hsvToRgb(h, s, v) {
+  var c = v * s;
+  var x = c * (1 - Math.abs((h / 60) % 2 - 1));
+  var m = v - c;
+  var rgb1 = [0, 0, 0];
+  if (h < 60) rgb1 = [c, x, 0];
+  else if (h < 120) rgb1 = [x, c, 0];
+  else if (h < 180) rgb1 = [0, c, x];
+  else if (h < 240) rgb1 = [0, x, c];
+  else if (h < 300) rgb1 = [x, 0, c];
+  else rgb1 = [c, 0, x];
+  return [
+    (rgb1[0] + m) * 255,
+    (rgb1[1] + m) * 255,
+    (rgb1[2] + m) * 255
+  ];
+}
+function parseHsvColor(input) {
+  var m = input.trim().match(/^hs[vb]\((.+)\)$/i);
+  if (!m) return null;
+  var body = m[1].split('/')[0].replace(/,/g, ' ').trim();
+  var p = body.split(/\s+/);
+  if (p.length !== 3) return null;
+  var h = parseHue(p[0]), s = parseRatio(p[1]), v = parseRatio(p[2]);
+  if (h === null || s === null || v === null) return null;
+  return rgbToHex(hsvToRgb(h, s, v));
+}
+var _cssColorProbe = null;
+function parseCssColorToHex(input) {
+  if (typeof document === 'undefined') return null;
+  if (typeof CSS !== 'undefined' && CSS.supports && !CSS.supports('color', input)) return null;
+  if (!_cssColorProbe) {
+    var canvas = document.createElement('canvas');
+    canvas.width = 1;
+    canvas.height = 1;
+    _cssColorProbe = canvas.getContext('2d', {willReadFrequently: true});
+  }
+  if (!_cssColorProbe) return null;
+  var ctx = _cssColorProbe;
+  try {
+    ctx.clearRect(0, 0, 1, 1);
+    ctx.fillStyle = 'rgba(0,0,0,0)';
+    ctx.fillRect(0, 0, 1, 1);
+    ctx.fillStyle = input;
+    ctx.fillRect(0, 0, 1, 1);
+    var px = ctx.getImageData(0, 0, 1, 1).data;
+    return rgbToHex([px[0], px[1], px[2]]);
+  } catch (err) {
+    return null;
+  }
+}
+function parseAnyColorToHex(input) {
+  var raw = (input || '').trim();
+  if (!raw) return null;
+  var compactHex = raw;
+  if (/^[0-9a-fA-F]{3,8}$/.test(raw) && (raw.length === 3 || raw.length === 4 || raw.length === 6 || raw.length === 8)) {
+    compactHex = '#' + raw;
+  }
+  var hexRgb = parseHexColor(compactHex);
+  if (hexRgb) return rgbToHex(hexRgb);
+  var hsvHex = parseHsvColor(raw);
+  if (hsvHex) return hsvHex;
+  return parseCssColorToHex(raw);
+}
+var INITIAL_COLOR_INPUTS = [
+  '#bce2e8',
+  'oklch(0.8731 0.0321 308.05)',
+  'oklab(0.87 -0.09 0.09)',
+  'hsl(310.19 99% 87%)',
+  'rgb(168, 54, 156)'
+];
+function pickInitialColorPreset() {
+  var shuffled = INITIAL_COLOR_INPUTS.slice();
+  for (var i = shuffled.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = shuffled[i];
+    shuffled[i] = shuffled[j];
+    shuffled[j] = t;
+  }
+  for (var k = 0; k < shuffled.length; k++) {
+    var text = shuffled[k];
+    var parsed = parseAnyColorToHex(text);
+    if (parsed) return {text:text, hex:parsed};
+  }
+  return {text:'#bce2e8', hex:'#bce2e8'};
+}
 function linearize(c) {
   c /= 255;
   return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
@@ -400,9 +531,11 @@ var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch
 var e = React.createElement;
 
 function App() {
-  var _inputHex = React.useState('#bce2e8');
+  var _initialPreset = React.useState(function(){ return pickInitialColorPreset(); });
+  var initialPreset = _initialPreset[0];
+  var _inputHex = React.useState(initialPreset.hex);
   var inputHex = _inputHex[0], setInputHex = _inputHex[1];
-  var _textInput = React.useState('#bce2e8');
+  var _textInput = React.useState(initialPreset.text);
   var textInput = _textInput[0], setTextInput = _textInput[1];
   var _topN = React.useState(5);
   var topN = _topN[0], setTopN = _topN[1];
@@ -417,10 +550,10 @@ function App() {
   }, [inputHex, topN]);
 
   function handleText(ev) {
-    var v = ev.target.value.trim();
+    var v = ev.target.value;
     setTextInput(v);
-    if (v.charAt(0) !== '#') v = '#' + v;
-    if (/^#[0-9a-fA-F]{6}$/.test(v)) setInputHex(v.toLowerCase());
+    var parsed = parseAnyColorToHex(v);
+    if (parsed) setInputHex(parsed);
   }
   function handlePicker(ev) { setInputHex(ev.target.value); setTextInput(ev.target.value); }
   function txtCol(hex) { return luminance(hex) > 0.35 ? '#1a1a1a' : '#f5f5f5'; }
@@ -445,13 +578,13 @@ function App() {
       e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,tabIndex:-1,'aria-hidden':true,
         style:{position:'absolute',top:0,left:0,width:1,height:1,transform:'translate(-50%, -50%)',opacity:0,pointerEvents:'none',zIndex:1}}),
       // Controls overlay
-      e('div', {style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center',gap:12,padding:'0 20px',
+      e('div', {style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center',gap:12,padding:'0 12px',
         zIndex:2,pointerEvents:'none'}},
-        e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'#HEX',spellCheck:false,'data-no-picker':'true',
+        e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'hex/rgb/hsv/lab/lch',spellCheck:false,'data-no-picker':'true',
           style:{fontSize:18,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600,textAlign:'center',
             padding:'6px 8px',background:'transparent',
             border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
-            borderRadius:2,width:'128px',outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
+            borderRadius:2,width:'320px',maxWidth:'56vw',outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
         e('div', {style:{display:'flex',alignItems:'center',gap:8,fontSize:18,color:txtCol(inputHex),pointerEvents:'auto'}},
           e('span', null, 'Top'),
           e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},'data-no-picker':'true',
@@ -502,8 +635,16 @@ function App() {
 
     // Legend
     e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
-      e('strong', {style:{color:'#4c6473'}}, 'OKLCH Δ參考'),
-      '：<0.005 幾乎無法分辨 · 0.005~0.02 細微差異 · 0.02~0.06 明顯差異 · >0.06 截然不同. 本工具由Claude Code生成. '
+      e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ參考'),
+      '：',
+      e('strong', {style:{color:'#2e7d32',fontWeight:'600'}}, '<0.005'),
+      '幾乎無法分辨 · ',
+      e('strong', {style:{color:'#558b2f',fontWeight:'600'}}, '0.005~0.02'),
+      '細微差異 · ',
+      e('strong', {style:{color:'#f57f17',fontWeight:'600'}}, '0.02~0.06'),
+      '明顯差異 · ',
+      e('strong', {style:{color:'#e65100',fontWeight:'600'}}, '>0.06'),
+      '截然不同. 本工具由Claude Code輔助生成. '
     )
   );
 }
