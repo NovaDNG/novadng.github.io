@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>中國傳統色マッチャー ⸺ 近似色検索 - NovaDNG</title>
+  
+  <link rel="canonical" href="https://novadng.studio/tools/ccolor-matcher.html">
+  
+  <meta name="description" content="">
+  
+  
+  <meta name="author" content="NovaDNG">
+  
+  <meta property="og:image" content="https://novadng.studioundefined">
+  
+  <meta property="og:site_name" content="NovaDNG Studio" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="中國傳統色マッチャー ⸺ 近似色検索 - NovaDNG" />
+  
+  <meta property="og:description" content="">
+  
+  <meta property="og:url" content="https://novadng.studio/tools/ccolor-matcher.html" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="中國傳統色マッチャー ⸺ 近似色検索 - NovaDNG">
+  
+  <meta name="twitter:description" content="">
+  
+  
+  <meta name="twitter:image" content="https://novadng.studioundefined">
+  
+  <meta name="twitter:url" content="https://novadng.studio/tools/ccolor-matcher.html" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style id="critical-theme-bg">
+    html { background: #eae6e2; }
+    html.darkmode { background: rgb(25, 25, 26); }
+    body { background: transparent; }
+  </style>
+
+  <!-- Theme preflight: apply preferred theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var isDark = false;
+      try {
+        var stored = localStorage.getItem('preferredTheme');
+        if (stored === 'dark') {
+          isDark = true;
+        } else if (stored === 'light') {
+          isDark = false;
+        } else {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      } catch (e) {
+        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      if (isDark) {
+        document.documentElement.classList.add('darkmode');
+      } else {
+        document.documentElement.classList.remove('darkmode');
+      }
+    })();
+  </script>
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'wgq1qkn',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+  <script>
+  (function () {
+    var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function syncThemeControls(isDark) {
+      var darkBtns = document.querySelectorAll('[data-theme-role="dark"]');
+      var lightBtns = document.querySelectorAll('[data-theme-role="light"]');
+      if (!darkBtns.length && !lightBtns.length) return;
+
+      if (isDark) {
+        lightBtns.forEach(function (el) { el.classList.remove('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.add('hidden'); });
+      } else {
+        lightBtns.forEach(function (el) { el.classList.add('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.remove('hidden'); });
+      }
+    }
+
+    function applyTheme(isDark) {
+      document.documentElement.classList.toggle('darkmode', isDark);
+      syncThemeControls(isDark);
+    }
+
+    function preferredIsDark() {
+      var stored = localStorage.getItem('preferredTheme');
+      if (stored === 'dark') return true;
+      if (stored === 'light') return false;
+      return media.matches;
+    }
+
+    window.setDarkMode = function (isDark) {
+      localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
+      applyTheme(isDark);
+    };
+
+    applyTheme(preferredIsDark());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      applyTheme(document.documentElement.classList.contains('darkmode'));
+    }, { once: true });
+
+    function handleSystemThemeChange(e) {
+      if (!localStorage.getItem('preferredTheme')) {
+        applyTheme(e.matches);
+      }
+    }
+
+    if (typeof media.addEventListener === 'function') {
+      media.addEventListener('change', handleSystemThemeChange);
+    } else if (typeof media.addListener === 'function') {
+      media.addListener(handleSystemThemeChange);
+    }
+  })();
+</script>
+
+
+  
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
+
+  
+<link rel="stylesheet" href="/css/skeleton.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  <!-- Deferred non-critical CSS -->
+  <link rel="stylesheet" href="/css/font.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/font.css"></noscript>
+  <link rel="stylesheet" href="/css/typo.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/typo.css"></noscript>
+  <link rel="stylesheet" href="/css/prism-dark.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/prism-dark.css"></noscript>
+  <link rel="stylesheet" href="/css/prism-line-numbers.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/prism-line-numbers.css"></noscript>
+  
+  <link rel="stylesheet" href="/css/user.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/user.css"></noscript>
+  
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/Cube-128.avif">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    --link-hover-accent: #E2001A;
+    text-decoration-color: var(--link-hover-accent);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      var(--link-hover-accent) 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #E2001A;
+  }
+.button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #E2001A;
+    border-color: #E2001A;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    /* border: 1px solid #E2001A; */
+  }
+</style>
+
+
+  <script data-goatcounter="https://novadng.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="NovaDNG Studio" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="NovaDNG Studio" type="application/rss+xml">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div>
+        
+        <div class="trans">
+          
+          
+
+<h2 class="mt-3">中國傳統色マッチャー ⸺ 近似色検索</h2>
+
+
+  
+  
+<div id="page-header">
+  <center>以<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.5814 0.2375 27.86) 0%, oklch(0.5049 0.0922 321.78) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://oklch.com/">OKLCH色彩空間</a>從384色<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.4828 0.0706 191.17) 0%, oklch(0.888 0.0452 341.06) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://github.com/daodaolee/china-color">中國傳統色</a>中找出最接近的配色.</center><br/>
+</div>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<div id="root"></div>
+<script>
+// ═══════════════════════════════════════════════════════════════
+// 中國傳統色 384 colors from daodaolee/china-color
+// ═══════════════════════════════════════════════════════════════
+const W=[
+["黃白游","欲識金銀氣，多從黃白遊；一生癡絕處，無夢到徽州。","#fff799"],["松花","輕如松花落金粉，濃似苔錦含碧滋。","#ffee6f"],["緗葉","魚戲排緗葉，龜浮見綠池。","#ecd452"],["蒼黃","土花漠碧雲茫茫，黃河欲盡天蒼黃。","#b6a014"],
+["天縹","篷窗窺天縹，江水真安流；雪霽艷朱炎，相思登北樓。","#d5ebe1"],["滄浪","水色滄浪，波濤浩汗。","#b1d5c8"],["蒼筤","石家炫炫珊瑚勝，不及蒼莨一尺青。","#99bcac"],["縹碧","縹色玉擎柔，醅浮盞面清。","#80a492"],
+["流黃","慙幽閨之琴瑟，晦高台之流黃。","#8b7042"],["栗殼","栗殼黃腴猿哺子，松巢碧冷鶴溫雛；道人鍊罷芙蓉鼎，紫玉簫橫鳳繞梧。","#775039"],["龍戰","登舟既虎嘯，激水方龍戰。","#5f4321"],["青驪","長安俠客矜年少，青驪緩步章台道。","#422517"],
+["海天霞","漫花棚錦繡窠，海霞色上輕羅；鬥雞打馬消長晝爛，春光戲裡過。","#f3a694"],["縉雲","蒸栗絹紺縉紅繎，青綺綾谷靡潤鮮。","#ee7959"],["纁黃","一曲纁黃瓜蔓水，數峰蒼翠華陰山。","#ba5140"],["珊瑚赫","四弦才罷醉蠻奴，酃醁馀香在翠爐。夜半醒來紅蠟短，一枝寒淚作珊瑚。","#c12c1f"],
+["盈盈","蛾兒雪柳黃金縷。笑語盈盈暗香去。","#f9d3e3"],["水紅","栴木應前綠樹新。水紅衫子藕絲裙。","#ecb0c1"],["蘇梅","偶作小紅桃杏色，閒雅，尚餘孤瘦雪霜姿。","#dd7694"],["紫莖屏風","淨淘紅粒罯香飯，薄切紫鱗烹水葵。雨滴篷聲青雀舫，浪搖花影白蓮池。","#a76283"],
+["黃河琉璃","放眼三十里，日耀黃琉璃。","#e5a84b"],["庫金","金箔微開掃玉床，離宮瞰水竹風涼。","#e18a3b"],["緼韍","韍之言亦蔽也。緼，赤黃之間色，所謂韎也。","#984f31"],["紫甌","喜共紫甌吟且酌，羨君瀟灑有余清。","#7c461e"],
+["葭灰","玉管葭灰細細吹，流鶯上下燕參差。","#beb1aa"],["黃埃","新豐綠樹起黃埃，數騎漁陽探使回。","#b49273"],["老僧衣","遠公舊在淵明社，釋氏應拈隱逸花。","#a46244"],["玄天","牝土之氣，禦於玄天。","#6b5458"],
+["歐碧","碧花止一品，名曰歐碧。其花淺碧而開最晚，獨出歐氏，故以姓著。","#c0d695"],["春辰","虛心定乎昏中，龍星正乎春辰。","#a9be7b"],["碧山","碧山影裡小紅旗。儂是江南踏浪兒。","#779649"],["青青","青青子衿，悠悠我心。","#4f6f46"],
+["赤緹","丹與赤不同者，丹者如丹砂，與赤異，其分甚微。","#ba5b49"],["朱草","又和以朱草，一服之能乘虛而行雲。朱草狀似小棗，栽長三四尺，枝葉皆赤，莖如珊瑚。","#a64036"],["綪茷","知綪茷是大赤，大赤即今之紅旗，取染赤之草為名也。","#9e2a22"],["順聖","楊妃醉醒暈猶在，順聖名高價盡低。","#7c191e"],
+["桃夭","桃之夭夭，灼灼其華。之子於歸，宜其室家。","#f6bec8"],["楊妃","楊妃醉醒暈猶在，順聖名高價盡低。","#f091a0"],["長春","頃刻開花公莫愛，四時俱好是長春。","#dc6b82"],["牙緋","潘花底，陶柳外，細民肥。萬家喜色，融端氣擁牙緋。","#c35c5d"],
+["黃栗留","山下飛鳴黃栗留，溪邊飲啄白符鳩。","#fedc5e"],["梔子","梔子花比眾木，人間誠未多","#fac03d"],["黃不老","黃檗鬱成林，當奈苦心多。","#db9b34"],["柘黃","中原日月用胡歷，幽州老酋著柘黃。","#c67915"],
+["青鸞","青鸞杳， 碧天雲海音絕。","#9aa7b1"],["菘藍","凡藍五種，皆可為淀；茶藍即菘藍，插根活。","#6b798e"],["青黛","小頭鞵履窄衣裳，青黛點眉眉細長。","#45465e"],["紺蝶","逐伴飄來新紺蝶，成群分出小秧魚。","#2c2f3b"],
+["皦玉","皦玉粲以曜目，榮日華以舒光。","#ebeee8"],["吉量","有文馬，縞身朱鬣，目若黃金，名曰吉量，乘之壽千歲。","#ebeddf"],["韶粉","石髓多年化韶粉，冰華無意屬東風。","#e0e0d0"],["霜地","濃霜滿地作微雪，落葉投空似飛鳥。","#c7c6b6"],
+["夏籥","《象武》，武舞也；《夏籥》，文 舞也。","#d2af9d"],["紫磨金","金之優者，名曰紫磨，猶人之有聖也。","#bc836b"],["檀色","淺勻檀色妒胭脂，綠刺也生姿。","#b26d5d"],["赭羅","月瓣團欒剪赭羅，長條排蕊綴鳴珂。","#9a6655"],
+["黃丹","黃丹胡粉密陀僧，此是嘉州造化能。","#ea5514"],["洛神珠","醋漿，其實如撮口袋，中有珠子，熟則紅，關中謂之洛。","#d23918"],["丹雘","鄧林采楩楠，越裳貢丹雘。","#c8161d"],["水華朱","升煉銀硃，用石亭脂二斤，新鍋內熔化，次下水銀一斤，炒作青砂，頭炒不見星。","#a72126"],
+["青冥","青冥浩蕩不見底，日月照耀金銀台；霓為衣兮風為馬，雲之君兮紛紛而來下。","#3271ae"],["青雘","綠碧紫英，青雘丹粟。","#007175"],["青緺","官拜少常休，青緺換鹿裘。","#284852"],["騏驎","騏驎踏雲天馬獰，牛山撼碎珊瑚聲。","#12264f"],
+["紫蒲","紫蒲低水檻，紅葉半江船。","#a6559d"],["赬紫","芬菲芳事畢，木芍藥晚出；於中姚魏更傾城，掃退目前頳紫色。","#8a1874"],["齊紫","齊王好衣紫，齊人皆好也。","#6c216d"],["凝夜紫","角聲滿天秋色裡，塞上燕脂凝夜紫。","#422256"],
+["凍縹","乃有春清縹酒，康狄所營，應化則變，感氣而成。","#bec2b3"],["春碧","朱雀航南繞香陌，謝郎東墅連春碧。","#9d9d82"],["執大象","執大象，天下往。往而不害，安平太。","#919177"],["苔古","園荒一徑新，苔古半階斜。","#79836c"],
+["香爐紫煙","日照香爐生紫煙，遙看瀑布掛前川。","#d3ccd6"],["紫菂","浪靜鮮鱗躍，風恬紫菂妍。","#9b8ea9"],["拂紫綿","淺畫香膏拂紫線。牡丹花重翠雲偏。","#7e527f"],["三公子","牙官少有三公子，首領多饒五品緋。","#663d74"],
+["琅玕紫","玉轉濕絲牽曉水，熱粉生香琅玕紫。","#cb5c83"],["紅躑躅","晚葉尚開紅躑躅，秋芳初結白芙蓉。","#b83570"],["魏紅","當時絕品可數者，魏紅窈窕姚黃妃。","#a73766"],["魏紫","人謂牡丹花王，今姚黃真可為王，而魏花乃後也。","#903754"],
+["昌榮","能致紫草，賣與染家，得錢以遺孤寡，歷世而然，奉祠者萬計。","#dcc7e1"],["紫薄汗","胡瓶落膊紫薄汗，碎葉城西秋月團；明敕星馳封寶劍，辭君一夜取樓蘭。","#bba1cb"],["茈藐","北五十里，曰勞山，多茈草。","#a67eb7"],["紫紶","東海則有紫紶魚鹽焉，然而中國得而衣食之。","#7d5284"],
+["蒼葭","其淺濕則生蒼葭蔣蒲，藿芧青蘋，草葉蓮藕，茱華菱根。","#a8bf8f"],["庭蕪綠","是時三月半，花落庭蕪綠；舍上晨鳩鳴，窗間春睡足。","#68945c"],["翠微","澹然空水對斜暉，曲島蒼茫接翠微。","#4c8045"],["翠虯","渟清沼以泛舟，浮翠虯與玄武。","#446a37"],
+["碧落","乘風游碧落，踏浪溯黃河。","#aed0ee"],["挼藍","山潑黛，水挼藍，翠相攙。","#6e9bc5"],["青雀頭黛","河西王沮渠蒙遜，獻青雀頭黛百斤。","#354e6b"],["螺子黛","淺螺黛，淡燕脂。閒妝取次宜。","#13393e"],
+["露褐","聖人披褐而懷玉。","#bd8253"],["檀褐","檀褐，用土黃入紫花合。","#945635"],["緅絺","三入為纁，五入為緅，七入為緇。","#804c2e"],["目童子","存我兩目童子，光如流星，煥落五方。","#5b3222"],
+["青粲","禦宿青粲，瓜州紅菱，冀野之梁。","#c3d94e"],["翠縹","紅採兮騂衣，翠縹兮為裳。","#b7d332"],["人籟","竹簡書汗青，高吟當人籟。","#9ebc19"],["水龍吟","笛奏龍吟水，簫鳴鳳下空。","#84a729"],
+["地籟","虛心聞地籟，妄意覓桃源。","#84a729"],["大塊","茫茫大塊，悠悠高旻，是生萬物，餘得為人。","#bfa782"],["養生主","緣督以為經，可以保身，可以全生，可以養親，可以盡年。","#b49b7f"],["大雲","老子當歸興已濃，令君何事寄蓯蓉。","#94784f"],
+["溶溶月","梨花院落溶溶月，柳絮池塘淡淡風。","#bec2bc"],["紹衣","今民將在祗遹乃文考，紹聞衣。","#a8a19c"],["石蓮褐","魚生玉藕下，人在石蓮中。","#92897b"],["黑朱","其條痕為灰黑色，畫面呈絲絨質感。","#70695d"],
+["朱顏酡","美人既醉，朱顏酡些。","#f29a76"],["苕榮","美人熒熒兮，顏若苕之榮。","#ed6d3d"],["檎丹","林擒味好來山鵲，啄破枝頭數點紅。","#e94829"],["丹罽","灼灼若朝霞之映日，離離如繁星之著天，皮似丹罽，膚若明璫。","#e60012"],
+["彤管","靜女其孌，貽我彤管。彤管有煒，說懌女美。","#e2a2ac"],["渥赭","赫如渥赭，公言錫爵。","#dd6b7b"],["唇脂","唇脂，以丹作之，象唇赤也","#c25160"],["朱孔陽","載玄載黃，我朱孔陽，為公子裳","#b81a35"],
+["石發","石發，水苔也，青綠色，皆生於石也。","#6a8d52"],["漆姑","雲中之鹿膠，吳中之鰾膠，東阿之牛膠，漆姑汁，鍊煎並為重採，鬱而用之。","#5d8351"],["芰荷","制芰荷以為衣兮，集芙蓉以為裳。","#4f794a"],["官綠","大紅官綠色，槐花煎水染，藍淀蓋。","#2a6e3f"],
+["仙米","舂秫作美酒，酒熟吾自斟","#d4c9aa"],["黃螺","黃螺圓出，垂蕤散舒。","#b4a379"],["降真香","日盡窗前更無事，唯燒一炷降真香。","#9e8358"],["遠志","凡使遠志，先須去心，若不去心，服之令人悶。","#81663b"],
+["嫩鵝黃","已醺浮蟻嫩鵝黃，想見翻成雪浪。","#f2c867"],["鞠衣","鞠衣，黃桑服也，色如鞠塵，像桑葉始生。","#d3a237"],["鬱金裙","垂手亂翻雕玉佩，折腰爭舞鬱金裙。","#d08635"],["黃流","瑟彼玉瓚，黃流在中。","#9f6027"],
+["筠霧","裁筠比霧，裂素輕蟬。","#d5d1ae"],["瓷秘","瓷秘色碗七口，內二口銀棱，瓷秘色盤子、疊子共六枚。","#bfc096"],["琬琰","吸飛泉之微液兮， 懷琬琰之華英。","#a9a886"],["青圭","以青圭禮東方，以赤璋禮南方。","#92905d"],
+["鳴珂","官府鳴珂有底，崆峒散發何人。","#b3b59c"],["青玉案","美人贈我錦繡段，何以報之青玉案。","#a8b092"],["出岫","云無心以出岫，鳥倦飛而知還。","#a9a773"],["風入松","暖風十里麗人天，花壓鬢雲偏。畫船載取春歸去，馀情寄、湖水湖煙。","#868c4e"],
+["如夢令","常記溪亭日暮，沉醉不知歸路。興盡晚回舟，誤入藕花深處。","#ddbb99"],["芸黃","苕之華，芸其黃矣。","#d2a36c"],["金埒","草迎金埒馬，花伴玉樓人。","#be9457"],["雌黃","夕照雌黃筆，秋煙水墨屏。","#b4884d"],
+["曾青","石黛刷幽草，曾青澤古苔。","#535164"],["䒌靘","何時倒銀漢，與世開䒌靘。","#454659"],["璆琳","不向一時求賞音，億代寶之如璆琳。","#343041"],["瑾瑜","高下在心，川澤納污，山藪藏疾，瑾瑜匿瑕。","#1e2732"],
+["赩熾","丹沙赩熾出其坂，蜜房鬱毓被其阜。","#cb523e"],["石榴裙","紅粉青娥映楚雲，桃花馬上石榴裙。","#b13b2e"],["朱湛","鍾氏染羽，以朱湛丹秫，三月而熾之，淳而漬之。","#95302e"],["大繎","烝栗絹紺縉紅繎。","#822327"],
+["月魄","疏簾留月魄，珍簟接煙波。","#b2b6b6"],["不皂","粉光深紫膩，肉色退紅嬌。","#a7aaa1"],["雷雨垂","白摧朽骨龍虎死，黑入太陰雷雨垂。","#7a7b78"],["石涅","黑石脂，一名石涅，一名石墨。","#686a67"],
+["扶光","日以陽德，月以陰靈。擅扶光於東沼，嗣若英於西冥。","#f0c2a2"],["椒房","梨園弟子白髮新，椒房阿監青娥老。","#db9c5e"],["紅友","興來搦管呼紅友，倦去移床就綠陰。","#d9883d"],["光明砂","曲龍丈人冠藕花，其顏色映光明砂。","#cc5d20"],
+["山礬","山礬紛似玉，黃檗碎如金。","#cc5d20"],["玉頩","丹鼎奪胎那是寶，玉人頩頰更多姿。","#cc5d20"],["二目魚","二目白，魚。","#cc5d20"],["明月璫","頭安金步搖，耳係明月璫。","#cc5d20"],
+["騂剛","秋而載嘗，夏而楅衡，白牡騂剛。","#f5b087"],["赬霞","丹田微蒸香露溢，著面已覺赬霞生。","#f18f60"],["赬尾","魴魚赬尾，王室如毀。","#ef845d"],["朱柿","宛中朱柿，房陵縹李，酒泉白柰。","#ed6d46"],
+["天球","天球大貝在高閣，見之使我慚輕薄。","#e0dfc6"],["行香子","行香暫出天橋上，巡禮常過禁殿中。","#bfb99c"],["王芻","荒煙草映王芻綠，落日花開謝豹紅。","#a99f70"],["藎篋","顧我無衣搜藎篋，泥他沽酒拔金釵。","#877d52"],
+["赤靈","松子神陂，赤靈解角。","#954024"],["丹秫","鍾氏染羽，以朱湛丹秫，三月而熾之，淳而漬之。","#873424"],["術蘭","又有像牙桃枝扇，或綠沉色，或木蘭色，或作紫紺色，或作鬱金色。","#662b1f"],["麒麟竭","其脂液從木中流出，滴下如膠飴，久則堅凝而成，赤如血色，故謂之血竭。","#4c1e1a"],
+["柔藍","欲教魚目無分別，須學揉藍染釣絲。","#106898"],["碧城","居紫雲之闕，碧霞為城。","#12507b"],["藍采和","踏歌踏歌藍采和，世界能幾何。","#06436f"],["帝釋青","霜余遠水呈天碧，雨過遙空現帝青。","#003460"],
+["夕嵐","殘雨斜陽照，夕嵐飛鳥還。","#e3adb9"],["雌霓","建采虹之長旃，系雌霓而為旗。","#cf929e"],["絳紗","日陪鯉也趨文苑，誰道門生隔絳紗。","#b27777"],["茹藘","縞衣茹藘，聊可與娛。","#a35f65"],
+["蔥青","瞻荒榛之蕪穢兮，顧東山之蔥青。","#edf1bb"],["少艾","掌中看珠二少艾，捧腮卻立鴉鬟奴。","#e3eb98"],["綺錢","長風隱細草，深堂沒綺錢。","#d8de8a"],["翠樽","於是盛以翠樽，酌以雕觴，浮蟻鼎沸，酷烈馨香。","#cdd171"],
+["石蜜","沙餳石蜜，遠國儲珍。","#d4bf89"],["沙餳","沙餳石蜜，遠國儲珍。","#bfa670"],["巨呂","次第二煎，則漸微重，名曰巨呂。","#aa8e59"],["吉金","吉日初庚，吳王光擇其吉金，玄囗、白囗，台乍叔姬寺籲宗彝薦鑑。","#896d47"],
+["山嵐","江水彎彎漾碧波，山嵐冉冉映青螺。","#bed2bb"],["淥波","春草碧色，春水淥波。","#9bb496"],["青楸","見紅蘭之受露，望青楸之離霜。","#81a380"],["菉竹","有草似竹，高五六尺，淇水側人謂之菉竹。","#698e6a"],
+["竊藍","秋鳸，窃蓝。","#88abda"],["監德","正月，與鬥、牽牛晨出東方，名曰監德。","#6f94cd"],["蒼蒼","天之蒼蒼，其正色邪。","#5976ba"],["群青","回頭卻顧人間世，但見群青似小童。","#2e59a7"],
+["白青","亦似空青，圓如鐵珠，色白而腹不空，亦謂之碧青，以其研之色碧也。","#98b6c2"],["竹月","竹月泛涼影，萱露澹幽叢。","#7f9faf"],["空青","況空青之麗寶，亦挺山海之不測。","#66889e"],["太師青","蔡太師作相時，衣青道衣，謂之太師青。","#547689"],
+["縞羽","縞，鮮色也。","#efefef"],["香皮","汗竹功猶淺，香皮世益珍。","#d8d1c5"],["雲母","雲母屏風燭影深，長河漸落曉星沉。","#c6beb1"],["佩玖","彼留之子，貽我佩玖。","#ac9f8a"],
+["麴塵","須臾吐昨夜所食，皆作朽爛氣，如黃衣麴塵之色，斯乃櫬中送亡人之食也。","#c0d09d"],["綠沈","綠沈，言其色深沈，正今之苦綠色","#938f4c"],["絞衣","絞，謂繒黑黃間色也","#7f754c"],["素綦","質如緗縟，文如素綦。","#595333"],
+["退紅","與褪同為淺紅也，半新半舊日福。","#f0cfe3"],["櫻花","何處哀箏隨急管，櫻花永巷垂楊岸。","#e4b8d5"],["丁香","青鳥不傳云外信，丁香空結雨中愁。","#ce93bf"],["木槿","有女同車，顏如舜華。","#ba79b1"],
+["餘白","白綠色曰餘白，淺紅白色曰出爐銀。","#c9cfc1"],["蘭苕","翡翠戲蘭苕，容色更相鮮。","#a8b78c"],["碧滋","庭樹發紅彩，閨草含碧滋。","#90a07d"],["蔥倩","當嚴勁而蔥倩，承和煦而芬腴。","#6c8650"],
+["雲門","男耕女桑不相失，宮中聖人奏雲門。","#a2d2e2"],["西子","欲把西湖比西子，淡妝濃抹總相宜。","#87c0ca"],["天水碧","天水碧，因煜之內人染碧，夕露於中庭，為露所染，其色特好，遂名之。","#5aa4ae"],["法翠","法藍、法翠二色，舊惟成窯有，翡翠最佳。","#108b96"],
+["桑蕾","小憑筍輿行稻田，麥芒桑蕾春無邊。","#ead89a"],["太一餘糧","太一馀糧，中黃侭玉。","#d5b45c"],["秋香","畫欄桂樹懸秋香，三十六宮土花碧。","#bf9c46"],["老茯神","曾為老茯神，本是寒松液。","#aa8534"],
+["凝脂","春寒賜浴華清池，溫泉水滑洗凝脂。","#f5f2e9"],["玉色","玉色雌龍金絡頭，真妃騎出縱閒遊。","#eae4d1"],["黃潤","筒中黃潤，一端數金。","#dfd6b8"],["縑緗","缃，帛浅黄色也。","#d5c8a0"],
+["蕉月","芭蕉月上露枝遲，促織聲先到耳痴。","#86908a"],["千山翠","九秋風露越窯開，奪得千峰翠色來。","#6b7d73"],["結綠","庶青萍、結綠，長價於薛、卞之門。","#555f4d"],["綠雲","綠雲擾擾，梳曉鬟也。","#45493d"],
+["藕絲秋半","藕絲衫子柳花裙，空著沈香慢火熏。","#d3cbc5"],["蒼煙落照","家住蒼煙落照間，絲毫塵事不相關。","#c8b5b3"],["紅藤杖","唯有紅藤杖，相隨萬里來。","#928187"],["紫鼠","將軍縱博場場胜，賭得單于貂鼠袍。","#594c57"],
+["黃粱","夜雨翦春韭，新炊間黃粱。","#c4b798"],["蒸栗","烝栗絹紺縉紅繎，青綺綾縠靡潤鮮。","#a58a5f"],["射干","青荃射干，揭車苞並。","#7c623f"],["油葫蘆","油葫蘆，黑睛淺黃暈，青黑喙，吻根黃。","#644d31"],
+["卵色","夜月琉璃水，春風卵色天。","#d5e3d4"],["葭菼","內阜川禽，外豐葭菼。","#cad7c5"],["冰台","春將去、冰台初長，綺錢重疊。","#becab7"],["青古","金箔行，為本鄉有名出品，有青、赤二種。","#b3bda9"],
+["欒華","葉似木槿而薄細，花黃似槐而稍長大。","#c0ad5e"],["大赤","大赤，九旗之通帛。","#aa9649"],["佛赤","亦稱紫赤金。","#8f3d2c"],["蜜褐","王家池上見芙蕖，蜜褐裝成態有餘。","#683632"],
+["孔雀藍","法藍、法翠二色，舊惟成窯有，翡翠最佳。","#4994c4"],["吐綬藍","吐綬鳥，其身大如鸐，五色，出巴東山中。","#4182a4"],["魚師青","翠小者，謂之翠碧鳥，一名魚師。","#32788a"],["軟翠","鴨綠澹不波，軟翠淨如洗。","#006d87"],
+["淺雲","小抹淡隨寒露立，半橫細入淺雲籠。","#eaeef1"],["素採","波間素彩涵秋淨，天際清光映樹低。","#d4dde1"],["影青","有一種碗碟，質薄而色白，微似定，市肆人呼為影青，以其釉色微帶青色也。","#bdcbd2"],["逍遙遊","自言其中有至樂，適意無異逍遙遊。","#b2bfc3"],
+["醽醁","波翻醽醁醆，霧暖芙蓉繡。","#a6bab1"],["翠濤","碧瑤杯重翠濤深，笑領飛瓊語。","#819d8e"],["青梅","茂綠滿繁枝，青梅結子時。","#778a77"],["翕赩","朝野盛文物，衣冠何翕赩。","#5f766a"],
+["九斤黃","雞，產浦東者大，有九斤黃、黑十二之名。","#ddb078"],["杏子","杏子梢頭香蕾破，淡紅褪白胭脂涴。","#da9233"],["媚蝶","乳鶯啼曉銷蘭炷，媚蝶傷春失蕙叢。","#bc6e37"],["韎韐","君子至止，福祿如茨；韎韐有奭，以作六師。","#9f5221"],
+["東方既白","相與枕藉乎舟中，不知東方之既白。","#8ba3c7"],["紺宇","白髮金山續舊遊，依然紺宇壓中流。","#003d74"],["佛頭青","潮花人鬢白，山色佛頭青。","#19325f"],["花青","笑老去心情，也將醉眼，鎮為花青。","#1a2847"],
+["弗肯紅","今人染弗肯紅名玉色，非也，當名肉紅耳。","#ecd9c7"],["赤璋","以青圭禮東方，以赤璋禮南方。","#e1c199"],["繭色","半嶺晴雲堆繭色，上方朝雨雜龍涎。","#c6a268"],["密陀僧","黃丹胡粉密陀僧，此是嘉州造化能。","#b3934b"],
+["銀硃","職司雖翰墨，佩服已銀硃。","#d12920"],["胭脂蟲","誰碾硃砂擁菊叢，丹葩和露綻西風；一從番舶來中土，贏得扶桑曉日紅。","#ab1d22"],["朱櫻","朱櫻春熟，素柰夏成。","#8f1d22"],["爵頭","雲『如爵頭然』者，以目驗爵頭，赤多黑少，故以爵頭為喻也。","#631216"],
+["甘石","爐甘石，陽明經藥也，治目病為要藥。","#bdb2b2"],["迷樓灰","神器失所託，化作迷樓灰。","#91828f"],["鴉雛","單衫杏子紅，雙鬢鴉雛色。","#6a5b6d"],["煙墨","徒以煙墨不言，受其驅染；紙札無情，任其搖襞。","#5c4f55"],
+["十樣錦","孟氏在蜀時製十樣錦，名長安竹、天下樂、鵰團、宜男、寶界地、方勝、獅團、象眼、八答韻、鐵梗蓑荷。","#f8c6b5"],["檀唇","檀唇呼吸宮商改，怨情漸逐清新舉。","#da9e8c"],["瓊琚","投我以木瓜，報之以瓊琚。","#d77f66"],["棠梨","棠梨花白春似雪，棠梨葉赤秋如血。","#b15a43"],
+["蜜合","僧缽飯歸三篾飽，蜂房蜜合百華香。","#dfd7c2"],["假山南","廣都紙有四色：一曰假山南，二曰假榮，三曰冉村，四曰竹紙。","#d4c1a6"],["紫花布","用紫木棉織成，色赭而淡，名紫花布。","#bea78b"],["沉香","寧知謫仙子，捧研在沉香。","#99806c"],
+["半見","鬱金半見緗白䋤，縹綟綠紈皂紫硟。","#fffbc7"],["女貞黃","楚雲低，瀟瀟暮雨，女貞細瑣黃花。","#f7eead"],["絹紈","綃謂之絹，螈謂之紅，縹謂之絳，緇謂之皂。","#ece093"],["薑黃","漫空沙氣蜀薑黃，一角高城漏日光。","#d6c560"],
+["繱犗","繱，帛青色也。","#88bfb8"],["二綠","凡合用顏色細色，頭青、二青、三青、深中青、浅中青","#5da39d"],["銅青","銅青衫子紫香囊；清歌一曲送霞觴。","#3d8e86"],["石綠","石綠藤黃間麝煤，半枯瘦篠羽毰毸。","#206864"],
+["黃琮","以蒼璧禮天，以黃琮禮地，以青圭禮東方。","#9e8c6b"],["茶色","來衣茶色袍，歸變椹色服。","#887657"],["伽羅","伽羅翻黑，經所謂黑沉香是矣。","#6d5c3d"],["蒼艾","蒼艾浸成色，素絲颯垂領。","#5a4b3b"],
+["藕絲褐","藕褐色，蘇木水薄染，入蓮子殼，青礬水薄蓋。","#a88787"],["葡萄褐","葡葡褐，用粉入三緑紫花合。","#9e696d"],["蘇方","雖得蘇方木，猶貪玳瑁皮。","#81474c"],["福色","近用膏粱紅、櫻桃紅，謂之福色。","#662b2f"],
+["龍膏燭","燈掩香雲墜寶花，龍膏照影月籠紗。","#de82a7"],["黲紫","黲紫，淺紫也。","#cc73a0"],["胭脂水","翻疑誤潑胭脂水，化出花身迥不同。","#b95a89"],["胭脂紫","檀唇深注胭脂紫，琪樹勻排火齊圓。","#b0436f"],
+["小紅","染小紅，以練物帛十兩為率。","#e67762"],["岱赭","厥貢岱赭，鹽山、角弓、龍鬚席、蓯蓉、野馬皮、麝香。","#dd6b4f"],["鶴頂紅","掌中調丹砂，染此鶴頂紅。","#d24735"],["朱殷","左輪朱殷，豈敢言病。","#b93a26"],
+["月白","月白、草白二色，俱靛水微染，今法用莧藍煎水，半生半熟染。","#d4e5ef"],["星郎","紅迷天子帆邊日，紫奪星郎帳外蘭。","#bcd4e7"],["晴山","雲散晴山幾萬重，煙收春色更衝融。","#a3bbdb"],["品月","寶枕垂雲選夢，玉蕭品月偷聲。","#8aabcc"],
+["明茶褐","染明茶褐，以帛十兩為率。黃蘆五兩半研碎，白礬二兩研末。","#9e8368"],["荊褐","染荊褐，以物帛十兩為率。荊葉五兩、白礬二兩、皂礬少許。","#906c4a"],["駝褐","露侵駝褐曉寒輕，星斗闌干分外明。","#7c5b3e"],["椒褐","染椒褐，以絹十兩為率。","#72453a"],
+["粉米","節葉瘦且赤，蘼蕪交翠箸；細蕊亦鮮潔，粉米糅丹素。","#efc4ce"],["縓緣","練衣黃里縓緣。","#ce8892"],["美人祭","美人祭，又曰美人齊，祭紅之淡粉色者也。","#c35c6a"],["鞓紅","白首歸來玉堂署，君王殿後見鞓紅。","#b04552"],
+["米湯嬌","緗色即今之谷色，京師呼米湯嬌。","#eeead9"],["草白","松色隨野深，月露依草白。","#bfc1a9"],["玄校","玄也者，黑也；校也者，若緑色然，婦人未嫁者衣之。","#a9a082"],["綟綬","鬱金半見緗白䋤，縹綟綠紈皂紫硟。","#756c4b"],
+["雀梅","樹頭蠶葚熟，籬下雀梅香。","#788a6f"],["油綠","葉豐髮油綠，香心刻黃琮。","#5d7259"],["莓莓","蘭渚莓莓，石瀨湯湯。","#4e6548"],["螺青","瓦屋螺青披霧出，錦江鴨綠抱山來。","#3f503b"],
+["暮山紫","潦水盡而寒潭清，煙光凝而暮山紫。","#a4abd6"],["紫苑","春暉開紫苑，淑景媚蘭場。","#757cbb"],["優曇瑞","優曇瑞世花，既滌名藍之篆。","#615ea8"],["延維","有神焉，人首蛇身，長如轅，左右有首，衣紫衣，冠旃冠，名曰延維。","#4a4b9d"],
+["銀紅","銀紅裙襉皺宮紗。風前坐，閒鬥鬱金芽。","#e7cad3"],["蓮紅","遊女泛江晴，蓮紅水復清。","#d9a0b3"],["紫梅","紫梅發初遍，黃鳥歌猶澀。","#bb7a8c"],["紫礦","紫礦，紫色如膠。","#9e4e56"],
+["咸池","與女沐兮咸池，曦女發兮陽之阿。","#daa9a9"],["紅麵","麵，麥核屑也。","#cd7372"],["蚩尤旗","中宵倚長劍，起視蚩尤旗。","#a85858"],["霽紅","葉舞霽紅楓映寺，蓓含霜紫菊迎人。","#7c4449"],
+["鶯兒","打起黃鶯兒，莫教枝上啼。","#ebe1a9"],["禹餘糧","山好真登秦望處，石橋偏拾禹餘糧。","#e1d279"],["姚黃","曾與詩翁定花品，一丘一壑過姚黃。","#d6bc46"],["蛾黃","琉璃剪芳葆，蛾黃拂仙裾。","#be8a2f"],
+["濯絳","素波濯絳華，惠風時紛披。","#796860"],["墨黲","今謂物將敗時，顏色黲黲也。","#585248"],["驖驪","駟驖孔阜，六轡在手；公之媚子，從公於狩。","#46433b"],["京元","元青元在繳緇之間，合青則為冥色。","#31322c"],
+["酇白","登高新酒傾酇白，弔古空山湧帝青。","#f6f9e4"],["斷腸","江柳斷腸色，黃絲垂未齊。","#ecebc2"],["田赤","田赤金，色淡黃，以淡金打成。","#e1d384"],["黃封","花霧輕冪冪為我取黃封，親拆官泥赤。","#cab272"],
+["丁香褐","丁香褐，用肉紅為主，入少槐花合。","#bd9683"],["棠梨褐","棠梨褐，用粉入土黃，銀硃合。","#955a42"],["朱石栗","廣州無栗，惟勤州山中有石栗，一年方熟，皮厚而肉少，味似胡桃仁。","#81492c"],["棗褐","染棗褐，以十兩帛為率。蘇木四兩，明礬一兩為細。","#68361a"],
+["秋藍","染羅衣，秋藍難著色；不是無心人，為作台邛客。","#7d929f"],["育陽染","䋭，帛青經縹緯，一曰育陽染也。","#576470"],["霽藍","霽青器，亦官古戶兼仿造，鎮陶無專作霽青器者。","#3c4654"],["獺見","花妥鶯捎蝶，溪喧獺趁魚。","#151d29"],
+["井天","修垣蔽軒楹，如觀坐井天。","#a4c9cc"],["正青","繰成白雪桑重綠，割盡黃雲稻正青。","#6ca8af"],["扁青","帝賜後村奎畫在，作堂安用扁青塗。","#509296"],["䌦色","䌦，大到切绿也。","#226b68"],
+["紫府","紫府仙人號寶燈，雲漿未飲結成冰。","#995d7f"],["地血","龍精埋地血，馬革繡苔衣。","#814662"],["芥拾紫","雋手芥拾紫，忠肝蒲伏青。","#602641"],["油紫","嘉祐染者，既入其色，復漬以油，故色重而近黑者，曰油紫。","#420b2f"],
+["骨縹","縹，帛青白色也。","#ebe3c7"],["青白玉","介於白色和淡青色、淡綠色之間的軟玉。","#cac5a0"],["綠豆褐","內有青綠不可隔間處，於綠淺暈中用藤黃汁罩，謂之綠豆褐。","#92896b"],["冥色","壚埴冥色，剛土柔種，免耕殺匿，使農事得。","#665f4d"],
+["肉紅","便丐春工，染得桃紅似肉紅。","#ddc5b8"],["珠子褐","珠子褐，用粉入藤黃臙脂合。","#bea89d"],["鷹背褐","鷹背褐，用粉入檀子煙墨土黃合。","#8f6d5f"],["麝香褐","麝香褐，用土黃、檀子入煙墨合。","#694b3c"],
+["石英","香甘方士青精飯，潤滑仙家紫石英。","#c8b6bb"],["銀褐","銀褐，用粉入藤黃合。","#9c8d9b"],["煙紅","翠微泛樽綠，苔蘚分煙紅。","#9d858f"],["紫誥","紫浩仍兼綰，黃麻似六經。","#76555d"]
+];
+
+// ═══════════════════════════════════════════════════════════════
+// OKLCH color math
+// ═══════════════════════════════════════════════════════════════
+function hexToRgb(hex) {
+  var h = hex.replace('#','');
+  return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+}
+function clamp01(n) { return Math.min(1, Math.max(0, n)); }
+function clamp255(n) { return Math.min(255, Math.max(0, Math.round(n))); }
+function rgbToHex(rgb) {
+  return '#' + rgb.map(function(v){
+    var s = clamp255(v).toString(16);
+    return s.length === 1 ? '0' + s : s;
+  }).join('');
+}
+function parseHexColor(input) {
+  var s = input.trim().replace(/^#/, '');
+  if (!/^[0-9a-fA-F]+$/.test(s)) return null;
+  if (s.length === 3 || s.length === 4) {
+    return [
+      parseInt(s.charAt(0) + s.charAt(0), 16),
+      parseInt(s.charAt(1) + s.charAt(1), 16),
+      parseInt(s.charAt(2) + s.charAt(2), 16)
+    ];
+  }
+  if (s.length === 6 || s.length === 8) {
+    return [
+      parseInt(s.slice(0,2), 16),
+      parseInt(s.slice(2,4), 16),
+      parseInt(s.slice(4,6), 16)
+    ];
+  }
+  return null;
+}
+function parseHue(s) {
+  var v = s.trim().toLowerCase();
+  var n = parseFloat(v);
+  if (!isFinite(n)) return null;
+  if (v.endsWith('turn')) n *= 360;
+  else if (v.endsWith('rad')) n *= (180 / Math.PI);
+  else if (v.endsWith('grad')) n *= 0.9;
+  n = n % 360;
+  if (n < 0) n += 360;
+  return n;
+}
+function parseRatio(s) {
+  var v = s.trim().toLowerCase();
+  var n = parseFloat(v);
+  if (!isFinite(n)) return null;
+  if (v.endsWith('%') || n > 1) n /= 100;
+  return clamp01(n);
+}
+function hsvToRgb(h, s, v) {
+  var c = v * s;
+  var x = c * (1 - Math.abs((h / 60) % 2 - 1));
+  var m = v - c;
+  var rgb1 = [0, 0, 0];
+  if (h < 60) rgb1 = [c, x, 0];
+  else if (h < 120) rgb1 = [x, c, 0];
+  else if (h < 180) rgb1 = [0, c, x];
+  else if (h < 240) rgb1 = [0, x, c];
+  else if (h < 300) rgb1 = [x, 0, c];
+  else rgb1 = [c, 0, x];
+  return [
+    (rgb1[0] + m) * 255,
+    (rgb1[1] + m) * 255,
+    (rgb1[2] + m) * 255
+  ];
+}
+function rgbToHsv(rgb) {
+  var r = rgb[0] / 255, g = rgb[1] / 255, b = rgb[2] / 255;
+  var max = Math.max(r, g, b), min = Math.min(r, g, b);
+  var d = max - min;
+  var h = 0;
+  if (d !== 0) {
+    if (max === r) h = ((g - b) / d) % 6;
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h *= 60;
+    if (h < 0) h += 360;
+  }
+  var s = max === 0 ? 0 : d / max;
+  var v = max;
+  return [h, s, v];
+}
+function parseHsvColor(input) {
+  var m = input.trim().match(/^hs[vb]\((.+)\)$/i);
+  if (!m) return null;
+  var body = m[1].split('/')[0].replace(/,/g, ' ').trim();
+  var p = body.split(/\s+/);
+  if (p.length !== 3) return null;
+  var h = parseHue(p[0]), s = parseRatio(p[1]), v = parseRatio(p[2]);
+  if (h === null || s === null || v === null) return null;
+  return rgbToHex(hsvToRgb(h, s, v));
+}
+var _cssColorProbe = null;
+function parseCssColorToHex(input) {
+  if (typeof document === 'undefined') return null;
+  if (typeof CSS !== 'undefined' && CSS.supports && !CSS.supports('color', input)) return null;
+  if (!_cssColorProbe) {
+    var canvas = document.createElement('canvas');
+    canvas.width = 1;
+    canvas.height = 1;
+    _cssColorProbe = canvas.getContext('2d', {willReadFrequently: true});
+  }
+  if (!_cssColorProbe) return null;
+  var ctx = _cssColorProbe;
+  try {
+    ctx.clearRect(0, 0, 1, 1);
+    ctx.fillStyle = input;
+    ctx.fillRect(0, 0, 1, 1);
+    var px = ctx.getImageData(0, 0, 1, 1).data;
+    return rgbToHex([px[0], px[1], px[2]]);
+  } catch (err) {
+    return null;
+  }
+}
+function parseOkhclColor(input) {
+  var m = input.trim().match(/^okhcl\((.+)\)$/i);
+  if (!m) return null;
+  return parseCssColorToHex('oklch(' + m[1] + ')');
+}
+function parseAnyColorToHex(input) {
+  var raw = (input || '').trim();
+  if (!raw) return null;
+  var compactHex = raw;
+  if (/^[0-9a-fA-F]{3,8}$/.test(raw) && raw.length !== 5 && raw.length !== 7) {
+    compactHex = '#' + raw;
+  }
+  var hexRgb = parseHexColor(compactHex);
+  if (hexRgb) return rgbToHex(hexRgb);
+  var hsvHex = parseHsvColor(raw);
+  if (hsvHex) return hsvHex;
+  var okhclHex = parseOkhclColor(raw);
+  if (okhclHex) return okhclHex;
+  return parseCssColorToHex(raw);
+}
+var COLORLINK_BASE_HEXES = Array.from(new Set(W.map(function(c){ return c[2]; })));
+var RANDOM_INPUT_FORMATS = ['okhcl', 'rgb', 'hex', 'oklab', 'hsv'];
+function formatAsInputColor(hex, format) {
+  var rgb = hexToRgb(hex);
+  if (format === 'rgb') return 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')';
+  if (format === 'hsv') {
+    var hsv = rgbToHsv(rgb);
+    return 'hsv(' + hsv[0].toFixed(2) + ' ' + (hsv[1] * 100).toFixed(2) + '% ' + (hsv[2] * 100).toFixed(2) + '%)';
+  }
+  if (format === 'oklab') {
+    var lab = rgbToOklab(rgb);
+    return 'oklab(' + lab[0].toFixed(4) + ' ' + lab[1].toFixed(4) + ' ' + lab[2].toFixed(4) + ')';
+  }
+  if (format === 'okhcl') {
+    var lch = hexToOklch(hex);
+    return 'okhcl(' + lch[0].toFixed(4) + ' ' + lch[1].toFixed(4) + ' ' + lch[2].toFixed(2) + ')';
+  }
+  return hex.toLowerCase();
+}
+function buildInitialColorInputs() {
+  return COLORLINK_BASE_HEXES.map(function(hex) {
+    var format = RANDOM_INPUT_FORMATS[Math.floor(Math.random() * RANDOM_INPUT_FORMATS.length)];
+    var formatted = formatAsInputColor(hex, format);
+    return parseAnyColorToHex(formatted) ? formatted : hex.toLowerCase();
+  });
+}
+var INITIAL_COLOR_INPUTS = buildInitialColorInputs();
+function pickInitialColorPreset() {
+  var a = INITIAL_COLOR_INPUTS.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  var text = a[0] || '#bce2e8';
+  return {text: text, hex: parseAnyColorToHex(text) || '#bce2e8'};
+}
+function linearize(c) {
+  c /= 255;
+  return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+}
+function rgbToOklab(rgb) {
+  var lr = linearize(rgb[0]), lg = linearize(rgb[1]), lb = linearize(rgb[2]);
+  var l = Math.cbrt(0.4122214708*lr + 0.5363325363*lg + 0.0514459929*lb);
+  var m = Math.cbrt(0.2119034982*lr + 0.6806995451*lg + 0.1073969566*lb);
+  var s = Math.cbrt(0.0883024619*lr + 0.2817188376*lg + 0.6299787005*lb);
+  return [
+    0.2104542553*l + 0.7936177850*m - 0.0040720468*s,
+    1.9779984951*l - 2.4285922050*m + 0.4505937099*s,
+    0.0259040371*l + 0.7827717662*m - 0.8086757660*s
+  ];
+}
+function oklabToOklch(lab) {
+  var C = Math.sqrt(lab[1]*lab[1] + lab[2]*lab[2]);
+  var h = Math.atan2(lab[2], lab[1]) * (180/Math.PI);
+  if (h < 0) h += 360;
+  return [lab[0], C, h];
+}
+function hexToOklch(hex) { return oklabToOklch(rgbToOklab(hexToRgb(hex))); }
+function fmtOklch(lch) { return 'oklch('+lch[0].toFixed(4)+' '+lch[1].toFixed(4)+' '+lch[2].toFixed(2)+')'; }
+
+function deltaOklch(a, b) {
+  var dL = a[0]-b[0], dC = a[1]-b[1];
+  var dh = a[2]-b[2];
+  if (dh > 180) dh -= 360;
+  if (dh < -180) dh += 360;
+  var rad = Math.PI/180;
+  var dH = 2 * Math.sqrt(a[1]*b[1]) * Math.sin((dh/2)*rad);
+  return Math.sqrt(dL*dL + dC*dC + dH*dH);
+}
+
+function luminance(hex) {
+  var rgb = hexToRgb(hex);
+  return 0.2126*linearize(rgb[0]) + 0.7152*linearize(rgb[1]) + 0.0722*linearize(rgb[2]);
+}
+
+var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch:hexToOklch(c[2])}; });
+
+// ═══════════════════════════════════════════════════════════════
+// React App (no JSX — plain createElement)
+// ═══════════════════════════════════════════════════════════════
+var e = React.createElement;
+var _initPreset = pickInitialColorPreset();
+
+function App() {
+  var _inputHex = React.useState(_initPreset.hex);
+  var inputHex = _inputHex[0], setInputHex = _inputHex[1];
+  var _textInput = React.useState(_initPreset.text);
+  var textInput = _textInput[0], setTextInput = _textInput[1];
+  var _topN = React.useState(7);
+  var topN = _topN[0], setTopN = _topN[1];
+  var pickerRef = React.useRef(null);
+
+  var results = React.useMemo(function() {
+    var target = hexToOklch(inputHex);
+    return COLORS
+      .map(function(c){ return Object.assign({}, c, {dist: deltaOklch(target, c.oklch)}); })
+      .sort(function(a,b){ return a.dist - b.dist; })
+      .slice(0, topN);
+  }, [inputHex, topN]);
+
+  function handleText(ev) {
+    var v = ev.target.value;
+    setTextInput(v);
+    var parsed = parseAnyColorToHex(v);
+    if (parsed) setInputHex(parsed);
+  }
+  function handlePicker(ev) { setInputHex(ev.target.value); setTextInput(ev.target.value); }
+  function txtCol(hex) { return luminance(hex) > 0.35 ? '#1a1a1a' : '#f5f5f5'; }
+  function openPickerAtCursor(ev) {
+    if (ev.target && ev.target.closest && ev.target.closest('[data-no-picker=\"true\"]')) return;
+    var input = pickerRef.current;
+    if (!input) return;
+    var rect = ev.currentTarget.getBoundingClientRect();
+    input.style.left = (ev.clientX - rect.left) + 'px';
+    input.style.top = (ev.clientY - rect.top) + 'px';
+    if (typeof input.showPicker === 'function') input.showPicker();
+    else input.click();
+  }
+
+  var inputFmt = fmtOklch(hexToOklch(inputHex));
+  return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
+
+    e('div', {className:'wm-input-panel',style:{position:'relative',background:inputHex,borderRadius:4,height:'var(--wm-preview-h, 96px)',marginBottom:16,
+      boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},onClick:openPickerAtCursor},
+      // Hidden color picker — moved to click position before opening
+      e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,tabIndex:-1,'aria-hidden':true,
+        style:{position:'absolute',top:0,left:0,width:1,height:1,transform:'translate(-50%, -50%)',opacity:0,pointerEvents:'none',zIndex:1}}),
+      e('div', {className:'wm-controls',style:{position:'absolute',inset:0,zIndex:2,pointerEvents:'none'}},
+        e('input', {className:'wm-color-text',type:'text',value:textInput,onChange:handleText,placeholder:'hex/rgb/hsv/lab/lch',spellCheck:false,'data-no-picker':'true',
+          style:{fontSize:18,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600,textAlign:'center',
+            padding:'6px 8px',background:'transparent',
+            border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
+            borderRadius:2,outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
+        e('div', {className:'wm-top-controls',style:{display:'flex',alignItems:'center',gap:8,fontSize:18,color:txtCol(inputHex),pointerEvents:'auto'}},
+          e('span', null, 'Top'),
+          e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},'data-no-picker':'true',
+            style:{fontSize:18,textAlign:'center',padding:'4px 8px',borderRadius:2,
+              border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
+              outline:'none',cursor:'pointer',background:'transparent',color:txtCol(inputHex),marginBottom:'0'}},
+            [7,13,33,56].map(function(n){ return e('option',{key:n,value:n},n); })
+          )
+        )
+      )
+    ),
+
+    e('div', {style:{display:'flex',flexDirection:'column',gap:8}},
+      results.map(function(c, i) {
+        var isExact = c.dist < 0.005;
+        var rowGradient = 'linear-gradient(78deg in oklch shorter hue, ' + fmtOklch(c.oklch) + ' 0%, 56%, ' + inputFmt + ' 100%)';
+        var rowTextColor = txtCol(c.hex);
+        return e('div', {key:i, style:{display:'flex',alignItems:'stretch',borderRadius:4,overflow:'hidden',background:c.hex}},
+          e('div', {style:{width:48,minHeight:56,background:c.hex,flexShrink:0,
+            display:'flex',alignItems:'center',justifyContent:'center'}},
+            e('span', {style:{color:txtCol(c.hex),fontSize:16,fontWeight:600,opacity:0.87}}, i+1)
+          ),
+          e('div', {style:{flex:1,padding:'8px 8px 8px 2px',display:'flex',alignItems:'center',gap:10,color:rowTextColor,background:rowGradient}},
+            e('div', {style:{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:2}},
+              e('div', {style:{display:'flex',alignItems:'baseline',gap:12}},
+                e('span', {style:{fontSize:20,fontFamily:'HYXuanSong, FZYouSongJ GBK, Source Han Serif VF, serif',fontWeight:600}}, c.name),
+                e('span', {style:{fontSize:14,color:'inherit',opacity:0.86}}, c.reading)
+              ),
+              e('div', {style:{display:'flex',alignItems:'center',gap:10,fontSize:14}},
+                e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'inherit',opacity:0.92,fontWeight:600}}, c.hex),
+                e('span', {style:{
+                  background: isExact?'#e8f5e9': c.dist<0.02?'#f1f8e9': c.dist<0.06?'#fff8e1':'#fff3e0',
+                  color:      isExact?'#2e7d32': c.dist<0.02?'#558b2f': c.dist<0.06?'#f57f17':'#e65100',
+                  padding:'2px 8px',borderRadius:4,fontWeight:600,fontSize:12}},
+                  '\u0394 = ' + c.dist.toFixed(4)
+                )
+              )
+            ),
+            isExact ? e('span',{style:{
+              fontSize:12,color:rowTextColor,fontWeight:600,alignSelf:'center',
+              writingMode:'vertical-rl',textOrientation:'upright',lineHeight:1.05,letterSpacing:'0.08em'
+            }},'完全一致') : null
+          )
+        );
+      })
+    ),
+    e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
+      e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ参照'),
+      '：',
+      e('strong', {style:{color:'#2e7d32',fontWeight:'600'}}, '<0.005'),
+      '同色 · ',
+      e('strong', {style:{color:'#558b2f',fontWeight:'600'}}, '0.005~0.02'),
+      '微差 · ',
+      e('strong', {style:{color:'#f57f17',fontWeight:'600'}}, '0.02~0.06'),
+      '大差 · ',
+      e('strong', {style:{color:'#e65100',fontWeight:'600'}}, '>0.06'),
+      '別色. 本工具由Claude Code輔助生成. '
+    )
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(e(App));
+</script>
+
+<style>
+  .wm-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .wm-color-text {
+    width: 320px;
+    max-width: 56vw;
+  }
+
+  .wm-top-controls {
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 680px) {
+    .wm-input-panel {
+      --wm-preview-h: 128px;
+    }
+
+    .wm-controls {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      gap: 8px;
+      padding: 6px 12px;
+    }
+
+    .wm-color-text {
+      width: 100%;
+      max-width: none;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+  <hr>
+  <div id="giscus"></div>
+
+  <script>
+    (function () {
+      var GISCUS_ORIGIN = 'https://giscus.app';
+      var THEMES = {
+        light: 'catppuccin_latte',
+        dark: 'transparent_dark'
+      };
+
+      function getPreferredThemeValue() {
+        try {
+          return localStorage.getItem('preferredTheme');
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function isDarkMode() {
+        // 1) Current DOM state (may be applied very early or slightly later)
+        if (document.documentElement.classList.contains('darkmode')) return true;
+
+        // 2) Persisted preference (your theme uses preferredTheme)
+        var v = getPreferredThemeValue();
+        if (v != null) {
+          v = String(v).toLowerCase();
+          if (v === 'dark' || v === '1' || v === 'true') return true;
+          if (v === 'light' || v === '0' || v === 'false') return false;
+        }
+
+        // 3) System preference fallback
+        return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      }
+
+      function getGiscusTheme() {
+        return isDarkMode() ? THEMES.dark : THEMES.light;
+      }
+
+      function getIframe() {
+        return document.querySelector('iframe.giscus-frame');
+      }
+
+      function postSetTheme(theme) {
+        var iframe = getIframe();
+        if (!iframe || !iframe.contentWindow) return false;
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          GISCUS_ORIGIN
+        );
+        return true;
+      }
+
+      function waitForIframe(maxMs) {
+        return new Promise(function (resolve) {
+          var start = performance.now();
+          (function tick() {
+            if (getIframe()) return resolve(true);
+            if (performance.now() - start > maxMs) return resolve(false);
+            requestAnimationFrame(tick);
+          })();
+        });
+      }
+
+      function loadGiscus() {
+        var container = document.getElementById('giscus');
+        if (!container) return;
+        if (container.getAttribute('data-loaded') === '1') return;
+        container.setAttribute('data-loaded', '1');
+
+        var cfg = {
+          repo: 'NovaDNG/novadng.github.io',
+          repoId: 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=',
+          category: 'General',
+          categoryId: 'DIC_kwDOFL94d84CmgFx',
+          mapping: 'pathname',
+          strict: '0',
+          reactionsEnabled: '1',
+          emitMetadata: '0',
+          inputPosition: 'top',
+          theme: getGiscusTheme(),
+          lang: 'en',
+          loading: 'lazy'
+        };
+
+        var s = document.createElement('script');
+        s.src = GISCUS_ORIGIN + '/client.js';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+
+        s.setAttribute('data-repo', cfg.repo);
+        s.setAttribute('data-repo-id', cfg.repoId);
+        s.setAttribute('data-category', cfg.category);
+        s.setAttribute('data-category-id', cfg.categoryId);
+        s.setAttribute('data-mapping', cfg.mapping);
+        s.setAttribute('data-strict', cfg.strict);
+        s.setAttribute('data-reactions-enabled', cfg.reactionsEnabled);
+        s.setAttribute('data-emit-metadata', cfg.emitMetadata);
+        s.setAttribute('data-input-position', cfg.inputPosition);
+        s.setAttribute('data-theme', cfg.theme);
+        s.setAttribute('data-lang', cfg.lang);
+        s.setAttribute('data-loading', cfg.loading);
+
+        container.appendChild(s);
+
+        // Once iframe exists, force-sync theme once (covers dark-on-first-load)
+        waitForIframe(6000).then(function () {
+          postSetTheme(getGiscusTheme());
+        });
+      }
+
+      // Boot
+      loadGiscus();
+
+      // React to theme toggles (theme switch toggles `html.darkmode`)
+      var mo = new MutationObserver(function () {
+        postSetTheme(getGiscusTheme());
+      });
+      mo.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+      // React to system theme changes (if user never set preferredTheme)
+      if (window.matchMedia) {
+        var mql = window.matchMedia('(prefers-color-scheme: dark)');
+        // Safari uses addListener
+        if (mql.addEventListener) {
+          mql.addEventListener('change', function () {
+            postSetTheme(getGiscusTheme());
+          });
+        } else if (mql.addListener) {
+          mql.addListener(function () {
+            postSetTheme(getGiscusTheme());
+          });
+        }
+      }
+    })();
+  </script>
+
+
+          <footer id="site-footer" class="site-footer">
+  <div id="footer" class="mt-2">
+  
+    <p id="madewith">Made with ❤ and
+      <a class="footer-link icon" href="https://hexo.io" target="_blank"rel="noreferrer" aria-label="Hexo.io">
+      <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
+      </a>
+      
+      at <a href="https://goo.gl/maps/D5obNcpYpkkFEFSNA" target="_blank" rel="noreferrer">DENSHI NO UMI</a>.</p>
+      
+
+
+    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
+    <div class="posisi" style="margin-top: 0.33em">
+      
+
+      
+
+      
+      <a class="footer-link icon" href="https://twitter.com/NovaDNG" target="_blank" rel="noreferrer" aria-label="Twitter">
+        <svg class="twitter svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+      </a>
+      
+
+      
+      <a class="footer-link icon" href="https://bsky.app/profile/novadng.studio" target="_blank" rel="noreferrer" aria-label="bluesky">
+        <svg class="bluesky svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><title>bluesky</title><g transform="translate(0 24) scale(0.0045 -0.0045)"><path d="M390 4706 c-136 -38 -201 -106 -247 -261 -25 -85 -24 -350 1 -645 2 -19 7 -71 10 -115 4 -44 9 -96 11 -115 2 -19 6 -71 10 -115 6 -84 23 -243 30 -285 2 -14 6 -52 10 -85 6 -53 13 -98 29 -171 11 -54 63 -166 111 -240 108 -167 281 -302 470 -369 28 -9 59 -21 70 -26 30 -13 181 -46 250 -55 33 -4 113 -8 177 -8 64 -1 114 -4 110 -7 -6 -4 -65 -17 -197 -43 -11 -2 -47 -11 -80 -21 -33 -9 -73 -20 -90 -24 -50 -14 -180 -68 -245 -103 -91 -49 -173 -119 -219 -188 -50 -75 -61 -112 -68 -217 -12 -180 93 -411 310 -681 222 -277 442 -450 663 -524 88 -29 233 -31 309 -4 180 64 333 229 473 511 77 155 189 454 247 664 19 67 29 76 39 34 9 -39 27 -100 91 -317 148 -494 305 -754 516 -850 74 -34 109 -40 219 -39 108 1 202 27 325 91 92 48 267 161 295 192 3 3 25 21 50 41 52 42 151 143 205 209 20 25 44 54 53 65 28 33 122 179 122 189 0 5 6 17 14 25 8 9 28 57 46 106 108 309 -13 558 -355 727 -130 65 -292 118 -435 144 -73 14 -54 19 68 20 254 1 468 53 660 160 241 135 421 396 447 649 4 38 8 72 10 75 2 5 5 28 20 168 3 23 7 61 10 85 2 23 7 74 11 112 3 39 7 86 9 105 2 19 7 76 10 125 4 50 8 106 10 125 20 204 26 480 13 558 -26 153 -80 247 -168 292 -203 104 -452 40 -817 -209 -131 -90 -162 -114 -248 -186 -319 -270 -683 -685 -967 -1105 -91 -134 -218 -344 -218 -360 0 -23 -18 -7 -39 36 -27 58 -135 231 -210 339 -64 93 -211 295 -226 311 -5 6 -21 26 -35 44 -14 18 -30 38 -35 44 -6 6 -39 46 -74 90 -124 152 -370 410 -511 536 -19 17 -44 39 -55 49 -218 194 -582 408 -762 446 -57 13 -189 13 -233 1z"/></g></svg>
+      </a>
+      
+
+      
+      <a class="footer-link icon" href="https://t.me/nova_dng" target="_blank" rel="noreferrer" aria-label="telegram">
+        <svg class="telegram svg-hov" width="18" role="img" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+          <title>telegram</title>
+          <g transform="scale(0.048 0.048)">
+            <path d="M441.999,422.947C295.181,582.844 37.735,497.832 8.221,289.54C-17.945,104.871 169.437,-51.707 354.62,26.217C502.9,88.612 561.791,287.804 441.999,422.947ZM343.446,159.064C344.683,159.023 355.259,157.193 361.374,165.588C367.056,173.388 362.582,186.002 361.992,187.668C296.82,371.401 297.317,371.572 291.235,387.394C287.055,398.267 274.709,404.901 263.599,396.377C250.096,386.019 224.205,320.411 216.158,309.767C212.11,304.413 211.776,304.367 141.694,271.106C121.549,261.545 116.252,242.895 131.619,232.685C134.221,230.957 333.6,160.965 343.446,159.064Z" style="fill:rgb(44,165,224);fill-opacity:1;"/>
+        </svg>
+      </a>
+      
+
+      
+      <a class="footer-link icon" href="https://www.instagram.com/NovaDNG/" target="_blank" rel="noreferrer" aria-label="Instagram">
+        <svg class="instagram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+      </a>
+      
+
+      
+
+    </div>
+  
+</div>
+
+
+  </div>
+</footer>
+          
+            <div id="pheader" class="pheader">
+<div class="twelve columns">
+  <div class="row">
+    <div class="nine columns nav left">
+      <a href="/">Home</a>
+      
+        
+        <a href="/Works">Works</a>
+        
+      
+        
+        <a href="/Frames">Frames</a>
+        
+      
+        
+        <a href="/Commissions">Commissions</a>
+        
+      
+        
+        <a href="/About">About</a>
+        
+      
+        
+        <a href="/Now">Now</a>
+        
+      
+        
+        <a href="/atom.xml">RSS</a>
+        
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h3 class="mt-2 mb-2 mode">
+      <div data-theme-role="dark" onclick="setDarkMode(true)">✶</div>
+      <div data-theme-role="light" onclick="setDarkMode(false)" class="hidden">❂</div>
+    </h3>
+  </div>
+
+  <div class="six columns ml-1">
+    <h3 class="mb-2">
+      NovaDNG Studio
+    </h3>
+  </div>
+
+</div>
+
+<div class="row mb-2">
+  <div class="twelve columns">
+    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader.avif"
+         alt="Logo"
+         style="max-width: 128px; height: auto;"
+         class="noshadow"
+         id="logoLight"/>
+    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader_dark.avif"
+         alt="Logo"
+         style="max-width: 128px; height: auto;"
+         class="noshadow"
+         id="logoDark"/>
+  </div>
+</div>
+</div>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script>
+    (function () {
+      var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;
+
+      function isNativeSummary(el) {
+        return el && el.tagName === 'SUMMARY' && el.parentElement && el.parentElement.tagName === 'DETAILS';
+      }
+
+      function toggleDetailsWithCloseAnim(details) {
+        if (!details || details.classList.contains('is-closing')) return;
+
+        if (details.open) {
+          details.classList.add('is-closing');
+          window.setTimeout(function () {
+            details.open = false;
+            details.classList.remove('is-closing');
+          }, DETAILS_ANIM_MS);
+          return;
+        }
+
+        details.open = true;
+      }
+
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        if (!target || !target.closest) return;
+
+        var summary = target.closest('summary');
+        if (!isNativeSummary(summary)) return;
+        if (summary.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(summary.parentElement);
+      }, true);
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+        var target = event.target;
+        if (!isNativeSummary(target)) return;
+        if (target.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(target.parentElement);
+      }, true);
+    })();
+  </script>
+
+</body>
+
+</html>
