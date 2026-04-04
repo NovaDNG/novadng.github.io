@@ -239,26 +239,12 @@
 
 
   
-  <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
-<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  /* If embedded via iframe, strip body bg so it inherits parent */
-  body.embedded { background: transparent; }
-  #page-header { max-width: 640px; margin: 0 auto; padding: 24px 16px 0; }
-  #page-header h1 { font-size: 28px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 10px; }
-  #page-header p { line-height: 1.6; color: #4c6473; margin-bottom: 0; }
-</style>
-</head>
-<body>
+  
 <div id="page-header">
   <center>以<a href="https://oklch.com/">OKLCH色彩空間</a>從465 色<a href="https://www.colordic.org/w">日本傳統色</a>中找出最接近的配色.</center><br/>
 </div>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
 <div id="root"></div>
 <script>
 // ═══════════════════════════════════════════════════════════════
@@ -513,8 +499,6 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(e(App));
 </script>
-</body>
-</html>
 
 
 
