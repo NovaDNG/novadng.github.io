@@ -3,7 +3,7 @@
     font-family: "iA Writer Quattro V";
     font-style: normal;
     font-weight: 400 900;
-    /* font-display: swap; */
+    font-display: swap;
     src:
         local("iA Writer Quattro V"),
         local("iAWriterQuattroV.ttf"),
@@ -38,6 +38,7 @@
     font-family: "Berkeley Mono";
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src:
         local("Berkeley Mono"),
         local("BerkeleyMono-Regular"),
@@ -48,6 +49,7 @@
     font-family: "Berkeley Mono";
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
     src:
         local("Berkeley Mono"),
         local("BerkeleyMono-Bold"),
@@ -60,6 +62,7 @@
     font-family: "Redaction";
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src:
         local("Redaction"),
         local("Redaction-Regular"),
@@ -70,6 +73,7 @@
     font-family: "Redaction-Bold";
     font-style: normal;
     font-weight: 800;
+    font-display: swap;
     src:
         local("Redaction-Bold"),
         url("../fonts/Redaction-Bold.woff2")
@@ -79,6 +83,7 @@
     font-family: "Redaction-Italic";
     font-style: italic;
     font-weight: 400;
+    font-display: swap;
     src:
         local("Redaction-Italic"),
         url("../fonts/Redaction-Italic.woff2")

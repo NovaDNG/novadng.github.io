@@ -156,25 +156,24 @@
 <link rel="stylesheet" href="/css/skeleton.css">
 
   
-<link rel="stylesheet" href="/css/font.css">
-
-  
-<link rel="stylesheet" href="/css/typo.css">
-
-  
 <link rel="stylesheet" href="/css/custom.css">
 
+  <!-- Deferred non-critical CSS -->
+  <link rel="stylesheet" href="/css/font.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/font.css"></noscript>
+  <link rel="stylesheet" href="/css/typo.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/typo.css"></noscript>
+  <link rel="stylesheet" href="/css/prism-dark.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/prism-dark.css"></noscript>
+  <link rel="stylesheet" href="/css/prism-line-numbers.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/prism-line-numbers.css"></noscript>
   
-<link rel="stylesheet" href="/css/prism-dark.css">
-
-  
-<link rel="stylesheet" href="/css/prism-line-numbers.css">
-
-  <!-- User css -->
+  <link rel="stylesheet" href="/css/user.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/user.css"></noscript>
   
   
-<link rel="stylesheet" href="/css/user.css">
-
+  <link rel="stylesheet" href="/css/yoishigure.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/yoishigure.css"></noscript>
   
 
   <!-- Favicon
@@ -196,10 +195,7 @@
   blockquote {
     border-left: 8px solid #E2001A;
   }
-  .nanobar .bar {
-    background: #E2001A;
-  }
-  .button.button-primary:hover,
+.button.button-primary:hover,
   button.button-primary:hover,
   input[type="submit"].button-primary:hover,
   input[type="reset"].button-primary:hover,
@@ -1688,17 +1684,6 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
         toggleDetailsWithCloseAnim(target.parentElement);
       }, true);
     })();
-  </script>
-  <script src="/js/nanobar.min.js"></script>
-  <script>
-    var options = {
-      classname: 'nanobar',
-      id: 'myNanobar'
-    };
-    var nanobar = new Nanobar(options);
-    nanobar.go(30);
-    nanobar.go(76);
-    nanobar.go(100);
   </script>
 
 </body>
