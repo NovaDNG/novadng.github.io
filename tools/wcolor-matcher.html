@@ -11,7 +11,7 @@
   <meta charset="utf-8">
 
   
-  <title> - NovaDNG</title>
+  <title>和色マッチャー ⸺ 最近色検索 - NovaDNG</title>
   
   <link rel="canonical" href="https://novadng.studio/tools/wcolor-matcher.html">
   
@@ -24,14 +24,14 @@
   
   <meta property="og:site_name" content="NovaDNG Studio" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content=" - NovaDNG" />
+  <meta property="og:title" content="和色マッチャー ⸺ 最近色検索 - NovaDNG" />
   
   <meta property="og:description" content="">
   
   <meta property="og:url" content="https://novadng.studio/tools/wcolor-matcher.html" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content=" - NovaDNG">
+  <meta name="twitter:title" content="和色マッチャー ⸺ 最近色検索 - NovaDNG">
   
   <meta name="twitter:description" content="">
   
@@ -235,7 +235,7 @@
           
           
 
-<h2 class="mt-3"></h2>
+<h2 class="mt-3">和色マッチャー ⸺ 最近色検索</h2>
 
 
   
@@ -244,16 +244,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>和色マッチャー — OKLCH最近色検索</title>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   /* If embedded via iframe, strip body bg so it inherits parent */
   body.embedded { background: transparent; }
+  #page-header { max-width: 640px; margin: 0 auto; padding: 24px 16px 0; }
+  #page-header h1 { font-size: 28px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 10px; }
+  #page-header p { line-height: 1.6; color: #4c6473; margin-bottom: 0; }
 </style>
 </head>
 <body>
+<div id="page-header">
+  <center>以<a href="https://oklch.com/">OKLCH色彩空間</a>從465 色<a href="https://www.colordic.org/w">日本傳統色</a>中找出最接近的配色.</center><br/>
+</div>
 <div id="root"></div>
 <script>
 // ═══════════════════════════════════════════════════════════════
@@ -433,36 +438,32 @@ function App() {
   function txtCol(hex) { return luminance(hex) > 0.35 ? '#1a1a1a' : '#f5f5f5'; }
 
   // ── Layout ──
-  return e('div', {style:{maxWidth:640,margin:'0 auto',padding:'24px 16px'}},
+  return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
 
-    // Title
-    e('h3', {style:{marginBottom:12,letterSpacing:'0.04em'}}, '和色マッチャー'),
-    e('p', {style:{marginBottom:24,lineHeight:1.5}},
-      '輸入或選取顏色, 以OKLCH色彩空間從465色日本傳統色中找出最接近配色.'),
-
-    // Inputs
-    e('div', {style:{display:'flex',alignItems:'center',gap:12,marginBottom:24,flexWrap:'wrap'}},
-      e('div', {style:{position:'relative',width:56,height:56,borderRadius:8,overflow:'hidden',boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer',flexShrink:0}},
-        e('input', {type:'color',value:inputHex,onChange:handlePicker,
-          style:{position:'absolute',top:-8,left:-8,width:72,height:72,border:'none',cursor:'pointer',padding:0}})
-      ),
-      e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'#HEX',spellCheck:false,
-        style:{fontSize:20,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600,padding:'10px 14px',
-          border:'2px solid #727171',borderRadius:4,width:160,outline:'none',marginBottom:'0'}}),
-      e('div', {style:{display:'flex',alignItems:'center',gap:6,fontSize:20,color:'#727171'}},
-        e('span', null, 'Top'),
-        e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},
-          style:{fontSize:20,padding:'0 8px',borderRadius:4,border:'2px solid #727171',outline:'none',cursor:'pointer',marginBottom:'0'}},
-          [5,10,20,50].map(function(n){ return e('option',{key:n,value:n},n); })
+    // Inputs — color preview box containing controls
+    e('div', {style:{position:'relative',background:inputHex,borderRadius:8,height:80,marginBottom:16,
+      boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'}},
+      // Invisible color picker covers background area
+      e('input', {type:'color',value:inputHex,onChange:handlePicker,
+        style:{position:'absolute',top:0,left:0,width:'100%',height:'100%',opacity:0,cursor:'pointer',zIndex:1}}),
+      // Controls overlay
+      e('div', {style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center',gap:12,padding:'0 20px',
+        zIndex:2,pointerEvents:'none'}},
+        e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'#HEX',spellCheck:false,
+          style:{fontSize:18,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600,textAlign:'center',
+            padding:'6px 8px',background:'transparent',
+            border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
+            borderRadius:2,width:'128px',outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
+        e('div', {style:{display:'flex',alignItems:'center',gap:8,fontSize:18,color:txtCol(inputHex),pointerEvents:'auto'}},
+          e('span', null, 'Top'),
+          e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},
+            style:{fontSize:18,textAlign:'center',padding:'4px 8px',borderRadius:2,
+              border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
+              outline:'none',cursor:'pointer',background:'transparent',color:txtCol(inputHex),marginBottom:'0'}},
+            [5,10,20,50].map(function(n){ return e('option',{key:n,value:n},n); })
+          )
         )
       )
-    ),
-
-    // Target preview
-    e('div', {style:{background:inputHex,borderRadius:4,padding:'18px 20px',marginBottom:20,
-      display:'flex',alignItems:'center',justifyContent:'space-between',boxShadow:'0 2px 2px 2px oklch(0.492 0.0222 214.1 / 0.16)'}},
-      e('span', {style:{color:txtCol(inputHex),fontSize:14,fontWeight:600,opacity:0.87}}, '目標顏色'),
-      e('span', {style:{color:txtCol(inputHex),fontSize:16,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600}}, inputHex)
     ),
 
     // Results list
@@ -529,7 +530,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(e(App));
     
       <span class="depth-breadcrumb__sep">></span>
       
-        <span class="depth-breadcrumb__current">wcolor matcher</span>
+        <span class="depth-breadcrumb__current">和色マッチャー ⸺ 最近色検索</span>
       
     
   </nav>
