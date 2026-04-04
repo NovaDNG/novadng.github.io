@@ -44,6 +44,37 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <style id="critical-theme-bg">
+    html { background: #eae6e2; }
+    html.darkmode { background: rgb(25, 25, 26); }
+    body { background: transparent; }
+  </style>
+
+  <!-- Theme preflight: apply preferred theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var isDark = false;
+      try {
+        var stored = localStorage.getItem('preferredTheme');
+        if (stored === 'dark') {
+          isDark = true;
+        } else if (stored === 'light') {
+          isDark = false;
+        } else {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      } catch (e) {
+        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      if (isDark) {
+        document.documentElement.classList.add('darkmode');
+      } else {
+        document.documentElement.classList.remove('darkmode');
+      }
+    })();
+  </script>
+
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script>
@@ -115,13 +146,11 @@
 
   
   <style id="critical-yoi-float-nav">
-    @keyframes yoiFadeOnly {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .page-yoishigure .trans {
-      animation-name: yoiFadeOnly;
+    .page-yoishigure .trans,
+    .page-yoishigure-sub .trans {
+      animation: none !important;
+      opacity: 1;
+      transform: none;
     }
 
     .yoi-float-nav {
@@ -131,6 +160,15 @@
       z-index: 24;
       width: 4.9rem;
       max-width: calc(100vw - 0.8rem);
+      background: #EBE6E2DE;
+      box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
+      backdrop-filter: blur(8px) saturate(56%);
+    }
+
+    html.darkmode .yoi-float-nav {
+      background: #19191ADE;
+      box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
+      backdrop-filter: blur(8px) saturate(67%);
     }
 
     .yoi-float-nav.yoi--booting {
@@ -750,23 +788,76 @@
       nav.dataset.revealBound = '1';
 
       var REVEAL_DELAY_MS = 90;
-      var SAFETY_MS = 260;
+      var CSS_WAIT_SAFETY_MS = 1200;
       var revealed = false;
+      var cssReady = false;
+      var cssWatchDone = false;
 
       function reveal() {
         if (revealed) return;
         revealed = true;
+        // Avoid first-show opacity tween; translucent nav background otherwise
+        // appears lighter during the fade from 0 -> 1.
+        nav.style.setProperty('transition', 'none', 'important');
         nav.classList.remove('yoi--booting');
         nav.classList.add('yoi--ready');
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            nav.style.removeProperty('transition');
+          });
+        });
       }
 
-      // Reveal after layout/state computation settles, without waiting for webfonts.
-      requestAnimationFrame(function () {
+      function revealAfterLayout() {
         requestAnimationFrame(function () {
-          window.setTimeout(reveal, REVEAL_DELAY_MS);
+          requestAnimationFrame(function () {
+            window.setTimeout(reveal, REVEAL_DELAY_MS);
+          });
         });
-      });
-      window.setTimeout(reveal, SAFETY_MS);
+      }
+
+      function markCssReadyAndReveal() {
+        if (cssReady) return;
+        cssReady = true;
+        revealAfterLayout();
+      }
+
+      function isNavCssReady() {
+        // In yoishigure.css the nav is a CSS grid; before that stylesheet loads
+        // it remains block-level, so this is a reliable readiness signal.
+        var styles = window.getComputedStyle(nav);
+        return styles.display === 'grid';
+      }
+
+      function watchCssReadyUntilTimeout() {
+        if (cssWatchDone) return;
+        if (isNavCssReady()) {
+          cssWatchDone = true;
+          markCssReadyAndReveal();
+          return;
+        }
+
+        requestAnimationFrame(watchCssReadyUntilTimeout);
+      }
+
+      var yoishigureStylesheet = document.querySelector('link[rel="stylesheet"][href*="css/yoishigure.css"]');
+      if (!yoishigureStylesheet) {
+        markCssReadyAndReveal();
+        return;
+      }
+
+      if (isNavCssReady()) {
+        markCssReadyAndReveal();
+        return;
+      }
+
+      yoishigureStylesheet.addEventListener('load', markCssReadyAndReveal, { once: true });
+      yoishigureStylesheet.addEventListener('error', markCssReadyAndReveal, { once: true });
+      watchCssReadyUntilTimeout();
+      window.setTimeout(function () {
+        cssWatchDone = true;
+        markCssReadyAndReveal();
+      }, CSS_WAIT_SAFETY_MS);
     }
 
     function init() {
@@ -1274,7 +1365,7 @@ document.getElementById("random-verse").innerHTML =
     let parsing = false;
     let clickToken = 0;
     let openingLink = null;
-    let fitTimer = 0;
+    let fitTimers = [];
     let closeTimer = 0;
     let embedPaneHeightPx = 0;
 
@@ -1283,6 +1374,8 @@ document.getElementById("random-verse").innerHTML =
     const EMBED_VIEWPORT_RATIO = 0.94;
     const EMBED_DEFAULT_WIDTH = 1120;
     const EMBED_DEFAULT_HEIGHT_RATIO = 0.66;
+    const EMBED_FIT_DELAYS_AFTER_LOAD = [90, 240, 480];
+    const EMBED_FIT_DELAYS_AFTER_REVEAL = [120, 320, 680, 1200];
 
     const styleHrefs = [...document.querySelectorAll('link[rel="stylesheet"]')]
       .map(link => link.getAttribute('href'))
@@ -1458,6 +1551,20 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       frame.style.height = Math.min(maxHeight, Math.max(420, measured + 2)) + 'px';
     }
 
+    function clearFitTimers() {
+      if (!fitTimers.length) return;
+      fitTimers.forEach(id => window.clearTimeout(id));
+      fitTimers = [];
+    }
+
+    function scheduleDelayedHeightFits(token, delays) {
+      clearFitTimers();
+      delays.forEach(delay => {
+        const id = window.setTimeout(() => fitFrameHeightToContent(token), delay);
+        fitTimers.push(id);
+      });
+    }
+
     function openModal() {
       if (closeTimer) {
         window.clearTimeout(closeTimer);
@@ -1485,10 +1592,7 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       frame.style.opacity = '';
       dialog.style.removeProperty('opacity');
       dialog.style.removeProperty('transform');
-      if (fitTimer) {
-        window.clearTimeout(fitTimer);
-        fitTimer = 0;
-      }
+      clearFitTimers();
       parsing = false;
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
@@ -1553,10 +1657,12 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
         frame.addEventListener('load', function onFrameLoad() {
           if (token !== clickToken) return;
           fitFrameHeightToContent(token);
+          scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_LOAD);
 
           function revealFrame() {
             if (token !== clickToken) return;
             fitFrameHeightToContent(token);
+            scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_REVEAL);
             // Release dialog inline overrides so CSS transition fades it in.
             dialog.style.removeProperty('opacity');
             dialog.style.removeProperty('transform');
@@ -1634,6 +1740,12 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       event.preventDefault();
       openPreview(anchor);
     }, true);
+
+    window.addEventListener('resize', () => {
+      if (modal.hidden) return;
+      fitFrameHeightToContent(clickToken);
+      scheduleDelayedHeightFits(clickToken, [120, 280]);
+    });
   })();
 </script>
 

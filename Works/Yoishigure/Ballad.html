@@ -44,6 +44,37 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <style id="critical-theme-bg">
+    html { background: #eae6e2; }
+    html.darkmode { background: rgb(25, 25, 26); }
+    body { background: transparent; }
+  </style>
+
+  <!-- Theme preflight: apply preferred theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var isDark = false;
+      try {
+        var stored = localStorage.getItem('preferredTheme');
+        if (stored === 'dark') {
+          isDark = true;
+        } else if (stored === 'light') {
+          isDark = false;
+        } else {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      } catch (e) {
+        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      if (isDark) {
+        document.documentElement.classList.add('darkmode');
+      } else {
+        document.documentElement.classList.remove('darkmode');
+      }
+    })();
+  </script>
+
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script>
@@ -115,13 +146,11 @@
 
   
   <style id="critical-yoi-float-nav">
-    @keyframes yoiFadeOnly {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .page-yoishigure .trans {
-      animation-name: yoiFadeOnly;
+    .page-yoishigure .trans,
+    .page-yoishigure-sub .trans {
+      animation: none !important;
+      opacity: 1;
+      transform: none;
     }
 
     .yoi-float-nav {
@@ -131,6 +160,15 @@
       z-index: 24;
       width: 4.9rem;
       max-width: calc(100vw - 0.8rem);
+      background: #EBE6E2DE;
+      box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
+      backdrop-filter: blur(8px) saturate(56%);
+    }
+
+    html.darkmode .yoi-float-nav {
+      background: #19191ADE;
+      box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
+      backdrop-filter: blur(8px) saturate(67%);
     }
 
     .yoi-float-nav.yoi--booting {
@@ -244,7 +282,7 @@
 
   
   <section class="tategaki-stage">
-    <div class="tategaki-scroll js-tategaki-scroll">
+    <div class="tategaki-scroll js-tategaki-scroll tategaki--booting">
       <article class="tategaki-content">
         <h2 id="請聽我的譚詩曲敘事詩曲"><a href="#請聽我的譚詩曲敘事詩曲" class="headerlink" title="請聽我的譚詩曲敘事詩曲"></a>請聽我的<ruby>譚詩曲<rt>敘事詩曲</rt></ruby></h2><p><a href="https://linkco.re/GRDq2VyC/songs/4322880/lyrics">歌詞來源</a></p>
 <p>這是為只留下「要活下去啊」<br>這種傲慢至極的詛咒便消逝的妳<br>接下來由我唱出的<br>讓妳蘇生的那首歌</p>
@@ -439,6 +477,16 @@
       var isProgrammaticScroll = false;
       var pendingRightOffset = null;
       var DETAILS_ANIM_MS = 200;
+      var viewportRevealed = false;
+
+      // Keep desktop viewport hidden until first height/start alignment is stable.
+      el.classList.add('tategaki--booting');
+
+      function revealViewport() {
+        if (viewportRevealed) return;
+        viewportRevealed = true;
+        el.classList.remove('tategaki--booting');
+      }
 
       // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
 
@@ -620,20 +668,26 @@
           return;
         }
 
-        // In vertical-rl, height = inline size.  Setting the content to
-        // `max-content` lets it size itself to the tallest column needed
-        // so that no soft wrapping occurs within any paragraph/stanza.
-        content.style.height = 'max-content';
-        void content.offsetHeight; // force synchronous layout
-        var idealH = content.offsetHeight;
-        content.style.height = ''; // restore CSS `height: 100%`
+        // In vertical-rl, height = inline size.  Measure each child's
+        // max-content inline size individually and take the tallest one.
+        // (Using max-content on the whole container is unreliable — its
+        //  resolved value can differ from the max of its children.)
+        var children = content.children;
+        var idealH = 0;
+        for (var ci = 0; ci < children.length; ci++) {
+          var saved = children[ci].style.height;
+          children[ci].style.height = 'max-content';
+          var h = children[ci].offsetHeight;
+          children[ci].style.height = saved;
+          if (h > idealH) idealH = h;
+        }
 
         if (idealH <= 0) {
           el.style.removeProperty('height');
           return;
         }
 
-        var target = Math.ceil(idealH) + 48; // breathing room for scrollbar gutter
+        var target = Math.ceil(idealH) + 32; // breathing room for scrollbar gutter
 
         // In an embed iframe the parent page controls the frame size,
         // so skip the viewport cap here to avoid a circular constraint.
@@ -650,33 +704,115 @@
       function initializeViewport() {
         computeAndApplyDynamicHeight();
         scrollToRightEdge();
+        revealViewport();
       }
- 
-      // Multi-pass initialization for stable first paint alignment.
-      initializeViewport();
-      requestAnimationFrame(initializeViewport);
-      requestAnimationFrame(function () {
-        requestAnimationFrame(initializeViewport);
-      });
- 
+
+      // Wait until vertical layout CSS is applied before deciding desktop height.
+      function waitForLayoutReady(done) {
+        if (mobileQuery.matches || !content) {
+          done();
+          return;
+        }
+
+        var attempts = 0;
+        var maxAttemptsAfterLoad = 120; // ~2s at 60fps after full page load
+        var startedAt = Date.now();
+        var hardTimeoutMs = 6000;
+
+        function check() {
+          var mode = window.getComputedStyle(content).writingMode || '';
+          var timedOutAfterLoad = document.readyState === 'complete' && attempts >= maxAttemptsAfterLoad;
+          var timedOutHard = (Date.now() - startedAt) >= hardTimeoutMs;
+          if (mode.indexOf('vertical') === 0 || timedOutAfterLoad || timedOutHard) {
+            done();
+            return;
+          }
+
+          attempts += 1;
+          requestAnimationFrame(check);
+        }
+
+        requestAnimationFrame(check);
+      }
+
+      // Wait for font metrics before first height/scroll decision.
+      function waitForFontsReady(done) {
+        if (!document.fonts || !document.fonts.ready || typeof document.fonts.ready.then !== 'function') {
+          done();
+          return;
+        }
+
+        var finished = false;
+        var timeoutId = window.setTimeout(finish, 2000);
+
+        function finish() {
+          if (finished) return;
+          finished = true;
+          window.clearTimeout(timeoutId);
+          done();
+        }
+
+        requestAnimationFrame(function () {
+          document.fonts.ready.then(function () {
+            requestAnimationFrame(finish);
+          }).catch(finish);
+        });
+      }
+
+      var initialViewportReady = false;
+      var initialViewportPending = false;
+
+      function initializeViewportWhenReady() {
+        if (initialViewportReady || initialViewportPending) return;
+        initialViewportPending = true;
+
+        waitForLayoutReady(function () {
+          waitForFontsReady(function () {
+            initialViewportPending = false;
+            if (initialViewportReady) return;
+            initialViewportReady = true;
+            initializeViewport();
+          });
+        });
+      }
+
+      // Delay first desktop height/scroll positioning until layout + fonts are stable.
+      initializeViewportWhenReady();
+
       // Re-run initialization only on viewport-level changes.
-      window.addEventListener('load', initializeViewport, { once: true });
-      window.addEventListener('resize', initializeViewport);
+      function handleViewportChange() {
+        if (!initialViewportReady) {
+          initializeViewportWhenReady();
+          return;
+        }
+
+        initializeViewport();
+      }
+
+      window.addEventListener('load', handleViewportChange, { once: true });
+      window.addEventListener('resize', handleViewportChange);
       // Intentionally avoid observing content size changes.
       // Expanding/collapsing <details> changes content width and should not force re-alignment.
- 
+
       if (mobileQuery.addEventListener) {
-        mobileQuery.addEventListener('change', initializeViewport);
+        mobileQuery.addEventListener('change', handleViewportChange);
       } else if (mobileQuery.addListener) {
-        mobileQuery.addListener(initializeViewport);
+        mobileQuery.addListener(handleViewportChange);
       }
- 
+
       // Re-measure after fonts finish loading — glyph metrics affect column height.
-      if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(function () {
-          computeAndApplyDynamicHeight();
-          if (!userInteracted) scrollToRightEdge();
-        }).catch(function () {});
+      // Use the `loadingdone` event rather than `fonts.ready`, because the
+      // latter resolves immediately when no fonts are *currently* loading —
+      // but the browser may not have started loading the tategaki fonts yet
+      // (it needs a layout pass first to discover which fonts are needed).
+      if (document.fonts && document.fonts.addEventListener) {
+        document.fonts.addEventListener('loadingdone', function () {
+          if (!initialViewportReady) return;
+          requestAnimationFrame(function () {
+            computeAndApplyDynamicHeight();
+            if (!userInteracted) scrollToRightEdge();
+          });
+        });
       }
     }
 
@@ -933,7 +1069,7 @@
     let parsing = false;
     let clickToken = 0;
     let openingLink = null;
-    let fitTimer = 0;
+    let fitTimers = [];
     let closeTimer = 0;
     let embedPaneHeightPx = 0;
 
@@ -942,6 +1078,8 @@
     const EMBED_VIEWPORT_RATIO = 0.94;
     const EMBED_DEFAULT_WIDTH = 1120;
     const EMBED_DEFAULT_HEIGHT_RATIO = 0.66;
+    const EMBED_FIT_DELAYS_AFTER_LOAD = [90, 240, 480];
+    const EMBED_FIT_DELAYS_AFTER_REVEAL = [120, 320, 680, 1200];
 
     const styleHrefs = [...document.querySelectorAll('link[rel="stylesheet"]')]
       .map(link => link.getAttribute('href'))
@@ -1117,6 +1255,20 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       frame.style.height = Math.min(maxHeight, Math.max(420, measured + 2)) + 'px';
     }
 
+    function clearFitTimers() {
+      if (!fitTimers.length) return;
+      fitTimers.forEach(id => window.clearTimeout(id));
+      fitTimers = [];
+    }
+
+    function scheduleDelayedHeightFits(token, delays) {
+      clearFitTimers();
+      delays.forEach(delay => {
+        const id = window.setTimeout(() => fitFrameHeightToContent(token), delay);
+        fitTimers.push(id);
+      });
+    }
+
     function openModal() {
       if (closeTimer) {
         window.clearTimeout(closeTimer);
@@ -1144,10 +1296,7 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       frame.style.opacity = '';
       dialog.style.removeProperty('opacity');
       dialog.style.removeProperty('transform');
-      if (fitTimer) {
-        window.clearTimeout(fitTimer);
-        fitTimer = 0;
-      }
+      clearFitTimers();
       parsing = false;
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
@@ -1212,10 +1361,12 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
         frame.addEventListener('load', function onFrameLoad() {
           if (token !== clickToken) return;
           fitFrameHeightToContent(token);
+          scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_LOAD);
 
           function revealFrame() {
             if (token !== clickToken) return;
             fitFrameHeightToContent(token);
+            scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_REVEAL);
             // Release dialog inline overrides so CSS transition fades it in.
             dialog.style.removeProperty('opacity');
             dialog.style.removeProperty('transform');
@@ -1293,6 +1444,12 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
       event.preventDefault();
       openPreview(anchor);
     }, true);
+
+    window.addEventListener('resize', () => {
+      if (modal.hidden) return;
+      fitFrameHeightToContent(clickToken);
+      scheduleDelayedHeightFits(clickToken, [120, 280]);
+    });
   })();
 </script>
 

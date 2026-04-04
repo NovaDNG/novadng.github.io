@@ -111,6 +111,15 @@ body.page-yoishigure a:focus:not(.icon) > b {
   padding-bottom: 1rem;
 }
 
+/* Hide desktop tategaki viewport during deferred first-pass sizing/alignment. */
+@media (min-width: 901px) {
+  .tategaki-scroll.tategaki--booting {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
 /* Article body — vertical text flow, width determined by content */
 .tategaki-content {
   /* Font */

@@ -44,6 +44,37 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <style id="critical-theme-bg">
+    html { background: #eae6e2; }
+    html.darkmode { background: rgb(25, 25, 26); }
+    body { background: transparent; }
+  </style>
+
+  <!-- Theme preflight: apply preferred theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var isDark = false;
+      try {
+        var stored = localStorage.getItem('preferredTheme');
+        if (stored === 'dark') {
+          isDark = true;
+        } else if (stored === 'light') {
+          isDark = false;
+        } else {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      } catch (e) {
+        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      if (isDark) {
+        document.documentElement.classList.add('darkmode');
+      } else {
+        document.documentElement.classList.remove('darkmode');
+      }
+    })();
+  </script>
+
   <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script>
