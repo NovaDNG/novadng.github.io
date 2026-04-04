@@ -413,6 +413,22 @@ function hsvToRgb(h, s, v) {
     (rgb1[2] + m) * 255
   ];
 }
+function rgbToHsv(rgb) {
+  var r = rgb[0] / 255, g = rgb[1] / 255, b = rgb[2] / 255;
+  var max = Math.max(r, g, b), min = Math.min(r, g, b);
+  var d = max - min;
+  var h = 0;
+  if (d !== 0) {
+    if (max === r) h = ((g - b) / d) % 6;
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h *= 60;
+    if (h < 0) h += 360;
+  }
+  var s = max === 0 ? 0 : d / max;
+  var v = max;
+  return [h, s, v];
+}
 function parseHsvColor(input) {
   var m = input.trim().match(/^hs[vb]\((.+)\)$/i);
   if (!m) return null;
@@ -447,6 +463,11 @@ function parseCssColorToHex(input) {
     return null;
   }
 }
+function parseOkhclColor(input) {
+  var m = input.trim().match(/^okhcl\((.+)\)$/i);
+  if (!m) return null;
+  return parseCssColorToHex('oklch(' + m[1] + ')');
+}
 function parseAnyColorToHex(input) {
   var raw = (input || '').trim();
   if (!raw) return null;
@@ -458,15 +479,42 @@ function parseAnyColorToHex(input) {
   if (hexRgb) return rgbToHex(hexRgb);
   var hsvHex = parseHsvColor(raw);
   if (hsvHex) return hsvHex;
+  var okhclHex = parseOkhclColor(raw);
+  if (okhclHex) return okhclHex;
   return parseCssColorToHex(raw);
 }
-var INITIAL_COLOR_INPUTS = [
-  '#bce2e8',
-  'oklch(0.8731 0.0321 308.05)',
-  'oklab(0.87 -0.09 0.09)',
-  'hsl(310.19 99% 87%)',
-  'rgb(168, 54, 156)'
+var COLORLINK_BASE_HEXES = [
+  '#FFEDDB', '#FFE6E6', '#D9E6D9', '#BCE2E8', '#FAD2D8',
+  '#F5C5D1', '#FFB7C5', '#EE7800', '#D3381C', '#D7003A',
+  '#E60033', '#B7282E', '#727171', '#4C6473', '#674598',
+  '#5654A2', '#165E83', '#2A83A2', '#0095D9', '#38B48B'
 ];
+var RANDOM_INPUT_FORMATS = ['okhcl', 'rgb', 'hex', 'oklab', 'hsv'];
+function formatAsInputColor(hex, format) {
+  var rgb = hexToRgb(hex);
+  if (format === 'rgb') return 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')';
+  if (format === 'hsv') {
+    var hsv = rgbToHsv(rgb);
+    return 'hsv(' + hsv[0].toFixed(2) + ' ' + (hsv[1] * 100).toFixed(2) + '% ' + (hsv[2] * 100).toFixed(2) + '%)';
+  }
+  if (format === 'oklab') {
+    var lab = rgbToOklab(rgb);
+    return 'oklab(' + lab[0].toFixed(4) + ' ' + lab[1].toFixed(4) + ' ' + lab[2].toFixed(4) + ')';
+  }
+  if (format === 'okhcl') {
+    var lch = hexToOklch(hex);
+    return 'okhcl(' + lch[0].toFixed(4) + ' ' + lch[1].toFixed(4) + ' ' + lch[2].toFixed(2) + ')';
+  }
+  return hex.toLowerCase();
+}
+function buildInitialColorInputs() {
+  return COLORLINK_BASE_HEXES.map(function(hex) {
+    var format = RANDOM_INPUT_FORMATS[Math.floor(Math.random() * RANDOM_INPUT_FORMATS.length)];
+    var formatted = formatAsInputColor(hex, format);
+    return parseAnyColorToHex(formatted) ? formatted : hex.toLowerCase();
+  });
+}
+var INITIAL_COLOR_INPUTS = buildInitialColorInputs();
 function pickInitialColorPreset() {
   var shuffled = INITIAL_COLOR_INPUTS.slice();
   for (var i = shuffled.length - 1; i > 0; i--) {
@@ -628,7 +676,7 @@ function App() {
           ),
 
           // Gradient bar
-          e('div', {style:{width:'20vw',background:'linear-gradient(225deg in oklch shorter hue, '+fmtOklch(hexToOklch(inputHex))+', '+fmtOklch(c.oklch)+')',flexShrink:0}})
+          e('div', {style:{width:'16vw',background:'linear-gradient(225deg in oklch shorter hue, '+fmtOklch(hexToOklch(inputHex))+', '+fmtOklch(c.oklch)+')',flexShrink:0}})
         );
       })
     ),
