@@ -574,7 +574,7 @@ function App() {
   var inputHex = _inputHex[0], setInputHex = _inputHex[1];
   var _textInput = React.useState(_initPreset.text);
   var textInput = _textInput[0], setTextInput = _textInput[1];
-  var _topN = React.useState(5);
+  var _topN = React.useState(7);
   var topN = _topN[0], setTopN = _topN[1];
   var pickerRef = React.useRef(null);
 
@@ -608,25 +608,24 @@ function App() {
   var inputFmt = fmtOklch(hexToOklch(inputHex));
   return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
 
-    e('div', {style:{position:'relative',background:inputHex,borderRadius:4,height:96,marginBottom:16,
+    e('div', {className:'wm-input-panel',style:{position:'relative',background:inputHex,borderRadius:4,height:'var(--wm-preview-h, 96px)',marginBottom:16,
       boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},onClick:openPickerAtCursor},
       // Hidden color picker — moved to click position before opening
       e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,tabIndex:-1,'aria-hidden':true,
         style:{position:'absolute',top:0,left:0,width:1,height:1,transform:'translate(-50%, -50%)',opacity:0,pointerEvents:'none',zIndex:1}}),
-      e('div', {style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center',gap:12,padding:'0 12px',
-        zIndex:2,pointerEvents:'none'}},
-        e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'hex/rgb/hsv/lab/lch',spellCheck:false,'data-no-picker':'true',
+      e('div', {className:'wm-controls',style:{position:'absolute',inset:0,zIndex:2,pointerEvents:'none'}},
+        e('input', {className:'wm-color-text',type:'text',value:textInput,onChange:handleText,placeholder:'hex/rgb/hsv/lab/lch',spellCheck:false,'data-no-picker':'true',
           style:{fontSize:18,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600,textAlign:'center',
             padding:'6px 8px',background:'transparent',
             border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
-            borderRadius:2,width:'320px',maxWidth:'56vw',outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
-        e('div', {style:{display:'flex',alignItems:'center',gap:8,fontSize:18,color:txtCol(inputHex),pointerEvents:'auto'}},
+            borderRadius:2,outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
+        e('div', {className:'wm-top-controls',style:{display:'flex',alignItems:'center',gap:8,fontSize:18,color:txtCol(inputHex),pointerEvents:'auto'}},
           e('span', null, 'Top'),
           e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},'data-no-picker':'true',
             style:{fontSize:18,textAlign:'center',padding:'4px 8px',borderRadius:2,
               border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
               outline:'none',cursor:'pointer',background:'transparent',color:txtCol(inputHex),marginBottom:'0'}},
-            [5,10,20,50].map(function(n){ return e('option',{key:n,value:n},n); })
+            [7,13,33,56].map(function(n){ return e('option',{key:n,value:n},n); })
           )
         )
       )
@@ -635,28 +634,34 @@ function App() {
     e('div', {style:{display:'flex',flexDirection:'column',gap:8}},
       results.map(function(c, i) {
         var isExact = c.dist < 0.005;
-        return e('div', {key:i, style:{display:'flex',alignItems:'stretch',borderRadius:4,overflow:'hidden',background:'#fefefe'}},
-          e('div', {style:{width:96,minHeight:56,background:c.hex,flexShrink:0,
+        var rowGradient = 'linear-gradient(78deg in oklch shorter hue, ' + fmtOklch(c.oklch) + ' 0%, ' + inputFmt + ' 100%)';
+        var rowTextColor = txtCol(c.hex);
+        return e('div', {key:i, style:{display:'flex',alignItems:'stretch',borderRadius:4,overflow:'hidden',background:c.hex}},
+          e('div', {style:{width:48,minHeight:56,background:c.hex,flexShrink:0,
             display:'flex',alignItems:'center',justifyContent:'center'}},
             e('span', {style:{color:txtCol(c.hex),fontSize:16,fontWeight:600,opacity:0.87}}, i+1)
           ),
-          e('div', {style:{flex:1,padding:'8px 16px',display:'flex',flexDirection:'column',justifyContent:'center',gap:2}},
-            e('div', {style:{display:'flex',alignItems:'baseline',gap:8}},
-              e('span', {style:{fontSize:20,fontFamily:'Ten Mincho, serif',fontWeight:600}}, c.name),
-              e('span', {style:{fontSize:14,color:'#4c6473'}}, c.reading)
-            ),
-            e('div', {style:{display:'flex',alignItems:'center',gap:10,fontSize:14}},
-              e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#4c6473',fontWeight:600}}, c.hex),
-              e('span', {style:{
-                background: isExact?'#e8f5e9': c.dist<0.02?'#f1f8e9': c.dist<0.06?'#fff8e1':'#fff3e0',
-                color:      isExact?'#2e7d32': c.dist<0.02?'#558b2f': c.dist<0.06?'#f57f17':'#e65100',
-                padding:'2px 8px',borderRadius:4,fontWeight:600,fontSize:12}},
-                '\u0394 = ' + c.dist.toFixed(4)
+          e('div', {style:{flex:1,padding:'8px 8px 8px 2px',display:'flex',alignItems:'center',gap:10,color:rowTextColor,background:rowGradient}},
+            e('div', {style:{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:2}},
+              e('div', {style:{display:'flex',alignItems:'baseline',gap:12}},
+                e('span', {style:{fontSize:20,fontFamily:'Ten Mincho, serif',fontWeight:600}}, c.name),
+                e('span', {style:{fontSize:14,color:'inherit',opacity:0.86}}, c.reading)
               ),
-              isExact ? e('span',{style:{fontSize:12,color:'#2e7d32',fontWeight:600}},'完全一致') : null
-            )
-          ),
-          e('div', {style:{width:'16vw',background:'linear-gradient(225deg in oklch shorter hue, '+inputFmt+', '+fmtOklch(c.oklch)+')',flexShrink:0}})
+              e('div', {style:{display:'flex',alignItems:'center',gap:10,fontSize:14}},
+                e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'inherit',opacity:0.92,fontWeight:600}}, c.hex),
+                e('span', {style:{
+                  background: isExact?'#e8f5e9': c.dist<0.02?'#f1f8e9': c.dist<0.06?'#fff8e1':'#fff3e0',
+                  color:      isExact?'#2e7d32': c.dist<0.02?'#558b2f': c.dist<0.06?'#f57f17':'#e65100',
+                  padding:'2px 8px',borderRadius:4,fontWeight:600,fontSize:12}},
+                  '\u0394 = ' + c.dist.toFixed(4)
+                )
+              )
+            ),
+            isExact ? e('span',{style:{
+              fontSize:12,color:rowTextColor,fontWeight:600,alignSelf:'center',
+              writingMode:'vertical-rl',textOrientation:'upright',lineHeight:1.05,letterSpacing:'0.08em'
+            }},'完全一致') : null
+          )
         );
       })
     ),
@@ -679,6 +684,43 @@ ReactDOM.createRoot(document.getElementById('root')).render(e(App));
 </script>
 
 <style>
+  .wm-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .wm-color-text {
+    width: 320px;
+    max-width: 56vw;
+  }
+
+  .wm-top-controls {
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 680px) {
+    .wm-input-panel {
+      --wm-preview-h: 128px;
+    }
+
+    .wm-controls {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      gap: 8px;
+      padding: 6px 12px;
+    }
+
+    .wm-color-text {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
   .colorlink-table { border-collapse: collapse; width: 100%; max-width: 960px; margin: 0 auto; font-size: 1.87rem; }
   .colorlink-table th, .colorlink-table td { border: none !important; padding: 4px 10px; text-align: left; vertical-align: middle; }
   .colorlink-table th { font-size: 14px; color: #4c6473; font-weight: 600; padding-bottom: 6px; }
