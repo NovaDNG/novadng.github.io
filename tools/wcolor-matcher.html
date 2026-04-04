@@ -406,6 +406,7 @@ function App() {
   var textInput = _textInput[0], setTextInput = _textInput[1];
   var _topN = React.useState(5);
   var topN = _topN[0], setTopN = _topN[1];
+  var pickerRef = React.useRef(null);
 
   var results = React.useMemo(function() {
     var target = hexToOklch(inputHex);
@@ -423,27 +424,37 @@ function App() {
   }
   function handlePicker(ev) { setInputHex(ev.target.value); setTextInput(ev.target.value); }
   function txtCol(hex) { return luminance(hex) > 0.35 ? '#1a1a1a' : '#f5f5f5'; }
+  function openPickerAtCursor(ev) {
+    if (ev.target && ev.target.closest && ev.target.closest('[data-no-picker=\"true\"]')) return;
+    var input = pickerRef.current;
+    if (!input) return;
+    var rect = ev.currentTarget.getBoundingClientRect();
+    input.style.left = (ev.clientX - rect.left) + 'px';
+    input.style.top = (ev.clientY - rect.top) + 'px';
+    if (typeof input.showPicker === 'function') input.showPicker();
+    else input.click();
+  }
 
   // ── Layout ──
   return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
 
     // Inputs — color preview box containing controls
     e('div', {style:{position:'relative',background:inputHex,borderRadius:4,height:96,marginBottom:16,
-      boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'}},
-      // Invisible color picker covers background area
-      e('input', {type:'color',value:inputHex,onChange:handlePicker,
-        style:{position:'absolute',top:0,left:0,width:'100%',height:'100%',opacity:0,cursor:'pointer',zIndex:1}}),
+      boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},onClick:openPickerAtCursor},
+      // Hidden color picker — moved to click position before opening
+      e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,tabIndex:-1,'aria-hidden':true,
+        style:{position:'absolute',top:0,left:0,width:1,height:1,transform:'translate(-50%, -50%)',opacity:0,pointerEvents:'none',zIndex:1}}),
       // Controls overlay
       e('div', {style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center',gap:12,padding:'0 20px',
         zIndex:2,pointerEvents:'none'}},
-        e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'#HEX',spellCheck:false,
+        e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'#HEX',spellCheck:false,'data-no-picker':'true',
           style:{fontSize:18,fontFamily:"'Berkeley Mono','Fira Code',monospace",fontWeight:600,textAlign:'center',
             padding:'6px 8px',background:'transparent',
             border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
             borderRadius:2,width:'128px',outline:'none',color:txtCol(inputHex),pointerEvents:'auto',marginBottom:'0'}}),
         e('div', {style:{display:'flex',alignItems:'center',gap:8,fontSize:18,color:txtCol(inputHex),pointerEvents:'auto'}},
           e('span', null, 'Top'),
-          e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},
+          e('select', {value:topN, onChange:function(ev){setTopN(Number(ev.target.value))},'data-no-picker':'true',
             style:{fontSize:18,textAlign:'center',padding:'4px 8px',borderRadius:2,
               border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
               outline:'none',cursor:'pointer',background:'transparent',color:txtCol(inputHex),marginBottom:'0'}},
