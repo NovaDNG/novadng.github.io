@@ -241,7 +241,7 @@
   
   
 <div id="page-header">
-  <center>以<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.4867 0.1223 282.01) 0%, oklch(0.5742 0.2339 26.83) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://oklch.com/">OKLCH色彩空間</a>從465 色<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.6749 0.127 237.51) 0%, oklch(0.8731 0.0321 308.05) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://www.colordic.org/w">日本傳統色</a>中找出最接近的配色.</center><br/>
+  <center>以<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.4867 0.1223 282.01) 0%, oklch(0.5742 0.2339 26.83) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://oklch.com/">OKLCH色彩空間</a>從465 色<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.6749 0.127 237.51) 0%, oklch(0.8731 0.0321 308.05) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://www.colordic.org/w">日本伝統色</a>中找出最接近的配色.</center><br/>
 </div>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
@@ -634,7 +634,7 @@ function App() {
     e('div', {style:{display:'flex',flexDirection:'column',gap:8}},
       results.map(function(c, i) {
         var isExact = c.dist < 0.005;
-        var rowGradient = 'linear-gradient(78deg in oklch shorter hue, ' + fmtOklch(c.oklch) + ' 0%, ' + inputFmt + ' 100%)';
+        var rowGradient = 'linear-gradient(78deg in oklch shorter hue, ' + fmtOklch(c.oklch) + ' 0%, 56%, ' + inputFmt + ' 100%)';
         var rowTextColor = txtCol(c.hex);
         return e('div', {key:i, style:{display:'flex',alignItems:'stretch',borderRadius:4,overflow:'hidden',background:c.hex}},
           e('div', {style:{width:48,minHeight:56,background:c.hex,flexShrink:0,
@@ -666,16 +666,16 @@ function App() {
       })
     ),
     e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
-      e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ參考'),
+      e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ参照'),
       '：',
       e('strong', {style:{color:'#2e7d32',fontWeight:'600'}}, '<0.005'),
-      '幾乎無法分辨 · ',
+      '同色 · ',
       e('strong', {style:{color:'#558b2f',fontWeight:'600'}}, '0.005~0.02'),
-      '細微差異 · ',
+      '僅差 · ',
       e('strong', {style:{color:'#f57f17',fontWeight:'600'}}, '0.02~0.06'),
-      '明顯差異 · ',
+      '大差 · ',
       e('strong', {style:{color:'#e65100',fontWeight:'600'}}, '>0.06'),
-      '截然不同. 本工具由Claude Code輔助生成. '
+      '別色. 本工具由Claude Code輔助生成. '
     )
   );
 }
