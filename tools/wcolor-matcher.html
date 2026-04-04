@@ -453,8 +453,6 @@ function parseCssColorToHex(input) {
   var ctx = _cssColorProbe;
   try {
     ctx.clearRect(0, 0, 1, 1);
-    ctx.fillStyle = 'rgba(0,0,0,0)';
-    ctx.fillRect(0, 0, 1, 1);
     ctx.fillStyle = input;
     ctx.fillRect(0, 0, 1, 1);
     var px = ctx.getImageData(0, 0, 1, 1).data;
@@ -472,7 +470,7 @@ function parseAnyColorToHex(input) {
   var raw = (input || '').trim();
   if (!raw) return null;
   var compactHex = raw;
-  if (/^[0-9a-fA-F]{3,8}$/.test(raw) && (raw.length === 3 || raw.length === 4 || raw.length === 6 || raw.length === 8)) {
+  if (/^[0-9a-fA-F]{3,8}$/.test(raw) && raw.length !== 5 && raw.length !== 7) {
     compactHex = '#' + raw;
   }
   var hexRgb = parseHexColor(compactHex);
@@ -516,19 +514,13 @@ function buildInitialColorInputs() {
 }
 var INITIAL_COLOR_INPUTS = buildInitialColorInputs();
 function pickInitialColorPreset() {
-  var shuffled = INITIAL_COLOR_INPUTS.slice();
-  for (var i = shuffled.length - 1; i > 0; i--) {
+  var a = INITIAL_COLOR_INPUTS.slice();
+  for (var i = a.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
-    var t = shuffled[i];
-    shuffled[i] = shuffled[j];
-    shuffled[j] = t;
+    var t = a[i]; a[i] = a[j]; a[j] = t;
   }
-  for (var k = 0; k < shuffled.length; k++) {
-    var text = shuffled[k];
-    var parsed = parseAnyColorToHex(text);
-    if (parsed) return {text:text, hex:parsed};
-  }
-  return {text:'#bce2e8', hex:'#bce2e8'};
+  var text = a[0] || '#bce2e8';
+  return {text: text, hex: parseAnyColorToHex(text) || '#bce2e8'};
 }
 function linearize(c) {
   c /= 255;
@@ -566,24 +558,21 @@ function deltaOklch(a, b) {
 
 function luminance(hex) {
   var rgb = hexToRgb(hex);
-  var vals = rgb.map(function(c){ c/=255; return c<=0.03928?c/12.92:Math.pow((c+0.055)/1.055,2.4); });
-  return 0.2126*vals[0] + 0.7152*vals[1] + 0.0722*vals[2];
+  return 0.2126*linearize(rgb[0]) + 0.7152*linearize(rgb[1]) + 0.0722*linearize(rgb[2]);
 }
 
-// Pre-compute
 var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch:hexToOklch(c[2])}; });
 
 // ═══════════════════════════════════════════════════════════════
 // React App (no JSX — plain createElement)
 // ═══════════════════════════════════════════════════════════════
 var e = React.createElement;
+var _initPreset = pickInitialColorPreset();
 
 function App() {
-  var _initialPreset = React.useState(function(){ return pickInitialColorPreset(); });
-  var initialPreset = _initialPreset[0];
-  var _inputHex = React.useState(initialPreset.hex);
+  var _inputHex = React.useState(_initPreset.hex);
   var inputHex = _inputHex[0], setInputHex = _inputHex[1];
-  var _textInput = React.useState(initialPreset.text);
+  var _textInput = React.useState(_initPreset.text);
   var textInput = _textInput[0], setTextInput = _textInput[1];
   var _topN = React.useState(5);
   var topN = _topN[0], setTopN = _topN[1];
@@ -616,16 +605,14 @@ function App() {
     else input.click();
   }
 
-  // ── Layout ──
+  var inputFmt = fmtOklch(hexToOklch(inputHex));
   return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
 
-    // Inputs — color preview box containing controls
     e('div', {style:{position:'relative',background:inputHex,borderRadius:4,height:96,marginBottom:16,
       boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},onClick:openPickerAtCursor},
       // Hidden color picker — moved to click position before opening
       e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,tabIndex:-1,'aria-hidden':true,
         style:{position:'absolute',top:0,left:0,width:1,height:1,transform:'translate(-50%, -50%)',opacity:0,pointerEvents:'none',zIndex:1}}),
-      // Controls overlay
       e('div', {style:{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center',gap:12,padding:'0 12px',
         zIndex:2,pointerEvents:'none'}},
         e('input', {type:'text',value:textInput,onChange:handleText,placeholder:'hex/rgb/hsv/lab/lch',spellCheck:false,'data-no-picker':'true',
@@ -645,19 +632,14 @@ function App() {
       )
     ),
 
-    // Results list
     e('div', {style:{display:'flex',flexDirection:'column',gap:8}},
       results.map(function(c, i) {
         var isExact = c.dist < 0.005;
         return e('div', {key:i, style:{display:'flex',alignItems:'stretch',borderRadius:4,overflow:'hidden',background:'#fefefe'}},
-
-          // Swatch
           e('div', {style:{width:96,minHeight:56,background:c.hex,flexShrink:0,
             display:'flex',alignItems:'center',justifyContent:'center'}},
             e('span', {style:{color:txtCol(c.hex),fontSize:16,fontWeight:600,opacity:0.87}}, i+1)
           ),
-
-          // Info
           e('div', {style:{flex:1,padding:'8px 16px',display:'flex',flexDirection:'column',justifyContent:'center',gap:2}},
             e('div', {style:{display:'flex',alignItems:'baseline',gap:8}},
               e('span', {style:{fontSize:20,fontFamily:'Ten Mincho, serif',fontWeight:600}}, c.name),
@@ -674,14 +656,10 @@ function App() {
               isExact ? e('span',{style:{fontSize:12,color:'#2e7d32',fontWeight:600}},'完全一致') : null
             )
           ),
-
-          // Gradient bar
-          e('div', {style:{width:'16vw',background:'linear-gradient(225deg in oklch shorter hue, '+fmtOklch(hexToOklch(inputHex))+', '+fmtOklch(c.oklch)+')',flexShrink:0}})
+          e('div', {style:{width:'16vw',background:'linear-gradient(225deg in oklch shorter hue, '+inputFmt+', '+fmtOklch(c.oklch)+')',flexShrink:0}})
         );
       })
     ),
-
-    // Legend
     e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
       e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ參考'),
       '：',
@@ -699,6 +677,149 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(e(App));
 </script>
+
+<style>
+  .colorlink-table { border-collapse: collapse; width: 100%; max-width: 960px; margin: 0 auto; font-size: 1.87rem; }
+  .colorlink-table th, .colorlink-table td { border: none !important; padding: 4px 10px; text-align: left; vertical-align: middle; }
+  .colorlink-table th { font-size: 14px; color: #4c6473; font-weight: 600; padding-bottom: 6px; }
+  details.colorlink-details { max-width: 960px; margin: 16px auto 0; }
+  details.colorlink-details summary { cursor: pointer; font-size: 16px; color: #4c6473; padding: 8px 0; user-select: none; }
+</style>
+<details class="colorlink-details">
+  <summary>Random Color Table</summary>
+  <table class="colorlink-table">
+    <thead>
+      <tr>
+        <th>HEX</th>
+        <th>RGB</th>
+        <th>OKLCH</th>
+        <th>NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code style="color:#FFEDDB">#FFEDDB</code></td>
+        <td><code style="color:rgb(255, 237, 219)">255, 237, 219</code></td>
+        <td><code style="color:oklch(0.958 0.0569 33.7)">0.958 0.0569 33.7</code></td>
+        <td><a class="color-link" style="--link-color: #FFEDDB; --link-hover-accent:#FFEDDB" href="https://twitter.com/nuevo_tokyo/status/2039908651276943505"><ruby>薄茶色<rt>うすちゃいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#FFE6E6">#FFE6E6</code></td>
+        <td><code style="color:rgb(255, 230, 230)">255, 230, 230</code></td>
+        <td><code style="color:oklch(0.948 0.0524 21.2)">0.948 0.0524 21.2</code></td>
+        <td><a class="color-link" style="--link-color: #FFE6E6; --link-hover-accent:#FFE6E6" href="https://twitter.com/nuevo_tokyo/status/2039908651276943505"><ruby>薄紅色<rt>うすべにいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#D9E6D9">#D9E6D9</code></td>
+        <td><code style="color:rgb(217, 230, 217)">217, 230, 217</code></td>
+        <td><code style="color:oklch(0.915 0.0270 52.5)">0.915 0.0270 52.5</code></td>
+        <td><a class="color-link" style="--link-color: #D9E6D9; --link-hover-accent:#D9E6D9" href="https://twitter.com/nuevo_tokyo/status/2039908651276943505"><ruby>薄緑色<rt>うすみどりいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#BCE2E8">#BCE2E8</code></td>
+        <td><code style="color:rgb(188, 226, 232)">188, 226, 232</code></td>
+        <td><code style="color:oklch(0.891 0.0124 174.0)">0.891 0.0124 174.0</code></td>
+        <td><a class="color-link" style="--link-color: #BCE2E8; --link-hover-accent:#BCE2E8" href="https://www.colordic.org/colorsample/2091"><ruby>水色<rt>みずいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#FAD2D8">#FAD2D8</code></td>
+        <td><code style="color:rgb(250, 210, 216)">250, 210, 216</code></td>
+        <td><code style="color:oklch(0.902 0.0633 15.4)">0.902 0.0633 15.4</code></td>
+        <td><a class="color-link" style="--link-color: #FAD2D8; --link-hover-accent:#FAD2D8" href="https://twitter.com/nuevo_tokyo/status/2039908651276943505"><ruby>淡紅色<rt>たんこういろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#F5C5D1">#F5C5D1</code></td>
+        <td><code style="color:rgb(245, 197, 209)">245, 197, 209</code></td>
+        <td><code style="color:oklch(0.871 0.0682 11.4)">0.871 0.0682 11.4</code></td>
+        <td><a class="color-link" style="--link-color: #F5C5D1; --link-hover-accent:#F5C5D1" href="https://twitter.com/nuevo_tokyo/status/2039908651276943505"><ruby>夕映え<rt>ゆうばえ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#FFB7C5">#FFB7C5</code></td>
+        <td><code style="color:rgb(255, 183, 197)">255, 183, 197</code></td>
+        <td><code style="color:oklch(0.852 0.0929 10.9)">0.852 0.0929 10.9</code></td>
+        <td><a class="color-link" style="--link-color: #FFB7C5; --link-hover-accent:#FFB7C5" href="https://twitter.com/nuevo_tokyo/status/2039908651276943505"><ruby>桜色<rt>さくらいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#EE7800">#EE7800</code></td>
+        <td><code style="color:rgb(238, 120, 0)">238, 120, 0</code></td>
+        <td><code style="color:oklch(0.696 0.1759 29.7)">0.696 0.1759 29.7</code></td>
+        <td><a class="color-link" style="--link-color: #ee7800; --link-hover-accent:#ee7800" href="https://www.colordic.org/colorsample/2241"><ruby>橙色<rt>だいだいいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#D3381C">#D3381C</code></td>
+        <td><code style="color:rgb(211, 56, 28)">211, 56, 28</code></td>
+        <td><code style="color:oklch(0.574 0.1942 19.6)">0.574 0.1942 19.6</code></td>
+        <td><a class="color-link" style="--link-color: #d3381c; --link-hover-accent:#d3381c" href="https://www.colordic.org/colorsample/2267"><ruby>緋色<rt>ひいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#D7003A">#D7003A</code></td>
+        <td><code style="color:rgb(215, 0, 58)">215, 0, 58</code></td>
+        <td><code style="color:oklch(0.557 0.2126 13.1)">0.557 0.2126 13.1</code></td>
+        <td><a class="color-link" style="--link-color: #d7003a; --link-hover-accent:#d7003a" href="https://www.colordic.org/colorsample/2014"><ruby>紅<rt>くれない</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#E60033">#E60033</code></td>
+        <td><code style="color:rgb(230, 0, 51)">230, 0, 51</code></td>
+        <td><code style="color:oklch(0.584 0.2260 14.5)">0.584 0.2260 14.5</code></td>
+        <td><a class="color-link" style="--link-color: #e60033; --link-hover-accent:#e60033" href="https://www.colordic.org/colorsample/2012"><ruby>赤<rt>あか</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#B7282E">#B7282E</code></td>
+        <td><code style="color:rgb(183, 40, 46)">183, 40, 46</code></td>
+        <td><code style="color:oklch(0.512 0.1750 15.9)">0.512 0.1750 15.9</code></td>
+        <td><a class="color-link" style="--link-color: #b7282e; --link-hover-accent:#b7282e" href="https://www.colordic.org/colorsample/2009"><ruby>茜色<rt>あかねいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#727171">#727171</code></td>
+        <td><code style="color:rgb(114, 113, 113)">114, 113, 113</code></td>
+        <td><code style="color:oklch(0.551 0.0178 27.8)">0.551 0.0178 27.8</code></td>
+        <td><a class="color-link" style="--link-color: #727171; --link-hover-accent:#727171" href="https://www.colordic.org/colorsample/2292"><ruby>鈍色<rt>にびいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#4C6473">#4C6473</code></td>
+        <td><code style="color:rgb(76, 100, 115)">76, 100, 115</code></td>
+        <td><code style="color:oklch(0.492 0.0222 214.1)">0.492 0.0222 214.1</code></td>
+        <td><a class="color-link" style="--link-color: #4c6473; --link-hover-accent:#4c6473" href="https://www.colordic.org/colorsample/2319"><ruby>御召御納戸<rt>おめしおなんど</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#674598">#674598</code></td>
+        <td><code style="color:rgb(103, 69, 152)">103, 69, 152</code></td>
+        <td><code style="color:oklch(0.470 0.0695 266.1)">0.470 0.0695 266.1</code></td>
+        <td><a class="color-link" style="--link-color: #674598; --link-hover-accent:#674598" href="https://www.colordic.org/colorsample/2046"><ruby>青紫<rt>あおむらさき</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#5654A2">#5654A2</code></td>
+        <td><code style="color:rgb(86, 84, 162)">86, 84, 162</code></td>
+        <td><code style="color:oklch(0.489 0.0841 240.0)">0.489 0.0841 240.0</code></td>
+        <td><a class="color-link" style="--link-color: #5654A2; --link-hover-accent:#5654A2" href="https://www.colordic.org/colorsample/2052"><ruby>桔梗色<rt>ききょういろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#165E83">#165E83</code></td>
+        <td><code style="color:rgb(22, 94, 131)">22, 94, 131</code></td>
+        <td><code style="color:oklch(0.460 0.0814 211.7)">0.460 0.0814 211.7</code></td>
+        <td><a class="color-link" style="--link-color: #165e83; --link-hover-accent:#165e83" href="https://www.colordic.org/colorsample/2076"><ruby>藍色<rt>あいいろ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#2A83A2">#2A83A2</code></td>
+        <td><code style="color:rgb(42, 131, 162)">42, 131, 162</code></td>
+        <td><code style="color:oklch(0.575 0.0794 206.1)">0.575 0.0794 206.1</code></td>
+        <td><a class="color-link" style="--link-color: #2A83a2; --link-hover-accent:#2a83a2" href="https://www.colordic.org/colorsample/2406"><ruby>花淺蔥<rt>はなあさぎ</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#0095D9">#0095D9</code></td>
+        <td><code style="color:rgb(0, 149, 217)">0, 149, 217</code></td>
+        <td><code style="color:oklch(0.641 0.1359 212.3)">0.641 0.1359 212.3</code></td>
+        <td><a class="color-link" style="--link-color: #0095D9; --link-hover-accent:#0095D9" href="https://www.colordic.org/colorsample/2079"><ruby>青<rt>あお</rt></ruby></a></td>
+      </tr>
+      <tr>
+        <td><code style="color:#38B48B">#38B48B</code></td>
+        <td><code style="color:rgb(56, 180, 139)">56, 180, 139</code></td>
+        <td><code style="color:oklch(0.695 0.0644 153.6)">0.695 0.0644 153.6</code></td>
+        <td><a class="color-link" style="--link-color: #38B48B; --link-hover-accent:#38B48B" href="https://www.colordic.org/colorsample/2402"><ruby>翡翠色<rt>ひすいいろ</rt></ruby></a></td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
 
 
