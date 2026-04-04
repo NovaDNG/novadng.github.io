@@ -504,7 +504,7 @@ function App() {
     ),
 
     // Legend
-    e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,color:'#333',lineHeight:1.5}},
+    e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
       e('strong', {style:{color:'#4c6473'}}, 'OKLCH Δ參考'),
       '：<0.005 幾乎無法分辨 · 0.005~0.02 細微差異 · 0.02~0.06 明顯差異 · >0.06 截然不同. 本工具由Claude Code生成. '
     )
@@ -520,20 +520,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(e(App));
 
 
 
-
-  <nav class="depth-breadcrumb" aria-label="Breadcrumb">
-    
-      
-      
-        <a href="/tools">tools</a>
-      
-    
-      <span class="depth-breadcrumb__sep">></span>
-      
-        <span class="depth-breadcrumb__current">和色マッチャー ⸺ 近似色検索</span>
-      
-    
-  </nav>
 
 
 
@@ -730,6 +716,73 @@ ReactDOM.createRoot(document.getElementById('root')).render(e(App));
 
   </div>
 </footer>
+          
+            <div id="pheader" class="pheader">
+<div class="twelve columns">
+  <div class="row">
+    <div class="nine columns nav left">
+      <a href="/">Home</a>
+      
+        
+        <a href="/Works">Works</a>
+        
+      
+        
+        <a href="/Frames">Frames</a>
+        
+      
+        
+        <a href="/Commissions">Commissions</a>
+        
+      
+        
+        <a href="/About">About</a>
+        
+      
+        
+        <a href="/Now">Now</a>
+        
+      
+        
+        <a href="/atom.xml">RSS</a>
+        
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h3 class="mt-2 mb-2 mode">
+      <div data-theme-role="dark" onclick="setDarkMode(true)">✶</div>
+      <div data-theme-role="light" onclick="setDarkMode(false)" class="hidden">❂</div>
+    </h3>
+  </div>
+
+  <div class="six columns ml-1">
+    <h3 class="mb-2">
+      NovaDNG Studio
+    </h3>
+  </div>
+
+</div>
+
+<div class="row mb-2">
+  <div class="twelve columns">
+    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader.avif"
+         alt="Logo"
+         style="max-width: 128px; height: auto;"
+         class="noshadow"
+         id="logoLight"/>
+    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader_dark.avif"
+         alt="Logo"
+         style="max-width: 128px; height: auto;"
+         class="noshadow"
+         id="logoDark"/>
+  </div>
+</div>
+</div>
           
         </div>
       </div>
