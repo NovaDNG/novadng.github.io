@@ -241,7 +241,7 @@
   
   
 <div id="page-header">
-  <center>以<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.5814 0.2375 27.86) 0%, oklch(0.5049 0.0922 321.78) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://oklch.com/">OKLCH色彩空間</a>從384色<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.4828 0.0706 191.17) 0%, oklch(0.888 0.0452 341.06) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://github.com/daodaolee/china-color">中國傳統色</a>中找出最接近的配色.</center><br/>
+  <center>以<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.5814 0.2375 27.86) 0%, oklch(0.5049 0.0922 321.78) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://oklch.com/">OKLCH色彩空間</a>從384色<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.4828 0.0706 191.17) 0%, oklch(0.888 0.0452 341.06) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="https://github.com/daodaolee/china-color">中國傳統色</a>中找出最接近的配色. 另見<a class="color-link" style="background: linear-gradient(to right in oklch longer hue, oklch(0.6749 0.127 237.51) 0%, oklch(0.8731 0.0321 308.05) 100%); background-clip: text; -webkit-text-fill-color: transparent;" href="wcolor-matcher">日本伝統色</a></center><br/>
 </div>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
@@ -574,7 +574,7 @@ function App() {
   var inputHex = _inputHex[0], setInputHex = _inputHex[1];
   var _textInput = React.useState(_initPreset.text);
   var textInput = _textInput[0], setTextInput = _textInput[1];
-  var _topN = React.useState(7);
+  var _topN = React.useState(12);
   var topN = _topN[0], setTopN = _topN[1];
   var pickerRef = React.useRef(null);
 
@@ -625,7 +625,7 @@ function App() {
             style:{fontSize:18,textAlign:'center',padding:'4px 8px',borderRadius:2,
               border:'none',borderBottom:'2px solid '+txtCol(inputHex)+'80',
               outline:'none',cursor:'pointer',background:'transparent',color:txtCol(inputHex),marginBottom:'0'}},
-            [7,13,33,56].map(function(n){ return e('option',{key:n,value:n},n); })
+            [12,24,36,81].map(function(n){ return e('option',{key:n,value:n},n); })
           )
         )
       )
