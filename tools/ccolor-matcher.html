@@ -486,8 +486,17 @@ function parseAnyColorToHex(input) {
   if (okhclHex) return okhclHex;
   return parseCssColorToHex(raw);
 }
-var COLORLINK_BASE_HEXES = Array.from(new Set(W.map(function(c){ return c[2]; })));
-var RANDOM_INPUT_FORMATS = ['okhcl', 'rgb', 'hex', 'oklab', 'hsv'];
+var COLORLINK_BASE_HEXES = [
+  '#5da39d',
+  '#cc5d20',
+  '#1e2732',
+  '#f5f2e9',
+  '#6a5b6d',
+  '#f3a694',
+  '#15b7a4',
+  '#5976ba'
+];
+var RANDOM_INPUT_FORMATS = ['oklch', 'rgb', 'hex', 'oklab', 'hsv'];
 function formatAsInputColor(hex, format) {
   var rgb = hexToRgb(hex);
   if (format === 'rgb') return 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')';
@@ -499,9 +508,9 @@ function formatAsInputColor(hex, format) {
     var lab = rgbToOklab(rgb);
     return 'oklab(' + lab[0].toFixed(4) + ' ' + lab[1].toFixed(4) + ' ' + lab[2].toFixed(4) + ')';
   }
-  if (format === 'okhcl') {
+  if (format === 'oklch') {
     var lch = hexToOklch(hex);
-    return 'okhcl(' + lch[0].toFixed(4) + ' ' + lch[1].toFixed(4) + ' ' + lch[2].toFixed(2) + ')';
+    return 'oklch(' + lch[0].toFixed(4) + ' ' + lch[1].toFixed(4) + ' ' + lch[2].toFixed(2) + ')';
   }
   return hex.toLowerCase();
 }
@@ -519,8 +528,8 @@ function pickInitialColorPreset() {
     var j = Math.floor(Math.random() * (i + 1));
     var t = a[i]; a[i] = a[j]; a[j] = t;
   }
-  var text = a[0] || '#bce2e8';
-  return {text: text, hex: parseAnyColorToHex(text) || '#bce2e8'};
+  var text = a[0] || COLORLINK_BASE_HEXES[0];
+  return {text: text, hex: parseAnyColorToHex(text) || COLORLINK_BASE_HEXES[0]};
 }
 function linearize(c) {
   c /= 255;
@@ -720,7 +729,70 @@ ReactDOM.createRoot(document.getElementById('root')).render(e(App));
       max-width: none;
     }
   }
+
+  .colorlink-table { border-collapse: collapse; width: 100%; max-width: 960px; margin: 0 auto; font-size: 1.87rem; }
+  .colorlink-table th, .colorlink-table td { border: none !important; padding: 4px 10px; text-align: left; vertical-align: middle; }
+  .colorlink-table th { font-size: 14px; color: #4c6473; font-weight: 600; padding-bottom: 6px; }
+  details.colorlink-details { max-width: 960px; margin: 16px auto 0; }
+  details.colorlink-details summary { cursor: pointer; font-size: 16px; color: #4c6473; padding: 8px 0; user-select: none; }
 </style>
+<details class="colorlink-details">
+  <summary>Random Color Table</summary>
+  <table class="colorlink-table">
+    <thead>
+      <tr>
+        <th>HEX</th>
+        <th>RGB</th>
+        <th>OKLCH</th>
+        <th>NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code style="color:#5da39d">#5DA39D</code></td>
+        <td><code style="color:rgb(93, 163, 157)">93, 163, 157</code></td>
+        <td><code style="color:oklch(0.6677 0.0716 188.5)">0.6677 0.0716 188.5</code></td>
+        <td><span style="color:#5da39d">二綠</span></td>
+      </tr>
+      <tr>
+        <td><code style="color:#cc5d20">#CC5D20</code></td>
+        <td><code style="color:rgb(204, 93, 32)">204, 93, 32</code></td>
+        <td><code style="color:oklch(0.6075 0.1574 45.2)">0.6075 0.1574 45.2</code></td>
+        <td><span style="color:#cc5d20">光明砂</span></td>
+      </tr>
+      <tr>
+        <td><code style="color:#1e2732">#1E2732</code></td>
+        <td><code style="color:rgb(30, 39, 50)">30, 39, 50</code></td>
+        <td><code style="color:oklch(0.2692 0.0242 253.7)">0.2692 0.0242 253.7</code></td>
+        <td><span style="color:#1e2732">瑾瑜</span></td>
+      </tr>
+      <tr>
+        <td><code style="color:#f5f2e9">#F5F2E9</code></td>
+        <td><code style="color:rgb(245, 242, 233)">245, 242, 233</code></td>
+        <td><code style="color:oklch(0.9610 0.0124 91.5)">0.9610 0.0124 91.5</code></td>
+        <td><span style="color:#f5f2e9">凝脂</span></td>
+      </tr>
+      <tr>
+        <td><code style="color:#6a5b6d">#6A5B6D</code></td>
+        <td><code style="color:rgb(106, 91, 109)">106, 91, 109</code></td>
+        <td><code style="color:oklch(0.4921 0.0338 320.6)">0.4921 0.0338 320.6</code></td>
+        <td><span style="color:#6a5b6d">鴉雛</span></td>
+      </tr>
+      <tr>
+        <td><code style="color:#f3a694">#F3A694</code></td>
+        <td><code style="color:rgb(243, 166, 148)">243, 166, 148</code></td>
+        <td><code style="color:oklch(0.7954 0.0955 33.7)">0.7954 0.0955 33.7</code></td>
+        <td><span style="color:#f3a694">海天霞</span></td>
+      </tr>
+      <tr>
+        <td><code style="color:#5976ba">#5976BA</code></td>
+        <td><code style="color:rgb(89, 118, 186)">89, 118, 186</code></td>
+        <td><code style="color:oklch(0.5741 0.1107 265.6)">0.5741 0.1107 265.6</code></td>
+        <td><span style="color:#5976ba">蒼蒼</span></td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
 
 
