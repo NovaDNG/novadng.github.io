@@ -556,12 +556,53 @@ function deltaOklch(a, b) {
   return Math.sqrt(dL*dL + dC*dC + dH*dH);
 }
 
+// ── CIELAB + CIEDE2000 (for perceptual sorting) ──
+function rgbToLab(rgb) {
+  var rl = linearize(rgb[0]), gl = linearize(rgb[1]), bl = linearize(rgb[2]);
+  var x = (rl*0.4124564 + gl*0.3575761 + bl*0.1804375) / 0.95047;
+  var y = (rl*0.2126729 + gl*0.7151522 + bl*0.0721750);
+  var z = (rl*0.0193339 + gl*0.1191920 + bl*0.9503041) / 1.08883;
+  function f(t) { return t > 0.008856 ? Math.cbrt(t) : 7.787*t + 16/116; }
+  return [116*f(y) - 16, 500*(f(x)-f(y)), 200*(f(y)-f(z))];
+}
+function deltaE2000(lab1, lab2) {
+  var L1=lab1[0],a1=lab1[1],b1=lab1[2], L2=lab2[0],a2=lab2[1],b2=lab2[2];
+  var rad=Math.PI/180, deg=180/Math.PI;
+  var C1=Math.sqrt(a1*a1+b1*b1), C2=Math.sqrt(a2*a2+b2*b2);
+  var Cab=(C1+C2)/2, Cab7=Math.pow(Cab,7);
+  var G=0.5*(1-Math.sqrt(Cab7/(Cab7+Math.pow(25,7))));
+  var a1p=a1*(1+G), a2p=a2*(1+G);
+  var C1p=Math.sqrt(a1p*a1p+b1*b1), C2p=Math.sqrt(a2p*a2p+b2*b2);
+  var h1p=Math.atan2(b1,a1p)*deg; if(h1p<0) h1p+=360;
+  var h2p=Math.atan2(b2,a2p)*deg; if(h2p<0) h2p+=360;
+  var dLp=L2-L1, dCp=C2p-C1p;
+  var dhp;
+  if(C1p*C2p===0) dhp=0;
+  else if(Math.abs(h2p-h1p)<=180) dhp=h2p-h1p;
+  else if(h2p-h1p>180) dhp=h2p-h1p-360;
+  else dhp=h2p-h1p+360;
+  var dHp=2*Math.sqrt(C1p*C2p)*Math.sin(dhp/2*rad);
+  var Lp=(L1+L2)/2, Cp=(C1p+C2p)/2;
+  var hp;
+  if(C1p*C2p===0) hp=h1p+h2p;
+  else if(Math.abs(h1p-h2p)<=180) hp=(h1p+h2p)/2;
+  else if(h1p+h2p<360) hp=(h1p+h2p+360)/2;
+  else hp=(h1p+h2p-360)/2;
+  var T=1-0.17*Math.cos((hp-30)*rad)+0.24*Math.cos(2*hp*rad)+0.32*Math.cos((3*hp+6)*rad)-0.20*Math.cos((4*hp-63)*rad);
+  var SL=1+0.015*(Lp-50)*(Lp-50)/Math.sqrt(20+(Lp-50)*(Lp-50));
+  var SC=1+0.045*Cp;
+  var SH=1+0.015*Cp*T;
+  var Cp7=Math.pow(Cp,7);
+  var RT=-2*Math.sqrt(Cp7/(Cp7+Math.pow(25,7)))*Math.sin(60*Math.exp(-((hp-275)/25)*((hp-275)/25))*rad);
+  return Math.sqrt((dLp/SL)*(dLp/SL)+(dCp/SC)*(dCp/SC)+(dHp/SH)*(dHp/SH)+RT*(dCp/SC)*(dHp/SH));
+}
+
 function luminance(hex) {
   var rgb = hexToRgb(hex);
   return 0.2126*linearize(rgb[0]) + 0.7152*linearize(rgb[1]) + 0.0722*linearize(rgb[2]);
 }
 
-var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch:hexToOklch(c[2])}; });
+var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch:hexToOklch(c[2]), lab:rgbToLab(hexToRgb(c[2]))}; });
 
 // ═══════════════════════════════════════════════════════════════
 // React App (no JSX — plain createElement)
@@ -579,9 +620,31 @@ function App() {
   var pickerRef = React.useRef(null);
 
   var results = React.useMemo(function() {
-    var target = hexToOklch(inputHex);
+    var targetLab = rgbToLab(hexToRgb(inputHex));
+    var targetOklch = hexToOklch(inputHex);
     return COLORS
-      .map(function(c){ return Object.assign({}, c, {dist: deltaOklch(target, c.oklch)}); })
+      .map(function(c) {
+        var dL = targetOklch[0] - c.oklch[0];
+        var dC = targetOklch[1] - c.oklch[1];
+        var dH = targetOklch[2] - c.oklch[2];
+        if (dH > 180) dH -= 360;
+        if (dH < -180) dH += 360;
+
+        // 把兩個距離歸一化到相近尺度後混合
+        // OKLCH 距離 ×100 ≈ CIEDE2000 的數量級
+        var dE = deltaE2000(targetLab, c.lab);
+        var dO = deltaOklch(targetOklch, c.oklch) * 100;
+
+        // 目標色的 Oklab L 越高、C 越低，越偏向信任 Oklab
+        var targetL = targetOklch[0];  // 0~1
+        var targetC = targetOklch[1];  // 0~0.4ish
+        var w = 0.5 + 0.4 * (targetL - 0.5) - 1.5 * targetC;
+        w = Math.max(0, Math.min(1, w));  // clamp 0~1
+
+        var dist = dE * (1 - w) + dO * w;
+
+        return Object.assign({}, c, {dist: dist, dL: dL, dC: dC, dH: dH});
+      })
       .sort(function(a,b){ return a.dist - b.dist; })
       .slice(0, topN);
   }, [inputHex, topN]);
@@ -606,7 +669,7 @@ function App() {
   }
 
   var inputFmt = fmtOklch(hexToOklch(inputHex));
-  return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
+  return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 0px 0'}},
 
     e('div', {className:'wm-input-panel',style:{position:'relative',background:inputHex,borderRadius:4,height:'var(--wm-preview-h, 96px)',marginBottom:16,
       boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},onClick:openPickerAtCursor},
@@ -644,16 +707,19 @@ function App() {
           e('div', {style:{flex:1,padding:'8px 8px 8px 2px',display:'flex',alignItems:'center',gap:10,color:rowTextColor,background:rowGradient}},
             e('div', {style:{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:2}},
               e('div', {style:{display:'flex',alignItems:'baseline',gap:12}},
-                e('span', {style:{fontSize:20,fontFamily:'Ten Mincho, serif',fontWeight:600}}, c.name),
+                e('span', {style:{fontSize:20,fontFamily:'Toppan Bunkyu Midashi Mincho, Ten Mincho, serif',fontWeight:600}}, c.name),
                 e('span', {style:{fontSize:14,color:'inherit',opacity:0.86}}, c.reading)
               ),
               e('div', {style:{display:'flex',alignItems:'center',gap:10,fontSize:14}},
                 e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'inherit',opacity:0.92,fontWeight:600}}, c.hex),
-                e('span', {style:{
-                  background: isExact?'#e8f5e9': c.dist<0.02?'#f1f8e9': c.dist<0.06?'#fff8e1':'#fff3e0',
-                  color:      isExact?'#2e7d32': c.dist<0.02?'#558b2f': c.dist<0.06?'#f57f17':'#e65100',
-                  padding:'2px 8px',borderRadius:4,fontWeight:600,fontSize:12}},
-                  '\u0394 = ' + c.dist.toFixed(4)
+                e('div', {style:{display:'flex',alignItems:'center',gap:5,
+                  fontFamily:"'Berkeley Mono','Fira Code',monospace",fontSize:12,fontWeight:600,
+                  background:'rgba(0,0,0,0.08)',padding:'2px 8px',borderRadius:4}},
+                  e('span', null, '\u0394L\u202f' + (c.dL >= 0 ? '+' : '') + c.dL.toFixed(3)),
+                  e('span', {style:{opacity:0.35}}, '\u00b7'),
+                  e('span', null, '\u0394C\u202f' + (c.dC >= 0 ? '+' : '') + c.dC.toFixed(3)),
+                  e('span', {style:{opacity:0.35}}, '\u00b7'),
+                  e('span', null, '\u0394H\u202f' + (c.dH >= 0 ? '+' : '') + c.dH.toFixed(1) + '\u00b0')
                 )
               )
             ),
@@ -666,16 +732,15 @@ function App() {
       })
     ),
     e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
-      e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ参照'),
-      '：',
-      e('strong', {style:{color:'#2e7d32',fontWeight:'600'}}, '<0.005'),
-      '同色 · ',
-      e('strong', {style:{color:'#558b2f',fontWeight:'600'}}, '0.005~0.02'),
-      '僅差 · ',
-      e('strong', {style:{color:'#f57f17',fontWeight:'600'}}, '0.02~0.06'),
-      '大差 · ',
-      e('strong', {style:{color:'#e65100',fontWeight:'600'}}, '>0.06'),
-      '別色。本ツールはClaude Codeの支援により作成されました。'
+      e('span', {style:{color:'#4c6473'}}, '\u0394L'),
+      '明度 · ',
+      e('span', {style:{color:'#4c6473'}}, '\u0394C'),
+      '彩度 · ',
+      e('span', {style:{color:'#4c6473'}}, '\u0394H'),
+      '色相角 (°) · いずれもOKLCH各成分の差分で、入力色を基準に正値は入力色が高いことを示す。並び順は',
+      e('span', null, '\u0394E'),
+      e('sub', null, '2000'),
+      'による。本ツールはClaude Codeの支援により作成されました。'
     )
   );
 }

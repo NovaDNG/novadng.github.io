@@ -565,12 +565,46 @@ function deltaOklch(a, b) {
   return Math.sqrt(dL*dL + dC*dC + dH*dH);
 }
 
+function rgbToLab(rgb) {
+  function linearize(c) { c/=255; return c<=0.04045?c/12.92:Math.pow((c+0.055)/1.055,2.4); }
+  var r=linearize(rgb[0]),g=linearize(rgb[1]),b=linearize(rgb[2]);
+  var x=(r*0.4124564+g*0.3575761+b*0.1804375)/0.95047;
+  var y=(r*0.2126729+g*0.7151522+b*0.0721750)/1.00000;
+  var z=(r*0.0193339+g*0.1191920+b*0.9503041)/1.08883;
+  function f(t) { return t > 0.008856 ? Math.cbrt(t) : 7.787*t + 16/116; }
+  return [116*f(y) - 16, 500*(f(x)-f(y)), 200*(f(y)-f(z))];
+}
+function deltaE2000(lab1, lab2) {
+  var L1=lab1[0],a1=lab1[1],b1=lab1[2], L2=lab2[0],a2=lab2[1],b2=lab2[2];
+  var rad=Math.PI/180, deg=180/Math.PI;
+  var C1=Math.sqrt(a1*a1+b1*b1), C2=Math.sqrt(a2*a2+b2*b2);
+  var Cb=(C1+C2)/2; var Cb7=Math.pow(Cb,7);
+  var G=0.5*(1-Math.sqrt(Cb7/(Cb7+Math.pow(25,7))));
+  var a1p=a1*(1+G), a2p=a2*(1+G);
+  var C1p=Math.sqrt(a1p*a1p+b1*b1), C2p=Math.sqrt(a2p*a2p+b2*b2);
+  function hpFn(a,b) { if(a===0&&b===0) return 0; var h=Math.atan2(b,a)*deg; return h<0?h+360:h; }
+  var h1p=hpFn(a1p,b1), h2p=hpFn(a2p,b2);
+  var dLp=L2-L1, dCp=C2p-C1p;
+  var dhp; if(C1p*C2p===0){dhp=0;}else if(Math.abs(h2p-h1p)<=180){dhp=h2p-h1p;}else if(h2p-h1p>180){dhp=h2p-h1p-360;}else{dhp=h2p-h1p+360;}
+  var dHp=2*Math.sqrt(C1p*C2p)*Math.sin((dhp/2)*rad);
+  var Lbp=(L1+L2)/2, Cbp=(C1p+C2p)/2;
+  var hbp; if(C1p*C2p===0){hbp=h1p+h2p;}else if(Math.abs(h1p-h2p)<=180){hbp=(h1p+h2p)/2;}else if(h1p+h2p<360){hbp=(h1p+h2p+360)/2;}else{hbp=(h1p+h2p-360)/2;}
+  var T=1-0.17*Math.cos((hbp-30)*rad)+0.24*Math.cos(2*hbp*rad)+0.32*Math.cos((3*hbp+6)*rad)-0.20*Math.cos((4*hbp-63)*rad);
+  var SL=1+0.015*Math.pow(Lbp-50,2)/Math.sqrt(20+Math.pow(Lbp-50,2));
+  var SC=1+0.045*Cbp, SH=1+0.015*Cbp*T;
+  var Cbp7=Math.pow(Cbp,7);
+  var RC=2*Math.sqrt(Cbp7/(Cbp7+Math.pow(25,7)));
+  var dTheta=30*Math.exp(-Math.pow((hbp-275)/25,2));
+  var RT=-Math.sin(2*dTheta*rad)*RC;
+  return Math.sqrt(Math.pow(dLp/SL,2)+Math.pow(dCp/SC,2)+Math.pow(dHp/SH,2)+RT*(dCp/SC)*(dHp/SH));
+}
+
 function luminance(hex) {
   var rgb = hexToRgb(hex);
   return 0.2126*linearize(rgb[0]) + 0.7152*linearize(rgb[1]) + 0.0722*linearize(rgb[2]);
 }
 
-var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch:hexToOklch(c[2])}; });
+var COLORS = W.map(function(c){ return {name:c[0], reading:c[1], hex:c[2], oklch:hexToOklch(c[2]), lab:rgbToLab(hexToRgb(c[2]))}; });
 
 // ═══════════════════════════════════════════════════════════════
 // React App (no JSX — plain createElement)
@@ -588,9 +622,31 @@ function App() {
   var pickerRef = React.useRef(null);
 
   var results = React.useMemo(function() {
-    var target = hexToOklch(inputHex);
+    var targetLab = rgbToLab(hexToRgb(inputHex));
+    var targetOklch = hexToOklch(inputHex);
     return COLORS
-      .map(function(c){ return Object.assign({}, c, {dist: deltaOklch(target, c.oklch)}); })
+      .map(function(c) {
+        var dL = targetOklch[0] - c.oklch[0];
+        var dC = targetOklch[1] - c.oklch[1];
+        var dH = targetOklch[2] - c.oklch[2];
+        if (dH > 180) dH -= 360;
+        if (dH < -180) dH += 360;
+
+        // 把兩個距離歸一化到相近尺度後混合
+        // OKLCH 距離 ×100 ≈ CIEDE2000 的數量級
+        var dE = deltaE2000(targetLab, c.lab);
+        var dO = deltaOklch(targetOklch, c.oklch) * 100;
+
+        // 目標色的 Oklab L 越高、C 越低，越偏向信任 Oklab
+        var targetL = targetOklch[0];  // 0~1
+        var targetC = targetOklch[1];  // 0~0.4ish
+        var w = 0.5 + 0.4 * (targetL - 0.5) - 1.5 * targetC;
+        w = Math.max(0, Math.min(1, w));  // clamp 0~1
+
+        var dist = dE * (1 - w) + dO * w;
+
+        return Object.assign({}, c, {dist: dist, dL: dL, dC: dC, dH: dH});
+      })
       .sort(function(a,b){ return a.dist - b.dist; })
       .slice(0, topN);
   }, [inputHex, topN]);
@@ -615,7 +671,7 @@ function App() {
   }
 
   var inputFmt = fmtOklch(hexToOklch(inputHex));
-  return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 16px 0'}},
+  return e('div', {style:{maxWidth:960,margin:'0 auto',padding:'12px 0px 0'}},
 
     e('div', {className:'wm-input-panel',style:{position:'relative',background:inputHex,borderRadius:4,height:'var(--wm-preview-h, 96px)',marginBottom:16,
       boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},onClick:openPickerAtCursor},
@@ -642,7 +698,7 @@ function App() {
 
     e('div', {style:{display:'flex',flexDirection:'column',gap:8}},
       results.map(function(c, i) {
-        var isExact = c.dist < 0.005;
+        var isExact = c.dL === 0 && c.dC === 0 && c.dH === 0;
         var rowGradient = 'linear-gradient(78deg in oklch shorter hue, ' + fmtOklch(c.oklch) + ' 0%, 56%, ' + inputFmt + ' 100%)';
         var rowTextColor = txtCol(c.hex);
         return e('div', {key:i, style:{display:'flex',alignItems:'stretch',borderRadius:4,overflow:'hidden',background:c.hex}},
@@ -658,11 +714,14 @@ function App() {
               ),
               e('div', {style:{display:'flex',alignItems:'center',gap:10,fontSize:14}},
                 e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'inherit',opacity:0.92,fontWeight:600}}, c.hex),
-                e('span', {style:{
-                  background: isExact?'#e8f5e9': c.dist<0.02?'#f1f8e9': c.dist<0.06?'#fff8e1':'#fff3e0',
-                  color:      isExact?'#2e7d32': c.dist<0.02?'#558b2f': c.dist<0.06?'#f57f17':'#e65100',
-                  padding:'2px 8px',borderRadius:4,fontWeight:600,fontSize:12}},
-                  '\u0394 = ' + c.dist.toFixed(4)
+                e('div', {style:{display:'flex',alignItems:'center',gap:5,
+                  fontFamily:"'Berkeley Mono','Fira Code',monospace",fontSize:12,fontWeight:600,
+                  background:'rgba(0,0,0,0.08)',padding:'2px 8px',borderRadius:4}},
+                  e('span', null, '\u0394L\u202f' + (c.dL >= 0 ? '+' : '') + c.dL.toFixed(3)),
+                  e('span', {style:{opacity:0.35}}, '\u00b7'),
+                  e('span', null, '\u0394C\u202f' + (c.dC >= 0 ? '+' : '') + c.dC.toFixed(3)),
+                  e('span', {style:{opacity:0.35}}, '\u00b7'),
+                  e('span', null, '\u0394H\u202f' + (c.dH >= 0 ? '+' : '') + c.dH.toFixed(1) + '\u00b0')
                 )
               )
             ),
@@ -675,16 +734,15 @@ function App() {
       })
     ),
     e('div', {style:{marginTop:20,padding:'12px 16px',background:'#fefefe',borderRadius:4,fontSize:14,fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'#333',lineHeight:1.5}},
-      e('span', {style:{color:'#4c6473'}}, 'OKLCH Δ参照'),
-      '：',
-      e('strong', {style:{color:'#2e7d32',fontWeight:'600'}}, '<0.005'),
-      '同色 · ',
-      e('strong', {style:{color:'#558b2f',fontWeight:'600'}}, '0.005~0.02'),
-      '微差 · ',
-      e('strong', {style:{color:'#f57f17',fontWeight:'600'}}, '0.02~0.06'),
-      '大差 · ',
-      e('strong', {style:{color:'#e65100',fontWeight:'600'}}, '>0.06'),
-      '別色. 本工具由Claude Code輔助生成. '
+      e('span', {style:{color:'#4c6473'}}, '\u0394L'),
+      '明度 · ',
+      e('span', {style:{color:'#4c6473'}}, '\u0394C'),
+      '彩度 · ',
+      e('span', {style:{color:'#4c6473'}}, '\u0394H'),
+      '色相角 (°) · 均為OKLCH各分量差值, 以輸入色為基準, 正值表示輸入色較高. 排序依據',
+      e('span', null, '\u0394E'),
+      e('sub', null, '2000'),
+      '與OKLCH距離的加權混合. 本工具由Claude Code輔助生成.'
     )
   );
 }
