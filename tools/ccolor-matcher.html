@@ -710,13 +710,13 @@ function App() {
             e('div', {style:{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:2}},
               e('div', {style:{display:'flex',alignItems:'baseline',gap:12}},
                 e('span', {style:{fontSize:20,fontFamily:'HYXuanSong, FZYouSongJ GBK, Source Han Serif VF, serif',fontWeight:600}}, c.name),
-                e('span', {style:{fontSize:14,color:'inherit',opacity:0.86}}, c.reading)
+                e('span', {style:{fontSize:14,color:'inherit',opacity:0.87}}, c.reading)
               ),
               e('div', {style:{display:'flex',alignItems:'center',gap:10,fontSize:14}},
-                e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'inherit',opacity:0.92,fontWeight:600}}, c.hex),
+                e('span', {style:{fontFamily:"'Berkeley Mono','Fira Code',monospace",color:'inherit',opacity:0.96,fontWeight:600}}, c.hex),
                 e('div', {style:{display:'flex',alignItems:'center',gap:5,
                   fontFamily:"'Berkeley Mono','Fira Code',monospace",fontSize:12,fontWeight:600,
-                  background:'rgba(0,0,0,0.08)',padding:'2px 8px',borderRadius:4}},
+                  background:rowTextColor==='#f5f5f5'?'rgba(0,0,0,0.12)':'rgba(255,255,255,0.12)',padding:'2px 8px',borderRadius:4}},
                   e('span', null, '\u0394L\u202f' + (c.dL >= 0 ? '+' : '') + c.dL.toFixed(3)),
                   e('span', {style:{opacity:0.35}}, '\u00b7'),
                   e('span', null, '\u0394C\u202f' + (c.dC >= 0 ? '+' : '') + c.dC.toFixed(3)),
