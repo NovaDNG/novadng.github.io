@@ -256,7 +256,7 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
   var _nameFont     = config.nameFont     || 'serif';
   var _isExactFn    = config.isExactFn    || function(c) { return c.dL === 0 && c.dC === 0 && c.dH === 0; };
   var _footerNodes  = config.footerNodes  || function(e) { return []; };
-  var _bL = 0.72, _bC = 0.64, _bH = 0.86;
+  var _bL = 0.64, _bC = 0.56, _bH = 0.72;
 
   function App() {
     var _ih = React.useState(_initPreset.hex);
@@ -269,6 +269,33 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
     var bias = _bi[0], setBias = _bi[1];
     var pickerRef = React.useRef(null);
 
+        function compareByBias(a, b, biasMode) {
+      var EPS_E  = 0.15;
+      var EPS_L  = 0.002;
+      var EPS_C  = 0.002;
+      var EPS_H  = 0.2;
+
+      var dE = a.dE - b.dE;
+      if (Math.abs(dE) > EPS_E) return dE;
+
+      var order = biasMode === 'dH'
+        ? ['dH', 'dL', 'dC']
+        : biasMode === 'dC'
+          ? ['dC', 'dL', 'dH']
+          : biasMode === 'dL'
+            ? ['dL', 'dC', 'dH']
+            : ['dL', 'dC', 'dH'];
+
+      var epsMap = { dL: EPS_L, dC: EPS_C, dH: EPS_H };
+      for (var i = 0; i < order.length; i++) {
+        var key = order[i];
+        var diff = Math.abs(a[key]) - Math.abs(b[key]);
+        if (Math.abs(diff) > epsMap[key]) return diff;
+      }
+
+      return 0;
+    }
+
     var results = React.useMemo(function() {
       var targetLab = rgbToLab(hexToRgb(inputHex));
       var targetOklch = hexToOklch(inputHex);
@@ -278,22 +305,15 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
         var dH = targetOklch[2] - c.oklch[2];
         if (dH > 180) dH -= 360;
         if (dH < -180) dH += 360;
-        // 把兩個距離歸一化到相近尺度後混合
-        // OKLCH 距離 ×100 ≈ CIEDE2000 的數量級
         var dE = deltaE2000(targetLab, c.lab);
-        var dO = deltaOklch(targetOklch, c.oklch) * 100;
-        // 目標色的 L 越高、C 越低，越偏向信任 OKLCH
-        var tL = targetOklch[0], tC = targetOklch[1];
-        var w = Math.max(0, Math.min(1, 0.5 + 0.4*(tL-0.5) - 1.5*tC));
-        var dist_default = dE*(1-w) + dO*w;
-        var dist;
-        if (bias === 'dL')      dist = (1-_bL)*dist_default + _bL*Math.abs(dL)*100;
-        else if (bias === 'dC') dist = (1-_bC)*dist_default + _bC*Math.abs(dC)*250;
-        else if (bias === 'dH') dist = (1-_bH)*dist_default + _bH*Math.abs(dH)/1.8;
-        else                    dist = dist_default;
-        return Object.assign({}, c, {dist:dist, dL:dL, dC:dC, dH:dH});
+        return Object.assign({}, c, {
+          dE: dE,
+          dL: dL,
+          dC: dC,
+          dH: dH
+        });
       })
-      .sort(function(a,b){ return a.dist-b.dist; })
+      .sort(function(a, b) { return compareByBias(a, b, bias); })
       .slice(0, topN);
     }, [inputHex, topN, bias]);
 
