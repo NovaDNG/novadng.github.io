@@ -1,0 +1,42 @@
+.wm-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 12px;
+}
+
+.wm-color-text {
+  width: 320px;
+  max-width: 56vw;
+}
+
+.wm-top-controls {
+  justify-content: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 680px) {
+  .wm-input-panel {
+    --wm-preview-h: 128px;
+  }
+
+  .wm-controls {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 12px;
+  }
+
+  .wm-color-text {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.colorlink-table { border-collapse: collapse; width: 100%; max-width: 960px; margin: 0 auto; font-size: 1.87rem; }
+.colorlink-table th, .colorlink-table td { border: none !important; padding: 4px 10px; text-align: left; vertical-align: middle; }
+.colorlink-table th { font-size: 14px; color: #4c6473; font-weight: 600; padding-bottom: 6px; }
+details.colorlink-details { max-width: 960px; margin: 16px auto 0; }
+details.colorlink-details summary { cursor: pointer; font-size: 16px; color: #4c6473; padding: 8px 0; user-select: none; }
