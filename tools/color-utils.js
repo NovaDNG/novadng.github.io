@@ -257,6 +257,8 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
   var _isExactFn    = config.isExactFn    || function(c) { return c.dL === 0 && c.dC === 0 && c.dH === 0; };
   var _footerNodes  = config.footerNodes  || function(e) { return []; };
   var _bL = 0.64, _bC = 0.56, _bH = 0.72;
+  var _hasFinePointer = typeof window !== 'undefined' &&
+    !!(window.matchMedia && window.matchMedia('(pointer: fine)').matches);
 
   function App() {
     var _ih = React.useState(_initPreset.hex);
@@ -268,6 +270,17 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
     var _bi = React.useState('default');
     var bias = _bi[0], setBias = _bi[1];
     var pickerRef = React.useRef(null);
+
+    function openPickerAtCursor(ev) {
+      if (ev.target && ev.target.closest && ev.target.closest('[data-no-picker="true"]')) return;
+      var input = pickerRef.current;
+      if (!input) return;
+      var rect = ev.currentTarget.getBoundingClientRect();
+      input.style.left = (ev.clientX - rect.left) + 'px';
+      input.style.top  = (ev.clientY - rect.top)  + 'px';
+      if (typeof input.showPicker === 'function') input.showPicker();
+      else input.click();
+    }
 
         function compareByBias(a, b, biasMode) {
       var EPS_E  = 0.15;
@@ -324,16 +337,6 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
       if (p) setInputHex(p);
     }
     function handlePicker(ev) { setInputHex(ev.target.value); setTextInput(ev.target.value); }
-    function openPickerAtCursor(ev) {
-      if (ev.target && ev.target.closest && ev.target.closest('[data-no-picker="true"]')) return;
-      var input = pickerRef.current;
-      if (!input) return;
-      var rect = ev.currentTarget.getBoundingClientRect();
-      input.style.left = (ev.clientX - rect.left) + 'px';
-      input.style.top  = (ev.clientY - rect.top)  + 'px';
-      if (typeof input.showPicker === 'function') input.showPicker();
-      else input.click();
-    }
 
     var inputFmt    = fmtOklch(hexToOklch(inputHex));
     var inputTxtCol = txtCol(inputHex);
@@ -342,12 +345,17 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
 
       e('div', {className:'wm-input-panel',
         style:{position:'relative',background:inputHex,borderRadius:4,height:'var(--wm-preview-h, 96px)',
-          marginBottom:16,boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',cursor:'pointer'},
-        onClick:openPickerAtCursor},
-        e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,
-          tabIndex:-1,'aria-hidden':true,
-          style:{position:'absolute',top:0,left:0,width:1,height:1,
-            transform:'translate(-50%, -50%)',opacity:0,pointerEvents:'none',zIndex:1}}),
+          marginBottom:16,boxShadow:'0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',
+          cursor:_hasFinePointer?'pointer':undefined},
+        onClick:_hasFinePointer?openPickerAtCursor:undefined},
+        _hasFinePointer
+          ? e('input', {ref:pickerRef,type:'color',value:inputHex,onChange:handlePicker,
+              tabIndex:-1,'aria-hidden':true,
+              style:{position:'absolute',top:0,left:0,width:1,height:1,
+                transform:'translate(-50%,-50%)',opacity:0,pointerEvents:'none',zIndex:1}})
+          : e('input', {type:'color',value:inputHex,onChange:handlePicker,
+              style:{position:'absolute',inset:0,width:'100%',height:'100%',
+                opacity:0,cursor:'pointer',border:'none',padding:0,zIndex:1}}),
         e('div', {className:'wm-controls',
           style:{position:'absolute',inset:0,zIndex:2,pointerEvents:'none'}},
           e('input', {className:'wm-color-text',type:'text',value:textInput,onChange:handleText,
