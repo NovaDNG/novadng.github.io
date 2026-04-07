@@ -54,6 +54,57 @@ a.color-link:focus:not(.icon) {
   color: #E9E6E2;
 }
 
+/* @property makes --clg-text-fill animatable as a <color>.
+   Initial value uses the same hue as the hover target but alpha=0, so the
+   browser interpolates alpha only (no colour-channel shift through black). */
+@property --clg-text-fill {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgba(233, 230, 226, 0);
+}
+
+/* Gradient text variant: slides gradient background in on hover, matching base animation timing.
+   Single background layer clipped to text for the gradient-text default state.
+   --clg-text-fill is fed directly into -webkit-text-fill-color so it animates
+   via @property: rgba(233,230,226,0) → #E9E6E2 fades the gradient out as white fades in.
+   A ::before pseudo-element (clipped via clip-path) provides the sliding gradient background. */
+a.color-link.color-link--gradient:not(.icon) {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  clip-path: inset(0);
+  background-image: linear-gradient(to right in oklch longer hue, var(--grad-start) 0%, var(--grad-end) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: var(--clg-text-fill);
+  transition: --clg-text-fill 0.2s ease-out;
+}
+
+a.color-link.color-link--gradient:not(.icon)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  background: linear-gradient(to right in oklch longer hue, var(--grad-start) 0%, var(--grad-end) 100%);
+  transform: translateY(100%);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+a.color-link.color-link--gradient:hover:not(.icon),
+a.color-link.color-link--gradient:focus:not(.icon) {
+  --clg-text-fill: #E9E6E2;
+  background-position: 0 0;
+}
+
+a.color-link.color-link--gradient:hover:not(.icon)::before,
+a.color-link.color-link--gradient:focus:not(.icon)::before {
+  transform: translateY(0);
+}
+
 a.color-link:not(.icon) ruby rt,
 html.darkmode a.color-link:not(.icon) ruby rt {
   color: var(--link-color, currentColor);
