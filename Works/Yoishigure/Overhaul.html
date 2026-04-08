@@ -146,11 +146,17 @@
 
   
   <style id="critical-yoi-float-nav">
-    .page-yoishigure .trans,
-    .page-yoishigure-sub .trans {
-      animation: none !important;
-      opacity: 1;
-      transform: none;
+    @keyframes yoiFadeOnly {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .page-yoishigure .trans {
+      animation: none;
+    }
+
+    .page-yoishigure .trans > * {
+      animation: yoiFadeOnly 0.7s;
     }
 
     .yoi-float-nav {
@@ -194,24 +200,28 @@
 <link rel="stylesheet" href="/css/skeleton.css">
 
   
+<link rel="stylesheet" href="/css/font.css">
+
+  
+<link rel="stylesheet" href="/css/typo.css">
+
+  
 <link rel="stylesheet" href="/css/custom.css">
 
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
   <!-- Deferred non-critical CSS -->
-  <link rel="stylesheet" href="/css/font.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="/css/font.css"></noscript>
-  <link rel="stylesheet" href="/css/typo.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="/css/typo.css"></noscript>
   <link rel="stylesheet" href="/css/prism-dark.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/prism-dark.css"></noscript>
   <link rel="stylesheet" href="/css/prism-line-numbers.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/prism-line-numbers.css"></noscript>
   
-  <link rel="stylesheet" href="/css/user.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="/css/user.css"></noscript>
   
-  
-  <link rel="stylesheet" href="/css/yoishigure.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="/css/yoishigure.css"></noscript>
+<link rel="stylesheet" href="/css/yoishigure.css">
+
   
 
   <!-- Favicon
