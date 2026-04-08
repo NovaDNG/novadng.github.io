@@ -202,7 +202,8 @@ html {
 body {
     font-size: 1.72rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: 1.6;
+    line-height: 1.67;
+    letter-spacing: 0.013em;
     font-weight: 400;
     font-family:
         "iA Writer Quattro V",
@@ -565,6 +566,7 @@ td {
     vertical-align: top;
     border-bottom: 1px solid #a0a09d;
     font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 0;
 }
 
 th:first-child,

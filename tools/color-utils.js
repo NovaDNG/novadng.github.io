@@ -249,7 +249,33 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
     return {text: text, hex: parseAnyColorToHex(text) || _fallback};
   }
 
-  var _initPreset = pickPreset();
+  function parseHash() {
+    var result = {hex: null, topN: null, bias: null};
+    try {
+      var nav = typeof performance !== 'undefined' && performance.getEntriesByType &&
+                performance.getEntriesByType('navigation')[0];
+      var navType = nav ? nav.type
+                       : (typeof performance !== 'undefined' && performance.navigation
+                            ? (performance.navigation.type === 1 ? 'reload' : 'navigate')
+                            : 'navigate');
+      var raw = typeof location !== 'undefined' ? location.hash.slice(1) : '';
+      if (!raw) return result;
+      var parts = raw.split('&');
+      if (navType !== 'reload') {
+        var hex = parseAnyColorToHex('#' + parts[0]);
+        if (hex) result.hex = hex;
+      }
+      for (var i = 1; i < parts.length; i++) {
+        var kv = parts[i].split('=');
+        if (kv.length !== 2) continue;
+        if (kv[0] === 'topN') { var n = parseInt(kv[1], 10); if (!isNaN(n)) result.topN = n; }
+        else if (kv[0] === 'bias' && /^(default|dL|dC|dH)$/.test(kv[1])) result.bias = kv[1];
+      }
+    } catch(e) {}
+    return result;
+  }
+  var _parsed = parseHash();
+  var _initPreset = _parsed.hex ? {text: _parsed.hex, hex: _parsed.hex} : pickPreset();
   var e = React.createElement;
   var _defaultTopN  = config.defaultTopN  || 7;
   var _topNOptions  = config.topNOptions  || [7, 13, 33, 56];
@@ -265,11 +291,16 @@ function makeColorMatcherApp(W, baseHexes, formats, config) {
     var inputHex = _ih[0], setInputHex = _ih[1];
     var _ti = React.useState(_initPreset.text);
     var textInput = _ti[0], setTextInput = _ti[1];
-    var _tn = React.useState(_defaultTopN);
+    var _tn = React.useState(_parsed.topN !== null ? _parsed.topN : _defaultTopN);
     var topN = _tn[0], setTopN = _tn[1];
-    var _bi = React.useState('default');
+    var _bi = React.useState(_parsed.bias !== null ? _parsed.bias : 'default');
     var bias = _bi[0], setBias = _bi[1];
     var pickerRef = React.useRef(null);
+    React.useEffect(function() {
+      var newHash = '#' + inputHex.slice(1) + '&topN=' + topN + '&bias=' + bias;
+      if (typeof history !== 'undefined' && location.hash !== newHash)
+        history.replaceState(null, '', newHash);
+    }, [inputHex, topN, bias]);
 
     function openPickerAtCursor(ev) {
       if (ev.target && ev.target.closest && ev.target.closest('[data-no-picker="true"]')) return;
