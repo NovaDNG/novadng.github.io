@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>和色リンカー ⸺ 二色を和色で繋ぐ - NovaDNG</title>
+  
+  <link rel="canonical" href="https://novadng.studio/tools/wcolor-linker.html">
+  
+  <meta name="description" content="">
+  
+  
+  <meta name="author" content="NovaDNG">
+  
+  <meta property="og:image" content="https://novadng.studioundefined">
+  
+  <meta property="og:site_name" content="NovaDNG Studio" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="和色リンカー ⸺ 二色を和色で繋ぐ - NovaDNG" />
+  
+  <meta property="og:description" content="">
+  
+  <meta property="og:url" content="https://novadng.studio/tools/wcolor-linker.html" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="和色リンカー ⸺ 二色を和色で繋ぐ - NovaDNG">
+  
+  <meta name="twitter:description" content="">
+  
+  
+  <meta name="twitter:image" content="https://novadng.studioundefined">
+  
+  <meta name="twitter:url" content="https://novadng.studio/tools/wcolor-linker.html" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style id="critical-theme-bg">
+    html { background: #eae6e2; }
+    html.darkmode { background: rgb(25, 25, 26); }
+    body { background: transparent; }
+  </style>
+
+  <!-- Theme preflight: apply preferred theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var isDark = false;
+      try {
+        var stored = localStorage.getItem('preferredTheme');
+        if (stored === 'dark') {
+          isDark = true;
+        } else if (stored === 'light') {
+          isDark = false;
+        } else {
+          isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      } catch (e) {
+        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      if (isDark) {
+        document.documentElement.classList.add('darkmode');
+      } else {
+        document.documentElement.classList.remove('darkmode');
+      }
+    })();
+  </script>
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'wgq1qkn',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+  <script>
+  (function () {
+    var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function syncThemeControls(isDark) {
+      var darkBtns = document.querySelectorAll('[data-theme-role="dark"]');
+      var lightBtns = document.querySelectorAll('[data-theme-role="light"]');
+      if (!darkBtns.length && !lightBtns.length) return;
+
+      if (isDark) {
+        lightBtns.forEach(function (el) { el.classList.remove('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.add('hidden'); });
+      } else {
+        lightBtns.forEach(function (el) { el.classList.add('hidden'); });
+        darkBtns.forEach(function (el) { el.classList.remove('hidden'); });
+      }
+    }
+
+    function applyTheme(isDark) {
+      document.documentElement.classList.toggle('darkmode', isDark);
+      syncThemeControls(isDark);
+    }
+
+    function preferredIsDark() {
+      var stored = localStorage.getItem('preferredTheme');
+      if (stored === 'dark') return true;
+      if (stored === 'light') return false;
+      return media.matches;
+    }
+
+    window.setDarkMode = function (isDark) {
+      localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
+      applyTheme(isDark);
+    };
+
+    applyTheme(preferredIsDark());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      applyTheme(document.documentElement.classList.contains('darkmode'));
+    }, { once: true });
+
+    function handleSystemThemeChange(e) {
+      if (!localStorage.getItem('preferredTheme')) {
+        applyTheme(e.matches);
+      }
+    }
+
+    if (typeof media.addEventListener === 'function') {
+      media.addEventListener('change', handleSystemThemeChange);
+    } else if (typeof media.addListener === 'function') {
+      media.addListener(handleSystemThemeChange);
+    }
+  })();
+</script>
+
+
+  
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
+
+  
+<link rel="stylesheet" href="/css/skeleton.css">
+
+  
+<link rel="stylesheet" href="/css/font.css">
+
+  
+<link rel="stylesheet" href="/css/typo.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+  <!-- Deferred non-critical CSS -->
+  <link rel="stylesheet" href="/css/prism-dark.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/prism-dark.css"></noscript>
+  <link rel="stylesheet" href="/css/prism-line-numbers.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/prism-line-numbers.css"></noscript>
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/Cube-128.avif">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    --link-hover-accent: #E2001A;
+    text-decoration-color: var(--link-hover-accent);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      var(--link-hover-accent) 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #E2001A;
+  }
+.button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #E2001A;
+    border-color: #E2001A;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    /* border: 1px solid #E2001A; */
+  }
+</style>
+
+
+  <script data-goatcounter="https://novadng.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="NovaDNG Studio" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="NovaDNG Studio" type="application/rss+xml">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div>
+        
+        <div class="trans">
+          
+          
+
+<h2 class="mt-3">和色リンカー ⸺ 二色を和色で繋ぐ</h2>
+
+
+  
+  
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<div id="root"></div>
+<script>
+// ═══════════════════════════════════════════════════════════════
+// 和色 465 colors — same dataset as wcolor-matcher
+// ═══════════════════════════════════════════════════════════════
+const W=[
+["桜色","さくらいろ","#fef4f4"],["小豆色","あずきいろ","#96514d"],["黄金","こがね","#e6b422"],["萌葱色","もえぎいろ","#006e54"],["古代紫","こだいむらさき","#895b8a"],
+["薄桜","うすざくら","#fdeff2"],["枯茶","からちゃ","#8d6449"],["櫨染","はじぞめ","#d9a62e"],["花緑青","はなろくしょう","#00a381"],["茄子紺","なすこん","#824880"],
+["桜鼠","さくらねず","#e9dfe5"],["飴色","あめいろ","#deb068"],["黄朽葉色","きくちばいろ","#d3a243"],["翡翠色","ひすいいろ","#38b48b"],["二藍","ふたあい","#915c8b"],
+["鴇鼠","ときねず","#e4d2d8"],["駱駝色","らくだいろ","#bf794e"],["山吹茶","やまぶきちゃ","#c89932"],["青緑","あおみどり","#00a497"],["京紫","きょうむらさき","#9d5b8b"],
+["虹色","にじいろ","#f6bfbc"],["土色","つちいろ","#bc763c"],["芥子色","からしいろ","#d0af4c"],["水浅葱","みずあさぎ","#80aba9"],["蒲葡","えびぞめ","#7a4171"],
+["珊瑚色","さんごいろ","#f5b1aa"],["黄唐茶","きがらちゃ","#b98c46"],["豆がら茶","まめがらちゃ","#8b968d"],["錆浅葱","さびあさぎ","#5c9291"],["若紫","わかむらさき","#bc64a4"],
+["一斤染","いっこんぞめ","#f5b199"],["桑染","くわぞめ","#b79b5b"],["麹塵","きくじん","#6e7955"],["青碧","せいへき","#478384"],["紅紫","べにむらさき","#b44c97"],
+["宍色","ししいろ","#efab93"],["櫨色","はじいろ","#b77b57"],["山鳩色","やまばといろ","#767c6b"],["御召茶","おめしちゃ","#43676b"],["梅紫","うめむらさき","#aa4c8f"],
+["紅梅色","こうばいいろ","#f2a0a1"],["黄橡","きつるばみ","#b68d4c"],["利休鼠","りきゅうねずみ","#888e7e"],["湊鼠","みなとねずみ","#80989b"],["菖蒲色","あやめいろ","#cc7eb1"],
+["薄紅","うすべに","#f0908d"],["丁字染","ちょうじぞめ","#ad7d4c"],["海松茶","みるちゃ","#5a544b"],["高麗納戸","こうらいなんど","#2c4f54"],["紅藤色","べにふじいろ","#cca6bf"],
+["甚三紅","じんざもみ","#ee827c"],["香染","こうぞめ","#ad7d4c"],["藍海松茶","あいみるちゃ","#56564b"],["百入茶","ももしおちゃ","#1f3134"],["浅紫","あさむらさき","#c4a3bf"],
+["桃色","ももいろ","#f09199"],["枇杷茶","びわちゃ","#ae7c4f"],["千歳茶","せんさいちゃ","#494a41"],["錆鼠","さびねず","#47585c"],["紫水晶","むらさきすいしょう","#e7e7eb"],
+["鴇色","ときいろ","#f4b3c2"],["芝翫茶","しかんちゃ","#ad7e4e"],["藍媚茶","あいこびちゃ","#555647"],["錆鉄御納戸","さびてつおなんど","#485859"],["薄梅鼠","うすうめねず","#dcd6d9"],
+["撫子色","なでしこいろ","#eebbcb"],["焦香","こがれこう","#ae7c58"],["黒緑","くろみどり","#333631"],["舛花色","ますはないろ","#5b7e91"],["霞色","かすみいろ","#c8c2c6"],
+["淡紅藤","あわべにふじ","#e6cde3"],["朽葉色","くちばいろ","#917347"],["柳煤竹","やなぎすすたけ","#5b6356"],["熨斗目花色","のしめはないろ","#426579"],["藤鼠","ふじねず","#a6a5c4"],
+["石竹色","せきちくいろ","#e5abbe"],["桑茶","くわちゃ","#956f29"],["樺茶色","かばちゃいろ","#726250"],["御召御納戸","おめしおなんど","#4c6473"],["半色","はしたいろ","#a69abd"],
+["薄紅梅","うすこうばい","#e597b2"],["路考茶","ろこうちゃ","#8c7042"],["空五倍子色","うつぶしいろ","#9d896c"],["鉄御納戸","てつおなんど","#455765"],["薄色","うすいろ","#a89dac"],
+["桃花色","ももはないろ","#e198b4"],["国防色","こくぼうしょく","#7b6c3e"],["生壁色","なまかべいろ","#94846a"],["湊鼠2","みなとねずみ","#80989b"],["薄鼠","うすねず","#9790a4"],
+["水柿","みずがき","#e4ab9b"],["伽羅色","きゃらいろ","#d8a373"],["肥後煤竹","ひごすすたけ","#897858"],["藍鉄","あいてつ","#393f4c"],["鳩羽鼠","はとばねずみ","#9e8b8e"],
+["ときがら茶","ときがらちゃ","#e09e87"],["江戸茶","えどちゃ","#cd8c5c"],["媚茶","こびちゃ","#716246"],["青褐","あおかち","#393e4f"],["鳩羽色","はとばいろ","#95859c"],
+["退紅","あらぞめ","#d69090"],["樺色","かばいろ","#cd5e3c"],["白橡","しろつるばみ","#cbb994"],["褐返","かちかえし","#203744"],["桔梗鼠","ききょうねず","#95949a"],
+["薄柿","うすがき","#d4acad"],["紅鬱金","べにうこん","#cb8347"],["亜麻色","あまいろ","#d6c6af"],["褐色","かちいろ","#4d4c61"],["紫鼠","むらさきねず","#71686c"],
+["長春色","ちょうしゅんいろ","#c97586"],["土器色","かわらけいろ","#c37854"],["榛色","はしばみいろ","#bfa46f"],["月白","げっぱく","#eaf4fc"],["葡萄鼠","ぶどうねずみ","#705b67"],
+["梅鼠","うめねず","#c099a0"],["狐色","きつねいろ","#c38743"],["灰汁色","あくいろ","#9e9478"],["白菫色","しろすみれいろ","#eaedf7"],["濃色","こきいろ","#634950"],
+["鴇浅葱","ときあさぎ","#b88884"],["黄土色","おうどいろ","#c39143"],["利休茶","りきゅうちゃ","#a59564"],["白花色","しらはないろ","#e8ecef"],["紫鳶","むらさきとび","#5f414b"],
+["梅染","うめぞめ","#b48a76"],["琥珀色","こはくいろ","#bf783a"],["鶯茶","うぐいすちゃ","#715c1f"],["藍白","あいじろ","#ebf6f7"],["濃鼠","こいねず","#4f455c"],
+["蘇芳香","すおうこう","#a86965"],["赤茶","あかちゃ","#bb5535"],["木蘭色","もくらんじき","#c7b370"],["白藍","しらあい","#c1e4e9"],["藤煤竹","ふじすすたけ","#5a5359"],
+["浅蘇芳","あさすおう","#a25768"],["代赭","たいしゃ","#bb5520"],["砂色","すないろ","#dcd3b2"],["水色","みずいろ","#bce2e8"],["滅紫","けしむらさき","#594255"],
+["真朱","まそお","#ec6d71"],["煉瓦色","れんがいろ","#b55233"],["油色","あぶらいろ","#a19361"],["瓶覗","かめのぞき","#a2d7dd"],["紅消鼠","べにけしねずみ","#524748"],
+["赤紫","あかむらさき","#eb6ea5"],["雀茶","すずめちゃ","#aa4f37"],["利休色","りきゅういろ","#8f8667"],["秘色色","ひそくいろ","#abced8"],["似せ紫","にせむらさき","#513743"],
+["躑躅色","つつじいろ","#e95295"],["団十郎茶","だんじゅうろうちゃ","#9f563a"],["梅幸茶","ばいこうちゃ","#887938"],["空色","そらいろ","#a0d8ef"],["灰黄緑","はいきみどり","#e6eae3"],
+["牡丹色","ぼたんいろ","#e7609e"],["柿渋色","かきしぶいろ","#9f563a"],["璃寛茶","りかんちゃ","#6a5d21"],["勿忘草色","わすれなぐさいろ","#89c3eb"],["蕎麦切色","そばきりいろ","#d4dcd6"],
+["今様色","いまよういろ","#d0576b"],["紅鳶","べにとび","#9a493f"],["黄海松茶","きみるちゃ","#918754"],["青藤色","あおふじいろ","#84a2d4"],["薄雲鼠","うすくもねず","#d4dcda"],
+["中紅","なかべに","#c85179"],["灰茶","はいちゃ","#98623c"],["菜種油色","なたねゆいろ","#a69425"],["白群","びゃくぐん","#83ccd2"],["枯野色","かれのいろ","#d3cbc6"],
+["薔薇色","ばらいろ","#e9546b"],["茶色","ちゃいろ","#965042"],["青朽葉","あおくちば","#ada250"],["浅縹","あさはなだ","#84b9cb"],["潤色","うるみいろ","#c8c2be"],
+["韓紅","からくれない","#e95464"],["檜皮色","ひわだいろ","#965036"],["根岸色","ねぎしいろ","#938b4b"],["薄花色","うすはないろ","#698aab"],["利休白茶","りきゅうしろちゃ","#b3ada0"],
+["銀朱","ぎんしゅ","#c85554"],["鳶色","とびいろ","#95483f"],["鶸茶","ひわちゃ","#8c8861"],["納戸色","なんどいろ","#008899"],["茶鼠","ちゃねずみ","#a99e93"],
+["赤紅","あかべに","#c53d43"],["柿茶","かきちゃ","#954e2a"],["柳茶","やなぎちゃ","#a1a46d"],["浅葱色","あさぎいろ","#00a3af"],["胡桃染","くるみぞめ","#a58f86"],
+["紅緋","べにひ","#e83929"],["弁柄色","べんがらいろ","#8f2e14"],["海松色","みるいろ","#726d40"],["花浅葱","はなあさぎ","#2a83a2"],["江戸鼠","えどねず","#928178"],
+["赤","あか","#e60033"],["赤錆色","あかさびいろ","#8a3319"],["鶯色","うぐいすいろ","#928c36"],["新橋色","しんばしいろ","#59b9c6"],["煤色","すすいろ","#887f7a"],
+["猩々緋","しょうじょうひ","#e2041b"],["褐色","かっしょく","#8a3b00"],["緑黄色","りょくおうしょく","#dccb18"],["天色","あまいろ","#2ca9e1"],["丁子茶","ちょうじちゃ","#b4866b"],
+["紅","くれない","#d7003a"],["栗梅","くりうめ","#852e19"],["鶸色","ひわいろ","#d7cf3a"],["露草色","つゆくさいろ","#38a1db"],["柴染","ふしぞめ","#b28c6e"],
+["深緋","こきひ","#c9171e"],["紅檜皮","べにひはだ","#7b4741"],["抹茶色","まっちゃいろ","#c5c56a"],["青","あお","#0095d9"],["宗伝唐茶","そうでんからちゃ","#a16d5d"],
+["緋色","ひいろ","#d3381c"],["海老茶","えびちゃ","#773c30"],["若草色","わかくさいろ","#c3d825"],["薄藍","うすあい","#0094c8"],["砺茶","とのちゃ","#9f6f55"],
+["赤丹","あかに","#ce5242"],["唐茶","からちゃ","#783c1d"],["黄緑","きみどり","#b8d200"],["縹色","はなだいろ","#2792c3"],["煎茶色","せんちゃいろ","#8c6450"],
+["紅赤","べにあか","#d9333f"],["栗色","くりいろ","#762f07"],["若芽色","わかめいろ","#e0ebaf"],["紺碧","こんぺき","#007bbb"],["銀煤竹","ぎんすすだけ","#856859"],
+["臙脂","えんじ","#b94047"],["赤銅色","しゃくどういろ","#752100"],["若菜色","わかないろ","#d8e698"],["薄群青","うすぐんじょう","#5383c3"],["黄枯茶","きがらちゃ","#765c47"],
+["朱・緋","あけ","#ba2636"],["錆色","さびいろ","#6c3524"],["若苗色","わかなえいろ","#c7dc68"],["薄花桜","うすはなざくら","#5a79ba"],["煤竹色","すすたけいろ","#6f514c"],
+["茜色","あかねいろ","#b7282e"],["赤褐色","せっかっしょく","#683f36"],["青丹","あおに","#99ab4e"],["群青色","ぐんじょういろ","#4c6cb3"],["焦茶","こげちゃ","#6f4b3e"],
+["紅海老茶","べにえびちゃ","#a73836"],["茶褐色","ちゃかっしょく","#664032"],["草色","くさいろ","#7b8d42"],["杜若色","かきつばたいろ","#3e62ad"],["黒橡","くろつるばみ","#544a47"],
+["蘇芳","すおう","#9e3d3f"],["栗皮茶","くりかわちゃ","#6d3c32"],["苔色","こけいろ","#69821b"],["瑠璃色","るりいろ","#1e50a2"],["憲法色","けんぽういろ","#543f32"],
+["真紅","しんく","#a22041"],["黒茶","くろちゃ","#583822"],["萌黄","もえぎ","#aacf53"],["薄縹","うすはなだ","#507ea4"],["涅色","くりいろ","#554738"],
+["濃紅","こいくれない","#a22041"],["葡萄茶","えびちゃ","#6c2c2f"],["苗色","なえいろ","#b0ca71"],["瑠璃紺","るりこん","#19448e"],["檳榔子染","びんろうじぞめ","#433d3c"],
+["象牙色","ぞうげいろ","#f8f4e6"],["葡萄色","えびいろ","#640125"],["若葉色","わかばいろ","#b9d08b"],["紺瑠璃","こんるり","#164a84"],["黒鳶","くろとび","#432f2f"],
+["練色","ねりいろ","#ede4cd"],["萱草色","かんぞういろ","#f8b862"],["松葉色","まつばいろ","#839b5c"],["藍色","あいいろ","#165e83"],["赤墨","あかすみ","#3f312b"],
+["灰白色","かいはくしょく","#e9e4d4"],["柑子色","こうじいろ","#f6ad49"],["夏虫色","なつむしいろ","#cee4ae"],["青藍","せいらん","#274a78"],["黒紅","くろべに","#302833"],
+["蒸栗色","むしぐりいろ","#ebe1a9"],["金茶","きんちゃ","#f39800"],["鶸萌黄","ひわもえぎ","#82ae46"],["深縹","こきはなだ","#2a4073"],["白","しろ","#ffffff"],
+["女郎花","おみなえし","#f2f2b0"],["蜜柑色","みかんいろ","#f08300"],["柳色","やなぎいろ","#a8c97f"],["紺色","こんいろ","#223a70"],["胡粉色","ごふんいろ","#fffffc"],
+["枯草色","かれくさいろ","#e4dc8a"],["鉛丹色","えんたんいろ","#ec6d51"],["青白橡","あおしろつるばみ","#9ba88d"],["紺青","こんじょう","#192f60"],["卯の花色","うのはないろ","#f7fcfe"],
+["淡黄","たんこう","#f8e58c"],["黄丹","おうに","#ee7948"],["柳鼠","やなぎねず","#c8d5bb"],["留紺","とめこん","#1c305c"],["白磁","はくじ","#f8fbf8"],
+["白茶","しらちゃ","#ddbb99"],["柿色","かきいろ","#ed6d3d"],["裏葉柳","うらはやなぎ","#c1d8ac"],["濃藍","こいあい","#0f2350"],["生成り色","きなりいろ","#fbfaf5"],
+["赤白橡","あかしろつるばみ","#d7a98c"],["黄赤","きあか","#ec6800"],["山葵色","わさびいろ","#a8bf93"],["鉄紺","てつこん","#17184b"],["乳白色","にゅうはくしょく","#f3f3f3"],
+["洗柿","あらいがき","#f2c9ac"],["人参色","にんじんいろ","#ec6800"],["老竹色","おいたけいろ","#769164"],["漆黒","しっこく","#0d0015"],["白練","しろねり","#f3f3f2"],
+["鳥の子色","とりのこいろ","#fff1cf"],["橙色","だいだいいろ","#ee7800"],["白緑","びゃくろく","#d6e9ca"],["淡藤色","あわふじいろ","#bbc8e6"],["素色","そしょく","#eae5e3"],
+["蜂蜜色","はちみついろ","#fddea5"],["照柿","てりがき","#eb6238"],["淡萌黄","うすもえぎ","#93ca76"],["藤色","ふじいろ","#bbbcde"],["白梅鼠","しらうめねず","#e5e4e6"],
+["肌色","はだいろ","#fce2c4"],["赤橙","あかだいだい","#ea5506"],["柳染","やなぎぞめ","#93b881"],["紅掛空色","べにかけそらいろ","#8491c3"],["白鼠","しろねず","#dcdddd"],
+["薄卵色","うすたまごいろ","#fde8d0"],["金赤","きんあか","#ea5506"],["薄萌葱","うすもえぎ","#badcad"],["紅碧","べにみどり","#8491c3"],["絹鼠","きぬねず","#dddcd6"],
+["雄黄","ゆうおう","#f9c89b"],["朱色","しゅいろ","#eb6101"],["深川鼠","ふかがわねずみ","#97a791"],["紺桔梗","こんききょう","#4d5aaf"],["灰青","はいあお","#c0c6c9"],
+["洒落柿","しゃれがき","#f7bd8f"],["小麦色","こむぎいろ","#e49e61"],["若緑","わかみどり","#98d98e"],["花色","はないろ","#4d5aaf"],["銀鼠","ぎんねず","#afafb0"],
+["赤香","あかこう","#f6b894"],["丹色","にいろ","#e45e32"],["浅緑","あさみどり","#88cb7f"],["紺藍","こんあい","#4a488e"],["薄鈍","うすにび","#adadad"],
+["砥粉色","とのこいろ","#f4dda5"],["黄茶","きちゃ","#e17b34"],["薄緑","うすみどり","#69b076"],["紅桔梗","べにききょう","#4d4398"],["薄墨色","うすずみいろ","#a3a3a2"],
+["肉色","にくいろ","#f1bf99"],["肉桂色","にっけいいろ","#dd7a56"],["青鈍","あおにび","#6b7b6e"],["桔梗色","ききょういろ","#5654a2"],["錫色","すずいろ","#9ea1a3"],
+["人色","ひといろ","#f1bf99"],["赤朽葉色","あかくちばいろ","#db8449"],["青磁鼠","せいじねず","#bed2c3"],["藤納戸","ふじなんど","#706caa"],["素鼠","すねずみ","#9fa0a0"],
+["丁子色","ちょうじいろ","#efcd9a"],["黄櫨染","こうろぜん","#d66a35"],["薄青","うすあお","#93b69c"],["紅掛花色","べにかけはないろ","#68699b"],["鼠色","ねずみいろ","#949495"],
+["香色","こういろ","#efcd9a"],["蒲公英色","たんぽぽいろ","#ffd900"],["錆青磁","さびせいじ","#a6c8b2"],["紫苑色","しおんいろ","#867ba9"],["源氏鼠","げんじねず","#888084"],
+["薄香","うすこう","#f0cfa0"],["黄色","きいろ","#ffd900"],["緑青色","ろくしょういろ","#47885e"],["白藤色","しらふじいろ","#dbd0e6"],["灰色","はいいろ","#7d7d7d"],
+["浅黄","うすき","#edd3a1"],["中黄","ちゅうき","#ffea00"],["千歳緑","ちとせみどり","#316745"],["藤紫","ふじむらさき","#a59aca"],["鉛色","なまりいろ","#7b7c7d"],
+["枯色","かれいろ","#e0c38c"],["菜の花色","なのはないろ","#ffec47"],["若竹色","わかたけいろ","#68be8d"],["菫色","すみれいろ","#7058a3"],["鈍色","にびいろ","#727171"],
+["淡香","うすこう","#f3bf88"],["黄檗色","きはだいろ","#fef263"],["緑","みどり","#3eb370"],["青紫","あおむらさき","#674598"],["墨","すみ","#595857"],
+["杏色","あんずいろ","#f7b977"],["卵色","たまごいろ","#fcd575"],["常磐色","ときわいろ","#007b43"],["菖蒲色","しょうぶいろ","#674196"],["丼鼠","どぶねずみ","#595455"],
+["東雲色","しののめいろ","#f19072"],["花葉色","はなばいろ","#fbd26b"],["千草鼠","ちぐさねず","#bed3ca"],["竜胆色","りんどういろ","#9079ad"],["消炭色","けしずみいろ","#524e4d"],
+["曙色","あけぼのいろ","#f19072"],["刈安色","かりやすいろ","#f5e56b"],["千草色","ちぐさいろ","#92b5a9"],["江戸紫","えどむらさき","#745399"],["藍墨茶","あいすみちゃ","#474a4d"],
+["珊瑚朱色","さんごしゅいろ","#ee836f"],["玉蜀黍色","とうもろこしいろ","#eec362"],["青磁色","せいじいろ","#7ebea5"],["本紫","ほんむらさき","#65318e"],["羊羹色","ようかんいろ","#383c3c"],
+["深支子","こきくちなし","#eb9b6f"],["金糸雀色","かなりあいろ","#ebd842"],["青竹色","あおたけいろ","#7ebeab"],["葡萄色","ぶどういろ","#522f60"],["蝋色","ろういろ","#2b2b2b"],
+["纁","そひ","#e0815e"],["黄支子色","きくちなしいろ","#ffdb4f"],["常磐緑","ときわみどり","#028760"],["深紫","ふかむらさき","#493759"],["黒","くろ","#2b2b2b"],
+["浅緋","うすきひ","#df7163"],["支子色","くちなしいろ","#fbca4d"],["木賊色","とくさいろ","#3b7960"],["紫黒","しこく","#2e2930"],["烏羽色","からすばいろ","#180614"],
+["真赭","まそほ","#d57c6b"],["向日葵色","ひまわりいろ","#fcc800"],["天鵞絨","びろうど","#2f5d50"],["紫","むらさき","#884898"],["鉄黒","てつぐろ","#281a14"],
+["洗朱","あらいしゅ","#d0826c"],["山吹色","やまぶきいろ","#f8b500"],["虫襖","むしあお","#3a5b52"],["薄葡萄","うすぶどう","#c0a2c7"],["濡羽色","ぬればいろ","#000b00"],
+["遠州茶","えんしゅうちゃ","#ca8269"],["鬱金色","うこんいろ","#fabf14"],["革色","かわいろ","#475950"],["紫紺","しこん","#460e44"],["黒檀","こくたん","#250d00"],
+["紅樺色","べにかばいろ","#bb5548"],["藤黄","とうおう","#f7c114"],["深緑","ふかみどり","#00552e"],["暗紅色","あんこうしょく","#74325c"],["憲法黒茶","けんぽうくろちゃ","#241a08"],
+["赭","そほ","#ab6953"],["金色","こんじき","#e6b422"],["鉄色","てついろ","#005243"],["桑の実色","くわのみいろ","#55295b"],["暗黒色","あんこくしょく","#16160e"]
+];
+</script>
+<script src="color-utils.js"></script>
+<link rel="stylesheet" href="color-matcher.css">
+<script>
+(function() {
+  var e = React.createElement;
+
+  var COLORS = W.map(function(c) {
+    return { name: c[0], reading: c[1], hex: c[2], oklch: hexToOklch(c[2]) };
+  });
+
+  // ── Algorithm ─────────────────────────────────────────────────
+  // Normalize H (degrees) to L-comparable scale for projection
+  var H_SCALE = 1 / 180;
+
+  function wrapH(dh) {
+    while (dh >  180) dh -= 360;
+    while (dh < -180) dh += 360;
+    return dh;
+  }
+
+  // Projection parameter t along A→B (flat Euclidean, H normalized)
+  function projParam(aLch, bLch, cLch) {
+    var vL = bLch[0]-aLch[0], vC = bLch[1]-aLch[1], vH = wrapH(bLch[2]-aLch[2]) * H_SCALE;
+    var dL = cLch[0]-aLch[0], dC = cLch[1]-aLch[1], dH = wrapH(cLch[2]-aLch[2]) * H_SCALE;
+    var denom = vL*vL + vC*vC + vH*vH;
+    if (denom < 1e-12) return 0.5;
+    return (dL*vL + dC*vC + dH*vH) / denom;
+  }
+
+  // Find the smoothest path from A to B through 和色 via monotone minimax DP.
+  // Candidates are all 和色 that project between A and B (t∈[0,1]), sorted by t.
+  // DP minimizes the maximum single deltaOklch step along the path (bottleneck).
+  function findSmoothPath(aHex, bHex) {
+    var aOklch = hexToOklch(aHex);
+    var bOklch = hexToOklch(bHex);
+
+    var cands = [];
+    for (var i = 0; i < COLORS.length; i++) {
+      var t = projParam(aOklch, bOklch, COLORS[i].oklch);
+      if (t >= 0 && t <= 1)
+        cands.push({ name: COLORS[i].name, reading: COLORS[i].reading,
+                     hex: COLORS[i].hex, oklch: COLORS[i].oklch, t: t });
+    }
+    cands.sort(function(a, b) { return a.t - b.t; });
+
+    // nodes[0]=A, nodes[1..m]=cands, nodes[m+1]=B
+    var m = cands.length;
+    var nodes = [{ oklch: aOklch }].concat(cands).concat([{ oklch: bOklch }]);
+    var last = m + 1;
+
+    // cost[j] = min bottleneck to reach node j from A along a monotone path
+    var cost = new Array(last + 1).fill(Infinity);
+    var prev = new Array(last + 1).fill(-1);
+    cost[0] = 0;
+
+    for (var j = 1; j <= last; j++) {
+      for (var i = 0; i < j; i++) {
+        if (cost[i] === Infinity) continue;
+        var d = deltaOklch(nodes[i].oklch, nodes[j].oklch);
+        var c = Math.max(cost[i], d);
+        if (c < cost[j]) { cost[j] = c; prev[j] = i; }
+      }
+    }
+
+    // Reconstruct path indices A→...→B, strip endpoints, return cands
+    var path = [];
+    var cur = last;
+    while (cur !== -1) { path.unshift(cur); cur = prev[cur]; }
+    return path.slice(1, -1).map(function(i) { return cands[i - 1]; });
+  }
+
+  // ── URL hash ──────────────────────────────────────────────────
+  function parseLinkerHash() {
+    try {
+      var nav = typeof performance !== 'undefined' && performance.getEntriesByType &&
+                performance.getEntriesByType('navigation')[0];
+      var navType = nav ? nav.type
+                       : (typeof performance !== 'undefined' && performance.navigation
+                            ? (performance.navigation.type === 1 ? 'reload' : 'navigate')
+                            : 'navigate');
+      if (navType === 'reload') return { hexA: null, hexB: null };
+      var raw = typeof location !== 'undefined' ? location.hash.slice(1) : '';
+      if (!raw) return { hexA: null, hexB: null };
+      var parts = raw.split('/');
+      var hexA = parts[0] ? parseAnyColorToHex('#' + parts[0]) : null;
+      var hexB = parts[1] ? parseAnyColorToHex('#' + parts[1]) : null;
+      return { hexA: hexA, hexB: hexB };
+    } catch(err) { return { hexA: null, hexB: null }; }
+  }
+  var _initHash = parseLinkerHash();
+
+  var BASE_HEXES = ['#ffeddb','#ffe6e6','#d9e6d9','#bce2e8','#fad2d8','#f5c5d1','#ffb7c5',
+                    '#ee7800','#d3381c','#d7003a','#e60033','#b7282e','#727171','#4c6473',
+                    '#674598','#5654a2','#165e83','#2a83a2','#0095d9','#38b48b'];
+  var FORMATS = ['okhcl', 'rgb', 'hex', 'oklab', 'hsv'];
+  function pickRandom() {
+    var hex = BASE_HEXES[Math.floor(Math.random() * BASE_HEXES.length)];
+    var fmt = FORMATS[Math.floor(Math.random() * FORMATS.length)];
+    var text = formatAsInputColor(hex, fmt);
+    return { text: text, hex: hex };
+  }
+  function pickRandomExcluding(excludeHex) {
+    var pool = BASE_HEXES.filter(function(h) { return h !== excludeHex; });
+    var hex = pool[Math.floor(Math.random() * pool.length)];
+    var fmt = FORMATS[Math.floor(Math.random() * FORMATS.length)];
+    return { text: formatAsInputColor(hex, fmt), hex: hex };
+  }
+  function hashPreset(hex) { return hex ? { text: hex, hex: hex } : null; }
+  var _defaultA = hashPreset(_initHash.hexA) || pickRandom();
+  var _defaultB = hashPreset(_initHash.hexB) || pickRandomExcluding(_defaultA.hex);
+
+  var _hasFinePointer = typeof window !== 'undefined' &&
+    !!(window.matchMedia && window.matchMedia('(pointer: fine)').matches);
+  var _narrowMQ = typeof window !== 'undefined' && window.matchMedia
+    ? window.matchMedia('(max-width: 680px)') : null;
+  var _landscapeMQ = typeof window !== 'undefined' && window.matchMedia
+    ? window.matchMedia('(orientation: landscape)') : null;
+
+  // ── App ───────────────────────────────────────────────────────
+  function App() {
+    var _n = React.useState(_narrowMQ ? _narrowMQ.matches : false);
+    var isNarrow = _n[0], setIsNarrow = _n[1];
+    var _ls = React.useState(_landscapeMQ ? _landscapeMQ.matches : false);
+    var isLandscape = _ls[0], setIsLandscape = _ls[1];
+
+    React.useEffect(function() {
+      if (!_narrowMQ) return;
+      var h = function(ev) { setIsNarrow(ev.matches); };
+      _narrowMQ.addEventListener('change', h);
+      return function() { _narrowMQ.removeEventListener('change', h); };
+    }, []);
+    React.useEffect(function() {
+      if (!_landscapeMQ) return;
+      var h = function(ev) { setIsLandscape(ev.matches); };
+      _landscapeMQ.addEventListener('change', h);
+      return function() { _landscapeMQ.removeEventListener('change', h); };
+    }, []);
+
+    var _a  = React.useState(_defaultA.hex);
+    var hexA = _a[0], setHexA = _a[1];
+    var _b  = React.useState(_defaultB.hex);
+    var hexB = _b[0], setHexB = _b[1];
+    var _ta = React.useState(_defaultA.text);
+    var textA = _ta[0], setTextA = _ta[1];
+    var _tb = React.useState(_defaultB.text);
+    var textB = _tb[0], setTextB = _tb[1];
+    var refA = React.useRef(null);
+    var refB = React.useRef(null);
+
+    React.useEffect(function() {
+      var newHash = '#' + hexA.slice(1) + '/' + hexB.slice(1);
+      if (typeof history !== 'undefined' && location.hash !== newHash)
+        history.replaceState(null, '', newHash);
+    }, [hexA, hexB]);
+
+    var results = React.useMemo(function() {
+      return findSmoothPath(hexA, hexB);
+    }, [hexA, hexB]);
+
+    function openPicker(ref, ev) {
+      if (ev.target && ev.target.closest && ev.target.closest('[data-no-picker="true"]')) return;
+      var input = ref.current;
+      if (!input) return;
+      var rect = ev.currentTarget.getBoundingClientRect();
+      input.style.left = (ev.clientX - rect.left) + 'px';
+      input.style.top  = (ev.clientY - rect.top)  + 'px';
+      if (typeof input.showPicker === 'function') input.showPicker();
+      else input.click();
+    }
+
+    var tcA = txtCol(hexA), tcB = txtCol(hexB);
+    var bStyle = {fontSize:18, fontFamily:"'Berkeley Mono','Fira Code',monospace",
+                  fontWeight:600, padding:'4px 8px', background:'transparent',
+                  border:'none', borderRadius:2, outline:'none', pointerEvents:'auto', marginBottom:0};
+
+    // ── Single gradient panel ──────────────────────────────────
+    var gradDir = isNarrow ? 'to bottom right' : 'to right';
+    var panel = e('div', {
+      style: { position: 'relative', borderRadius: 4,
+               height: isNarrow ? 'calc(var(--wm-preview-h, 96px) * 2)' : 'var(--wm-preview-h, 96px)',
+               marginBottom: 16,
+               background: 'linear-gradient(' + gradDir + ' in oklch shorter hue, ' + hexA + ', ' + hexB + ')',
+               boxShadow: '0 4px 8px 4px oklch(0.492 0.0222 214.1 / 0.16)',
+               display: 'flex', flexDirection: isNarrow ? 'column' : 'row' }},
+
+      // Left half — Color A
+      e('div', { style: { position: 'relative', flex: 1,
+                           cursor: _hasFinePointer ? 'pointer' : undefined },
+        onClick: _hasFinePointer ? function(ev) { openPicker(refA, ev); } : undefined },
+        _hasFinePointer
+          ? e('input', { ref: refA, type: 'color', value: hexA,
+              onChange: function(ev) { setHexA(ev.target.value); setTextA(ev.target.value); },
+              tabIndex: -1, 'aria-hidden': true,
+              style: { position: 'absolute', top: 0, left: 0, width: 1, height: 1,
+                       transform: 'translate(-50%,-50%)', opacity: 0,
+                       pointerEvents: 'none', zIndex: 1 } })
+          : e('input', { type: 'color', value: hexA,
+              onChange: function(ev) { setHexA(ev.target.value); setTextA(ev.target.value); },
+              style: { position: 'absolute', inset: 0, width: '100%', height: '100%',
+                       opacity: 0, cursor: 'pointer', border: 'none', padding: 0, zIndex: 1 } }),
+        e('div', { style: { position: 'absolute', inset: 0, zIndex: 2, pointerEvents: 'none',
+                             display: 'flex', alignItems: 'center', justifyContent: 'flex-start',
+                             paddingLeft: 16 } },
+          e('input', { className: 'wm-color-text', type: 'text', value: textA,
+            onChange: function(ev) {
+              var v = ev.target.value; setTextA(v);
+              var p = parseAnyColorToHex(v); if (p) setHexA(p);
+            },
+            placeholder: 'hex / oklch', spellCheck: false, 'data-no-picker': 'true',
+            style: Object.assign({}, bStyle, {
+              color: tcA, borderBottom: '2px solid ' + tcA + '80',
+              textAlign: 'left', width: '100%', maxWidth: 288 })
+          })
+        )
+      ),
+
+      // Right half — Color B
+      e('div', { style: { position: 'relative', flex: 1,
+                           cursor: _hasFinePointer ? 'pointer' : undefined },
+        onClick: _hasFinePointer ? function(ev) { openPicker(refB, ev); } : undefined },
+        _hasFinePointer
+          ? e('input', { ref: refB, type: 'color', value: hexB,
+              onChange: function(ev) { setHexB(ev.target.value); setTextB(ev.target.value); },
+              tabIndex: -1, 'aria-hidden': true,
+              style: { position: 'absolute', top: 0, left: 0, width: 1, height: 1,
+                       transform: 'translate(-50%,-50%)', opacity: 0,
+                       pointerEvents: 'none', zIndex: 1 } })
+          : e('input', { type: 'color', value: hexB,
+              onChange: function(ev) { setHexB(ev.target.value); setTextB(ev.target.value); },
+              style: { position: 'absolute', inset: 0, width: '100%', height: '100%',
+                       opacity: 0, cursor: 'pointer', border: 'none', padding: 0, zIndex: 1, marginBottom: 0 } }),
+        e('div', { style: { position: 'absolute', inset: 0, zIndex: 2, pointerEvents: 'none',
+                             display: 'flex', alignItems: 'center', justifyContent: 'flex-end',
+                             paddingRight: 16 } },
+          e('input', { className: 'wm-color-text', type: 'text', value: textB,
+            onChange: function(ev) {
+              var v = ev.target.value; setTextB(v);
+              var p = parseAnyColorToHex(v); if (p) setHexB(p);
+            },
+            placeholder: 'hex / oklch', spellCheck: false, 'data-no-picker': 'true',
+            style: Object.assign({}, bStyle, {
+              color: tcB, borderBottom: '2px solid ' + tcB + '80',
+              textAlign: 'right', width: '100%', maxWidth: 288 })
+          })
+        )
+      )
+    );
+
+    // ── Results list ───────────────────────────────────────────
+    var emptyMsg = e('div', { style: { textAlign: 'center', color: '#aaa', padding: 32,
+                                        fontFamily: "'Berkeley Mono','Fira Code',monospace",
+                                        fontSize: 14 } }, '近傍色なし');
+    var list;
+    if (results.length === 0) {
+      list = emptyMsg;
+    } else if (isLandscape) {
+      // ── Landscape: horizontal scroll ───────────────────────────
+      var cards = results.map(function(c, i) {
+        var tc = txtCol(c.hex);
+        return e('div', { key: i, style: {
+          height: 256, flexShrink: 0, background: c.hex, borderRadius: 4,
+          display: 'flex', flexDirection: 'column',
+          alignItems: 'stretch', justifyContent: 'space-between',
+          padding: '16px 12px', color: tc
+        }},
+          e('span', { style: { fontSize: 13, fontWeight: 600, opacity: 0.87,
+                                fontFamily: "'Berkeley Mono','Fira Code',monospace",
+                                lineHeight: 1.15, alignSelf: 'center' } }, i + 1),
+          e('div', { style: { flex: 1, display: 'flex', flexDirection: 'column',
+                               justifyContent: 'flex-start',
+                               gap: 8, paddingTop: 8 } },
+            e('div', { style: { display: 'inline-flex', alignItems: 'flex-start',
+                                 justifyContent: 'flex-start', gap: 4,
+                                 width: 'fit-content', alignSelf: 'center' } },
+              e('span', { style: { fontSize: 22, opacity: 0.87, fontWeight: 600,
+                                    lineHeight: 1, textAlign: 'left',
+                                    writingMode: 'vertical-rl',
+                                    fontFamily: 'Toppan Bunkyu Midashi Mincho, Ten Mincho, serif' } },
+                c.name),
+              e('span', { style: { fontSize: 14,
+                                    lineHeight: 1.15, textAlign: 'center',
+                                    writingMode: 'vertical-rl' } },
+                c.reading)
+            )
+          ),
+          e('span', { style: { fontSize: 11, opacity: 0.87, textAlign: 'center',
+                                fontFamily: "'Berkeley Mono','Fira Code',monospace",
+                                letterSpacing: 1 } }, c.hex)
+        );
+      });
+      list = e('div', { style: {
+        overflowX: 'auto',
+        width: '96vw', marginLeft: 'calc(50% - 48vw)',
+        WebkitOverflowScrolling: 'touch'
+      }},
+        e('div', { style: {
+          display: 'flex', flexDirection: 'row', gap: 8, alignItems: 'stretch',
+          height: 288, width: 'max-content', margin: '0 auto'
+        }}, cards)
+      );
+    } else {
+      // ── Portrait: vertical list ────────────────────────────────
+      var rows = results.map(function(c, i) {
+        var tc = txtCol(c.hex);
+        return e('div', { key: i,
+          style: { display: 'flex', alignItems: 'stretch', borderRadius: 4,
+                   overflow: 'hidden', background: c.hex } },
+          e('div', { style: { width: 48, flexShrink: 0, background: c.hex,
+                               display: 'flex', alignItems: 'center', justifyContent: 'center' } },
+            e('span', { style: { color: tc, fontSize: 16, fontWeight: 600, opacity: 0.87 } }, i+1)
+          ),
+          e('div', { style: { flex: 1, padding: '8px 8px 8px 2px', display: 'flex',
+                               alignItems: 'center', gap: 10, color: tc } },
+            e('div', { style: { flex: 1, display: 'flex', flexDirection: 'column',
+                                 justifyContent: 'center', gap: 2 } },
+              e('div', { style: { display: 'flex', alignItems: 'baseline', gap: 12 } },
+                e('span', { style: { fontSize: 20,
+                  fontFamily: 'Toppan Bunkyu Midashi Mincho, Ten Mincho, serif',
+                  fontWeight: 600 } }, c.name),
+                e('span', { style: { fontSize: 14, opacity: 0.87 } }, c.reading)
+              ),
+              e('span', { style: { fontFamily: "'Berkeley Mono','Fira Code',monospace",
+                                    fontSize: 14, fontWeight: 600, opacity: 0.96 } }, c.hex)
+            )
+          )
+        );
+      });
+      list = e('div', { style: { display: 'flex', flexDirection: 'column', gap: 8 } }, rows);
+    }
+
+    var summary = e('div', {
+      style: { marginBottom: 8, fontSize: 13, color: '#888',
+               fontFamily: "'Berkeley Mono','Fira Code',monospace" }},
+      results.length > 0 ? results.length + '色のリンク' : ''
+    );
+
+    var orderNote = e('div', { style: {
+      marginTop: 20, padding: '12px 16px', background: '#fefefe', borderRadius: 4,
+      fontSize: 14, fontFamily: "'Berkeley Mono','Fira Code',monospace",
+      color: '#333', lineHeight: 1.5
+    }},
+      '並び順について：候補色は入力A→BをOKLCH空間で直線投影し、投影係数',
+      e('span', { style: { color: '#4c6473' } }, 't'),
+      'が0〜1に入る和色のみを採用します。次に、A→B方向の単調経路の中から、各ステップの',
+      e('span', { style: { color: '#4c6473' } }, 'ΔOKLCH'),
+      'の最大値（ボトルネック）が最小になる経路を動的計画法で選び、表示順はその経路順です。'
+    );
+
+    return e('div', { style: { maxWidth: 960, margin: '0 auto', padding: '12px 0' } },
+      panel, summary, list, orderNote
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(e(App));
+})();
+</script>
+<details class="colorlink-details">
+  <summary>Random Color Table</summary>
+  <table class="colorlink-table">
+    <thead>
+      <tr>
+        <th>HEX</th>
+        <th>RGB</th>
+        <th>OKLCH</th>
+        <th>NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code style="color:#FFEDDB">#FFEDDB</code></td>
+        <td><code style="color:rgb(255, 237, 219)">255, 237, 219</code></td>
+        <td><code style="color:oklch(0.956 0.0309 67.4)">0.956 0.0309 67.4</code></td>
+        <td><ruby>薄茶色<rt>うすちゃいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#FFE6E6">#FFE6E6</code></td>
+        <td><code style="color:rgb(255, 230, 230)">255, 230, 230</code></td>
+        <td><code style="color:oklch(0.945 0.0274 17.6)">0.945 0.0274 17.6</code></td>
+        <td><ruby>薄紅色<rt>うすべにいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#D9E6D9">#D9E6D9</code></td>
+        <td><code style="color:rgb(217, 230, 217)">217, 230, 217</code></td>
+        <td><code style="color:oklch(0.912 0.0223 145.4)">0.912 0.0223 145.4</code></td>
+        <td><ruby>薄緑色<rt>うすみどりいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#BCE2E8">#BCE2E8</code></td>
+        <td><code style="color:rgb(188, 226, 232)">188, 226, 232</code></td>
+        <td><code style="color:oklch(0.888 0.0405 208.1)">0.888 0.0405 208.1</code></td>
+        <td><ruby>水色<rt>みずいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#FAD2D8">#FAD2D8</code></td>
+        <td><code style="color:rgb(250, 210, 216)">250, 210, 216</code></td>
+        <td><code style="color:oklch(0.899 0.0455 7.9)">0.899 0.0455 7.9</code></td>
+        <td><ruby>淡紅色<rt>たんこういろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#F5C5D1">#F5C5D1</code></td>
+        <td><code style="color:rgb(245, 197, 209)">245, 197, 209</code></td>
+        <td><code style="color:oklch(0.869 0.0566 1.6)">0.869 0.0566 1.6</code></td>
+        <td><ruby>夕映え<rt>ゆうばえ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#FFB7C5">#FFB7C5</code></td>
+        <td><code style="color:rgb(255, 183, 197)">255, 183, 197</code></td>
+        <td><code style="color:oklch(0.850 0.0851 6.2)">0.850 0.0851 6.2</code></td>
+        <td><ruby>桜色<rt>さくらいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#EE7800">#EE7800</code></td>
+        <td><code style="color:rgb(238, 120, 0)">238, 120, 0</code></td>
+        <td><code style="color:oklch(0.696 0.1757 53.4)">0.696 0.1757 53.4</code></td>
+        <td><ruby>橙色<rt>だいだいいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#D3381C">#D3381C</code></td>
+        <td><code style="color:rgb(211, 56, 28)">211, 56, 28</code></td>
+        <td><code style="color:oklch(0.574 0.1959 32.4)">0.574 0.1959 32.4</code></td>
+        <td><ruby>緋色<rt>ひいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#D7003A">#D7003A</code></td>
+        <td><code style="color:rgb(215, 0, 58)">215, 0, 58</code></td>
+        <td><code style="color:oklch(0.557 0.2233 19.3)">0.557 0.2233 19.3</code></td>
+        <td><ruby>紅<rt>くれない</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#E60033">#E60033</code></td>
+        <td><code style="color:rgb(230, 0, 51)">230, 0, 51</code></td>
+        <td><code style="color:oklch(0.584 0.2354 22.3)">0.584 0.2354 22.3</code></td>
+        <td><ruby>赤<rt>あか</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#B7282E">#B7282E</code></td>
+        <td><code style="color:rgb(183, 40, 46)">183, 40, 46</code></td>
+        <td><code style="color:oklch(0.512 0.1788 24.4)">0.512 0.1788 24.4</code></td>
+        <td><ruby>茜色<rt>あかねいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#727171">#727171</code></td>
+        <td><code style="color:rgb(114, 113, 113)">114, 113, 113</code></td>
+        <td><code style="color:oklch(0.550 0.0012 17.2)">0.550 0.0012 17.2</code></td>
+        <td><ruby>鈍色<rt>にびいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#4C6473">#4C6473</code></td>
+        <td><code style="color:rgb(76, 100, 115)">76, 100, 115</code></td>
+        <td><code style="color:oklch(0.490 0.0375 236.0)">0.490 0.0375 236.0</code></td>
+        <td><ruby>御召御納戸<rt>おめしおなんど</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#674598">#674598</code></td>
+        <td><code style="color:rgb(103, 69, 152)">103, 69, 152</code></td>
+        <td><code style="color:oklch(0.468 0.1319 300.3)">0.468 0.1319 300.3</code></td>
+        <td><ruby>青紫<rt>あおむらさき</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#5654A2">#5654A2</code></td>
+        <td><code style="color:rgb(86, 84, 162)">86, 84, 162</code></td>
+        <td><code style="color:oklch(0.487 0.1223 282.0)">0.487 0.1223 282.0</code></td>
+        <td><ruby>桔梗色<rt>ききょういろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#165E83">#165E83</code></td>
+        <td><code style="color:rgb(22, 94, 131)">22, 94, 131</code></td>
+        <td><code style="color:oklch(0.458 0.0902 236.8)">0.458 0.0902 236.8</code></td>
+        <td><ruby>藍色<rt>あいいろ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#2A83A2">#2A83A2</code></td>
+        <td><code style="color:rgb(42, 131, 162)">42, 131, 162</code></td>
+        <td><code style="color:oklch(0.572 0.0942 225.6)">0.572 0.0942 225.6</code></td>
+        <td><ruby>花浅葱<rt>はなあさぎ</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#0095D9">#0095D9</code></td>
+        <td><code style="color:rgb(0, 149, 217)">0, 149, 217</code></td>
+        <td><code style="color:oklch(0.638 0.1446 239.4)">0.638 0.1446 239.4</code></td>
+        <td><ruby>青<rt>あお</rt></ruby></td>
+      </tr>
+      <tr>
+        <td><code style="color:#38B48B">#38B48B</code></td>
+        <td><code style="color:rgb(56, 180, 139)">56, 180, 139</code></td>
+        <td><code style="color:oklch(0.692 0.1244 166.7)">0.692 0.1244 166.7</code></td>
+        <td><ruby>翡翠色<rt>ひすいいろ</rt></ruby></td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
+
+
+
+
+
+
+
+  <hr>
+  <div id="giscus"></div>
+
+  <script>
+    (function () {
+      var GISCUS_ORIGIN = 'https://giscus.app';
+      var THEMES = {
+        light: 'catppuccin_latte',
+        dark: 'transparent_dark'
+      };
+
+      function getPreferredThemeValue() {
+        try {
+          return localStorage.getItem('preferredTheme');
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function isDarkMode() {
+        // 1) Current DOM state (may be applied very early or slightly later)
+        if (document.documentElement.classList.contains('darkmode')) return true;
+
+        // 2) Persisted preference (your theme uses preferredTheme)
+        var v = getPreferredThemeValue();
+        if (v != null) {
+          v = String(v).toLowerCase();
+          if (v === 'dark' || v === '1' || v === 'true') return true;
+          if (v === 'light' || v === '0' || v === 'false') return false;
+        }
+
+        // 3) System preference fallback
+        return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      }
+
+      function getGiscusTheme() {
+        return isDarkMode() ? THEMES.dark : THEMES.light;
+      }
+
+      function getIframe() {
+        return document.querySelector('iframe.giscus-frame');
+      }
+
+      function postSetTheme(theme) {
+        var iframe = getIframe();
+        if (!iframe || !iframe.contentWindow) return false;
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          GISCUS_ORIGIN
+        );
+        return true;
+      }
+
+      function waitForIframe(maxMs) {
+        return new Promise(function (resolve) {
+          var start = performance.now();
+          (function tick() {
+            if (getIframe()) return resolve(true);
+            if (performance.now() - start > maxMs) return resolve(false);
+            requestAnimationFrame(tick);
+          })();
+        });
+      }
+
+      function loadGiscus() {
+        var container = document.getElementById('giscus');
+        if (!container) return;
+        if (container.getAttribute('data-loaded') === '1') return;
+        container.setAttribute('data-loaded', '1');
+
+        var cfg = {
+          repo: 'NovaDNG/novadng.github.io',
+          repoId: 'MDEwOlJlcG9zaXRvcnkzNDgwOTI1MzU=',
+          category: 'General',
+          categoryId: 'DIC_kwDOFL94d84CmgFx',
+          mapping: 'pathname',
+          strict: '0',
+          reactionsEnabled: '1',
+          emitMetadata: '0',
+          inputPosition: 'top',
+          theme: getGiscusTheme(),
+          lang: 'en',
+          loading: 'lazy'
+        };
+
+        var s = document.createElement('script');
+        s.src = GISCUS_ORIGIN + '/client.js';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+
+        s.setAttribute('data-repo', cfg.repo);
+        s.setAttribute('data-repo-id', cfg.repoId);
+        s.setAttribute('data-category', cfg.category);
+        s.setAttribute('data-category-id', cfg.categoryId);
+        s.setAttribute('data-mapping', cfg.mapping);
+        s.setAttribute('data-strict', cfg.strict);
+        s.setAttribute('data-reactions-enabled', cfg.reactionsEnabled);
+        s.setAttribute('data-emit-metadata', cfg.emitMetadata);
+        s.setAttribute('data-input-position', cfg.inputPosition);
+        s.setAttribute('data-theme', cfg.theme);
+        s.setAttribute('data-lang', cfg.lang);
+        s.setAttribute('data-loading', cfg.loading);
+
+        container.appendChild(s);
+
+        // Once iframe exists, force-sync theme once (covers dark-on-first-load)
+        waitForIframe(6000).then(function () {
+          postSetTheme(getGiscusTheme());
+        });
+      }
+
+      // Boot
+      loadGiscus();
+
+      // React to theme toggles (theme switch toggles `html.darkmode`)
+      var mo = new MutationObserver(function () {
+        postSetTheme(getGiscusTheme());
+      });
+      mo.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+      // React to system theme changes (if user never set preferredTheme)
+      if (window.matchMedia) {
+        var mql = window.matchMedia('(prefers-color-scheme: dark)');
+        // Safari uses addListener
+        if (mql.addEventListener) {
+          mql.addEventListener('change', function () {
+            postSetTheme(getGiscusTheme());
+          });
+        } else if (mql.addListener) {
+          mql.addListener(function () {
+            postSetTheme(getGiscusTheme());
+          });
+        }
+      }
+    })();
+  </script>
+
+
+          <footer id="site-footer" class="site-footer">
+  <div id="footer" class="mt-2">
+  
+    <p id="madewith">Made with ❤ and
+      <a class="footer-link icon" href="https://hexo.io" target="_blank"rel="noreferrer" aria-label="Hexo.io">
+      <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
+      </a>
+      
+      at <a href="https://goo.gl/maps/D5obNcpYpkkFEFSNA" target="_blank" rel="noreferrer">DENSHI NO UMI</a>.</p>
+      
+
+
+    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
+    <div class="posisi" style="margin-top: 0.33em">
+      
+
+      
+
+      
+      <a class="footer-link icon" href="https://twitter.com/NovaDNG" target="_blank" rel="noreferrer" aria-label="Twitter">
+        <svg class="twitter svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+      </a>
+      
+
+      
+      <a class="footer-link icon" href="https://bsky.app/profile/novadng.studio" target="_blank" rel="noreferrer" aria-label="bluesky">
+        <svg class="bluesky svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><title>bluesky</title><g transform="translate(0 24) scale(0.0045 -0.0045)"><path d="M390 4706 c-136 -38 -201 -106 -247 -261 -25 -85 -24 -350 1 -645 2 -19 7 -71 10 -115 4 -44 9 -96 11 -115 2 -19 6 -71 10 -115 6 -84 23 -243 30 -285 2 -14 6 -52 10 -85 6 -53 13 -98 29 -171 11 -54 63 -166 111 -240 108 -167 281 -302 470 -369 28 -9 59 -21 70 -26 30 -13 181 -46 250 -55 33 -4 113 -8 177 -8 64 -1 114 -4 110 -7 -6 -4 -65 -17 -197 -43 -11 -2 -47 -11 -80 -21 -33 -9 -73 -20 -90 -24 -50 -14 -180 -68 -245 -103 -91 -49 -173 -119 -219 -188 -50 -75 -61 -112 -68 -217 -12 -180 93 -411 310 -681 222 -277 442 -450 663 -524 88 -29 233 -31 309 -4 180 64 333 229 473 511 77 155 189 454 247 664 19 67 29 76 39 34 9 -39 27 -100 91 -317 148 -494 305 -754 516 -850 74 -34 109 -40 219 -39 108 1 202 27 325 91 92 48 267 161 295 192 3 3 25 21 50 41 52 42 151 143 205 209 20 25 44 54 53 65 28 33 122 179 122 189 0 5 6 17 14 25 8 9 28 57 46 106 108 309 -13 558 -355 727 -130 65 -292 118 -435 144 -73 14 -54 19 68 20 254 1 468 53 660 160 241 135 421 396 447 649 4 38 8 72 10 75 2 5 5 28 20 168 3 23 7 61 10 85 2 23 7 74 11 112 3 39 7 86 9 105 2 19 7 76 10 125 4 50 8 106 10 125 20 204 26 480 13 558 -26 153 -80 247 -168 292 -203 104 -452 40 -817 -209 -131 -90 -162 -114 -248 -186 -319 -270 -683 -685 -967 -1105 -91 -134 -218 -344 -218 -360 0 -23 -18 -7 -39 36 -27 58 -135 231 -210 339 -64 93 -211 295 -226 311 -5 6 -21 26 -35 44 -14 18 -30 38 -35 44 -6 6 -39 46 -74 90 -124 152 -370 410 -511 536 -19 17 -44 39 -55 49 -218 194 -582 408 -762 446 -57 13 -189 13 -233 1z"/></g></svg>
+      </a>
+      
+
+      
+      <a class="footer-link icon" href="https://t.me/nova_dng" target="_blank" rel="noreferrer" aria-label="telegram">
+        <svg class="telegram svg-hov" width="18" role="img" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+          <title>telegram</title>
+          <g transform="scale(0.048 0.048)">
+            <path d="M441.999,422.947C295.181,582.844 37.735,497.832 8.221,289.54C-17.945,104.871 169.437,-51.707 354.62,26.217C502.9,88.612 561.791,287.804 441.999,422.947ZM343.446,159.064C344.683,159.023 355.259,157.193 361.374,165.588C367.056,173.388 362.582,186.002 361.992,187.668C296.82,371.401 297.317,371.572 291.235,387.394C287.055,398.267 274.709,404.901 263.599,396.377C250.096,386.019 224.205,320.411 216.158,309.767C212.11,304.413 211.776,304.367 141.694,271.106C121.549,261.545 116.252,242.895 131.619,232.685C134.221,230.957 333.6,160.965 343.446,159.064Z" style="fill:rgb(44,165,224);fill-opacity:1;"/>
+        </svg>
+      </a>
+      
+
+      
+      <a class="footer-link icon" href="https://www.instagram.com/NovaDNG/" target="_blank" rel="noreferrer" aria-label="Instagram">
+        <svg class="instagram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+      </a>
+      
+
+      
+
+    </div>
+  
+</div>
+
+
+  </div>
+</footer>
+          
+            <div id="pheader" class="pheader">
+<div class="twelve columns">
+  <div class="row">
+    <div class="nine columns nav left">
+      <a href="/">Home</a>
+      
+        
+        <a href="/Works">Works</a>
+        
+      
+        
+        <a href="/Frames">Frames</a>
+        
+      
+        
+        <a href="/Commissions">Commissions</a>
+        
+      
+        
+        <a href="/About">About</a>
+        
+      
+        
+        <a href="/Now">Now</a>
+        
+      
+        
+        <a href="/atom.xml">RSS</a>
+        
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h3 class="mt-2 mb-2 mode">
+      <div data-theme-role="dark" onclick="setDarkMode(true)">✶</div>
+      <div data-theme-role="light" onclick="setDarkMode(false)" class="hidden">❂</div>
+    </h3>
+  </div>
+
+  <div class="six columns ml-1">
+    <h3 class="mb-2">
+      NovaDNG Studio
+    </h3>
+  </div>
+
+</div>
+
+<div class="row mb-2">
+  <div class="twelve columns">
+    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader.avif"
+         alt="Logo"
+         style="max-width: 128px; height: auto;"
+         class="noshadow"
+         id="logoLight"/>
+    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader_dark.avif"
+         alt="Logo"
+         style="max-width: 128px; height: auto;"
+         class="noshadow"
+         id="logoDark"/>
+  </div>
+</div>
+</div>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script>
+    (function () {
+      var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;
+
+      function isNativeSummary(el) {
+        return el && el.tagName === 'SUMMARY' && el.parentElement && el.parentElement.tagName === 'DETAILS';
+      }
+
+      function toggleDetailsWithCloseAnim(details) {
+        if (!details || details.classList.contains('is-closing')) return;
+
+        if (details.open) {
+          details.classList.add('is-closing');
+          window.setTimeout(function () {
+            details.open = false;
+            details.classList.remove('is-closing');
+          }, DETAILS_ANIM_MS);
+          return;
+        }
+
+        details.open = true;
+      }
+
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        if (!target || !target.closest) return;
+
+        var summary = target.closest('summary');
+        if (!isNativeSummary(summary)) return;
+        if (summary.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(summary.parentElement);
+      }, true);
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+
+        var target = event.target;
+        if (!isNativeSummary(target)) return;
+        if (target.closest('.tategaki-content')) return;
+
+        event.preventDefault();
+        toggleDetailsWithCloseAnim(target.parentElement);
+      }, true);
+    })();
+  </script>
+
+</body>
+
+</html>
