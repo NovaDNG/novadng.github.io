@@ -566,7 +566,7 @@ td {
     vertical-align: top;
     border-bottom: 1px solid #a0a09d;
     font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
-    letter-spacing: 0;
+    letter-spacing: 0s;
 }
 
 th:first-child,
