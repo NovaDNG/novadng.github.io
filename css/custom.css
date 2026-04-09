@@ -167,6 +167,13 @@ html.darkmode body {
     gap: 0.5rem 2.33rem;
 }
 
+/* Constrain the hover-highlight block to font-size height.
+   Without this, the background box inherits body line-height (1.67),
+   making the block extend far below the visible glyphs. */
+.nine.columns.nav a:not(.icon) {
+    line-height: 1;
+}
+
 /* Nav & footer text: switch to monospace at wider viewports */
 @media (min-width: 550px) {
     .nine.columns.nav {

@@ -63,46 +63,40 @@ a.color-link:focus:not(.icon) {
   initial-value: rgba(233, 230, 226, 0);
 }
 
-/* Gradient text variant: scales gradient background in from bottom on hover.
-   Single background layer clipped to text for the gradient-text default state.
-   --clg-text-fill drives -webkit-text-fill-color via @property so the text
-   cross-fades from gradient to white over 0.2s.
-   ::before uses scaleY(0→1) so it never leaves the element's bounds —
-   no clipping needed, no display change, safe for inline contexts (e.g. Safari). */
-a.color-link.color-link--gradient:not(.icon) {
-  position: relative;
-  isolation: isolate;
-  background-image: linear-gradient(to right in oklch longer hue, var(--grad-start) 0%, var(--grad-end) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: 100% 100%;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  -webkit-text-fill-color: var(--clg-text-fill);
-  transition: --clg-text-fill 0.2s ease-out;
+@property --reveal-height {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
 }
 
-a.color-link.color-link--gradient:not(.icon)::before {
-  content: '';
-  position: absolute;
-  inset: 0;
+/* Gradient text variant: two background layers on the element itself.
+   Layer 1: rainbow gradient clipped to text — the default gradient text colour.
+   Layer 2: same rainbow gradient as the hover block, anchored to the bottom
+   edge (background-position: 0 100%) and grown upward by animating
+   --reveal-height from 0% to 100% via background-size. This replicates the
+   original scaleY "extend from bottom" feel without a ::before rectangle
+   that breaks on multi-line. box-decoration-break:clone ensures each wrapped
+   line fragment gets its own independent animation. */
+a.color-link.color-link--gradient:not(.icon) {
+  background-image:
+    linear-gradient(to right in oklch longer hue, var(--grad-start) 0%, var(--grad-end) 100%),
+    linear-gradient(to right in oklch longer hue, var(--grad-start) 0%, var(--grad-end) 100%);
+  background-clip: text, padding-box;
+  -webkit-background-clip: text, padding-box;
+  background-size: 100% 100%, 100% var(--reveal-height);
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
   border-radius: 2px;
-  background: linear-gradient(60deg in oklch longer hue, var(--grad-start) 0%, var(--grad-end) 100%);
-  transform: scaleY(0);
-  transform-origin: bottom center;
-  transition: transform 0.2s ease-out;
-  z-index: -1;
+  -webkit-text-fill-color: var(--clg-text-fill);
+  transition: --clg-text-fill 0.2s ease-out, --reveal-height 0.2s ease-out;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 a.color-link.color-link--gradient:hover:not(.icon),
 a.color-link.color-link--gradient:focus:not(.icon) {
   --clg-text-fill: #E9E6E2;
-  background-position: 0 0;
-}
-
-a.color-link.color-link--gradient:hover:not(.icon)::before,
-a.color-link.color-link--gradient:focus:not(.icon)::before {
-  transform: scaleY(1);
+  --reveal-height: 100%;
 }
 
 a.color-link:not(.icon) ruby rt,
