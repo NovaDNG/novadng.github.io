@@ -126,6 +126,30 @@ body.page-yoishigure a:focus:not(.icon) > b {
 
 
 /* ============================================================
+   TATEGAKI — PUNCTUATION FONT
+   A narrow @font-face alias that routes CJK punctuation to
+   Source Han Serif VF, the only font in the stack with halt/chws
+   feature tables required by text-spacing-trim (JLReq 3.1.4).
+   Also fixes vertical ellipsis centering (U+2026) and other
+   punctuation metrics that HYXuanSong/FZYouSong get wrong.
+   ============================================================ */
+
+@font-face {
+  font-family: "SHS-Punct";
+  src: local("Source Han Serif"), local("Source Han Serif VF");
+  font-feature-settings: "vchw";  /* applies when element has no explicit font-feature-settings */
+  unicode-range:
+    U+2014,        /* — em dash */
+    U+2018-201F,   /* '' "" curly quotes */
+    U+2026-2027,   /* … ellipsis  ‧ hyphenation point */
+    U+3000-303F,   /* CJK Symbols and Punctuation block */
+    U+FE10-FE1F,   /* Vertical Forms */
+    U+FE30-FE4F,   /* CJK Compatibility Forms */
+    U+FF01-FF60;   /* Fullwidth punctuation (！…） etc.) */
+}
+
+
+/* ============================================================
    TATEGAKI — DESKTOP
    Vertical writing mode (writing-mode: vertical-rl) inside a
    horizontally scrolling container. The stage breaks out of the
@@ -168,15 +192,14 @@ body.page-yoishigure a:focus:not(.icon) > b {
 /* Article body — vertical text flow, width determined by content */
 .tategaki-content {
   /* Font */
-  font-family: "Redaction", "EB-Garamond", Charter, "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
-  font-feature-settings: "halt" "vchw";
+  font-family: "Redaction", "EB-Garamond", Charter, "SHS-Punct", "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
   font-variant-numeric: tabular-nums;
   font-size: var(--tategaki-text-size);
   line-height: var(--tategaki-line-height);
   /* Writing */
   writing-mode: vertical-rl;
   text-autospace: normal;
-  text-spacing-trim: space-first;
+  text-spacing-trim: trim-start;
   /* Layout */
   width: max-content;
   height: 100%;
@@ -305,7 +328,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   .tategaki-content {
     writing-mode: horizontal-tb;
     text-autospace: normal;
-    text-spacing-trim: space-first;
+    text-spacing-trim: trim-start;
     letter-spacing: normal;
     width: 100%;
     height: auto;

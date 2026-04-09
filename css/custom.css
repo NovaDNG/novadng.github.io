@@ -7,7 +7,6 @@
     --shadow-default: 0 6px 12px rgba(80, 0, 0, 0.16);
     /* Single source of truth — keep in sync with DETAILS_ANIM_MS reads in layout.ejs and tategaki_script.ejs */
     --details-anim-ms: 200;
-    text-spacing-trim: space-first;
 }
 
 html {
@@ -569,6 +568,11 @@ details.is-closing > :not(summary) {
     }
     a, a > strong, a > b {
         background-image: none !important;
+    }
+    a.color-link.color-link--gradient {
+        -webkit-text-fill-color: currentColor !important;
+        background-clip: border-box !important;
+        -webkit-background-clip: border-box !important;
     }
     a:not(.headerlink)::after {
         content: " >" attr(href) " ";
