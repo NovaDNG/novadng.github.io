@@ -373,6 +373,19 @@ const W=[
     return (dL*vL + dC*vC + dH*vH) / denom;
   }
 
+  // Signed perpendicular deviation of C from the A→B line.
+  // Magnitude = deltaOklch to projected point; sign = direction of L deviation.
+  function perpDevSigned(aOklch, bOklch, cOklch) {
+    var t = Math.max(0, Math.min(1, projParam(aOklch, bOklch, cOklch)));
+    var vH = wrapH(bOklch[2] - aOklch[2]);
+    var pL = aOklch[0] + t * (bOklch[0] - aOklch[0]);
+    var pC = aOklch[1] + t * (bOklch[1] - aOklch[1]);
+    var pH = aOklch[2] + t * vH;
+    var dist = deltaOklch(cOklch, [pL, pC, pH]);
+    var sign = cOklch[0] >= pL ? 1 : -1;
+    return sign * dist;
+  }
+
   // Find the smoothest path from A to B through 和色 via monotone minimax DP.
   // Candidates are all 和色 that project between A and B (t∈[0,1]), sorted by t.
   // DP minimizes the maximum single deltaOklch step along the path (bottleneck).
@@ -515,12 +528,15 @@ const W=[
     }
 
     var tcA = txtCol(hexA), tcB = txtCol(hexB);
+    var tcAa = 'color-mix(in srgb, ' + tcA + ' 87%, transparent)';
+    var tcBa = 'color-mix(in srgb, ' + tcB + ' 87%, transparent)';
     var bStyle = {fontSize:18, fontFamily:"'Berkeley Mono','Fira Code',monospace",
                   fontWeight:600, padding:'4px 8px', background:'transparent',
                   border:'none', borderRadius:2, outline:'none', pointerEvents:'auto', marginBottom:0};
 
     // ── Single gradient panel ──────────────────────────────────
-    var gradDir = isNarrow ? 'to bottom right' : 'to right';
+    var gradDir = '135deg';
+    var _aOklch = hexToOklch(hexA), _bOklch = hexToOklch(hexB);
     var panel = e('div', {
       style: { position: 'relative', borderRadius: 4,
                height: isNarrow ? 'calc(var(--wm-preview-h, 96px) * 2)' : 'var(--wm-preview-h, 96px)',
@@ -554,7 +570,7 @@ const W=[
             },
             placeholder: 'hex / oklch', spellCheck: false, 'data-no-picker': 'true',
             style: Object.assign({}, bStyle, {
-              color: tcA, borderBottom: '2px solid ' + tcA + '80',
+              color: tcAa, borderBottom: '2px solid ' + tcA + '80',
               textAlign: 'left', width: '100%', maxWidth: 288 })
           })
         )
@@ -585,10 +601,29 @@ const W=[
             },
             placeholder: 'hex / oklch', spellCheck: false, 'data-no-picker': 'true',
             style: Object.assign({}, bStyle, {
-              color: tcB, borderBottom: '2px solid ' + tcB + '80',
+              color: tcBa, borderBottom: '2px solid ' + tcB + '80',
               textAlign: 'right', width: '100%', maxWidth: 288 })
           })
         )
+      ),
+
+      // ── Color node dots ────────────────────────────────────────
+      // Always horizontal: left = t position; top = signed perp deviation.
+      // sign: L above path → upward (lower top%); scale: dev × 150, clamped ±42%.
+      e('div', { style: { position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 1 } },
+        results.map(function(c) {
+          var dev = perpDevSigned(_aOklch, _bOklch, c.oklch);
+          var yPct = (50 - Math.max(-42, Math.min(42, dev * 150))).toFixed(2) + '%';
+          return e('div', { key: c.hex + c.t, style: {
+            position: 'absolute',
+            left: (c.t * 100).toFixed(3) + '%',
+            top: yPct,
+            transform: 'translate(-50%, -50%)',
+            width: 12, height: 12, borderRadius: '50%',
+            background: c.hex + '8f',
+            boxShadow: '0 0 0 2px rgba(255,255,255,0.96), 0 1px 4px rgba(0,0,0,0.33)'
+          }});
+        })
       )
     );
 
@@ -687,9 +722,15 @@ const W=[
     }},
       '並び順について：候補色は入力A→BをOKLCH空間で直線投影し、投影係数',
       e('span', { style: { color: '#4c6473' } }, 't'),
-      'が0〜1に入る和色のみを採用します。次に、A→B方向の単調経路の中から、各ステップの',
+      'が0~1に入る和色のみを採用します。次に、A→B方向の単調経路の中から、各ステップの',
       e('span', { style: { color: '#4c6473' } }, 'ΔOKLCH'),
-      'の最大値（ボトルネック）が最小になる経路を動的計画法で選び、表示順はその経路順です。'
+      'の最大値 (ボトルネック) が最小になる経路を動的計画法で選び、表示順はその経路順です。',
+      e('br'),
+      'グラデーションパネル上の色点について：横位置は投影係数',
+      e('span', { style: { color: '#4c6473' } }, 't'),
+      '(A端=0、B端=1)、縦位置はA→B直線からの垂直偏差 (',
+      e('span', { style: { color: '#4c6473' } }, 'ΔOKLCH'),
+      ') を表し、明度が経路より高い色は上方、低い色は下方にずれます。'
     );
 
     return e('div', { style: { maxWidth: 960, margin: '0 auto', padding: '12px 0' } },
