@@ -556,13 +556,29 @@ details.is-closing > :not(summary) {
     #footer,
     .giscus,
     iframe.giscus-frame,
+    background,
     .mode {
         display: none !important;
     }
-
+    a, a > strong, a > b {
+        background-image: none !important;
+    }
+    a:not(.headerlink)::after {
+        content: " >" attr(href) " ";
+    }
+    body {
+        background-color: #fff;
+    }
+    table, img, svg {
+        break-inside: avoid;
+        display: block;
+    }
+    p:has(> img) {
+        break-inside: avoid;
+    }
     img:not([alt~="_gallery"]) {
-        max-width: 66.67% !important;
-        width: 66.67% !important;
+        max-width: 87% !important;
+        width: 87% !important;
         transform: none !important;
         position: static !important;
         left: auto !important;
@@ -570,7 +586,6 @@ details.is-closing > :not(summary) {
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     /* Gallery paragraphs use `translate` (not `transform`), so must be reset separately */
     .container p:has(img[alt~="_gallery"]) {
         translate: none !important;
