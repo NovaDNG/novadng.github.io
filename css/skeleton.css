@@ -251,6 +251,10 @@ h6 {
         BlinkMacSystemFont,
         serif;
     font-weight: 800;
+    font-feature-settings: 
+        "dlig",
+        "case",
+        "swsh" 2;
     font-variant-numeric: oldstyle-nums;
 }
 
