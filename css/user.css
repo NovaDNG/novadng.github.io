@@ -172,6 +172,8 @@ body.page-yoishigure a:focus:not(.icon) > b {
   position: relative;
   width: 100%;
   height: var(--tategaki-pane-height);
+  display: flex;
+  justify-content: flex-end;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;

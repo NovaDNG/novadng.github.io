@@ -491,6 +491,9 @@
       var DETAILS_ANIM_MS = 200;
       var viewportRevealed = false;
 
+      // Stub: edge-fade UI not yet implemented. Prevents ReferenceError crash.
+      function updateEdgeFadeState() { /* TODO: implement fade overlays at scroll edges */ }
+
       // Keep desktop viewport hidden until first height/start alignment is stable.
       el.classList.add('tategaki--booting');
 
