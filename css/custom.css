@@ -299,6 +299,57 @@ img.noshadow {
     }
 }
 
+/* ============================================================
+   EXIF LABELS
+   ============================================================ */
+
+/* Anchor: non-gallery image paragraphs need position:relative
+   so that .exif top:0 aligns with the image, not .container  */
+.exif-para { position: relative; }
+
+/* Base label — only injected when EXIF data is present */
+.exif {
+    position: absolute;
+    top: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Berkeley Mono", "iA Writer Mono", ui-monospace, monospace;
+    color: color-mix(in srgb, currentColor 67%, transparent);
+    line-height: 1.66;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+    pointer-events: none;
+    text-transform: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+p:hover > .exif { opacity: 1; }
+
+/* sup/sub for fractional shutter speeds (<1s) */
+.exif sup, .exif sub { font-size: 0.8em; line-height: 0; }
+
+/* Full-bleed image: EXIF to the right of the image.
+   Image right edge from <p> left = 50% + min(60%, 50vw)    */
+.exif-right {
+    left: calc(50% + min(60%, 50vw) + 0.75em);
+}
+
+/* Gallery paragraph: EXIF outside the paragraph edges.
+   Gallery <p> already has position:relative via existing CSS */
+.exif-gallery-left  { right: calc(100% + 0.75em); text-align: right; }
+.exif-gallery-right { left:  calc(100% + 0.75em); }
+
+/* Dark mode */
+html.darkmode .exif { color: rgba(200, 190, 185, 0.38); }
+
+/* Hide when viewport is too narrow for side space.
+   Full-bleed image = min(844.8px, 100vw); space appears only
+   when viewport > 844.8px; need ~70px gap → threshold 1060px  */
+@media (max-width: 1059px) {
+    .exif { display: none; }
+}
+
 /* Flickr embed wrapper */
 a[data-flickr-embed] { display: inline-block; line-height: 0; }
 
@@ -587,7 +638,8 @@ details.is-closing > :not(summary) {
     .giscus,
     iframe.giscus-frame,
     background,
-    .mode {
+    .mode,
+    .exif {
         display: none !important;
     }
     a, a > strong, a > b {
