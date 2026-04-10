@@ -181,6 +181,22 @@ html.darkmode body {
     line-height: 1;
 }
 
+/* Keep the current-page nav link in the same visual state as hover */
+.nine.columns.nav a.is-active:not(.icon),
+.nine.columns.nav a[aria-current="page"]:not(.icon) {
+    background-position: 0 100%;
+    color: #e9e6e2;
+    border-radius: 2px;
+}
+
+.nine.columns.nav a.is-active:not(.icon) > strong,
+.nine.columns.nav a.is-active:not(.icon) > b,
+.nine.columns.nav a[aria-current="page"]:not(.icon) > strong,
+.nine.columns.nav a[aria-current="page"]:not(.icon) > b {
+    background-position: inherit;
+    border-radius: 2px;
+}
+
 /* Nav & footer text: switch to monospace at wider viewports */
 @media (min-width: 550px) {
     .nine.columns.nav {
