@@ -641,7 +641,6 @@ details.is-closing > :not(summary) {
     display: flex;
     gap: 1.87rem;
     align-items: flex-start; /* pin year label to top of the group */
-    margin-bottom: 3.33rem;
 }
 
 /* Vertical Japanese formal-numeral year label (弐零弐陸 style).
@@ -707,7 +706,7 @@ details.is-closing > :not(summary) {
         flex-direction: row;
         overflow-x: auto;
         align-items: flex-start; /* columns pin to top, not stretch to tallest */
-        gap: 2.5rem;
+        gap: 3.3rem;
         /* Full-bleed: escape the centered .container */
         width: 100vw;
         margin-left: calc(50% - 50vw);
@@ -716,7 +715,7 @@ details.is-closing > :not(summary) {
            content left offset (50vw minus half of 704px content width)
            on wide viewports, falling back to the container's own 32px
            padding on narrow ones. 352 = (768 - 2*32) / 2 */
-        padding-left: max(32px, calc(50vw - 352px));
+        padding-left: max(32px, calc(50vw - 412px));
         padding-right: 32px;
         box-sizing: border-box;
     }
@@ -727,6 +726,6 @@ details.is-closing > :not(summary) {
        natural content width when many years are shown at once. */
     .archive-scroll .archive-year-group {
         flex-shrink: 0;
-        margin: 0 16px 0 0;
+        margin: 0 16px 16px 0;
     }
 }
