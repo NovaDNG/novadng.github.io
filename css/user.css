@@ -1,13 +1,22 @@
 /* ============================================================
    SCROLLBAR
-   Restore browser/OS native scrollbar appearance.
+   Style scrollbars to match background in both light and dark modes.
    ============================================================ */
 
+/* Restore native scrollbar rendering to avoid forced gutter/track artifacts. */
 * {
-  scrollbar-width: auto;  /* Firefox */
-  scrollbar-color: auto;  /* Firefox */
+  scrollbar-width: auto;
+  scrollbar-color: auto;
 }
 
+/* Let form controls and scrollbars follow explicit light/dark theme. */
+html {
+  color-scheme: light;
+}
+
+html.darkmode {
+  color-scheme: dark;
+}
 
 /* ============================================================
    VARIABLES
@@ -167,13 +176,12 @@ body.page-yoishigure a:focus:not(.icon) > b {
   margin-bottom: 4rem;
 }
 
+
 /* Scrollable viewport window — horizontal overflow, fixed height */
 .tategaki-scroll {
   position: relative;
   width: 100%;
   height: var(--tategaki-pane-height);
-  display: flex;
-  justify-content: flex-end;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;

@@ -10,7 +10,8 @@
 }
 
 html {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     background: #eae6e2;
     transition: background-color 0.2s ease-in-out;
@@ -25,7 +26,9 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100dvh;
-    overflow-y: scroll;
+    /* Keep a single root scroller (html) to avoid extra scrollbar gutters
+       that appear as right-edge color strips in Firefox/Chromium. */
+    overflow-y: visible;
     overflow-x: hidden;
     transition: color 0.2s ease-in-out;
     background: transparent;
@@ -757,6 +760,7 @@ details.is-closing > :not(summary) {
         display: flex;
         flex-direction: row;
         overflow-x: auto;
+        overflow-y: clip;
         align-items: flex-start; /* columns pin to top, not stretch to tallest */
         gap: 3.3rem;
         /* Full-bleed: escape the centered .container */
