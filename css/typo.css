@@ -13,6 +13,10 @@ center {
         serif;
     font-weight: 500;
     font-size: 1.56rem;
+    font-feature-settings: 
+        "dlig",
+        "case",
+        "swsh" 2;
 }
 
 /* blockquote */
@@ -31,6 +35,10 @@ blockquote {
         BlinkMacSystemFont,
         serif;
     font-weight: 400;
+    font-feature-settings: 
+        "dlig",
+        "case",
+        "swsh" 2;
     font-variant-numeric: oldstyle-nums;
     background-color: rgba(148, 148, 149, 0.08);
     margin: -0.5em 0px 1em 0px;

@@ -95,6 +95,10 @@ html.darkmode body {
     margin-top: 0px;
 }
 
+.mt-1 {
+    margin-top: 1.33rem;
+}
+
 .mt-2 {
     margin-top: 5rem;
     width: 100%; /* ensures block stretches full width inside floated/flex parents */
@@ -603,5 +607,106 @@ details.is-closing > :not(summary) {
         left: auto !important;
         position: static !important;
         width: 100% !important;
+    }
+}
+
+
+/* ── Archive: year-grouped layout ──────────────────────────────────────
+   Replaces the old flat list. Each .archive-year-group is a flex row:
+   .archive-year-label (vertical kanji numeral, left) +
+   .archive-post-list  (linear post entries, right).
+   Pagination has been removed; all posts appear on one page.          */
+
+.archive-year-group {
+    display: flex;
+    gap: 1.87rem;
+    align-items: flex-start; /* pin year label to top of the group */
+    margin-bottom: 3.33rem;
+}
+
+/* Vertical Japanese formal-numeral year label (弐零弐陸 style).
+   text-orientation: upright keeps each kanji character upright (not
+   rotated), which is correct for ideographic glyphs in vertical flow. */
+.archive-year-label {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong", "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC", -apple-system, BlinkMacSystemFont, serif;
+    font-size: 2.33em;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    /* Match the muted color treatment used by .lit elsewhere */
+    color: color-mix(in srgb, currentColor 56%, transparent);
+    flex-shrink: 0;
+    padding: 2px 0 0 0;
+    line-height: 1;
+}
+
+.archive-post-list {
+    flex: 1;
+}
+
+/* Spacing between entries within a year group */
+.archive-post-entry {
+    margin-bottom: 1.1rem;
+}
+
+.archive-post-entry:last-child {
+    margin-bottom: 0;
+}
+
+/* MM-DD date shown above the post title.
+   Uses Berkeley Mono to match the existing .lit date style. */
+.archive-post-date {
+    font-size: 0.8em;
+    font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    color: color-mix(in srgb, currentColor 40%, transparent);
+    margin-bottom: 0.12rem;
+    line-height: 1.1;
+}
+
+/* ── Archive: landscape horizontal scroll columns ───────────────────────
+   On landscape screens (width > height) the .archive-scroll wrapper
+   becomes a horizontal flex container. Each .archive-year-group is a
+   column; years flow newest-left to oldest-right.
+
+   Orientation query is used instead of a fixed min-width breakpoint so
+   the layout follows device posture (rotated phone → columns,
+   upright tablet → stacked) rather than an arbitrary pixel threshold.
+
+   Full-bleed technique:
+     width: 100vw + margin-left: calc(50% - 50vw)
+   breaks the element out of the centered .container (max-width: 768px)
+   so the scroll stage spans edge-to-edge of the viewport.
+   padding-inline: 32px restores the container's own side padding so
+   the first column stays optically aligned with surrounding page content.
+   box-sizing: border-box ensures padding doesn't add to the 100vw width. */
+@media (orientation: landscape) {
+    .archive-scroll {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        align-items: flex-start; /* columns pin to top, not stretch to tallest */
+        gap: 2.5rem;
+        /* Full-bleed: escape the centered .container */
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        /* Align the first column with the container content edge.
+           max(32px, calc(50vw - 352px)) resolves to the container's
+           content left offset (50vw minus half of 704px content width)
+           on wide viewports, falling back to the container's own 32px
+           padding on narrow ones. 352 = (768 - 2*32) / 2 */
+        padding-left: max(32px, calc(50vw - 352px));
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+
+    /* Remove the vertical gap used in the stacked layout — horizontal
+       spacing between columns is handled by the parent gap above.
+       flex-shrink: 0 prevents columns from compressing below their
+       natural content width when many years are shown at once. */
+    .archive-scroll .archive-year-group {
+        flex-shrink: 0;
+        margin: 0 16px 0 0;
     }
 }
