@@ -696,6 +696,7 @@ details.is-closing > :not(summary) {
     display: flex;
     gap: 1.87rem;
     align-items: flex-start; /* pin year label to top of the group */
+    margin-bottom: 24px;
 }
 
 /* Vertical Japanese formal-numeral year label (弐零弐陸 style).
