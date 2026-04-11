@@ -853,7 +853,7 @@ details.is-closing > :not(summary) {
     /* Full-bleed */
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    padding-left: max(32px, calc(50vw - 410px));
+    padding-left: max(32px, calc(50vw - 412px));
     padding-right: 32px;
     box-sizing: border-box;
   }
