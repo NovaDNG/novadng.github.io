@@ -94,6 +94,10 @@ html.darkmode body {
     margin-bottom: 32px;
 }
 
+.mb-5 {
+    margin-bottom: 7.7em;
+}
+
 .mr {
     margin-right: 32px;
 }
@@ -117,6 +121,10 @@ html.darkmode body {
 
 .mx-auto {
     margin: auto;
+}
+
+.mm {
+    margin: 7.7em 0 7.7em 0;
 }
 
 /* Utility: add 2rem left margin */
@@ -225,6 +233,15 @@ img.noshadow {
     -moz-box-shadow: none;
 }
 
+p[data-mt] {
+    margin-top: 7rem;
+}
+
+p[data-mm] {
+    margin: 7.7em 0 7.7em 0;
+}
+
+
 @media (min-width: 550px) {
     /*
       Side by side gallery — use alt text alignment flags:
@@ -252,8 +269,7 @@ img.noshadow {
         float: none !important;
     }
 
-    /* Break-out layout: non-gallery images and media expand beyond the
-       container's max-width so they feel full-bleed on wider screens */
+    /* Break-out layout: non-gallery images and media expand beyond the container's max-width so they feel full-bleed on wider screens */
     .container img:not(.icon):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]),
     .container video,
     .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]),
@@ -308,7 +324,9 @@ img.noshadow {
 
 /* Anchor: non-gallery image paragraphs need position:relative
    so that .exif top:0 aligns with the image, not .container  */
-.exif-para { position: relative; }
+/* line-height:0 removes the inline strut so the image starts exactly at
+   the content-box top, keeping .exif top:0 flush with the image top.    */
+.exif-para { position: relative; line-height: 0; }
 
 /* Base label — only injected when EXIF data is present */
 .exif {
@@ -785,4 +803,93 @@ details.is-closing > :not(summary) {
         flex-shrink: 0;
         margin: 0 16px 16px 0;
     }
+}
+
+/* ── horizoncolumns: portrait (default, mobile-first) ──────────────────
+   .hcol-group stacks as a normal block; .hcol-label looks like a plain
+   bold <h3>; bare columns show a hairline <hr>-style divider above them.
+   Landscape rules are in the @media block below.                         */
+
+.hcol-group {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.hcol-label {
+  writing-mode: horizontal-tb;
+  font-family: "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong", "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC", -apple-system, BlinkMacSystemFont, serif;
+  font-size: 2.33rem;
+  font-weight: bold;
+  font-size: 1.17em;
+  margin: 1em 0 0.5em;
+  color: currentColor;
+}
+
+.hcol-group--bare::before {
+  content: '';
+  display: block;
+  border-top: 1px solid currentColor;
+  margin: 1.5rem 0;
+  opacity: 0.3;
+}
+
+/* ── horizoncolumns: landscape ─────────────────────────────────────────
+   Mirrors the archive landscape layout. Full-bleed technique:
+     width: 100vw + margin-left: calc(50% - 50vw)
+   escapes the centered .container (max-width: 768px) so the scroll stage
+   spans edge-to-edge. padding-left aligns the first column with the
+   surrounding page content edge.
+
+   352 = (768 - 2x32) / 2  — half the container content width, used to
+   compute the content-left offset from viewport centre on wide screens. */
+@media (orientation: landscape) {
+  .hcol-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: clip;
+    align-items: flex-start;
+    gap: 3.3rem;
+    /* Full-bleed */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: max(32px, calc(50vw - 410px));
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+
+  .hcol-group {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 1.87rem;
+    align-items: flex-start;
+  }
+
+  /* Labeled column: vertical kanji-style label, same as .archive-year-label */
+  .hcol-label {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong",
+      "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC",
+      -apple-system, BlinkMacSystemFont, serif;
+    font-size: 2.33em;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    color: color-mix(in srgb, currentColor 56%, transparent);
+    flex-shrink: 0;
+    padding: 2px 0 0 0;
+    line-height: 1;
+    margin-top: 0;
+  }
+
+  /* Cap column content width */
+  .hcol-body {
+    max-width: 560px;
+  }
+
+  /* Bare column: suppress the portrait ::before divider */
+  .hcol-group--bare::before {
+    display: none;
+  }
 }
