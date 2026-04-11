@@ -198,7 +198,7 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
     margin: 0;
     height: 3.3rem;
     padding: 0.33rem 0.87rem;
-    font-family: "iA Writer Quattro V", "HYQiHei-50S", FZYouHei_GBK, "IBM Plex Sans SC", "Source Han Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "iA Writer Quattro V", "HYQiHei-50S", FZYouHei_GBK, "IBM Plex Sans SC", "Source Han Sans TC", "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.56rem;
     line-height: 1.25;
     border-radius: 4px;

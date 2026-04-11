@@ -202,7 +202,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
 /* Article body — vertical text flow, width determined by content */
 .tategaki-content {
   /* Font */
-  font-family: "Redaction", "EB-Garamond", Charter, "SHS-Punct", "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif SC VF", -apple-system, BlinkMacSystemFont, serif;
+  font-family: "Redaction", "EB-Garamond", Charter, "SHS-Punct", "HYXuanSong", "FZYouSongJ GBK", "Toppan Bunkyo Midashi Mincho", "Source Han Serif VF", "Noto Serif TC VF", -apple-system, BlinkMacSystemFont, serif;
   font-variant-numeric: tabular-nums;
   font-size: var(--tategaki-text-size);
   line-height: var(--tategaki-line-height);
