@@ -236,10 +236,10 @@
 
 
   
-  <p class="exif-para"><img height="3741" width="3207" decoding="async" loading="lazy" src="/Frames/Landscape/SeasideRainbow.avif"><small class="exif exif-right">f/1.4<br><sup>1</sup><sub>4000</sub>s<br>ISO 100<br>75 mm</small></p>
-<p class="exif-para"><img height="2309" width="3464" decoding="async" loading="lazy" src="/Frames/Landscape/mtchangbai1.avif"> <small class="exif exif-right"><sup>1</sup><sub>2000</sub>s<br>ISO 100</small></p>
-<p class="exif-para"><img height="1829" width="4372" decoding="async" loading="lazy" src="/Frames/Landscape/mtchangbai2.avif"> <small class="exif exif-right"><sup>1</sup><sub>3200</sub>s<br>ISO 100</small></p>
-<p class="exif-para"><img height="2309" width="3464" decoding="async" loading="lazy" src="/Frames/Landscape/mtchangbai3.avif"><small class="exif exif-right"><sup>1</sup><sub>2500</sub>s<br>ISO 100</small></p>
+  <p class="exif-para"><img style="aspect-ratio: 3207 / 3741" width="3207" decoding="async" loading="lazy" src="/Frames/Landscape/SeasideRainbow.avif"><small class="exif exif-right">f/1.4<br><sup>1</sup><sub>4000</sub>s<br>ISO 100<br>75 mm</small></p>
+<p class="exif-para"><img style="aspect-ratio: 3464 / 2309" width="3464" decoding="async" loading="lazy" src="/Frames/Landscape/mtchangbai1.avif"> <small class="exif exif-right"><sup>1</sup><sub>2000</sub>s<br>ISO 100</small></p>
+<p class="exif-para"><img style="aspect-ratio: 4372 / 1829" width="4372" decoding="async" loading="lazy" src="/Frames/Landscape/mtchangbai2.avif"> <small class="exif exif-right"><sup>1</sup><sub>3200</sub>s<br>ISO 100</small></p>
+<p class="exif-para"><img style="aspect-ratio: 3464 / 2309" width="3464" decoding="async" loading="lazy" src="/Frames/Landscape/mtchangbai3.avif"><small class="exif exif-right"><sup>1</sup><sub>2500</sub>s<br>ISO 100</small></p>
 
 
 
@@ -508,6 +508,54 @@
         event.preventDefault();
         toggleDetailsWithCloseAnim(target.parentElement);
       }, true);
+    })();
+  </script>
+
+  <script>
+    // Reposition .exif-right labels to sit 0.75em from the image's actual right
+    // edge. The CSS formula assumes break-out width, but max-height: 100vh makes
+    // portrait images narrower than that, so we measure the real rendered edge.
+    (function () {
+      function repositionExif(para) {
+        var exifEl = para.querySelector('.exif-right');
+        if (!exifEl) return;
+        var img = para.querySelector('img:not(.icon)');
+        if (!img) return;
+        var imgRect = img.getBoundingClientRect();
+        if (imgRect.width === 0) return; // not yet laid out
+        var paraRect = para.getBoundingClientRect();
+        var gap = 0.75 * parseFloat(getComputedStyle(exifEl).fontSize);
+        exifEl.style.left = (imgRect.right - paraRect.left + gap) + 'px';
+      }
+
+      function init() {
+        // Skip xpan paragraphs — their EXIF position is set separately by CSS.
+        var paras = document.querySelectorAll('.exif-para:not([data-xpan])');
+        if (!paras.length) return;
+
+        if (typeof ResizeObserver !== 'undefined') {
+          var ro = new ResizeObserver(function (entries) {
+            entries.forEach(function (entry) {
+              var para = entry.target.closest('.exif-para');
+              if (para) repositionExif(para);
+            });
+          });
+          paras.forEach(function (para) {
+            var img = para.querySelector('img:not(.icon)');
+            if (img) ro.observe(img);
+          });
+        } else {
+          // Fallback for older browsers.
+          paras.forEach(repositionExif);
+          window.addEventListener('resize', function () { paras.forEach(repositionExif); });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
     })();
   </script>
 

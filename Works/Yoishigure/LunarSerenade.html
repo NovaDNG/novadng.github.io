@@ -1525,6 +1525,54 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
     })();
   </script>
 
+  <script>
+    // Reposition .exif-right labels to sit 0.75em from the image's actual right
+    // edge. The CSS formula assumes break-out width, but max-height: 100vh makes
+    // portrait images narrower than that, so we measure the real rendered edge.
+    (function () {
+      function repositionExif(para) {
+        var exifEl = para.querySelector('.exif-right');
+        if (!exifEl) return;
+        var img = para.querySelector('img:not(.icon)');
+        if (!img) return;
+        var imgRect = img.getBoundingClientRect();
+        if (imgRect.width === 0) return; // not yet laid out
+        var paraRect = para.getBoundingClientRect();
+        var gap = 0.75 * parseFloat(getComputedStyle(exifEl).fontSize);
+        exifEl.style.left = (imgRect.right - paraRect.left + gap) + 'px';
+      }
+
+      function init() {
+        // Skip xpan paragraphs — their EXIF position is set separately by CSS.
+        var paras = document.querySelectorAll('.exif-para:not([data-xpan])');
+        if (!paras.length) return;
+
+        if (typeof ResizeObserver !== 'undefined') {
+          var ro = new ResizeObserver(function (entries) {
+            entries.forEach(function (entry) {
+              var para = entry.target.closest('.exif-para');
+              if (para) repositionExif(para);
+            });
+          });
+          paras.forEach(function (para) {
+            var img = para.querySelector('img:not(.icon)');
+            if (img) ro.observe(img);
+          });
+        } else {
+          // Fallback for older browsers.
+          paras.forEach(repositionExif);
+          window.addEventListener('resize', function () { paras.forEach(repositionExif); });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
 </body>
 
 </html>

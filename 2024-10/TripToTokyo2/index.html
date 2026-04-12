@@ -255,9 +255,9 @@
 <center>東京的風景在長焦鏡頭視角下顯現出了更強的層次感</center><br/>
 
 <p>本來我是希望能從晴空塔上拍落日, 但天公不作美, 地平線附近的厚雲層很快便將落日餘暉吞噬殆盡. </p>
-<p><img height="4253" width="2820" decoding="async" loading="lazy" src="/2024-10/TripToTokyo2/velviasunset.avif"></p>
+<p><img style="aspect-ratio: 2820 / 4253" width="2820" decoding="async" loading="lazy" src="/2024-10/TripToTokyo2/velviasunset.avif"></p>
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052179066/in/album-72177720321005949/" title="DSC_1211-25 mm"><img decoding="async" loading="lazy" src="https://live.staticflickr.com/65535/54052179066_ef4cb6677b_b.jpg" alt="DSC_1211-25 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<p class="exif-para"><img height="2105" width="5700" decoding="async" loading="lazy" src="/2024-10/TripToTokyo2/tunnel.avif"><small class="exif exif-right">f/6.3<br><sup>1</sup><sub>6</sub>s<br>ISO 1600<br>40 mm</small></p>
+<p class="exif-para"><img style="aspect-ratio: 5700 / 2105" width="5700" decoding="async" loading="lazy" src="/2024-10/TripToTokyo2/tunnel.avif"><small class="exif exif-right">f/6.3<br><sup>1</sup><sub>6</sub>s<br>ISO 1600<br>40 mm</small></p>
 <center>快速上升的電梯 + 慢速快門產生的時空隧道感</center><br/>
 
 
@@ -549,14 +549,14 @@
 
 <div class="row mb-2">
   <div class="twelve columns">
-    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader.avif"
+    <img width="128" decoding="async" loading="lazy" src="/images/pheader.avif"
          alt="Logo"
-         style="max-width: 128px; height: auto;"
+         style="max-width: 128px; height: auto; aspect-ratio: 128 / 128"
          class="noshadow"
          id="logoLight"/>
-    <img height="128" width="128" decoding="async" loading="lazy" src="/images/pheader_dark.avif"
+    <img width="128" decoding="async" loading="lazy" src="/images/pheader_dark.avif"
          alt="Logo"
-         style="max-width: 128px; height: auto;"
+         style="max-width: 128px; height: auto; aspect-ratio: 128 / 128"
          class="noshadow"
          id="logoDark"/>
   </div>
@@ -615,6 +615,54 @@
         event.preventDefault();
         toggleDetailsWithCloseAnim(target.parentElement);
       }, true);
+    })();
+  </script>
+
+  <script>
+    // Reposition .exif-right labels to sit 0.75em from the image's actual right
+    // edge. The CSS formula assumes break-out width, but max-height: 100vh makes
+    // portrait images narrower than that, so we measure the real rendered edge.
+    (function () {
+      function repositionExif(para) {
+        var exifEl = para.querySelector('.exif-right');
+        if (!exifEl) return;
+        var img = para.querySelector('img:not(.icon)');
+        if (!img) return;
+        var imgRect = img.getBoundingClientRect();
+        if (imgRect.width === 0) return; // not yet laid out
+        var paraRect = para.getBoundingClientRect();
+        var gap = 0.75 * parseFloat(getComputedStyle(exifEl).fontSize);
+        exifEl.style.left = (imgRect.right - paraRect.left + gap) + 'px';
+      }
+
+      function init() {
+        // Skip xpan paragraphs — their EXIF position is set separately by CSS.
+        var paras = document.querySelectorAll('.exif-para:not([data-xpan])');
+        if (!paras.length) return;
+
+        if (typeof ResizeObserver !== 'undefined') {
+          var ro = new ResizeObserver(function (entries) {
+            entries.forEach(function (entry) {
+              var para = entry.target.closest('.exif-para');
+              if (para) repositionExif(para);
+            });
+          });
+          paras.forEach(function (para) {
+            var img = para.querySelector('img:not(.icon)');
+            if (img) ro.observe(img);
+          });
+        } else {
+          // Fallback for older browsers.
+          paras.forEach(repositionExif);
+          window.addEventListener('resize', function () { paras.forEach(repositionExif); });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
     })();
   </script>
 
