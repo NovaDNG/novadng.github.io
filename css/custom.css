@@ -221,8 +221,10 @@ html.darkmode body {
    ============================================================ */
 
 img {
+    width: auto;
     max-width: 100%;
     height: auto;
+    max-height: 100vh;
     box-shadow: var(--shadow-default);
     vertical-align: bottom; /* removes inline baseline gap without negative margin */
 }
@@ -231,6 +233,13 @@ img.noshadow {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+}
+
+/* Default breathing room for image-only paragraphs.
+   :where() zeroes the :has() specificity so p[data-mm]/p[data-mt] always win.
+   Applies at CSS render time — no injector required, works in hexo server too. */
+p:where(:has(> img:not(.icon))) {
+    margin-block: 1.67rem;
 }
 
 p[data-mt] {
@@ -275,11 +284,32 @@ p[data-mm] {
     .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]),
     .container embed,
     .container object {
-        width: min(120%, 100vw);
+        display: block; /* block stacking lets same-paragraph images separate via margins */
+        width: auto;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        max-width: none;
+        max-width: min(120%, 100vw);
+    }
+
+    /* Gap below each break-out image inside a <p> so that consecutive images
+       (marked puts them in one <p> when no blank line separates them) get
+       visible spacing. :last-of-type removes the trailing gap on the final img
+       so it doesn't double up with the paragraph's own margin-block. */
+    .container p > img:not(.icon):not([alt~="_gallery"]) {
+        margin-bottom: 1.33rem;
+    }
+
+    .container p > img:not(.icon):not([alt~="_gallery"]):last-of-type {
+        margin-bottom: 0;
+    }
+
+    /* Xpan/panoramic images: force true 100vw regardless of container width.
+       !important needed to beat the high-specificity break-out selector above. */
+    .container p[data-xpan] img {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        transition: transform 0.2s ease-in;
     }
 
     /* Gallery paragraph: zero font-size removes inline whitespace between images */
@@ -369,6 +399,19 @@ html.darkmode .exif { color: rgba(200, 190, 185, 0.38); }
    when viewport > 844.8px; need ~70px gap → threshold 1060px  */
 @media (max-width: 1059px) {
     .exif { display: none; }
+}
+
+/* Xpan hover: slide image left to reveal EXIF in the vacated space.
+   Only activates when EXIF is visible (same 1060px threshold as above).
+   Slide amount = 5em; EXIF left = viewport right edge − 5em + gap. */
+@media (min-width: 1060px) {
+    p[data-xpan] > .exif-right {
+        left: calc(50% + 50vw - 7em + 0.75em);
+    }
+
+    p[data-xpan]:hover img {
+        transform: translateX(calc(-50% - 5.6em)) !important;
+    }
 }
 
 /* Flickr embed wrapper */
