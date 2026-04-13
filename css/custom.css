@@ -719,13 +719,16 @@ details.is-closing > :not(summary) {
     }
     body {
         background-color: #fff;
-    }
-    table, img, svg {
-        break-inside: avoid;
         display: block;
     }
-    p:has(> img) {
-        break-inside: avoid;
+    table, img, svg {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+        display: block;
+    }
+    p:has(> img) figure, a:has(> img), .exif-para {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
     }
     img:not([alt~="_gallery"]) {
         max-width: 87% !important;
