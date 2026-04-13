@@ -976,39 +976,6 @@ details.is-closing > :not(summary) {
     width: auto;
   }
 
-  /* Two embeds side by side.
-     The two embeds live inside one <p>. Before Flickr JS: <a data-flickr-embed>.
-     After Flickr JS: <blockquote data-flickr-embed> replaces each <a>.
-     Use a stable selector (not :has) so the flex layout survives the swap. */
-  .hcol-body--double > p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: flex-start;
-    min-width: 0;
-  }
-
-  /* Before Flickr JS: target the <a> anchors */
-  .hcol-body--double > p > a[data-flickr-embed],
-  /* After Flickr JS: target the <blockquote> widgets Flickr substitutes */
-  .hcol-body--double > p > blockquote[data-flickr-embed] {
-    flex: 1 1 0;
-    min-width: 0;
-    /* Override any fixed width Flickr injects inline */
-    max-width: none !important;
-  }
-
-  /* Hide the <br> Markdown inserts between consecutive embeds */
-  .hcol-body--double > p > br {
-    display: none;
-  }
-
-  /* Caption sits below both images */
-  .hcol-body--double > blockquote,
-  .hcol-body--double > p:has(> blockquote) {
-    flex-basis: 100%;
-  }
 
   /* Archive columns hidden by default in landscape too.
      Must come AFTER .hcol-group { display: flex } (line ~913) to win cascade. */
