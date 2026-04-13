@@ -719,13 +719,16 @@ details.is-closing > :not(summary) {
     }
     body {
         background-color: #fff;
-    }
-    table, img, svg {
-        break-inside: avoid;
         display: block;
     }
-    p:has(> img) {
-        break-inside: avoid;
+    table, img, svg {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+        display: block;
+    }
+    p:has(> img), figure, a:has(> img), .exif-para {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
     }
     img:not([alt~="_gallery"]) {
         max-width: 87% !important;
@@ -963,6 +966,7 @@ details.is-closing > :not(summary) {
     max-width: 95vw;
     max-height: 90vh;
     width: auto;
+    margin: 0 1.3rem 1rem 0;
   }
 
   /* Reset the gallery-paragraph full-bleed positioning inside wide columns */
@@ -992,8 +996,22 @@ details.is-closing > :not(summary) {
   .hcol-body--double > p > blockquote[data-flickr-embed] {
     flex: 1 1 0;
     min-width: 0;
+    width: 49.25%; /* Ensure non-zero width for script measurement and prevent 100% expansion during async load */
     /* Override any fixed width Flickr injects inline */
     max-width: none !important;
+  }
+
+  /* Stabilize image width before replacement so measurement is consistent.
+     By forcing 100% width on the image, the Flickr script will measure it
+     relative to its half-width flex column instead of its natural size. */
+  .hcol-body--double > p > a[data-flickr-embed] img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Force the resulting iframe to fill its flex container column */
+  .hcol-body--double > p > blockquote[data-flickr-embed] iframe {
+    width: 100% !important;
   }
 
   /* Hide the <br> Markdown inserts between consecutive embeds */
