@@ -345,6 +345,21 @@ th { display: none; }
   
 
 </div>
+<script>
+(function() {
+  var toggle = document.querySelector('.hcol-archive-toggle');
+  if (!toggle) return;
+  function doToggle() {
+    var scroll = toggle.closest('.hcol-scroll');
+    var open = scroll.classList.toggle('archive-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', doToggle);
+  toggle.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); doToggle(); }
+  });
+})();
+</script>
 
 
 
