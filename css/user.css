@@ -230,7 +230,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
 }
 
 /* Tate-chu-yoko: upright rendering for short horizontal runs (numbers, abbreviations) */
-.tategaki-content .tcy {
+:is(.tategaki-content, .hcol-label) .tcy {
   text-combine-upright: all;
   -webkit-text-combine: horizontal;
   text-orientation: upright;
@@ -304,6 +304,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
     border-left: 0;
     border-top: 8px solid #e2001a;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 1em 1em 1em 0.87em;
     margin-block-end: 1em;
   }

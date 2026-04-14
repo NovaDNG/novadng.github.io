@@ -14,7 +14,7 @@
   <title>創新與懷舊</title>
   
   <link rel="canonical" href="https://novadng.studio/2010-12/InnovationVsNostalgia/">
-  <meta name="description" content="本文原載厦门科技 6 (2010): pp.41-42. 熱愛攝影的人, 在追求著樣式更新潮, 功能更強大的相機與鏡頭時, 內心一定依然保留著對膠片的一份懷舊情結. 彩色膠片的由來攝影術發明200年來, 伴隨著無數攝影師的銳意進取一路發展. 因為他們的銳意進取, 在200年內誕生了無數的發明創造, ">
+  <meta name="description" content="本文原載厦门科技 6 (2010)：pp.41-42. 章節標題为編輯所增 熱愛攝影的人，在追求著樣式更新潮，功能更強大的相機與鏡頭時，內心一定依然保留著對膠片的一份懷舊情結。 彩色膠片的由來攝影術發明200年來，伴隨著無數攝影師的銳意進取一路發展。因為他們的銳意進取，在200年內誕生了無數的發明創">
   
   <meta name="author" content="NovaDNG">
   
@@ -23,12 +23,12 @@
   <meta property="og:site_name" content="NovaDNG Studio" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="創新與懷舊" />
-  <meta property="og:description" content="本文原載厦门科技 6 (2010): pp.41-42. 熱愛攝影的人, 在追求著樣式更新潮, 功能更強大的相機與鏡頭時, 內心一定依然保留著對膠片的一份懷舊情結. 彩色膠片的由來攝影術發明200年來, 伴隨著無數攝影師的銳意進取一路發展. 因為他們的銳意進取, 在200年內誕生了無數的發明創造, ">
+  <meta property="og:description" content="本文原載厦门科技 6 (2010)：pp.41-42. 章節標題为編輯所增 熱愛攝影的人，在追求著樣式更新潮，功能更強大的相機與鏡頭時，內心一定依然保留著對膠片的一份懷舊情結。 彩色膠片的由來攝影術發明200年來，伴隨著無數攝影師的銳意進取一路發展。因為他們的銳意進取，在200年內誕生了無數的發明創">
   <meta property="og:url" content="https://novadng.studio/2010-12/InnovationVsNostalgia/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="創新與懷舊">
-  <meta name="twitter:description" content="本文原載厦门科技 6 (2010): pp.41-42. 熱愛攝影的人, 在追求著樣式更新潮, 功能更強大的相機與鏡頭時, 內心一定依然保留著對膠片的一份懷舊情結. 彩色膠片的由來攝影術發明200年來, 伴隨著無數攝影師的銳意進取一路發展. 因為他們的銳意進取, 在200年內誕生了無數的發明創造, ">
+  <meta name="twitter:description" content="本文原載厦门科技 6 (2010)：pp.41-42. 章節標題为編輯所增 熱愛攝影的人，在追求著樣式更新潮，功能更強大的相機與鏡頭時，內心一定依然保留著對膠片的一份懷舊情結。 彩色膠片的由來攝影術發明200年來，伴隨著無數攝影師的銳意進取一路發展。因為他們的銳意進取，在200年內誕生了無數的發明創">
   
   <meta name="twitter:image" content="https://novadng.studioundefined">
   
@@ -139,6 +139,51 @@
 
 
   
+  <style id="critical-yoi-float-nav">
+    @keyframes yoiFadeOnly {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .page-yoishigure .trans {
+      animation: none;
+    }
+
+    .page-yoishigure .trans > * {
+      animation: yoiFadeOnly 0.7s;
+    }
+
+    .yoi-float-nav {
+      position: fixed;
+      top: 8rem;
+      right: 0;
+      z-index: 24;
+      width: 4.9rem;
+      max-width: calc(100vw - 0.8rem);
+      background: #EBE6E2DE;
+      box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
+      backdrop-filter: blur(8px) saturate(56%);
+    }
+
+    html.darkmode .yoi-float-nav {
+      background: #19191ADE;
+      box-shadow: 0 6px 12px 8px rgba(0, 123, 187, 0.12);
+      backdrop-filter: blur(8px) saturate(67%);
+    }
+
+    .yoi-float-nav.yoi--booting {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    @media (max-width: 550px) {
+      .yoi-float-nav {
+        display: none;
+      }
+    }
+  </style>
+  
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -167,6 +212,10 @@
   <noscript><link rel="stylesheet" href="/css/prism-dark.css"></noscript>
   <link rel="stylesheet" href="/css/prism-line-numbers.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/prism-line-numbers.css"></noscript>
+  
+  
+<link rel="stylesheet" href="/css/yoishigure.css">
+
   
 
   <!-- Favicon
@@ -222,7 +271,7 @@
 <link rel="alternate" href="/rss.xml" title="NovaDNG Studio" type="application/rss+xml">
 </head>
 
-<body>
+<body class="page-yoishigure page-yoishigure-sub">
   
   <div class="container">
     <div class="row">
@@ -236,27 +285,571 @@
 
 
   
-  <blockquote>
-<p>本文原載厦门科技 6 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(2010)</span>: pp.41-42.</p>
+  <section class="tategaki-stage">
+    <div class="tategaki-scroll js-tategaki-scroll tategaki--booting">
+      <article class="tategaki-content">
+        <style>
+    .tategaki-content { height: 28em; line-height: 1.67; letter-spacing: 0.067em; }
+    .tategaki-scroll { height: 36em !important; }
+    .container img:not(.icon):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]), .container video, .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]), .container embed, .container object { transform: none; height: 28em; }
+    body.page-yoishigure-sub .tategaki-content blockquote { border-color: #E2001A; }
+    body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink) { color: #4c4c4f; text-decoration: underline 2px #E2001A; background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, #E2001A 50% ); }
+    .tategaki-stage { width: 96vw; max-width: 96vw; margin-left: calc(50% - 48vw); margin-right: calc(50% - 48vw); height: 35em; }
+</style>
+
+<blockquote>
+<p>本文原載厦门科技 <span class="tcy">6</span> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(2010)</span>：pp.41-42. 章節標題为編輯所增</p>
 </blockquote>
-<p>熱愛攝影的人, 在追求著樣式更新潮, 功能更強大的相機與鏡頭時, 內心一定依然保留著對膠片的一份懷舊情結. </p>
-<h3 id="彩色膠片的由來"><a href="#彩色膠片的由來" class="headerlink" title="彩色膠片的由來"></a>彩色膠片的由來</h3><p>攝影術發明200年來, 伴隨著無數攝影師的銳意進取一路發展. 因為他們的銳意進取, 在200年內誕生了無數的發明創造, 而這些發明創造中最偉大的一項, 莫過於感光膠片. </p>
-<p>所有的膠片攝影師都應該記住兩個人: 路易·達蓋爾與喬治·伊士曼, 前者是化學家以及畫家, 發明了銀版攝影法, 後者是攝影師, 卻發明了感光膠片. <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(注: 事實錯誤. 伊士曼是膠片普及者而非發明者)</span></p>
-<p>然而, 從銀版到感光膠片, 其飛躍不僅僅是材料的改變, 更是一次攝影理念的革命. 究其原因, 是因為它使得快速攝影成為了可能. 從此, 大批攝影師脫離了數十分鐘曝光的束縛, 這也促使攝影器材向著高速化, 小型化發展. </p>
-<p>過後的攝影創新歷程無需詳述, 但是我們了解到, 至1930年底, 發明彩色膠片時, 世界上已經不存在不用膠片的攝影師了. <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(注:事實錯誤, 現代意義上彩色膠片Kodachrome於1935年面世)</span></p>
-<h3 id="數位攝影的到來"><a href="#數位攝影的到來" class="headerlink" title="數位攝影的到來"></a>數位攝影的到來</h3><p>1997 年, 可以說是數位化感光元件的普及元年. 此年, 數字感光元件相機的產量突破一萬台, 這個數字在今天看來或許有些可笑, 但這卻是一個里程碑, 標誌著數位攝影的時代正式到來. </p>
-<p>雖然現在世界上已經難覓膠片攝影師的蹤跡, 但膠片絕對是老一輩攝影師甚至一部分90後心中不滅的記憶. </p>
-<p>究其原因, 不外有三: 紮實的顆粒感, 豐富的影調, 引領我們更仔細的思考. </p>
-<p>數位時代的膠片, 其精細程度是傳統膠片所無法比擬的. 放制一幅5R規格的相片, 最好的35mm膠片也比不上最便宜的千萬像質數位單眼. 但是, 這種精細感卻令人感到不安. 無顆粒的數位影像, 完全沒有膠片帶給人的紮實感, 那些經典的ISO800以上黑白膠片增感迫沖後產生的顆粒極具衝擊力, 令人過目難忘. 膠片顆粒是一種既可以如海灘上溫柔的白沙一般細膩柔和又可以像大漠戈壁裡糙礪的黃沙一般粗獷豪放的顆粒, 而不是數位影像中方正而堅硬冷漠的像素方格, 更不是那些惹人生厭的噪訊雜點. </p>
-<p>由於人們對於圖片精細程度的要求不斷提高, 排列在感光元件上的像素方格數量越來越多. 因此數字感光元件的寬容度一直受到限制, 而膠片則不然. 傳統反轉片的寬容度高於現今市售的任何一款數位相機, 而負片的寬容度更是遠超數字感光元件. 並且, 膠片<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(反轉片)</span>的感光度越高, 其寬容度越大, 數字感光元件則正好相反. 更何況, 在傳統膠片暗房內, 暗房特技可以非常輕鬆地拯救失去的高光&#x2F;暗部細節. <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(事實錯誤: 此處反轉片應替換為負片)</span></p>
-<p>最重要的一點是, 膠片攝影讓我們更縝密的思考. </p>
-<p>小時候, 我就知道, 我手中的相機只能裝入一卷膠捲, 而一卷35mm膠捲滿打滿算只能拍37 張照片. 拍了一次, 就少了一張. 這使得我在每一次按下快門前, 都會看著取景器問自己:真的非拍不可嗎?由於這種原因, 那個時候的精品率很高. </p>
-<p>但是在數位攝影大行其道的今天, 有多少攝影師會在看著取景器時問自己: 真的有必要拍嗎?數位攝影師對待攝影的態度不再像以前一樣小心謹慎了. ｢反正相機很強的, 反正拍了可以看, 看了可以刪.｣ 今天, 我們面對著電腦中成百上千的數位影像<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(其中的大部分你將一輩子都不可能再看上一眼)</span> 時, 我們必須自問: ｢真的有必要嗎?｣ </p>
-<p>快速攝影在今天隨處可見. 很多人拿出相機, 不經過任何思考, 直接按下快門, 很多人將地平線置於畫面正中, 很多人用超高的ISO值拍下大量的噪音雜訊, 很多人⋯⋯ 這不是所謂的 ｢快速攝影｣, 這簡直是 ｢快餐攝影｣. 試問透過這種途徑得來的相片有何價值?然而, 在膠片時代, 拿著相機的每個人都會慎重的思考, 因為他們都知道, 自己只有36次機會. </p>
-<p>攝影在這個時代早已大眾化. 有人戲稱這是個全民記者的時代, 技術隨著設備的進化而被冷落. 25年前, 談到攝影師人們會肅然起敬, 而今天談起攝影師人們嗤之以鼻, 只因某些人對攝影術的不當應用於攝影的平民化. 隨處可見單眼相機, 可我知道它們的持有者大多連什麼是單眼都不甚了解. 全世界有數十億台緊湊型相機, 他們的持有者大多只會用自動, 每年都有數以億計的數位影像被記錄 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(這個數字還在不斷增多)</span>, 而這其中能被沖洗印放, 裱貼妥當的又有多少? 攝影連同攝影師淪落的一文不名. 這就是 ｢快餐攝影｣ 的悲哀. </p>
-<h3 id="由舊膠片而產生的創新理念"><a href="#由舊膠片而產生的創新理念" class="headerlink" title="由舊膠片而產生的創新理念"></a>由舊膠片而產生的創新理念</h3><p>我曾說過, 沒有用過大畫幅相機的人, 不應自稱攝影師. 因為, 使用大畫幅必須小心謹慎, 細緻入微; 一著不慎, 則得不到照片. </p>
-<p>大畫幅的精神, 其實就等同於膠片精神, 是一種一絲不苟, 毫不妥協的精神, 而在如今的數位攝影師身上, 這種精神早已蕩然無存. </p>
-<p>在膠片誕生125周年之際, 我謹以此文表示對膠片以及它的年代的緬懷. 其實, 人不可能離開創新, 攝影也不可能回到膠片時代, 而我們真正懷念的, 也許並不單單是膠片, 而是隨著膠片消失而一併漸漸消失了的, 那種對待攝影的態度, 精神. </p>
+<p>熱愛攝影的人，在追求著樣式更新潮，功能更強大的相機與鏡頭時，內心一定依然保留著對膠片的一份懷舊情結。</p>
+<h3 id="彩色膠片的由來"><a href="#彩色膠片的由來" class="headerlink" title="彩色膠片的由來"></a>彩色膠片的由來</h3><p>攝影術發明200年來，伴隨著無數攝影師的銳意進取一路發展。因為他們的銳意進取，在200年內誕生了無數的發明創造，而這些發明創造中最偉大的一項，莫過於感光膠片。</p>
+<p>所有的膠片攝影師都應該記住兩個人：路易·達蓋爾與喬治·伊士曼，前者是化學家以及畫家，發明了銀版攝影法，後者是攝影師，卻發明了感光膠片。<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(注：事實錯誤。伊士曼是膠片普及者而非發明者)</span></p>
+<p>然而，從銀版到感光膠片，其飛躍不僅僅是材料的改變，更是一次攝影理念的革命。究其原因，是因為它使得快速攝影成為了可能。從此，大批攝影師脫離了數十分鐘曝光的束縛，這也促使攝影器材向著高速化，小型化發展。</p>
+<p>過後的攝影創新歷程無需詳述，但是我們了解到，至1930年底，發明彩色膠片時，世界上已經不存在不用膠片的攝影師了。<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(注：事實錯誤，現代意義上彩色膠片Kodachrome於1935年面世)</span></p>
+<h3 id="數位攝影的到來"><a href="#數位攝影的到來" class="headerlink" title="數位攝影的到來"></a>數位攝影的到來</h3><p>1997 年，可以說是數位化感光元件的普及元年。此年，數字感光元件相機的產量突破一萬台，這個數字在今天看來或許有些可笑，但這卻是一個里程碑，標誌著數位攝影的時代正式到來。</p>
+<p>雖然現在世界上已經難覓膠片攝影師的蹤跡，但膠片絕對是老一輩攝影師甚至一部分<span class="tcy">90</span>後心中不滅的記憶。</p>
+<p>究其原因，不外有三：紮實的顆粒感，豐富的影調，引領我們更仔細的思考。</p>
+<p>數位時代的膠片，其精細程度是傳統膠片所無法比擬的。放制一幅<span class="tcy">5R</span>規格的相片，最好的35mm膠片也比不上最便宜的千萬像質數位單眼。但是，這種精細感卻令人感到不安。無顆粒的數位影像，完全沒有膠片帶給人的紮實感，那些經典的ISO800以上黑白膠片增感迫沖後產生的顆粒極具衝擊力，令人過目難忘。膠片顆粒是一種既可以如海灘上溫柔的白沙一般細膩柔和又可以像大漠戈壁裡糙礪的黃沙一般粗獷豪放的顆粒，而不是數位影像中方正而堅硬冷漠的像素方格，更不是那些惹人生厭的噪訊雜點。</p>
+<p>由於人們對於圖片精細程度的要求不斷提高，排列在感光元件上的像素方格數量越來越多。因此數字感光元件的寬容度一直受到限制，而膠片則不然。傳統反轉片的寬容度高於現今市售的任何一款數位相機，而負片的寬容度更是遠超數字感光元件。並且，膠片<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">（反轉片）</span>的感光度越高，其寬容度越大，數字感光元件則正好相反。更何況，在傳統膠片暗房內，暗房特技可以非常輕鬆地拯救失去的高光&#x2F;暗部細節。<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(事實錯誤：此處反轉片應替換為負片)</span></p>
+<p>最重要的一點是，膠片攝影讓我們更縝密的思考。</p>
+<p>小時候，我就知道，我手中的相機只能裝入一卷膠捲，而一卷35mm膠捲滿打滿算只能拍<span class="tcy">37</span>張照片。拍了一次，就少了一張。這使得我在每一次按下快門前，都會看著取景器問自己：真的非拍不可嗎?由於這種原因，那個時候的精品率很高。</p>
+<p>但是在數位攝影大行其道的今天，有多少攝影師會在看著取景器時問自己：真的有必要拍嗎?數位攝影師對待攝影的態度不再像以前一樣小心謹慎了。「反正相機很強的，反正拍了可以看，看了可以刪。」今天，我們面對著電腦中成百上千的數位影像<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">（其中的大部分你將一輩子都不可能再看上一眼）</span>時，我們必須自問：「真的有必要嗎?」</p>
+<p>快速攝影在今天隨處可見。很多人拿出相機，不經過任何思考，直接按下快門，很多人將地平線置於畫面正中，很多人用超高的ISO值拍下大量的噪音雜訊，很多人⋯⋯ 這不是所謂的「快速攝影」，這簡直是「快餐攝影」。試問透過這種途徑得來的相片有何價值?然而，在膠片時代，拿著相機的每個人都會慎重的思考，因為他們都知道，自己只有<span class="tcy">36</span>次機會。</p>
+<p>攝影在這個時代早已大眾化。有人戲稱這是個全民記者的時代，技術隨著設備的進化而被冷落。<span class="tcy">25</span>年前，談到攝影師人們會肅然起敬，而今天談起攝影師人們嗤之以鼻，只因某些人對攝影術的不當應用與攝影的平民化。隨處可見單眼相機，可我知道它們的持有者大多連什麼是單眼都不甚了解。全世界有數十億台緊湊型相機，他們的持有者大多只會用自動，每年都有數以億計的數位影像被記錄<span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">（這個數字還在不斷增多）</span>，而這其中能被沖洗印放，裱貼妥當的又有多少? 攝影連同攝影師淪落的一文不名。這就是「快餐攝影」的悲哀。</p>
+<h3 id="由舊膠片而產生的創新理念"><a href="#由舊膠片而產生的創新理念" class="headerlink" title="由舊膠片而產生的創新理念"></a>由舊膠片而產生的創新理念</h3><p>我曾說過，沒有用過大畫幅相機的人，不應自稱攝影師。因為，使用大畫幅必須小心謹慎，細緻入微; 一著不慎，則得不到照片。</p>
+<p>大畫幅的精神，其實就等同於膠片精神，是一種一絲不苟，毫不妥協的精神，而在如今的數位攝影師身上，這種精神早已蕩然無存。</p>
+<p>在膠片誕生125周年之際，我謹以此文表示對膠片以及它的年代的緬懷。其實，人不可能離開創新，攝影也不可能回到膠片時代，而我們真正懷念的，也許並不單單是膠片，而是隨著膠片消失而一併漸漸消失了的，那種對待攝影的態度，精神。</p>
+
+      </article>
+    </div>
+  </section>
+  <script>
+  (function () {
+    // Mobile breakpoint used to disable desktop-only horizontal scrolling behavior.
+    var mobileQuery = window.matchMedia('(max-width: 900px)');
+    // Detect ruby base text that contains Latin letters/digits and needs manual inter-script spacing.
+    var RUBY_LATIN_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
+
+    // -------------------------------------------------------------------------
+    // Legacy auto-TCY pipeline (kept for reference, currently disabled).
+    // -------------------------------------------------------------------------
+    /*
+     * Auto TCY detection (disabled by design).
+     * Use manual markup in markdown instead:
+     *   <span class="tcy">...</span>
+     * Keep this block for future reference.
+     *
+    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+
+    var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
+    var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
+    var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
+    var TCY_MATH_PATTERN = /^[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}$/;
+    var TCY_BOUNDARY_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
+    var LATIN_PATTERN = /[A-Za-zＡ-Ｚａ-ｚ]/;
+    var CJK_PATTERN = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
+    var TCY_MAX_COMPRESS_RATIO = 2;
+
+    function canUseTcyToken(token) {
+      if (!token) return false;
+      if (TCY_TIME_PATTERN.test(token)) return true; // time-like tokens (e.g. 2:26)
+      if (TCY_MATH_PATTERN.test(token)) return true; // symbol + digits (e.g. ±0)
+      if (!/[A-Za-zＡ-Ｚａ-ｚ]/.test(token)) return true; // pure digits
+      if (/[0-9０-９]/.test(token)) return true; // mixed letter+digit
+      if (/[A-ZＡ-Ｚ]/.test(token)) return true; // acronym-like tokens (e.g. MC)
+      return false;
+    }
+
+    function isTokenBoundary(text, start, end) {
+      var prev = start > 0 ? text.charAt(start - 1) : '';
+      var next = end < text.length ? text.charAt(end) : '';
+      return !TCY_BOUNDARY_PATTERN.test(prev) && !TCY_BOUNDARY_PATTERN.test(next);
+    }
+
+    function isWesternOnlyText(text) {
+      if (!text) return false;
+      if (!LATIN_PATTERN.test(text)) return false;
+      return !CJK_PATTERN.test(text);
+    }
+
+    function isPartOfWesternPhrase(text, start, end, token) {
+      if (!token || !LATIN_PATTERN.test(token)) return false;
+      var isSpace = function (ch) {
+        return ch === ' ' || ch === '\u3000' || /\s/.test(ch);
+      };
+
+      var i = start - 1;
+      while (i >= 0 && isSpace(text.charAt(i))) i--;
+      var prevNonSpace = i >= 0 ? text.charAt(i) : '';
+
+      var j = end;
+      while (j < text.length && isSpace(text.charAt(j))) j++;
+      var nextNonSpace = j < text.length ? text.charAt(j) : '';
+
+      return LATIN_PATTERN.test(prevNonSpace) || LATIN_PATTERN.test(nextNonSpace);
+    }
+
+    function shouldKeepNaturalWidth(token, contextEl, cache) {
+      if (!token) return false;
+      if (TCY_TIME_PATTERN.test(token)) return true;
+
+      if (cache && cache.has(token)) return cache.get(token);
+      if (!contextEl) return false;
+
+      var probe = document.createElement('span');
+      probe.textContent = token;
+      probe.style.position = 'absolute';
+      probe.style.visibility = 'hidden';
+      probe.style.pointerEvents = 'none';
+      probe.style.whiteSpace = 'nowrap';
+      probe.style.writingMode = 'horizontal-tb';
+      probe.style.textOrientation = 'mixed';
+      probe.style.font = 'inherit';
+      probe.style.letterSpacing = 'inherit';
+      probe.style.wordSpacing = 'inherit';
+      probe.style.lineHeight = '1';
+
+      contextEl.appendChild(probe);
+      var naturalWidth = probe.getBoundingClientRect().width;
+      probe.remove();
+
+      var fontSize = parseFloat(window.getComputedStyle(contextEl).fontSize) || 16;
+      var keepNatural = naturalWidth > fontSize * TCY_MAX_COMPRESS_RATIO;
+
+      if (cache) cache.set(token, keepNatural);
+      return keepNatural;
+    }
+
+    function collectCandidateTextNodes(root) {
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+      var textNodes = [];
+
+      while (walker.nextNode()) {
+        var node = walker.currentNode;
+        var parent = node.parentNode;
+
+        if (!parent || parent.nodeType !== 1) continue;
+        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
+        if (parent.classList && parent.classList.contains('tcy')) continue;
+        if (isWesternOnlyText(node.nodeValue)) continue;
+        if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
+
+        textNodes.push(node);
+      }
+
+      return textNodes;
+    }
+
+    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var hasReplacement = false;
+      var match;
+
+      TCY_PATTERN.lastIndex = 0;
+
+      while ((match = TCY_PATTERN.exec(text)) !== null) {
+        var token = match[0];
+        var start = match.index;
+        var end = start + token.length;
+
+        if (!canUseTcyToken(token)) continue;
+        if (isPartOfWesternPhrase(text, start, end, token)) continue;
+        if (!isTokenBoundary(text, start, end)) continue;
+        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var span = document.createElement('span');
+        span.className = 'tcy';
+        span.textContent = token;
+        fragment.appendChild(span);
+
+        lastIndex = end;
+        hasReplacement = true;
+      }
+
+      if (!hasReplacement) return null;
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      return fragment;
+    }
+
+    function applyTcy(root) {
+      if (!root || root.dataset.tcyEnhanced === '1') return;
+      root.dataset.tcyEnhanced = '1';
+
+      var tokenDecisionCache = new Map();
+      var textNodes = collectCandidateTextNodes(root);
+
+      textNodes.forEach(function (node) {
+        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
+        if (!fragment) return;
+        node.parentNode.replaceChild(fragment, node);
+      });
+    }
+    */
+
+    function bindWheelToHorizontalScroll(el) {
+      if (!el || el.dataset.tategakiBound === '1') return;
+      el.dataset.tategakiBound = '1';
+
+      // Runtime state for one tategaki scroll container.
+      var content = el.querySelector('.tategaki-content');
+      var userInteracted = false;
+      var isProgrammaticScroll = false;
+      var pendingRightOffset = null;
+      var DETAILS_ANIM_MS = 200;
+      var viewportRevealed = false;
+
+      // Stub: edge-fade UI not yet implemented. Prevents ReferenceError crash.
+      function updateEdgeFadeState() { /* TODO: implement fade overlays at scroll edges */ }
+
+      // Keep desktop viewport hidden until first height/start alignment is stable.
+      el.classList.add('tategaki--booting');
+
+      function revealViewport() {
+        if (viewportRevealed) return;
+        viewportRevealed = true;
+        el.classList.remove('tategaki--booting');
+      }
+
+      // applyTcy(content); // Disabled: TCY is now manual via <span class="tcy">...</span>
+
+      // -----------------------------------------------------------------------
+      // Ruby autospace compensation:
+      // Add a class on ruby nodes whose base text includes Latin/digits.
+      // CSS then applies a 0.125ic side gap to mimic inter-script spacing.
+      // -----------------------------------------------------------------------
+      applyRubyAutospace(content);
+
+      // Extract ruby base text (exclude rt/rp annotations).
+      function getRubyBaseText(rubyEl) {
+        var base = '';
+        var nodes = rubyEl.childNodes;
+
+        for (var i = 0; i < nodes.length; i++) {
+          var node = nodes[i];
+          if (node.nodeType === 1) {
+            var tag = node.tagName ? node.tagName.toUpperCase() : '';
+            if (tag === 'RT' || tag === 'RP') continue;
+          }
+          base += node.textContent || '';
+        }
+
+        return base;
+      }
+
+      // Idempotently tag ruby nodes that need manual inter-script gap.
+      function applyRubyAutospace(root) {
+        if (!root || root.dataset.rubyAutospaceEnhanced === '1') return;
+        root.dataset.rubyAutospaceEnhanced = '1';
+
+        var rubies = root.querySelectorAll('ruby');
+        for (var i = 0; i < rubies.length; i++) {
+          var ruby = rubies[i];
+          var base = getRubyBaseText(ruby).trim();
+          if (!base) continue;
+          if (!RUBY_LATIN_PATTERN.test(base)) continue;
+          ruby.classList.add('ruby-latin-gap');
+        }
+      }
+
+      // Set scrollLeft while suppressing "user interacted" detection.
+      function setProgrammaticScrollLeft(next) {
+        if (el.scrollLeft === next) return;
+        isProgrammaticScroll = true;
+        el.scrollLeft = next;
+        requestAnimationFrame(function () {
+          isProgrammaticScroll = false;
+        });
+      }
+
+      // Keep vertical-rl content initially aligned to the rightmost column.
+      function scrollToRightEdge() {
+        if (mobileQuery.matches || userInteracted) return;
+
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        if (maxScrollLeft <= 0) {
+          updateEdgeFadeState();
+          return;
+        }
+
+        setProgrammaticScrollLeft(maxScrollLeft);
+      }
+
+      // Store viewport position as offset from the right edge.
+      // This makes position restoration stable when content width changes.
+      function captureRightOffset() {
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        pendingRightOffset = maxScrollLeft - el.scrollLeft;
+      }
+
+      // Restore previous viewport position after details open/close reflow.
+      function restoreFromRightOffset() {
+        if (pendingRightOffset == null) return;
+
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        if (maxScrollLeft <= 0) {
+          pendingRightOffset = null;
+          updateEdgeFadeState();
+          return;
+        }
+
+        var next = maxScrollLeft - pendingRightOffset;
+        next = Math.max(0, Math.min(maxScrollLeft, next));
+        pendingRightOffset = null;
+        setProgrammaticScrollLeft(next);
+      }
+
+      // Any non-programmatic scroll means user has taken control;
+      // stop future auto realignment.
+      el.addEventListener('scroll', function () {
+        updateEdgeFadeState();
+        if (isProgrammaticScroll) return;
+        userInteracted = true;
+      }, { passive: true });
+
+      if (content) {
+        function toggleDetailsWithAnimation(details) {
+          if (!details || details.classList.contains('is-closing')) return;
+
+          if (details.open) {
+            details.classList.add('is-closing');
+            window.setTimeout(function () {
+              details.open = false;
+              details.classList.remove('is-closing');
+              restoreFromRightOffset();
+            }, DETAILS_ANIM_MS);
+            return;
+          }
+
+          details.open = true;
+          restoreFromRightOffset();
+        }
+
+        // Intercept summary click to avoid native toggle jitter.
+        // We toggle details manually and immediately restore scroll position.
+        content.addEventListener('click', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          var details = summary.closest('details');
+          if (!details) return;
+
+          // Prevent native toggle so we can restore scroll position in the same task.
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+
+          toggleDetailsWithAnimation(details);
+        }, true);
+
+        // Keep keyboard accessibility behavior (Enter/Space on summary)
+        // while preserving the same anti-jitter scroll restoration.
+        content.addEventListener('keydown', function (event) {
+          var target = event.target;
+          if (!target || !target.closest) return;
+          var summary = target.closest('summary');
+          if (!summary) return;
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+
+          var details = summary.closest('details');
+          if (!details) return;
+
+          event.preventDefault();
+          userInteracted = true;
+          captureRightOffset();
+          toggleDetailsWithAnimation(details);
+        }, true);
+      }
+
+      // Map vertical wheel gesture to horizontal movement in desktop tategaki view.
+      el.addEventListener('wheel', function (event) {
+        if (mobileQuery.matches) return;
+        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+
+        var maxScrollLeft = el.scrollWidth - el.clientWidth;
+        if (maxScrollLeft <= 0) return;
+
+        var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft + event.deltaY));
+        if (next === el.scrollLeft) return;
+
+        userInteracted = true;
+        event.preventDefault();
+        el.scrollLeft = next;
+        updateEdgeFadeState();
+      }, { passive: false });
+
+      // -----------------------------------------------------------------------
+      // Dynamic height: measure content to minimize text wrapping.
+      // In vertical-rl the container height controls column length.
+      // We temporarily unconstrain it, find the tallest child's natural
+      // height, then clamp between a floor and a viewport-relative cap.
+      // -----------------------------------------------------------------------
+      function computeAndApplyDynamicHeight() {
+        if (mobileQuery.matches) {
+          el.style.removeProperty('height');
+          return;
+        }
+
+        // In vertical-rl, height = inline size.  Measure each child's
+        // max-content inline size individually and take the tallest one.
+        // (Using max-content on the whole container is unreliable — its
+        //  resolved value can differ from the max of its children.)
+        var children = content.children;
+        var idealH = 0;
+        for (var ci = 0; ci < children.length; ci++) {
+          var saved = children[ci].style.height;
+          children[ci].style.height = 'max-content';
+          var h = children[ci].offsetHeight;
+          children[ci].style.height = saved;
+          if (h > idealH) idealH = h;
+        }
+
+        if (idealH <= 0) {
+          el.style.removeProperty('height');
+          return;
+        }
+
+        var target = Math.ceil(idealH) + 32; // breathing room for scrollbar gutter
+
+        // In an embed iframe the parent page controls the frame size,
+        // so skip the viewport cap here to avoid a circular constraint.
+        var isEmbed = el.closest('.yoi-embed-root');
+        if (!isEmbed) {
+          var cap = Math.floor(window.innerHeight * 0.8);
+          target = Math.max(240, Math.min(target, cap));
+        }
+
+        el.style.height = target + 'px';
+      }
+ 
+      // Shared initializer used by first paint and viewport mode changes.
+      function initializeViewport() {
+        computeAndApplyDynamicHeight();
+        scrollToRightEdge();
+        revealViewport();
+      }
+
+      // Wait until vertical layout CSS is applied before deciding desktop height.
+      function waitForLayoutReady(done) {
+        if (mobileQuery.matches || !content) {
+          done();
+          return;
+        }
+
+        var attempts = 0;
+        var maxAttemptsAfterLoad = 120; // ~2s at 60fps after full page load
+        var startedAt = Date.now();
+        var hardTimeoutMs = 6000;
+
+        function check() {
+          var mode = window.getComputedStyle(content).writingMode || '';
+          var timedOutAfterLoad = document.readyState === 'complete' && attempts >= maxAttemptsAfterLoad;
+          var timedOutHard = (Date.now() - startedAt) >= hardTimeoutMs;
+          if (mode.indexOf('vertical') === 0 || timedOutAfterLoad || timedOutHard) {
+            done();
+            return;
+          }
+
+          attempts += 1;
+          requestAnimationFrame(check);
+        }
+
+        requestAnimationFrame(check);
+      }
+
+      // Wait for font metrics before first height/scroll decision.
+      function waitForFontsReady(done) {
+        if (!document.fonts || !document.fonts.ready || typeof document.fonts.ready.then !== 'function') {
+          done();
+          return;
+        }
+
+        var finished = false;
+        var timeoutId = window.setTimeout(finish, 2000);
+
+        function finish() {
+          if (finished) return;
+          finished = true;
+          window.clearTimeout(timeoutId);
+          done();
+        }
+
+        requestAnimationFrame(function () {
+          document.fonts.ready.then(function () {
+            requestAnimationFrame(finish);
+          }).catch(finish);
+        });
+      }
+
+      var initialViewportReady = false;
+      var initialViewportPending = false;
+
+      function initializeViewportWhenReady() {
+        if (initialViewportReady || initialViewportPending) return;
+        initialViewportPending = true;
+
+        waitForLayoutReady(function () {
+          waitForFontsReady(function () {
+            initialViewportPending = false;
+            if (initialViewportReady) return;
+            initialViewportReady = true;
+            initializeViewport();
+          });
+        });
+      }
+
+      // Delay first desktop height/scroll positioning until layout + fonts are stable.
+      initializeViewportWhenReady();
+
+      // Re-run initialization only on viewport-level changes.
+      function handleViewportChange() {
+        if (!initialViewportReady) {
+          initializeViewportWhenReady();
+          return;
+        }
+
+        initializeViewport();
+      }
+
+      window.addEventListener('load', handleViewportChange, { once: true });
+      window.addEventListener('resize', handleViewportChange);
+      // Intentionally avoid observing content size changes.
+      // Expanding/collapsing <details> changes content width and should not force re-alignment.
+
+      if (mobileQuery.addEventListener) {
+        mobileQuery.addEventListener('change', handleViewportChange);
+      } else if (mobileQuery.addListener) {
+        mobileQuery.addListener(handleViewportChange);
+      }
+
+      // Re-measure after fonts finish loading — glyph metrics affect column height.
+      // Use the `loadingdone` event rather than `fonts.ready`, because the
+      // latter resolves immediately when no fonts are *currently* loading —
+      // but the browser may not have started loading the tategaki fonts yet
+      // (it needs a layout pass first to discover which fonts are needed).
+      if (document.fonts && document.fonts.addEventListener) {
+        document.fonts.addEventListener('loadingdone', function () {
+          if (!initialViewportReady) return;
+          requestAnimationFrame(function () {
+            computeAndApplyDynamicHeight();
+            if (!userInteracted) scrollToRightEdge();
+          });
+        });
+      }
+    }
+
+    // Bind all tategaki scrollers rendered on the page.
+    document.querySelectorAll('.js-tategaki-scroll').forEach(bindWheelToHorizontalScroll);
+  })();
+</script>
 
 
 
@@ -512,14 +1105,14 @@
 
 <div class="row mb-2">
   <div class="twelve columns">
-    <img width="128" decoding="async" loading="lazy" src="/images/pheader.avif"
+    <img src="/images/pheader.avif"
          alt="Logo"
-         style="max-width: 128px; height: auto; aspect-ratio: 128 / 128"
+         style="max-width: 128px; height: auto;"
          class="noshadow"
          id="logoLight"/>
-    <img width="128" decoding="async" loading="lazy" src="/images/pheader_dark.avif"
+    <img src="/images/pheader_dark.avif"
          alt="Logo"
-         style="max-width: 128px; height: auto; aspect-ratio: 128 / 128"
+         style="max-width: 128px; height: auto;"
          class="noshadow"
          id="logoDark"/>
   </div>
@@ -532,6 +1125,412 @@
     </div>
 
   </div>
+  
+  <div class="yoi-embed-modal" hidden aria-hidden="true">
+  <div class="yoi-embed-modal__backdrop" data-yoi-embed-close></div>
+  <div class="yoi-embed-modal__dialog" role="dialog" aria-modal="true" aria-label="Tategaki preview">
+    <div class="yoi-embed-modal__toolbar">
+      <button type="button" class="yoi-embed-modal__close" data-yoi-embed-close aria-label="關閉">⛌</button>
+    </div>
+    <iframe class="yoi-embed-modal__frame" title="Tategaki preview" loading="lazy"></iframe>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const modal = document.querySelector('.yoi-embed-modal');
+    if (!modal) return;
+
+    const frame = modal.querySelector('.yoi-embed-modal__frame');
+    const dialog = modal.querySelector('.yoi-embed-modal__dialog');
+    const closeTriggers = [...modal.querySelectorAll('[data-yoi-embed-close]')];
+    let parsing = false;
+    let clickToken = 0;
+    let openingLink = null;
+    let fitTimers = [];
+    let closeTimer = 0;
+    let embedPaneHeightPx = 0;
+
+    const EMBED_CLOSE_ANIM_MS = 200;
+    const MIN_TATEGAKI_WIDTH = 920;
+    const EMBED_VIEWPORT_RATIO = 0.94;
+    const EMBED_DEFAULT_WIDTH = 1120;
+    const EMBED_DEFAULT_HEIGHT_RATIO = 0.66;
+    const EMBED_FIT_DELAYS_AFTER_LOAD = [90, 240, 480];
+    const EMBED_FIT_DELAYS_AFTER_REVEAL = [120, 320, 680, 1200];
+
+    const styleHrefs = [...document.querySelectorAll('link[rel="stylesheet"]')]
+      .map(link => link.getAttribute('href'))
+      .filter(Boolean);
+
+    function escapeHtml(text) {
+      return String(text || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function safeInlineScript(text) {
+      return String(text || '').replace(/<\/script/gi, '<\\/script');
+    }
+
+    function isYoishigureDetailLink(anchor) {
+      if (!anchor?.href) return false;
+      if (anchor.closest('.yoi-float-nav') || anchor.closest('.yoi-embed-modal')) return false;
+      if (anchor.hasAttribute('download')) return false;
+
+      const rawHref = anchor.getAttribute('href') || '';
+      if (!rawHref || rawHref.charAt(0) === '#') return false;
+
+      let url;
+      try {
+        url = new URL(anchor.href, window.location.href);
+      } catch (e) {
+        return false;
+      }
+
+      if (url.origin !== window.location.origin) return false;
+      if (!/^\/Works\/Yoishigure\//.test(url.pathname)) return false;
+      if (/\/Works\/Yoishigure\/?$/i.test(url.pathname)) return false;
+      if (/\.m4a$/i.test(url.pathname)) return false;
+
+      return true;
+    }
+
+    function findTategakiScript(doc) {
+      const script = [...doc.querySelectorAll('script')].find(s =>
+        (s.textContent || '').includes("var mobileQuery = window.matchMedia('(max-width: 900px)')")
+      );
+      return script ? script.textContent : '';
+    }
+
+    function canOpenEmbedInViewport() {
+      return Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO) >= MIN_TATEGAKI_WIDTH;
+    }
+
+    function setOpeningState(next) {
+      document.documentElement.classList.toggle('yoi-embed-opening', next);
+    }
+
+    function setOpeningLink(anchor) {
+      clearOpeningLink();
+      openingLink = anchor;
+      openingLink.classList.add('yoi-embed-opening-link');
+      openingLink.style.setProperty('transition', 'none', 'important');
+      const computed = window.getComputedStyle(openingLink);
+      openingLink.style.setProperty('color', computed.color, 'important');
+      openingLink.style.setProperty('background-image', computed.backgroundImage, 'important');
+      openingLink.style.setProperty('background-position', computed.backgroundPosition, 'important');
+      openingLink.style.setProperty('background-size', computed.backgroundSize, 'important');
+    }
+
+    function clearOpeningLink() {
+      if (!openingLink) return;
+      openingLink.classList.remove('yoi-embed-opening-link');
+      openingLink.style.removeProperty('background-image');
+      openingLink.style.removeProperty('background-position');
+      openingLink.style.removeProperty('background-size');
+      openingLink.style.removeProperty('transition');
+      openingLink.style.removeProperty('color');
+      openingLink = null;
+    }
+
+    function computeEmbedPaneHeight() {
+      return Math.max(300, Math.min(800, Math.floor(window.innerHeight * 0.64)));
+    }
+
+    function applyFramePresetSize() {
+      const maxWidth = Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO);
+      const maxHeight = Math.floor(window.innerHeight * 0.86);
+      const width = Math.min(maxWidth, Math.max(MIN_TATEGAKI_WIDTH, EMBED_DEFAULT_WIDTH));
+      embedPaneHeightPx = computeEmbedPaneHeight();
+      const preferredHeight = Math.max(embedPaneHeightPx + 8, Math.floor(window.innerHeight * EMBED_DEFAULT_HEIGHT_RATIO));
+      const height = Math.min(maxHeight, Math.max(460, preferredHeight));
+      frame.style.width = width + 'px';
+      frame.style.height = height + 'px';
+      frame.style.opacity = '0';
+    }
+
+    function buildEmbedHtml(stageHtml, scriptText, title) {
+      const cssLinks = styleHrefs
+        .map(href => `<link rel="stylesheet" href="${escapeHtml(href)}">`)
+        .join('\n');
+
+      const themeBootstrap = `(function () {
+  var media = window.matchMedia("(prefers-color-scheme: dark)");
+  var stored = null;
+  try { stored = localStorage.getItem("preferredTheme"); } catch (e) {}
+  var isDark = stored === "dark" || (stored !== "light" && media.matches);
+  if (isDark) {
+    document.documentElement.classList.add("darkmode");
+    if (document.body) document.body.classList.add("darkmode");
+  }
+})();`;
+
+      return `<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="${escapeHtml(window.location.origin + '/')}">
+<title>${escapeHtml(title || 'Tategaki Preview')}</title>
+${cssLinks}
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: auto;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+  .yoi-embed-root {
+    width: 100%;
+  }
+  .yoi-embed-root .tategaki-stage {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .yoi-embed-root .tategaki-scroll {
+    overflow-x: overlay !important;
+    overflow-y: hidden !important;
+    scrollbar-gutter: auto !important;
+    padding-bottom: 0 !important;
+  }
+</style>
+<script>${safeInlineScript(themeBootstrap)}<\/script>
+</head>
+<body class="page-yoishigure page-yoishigure-sub">
+<div class="yoi-embed-root">
+${stageHtml}
+</div>
+${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
+</body>
+</html>`;
+    }
+
+    function fitFrameHeightToContent(token) {
+      if (token !== clickToken || !frame?.contentDocument) return;
+
+      const doc = frame.contentDocument;
+      const root = doc.querySelector('.yoi-embed-root');
+
+      let measured = root ? Math.ceil(root.getBoundingClientRect().height) : 0;
+      if (!measured) {
+        measured = Math.max(
+          doc.body ? Math.ceil(doc.body.scrollHeight) : 0,
+          doc.documentElement ? Math.ceil(doc.documentElement.scrollHeight) : 0
+        );
+      }
+      if (!measured) return;
+
+      const maxHeight = Math.floor(window.innerHeight * 0.86);
+      frame.style.height = Math.min(maxHeight, Math.max(420, measured + 2)) + 'px';
+    }
+
+    function clearFitTimers() {
+      if (!fitTimers.length) return;
+      fitTimers.forEach(id => window.clearTimeout(id));
+      fitTimers = [];
+    }
+
+    function scheduleDelayedHeightFits(token, delays) {
+      clearFitTimers();
+      delays.forEach(delay => {
+        const id = window.setTimeout(() => fitFrameHeightToContent(token), delay);
+        fitTimers.push(id);
+      });
+    }
+
+    function openModal() {
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+      modal.hidden = false;
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.classList.add('yoi-embed-open');
+      modal.classList.remove('is-visible');
+      // Keep dialog hidden until content is sized; backdrop fades in immediately.
+      dialog.style.setProperty('opacity', '0', 'important');
+      dialog.style.setProperty('transform', 'translateY(8px)', 'important');
+      requestAnimationFrame(() => modal.classList.add('is-visible'));
+    }
+
+    function finalizeCloseModal() {
+      modal.hidden = true;
+      modal.setAttribute('aria-hidden', 'true');
+      frame.removeAttribute('src');
+      frame.removeAttribute('srcdoc');
+      frame.style.width = '';
+      frame.style.height = '';
+      frame.style.opacity = '';
+      dialog.style.removeProperty('opacity');
+      dialog.style.removeProperty('transform');
+      clearFitTimers();
+      parsing = false;
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.documentElement.classList.remove('yoi-embed-open');
+      setOpeningState(false);
+      clearOpeningLink();
+    }
+
+    function closeModal(immediate) {
+      clickToken += 1;
+      parsing = false;
+      modal.classList.remove('is-visible');
+      frame.style.opacity = '0';
+
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+
+      if (immediate === true) {
+        finalizeCloseModal();
+        return;
+      }
+
+      closeTimer = window.setTimeout(() => {
+        closeTimer = 0;
+        finalizeCloseModal();
+      }, EMBED_CLOSE_ANIM_MS);
+    }
+
+    async function openPreview(anchor) {
+      const url = new URL(anchor.href, window.location.href);
+      const token = ++clickToken;
+      parsing = true;
+      applyFramePresetSize();
+      openModal();
+      frame.removeAttribute('src');
+      frame.removeAttribute('srcdoc');
+      anchor.blur?.();
+
+      try {
+        const response = await fetch(url.pathname, { credentials: 'same-origin' });
+        if (!response.ok) throw new Error('Fetch failed');
+
+        const html = await response.text();
+        if (token !== clickToken) return;
+
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const stage = doc.querySelector('.tategaki-stage');
+        if (!stage) {
+          closeModal(true);
+          window.location.href = url.href;
+          return;
+        }
+
+        const embedHtml = buildEmbedHtml(
+          stage.outerHTML,
+          findTategakiScript(doc),
+          doc.title || anchor.textContent || ''
+        );
+
+        frame.addEventListener('load', function onFrameLoad() {
+          if (token !== clickToken) return;
+          fitFrameHeightToContent(token);
+          scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_LOAD);
+
+          function revealFrame() {
+            if (token !== clickToken) return;
+            fitFrameHeightToContent(token);
+            scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_REVEAL);
+            // Release dialog inline overrides so CSS transition fades it in.
+            dialog.style.removeProperty('opacity');
+            dialog.style.removeProperty('transform');
+            frame.style.opacity = '1';
+          }
+
+          const frameDoc = frame.contentDocument;
+          const fontsReady = typeof frameDoc?.fonts?.ready?.then === 'function';
+
+          if (fontsReady) {
+            // Reveal after fonts load (height is final), with a safety timeout.
+            let revealed = false;
+            const safetyTimer = window.setTimeout(() => {
+              if (!revealed) { revealed = true; revealFrame(); }
+            }, 600);
+            const onReady = () => {
+              if (!revealed) { revealed = true; window.clearTimeout(safetyTimer); revealFrame(); }
+            };
+            frameDoc.fonts.ready.then(onReady).catch(onReady);
+          } else {
+            // No font API — refit after a short delay then reveal.
+            window.setTimeout(revealFrame, 160);
+          }
+        }, { once: true });
+
+        frame.srcdoc = embedHtml;
+      } catch (e) {
+        closeModal(true);
+        window.location.href = url.href;
+      } finally {
+        if (token === clickToken) parsing = false;
+      }
+    }
+
+    closeTriggers.forEach(trigger => {
+      trigger.addEventListener('click', event => {
+        event?.preventDefault();
+        closeModal(false);
+      });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !modal.hidden) closeModal();
+    });
+
+    document.addEventListener('click', event => {
+      const anchor = event.target?.closest?.('a');
+      if (!anchor || !isYoishigureDetailLink(anchor)) return;
+      if (!canOpenEmbedInViewport()) {
+        setOpeningState(false);
+        clearOpeningLink();
+        return;
+      }
+      if (parsing) { event.preventDefault(); return; }
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        setOpeningState(false);
+        clearOpeningLink();
+        return;
+      }
+      setOpeningLink(anchor);
+      setOpeningState(true);
+      event.preventDefault();
+      openPreview(anchor);
+    });
+
+    document.addEventListener('pointerdown', event => {
+      if (event.button !== 0) return;
+      const anchor = event.target?.closest?.('a');
+      if (!anchor || !isYoishigureDetailLink(anchor)) return;
+      if (!canOpenEmbedInViewport()) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (parsing) return;
+      setOpeningLink(anchor);
+      setOpeningState(true);
+      event.preventDefault();
+      openPreview(anchor);
+    }, true);
+
+    window.addEventListener('resize', () => {
+      if (modal.hidden) return;
+      fitFrameHeightToContent(clickToken);
+      scheduleDelayedHeightFits(clickToken, [120, 280]);
+    });
+  })();
+</script>
+
   
   <script>
     (function () {
