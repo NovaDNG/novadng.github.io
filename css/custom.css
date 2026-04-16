@@ -402,7 +402,7 @@ html.darkmode .exif { color: rgba(200, 190, 185, 0.38); }
         left: calc(50% + 50vw - 7em + 0.75em);
     }
 
-    p[data-xpan]:hover img {
+    p[data-xpan]:has(.exif-right):hover img {
         transform: translateX(calc(-50% - 5.6em)) !important;
     }
 }
