@@ -867,9 +867,11 @@ details.is-closing > :not(summary) {
 .hcol-group--bare::before {
   content: '';
   display: block;
-  border-top: 1px solid currentColor;
-  margin: 1.5rem 0;
-  opacity: 0.3;
+  background: radial-gradient(#919191 .5px, transparent 1px) 0 0 / 3px 3px, var(--dynamic-bg-color, transparent);
+  height: 0.9rem;
+  max-height: 1rem;
+  margin: 2.5rem 0;
+  border: none;
 }
 
 /* Archive columns: hidden until toggled */

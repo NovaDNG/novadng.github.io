@@ -267,10 +267,15 @@ body.page-yoishigure a:focus:not(.icon) > b {
   width: auto;
 }
 
-/* Horizontal rule becomes a vertical column divider */
+/* Horizontal rule becomes a vertical column divider (dotted pattern, 90° of skeleton hr) */
 .tategaki-content hr {
-  height: 100%;
-  width: 1px;
+  background: radial-gradient(#919191 .5px, transparent 1px) 0 0 / 3px 3px, var(--dynamic-bg-color, transparent);
+  width: 0.9rem;
+  max-width: 1rem;
+  height: var(--tategaki-pane-height);
+  max-height: 100%;
+  border: none;
+  margin: 0 2.5rem 0 2.5rem;
   margin-block-end: var(--tategaki-column-gap);
 }
 
@@ -359,10 +364,14 @@ body.page-yoishigure a:focus:not(.icon) > b {
     max-height: none;
   }
 
-  /* Horizontal rule returns to a standard horizontal divider */
+  /* Horizontal rule returns to standard horizontal dotted divider */
   .tategaki-content hr {
-    height: 1px;
+    background: radial-gradient(#919191 .5px, transparent 1px) 0 0 / 3px 3px, var(--dynamic-bg-color, transparent);
     width: 100%;
+    max-width: none;
+    height: 0.9rem;
+    max-height: 1rem;
+    border: none;
     margin-block: 2rem;
   }
 
