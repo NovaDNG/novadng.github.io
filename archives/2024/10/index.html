@@ -1008,6 +1008,24 @@
 
 
 </div>
+<script>
+  (function () {
+    var portraitQuery = window.matchMedia('(orientation: portrait)');
+    var archiveScroll = document.querySelector('.archive-scroll');
+    if (archiveScroll && window.createMomentumScroller) {
+      var addVelocity = window.createMomentumScroller(archiveScroll);
+      archiveScroll.addEventListener('wheel', function (event) {
+        if (portraitQuery.matches) return;
+        if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;
+        var maxScrollLeft = archiveScroll.scrollWidth - archiveScroll.clientWidth;
+        if (maxScrollLeft <= 0) return;
+        event.preventDefault();
+        addVelocity(event.deltaY);
+      }, { passive: false });
+    }
+  })();
+</script>
+
 
           <footer id="site-footer" class="site-footer">
   <div id="footer" class="mt-2">
