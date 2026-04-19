@@ -168,6 +168,40 @@
   <link rel="stylesheet" href="/css/prism-line-numbers.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/prism-line-numbers.css"></noscript>
   
+  
+  
+<link rel="stylesheet" href="/css/horizoncolumns.css">
+
+  
+  <script>
+  window.createMomentumScroller = function (el) {
+    var velocity = 0;
+    var animating = false;
+    var FRICTION = 0.88;
+    var MIN_VELOCITY = 0.5;
+
+    function tick() {
+      if (Math.abs(velocity) < MIN_VELOCITY) {
+        velocity = 0;
+        animating = false;
+        return;
+      }
+      var maxScrollLeft = el.scrollWidth - el.clientWidth;
+      el.scrollLeft = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft + velocity));
+      velocity *= FRICTION;
+      requestAnimationFrame(tick);
+    }
+
+    return function addVelocity(delta) {
+      velocity += delta;
+      if (!animating) {
+        animating = true;
+        requestAnimationFrame(tick);
+      }
+    };
+  };
+</script>
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -417,20 +451,38 @@
 
 </div>
 <script>
-(function() {
-  var toggle = document.querySelector('.hcol-archive-toggle');
-  if (!toggle) return;
-  function doToggle() {
-    var scroll = toggle.closest('.hcol-scroll');
-    var open = scroll.classList.toggle('archive-open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-  toggle.addEventListener('click', doToggle);
-  toggle.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); doToggle(); }
-  });
-})();
+  (function () {
+    // Archive toggle
+    var toggle = document.querySelector('.hcol-archive-toggle');
+    if (toggle) {
+      function doToggle() {
+        var scroll = toggle.closest('.hcol-scroll');
+        var open = scroll.classList.toggle('archive-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      toggle.addEventListener('click', doToggle);
+      toggle.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); doToggle(); }
+      });
+    }
+
+    // Wheel → horizontal scroll momentum
+    var portraitQuery = window.matchMedia('(orientation: portrait)');
+    var hcolScroll = document.querySelector('.hcol-scroll');
+    if (hcolScroll && window.createMomentumScroller) {
+      var addVelocity = window.createMomentumScroller(hcolScroll);
+      hcolScroll.addEventListener('wheel', function (event) {
+        if (portraitQuery.matches) return;
+        if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;
+        var maxScrollLeft = hcolScroll.scrollWidth - hcolScroll.clientWidth;
+        if (maxScrollLeft <= 0) return;
+        event.preventDefault();
+        addVelocity(event.deltaY);
+      }, { passive: false });
+    }
+  })();
 </script>
+
 
 
 

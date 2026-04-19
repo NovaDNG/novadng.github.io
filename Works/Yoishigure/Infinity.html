@@ -217,6 +217,36 @@
 <link rel="stylesheet" href="/css/yoishigure.css">
 
   
+  
+  <script>
+  window.createMomentumScroller = function (el) {
+    var velocity = 0;
+    var animating = false;
+    var FRICTION = 0.88;
+    var MIN_VELOCITY = 0.5;
+
+    function tick() {
+      if (Math.abs(velocity) < MIN_VELOCITY) {
+        velocity = 0;
+        animating = false;
+        return;
+      }
+      var maxScrollLeft = el.scrollWidth - el.clientWidth;
+      el.scrollLeft = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft + velocity));
+      velocity *= FRICTION;
+      requestAnimationFrame(tick);
+    }
+
+    return function addVelocity(delta) {
+      velocity += delta;
+      if (!animating) {
+        animating = true;
+        requestAnimationFrame(tick);
+      }
+    };
+  };
+</script>
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -325,181 +355,34 @@
     // Detect ruby base text that contains Latin letters/digits and needs manual inter-script spacing.
     var RUBY_LATIN_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
 
-    // -------------------------------------------------------------------------
-    // Legacy auto-TCY pipeline (kept for reference, currently disabled).
-    // -------------------------------------------------------------------------
-    /*
-     * Auto TCY detection (disabled by design).
-     * Use manual markup in markdown instead:
-     *   <span class="tcy">...</span>
-     * Keep this block for future reference.
-     *
-    var SKIP_PARENT_SELECTOR = 'script, style, code, pre, textarea, rt';
+    // TCY is manual — use <span class="tcy"> in markup.
 
-    var TCY_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/g;
-    var TCY_PRECHECK_PATTERN = /[0-9０-９]{1,2}[:：][0-9０-９]{2}|[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}|[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]{2,4}/;
-    var TCY_TIME_PATTERN = /^[0-9０-９]{1,2}[:：][0-9０-９]{2}$/;
-    var TCY_MATH_PATTERN = /^[+\-＋－±∓×÷＝=<>＜＞≤≥~∼][0-9０-９]{1,3}$/;
-    var TCY_BOUNDARY_PATTERN = /[A-Za-z0-9Ａ-Ｚａ-ｚ０-９]/;
-    var LATIN_PATTERN = /[A-Za-zＡ-Ｚａ-ｚ]/;
-    var CJK_PATTERN = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
-    var TCY_MAX_COMPRESS_RATIO = 2;
-
-    function canUseTcyToken(token) {
-      if (!token) return false;
-      if (TCY_TIME_PATTERN.test(token)) return true; // time-like tokens (e.g. 2:26)
-      if (TCY_MATH_PATTERN.test(token)) return true; // symbol + digits (e.g. ±0)
-      if (!/[A-Za-zＡ-Ｚａ-ｚ]/.test(token)) return true; // pure digits
-      if (/[0-9０-９]/.test(token)) return true; // mixed letter+digit
-      if (/[A-ZＡ-Ｚ]/.test(token)) return true; // acronym-like tokens (e.g. MC)
-      return false;
-    }
-
-    function isTokenBoundary(text, start, end) {
-      var prev = start > 0 ? text.charAt(start - 1) : '';
-      var next = end < text.length ? text.charAt(end) : '';
-      return !TCY_BOUNDARY_PATTERN.test(prev) && !TCY_BOUNDARY_PATTERN.test(next);
-    }
-
-    function isWesternOnlyText(text) {
-      if (!text) return false;
-      if (!LATIN_PATTERN.test(text)) return false;
-      return !CJK_PATTERN.test(text);
-    }
-
-    function isPartOfWesternPhrase(text, start, end, token) {
-      if (!token || !LATIN_PATTERN.test(token)) return false;
-      var isSpace = function (ch) {
-        return ch === ' ' || ch === '\u3000' || /\s/.test(ch);
-      };
-
-      var i = start - 1;
-      while (i >= 0 && isSpace(text.charAt(i))) i--;
-      var prevNonSpace = i >= 0 ? text.charAt(i) : '';
-
-      var j = end;
-      while (j < text.length && isSpace(text.charAt(j))) j++;
-      var nextNonSpace = j < text.length ? text.charAt(j) : '';
-
-      return LATIN_PATTERN.test(prevNonSpace) || LATIN_PATTERN.test(nextNonSpace);
-    }
-
-    function shouldKeepNaturalWidth(token, contextEl, cache) {
-      if (!token) return false;
-      if (TCY_TIME_PATTERN.test(token)) return true;
-
-      if (cache && cache.has(token)) return cache.get(token);
-      if (!contextEl) return false;
-
-      var probe = document.createElement('span');
-      probe.textContent = token;
-      probe.style.position = 'absolute';
-      probe.style.visibility = 'hidden';
-      probe.style.pointerEvents = 'none';
-      probe.style.whiteSpace = 'nowrap';
-      probe.style.writingMode = 'horizontal-tb';
-      probe.style.textOrientation = 'mixed';
-      probe.style.font = 'inherit';
-      probe.style.letterSpacing = 'inherit';
-      probe.style.wordSpacing = 'inherit';
-      probe.style.lineHeight = '1';
-
-      contextEl.appendChild(probe);
-      var naturalWidth = probe.getBoundingClientRect().width;
-      probe.remove();
-
-      var fontSize = parseFloat(window.getComputedStyle(contextEl).fontSize) || 16;
-      var keepNatural = naturalWidth > fontSize * TCY_MAX_COMPRESS_RATIO;
-
-      if (cache) cache.set(token, keepNatural);
-      return keepNatural;
-    }
-
-    function collectCandidateTextNodes(root) {
-      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
-      var textNodes = [];
-
-      while (walker.nextNode()) {
-        var node = walker.currentNode;
-        var parent = node.parentNode;
-
-        if (!parent || parent.nodeType !== 1) continue;
-        if (parent.closest(SKIP_PARENT_SELECTOR)) continue;
-        if (parent.classList && parent.classList.contains('tcy')) continue;
-        if (isWesternOnlyText(node.nodeValue)) continue;
-        if (!TCY_PRECHECK_PATTERN.test(node.nodeValue)) continue;
-
-        textNodes.push(node);
-      }
-
-      return textNodes;
-    }
-
-    function buildTcyFragment(text, contextEl, tokenDecisionCache) {
-      var fragment = document.createDocumentFragment();
-      var lastIndex = 0;
-      var hasReplacement = false;
-      var match;
-
-      TCY_PATTERN.lastIndex = 0;
-
-      while ((match = TCY_PATTERN.exec(text)) !== null) {
-        var token = match[0];
-        var start = match.index;
-        var end = start + token.length;
-
-        if (!canUseTcyToken(token)) continue;
-        if (isPartOfWesternPhrase(text, start, end, token)) continue;
-        if (!isTokenBoundary(text, start, end)) continue;
-        if (shouldKeepNaturalWidth(token, contextEl, tokenDecisionCache)) continue;
-
-        if (start > lastIndex) {
-          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+    // Fallback for embed iframe context where scroll_momentum.ejs is not loaded.
+    if (!window.createMomentumScroller) {
+      window.createMomentumScroller = function (el) {
+        var velocity = 0, animating = false, FRICTION = 0.88, MIN_VELOCITY = 0.5;
+        function tick() {
+          if (Math.abs(velocity) < MIN_VELOCITY) { velocity = 0; animating = false; return; }
+          var max = el.scrollWidth - el.clientWidth;
+          el.scrollLeft = Math.max(0, Math.min(max, el.scrollLeft + velocity));
+          velocity *= FRICTION;
+          requestAnimationFrame(tick);
         }
-
-        var span = document.createElement('span');
-        span.className = 'tcy';
-        span.textContent = token;
-        fragment.appendChild(span);
-
-        lastIndex = end;
-        hasReplacement = true;
-      }
-
-      if (!hasReplacement) return null;
-
-      if (lastIndex < text.length) {
-        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
-      }
-
-      return fragment;
+        return function (delta) { velocity += delta; if (!animating) { animating = true; requestAnimationFrame(tick); } };
+      };
     }
-
-    function applyTcy(root) {
-      if (!root || root.dataset.tcyEnhanced === '1') return;
-      root.dataset.tcyEnhanced = '1';
-
-      var tokenDecisionCache = new Map();
-      var textNodes = collectCandidateTextNodes(root);
-
-      textNodes.forEach(function (node) {
-        var fragment = buildTcyFragment(node.nodeValue, root, tokenDecisionCache);
-        if (!fragment) return;
-        node.parentNode.replaceChild(fragment, node);
-      });
-    }
-    */
 
     function bindWheelToHorizontalScroll(el) {
       if (!el || el.dataset.tategakiBound === '1') return;
       el.dataset.tategakiBound = '1';
+      var addVelocity = window.createMomentumScroller(el);
 
       // Runtime state for one tategaki scroll container.
       var content = el.querySelector('.tategaki-content');
       var userInteracted = false;
       var isProgrammaticScroll = false;
       var pendingRightOffset = null;
-      var DETAILS_ANIM_MS = 200;
+      var DETAILS_ANIM_MS = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--details-anim-ms')) || 200;
       var viewportRevealed = false;
 
       // Stub: edge-fade UI not yet implemented. Prevents ReferenceError crash.
@@ -673,12 +556,9 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
-        var next = Math.max(0, Math.min(maxScrollLeft, el.scrollLeft + event.deltaY));
-        if (next === el.scrollLeft) return;
-
         userInteracted = true;
         event.preventDefault();
-        el.scrollLeft = next;
+        addVelocity(-event.deltaY);
         updateEdgeFadeState();
       }, { passive: false });
 

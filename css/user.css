@@ -243,7 +243,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-block-end: calc(var(--tategaki-flow-gap) * 1.25);
+  margin-block-start: calc(var(--tategaki-flow-gap) * 1.33);
 }
 
 /* Block elements that need the standard flow gap */
