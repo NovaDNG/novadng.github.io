@@ -551,6 +551,12 @@
         var maxScrollLeft = el.scrollWidth - el.clientWidth;
         if (maxScrollLeft <= 0) return;
 
+        // Release wheel to page scroll at RTL reading boundaries.
+        // Reading start = right edge (scrollLeft = max); reading end = left edge (scrollLeft = 0).
+        var atReadingEnd = el.scrollLeft <= 0.5;
+        var atReadingStart = el.scrollLeft >= maxScrollLeft - 0.5;
+        if ((event.deltaY > 0 && atReadingEnd) || (event.deltaY < 0 && atReadingStart)) return;
+
         userInteracted = true;
         event.preventDefault();
         addVelocity(-event.deltaY);
