@@ -9,8 +9,33 @@
     <atom:link href="https://novadng.studio/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 04 Apr 2026 07:13:33 GMT</pubDate>
+    <pubDate>Mon, 20 Apr 2026 15:38:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>春季大掃除</title>
+      <link>https://novadng.studio/2026-04/DesignChange2026Apr/</link>
+      <guid>https://novadng.studio/2026-04/DesignChange2026Apr/</guid>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;照理來說我向來對在部落格里專門寫文章記錄變更無感, 但近期對部落格很多文章以外的部分做了大刀闊斧的設計更動, 總覺得若完全無人知曉未免有些寂寞, 故於此記錄. &lt;/p&gt;
+&lt;h3 id=&quot;Home&quot;&gt;&lt;a href=&quot;#Home&quot; class=&quot;headerlink&quot; tit</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>照理來說我向來對在部落格里專門寫文章記錄變更無感, 但近期對部落格很多文章以外的部分做了大刀闊斧的設計更動, 總覺得若完全無人知曉未免有些寂寞, 故於此記錄. </p><h3 id="Home"><a href="#Home" class="headerlink" title="Home"></a>Home</h3><img class="noshadow" src="Home.avif"><p>以前我一直不喜歡將首頁與歸檔分開, 不過當初文章總數並不多, 直接鋪開倒也無妨 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(不知不覺這裡已經有40篇文章了!)</span>. 但近日因受到<a href="https://duo3.ink/">123哆3</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(強烈推薦訪問)</span> 刺激想把首頁改成橫向捲動, 卻擔心技術太差做出的橫向捲動造成體驗崩潰, 於是便想了個折衷方案, Home保留原本佈局, Archive頁改為橫向捲動. 但若兩邊顯示相同內容又覺得怪異, 便將首頁改成只顯示最新七篇文章了, 這樣也讓首頁更有Home的感覺吧. </p><h3 id="Archive"><a href="#Archive" class="headerlink" title="Archive"></a>Archive</h3><img class="noshadow" src="Archive.avif"><p>上文提到的橫向捲動改變. 我自覺文章本身不太適合橫向捲動, 但歸檔頁按照年度分列就很適合, 於是便動手將歸檔頁改為橫向捲動. 個人最自滿的部分是大寫的年份標記. </p><h3 id="縱書"><a href="#縱書" class="headerlink" title="縱書"></a>縱書</h3><div style="display: flex; gap: 1.33rem; justify-content: space-between; align-content: flex-start; width: 100vw; translate: -50% 0; position: relative; left: 50%;" >  <div style="flex: 1">    <img src="Tategaki.avif" class="noshadow" style="width: 100%; height: auto; display: block;" />    </div>  <div style="flex: 1;">    <img src="Lyric.avif" class="noshadow" style="width: 100%; height: auto; display: block;" />    </div></div><p>其實我在看到123哆3的主頁前就在<a href="/Works/Yoishigure">酔シグレ歌詞頁</a>部署了縱書. 畢竟縱書確實非常適合用來呈現歌詞. 話又說回來, 我之前翻譯的歌詞都是直接發在B站, 若不是因為去參加<a href="/2026-02/TripToTokyo2026FebPart2/#Day-2-%E4%BA%8C%E6%9C%88%E5%8D%81%E4%BA%94%E6%97%A5-%E6%B8%8B%E8%B0%B7-%E4%BA%AC%E6%A9%8B">Fanbox Live vol. 2</a>我大概也不會有動力做這種工程量巨大的改動吧, 感謝香音老師. </p><img class="noshadow" src="egword.avif"><center>之前我翻譯歌詞時都會特地開啟<a href="https://www.monokakido.jp/ja/mac/egworduniversal2/index.html">egword</a>寫</center><br /><h3 id="更多橫向分欄"><a href="#更多橫向分欄" class="headerlink" title="更多橫向分欄"></a>更多橫向分欄</h3><div style="display: flex; gap: 1.33rem; justify-content: space-between; align-content: flex-start; width: 100vw; translate: -50% 0; position: relative; left: 50%;" >  <div style="flex: 1">    <img src="Commissions.avif" class="noshadow" style="width: 100%; height: auto; display: block;" />    </div>  <div style="flex: 1;">    <img src="Now.avif" class="noshadow" style="width: 100%; height: auto; display: block;" />    </div></div><p>俗話說手裡有了錘子看什麼都像釘子, 我完成Archive大改造之後就將目光投向了其他頂級頁面. Works與Frames因架構較為複雜且標題幾乎全為西文而放棄; 剩餘頁面看起來似乎都很適合改成橫向分欄, 於是說時遲那時快, 一番調整後就變成了現在這幅模樣. <a href="https://css-tricks.com/css-is-awesome/">CSS IS AWESOME</a>. </p><h3 id="EXIF訊息"><a href="#EXIF訊息" class="headerlink" title="EXIF訊息"></a>EXIF訊息</h3><img class="noshadow" src="EXIF.avif"><p>好歹本部落格一大重點便是攝影, 總覺得事到如今才加入EXIF已是亡羊補牢. 目前暫時採用游標懸停時顯示在側邊的方案. 理想狀態下我希望模仿<a href="https://daniel.lawrence.lu/blog/">dllu的部落格</a> <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(同樣強烈推薦訪問)</span> 那樣, 不過那對於排版又會產生很大的影響⋯⋯ </p><h3 id="CSS是自由的"><a href="#CSS是自由的" class="headerlink" title="CSS是自由的"></a>CSS是自由的</h3><div style="display: flex; gap: 1.33rem; justify-content: space-between; align-content: flex-start; width: 100vw; translate: -50% 0; position: relative; left: 50%;" >  <div style="flex: 1">    <img src="Xpan.avif" class="noshadow" style="width: 100%; height: auto; display: block;" />    </div>  <div style="flex: 1;">    <img src="Side-by-side.avif" class="noshadow" style="width: 100%; height: auto; display: block;" />    </div></div><p>幾乎在剛開始用本部落格時我就將照片設定為比文字略寬的呈現形式 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(模仿Reeder和Press)</span>, 但這樣的呈現終歸略嫌呆板, 在大修時我順手做了個Xpan形態開關使用. 在解決Commissions頁面並列顯示兩張系列圖時順便解決了圖片並排顯示的一些問題, 於是順手也給並排顯示的圖片加上了全寬佈局. </p><p>除了照片之外, 一些文章中的文字排版我也做了針對性調整, 這部分就敬請自行發掘吧~ 能利用CSS隨心所欲 <span style="font-weight: 550; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(* 隨心所欲之程度取決於對CSS的掌握程度)</span> 地調整文章佈局也是個人部落格的一大樂趣所在. </p><hr><p>最後還是未能免俗寫了這樣的文章, 非常抱歉浪費了大家的時間, 鞠躬. 如果您對這些設計有建議或意見歡迎評論. </p>]]></content:encoded>
+      
+      
+      
+      <category domain="https://novadng.studio/tags/Design/">Design</category>
+      
+      
+      <comments>https://novadng.studio/2026-04/DesignChange2026Apr/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>追求E-Ink裝置之路</title>
@@ -200,9 +225,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-12/Boryoza/#disqus_thread</comments>
@@ -227,9 +252,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-09/StepIntoUWA3/#disqus_thread</comments>
@@ -254,9 +279,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-09/StepIntoUWA2/#disqus_thread</comments>
@@ -280,9 +305,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-09/StepIntoUWA1/#disqus_thread</comments>
@@ -403,9 +428,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-04/Bags/#disqus_thread</comments>
@@ -430,9 +455,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-03/OMthePetit/#disqus_thread</comments>
@@ -457,9 +482,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2025-03/TheBigBois/#disqus_thread</comments>
@@ -608,9 +633,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2024-10/Standard-Obsession-3/#disqus_thread</comments>
@@ -734,9 +759,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2024-09/ZfAndMoreLens/#disqus_thread</comments>
@@ -760,9 +785,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2024-03/EvenMoreNikkorVintageLens/#disqus_thread</comments>
@@ -786,9 +811,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2023-12/MoreNikkorVintageLens/#disqus_thread</comments>
@@ -836,9 +861,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2022-09/LM-EA9/#disqus_thread</comments>
@@ -863,9 +888,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2022-09/Standard-Obsession-2/#disqus_thread</comments>
@@ -889,9 +914,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2022-05/Pen-F-pitfalls/#disqus_thread</comments>
@@ -915,9 +940,9 @@
       
       
       
-      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
-      
       <category domain="https://novadng.studio/tags/photography/">Photography</category>
+      
+      <category domain="https://novadng.studio/tags/gadget/">Gadget</category>
       
       
       <comments>https://novadng.studio/2022-01/Standard-Obsession/#disqus_thread</comments>
