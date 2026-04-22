@@ -100,9 +100,22 @@
       }
     }
 
+    function syncAppleMusicEmbeds(isDark) {
+      var theme = isDark ? 'dark' : 'light';
+      document.querySelectorAll('iframe[src*="embed.music.apple.com"]').forEach(function (f) {
+        try {
+          var url = new URL(f.src);
+          if (url.searchParams.get('theme') === theme) return;
+          url.searchParams.set('theme', theme);
+          f.src = url.toString();
+        } catch (_) {}
+      });
+    }
+
     function applyTheme(isDark) {
       document.documentElement.classList.toggle('darkmode', isDark);
       syncThemeControls(isDark);
+      syncAppleMusicEmbeds(isDark);
     }
 
     function preferredIsDark() {
@@ -318,7 +331,7 @@
 
 
 
-<p class="post-meta"><a class="classtest-link" href="/tags/travel/" rel="tag">Travel</a> — Oct 22, 2024</p>
+<p class="post-meta"><a class="classtest-link" href="/tags/travel/" rel="tag">travel</a> — Oct 22, 2024</p>
 
   <hr>
   <div id="giscus"></div>

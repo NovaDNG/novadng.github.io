@@ -60,7 +60,7 @@
     
     
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
   </entry>
   
@@ -82,7 +82,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -104,7 +104,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -126,7 +126,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -148,7 +148,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -170,7 +170,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -192,7 +192,7 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -214,9 +214,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -239,9 +239,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -264,9 +264,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -288,9 +288,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -312,7 +312,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -334,7 +334,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -356,7 +356,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -378,7 +378,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -401,9 +401,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -426,9 +426,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -451,9 +451,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -479,7 +479,7 @@
     
     
     
-    <category term="Music" scheme="https://novadng.studio/tags/music/"/>
+    <category term="music" scheme="https://novadng.studio/tags/music/"/>
     
   </entry>
   
@@ -501,7 +501,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -523,7 +523,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -545,7 +545,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -568,7 +568,7 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -590,9 +590,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -614,7 +614,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -636,7 +636,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -659,9 +659,9 @@
     
     
     
-    <category term="Music" scheme="https://novadng.studio/tags/music/"/>
+    <category term="music" scheme="https://novadng.studio/tags/music/"/>
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -683,7 +683,7 @@
     
     
     
-    <category term="Travel" scheme="https://novadng.studio/tags/travel/"/>
+    <category term="travel" scheme="https://novadng.studio/tags/travel/"/>
     
   </entry>
   
@@ -706,9 +706,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -730,9 +730,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -754,9 +754,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -778,7 +778,7 @@
     
     
     
-    <category term="Music" scheme="https://novadng.studio/tags/music/"/>
+    <category term="music" scheme="https://novadng.studio/tags/music/"/>
     
   </entry>
   
@@ -800,9 +800,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -825,9 +825,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -849,9 +849,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -873,9 +873,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
   </entry>
   
@@ -897,7 +897,7 @@
     
     
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
   </entry>
   
@@ -922,9 +922,9 @@
     
     
     
-    <category term="Gadget" scheme="https://novadng.studio/tags/gadget/"/>
+    <category term="gadget" scheme="https://novadng.studio/tags/gadget/"/>
     
-    <category term="Thoughts" scheme="https://novadng.studio/tags/thoughts/"/>
+    <category term="thoughts" scheme="https://novadng.studio/tags/thoughts/"/>
     
   </entry>
   
@@ -949,7 +949,7 @@
     
     
     
-    <category term="Thoughts" scheme="https://novadng.studio/tags/thoughts/"/>
+    <category term="thoughts" scheme="https://novadng.studio/tags/thoughts/"/>
     
   </entry>
   
@@ -974,9 +974,9 @@
     
     
     
-    <category term="Photography" scheme="https://novadng.studio/tags/photography/"/>
+    <category term="photography" scheme="https://novadng.studio/tags/photography/"/>
     
-    <category term="Thoughts" scheme="https://novadng.studio/tags/thoughts/"/>
+    <category term="thoughts" scheme="https://novadng.studio/tags/thoughts/"/>
     
   </entry>
   

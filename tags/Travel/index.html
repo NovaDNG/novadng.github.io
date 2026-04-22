@@ -11,7 +11,7 @@
   <meta charset="utf-8">
 
   
-  <title>Posts Related to Travel</title>
+  <title>Posts Related to travel</title>
   
   <link rel="canonical" href="https://novadng.studio/tags/travel/">
   <meta name="description" content="">
@@ -22,12 +22,12 @@
   
   <meta property="og:site_name" content="NovaDNG Studio" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Posts Related to Travel" />
+  <meta property="og:title" content="Posts Related to travel" />
   <meta property="og:description" content="">
   <meta property="og:url" content="https://novadng.studio/tags/travel/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Posts Related to Travel">
+  <meta name="twitter:title" content="Posts Related to travel">
   <meta name="twitter:description" content="">
   
   <meta name="twitter:image" content="https://novadng.studio/images/thumbnail.avif">
@@ -100,9 +100,22 @@
       }
     }
 
+    function syncAppleMusicEmbeds(isDark) {
+      var theme = isDark ? 'dark' : 'light';
+      document.querySelectorAll('iframe[src*="embed.music.apple.com"]').forEach(function (f) {
+        try {
+          var url = new URL(f.src);
+          if (url.searchParams.get('theme') === theme) return;
+          url.searchParams.set('theme', theme);
+          f.src = url.toString();
+        } catch (_) {}
+      });
+    }
+
     function applyTheme(isDark) {
       document.documentElement.classList.toggle('darkmode', isDark);
       syncThemeControls(isDark);
+      syncAppleMusicEmbeds(isDark);
     }
 
     function preferredIsDark() {
@@ -318,7 +331,7 @@
           
 
 
-   <h3 class="mt-0">Posts Related to — Travel</h3>
+   <h3 class="mt-0">Posts Related to — travel</h3>
 
 
 
