@@ -197,6 +197,23 @@ body.page-yoishigure a:focus:not(.icon) > b {
     visibility: hidden;
     pointer-events: none;
   }
+
+  .tategaki-scroll {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 3.33em,
+      black calc(100% - 3.33em),
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 3.33em,
+      black calc(100% - 3.33em),
+      transparent 100%
+    );
+  }
 }
 
 /* Article body — vertical text flow, width determined by content */

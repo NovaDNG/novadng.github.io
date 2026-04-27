@@ -504,8 +504,8 @@ html.darkmode .yoi-float-nav__search-input {
     box-sizing: border-box;
     background: #DADAD8;
     box-shadow:
-        inset 0 4px 6px 0 rgba(0, 123, 187, 0.12),
-        inset 0 -2px 2px 0 rgba(0, 123, 187, 0.12);
+        inset 0 4px 12px -2px rgba(0, 123, 187, 0.12),
+        inset 0 -2px 4px -1px rgba(0, 123, 187, 0.12);
     /* No padding here — padding lives on .yoi-inline-panel__inner so the
        outer can truly collapse to height:0. With padding on this element
        and box-sizing: border-box, the rendered box couldn't shrink below
@@ -549,7 +549,7 @@ html.darkmode .yoi-inline-panel {
        with the lyrics area rather than reading as a distinct darker band.
        The inset blue shadow alone provides the recess cue. */
     background: transparent;
-    box-shadow: inset 0 2px 24px 0 rgba(0, 123, 187, 0.12);
+    box-shadow: inset 0 4px 8px -2px rgba(0, 123, 187, 0.12), inset 0 -2px 2px -1px rgba(0, 123, 187, 0.12);
 }
 
 /* Margin displacement when a panel is open: the active link's <p> hugs the
