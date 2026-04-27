@@ -519,7 +519,7 @@
             var parent = node.parentElement;
             if (!parent) return NodeFilter.FILTER_REJECT;
             if (parent.closest('.yoi-float-nav')) return NodeFilter.FILTER_REJECT;
-            if (parent.closest('.yoi-embed-modal')) return NodeFilter.FILTER_REJECT;
+            if (parent.closest('.yoi-inline-panel')) return NodeFilter.FILTER_REJECT;
             if (parent.closest('script, style, code, pre, textarea, noscript')) return NodeFilter.FILTER_REJECT;
             return NodeFilter.FILTER_ACCEPT;
           }
@@ -1092,7 +1092,7 @@ document.getElementById("random-verse").innerHTML =
 <p>???? feat.To-ki</p>
 <p>???? feat.????</p>
 <p>???? feat.秋奈</p>
-<p>[本宮瑠華] <a href="/Works/Yoishigure/GhostLeg" title="2025-12-21 | Yuttari Mattari | ゆったりまったり">Ghost Leg</a></p>
+<p><a href="/Works/Yoishigure/GhostLeg" title="2025-12-21 | Yuttari Mattari | ゆったりまったり">Ghost Leg feat. 本宮瑠華</a></p>
 <p>To the beat! feat.Ten.×Lucia×わかばやし×みょみょ</p>
 <p>アムリタ feat.いかさん</p>
 <p>???? feat.わかばやし×みょみょ</p>
@@ -1400,38 +1400,32 @@ document.getElementById("random-verse").innerHTML =
 
   </div>
   
-  <div class="yoi-embed-modal" hidden aria-hidden="true">
-  <div class="yoi-embed-modal__backdrop" data-yoi-embed-close></div>
-  <div class="yoi-embed-modal__dialog" role="dialog" aria-modal="true" aria-label="Tategaki preview">
-    <div class="yoi-embed-modal__toolbar">
-      <button type="button" class="yoi-embed-modal__close" data-yoi-embed-close aria-label="關閉">⛌</button>
-    </div>
-    <iframe class="yoi-embed-modal__frame" title="Tategaki preview" loading="lazy"></iframe>
-  </div>
-</div>
-
-<script>
+  <script>
   (function () {
-    const modal = document.querySelector('.yoi-embed-modal');
-    if (!modal) return;
+    // ========================================================================
+    // YOISHIGURE — INLINE LYRICS PANEL
+    // Loaded on pages with `yoishigure_index: true` or `tategaki: true`.
+    // Click on a /Works/Yoishigure/<song> link → fetch song HTML, extract
+    // .tategaki-stage, render in an iframe inside an inline recessed panel
+    // inserted as the next sibling of the clicked link's block ancestor.
+    // ========================================================================
 
-    const frame = modal.querySelector('.yoi-embed-modal__frame');
-    const dialog = modal.querySelector('.yoi-embed-modal__dialog');
-    const closeTriggers = [...modal.querySelectorAll('[data-yoi-embed-close]')];
-    let parsing = false;
-    let clickToken = 0;
-    let openingLink = null;
-    let fitTimers = [];
-    let closeTimer = 0;
-    let embedPaneHeightPx = 0;
-
-    const EMBED_CLOSE_ANIM_MS = 200;
     const MIN_TATEGAKI_WIDTH = 920;
     const EMBED_VIEWPORT_RATIO = 0.94;
-    const EMBED_DEFAULT_WIDTH = 1120;
-    const EMBED_DEFAULT_HEIGHT_RATIO = 0.66;
     const EMBED_FIT_DELAYS_AFTER_LOAD = [90, 240, 480];
     const EMBED_FIT_DELAYS_AFTER_REVEAL = [120, 320, 680, 1200];
+    const ANIM_SAFETY_MS = 280;
+    const PRESET_HEIGHT_FLOOR = 420;
+    const PRESET_HEIGHT_CEILING = 800;
+    const PRESET_HEIGHT_RATIO = 0.66;
+    const INSERT_BLOCK_SELECTOR = 'p, li, blockquote, h3, h4, summary, center';
+
+    // Module state
+    let openPanel = null;
+    let openLink = null;
+    let clickToken = 0;
+    let parsing = false;
+    const prefetchCache = new Map();
 
     const styleHrefs = [...document.querySelectorAll('link[rel="stylesheet"]')]
       .map(link => link.getAttribute('href'))
@@ -1452,25 +1446,25 @@ document.getElementById("random-verse").innerHTML =
 
     function isYoishigureDetailLink(anchor) {
       if (!anchor?.href) return false;
-      if (anchor.closest('.yoi-float-nav') || anchor.closest('.yoi-embed-modal')) return false;
+      if (anchor.closest('.yoi-float-nav') || anchor.closest('.yoi-inline-panel')) return false;
       if (anchor.hasAttribute('download')) return false;
 
       const rawHref = anchor.getAttribute('href') || '';
       if (!rawHref || rawHref.charAt(0) === '#') return false;
 
       let url;
-      try {
-        url = new URL(anchor.href, window.location.href);
-      } catch (e) {
-        return false;
-      }
+      try { url = new URL(anchor.href, window.location.href); }
+      catch (e) { return false; }
 
       if (url.origin !== window.location.origin) return false;
       if (!/^\/Works\/Yoishigure\//.test(url.pathname)) return false;
       if (/\/Works\/Yoishigure\/?$/i.test(url.pathname)) return false;
       if (/\.m4a$/i.test(url.pathname)) return false;
-
       return true;
+    }
+
+    function canOpenEmbedInViewport() {
+      return Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO) >= MIN_TATEGAKI_WIDTH;
     }
 
     function findTategakiScript(doc) {
@@ -1478,53 +1472,6 @@ document.getElementById("random-verse").innerHTML =
         (s.textContent || '').includes("var mobileQuery = window.matchMedia('(max-width: 900px)')")
       );
       return script ? script.textContent : '';
-    }
-
-    function canOpenEmbedInViewport() {
-      return Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO) >= MIN_TATEGAKI_WIDTH;
-    }
-
-    function setOpeningState(next) {
-      document.documentElement.classList.toggle('yoi-embed-opening', next);
-    }
-
-    function setOpeningLink(anchor) {
-      clearOpeningLink();
-      openingLink = anchor;
-      openingLink.classList.add('yoi-embed-opening-link');
-      openingLink.style.setProperty('transition', 'none', 'important');
-      const computed = window.getComputedStyle(openingLink);
-      openingLink.style.setProperty('color', computed.color, 'important');
-      openingLink.style.setProperty('background-image', computed.backgroundImage, 'important');
-      openingLink.style.setProperty('background-position', computed.backgroundPosition, 'important');
-      openingLink.style.setProperty('background-size', computed.backgroundSize, 'important');
-    }
-
-    function clearOpeningLink() {
-      if (!openingLink) return;
-      openingLink.classList.remove('yoi-embed-opening-link');
-      openingLink.style.removeProperty('background-image');
-      openingLink.style.removeProperty('background-position');
-      openingLink.style.removeProperty('background-size');
-      openingLink.style.removeProperty('transition');
-      openingLink.style.removeProperty('color');
-      openingLink = null;
-    }
-
-    function computeEmbedPaneHeight() {
-      return Math.max(300, Math.min(800, Math.floor(window.innerHeight * 0.64)));
-    }
-
-    function applyFramePresetSize() {
-      const maxWidth = Math.floor(window.innerWidth * EMBED_VIEWPORT_RATIO);
-      const maxHeight = Math.floor(window.innerHeight * 0.86);
-      const width = Math.min(maxWidth, Math.max(MIN_TATEGAKI_WIDTH, EMBED_DEFAULT_WIDTH));
-      embedPaneHeightPx = computeEmbedPaneHeight();
-      const preferredHeight = Math.max(embedPaneHeightPx + 8, Math.floor(window.innerHeight * EMBED_DEFAULT_HEIGHT_RATIO));
-      const height = Math.min(maxHeight, Math.max(460, preferredHeight));
-      frame.style.width = width + 'px';
-      frame.style.height = height + 'px';
-      frame.style.opacity = '0';
     }
 
     function buildEmbedHtml(stageHtml, scriptText, title) {
@@ -1552,23 +1499,17 @@ document.getElementById("random-verse").innerHTML =
 ${cssLinks}
 <style>
   html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     background: transparent;
     overflow: auto;
     min-height: 0 !important;
     height: auto !important;
   }
-  .yoi-embed-root {
-    width: 100%;
-  }
+  .yoi-embed-root { width: 100%; }
   .yoi-embed-root .tategaki-stage {
     width: 100% !important;
     max-width: none !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin: 0 !important;
   }
   .yoi-embed-root .tategaki-scroll {
     overflow-x: overlay !important;
@@ -1588,12 +1529,28 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
 </html>`;
     }
 
-    function fitFrameHeightToContent(token) {
-      if (token !== clickToken || !frame?.contentDocument) return;
+    function fetchSongContent(pathname) {
+      if (prefetchCache.has(pathname)) return prefetchCache.get(pathname);
+      const promise = fetch(pathname, { credentials: 'same-origin' })
+        .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.text(); })
+        .then(html => {
+          const doc = new DOMParser().parseFromString(html, 'text/html');
+          const stage = doc.querySelector('.tategaki-stage');
+          if (!stage) throw new Error('no tategaki-stage');
+          return {
+            stageHtml: stage.outerHTML,
+            scriptText: findTategakiScript(doc),
+            title: doc.title || ''
+          };
+        });
+      prefetchCache.set(pathname, promise);
+      return promise;
+    }
 
+    function fitFrameHeightToContent(panel, frame) {
+      if (!frame.contentDocument) return;
       const doc = frame.contentDocument;
       const root = doc.querySelector('.yoi-embed-root');
-
       let measured = root ? Math.ceil(root.getBoundingClientRect().height) : 0;
       if (!measured) {
         measured = Math.max(
@@ -1602,205 +1559,208 @@ ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
         );
       }
       if (!measured) return;
-
       const maxHeight = Math.floor(window.innerHeight * 0.86);
       frame.style.height = Math.min(maxHeight, Math.max(420, measured + 2)) + 'px';
-    }
-
-    function clearFitTimers() {
-      if (!fitTimers.length) return;
-      fitTimers.forEach(id => window.clearTimeout(id));
-      fitTimers = [];
-    }
-
-    function scheduleDelayedHeightFits(token, delays) {
-      clearFitTimers();
-      delays.forEach(delay => {
-        const id = window.setTimeout(() => fitFrameHeightToContent(token), delay);
-        fitTimers.push(id);
-      });
-    }
-
-    function openModal() {
-      if (closeTimer) {
-        window.clearTimeout(closeTimer);
-        closeTimer = 0;
+      // Sync panel height while it's still locked (during the initial expand)
+      if (panel.dataset.heightLocked === 'true') {
+        panel.style.height = panel.scrollHeight + 'px';
       }
-      modal.hidden = false;
-      modal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-      document.documentElement.style.overflow = 'hidden';
-      document.documentElement.classList.add('yoi-embed-open');
-      modal.classList.remove('is-visible');
-      // Keep dialog hidden until content is sized; backdrop fades in immediately.
-      dialog.style.setProperty('opacity', '0', 'important');
-      dialog.style.setProperty('transform', 'translateY(8px)', 'important');
-      requestAnimationFrame(() => modal.classList.add('is-visible'));
     }
 
-    function finalizeCloseModal() {
-      modal.hidden = true;
-      modal.setAttribute('aria-hidden', 'true');
-      frame.removeAttribute('src');
-      frame.removeAttribute('srcdoc');
-      frame.style.width = '';
-      frame.style.height = '';
-      frame.style.opacity = '';
-      dialog.style.removeProperty('opacity');
-      dialog.style.removeProperty('transform');
-      clearFitTimers();
-      parsing = false;
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
-      document.documentElement.classList.remove('yoi-embed-open');
-      setOpeningState(false);
-      clearOpeningLink();
+    function createPanel(href) {
+      const panel = document.createElement('div');
+      panel.className = 'yoi-inline-panel';
+      panel.dataset.href = href;
+      const inner = document.createElement('div');
+      inner.className = 'yoi-inline-panel__inner';
+      const iframe = document.createElement('iframe');
+      iframe.className = 'yoi-inline-panel__frame';
+      iframe.loading = 'lazy';
+      iframe.title = 'Tategaki preview';
+      inner.appendChild(iframe);
+      panel.appendChild(inner);
+      return { panel, iframe };
     }
 
-    function closeModal(immediate) {
-      clickToken += 1;
-      parsing = false;
-      modal.classList.remove('is-visible');
-      frame.style.opacity = '0';
-
-      if (closeTimer) {
-        window.clearTimeout(closeTimer);
-        closeTimer = 0;
-      }
-
-      if (immediate === true) {
-        finalizeCloseModal();
-        return;
-      }
-
-      closeTimer = window.setTimeout(() => {
-        closeTimer = 0;
-        finalizeCloseModal();
-      }, EMBED_CLOSE_ANIM_MS);
+    function findInsertionTarget(link) {
+      return link.closest(INSERT_BLOCK_SELECTOR) || link;
     }
 
-    async function openPreview(anchor) {
-      const url = new URL(anchor.href, window.location.href);
+    function collapseAndRemove(panel, link) {
+      const startH = panel.getBoundingClientRect().height;
+      panel.style.height = startH + 'px';
+      void panel.offsetHeight; // force reflow so the explicit height is registered
+      panel.style.height = '0';
+      if (link) link.classList.remove('yoi-inline-panel-open-link');
+      const followingSibling = panel.nextElementSibling;
+      if (followingSibling) followingSibling.classList.remove('yoi-inline-panel-following');
+      let removed = false;
+      const finalize = () => {
+        if (removed) return;
+        removed = true;
+        panel.remove();
+      };
+      panel.addEventListener('transitionend', e => {
+        if (e.propertyName === 'height') finalize();
+      }, { once: true });
+      setTimeout(finalize, ANIM_SAFETY_MS);
+    }
+
+    async function openOrSwitch(link) {
+      const url = new URL(link.href, window.location.href);
       const token = ++clickToken;
       parsing = true;
-      applyFramePresetSize();
-      openModal();
-      frame.removeAttribute('src');
-      frame.removeAttribute('srcdoc');
-      anchor.blur?.();
+
+      const { panel, iframe } = createPanel(link.getAttribute('href'));
+      const target = findInsertionTarget(link);
+      target.parentNode.insertBefore(panel, target.nextSibling);
+      void panel.offsetHeight; // ensure starting height:0 is registered before transition
+
+      link.classList.add('yoi-inline-panel-open-link');
+      const followingSibling = panel.nextElementSibling;
+      if (followingSibling) followingSibling.classList.add('yoi-inline-panel-following');
+
+      // Simultaneously collapse previous panel (if any)
+      const previousPanel = openPanel;
+      const previousLink = openLink;
+      if (previousPanel && previousPanel !== panel) {
+        collapseAndRemove(previousPanel, previousLink);
+      }
+
+      openPanel = panel;
+      openLink = link;
 
       try {
-        const response = await fetch(url.pathname, { credentials: 'same-origin' });
-        if (!response.ok) throw new Error('Fetch failed');
-
-        const html = await response.text();
+        const { stageHtml, scriptText, title } = await fetchSongContent(url.pathname);
         if (token !== clickToken) return;
 
-        const doc = new DOMParser().parseFromString(html, 'text/html');
-        const stage = doc.querySelector('.tategaki-stage');
-        if (!stage) {
-          closeModal(true);
-          window.location.href = url.href;
-          return;
-        }
+        const srcdoc = buildEmbedHtml(stageHtml, scriptText, title || link.textContent || '');
 
-        const embedHtml = buildEmbedHtml(
-          stage.outerHTML,
-          findTategakiScript(doc),
-          doc.title || anchor.textContent || ''
+        // Pre-size iframe BEFORE srcdoc so its contentWindow has real
+        // dimensions when stylesheets evaluate. Without this, the iframe
+        // loads at height:0 and the inside-iframe (max-width: 900px) media
+        // query collapses tategaki to horizontal-tb mode.
+        const presetHeight = Math.max(
+          PRESET_HEIGHT_FLOOR,
+          Math.min(Math.floor(window.innerHeight * PRESET_HEIGHT_RATIO), PRESET_HEIGHT_CEILING)
         );
+        iframe.style.height = presetHeight + 'px';
 
-        frame.addEventListener('load', function onFrameLoad() {
+        iframe.addEventListener('load', function onLoad() {
           if (token !== clickToken) return;
-          fitFrameHeightToContent(token);
-          scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_LOAD);
 
-          function revealFrame() {
+          const reveal = () => {
             if (token !== clickToken) return;
-            fitFrameHeightToContent(token);
-            scheduleDelayedHeightFits(token, EMBED_FIT_DELAYS_AFTER_REVEAL);
-            // Release dialog inline overrides so CSS transition fades it in.
-            dialog.style.removeProperty('opacity');
-            dialog.style.removeProperty('transform');
-            frame.style.opacity = '1';
-          }
+            fitFrameHeightToContent(panel, iframe);
 
-          const frameDoc = frame.contentDocument;
-          const fontsReady = typeof frameDoc?.fonts?.ready?.then === 'function';
+            panel.dataset.heightLocked = 'true';
+            panel.style.height = panel.scrollHeight + 'px';
+            panel.classList.add('is-loaded');
 
-          if (fontsReady) {
-            // Reveal after fonts load (height is final), with a safety timeout.
-            let revealed = false;
-            const safetyTimer = window.setTimeout(() => {
-              if (!revealed) { revealed = true; revealFrame(); }
-            }, 600);
-            const onReady = () => {
-              if (!revealed) { revealed = true; window.clearTimeout(safetyTimer); revealFrame(); }
+            let unlocked = false;
+            const unlock = () => {
+              if (unlocked) return;
+              unlocked = true;
+              panel.style.height = 'auto';
+              panel.dataset.heightLocked = 'false';
             };
+            panel.addEventListener('transitionend', e => {
+              if (e.propertyName === 'height') unlock();
+            }, { once: true });
+            setTimeout(unlock, ANIM_SAFETY_MS);
+
+            [...EMBED_FIT_DELAYS_AFTER_LOAD, ...EMBED_FIT_DELAYS_AFTER_REVEAL].forEach(d =>
+              setTimeout(() => {
+                if (token === clickToken) fitFrameHeightToContent(panel, iframe);
+              }, d)
+            );
+          };
+
+          const frameDoc = iframe.contentDocument;
+          if (frameDoc?.fonts?.ready?.then) {
+            let revealed = false;
+            const safety = setTimeout(() => { if (!revealed) { revealed = true; reveal(); } }, 600);
+            const onReady = () => { if (!revealed) { revealed = true; clearTimeout(safety); reveal(); } };
             frameDoc.fonts.ready.then(onReady).catch(onReady);
           } else {
-            // No font API — refit after a short delay then reveal.
-            window.setTimeout(revealFrame, 160);
+            setTimeout(reveal, 160);
           }
         }, { once: true });
 
-        frame.srcdoc = embedHtml;
+        iframe.srcdoc = srcdoc;
       } catch (e) {
-        closeModal(true);
-        window.location.href = url.href;
+        if (token === clickToken) {
+          collapseAndRemove(panel, link);
+          if (openPanel === panel) { openPanel = null; openLink = null; }
+          window.location.href = url.href;
+        }
       } finally {
         if (token === clickToken) parsing = false;
       }
     }
 
-    closeTriggers.forEach(trigger => {
-      trigger.addEventListener('click', event => {
-        event?.preventDefault();
-        closeModal(false);
-      });
-    });
+    function closeOpen() {
+      if (!openPanel) return;
+      clickToken += 1;
+      parsing = false;
+      collapseAndRemove(openPanel, openLink);
+      openPanel = null;
+      openLink = null;
+    }
 
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && !modal.hidden) closeModal();
-    });
+    // ----- Event wiring -----
 
+    // Link click: open / switch / toggle
     document.addEventListener('click', event => {
       const anchor = event.target?.closest?.('a');
       if (!anchor || !isYoishigureDetailLink(anchor)) return;
-      if (!canOpenEmbedInViewport()) {
-        setOpeningState(false);
-        clearOpeningLink();
-        return;
-      }
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (!canOpenEmbedInViewport()) return;
       if (parsing) { event.preventDefault(); return; }
-      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-        setOpeningState(false);
-        clearOpeningLink();
-        return;
-      }
-      setOpeningLink(anchor);
-      setOpeningState(true);
+
       event.preventDefault();
-      openPreview(anchor);
+
+      if (openLink === anchor) {
+        closeOpen();
+      } else {
+        openOrSwitch(anchor);
+      }
     });
 
+    // Pointerdown preload (warm fetch cache before click resolves)
     document.addEventListener('pointerdown', event => {
       if (event.button !== 0) return;
       const anchor = event.target?.closest?.('a');
       if (!anchor || !isYoishigureDetailLink(anchor)) return;
-      if (!canOpenEmbedInViewport()) return;
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      if (parsing) return;
-      setOpeningLink(anchor);
-      setOpeningState(true);
-      event.preventDefault();
-      openPreview(anchor);
+      if (!canOpenEmbedInViewport()) return;
+      try {
+        const url = new URL(anchor.href, window.location.href);
+        fetchSongContent(url.pathname);
+      } catch (e) {}
     }, true);
 
+    // Outside-click closes (runs after the link handler; defaultPrevented guard
+    // skips clicks the link handler already acted on)
+    document.addEventListener('click', event => {
+      if (!openPanel) return;
+      if (event.defaultPrevented) return;
+      if (openPanel.contains(event.target)) return;
+      closeOpen();
+    });
+
+    // Resize while open: re-fit iframe height
     window.addEventListener('resize', () => {
-      if (modal.hidden) return;
-      fitFrameHeightToContent(clickToken);
-      scheduleDelayedHeightFits(clickToken, [120, 280]);
+      if (!openPanel) return;
+      const iframe = openPanel.querySelector('.yoi-inline-panel__frame');
+      if (!iframe) return;
+      fitFrameHeightToContent(openPanel, iframe);
+      [120, 280].forEach(d => setTimeout(() => {
+        if (openPanel) fitFrameHeightToContent(openPanel, iframe);
+      }, d));
+      // If the user dragged the viewport below the threshold while a panel is
+      // open, close it cleanly — clicks below threshold then navigate normally.
+      if (!canOpenEmbedInViewport()) closeOpen();
     });
   })();
 </script>

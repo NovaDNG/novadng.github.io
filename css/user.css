@@ -6,7 +6,7 @@
 /* Restore native scrollbar rendering to avoid forced gutter/track artifacts. */
 * {
   scrollbar-width: auto;
-  scrollbar-color: auto;
+  scrollbar-color: gray transparent;
 }
 
 /* Let form controls and scrollbars follow explicit light/dark theme. */
@@ -166,10 +166,10 @@ body.page-yoishigure a:focus:not(.icon) > b {
    ============================================================ */
 
 .tategaki-stage {
-  width: 80vw;
-  max-width: 80vw;
-  margin-left: calc(50% - 42vw);
-  margin-right: calc(50% - 42vw);
+  width: 96vw;
+  max-width: 96vw;
+  margin-left: calc(50% - 48vw);
+  margin-right: calc(50% - 48vw);
   display: flex;
   align-items: flex-start;
   margin-top: 6rem;
@@ -214,7 +214,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   width: max-content;
   height: 100%;
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: 16rem;
 }
 
 /* Flow gap between block children.
