@@ -59,6 +59,13 @@
     padding-left: max(32px, calc(50vw - 412px));
     padding-right: 32px;
     box-sizing: border-box;
+    mask-image: linear-gradient(
+            to right,
+            transparent 0,
+            black 1vw,
+            black calc(100% - 1vw),
+            transparent 100%
+            );
   }
 
   .hcol-group {
