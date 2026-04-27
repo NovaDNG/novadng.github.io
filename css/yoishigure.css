@@ -517,7 +517,7 @@ html.darkmode .yoi-float-nav__search-input {
 
 .yoi-inline-panel__inner {
     box-sizing: border-box;
-    padding: 6.67rem 0.33rem;
+    padding: 6.67rem 0.33rem 0;
 }
 
 .yoi-inline-panel__frame {

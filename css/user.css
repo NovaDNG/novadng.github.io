@@ -230,8 +230,7 @@ body.page-yoishigure a:focus:not(.icon) > b {
   /* Layout */
   width: max-content;
   height: 100%;
-  margin-left: auto;
-  margin-right: 16rem;
+  margin: 0 2vw 0 1vw;
 }
 
 /* Flow gap between block children.
