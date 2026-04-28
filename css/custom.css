@@ -33,6 +33,7 @@ body {
     transition: color 0.2s ease-in-out;
     background: transparent;
     text-rendering: geometricPrecision;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html.darkmode body {

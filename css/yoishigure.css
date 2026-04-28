@@ -89,7 +89,7 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 
 /* Desktop: right-side collapsed rail expands leftward */
 .yoi-float-nav {
-    --yoi-nav-rail-width: 5.2rem;
+    --yoi-nav-rail-width: 56px;
     --yoi-nav-open-width: min(32rem, calc(100vw - 1.2rem));
     position: fixed;
     top: 6.7rem;
