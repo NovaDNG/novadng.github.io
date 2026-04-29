@@ -865,3 +865,67 @@ details.is-closing > :not(summary) {
     display: block; /* prevents small spacing gaps */
     }
 }
+
+/* ============================================================
+   INLINE EMBED PANEL (Shared between Yoishigure and Posts)
+   ============================================================ */
+
+.yoi-inline-panel {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+    background: #DADAD8;
+    box-shadow:
+        inset 0 4px 12px -2px rgba(0, 123, 187, 0.12),
+        inset 0 -2px 4px -1px rgba(0, 123, 187, 0.12);
+    overflow: hidden;
+    height: 0;
+    transition: height 0.2s ease-in;
+}
+
+.yoi-inline-panel__inner {
+    box-sizing: border-box;
+    padding: 0; /* Reduced from 6.67rem for general posts */
+}
+
+/* Specific padding for Yoishigure when it's open */
+body.page-yoishigure .yoi-inline-panel__inner,
+body.page-yoishigure-sub .yoi-inline-panel__inner {
+    padding-top: 6.67rem;
+}
+
+.yoi-inline-panel__frame {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    height: 0;
+    border: 0;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.yoi-inline-panel.is-loaded .yoi-inline-panel__frame {
+    opacity: 1;
+}
+
+html.darkmode .yoi-inline-panel {
+    background: transparent;
+    box-shadow: inset 0 4px 8px -2px rgba(0, 123, 187, 0.12), inset 0 -2px 2px -1px rgba(0, 123, 187, 0.12);
+}
+
+.trans p:has(a.yoi-inline-panel-open-link) {
+    margin-bottom: 0;
+}
+
+.trans .yoi-inline-panel-following {
+    margin-top: 1em;
+}
+
