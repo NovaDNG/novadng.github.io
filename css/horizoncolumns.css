@@ -10,7 +10,7 @@
 
 .hcol-label {
   writing-mode: horizontal-tb;
-  font-family: "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong", "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC", -apple-system, BlinkMacSystemFont, serif;
+  font-family: "MetroSungPlus-TC", "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong", "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC", -apple-system, BlinkMacSystemFont, serif;
   font-weight: bold;
   font-size: 1.17em;
   margin: 1em 0 0.5em;
@@ -79,11 +79,9 @@
   /* Labeled column: vertical kanji-style label, same as .archive-year-label */
   .hcol-label {
     writing-mode: vertical-rl;
-    font-family: "Redaction", "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong",
-      "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC",
-      -apple-system, BlinkMacSystemFont, serif;
+    font-family: "Redaction-Bold", "MetroSungPlus-TC", "Toppan Bunkyu Midashi Mincho", "Ten Mincho", "HYXuanSong", "FZYouSongJ GBK", "Source Han Serif", "Noto Serif TC", -apple-system, BlinkMacSystemFont, serif;
     font-size: 2.33em;
-    font-weight: 900;
+    font-weight: bold;
     letter-spacing: 0.015em;
     color: color-mix(in srgb, currentColor 56%, transparent);
     flex-shrink: 0;

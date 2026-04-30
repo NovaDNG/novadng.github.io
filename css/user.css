@@ -134,29 +134,6 @@ body.page-yoishigure a:focus:not(.icon) > b {
 }
 
 
-/* ============================================================
-   TATEGAKI — PUNCTUATION FONT
-   A narrow @font-face alias that routes CJK punctuation to
-   Source Han Serif VF, the only font in the stack with halt/chws
-   feature tables required by text-spacing-trim (JLReq 3.1.4).
-   Also fixes vertical ellipsis centering (U+2026) and other
-   punctuation metrics that HYXuanSong/FZYouSong get wrong.
-   ============================================================ */
-
-@font-face {
-  font-family: "SHS-Punct";
-  src: local("Source Han Serif"), local("Source Han Serif VF");
-  font-feature-settings: "vchw";  /* applies when element has no explicit font-feature-settings */
-  unicode-range:
-    U+2014,        /* — em dash */
-    U+2018-201F,   /* '' "" curly quotes */
-    U+2026-2027,   /* … ellipsis  ‧ hyphenation point */
-    U+3000-303F,   /* CJK Symbols and Punctuation block */
-    U+FE10-FE1F,   /* Vertical Forms */
-    U+FE30-FE4F,   /* CJK Compatibility Forms */
-    U+FF01-FF60;   /* Fullwidth punctuation (！…） etc.) */
-}
-
 
 /* ============================================================
    TATEGAKI — DESKTOP

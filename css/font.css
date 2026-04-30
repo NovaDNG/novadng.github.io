@@ -118,3 +118,17 @@
     font-weight: 900;
     font-style: normal;
 }
+
+
+/* 鐵宋 */
+@font-face {
+    font-family: MetroSungPlus-TC;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src:
+        local("MetroSungPlus-TC"),
+        local("MetroSungPlus-TC Regular"),
+        url("../fonts/MetroSungPlus-TC.woff2")
+            format("woff2"); 
+}
