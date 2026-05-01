@@ -2,7 +2,7 @@
 @font-face {
     font-family: "iA Writer Quattro V";
     font-style: normal;
-    font-weight: 400 900;
+    font-weight: 100 900;
     font-display: swap;
     src:
         local("iA Writer Quattro V"),
@@ -123,12 +123,11 @@
 /* 鐵宋 */
 @font-face {
     font-family: MetroSungPlus-TC;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
     src:
         local("MetroSungPlus-TC"),
-        local("MetroSungPlus-TC Regular"),
         url("../fonts/MetroSungPlus-TC.woff2")
             format("woff2"); 
 }

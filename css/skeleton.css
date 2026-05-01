@@ -225,7 +225,7 @@ body {
     font-variant-numeric: oldstyle-nums;
     color: #4c4c4f;
 }
-body:lang(ja) {font-family: "Ten Mincho Antique", "Hiragino Serif", "Ten Mincho Text","Source Han Sans", "Noto Sans CJK TC", sans-serif; }
+body:lang(ja) {font-family: ten-mincho-antique, "Hiragino Serif", "Ten Mincho Text","Source Han Sans", "Noto Sans CJK TC", sans-serif; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -239,13 +239,13 @@ h6 {
     margin-bottom: 2.5rem;
     font-family:
         "Redaction-Bold",
-        "EB-Garamond",
+        eb-garamond,
         Charter,
-        "MetroSungPlus-TC",
+        MetroSungPlus-TC,
         "HYXuanSong",
         "FZYouSongJ GBK",
-        "Toppan Bunkyo Midashi Mincho",
-        "Ten Mincho",
+        toppan-bunkyu-midashi-min-st,
+        ten-mincho,
         "Ten Mincho Text",
         "Source Han Serif",
         "Noto Serif TC",

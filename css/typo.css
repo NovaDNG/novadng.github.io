@@ -1,12 +1,12 @@
 center {
     font-family:
-        "EB-Garamond",
+        eb-garamond,
         "Redaction",
         Charter,
         "HYXuanSong",
         "FZYouSongJ GBK",
-        "Ten Mincho",
-        "Ten Mincho Antique",
+        ten-mincho,
+        ten-mincho-antique,
         "Source Han Serif",
         "Noto Serif TC",
         -apple-system,
@@ -24,12 +24,12 @@ center {
 blockquote {
     font-family:
         "Redaction",
-        "EB-Garamond",
+        eb-garamond,
         Charter,
         "HYXuanSong",
         "FZYouSongJ GBK",
-        "Ten Mincho",
-        "Ten Mincho Antique",
+        ten-mincho,
+        ten-mincho-antique,
         "Source Han Serif",
         "Noto Serif TC",
         -apple-system,
