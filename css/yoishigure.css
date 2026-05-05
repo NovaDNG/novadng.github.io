@@ -127,9 +127,25 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
 /* Sorted-by-date view reuses archive-year-group structure.
    Negative margin pulls each group left by exactly (label width + gap) so
    .archive-post-list aligns with the container's content edge (= nav/footer).
-   The label itself sits in the container's 32px left-padding area. */
+   The label itself sits in the container's 32px left-padding area.
+   Below ~860px the container fills the viewport and the label would clip off-screen,
+   so we revert to a standard block/h4-style layout. */
 body.page-yoishigure .archive-year-group.yoi-sorted-item {
     margin-left: calc(-2.33em - 1.87rem);
+}
+
+@media (max-width: 860px) {
+    body.page-yoishigure .archive-year-group.yoi-sorted-item {
+        margin-left: 0;
+        display: block;
+    }
+
+    body.page-yoishigure .archive-year-group.yoi-sorted-item .archive-year-label {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        font-size: 1.72rem;
+        margin-bottom: 0.5em;
+    }
 }
 
 /* Links inside .archive-post-list > p are not direct .trans children,
