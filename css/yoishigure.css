@@ -45,6 +45,47 @@ body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, tab
 
 body.page-yoishigure .yoi-float-nav a:not(.icon) { --link-hover-accent: #007bbb; }
 
+/* Sort control injected below the 歌詞翻譯 nav heading */
+.yoi-float-nav .yoi-nav-sort-bar {
+    display: block;
+    font-size: 1.72rem;
+    font-weight: normal;
+    line-height: 1.67;
+    padding-left: 0.25rem;
+    margin-top: 0.1rem;
+    white-space: nowrap;
+    opacity: 0.87;
+}
+
+.yoi-float-nav [data-nav-sort] {
+    cursor: pointer;
+    color: #007bbb;
+    transition:
+        color 0.2s ease-out,
+        background-position 0.2s ease-out;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        #007bbb 50%
+    );
+    background-repeat: no-repeat;
+    background-size: 100% calc(200% + 2px);
+    background-position: 0 0;
+}
+
+.yoi-float-nav [data-nav-sort]:hover {
+    background-position: 0 100%;
+    color: #E9E6E2;
+}
+
+.yoi-float-nav [data-nav-sort].active {
+    text-decoration: underline #007bbb 2px;
+}
+
+html.darkmode .yoi-float-nav [data-nav-sort] {
+    color: color-mix(in srgb, #007bbb 80%, transparent);
+}
+
 /* Lyric subpages — blue link accent in tategaki content.
    --link-hover-accent must be on the <a> itself (not a container ancestor) because
    tcolor.ejs declares it directly on a:not(.icon), so ancestor inheritance loses
@@ -82,6 +123,37 @@ html.darkmode body.page-yoishigure mark.yoi-page-search-hit.is-active {
     color: #e9e6e2;
 }
 
+
+/* Sorted-by-date view reuses archive-year-group structure.
+   Negative margin pulls each group left by exactly (label width + gap) so
+   .archive-post-list aligns with the container's content edge (= nav/footer).
+   The label itself sits in the container's 32px left-padding area. */
+body.page-yoishigure .archive-year-group.yoi-sorted-item {
+    margin-left: calc(-2.33em - 1.87rem);
+}
+
+/* Links inside .archive-post-list > p are not direct .trans children,
+   so they need their own copy of the blue gradient-slide rule. */
+body.page-yoishigure .archive-post-list p a:not(.icon):not(.headerlink) {
+    color: #007bbb;
+    text-decoration: none;
+    transition:
+        color 0.2s ease-out,
+        background-position 0.2s ease-out;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        #007bbb 50%
+    );
+    background-repeat: no-repeat;
+    background-size: 100% calc(200% + 2px);
+    background-position: 0 0;
+}
+body.page-yoishigure .archive-post-list p a:not(.icon):not(.headerlink):hover,
+body.page-yoishigure .archive-post-list p a:not(.icon):not(.headerlink):focus {
+    background-position: 0 100%;
+    color: #E9E6E2;
+}
 
 /* ============================================================
    YOISHIGURE — FLOAT NAV (desktop sidebar / mobile bottom sheet)
