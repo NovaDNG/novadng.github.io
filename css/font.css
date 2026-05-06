@@ -11,6 +11,18 @@
         format("truetype");
 }
 
+/* Albrechet Type Nova */
+@font-face {
+    font-family: "Albrecht Type Nova Prototype";
+    font-style: normal;
+    font-display: swap;
+    src:
+        local("Albrecht Type Nova Prototype"),
+        local("AlbrechtTypeNovaPrototype-Regular.otf"),
+        url("../fonts/AlbrechtTypeNovaPrototype-Regular.woff2")
+        format("woff2");
+}
+
 /* EB Garamond */
 @font-face {
     font-family: "eb-garamond";
