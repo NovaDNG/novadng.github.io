@@ -89,6 +89,36 @@
         url("../fonts/Redaction-Italic.woff2")
             format("woff2");
 }
+@font-face {
+    font-family: "Redaction 35";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local("Redaction_35-Regular"),
+        url("../fonts/Redaction_35-Regular.woff2")
+            format("woff2");
+}
+@font-face {
+    font-family: "Redaction 35 Italic";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local("Redaction_35-Italic"),
+        url("../fonts/Redaction_35-Italic.woff2")
+            format("woff2");
+}
+@font-face {
+    font-family: "Redaction 35 Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src:
+        local("Redaction_35-Bold"),
+        url("../fonts/Redaction_35-Bold.woff2")
+            format("woff2");
+}
 
 /* Ten */
 @font-face {

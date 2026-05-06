@@ -273,7 +273,7 @@ p[data-mm] {
     }
 
     /* Break-out layout: non-gallery images and media expand beyond the container's max-width so they feel full-bleed on wider screens */
-    .container img:not(.icon):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]),
+    .container img:not(.icon):not(.random-frame__img):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]),
     .container video,
     .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]),
     .container embed,
@@ -927,5 +927,22 @@ html.darkmode .yoi-inline-panel {
 
 .trans .yoi-inline-panel-following {
     margin-top: 1em;
+}
+
+/* ============================================================
+   RANDOM FRAME (/random and /404)
+   ============================================================ */
+
+.random-frame {
+    margin-block: 16px;
+    text-align: center; /* centers the inline <img> inside the block-level <a> */
+}
+
+.random-frame__img {
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
