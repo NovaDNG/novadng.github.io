@@ -1078,6 +1078,16 @@ ${cssLinks}
 ${stageHtml}
 </div>
 ${scriptText ? `<script>${safeInlineScript(scriptText)}<\/script>` : ''}
+<script>
+document.querySelectorAll('a[href]').forEach(function(a) {
+  try {
+    if (new URL(a.href).origin !== window.location.origin) {
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+    }
+  } catch (e) {}
+});
+<\/script>
 </body>
 </html>`;
     }
