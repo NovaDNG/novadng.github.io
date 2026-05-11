@@ -1176,6 +1176,13 @@ document.querySelectorAll('a[href]').forEach(function(a) {
       const target = findInsertionTarget(link);
       target.parentNode.insertBefore(panel, target.nextSibling);
       void panel.offsetHeight; // ensure starting height:0 is registered before transition
+      // calc(50% - 50vw) assumes a centered containing block. In date-sort mode
+      // the panel lands inside a flex child with a different offset, so correct it.
+      const panelLeft = panel.getBoundingClientRect().left;
+      if (panelLeft !== 0) {
+        const currentML = parseFloat(getComputedStyle(panel).marginLeft) || 0;
+        panel.style.marginLeft = Math.round(currentML - panelLeft) + 'px';
+      }
 
       link.classList.add('yoi-inline-panel-open-link');
       const followingSibling = panel.nextElementSibling;
