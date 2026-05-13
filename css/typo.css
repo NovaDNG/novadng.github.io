@@ -12,12 +12,12 @@ center {
         -apple-system,
         BlinkMacSystemFont,
         serif;
-    font-weight: 500;
     font-size: 1.56rem;
     font-feature-settings: 
         "dlig",
         "case",
         "swsh" 2;
+    text-wrap-style: balance;
 }
 
 /* blockquote */

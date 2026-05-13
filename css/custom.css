@@ -537,6 +537,7 @@ html.darkmode a:not(.icon) ruby rt {
 .posisi {
     display: flex;
     gap: 1rem;
+    will-change: transform;
 }
 
 a.footer-link {
