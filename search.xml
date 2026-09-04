@@ -537,7 +537,6 @@
         .tategaki-content { height: 28em; line-height: 1.67; letter-spacing: 0.067em; }
         .tategaki-scroll { height: 36em !important; }
         .tategaki-stage { width: 96vw; max-width: 96vw; margin-left: calc(50% - 48vw); margin-right: calc(50% - 48vw); }
-        .container img:not(.icon):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]), .container video, .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]), .container embed, .container object { transform: none; left: auto; height: 28em; width: auto; max-width: none; }
     }
     body.page-yoishigure-sub .tategaki-content blockquote { border-color: #E2001A; }
     body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink) { color: #4c4c4f; text-decoration: underline 2px #E2001A; background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, #E2001A 50% ); }
@@ -691,7 +690,7 @@
 <p>這篇文章裡的文字與圖片皆為我在鼓浪嶼時的鄰居，黃子復老先生的作品。老先生年輕時在福建省亞熱帶植物研究所工作，退休後時常畫些隨筆，寫些文字。文章比較細碎，希望這些文字能讓更多人了解鼓浪嶼從日占時期到解放時這段不常被人提起的時間裡的情況。我僅對文字作部分潤色。</p>
 </blockquote>
 <p><img src="/2017-02/KulangsuResident/klspano.avif"></p>
-<p>「有幾間厝，用磚存框，看起來普通普通。大人暗時在廟口碰風，叔公說他日本時期尚蓋勇，姨婆唱著望春風⋯⋯」台灣歌手葉啟田的閩南語歌曲「故鄉」正是十九世紀初鼓浪嶼原住民的生活寫照。黃氏移民從龍海漂流而來，首先在鼓浪嶼西北部適地而居，以農､漁為生。建有紅磚民居九十九間，從此，演繹了鼓浪嶼從自然生態到人文生態的社會進程。</p>
+<p>「有幾間厝，用磚存框，看起來普通普通。大人暗時在廟口碰風，叔公說他日本時期尚蓋勇，姨婆唱著望春風⋯⋯」台灣歌手葉啟田的閩南語歌曲「故鄉」正是十九世紀初鼓浪嶼原住民的生活寫照。黃氏移民從龍海漂流而來，首先在鼓浪嶼西北部適地而居，以農、漁為生。建有紅磚民居九十九間，從此，演繹了鼓浪嶼從自然生態到人文生態的社會進程。</p>
 <p>清末民初，隨著各國領事館的建立，以及由東南亞歸國的華僑開發了島的東南部，興建了道路、碼頭、電話、自來水等基礎設施，同時興建別具一格的黃家花園、西林別墅、黃榮遠堂、海天堂構等風貌建築及教堂，帶來了西方的文化和建築風格，逐漸形成了獨特的，中西合璧的社會形態。</p>
 <p>鼓浪嶼的中心由西部向東南部轉移，形成了西部農業東部商業的格局。內厝澳菜農靠肩挑手提農副產品，爬過筆架山到龍頭出售、交流。黃氏原住民也有部分人流向東南部。「帶頭路」<span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">（打工仔）</span>一般做船夫、海關打雜、泥水匠、小買賣、補皮鞋等等。當時我的父親隨著祖父作為勞務輸出在海關開船，從鼓浪嶼載海關稅務司官員到廈門<span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">（島內）</span>上班，有時也到外港引渡外輪。黃氏族人在鹿礁路西仔路頭一帶定居，成為內厝澳的分支。</p>
 <h3 id="日占時期"><a href="#日占時期" class="headerlink" title="日占時期"></a>日占時期</h3><p>生不逢時，我出生的第八天正是日軍侵占廈門之時。有錢人聞風而逃，聽天由命的草民們在強盜的刺刀下過著暗無天日的亡國奴生活。親眼目睹過日本兵刺殺無辜：當時島上草民居家沒有衛生設備，都是婦女去海邊倒馬桶。那是，海邊都被日軍封鎖，他們抓到倒馬桶的老嫗，令她下跪雙手背後，刺刀慘無人道地刺向她⋯⋯</p>
