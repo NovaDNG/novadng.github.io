@@ -681,7 +681,7 @@
         .tategaki-content { height: 28em; line-height: 1.67; letter-spacing: 0.067em; }
         .tategaki-scroll { height: 36em !important; }
         .tategaki-stage { width: 96vw; max-width: 96vw; margin-left: calc(50% - 48vw); margin-right: calc(50% - 48vw); }
-        .container img:not(.icon):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]), .container video, .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]), .container embed, .container object { transform: none; left: auto; height: 28em; width: auto; max-width: none; }
+        .container img:not(.icon):not(.random-frame__img):not([alt~="_gallery"]):not([alt$=">"]):not([alt$="<"]):not([alt$="><"]), .container video, .container iframe:not(.giscus-frame):not(.giscus):not([id^="twitter-widget-"]), .container embed, .container object { transform: none; left: auto; height: 28em; width: auto; max-width: none; }
     }
     body.page-yoishigure-sub .tategaki-content blockquote { border-color: #E2001A; }
     body.page-yoishigure .trans > :where(p, details, h3, h4, blockquote, ul, ol, table, center) a:not(.icon):not(.headerlink) { color: #4c4c4f; text-decoration: underline 2px #E2001A; background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, #E2001A 50% ); }
