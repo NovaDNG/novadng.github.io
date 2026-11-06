@@ -459,77 +459,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一些CeVIO AI入門小技巧 (以星界為例)</title>
-    <url>/2022-12/CeVIOAItipsandtricks/</url>
-    <content><![CDATA[<blockquote>
-<p>本文成文於2022年末, 其中很多資訊已經過時, CeVIO AI 也經歷過多次大版本更新, 請斟酌參考. </p>
-</blockquote>
-<p>這篇文章主要是給想要購買可不&#x2F;星界&#x2F;裏命&#x2F;狐子&#x2F;羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何Vocaloid相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門CeVIO AI比你想象的要容易得多. </p>
-<iframe loading="lazy" height="480" style="width:100%;max-width:720px;background:transparent;" src="https://www.youtube.com/embed/P4u_COefgGY" title="Daily Note/酔シグレ (covered by星界)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><em>我做的Daily Note星界翻唱</em></p>
-<p>那麼在正式開始前, 你應該要對CeVIO AI有一些基本的瞭解. 夜輪老師有翻譯了<a href="https://cevio-user-guide-unofficial.github.io/CeVIO-AI/">官方使用者指南</a>, 天雨大佬也寫了一系列<a href="https://www.bilibili.com/read/readlist/rl508759">基礎入門指南</a>, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力. </p>
-<h3 id="1-CeVIO-AI之外"><a href="#1-CeVIO-AI之外" class="headerlink" title="1. CeVIO AI之外"></a>1. CeVIO AI之外</h3><p>CeVIO AI本身畢竟不是一款正經的DAW, 你難免會需要藉助其他DAW以及各種輔助工具的幫助 ⸺ 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: <a href="https://supermegaultragroovy.com/products/capo/">capo</a>. 很可惜的是, 這款應用目前只支援macOS和iOS. 或者你用來搭配CeVIO AI的正經DAW有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高. </p>
-<img src="SCR-20221209-e4n.avif" class="noshadow">
-<center>capo的介面</center><br/>
-
-<p>除了音準, 另外一個重要的參數是拍子. 儘管很多DAW都提供了用滑鼠&#x2F;鍵盤打拍來確定拍子的功能, 但是對於稍長一點的歌曲而言1~2bpm的區別就可以造成在歌曲中後段的嚴重節拍失調, 所以使用capo或DAW自帶的精確節拍分析工具儘可能地在開頭就找準節拍就非常重要. 如果你在做到中後期的時候突然意識到了節拍設定錯誤造成了失調, 除了推倒重來之外還有一個辦法: 使用標尺上的tempo標尺, 從曲子中間開始插入正確的節拍. 雖然是dirty hack但好歹可以亡羊補牢, 省去一些推倒重來的時間. </p>
-<h3 id="2-情感"><a href="#2-情感" class="headerlink" title="2. 情感"></a>2. 情感</h3><p>對於星界和之後的音樂同位體來說, 情感參數是唯一一個需要儘早決定的可調整參數, 因為只有它是一個全域性, 無法針對某一個特定區域調整的參數. 情感會大幅影響預設音符的音高, 顫音振幅和頻率, 儘早決定合適的數值可以省去很多後期調整的麻煩. 但是注意了, 儘管調高情感值會讓一些預設音符發音聽起來十分自然, 但也會造成很多預設音符的音高變得非常奇怪, 所以我強烈不建議把情感拉滿. </p>
-<img src="SCR-20221209-ejw.avif" class="noshadow">
-<center>情感拉高之後預設曲線就會出現一些迷之情況</center><br/>
-
-
-<h3 id="3-呼吸音"><a href="#3-呼吸音" class="headerlink" title="3. 呼吸音"></a>3. 呼吸音</h3><p>CeVIO AI對於什麼時候加呼吸音⋯⋯ 嗯, 有一套自己的想法. 如果你發現在自己不想聽到呼吸音&#x2F;邏輯上說不通的地方出現了換氣聲, 那最簡單粗暴的方法就是開啟音量面板把換氣聲處的音量砍掉. 我試過用連音標記消除換氣, 但這方法時靈時不靈, 感覺需要碰運氣. </p>
-<img src="SCR-20221209-fe2.avif" class="noshadow">
-
-<center>圖上已經在樂句頭尾加入了連唱標記, 然而CeVIO AI依然在中間插入了換氣, 我才用壓音量方式砍平換氣</center><br/>
-
-<p>至於加入換氣聲, 如果是在語句中的話可以給換氣聲前一個音符加入換氣標記 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(右鍵 - プロパティ&#x2F;property - ブレス&#x2F;breath)</span>. 但如果是在語句開頭, 可以在第一個音符前空1&#x2F;4拍 ~ 半拍 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(取決於你想要多長的吸氣聲)</span> 的位置加入隨便什麼音符, 然後在那個音符上設定換氣標記, 再開啟音量面板將額外加入的那個音的音量降到最低, 就相當於在語句前加入了呼吸聲. </p>
-<img src="SCR-20221209-edf.avif" class="noshadow">
-
-<center>注意最開頭那個額外的 ｢は｣</center><br/>
-
-
-<h3 id="4-填詞"><a href="#4-填詞" class="headerlink" title="4. 填詞"></a>4. 填詞</h3><p>很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為reference. 如果你的DAW沒有這樣的功能, 那<a href="https://vocalremover.org/">vocalremover</a>能提供一個效果堪用的工具. </p>
-<img src="SCR-20221209-fo9.avif" class="noshadow">
-
-<center>｢たまま｣ 被我拆成了 ｢たあままあ｣</center><br/>
-
-
-<h3 id="5-音準"><a href="#5-音準" class="headerlink" title="5. 音準"></a>5. 音準</h3><p>如果你已經按照1. 裡的建議檢視過原曲的頻譜, 應該會注意到很多時候歌手的發音並不總是壓在相應音高的頻譜範圍內, 除卻顫音之外也經常會有一個長音首尾皆大幅偏離原本音高的現象, 但絕大多數情況下這依然聽起來十分悅耳. 實際上每位歌手的發聲方式各有不同, 但一般人類很難做到完美地完全踩在絕對正確的頻譜範圍內, 有各種滑音等等變化才符合普通人類的唱法. CeVIO AI自然也考慮到了這一點, 所以在輸入音高發生變化的音符時往往會生成一條較為自然的音高曲線. 但是 ⸺ CeVIO AI很多時候, 嗯, 有一套自己的想法, 經常發生矯枉過正的情況. 尤其是在星界, 情感值設定較高的時候, 預設的音高曲線會非常的放飛自我, 請務必多多試聽儘早發現這些問題. </p>
-<img src="SCR-20221209-ejm.avif" class="noshadow">
-
-<center>看似偏到九宵雲外的音高曲線, 但實際播放聽起來十分自然</center><br/>
-
-
-<h3 id="6-顫音"><a href="#6-顫音" class="headerlink" title="6. 顫音"></a>6. 顫音</h3><p>和音高相同, 每位歌手都有自己對顫音的理解和利用方式. CeVIO AI會預設給一些長音尾部加入顫音, 而且預設的振幅和週期與情感直接相關. 如果你想要模仿某位歌手的唱法, 仔細觀察歌手原曲的頻譜往往能大概瞭解他&#x2F;她的顫音特色, 然後再回到CeVIO AI裡調整振幅週期曲線. 如果你覺得調整曲線的方式太不直觀了, 也可以選擇刪掉預設曲線, 直接進入音高介面徒手繪製曲線, 也不失為一種辦法. </p>
-<img src="SCR-20221209-eul.avif" class="noshadow">
-
-<center>注意, 徒手畫的曲線依然會被顫音的兩個參數影響</center><br/>
-
-
-<h3 id="7-音色-Alpha"><a href="#7-音色-Alpha" class="headerlink" title="7. 音色 (Alpha)"></a>7. 音色 (Alpha)</h3><p>雖然和情感一樣也會持續顯示在畫面右側, 但實際上音色是可以單獨分區域調整的. 工具欄上的ALP項就是音色曲線調整介面, 可以根據曲子中的變化靈活進行調整. 總體來說, 音色值越高, 聲音聽起來就越開放, 成熟; 音色值越低, 聽起來就越尖細, 幼稚. </p>
-<img src="SCR-20221209-ehz.avif" class="noshadow">
-
-<center>這兩個嘆氣一般的 ｢啊啊｣ 我降低了音色值讓它聽起來語氣有所變化 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(雖然後來還是決定讓可不代勞了所以音量曲線直接拉到0)</span></center><br/>
-
-
-<h3 id="8-氣聲-Whisper-Voice"><a href="#8-氣聲-Whisper-Voice" class="headerlink" title="8. 氣聲 (Whisper Voice)"></a>8. 氣聲 (Whisper Voice)</h3><p>這個裏技是由<a href="https://twitter.com/NayutalieN/status/1429683978064207875">奶油糖星人</a>最早發現的, 感謝他! </p>
-<p>首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效. </p>
-<p>確定適用範圍後, 你需要在強弱標尺 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(DYNAMICS)</span> 上在開始處雙擊, 將強弱記號改成pp或者ppp, 然後在結束處恢復為正常 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(預設為N)</span>. 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(まとめ選択ツール &#x2F; Collectively Selection Tool)</span> 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(往上移動一個八度)</span>. 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留. </p>
-<img src="SCR-20221209-egj.avif" class="noshadow">
-
-<p>除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果. </p>
-<img src="SCR-20221209-epz.avif" class="noshadow">
-
-
-<h3 id="9-其他小技巧"><a href="#9-其他小技巧" class="headerlink" title="9. 其他小技巧"></a>9. 其他小技巧</h3><p>在時間線&#x2F;標尺上滾動滾輪可以左右捲動畫面. 注意, 所有可調整的曲線裡只有音高曲線會隨著畫面上下移動, 其他曲線都是固定高度的, 所以調整時可以以音高介面為基準來確定顯示的畫面區域. </p>
-]]></content>
-      <tags>
-        <tag>music</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>春季大掃除</title>
     <url>/2026-04/DesignChange2026Apr/</url>
     <content><![CDATA[<p>照理來說我向來對在部落格里專門寫文章記錄變更無感, 但近期對部落格很多文章以外的部分做了大刀闊斧的設計更動, 總覺得若完全無人知曉未免有些寂寞, 故於此記錄. </p>
@@ -673,29 +602,74 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN ⸺ LM-EA9, 邪道的终点</title>
-    <url>/2022-09/LM-EA9/</url>
-    <content><![CDATA[<p class="exif-para"><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"><small class="exif exif-right">f/1.6<br><sup>1</sup><sub>125</sub>s<br>ISO 200<br>35 mm</small></p>
-<p>一直以来我都在追求着小型的镜头, 而正如<a href="/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的Voigtländer近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对Helliar 40&#x2F;2.8而言这就是它唯一的对焦手段了. 这使得我的Helliar 40&#x2F;2.8一直处于有些尴尬的状态. </p>
-<p>这种状态一直持续到我看到TechArt正式发布了新的自动对焦转接环, 今天的主角<a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于E卡口的开放性, TechArt Pro已经做过M-E自动对焦环了, 但是上一代LM-EA7依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比Voigtländer近摄环要大多少了. </p>
-<p class="exif-para"><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"><small class="exif exif-right">f/2.5<br><sup>1</sup><sub>30</sub>s<br>ISO 100<br>40 mm</small></p>
-<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 ⸺ 它居然需要依靠<strong>Micro-USB</strong>数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的DualShock 4数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的Voigtländer近摄环和R-D1s都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在LM-EA9上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
-<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
-<p>首先它的对焦并不是完全线性的 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(比起原生E口自动对焦镜头, 比如40&#x2F;2.5G)</span>, 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康AF-D镜头.  </p>
-<iframe loading="lazy" width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <title>一些CeVIO AI入門小技巧 (以星界為例)</title>
+    <url>/2022-12/CeVIOAItipsandtricks/</url>
+    <content><![CDATA[<blockquote>
+<p>本文成文於2022年末, 其中很多資訊已經過時, CeVIO AI 也經歷過多次大版本更新, 請斟酌參考. </p>
+</blockquote>
+<p>這篇文章主要是給想要購買可不&#x2F;星界&#x2F;裏命&#x2F;狐子&#x2F;羽累的觀測者同好作為一個入門的補充讀物. 這篇文章面向的是和一年前的我一樣在此前沒有任何Vocaloid相關經驗的使用者, 如果你覺得自己對調教毫無經驗而感到畏懼的話, 大可不必, 入門CeVIO AI比你想象的要容易得多. </p>
+<iframe loading="lazy" height="480" style="width:100%;max-width:720px;background:transparent;" src="https://www.youtube.com/embed/P4u_COefgGY" title="Daily Note/酔シグレ (covered by星界)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p>体感上, 它对焦的速度也挺接近那些AF-D时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
-<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用LM-EA9自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换AF&#x2F;MF快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
-<p>另外的注意事项就是光圈设置. 因为LM-EA9并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为ƒ&#x2F;2时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的EXIF信息里全部都会显示拍摄光圈为ƒ&#x2F;2. </p>
-<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
-<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的Voigtländer初代近摄环差不多, 算是个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少LM-EA9需要移动的距离, 提升对焦速度. </p>
-<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何FLE <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(浮动对焦组)</span> 镜头, 那何LM-EA9很有可能会对画质产生负面影响. 而我手头没有任何FLE镜头, 所以自然完全无需担心了. </p>
-<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 ⸺ 至少比起没有电子部件的近摄环. 我用它拍了大概400张左右的照片就用掉了α7C一半的电量, 而相较之下近摄环拍800多张才消耗掉近半电量. 我还没试过用40&#x2F;2.5G或90&#x2F;2.8 DGDN拍那么多照片, 以后有机会的话会试试看. </p>
-<p>虽然说了很多它的缺点 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(倒不如说好像通篇都在说缺点吧)</span> ⸺  毕竟我第一次正式使用它就是在光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过TechArt后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等<a href="/2024-09/ZfAndMoreLens/#Zf-%E2%9D%A4%EF%B8%8E-M-Lens">下一代产品</a>了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+<p><em>我做的Daily Note星界翻唱</em></p>
+<p>那麼在正式開始前, 你應該要對CeVIO AI有一些基本的瞭解. 夜輪老師有翻譯了<a href="https://cevio-user-guide-unofficial.github.io/CeVIO-AI/">官方使用者指南</a>, 天雨大佬也寫了一系列<a href="https://www.bilibili.com/read/readlist/rl508759">基礎入門指南</a>, 這篇文章預設你已經看過這兩份指南了. 就算你自認為是軟體使用的天才我也強烈推薦好好看看這系列文章, 免得像去年的我一樣因為盲目自信而浪費大量寶貴的時間精力. </p>
+<h3 id="1-CeVIO-AI之外"><a href="#1-CeVIO-AI之外" class="headerlink" title="1. CeVIO AI之外"></a>1. CeVIO AI之外</h3><p>CeVIO AI本身畢竟不是一款正經的DAW, 你難免會需要藉助其他DAW以及各種輔助工具的幫助 ⸺ 尤其是當你像我一樣, 想要給一首極其小眾的歌曲做翻唱的時候. 如果你有非常強的樂理基礎, 扒譜對你來說毫無難度的話可以直接跳過這一步; 但如果你和我一樣是一個音感普通, 樂理基本忘光光的人, 那我強烈推薦一款輔助工具: <a href="https://supermegaultragroovy.com/products/capo/">capo</a>. 很可惜的是, 這款應用目前只支援macOS和iOS. 或者你用來搭配CeVIO AI的正經DAW有提供恰當的頻譜分析功能, 那麼請善加利用. 這些頻譜分析工具可以讓你更好地確定歌詞的音高. </p>
+<img src="SCR-20221209-e4n.avif" class="noshadow">
+<center>capo的介面</center><br/>
+
+<p>除了音準, 另外一個重要的參數是拍子. 儘管很多DAW都提供了用滑鼠&#x2F;鍵盤打拍來確定拍子的功能, 但是對於稍長一點的歌曲而言1~2bpm的區別就可以造成在歌曲中後段的嚴重節拍失調, 所以使用capo或DAW自帶的精確節拍分析工具儘可能地在開頭就找準節拍就非常重要. 如果你在做到中後期的時候突然意識到了節拍設定錯誤造成了失調, 除了推倒重來之外還有一個辦法: 使用標尺上的tempo標尺, 從曲子中間開始插入正確的節拍. 雖然是dirty hack但好歹可以亡羊補牢, 省去一些推倒重來的時間. </p>
+<h3 id="2-情感"><a href="#2-情感" class="headerlink" title="2. 情感"></a>2. 情感</h3><p>對於星界和之後的音樂同位體來說, 情感參數是唯一一個需要儘早決定的可調整參數, 因為只有它是一個全域性, 無法針對某一個特定區域調整的參數. 情感會大幅影響預設音符的音高, 顫音振幅和頻率, 儘早決定合適的數值可以省去很多後期調整的麻煩. 但是注意了, 儘管調高情感值會讓一些預設音符發音聽起來十分自然, 但也會造成很多預設音符的音高變得非常奇怪, 所以我強烈不建議把情感拉滿. </p>
+<img src="SCR-20221209-ejw.avif" class="noshadow">
+<center>情感拉高之後預設曲線就會出現一些迷之情況</center><br/>
+
+
+<h3 id="3-呼吸音"><a href="#3-呼吸音" class="headerlink" title="3. 呼吸音"></a>3. 呼吸音</h3><p>CeVIO AI對於什麼時候加呼吸音⋯⋯ 嗯, 有一套自己的想法. 如果你發現在自己不想聽到呼吸音&#x2F;邏輯上說不通的地方出現了換氣聲, 那最簡單粗暴的方法就是開啟音量面板把換氣聲處的音量砍掉. 我試過用連音標記消除換氣, 但這方法時靈時不靈, 感覺需要碰運氣. </p>
+<img src="SCR-20221209-fe2.avif" class="noshadow">
+
+<center>圖上已經在樂句頭尾加入了連唱標記, 然而CeVIO AI依然在中間插入了換氣, 我才用壓音量方式砍平換氣</center><br/>
+
+<p>至於加入換氣聲, 如果是在語句中的話可以給換氣聲前一個音符加入換氣標記 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(右鍵 - プロパティ&#x2F;property - ブレス&#x2F;breath)</span>. 但如果是在語句開頭, 可以在第一個音符前空1&#x2F;4拍 ~ 半拍 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(取決於你想要多長的吸氣聲)</span> 的位置加入隨便什麼音符, 然後在那個音符上設定換氣標記, 再開啟音量面板將額外加入的那個音的音量降到最低, 就相當於在語句前加入了呼吸聲. </p>
+<img src="SCR-20221209-edf.avif" class="noshadow">
+
+<center>注意最開頭那個額外的 ｢は｣</center><br/>
+
+
+<h3 id="4-填詞"><a href="#4-填詞" class="headerlink" title="4. 填詞"></a>4. 填詞</h3><p>很多時候你需要根據自己的判斷來拆音. 雖然相同的效果也可以透過手動劃線, 調整音量和修改音素時長來達成, 但直接在畫音符的時候拆音往往能給你更多的操作空間. 當然, 在開頭兩個指南里也提到了很多填詞相關的注意事項, 我的建議是可以把原曲的人聲音軌提取出來作為reference. 如果你的DAW沒有這樣的功能, 那<a href="https://vocalremover.org/">vocalremover</a>能提供一個效果堪用的工具. </p>
+<img src="SCR-20221209-fo9.avif" class="noshadow">
+
+<center>｢たまま｣ 被我拆成了 ｢たあままあ｣</center><br/>
+
+
+<h3 id="5-音準"><a href="#5-音準" class="headerlink" title="5. 音準"></a>5. 音準</h3><p>如果你已經按照1. 裡的建議檢視過原曲的頻譜, 應該會注意到很多時候歌手的發音並不總是壓在相應音高的頻譜範圍內, 除卻顫音之外也經常會有一個長音首尾皆大幅偏離原本音高的現象, 但絕大多數情況下這依然聽起來十分悅耳. 實際上每位歌手的發聲方式各有不同, 但一般人類很難做到完美地完全踩在絕對正確的頻譜範圍內, 有各種滑音等等變化才符合普通人類的唱法. CeVIO AI自然也考慮到了這一點, 所以在輸入音高發生變化的音符時往往會生成一條較為自然的音高曲線. 但是 ⸺ CeVIO AI很多時候, 嗯, 有一套自己的想法, 經常發生矯枉過正的情況. 尤其是在星界, 情感值設定較高的時候, 預設的音高曲線會非常的放飛自我, 請務必多多試聽儘早發現這些問題. </p>
+<img src="SCR-20221209-ejm.avif" class="noshadow">
+
+<center>看似偏到九宵雲外的音高曲線, 但實際播放聽起來十分自然</center><br/>
+
+
+<h3 id="6-顫音"><a href="#6-顫音" class="headerlink" title="6. 顫音"></a>6. 顫音</h3><p>和音高相同, 每位歌手都有自己對顫音的理解和利用方式. CeVIO AI會預設給一些長音尾部加入顫音, 而且預設的振幅和週期與情感直接相關. 如果你想要模仿某位歌手的唱法, 仔細觀察歌手原曲的頻譜往往能大概瞭解他&#x2F;她的顫音特色, 然後再回到CeVIO AI裡調整振幅週期曲線. 如果你覺得調整曲線的方式太不直觀了, 也可以選擇刪掉預設曲線, 直接進入音高介面徒手繪製曲線, 也不失為一種辦法. </p>
+<img src="SCR-20221209-eul.avif" class="noshadow">
+
+<center>注意, 徒手畫的曲線依然會被顫音的兩個參數影響</center><br/>
+
+
+<h3 id="7-音色-Alpha"><a href="#7-音色-Alpha" class="headerlink" title="7. 音色 (Alpha)"></a>7. 音色 (Alpha)</h3><p>雖然和情感一樣也會持續顯示在畫面右側, 但實際上音色是可以單獨分區域調整的. 工具欄上的ALP項就是音色曲線調整介面, 可以根據曲子中的變化靈活進行調整. 總體來說, 音色值越高, 聲音聽起來就越開放, 成熟; 音色值越低, 聽起來就越尖細, 幼稚. </p>
+<img src="SCR-20221209-ehz.avif" class="noshadow">
+
+<center>這兩個嘆氣一般的 ｢啊啊｣ 我降低了音色值讓它聽起來語氣有所變化 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(雖然後來還是決定讓可不代勞了所以音量曲線直接拉到0)</span></center><br/>
+
+
+<h3 id="8-氣聲-Whisper-Voice"><a href="#8-氣聲-Whisper-Voice" class="headerlink" title="8. 氣聲 (Whisper Voice)"></a>8. 氣聲 (Whisper Voice)</h3><p>這個裏技是由<a href="https://twitter.com/NayutalieN/status/1429683978064207875">奶油糖星人</a>最早發現的, 感謝他! </p>
+<p>首先你需要確定發出氣聲的區域. 我自己的經驗是, 由於尚不明確氣聲產生的原理, 所以很難透過操作獲得介於氣聲和普通發聲之間的聲音, 導致在樂句中插入氣聲會顯得極其違和, 而且大多數時候在樂句頭尾使用氣聲也會很違和, 在極小部分情況下樂句頭尾使用氣聲能獲得奇效. </p>
+<p>確定適用範圍後, 你需要在強弱標尺 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(DYNAMICS)</span> 上在開始處雙擊, 將強弱記號改成pp或者ppp, 然後在結束處恢復為正常 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(預設為N)</span>. 之後將範圍內所有音符往下移動一個八度. 之後進入音高調整介面, 用範圍選擇工具 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(まとめ選択ツール &#x2F; Collectively Selection Tool)</span> 將區域內所有音高曲線選中, 之後用滑鼠將曲線拖回原本音高 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(往上移動一個八度)</span>. 進行這樣的操作之後, 這一段歌聲就會變成氣聲. 根據你的需要, 之後也可以進行音高修改, 顫音修改等操作, 氣聲效果依然會保留. </p>
+<img src="SCR-20221209-egj.avif" class="noshadow">
+
+<p>除此之外, 在除了あ行之外的發音裡, 進入音素時長調整介面將母音和字音的時間拉開, 會獲得更接近現實中氣聲的發音效果. </p>
+<img src="SCR-20221209-epz.avif" class="noshadow">
+
+
+<h3 id="9-其他小技巧"><a href="#9-其他小技巧" class="headerlink" title="9. 其他小技巧"></a>9. 其他小技巧</h3><p>在時間線&#x2F;標尺上滾動滾輪可以左右捲動畫面. 注意, 所有可調整的曲線裡只有音高曲線會隨著畫面上下移動, 其他曲線都是固定高度的, 所以調整時可以以音高介面為基準來確定顯示的畫面區域. </p>
 ]]></content>
       <tags>
-        <tag>gadget</tag>
-        <tag>photography</tag>
+        <tag>music</tag>
       </tags>
   </entry>
   <entry>
@@ -743,6 +717,32 @@
 ]]></content>
       <tags>
         <tag>thoughts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN ⸺ LM-EA9, 邪道的终点</title>
+    <url>/2022-09/LM-EA9/</url>
+    <content><![CDATA[<p class="exif-para"><img src="/2022-09/LM-EA9/techart-lmea9--voigtlnder-heliar-4028-vm_52326554321_o.avif"><small class="exif exif-right">f/1.6<br><sup>1</sup><sub>125</sub>s<br>ISO 200<br>35 mm</small></p>
+<p>一直以来我都在追求着小型的镜头, 而正如<a href="/2022-09/Standard-Obsession-2/">上一篇文章</a>里提到的, 小型镜头的终点就是Voigtländer Helliar 40&#x2F;2.8 VM. 但是小到极致的后果就是它没有对焦能力, 完全依赖我的Voigtländer近摄环进行对焦, 而我手上这个二手近摄环的螺纹线圈润滑有些老化, 拧起来手感其实蛮别扭的. 在配合其他镜头使用时毕竟不需要经常使用近摄环所以可以忍受, 但对Helliar 40&#x2F;2.8而言这就是它唯一的对焦手段了. 这使得我的Helliar 40&#x2F;2.8一直处于有些尴尬的状态. </p>
+<p>这种状态一直持续到我看到TechArt正式发布了新的自动对焦转接环, 今天的主角<a href="https://techartpro.com/?product=lmea9">LM-EA9</a>. 我很早就知道由于E卡口的开放性, TechArt Pro已经做过M-E自动对焦环了, 但是上一代LM-EA7依靠的是突出筒身的对焦模块来进行对焦, 完全违背了我的小设备美学. 这一代自动对焦环改成了藏在筒身内的线圈马达, 使得整个转接环体积变得不比Voigtländer近摄环要大多少了. </p>
+<p class="exif-para"><img src="/2022-09/LM-EA9/voigtlnder-close-focus-adapter-lm-ea9-voigtlnder-helliar-4028-vm_52346586710_o.avif"><small class="exif exif-right">f/2.5<br><sup>1</sup><sub>30</sub>s<br>ISO 100<br>40 mm</small></p>
+<p>在进入使用体验介绍前, 我不得不先提一下它给我印象最差的部分 ⸺ 它居然需要依靠<strong>Micro-USB</strong>数据线来进行固件升级! 而且, 它的包装里并<strong>没有</strong>附赠!!! 还好我室友借给我她的DualShock 4数据线, 不然我还真就拿这固件升级束手无策了. 另外, 大概是因为我的Voigtländer近摄环和R-D1s都是二手货的缘故它们的卡口松紧程度对我来说很刚好, 但是在LM-EA9上安装镜头的时候我时常会觉得卡口连接过于紧密了, 导致拆装手感十分生涩. </p>
+<p>那么正式进入普通使用体验. 目前我用它转接过如下镜头: Voigtländer Helliar 40&#x2F;2.8, Pentax-L 43&#x2F;1.9 Special, Voigtländer Nokton 50&#x2F;1.5 Ⅰ &amp; Ⅱ, Zeiss Sonnar C 50&#x2F;1.5, 都可以正常使用. </p>
+<p>首先它的对焦并不是完全线性的 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(比起原生E口自动对焦镜头, 比如40&#x2F;2.5G)</span>, 在使用时如果对焦距离比较远会很明显听到马达分两到三次驱动螺线模块. 对了, 这组马达的对焦声音也挺大的, 让我想起一些老的尼康AF-D镜头.  </p>
+<iframe loading="lazy" width="480" height="280" src="https://www.youtube.com/embed/fFoLL6cB_ZU" title="LM-EA9 Focus Sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>体感上, 它对焦的速度也挺接近那些AF-D时代的老镜头的. 而且理论上来说如果你装上了一些比较重的镜头, 它对焦的速度可能还会更慢. TechArt官网上有提到重镜头操作的注意事项和重量上限, 但是我所有的镜头都算是微小的镜头, 所以我体验到的应该是理论上它能达到的最快对焦速度了. 它支持单次对焦和追焦, 但是它追焦的速度并不能跟上一些高速移动的物体, 比如火车, 所以实用性其实比较存疑. 另外, 它的自动对焦在录像模式下是完全不工作的. </p>
+<p>它在光线良好时效率还算不错, 但即是在光线良好的室外我也不敢完全依靠外置取景器, 因为在对一些纹理复杂的物体时对焦依然可能失败. 而进入夜间室内的状况下, 对焦的效率就更惨了, 很多情况下就算我对一些黑白边界进行对焦, 它也无法准确对焦. 使用LM-EA9自带的慢速对焦模式并不能改善这种状况, 这就导致在暗光环境下自动对焦变得非常不可靠. 好在其他手动镜头当然还是能直接手动对焦的, 不过在默认状态下对焦辅助会被关闭, 因为相机认为你依然处于自动对焦模式, 所以需要设置一个切换AF&#x2F;MF快捷键, 略有些不便. 我自己在使用中发现在光线比较适宜的状况下, 先使用手动对焦到大致范围后再启动自动对焦可以起到不错的效果, 省去了放大画面检视边缘的麻烦, 也提高了自动对焦的效率. </p>
+<p>另外的注意事项就是光圈设置. 因为LM-EA9并不能判断用户使用了什么镜头, 所以它依靠机身的光圈设置来进行调整, 这样机身防抖也能配合镜头正常启用. 只有在机身设置为ƒ&#x2F;2时是它正常工作的模式, 其他所有光圈数值都对应了某个设置. 这种使用方式倒是蛮聪明的, 但是换完镜头需要调整光圈空拍一张, 而这空拍根据当前光线以及设置的光圈数值有可能会花上好几秒, 如果你还开了长时间曝光降噪的话整个过程有可能会花费十数秒. 另一个副作用是, 照片的EXIF信息里全部都会显示拍摄光圈为ƒ&#x2F;2. </p>
+<p>而如果你不小心误触光圈拨轮调整了光圈数值后没有注意到并拍了很多暗光照片, 那有很大概率这些照片会因为机身防抖没有正常启用而变得一片模糊. 很不幸的是, 我的 α7C因为是二手货的缘故拨轮和拨盘都比较松软, 很容易就会误拨动, 导致我现在基本在每次准备拍摄前都会习惯性地把拨盘往最大光圈方向拨一下防止意外. 另外, 如果你不像我基本只用标准焦段附近的镜头, 而是带了一堆不同焦段的镜头而且经常换着用, 那你可能很长一段时间都需要带着说明书使用. </p>
+<p>这个自动对焦环的实现原理其实和近摄环是一致的, 所以其实你也可以用它来当作近摄环, 而且还是附带自动对焦的. 它可以带来的额外近摄距离和我手上的Voigtländer初代近摄环差不多, 算是个不错的附赠品. 实际上, 如果你知道自己只会拍近距离的主体, 那么把镜头对焦环直接拧到最近距离反而可以减少LM-EA9需要移动的距离, 提升对焦速度. </p>
+<p>一个对于我来说完全不是问题的问题是, 由于他运作的方式, 镜头对焦相当于是整组移动对焦. 如果你手头有任何FLE <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(浮动对焦组)</span> 镜头, 那何LM-EA9很有可能会对画质产生负面影响. 而我手头没有任何FLE镜头, 所以自然完全无需担心了. </p>
+<p>还有一件可能值得注意的事情是, 它对相机电池的消耗是明显可感知的 ⸺ 至少比起没有电子部件的近摄环. 我用它拍了大概400张左右的照片就用掉了α7C一半的电量, 而相较之下近摄环拍800多张才消耗掉近半电量. 我还没试过用40&#x2F;2.5G或90&#x2F;2.8 DGDN拍那么多照片, 以后有机会的话会试试看. </p>
+<p>虽然说了很多它的缺点 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(倒不如说好像通篇都在说缺点吧)</span> ⸺  毕竟我第一次正式使用它就是在光线昏暗的室内场景, 基本上是能够暴露出它所有弱点的状态 ⸺ 但是它给我带来的体验提升确实是飞跃性的, 在用它拍了几次之后我甚至感觉能够体会上世纪七八十年代自动对焦刚刚普及时摄影师们欣喜若狂的感觉. 毕竟它原本的作用就是把那些无法自动对焦的镜头带入自动对焦的时代, 仅就这点而言它已经合格了. 如果你希望用它来进行正经工作, 那我奉劝你早点死了这条心, 或许对焦速度和成功率可以通过TechArt后续的固件更新带来一定改善, 但是质的飞跃恐怕还要等<a href="/2024-09/ZfAndMoreLens/#Zf-%E2%9D%A4%EF%B8%8E-M-Lens">下一代产品</a>了吧. 不管怎么说, 自己锻炼好对焦技能还是最有备无患的. </p>
+]]></content>
+      <tags>
+        <tag>gadget</tag>
+        <tag>photography</tag>
       </tags>
   </entry>
   <entry>
@@ -1068,51 +1068,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Photography is FUN ⸺ 邁向超廣角 (啟蒙篇)</title>
-    <url>/2025-09/StepIntoUWA1/</url>
-    <content><![CDATA[<p>我對廣角的認知一直都比較曖昧. 一方面是由於手上的裝備影響: 剛剛接觸攝影時, 因為使用具備等效35-105mm鏡頭的佳能<a href="https://global.canon/zh/c-museum/product/dcc507.html">IXUS 50</a>, 對我而言比35mm廣就是廣角了; 後來購入了Dƒ + 50mm套裝, 進入了<a href="/2022-01/Standard-Obsession">50mm舒適圈</a>的我便進一步認為比35mm廣就算<strong>超</strong>廣角. 這種症狀有逐漸惡化的趨勢, 隨著我有一段時間將<a href="/2024-03/EvenMoreNikkorVintageLens/#:~:text=Voigtl%C3%A4nder%20Apo-Skopar%2090mm%20%C6%92/2,8%20SL-IIs">Voigtländer APO-Skopar 90mm ƒ&#x2F;2.8</a>掛機使用, 甚至連40mm都讓我有 ｢這太廣了｣ 感⋯⋯ 另一方面, 我對構圖真的很不擅長, 而焦距越短, 視角越廣, 景深越深, 納入畫面的元素越多, 我就會產生越強烈的 ｢失去控制｣ 感, 而大光圈標準焦和長焦鏡依靠淺景深暴力剔除了大部分我不想看到的元素. 在這種狀況下, 我連35mm都不太願意碰, 更遑論比35mm更廣的各類焦段了. </p>
-<p>我一直以為自己會在50mm舒適圈裡待上一輩子. 不過, 情況在星耀光學公佈他們的28mm ƒ&#x2F;2.8餅乾頭之後開始發生改變. </p>
-<h3 id="開啟廣角之門"><a href="#開啟廣角之門" class="headerlink" title="開啟廣角之門"></a>開啟廣角之門</h3><p>在星耀之前就已經有不少廠商推出超薄鏡頭了, 只是它們基本都是超小光圈廣角鏡, 像質夢迴百年前, 基本可以算是不用開蓋就能拍照的機身蓋 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(它們中的很多也確實是如此宣傳的)</span>. 雖然也不乏<a href="https://phillipreeve.net/blog/review-ms-optics-28mm-2-0-apoqualia/">宮崎光學 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(MS-Optics)</span> 28mm ƒ&#x2F;2 Apoqualia</a> 這樣具備超大光圈的異類, 但宮崎光學的售價遠遠超過我能負擔的範圍, 我也只能望洋興嘆. </p>
-<p>這種狀況一直持續到了2023年, 星耀光學發表了這枚<strong>Brightin Star 28mm ƒ&#x2F;2.8 XSlim Pro-M</strong>餅乾頭. 在此之前我對星耀的印象還停留在<del>生產便宜垃圾鏡頭的標準中國光學公司</del> <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(TBH他們的catalogue除了這枚鏡頭之外也的確是完美符合這個印象)</span>, 而這枚鏡黑漆黃銅, 身形纖薄, 造型精緻, 令我大感驚豔, 考慮到它的體型能讓我把α7C與Hexar RF變成口袋機 &amp; 在R-D1上還能化身42mm標準鏡, 我頭一次產生了邁向廣角的衝動. </p>
-<p><img src="/2025-09/StepIntoUWA1/XSlimOnZf.avif" alt="XSlim on Zƒ _gallery &lt;"> <small class="exif exif-gallery-left">f/2.8<br><sup>1</sup><sub>30</sub>s<br>ISO 320<br>18.3 mm</small></p>
-<p><img src="/2025-09/StepIntoUWA1/XSlimOnM.avif" alt="Xslim on M10-P Safari _gallery &gt;"><small class="exif exif-gallery-right">f/2<br><sup>1</sup><sub>60</sub>s<br>ISO 800<br>35 mm</small></p>
-<p>在這枚鏡頭之前, 我手上最薄的鏡頭當屬<a href="/2022-09/Standard-Obsession-2/">Voigtländer Heliar 40mm ƒ&#x2F;2.8</a> ⸺ 這還是犧牲了對焦機構, 使用沉胴 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(鏡身能夠沉入機身)</span> 設計, 才做到了<strong>14mm</strong>的厚度 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(收縮時)</span>. 而星耀在沒有犧牲對焦機構, 不需要沉胴的前提下, 做到了驚人的<strong>9.9mm</strong>厚度! 這比起前輩的宮崎28&#x2F;2 Apoqualia的<strong>9mm</strong>已經幾乎沒有差別了. 而且星耀這枚鏡的工藝是黃銅黑漆, 質感較宮崎的鋁合金更顯精緻. 拿到手體驗也確實符合預期, 輕薄卻紮實, 除改變光圈的操作因為實在沒空間放下更大光圈環而需要用指甲摳光圈環確實略有不便之外, 無論是裝卸鏡頭還是對焦都沒有因為極致輕薄遭到妥協. </p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/KeioSt.avif" alt="慶應旁的道路 _gallery &lt;"><small class="exif exif-gallery-left">f/2.5<br><sup>1</sup><sub>15</sub>s<br>ISO 200<br>28 mm</small></p>
-<p><img src="/2025-06/TripToTokyo2025JunPart1/Tsunokuniya.avif" alt="津國屋 _gallery &gt;"><small class="exif exif-gallery-right">f/2.5<br><sup>1</sup><sub>15</sub>s<br>ISO 400<br>28 mm</small></p>
-<p>當然, 極致輕薄不可能完全沒有代價⋯⋯ 這枚鏡頭作為全幅廣角, 像質在APS-C範圍之外基本上只起到氛圍襯托的作用, 哪怕是收光圈也無法改善, 基本告別風光攝影了. 但! 我逃避廣角最大的理由就畫面中出現元素太多令我難以控制, 而在星耀28&#x2F;2.8中, 畫面周邊由於像質跌落而融化為扭曲背景效果於我反而是救贖, 這 ｢缺陷｣ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(讀作 ｢特性｣)</span> 讓畫面重點自然地被限制到中心區域, 我便不需要過於在乎周邊區域是否有異物闖入畫面了. 鏡頭的鍍膜技術也和其他國產鏡頭一樣屬於弱項, 遇到逆光就會出現很顯著的眩光和耀斑, 然而在夜間運用得當的話反而能為畫面增加一些風味. </p>
-<p class="exif-para"><img src="/Frames/Events/Tokyo2025jun/tsugaku.avif" alt="通學路"><small class="exif exif-right"><sup>1</sup><sub>1200</sub>s<br>ISO 200</small></p>
-<p>當在APS-C機器上使用時, 這枚鏡就變成了等效42mm的準標準鏡了, 用起來完全在我的舒適區內, 配合R-D1時彷彿在用旁軸GR3x, 無比順手. 由於被放棄的全幅邊緣被裁掉了, 且R-D1本來畫素就不密集掩蓋了很多光學問題, 這使用場景下全畫面質素都算不錯, 完全可堪日用. </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA1/XSlimOnRD1.avif" alt="裝著在R-D1上的樣子"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>20</sub>s<br>ISO 125<br>40 mm</small></p>
-<p>這枚鏡在原廠狀態下還有一個缺陷, 就是鏡頭蓋 ⸺ 原裝的鏡頭蓋是一枚硬幣般螺紋旋入式的銅錠, 質感確實是很好, 但旋入式設計令使用非常不便, 我使用的頭兩個月就不知道掉了多少次, 好在最後沒有滾進下水道丟失⋯⋯ 後來官方大概是聽到了使用者們的抱怨, 推出了超薄UV附件補救, 很大程度上替代了這枚鏡頭蓋, 我就把鏡頭蓋收進了<a href="https://sola-she.booth.pm/items/4704013">專門存放不常用配件的小盒子</a>裡. </p>
-<p>俗話說最好的相機就是你手上的相機, 星耀28&#x2F;2.8提供了與我手頭其他鏡頭截然不同的體驗, 並讓那些本來體型就不大的微單 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(除了α7C系列之外, 還有Sigma BF與Panasonic S9)</span> 以完全可以使用的狀態被裝進口袋 ⸺ Voigtländer 40&#x2F;2.8需要縮起鏡頭才能裝進口袋所以不算完全可以使用的狀態 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(當然牛仔褲這樣緊身的還是不要考慮了⋯⋯)</span>, 極大減輕了攜帶相機的壓力, 也為我開啟了廣角世界之門, 可算近幾年來我最中意的國產鏡頭. </p>
-<h3 id="邁向更高顏值"><a href="#邁向更高顏值" class="headerlink" title="邁向更高顏值"></a>邁向更高顏值</h3><p class="exif-para"><img src="/2025-09/StepIntoUWA1/Logo.avif" alt="Ultron 28/1.9 on Hexar"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>500</sub>s<br>ISO 640<br>65 mm</small></p>
-<p>在<a href="https://novadng.studio/2024-10/TripToTokyo1/">東京Camera</a>看到這枚Voigtländer Ultron 28mm ƒ&#x2F;1.9 LTM之前, 我是萬萬不會想到自己有朝一日居然會購買第二枚28mm廣角鏡的. 然而, 你知道的, 我對長得好看的鏡頭向來沒有抵抗力⋯⋯ </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA1/Drumstick.avif" alt="Drumstick!"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>125</sub>s<br>ISO 100<br>65 mm</small></p>
-<p>這枚鏡外觀和操控上最大的特色就是附帶了一根雞腿 ⸺ 可拆卸的對焦撥杆. 很多徠卡鏡頭都有輔助對焦指柄, 但指柄更適合精細調焦使用, 對於28mm和潛在的更重視街拍的需求而言, 撥杆在速度上要強得多 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(而且平時沒事撫摸一下也是極好的)</span>. 這根雞腿被設計為可以拆式, 表示我也可以按照自己的喜好去安裝其他帶有3mm螺紋的杆子 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(我這跟搞不好就是東京Camera換的並非原裝⋯⋯)</span>, 我看到有人文攝影家會使用很長的直杆子, 應該是為了極致的zone focus速度進行的改造吧. 不過得小心放在包裡雞腿脫落. 我將本鏡從日本帶回時就掉在包裡了, 還好後來找到, 於是我就用了一點點loctite來一勞永逸. </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA1/Hood.avif" alt="Hammered texture"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>125</sub>s<br>ISO 640<br>65 mm</small></p>
-<p>外觀上的另一大特色就是錘紋遮光罩. 二十一世紀初確善能製造的很多鏡頭都附帶了錘紋遮光罩, 我手上的另一枚Voigtländer Macro APO-Lanther 125mm ƒ&#x2F;2.5也附帶了方形的錘紋遮光罩, 先前介紹過的<a href="/2025-03/TheBigBois/#AF-DC-Nikkor-135mm-f-2D">尼康AF DC-Nikkor 135mm ƒ&#x2F;2D</a>機身也用了錘紋處理, 只不過錘紋的紋理與確善能的略有不同. 錘紋質感無論是視覺還是觸覺上都無與倫比, 極具特色, 很可惜在更現代的鏡頭上幾乎無法看到這樣的表面工藝了. 這枚遮光罩既不是用螺紋旋入, 也不是卡口裝著, 而是用螺絲夾緊固定, 裝卸上便利性介於卡口和旋入之間, 不過我基本上不拆所以不是很在意. </p>
-<p><img src="/2025-09/StepIntoUWA1/Cityriver.avif" alt="Cityriver _gallery &lt;"><small class="exif exif-gallery-left">f/2.8<br>1s<br>ISO 400<br>25 mm</small></p>
-<p><img src="/Frames/Events/Tokyo2024/rainystreet.avif" alt="Tachiaigawa After Rain _gallery &gt;"><small class="exif exif-gallery-right">f/2.8<br><sup>1</sup><sub>25</sub>s<br>ISO 100<br>25 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA1/Overcross.avif" alt="Overcross"><small class="exif exif-right">f/2.8<br>4s<br>ISO 100<br>25 mm</small></p>
-<p>這枚鏡頭在成像上和星耀既相似又不同: 光圈全開時和星耀相似, 因為場曲非常嚴重造成畫面中心銳利邊緣混沌, 但收光圈到ƒ&#x2F;8時, 全畫面都處於景深內, 邊緣也變得可用了. 如果你也在用低畫素機或者膠片, 那麼收至ƒ&#x2F;11時哪怕是最邊角也已經相當不錯. 作為25年前設計的鏡頭, 它的鍍膜技術並不比23年才上市的星耀差, 甚至在夜晚街道上能拍出比星耀乾淨得多的畫面. </p>
-<p class="exif-para"><img src="/Frames/Events/Tokyo2024/nightscape.avif" alt="Cityriver Skytree"><small class="exif exif-right">f/2.8<br>1s<br>ISO 400<br>25 mm</small></p>
-<center>ƒ/4樣片. 可以很明顯看出畫面邊緣由於場曲和彗差造成的像質衰減</center><br/>
-
-<p>若是要論像質, 這枚鏡會被更新的Voigtländer Ultron 28mm ƒ&#x2F;2 Mk Ⅱ打得找不著北, 而ƒ&#x2F;2 Mk Ⅱ甚至只有不到ƒ&#x2F;1.9一半的長度. 但是, 新ƒ&#x2F;2的設計和畫質雖然都很好, 卻都沒那麼有特色 ⸺ 設計上, 近幾年確善能推出的Ultron鏡都採用了家族化的設計語言, 一眼看去很難判斷出眼前的鏡是28mm, 35mm還是50mm; 遮光罩也變成很普通的和徠卡一樣的款式, 雖然對旁軸取景器的遮擋有所減少, 但毫無個性可言了 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(而且還得單獨購買! 太黑心啦!)</span>. </p>
-<p class="exif-para" data-xpan><img src="/2025-09/StepIntoUWA1/Crossroad.avif" alt="Crossroad"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>13</sub>s<br>ISO 250<br>25 mm</small></p>
-<p class="exif-para" data-xpan><img src="/2025-09/StepIntoUWA1/Tachiaigawa.avif" alt="Tachiaigawa"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>13</sub>s<br>ISO 360<br>25 mm</small></p>
-<center>現代福倫達極具特色的十片直邊光圈葉片, 略微收光圈 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(樣圖為ƒ/2.8)</span> 即可獲得非常漂亮的星芒</center><br/>
-
-<p>即便這枚28&#x2F;1.9如此美好,  攜帶單機單鏡出門若需要選擇廣角鏡, 我總會更優先考慮薄若無物的星耀28&#x2F;2.8. 話雖如此, 一年99% 時間裡我的掛機鏡仍舊是Voigtländer 40&#x2F;2.8… 突破舒適圈, 果然不是那麼簡單的事情啊. </p>
-<hr>
-<p>由於寫著寫著突然發現本作總長度恐怕要突破六千字大關, 為便於閱讀我將拆分為三篇成為一個系列, 本篇為開端的啟蒙篇. 後接<a href="/2025-09/StepIntoUWA2">試煉篇</a>與<a href="/2025-09/StepIntoUWA3">終局篇</a></p>
-]]></content>
-      <tags>
-        <tag>gadget</tag>
-        <tag>photography</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Photography is FUN ⸺ Standard Obsession</title>
     <url>/2022-01/Standard-Obsession/</url>
     <content><![CDATA[<p>就在不久之前, 我拿到了心心念念的Voigtlander 40&#x2F;2, 这是我手头第八个 ｢标准焦段｣ 的镜头了 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(如果不算SX-70的等效60mm镜头的话)</span> ⸺ 之前的分别是Nikkor 50&#x2F;1.8G, Ricoh GR IIIx, Nikkor AI-S 50&#x2F;1.8, Nikkor 45&#x2F;2.8P, Zeiss ZM 50&#x2F;1.5, Helios-44 58&#x2F;2, Pentax 43&#x2F;1.9. 用了这么久这些 ｢标准镜头｣, 我觉得可以写篇文章谈谈他们了. </p>
@@ -1206,6 +1161,98 @@
       </tags>
   </entry>
   <entry>
+    <title>Photography is FUN ⸺ 邁向超廣角 (啟蒙篇)</title>
+    <url>/2025-09/StepIntoUWA1/</url>
+    <content><![CDATA[<p>我對廣角的認知一直都比較曖昧. 一方面是由於手上的裝備影響: 剛剛接觸攝影時, 因為使用具備等效35-105mm鏡頭的佳能<a href="https://global.canon/zh/c-museum/product/dcc507.html">IXUS 50</a>, 對我而言比35mm廣就是廣角了; 後來購入了Dƒ + 50mm套裝, 進入了<a href="/2022-01/Standard-Obsession">50mm舒適圈</a>的我便進一步認為比35mm廣就算<strong>超</strong>廣角. 這種症狀有逐漸惡化的趨勢, 隨著我有一段時間將<a href="/2024-03/EvenMoreNikkorVintageLens/#:~:text=Voigtl%C3%A4nder%20Apo-Skopar%2090mm%20%C6%92/2,8%20SL-IIs">Voigtländer APO-Skopar 90mm ƒ&#x2F;2.8</a>掛機使用, 甚至連40mm都讓我有 ｢這太廣了｣ 感⋯⋯ 另一方面, 我對構圖真的很不擅長, 而焦距越短, 視角越廣, 景深越深, 納入畫面的元素越多, 我就會產生越強烈的 ｢失去控制｣ 感, 而大光圈標準焦和長焦鏡依靠淺景深暴力剔除了大部分我不想看到的元素. 在這種狀況下, 我連35mm都不太願意碰, 更遑論比35mm更廣的各類焦段了. </p>
+<p>我一直以為自己會在50mm舒適圈裡待上一輩子. 不過, 情況在星耀光學公佈他們的28mm ƒ&#x2F;2.8餅乾頭之後開始發生改變. </p>
+<h3 id="開啟廣角之門"><a href="#開啟廣角之門" class="headerlink" title="開啟廣角之門"></a>開啟廣角之門</h3><p>在星耀之前就已經有不少廠商推出超薄鏡頭了, 只是它們基本都是超小光圈廣角鏡, 像質夢迴百年前, 基本可以算是不用開蓋就能拍照的機身蓋 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(它們中的很多也確實是如此宣傳的)</span>. 雖然也不乏<a href="https://phillipreeve.net/blog/review-ms-optics-28mm-2-0-apoqualia/">宮崎光學 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(MS-Optics)</span> 28mm ƒ&#x2F;2 Apoqualia</a> 這樣具備超大光圈的異類, 但宮崎光學的售價遠遠超過我能負擔的範圍, 我也只能望洋興嘆. </p>
+<p>這種狀況一直持續到了2023年, 星耀光學發表了這枚<strong>Brightin Star 28mm ƒ&#x2F;2.8 XSlim Pro-M</strong>餅乾頭. 在此之前我對星耀的印象還停留在<del>生產便宜垃圾鏡頭的標準中國光學公司</del> <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(TBH他們的catalogue除了這枚鏡頭之外也的確是完美符合這個印象)</span>, 而這枚鏡黑漆黃銅, 身形纖薄, 造型精緻, 令我大感驚豔, 考慮到它的體型能讓我把α7C與Hexar RF變成口袋機 &amp; 在R-D1上還能化身42mm標準鏡, 我頭一次產生了邁向廣角的衝動. </p>
+<p><img src="/2025-09/StepIntoUWA1/XSlimOnZf.avif" alt="XSlim on Zƒ _gallery &lt;"> <small class="exif exif-gallery-left">f/2.8<br><sup>1</sup><sub>30</sub>s<br>ISO 320<br>18.3 mm</small></p>
+<p><img src="/2025-09/StepIntoUWA1/XSlimOnM.avif" alt="Xslim on M10-P Safari _gallery &gt;"><small class="exif exif-gallery-right">f/2<br><sup>1</sup><sub>60</sub>s<br>ISO 800<br>35 mm</small></p>
+<p>在這枚鏡頭之前, 我手上最薄的鏡頭當屬<a href="/2022-09/Standard-Obsession-2/">Voigtländer Heliar 40mm ƒ&#x2F;2.8</a> ⸺ 這還是犧牲了對焦機構, 使用沉胴 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(鏡身能夠沉入機身)</span> 設計, 才做到了<strong>14mm</strong>的厚度 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(收縮時)</span>. 而星耀在沒有犧牲對焦機構, 不需要沉胴的前提下, 做到了驚人的<strong>9.9mm</strong>厚度! 這比起前輩的宮崎28&#x2F;2 Apoqualia的<strong>9mm</strong>已經幾乎沒有差別了. 而且星耀這枚鏡的工藝是黃銅黑漆, 質感較宮崎的鋁合金更顯精緻. 拿到手體驗也確實符合預期, 輕薄卻紮實, 除改變光圈的操作因為實在沒空間放下更大光圈環而需要用指甲摳光圈環確實略有不便之外, 無論是裝卸鏡頭還是對焦都沒有因為極致輕薄遭到妥協. </p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/KeioSt.avif" alt="慶應旁的道路 _gallery &lt;"><small class="exif exif-gallery-left">f/2.5<br><sup>1</sup><sub>15</sub>s<br>ISO 200<br>28 mm</small></p>
+<p><img src="/2025-06/TripToTokyo2025JunPart1/Tsunokuniya.avif" alt="津國屋 _gallery &gt;"><small class="exif exif-gallery-right">f/2.5<br><sup>1</sup><sub>15</sub>s<br>ISO 400<br>28 mm</small></p>
+<p>當然, 極致輕薄不可能完全沒有代價⋯⋯ 這枚鏡頭作為全幅廣角, 像質在APS-C範圍之外基本上只起到氛圍襯托的作用, 哪怕是收光圈也無法改善, 基本告別風光攝影了. 但! 我逃避廣角最大的理由就畫面中出現元素太多令我難以控制, 而在星耀28&#x2F;2.8中, 畫面周邊由於像質跌落而融化為扭曲背景效果於我反而是救贖, 這 ｢缺陷｣ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(讀作 ｢特性｣)</span> 讓畫面重點自然地被限制到中心區域, 我便不需要過於在乎周邊區域是否有異物闖入畫面了. 鏡頭的鍍膜技術也和其他國產鏡頭一樣屬於弱項, 遇到逆光就會出現很顯著的眩光和耀斑, 然而在夜間運用得當的話反而能為畫面增加一些風味. </p>
+<p class="exif-para"><img src="/Frames/Events/Tokyo2025jun/tsugaku.avif" alt="通學路"><small class="exif exif-right"><sup>1</sup><sub>1200</sub>s<br>ISO 200</small></p>
+<p>當在APS-C機器上使用時, 這枚鏡就變成了等效42mm的準標準鏡了, 用起來完全在我的舒適區內, 配合R-D1時彷彿在用旁軸GR3x, 無比順手. 由於被放棄的全幅邊緣被裁掉了, 且R-D1本來畫素就不密集掩蓋了很多光學問題, 這使用場景下全畫面質素都算不錯, 完全可堪日用. </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA1/XSlimOnRD1.avif" alt="裝著在R-D1上的樣子"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>20</sub>s<br>ISO 125<br>40 mm</small></p>
+<p>這枚鏡在原廠狀態下還有一個缺陷, 就是鏡頭蓋 ⸺ 原裝的鏡頭蓋是一枚硬幣般螺紋旋入式的銅錠, 質感確實是很好, 但旋入式設計令使用非常不便, 我使用的頭兩個月就不知道掉了多少次, 好在最後沒有滾進下水道丟失⋯⋯ 後來官方大概是聽到了使用者們的抱怨, 推出了超薄UV附件補救, 很大程度上替代了這枚鏡頭蓋, 我就把鏡頭蓋收進了<a href="https://sola-she.booth.pm/items/4704013">專門存放不常用配件的小盒子</a>裡. </p>
+<p>俗話說最好的相機就是你手上的相機, 星耀28&#x2F;2.8提供了與我手頭其他鏡頭截然不同的體驗, 並讓那些本來體型就不大的微單 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(除了α7C系列之外, 還有Sigma BF與Panasonic S9)</span> 以完全可以使用的狀態被裝進口袋 ⸺ Voigtländer 40&#x2F;2.8需要縮起鏡頭才能裝進口袋所以不算完全可以使用的狀態 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(當然牛仔褲這樣緊身的還是不要考慮了⋯⋯)</span>, 極大減輕了攜帶相機的壓力, 也為我開啟了廣角世界之門, 可算近幾年來我最中意的國產鏡頭. </p>
+<h3 id="邁向更高顏值"><a href="#邁向更高顏值" class="headerlink" title="邁向更高顏值"></a>邁向更高顏值</h3><p class="exif-para"><img src="/2025-09/StepIntoUWA1/Logo.avif" alt="Ultron 28/1.9 on Hexar"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>500</sub>s<br>ISO 640<br>65 mm</small></p>
+<p>在<a href="https://novadng.studio/2024-10/TripToTokyo1/">東京Camera</a>看到這枚Voigtländer Ultron 28mm ƒ&#x2F;1.9 LTM之前, 我是萬萬不會想到自己有朝一日居然會購買第二枚28mm廣角鏡的. 然而, 你知道的, 我對長得好看的鏡頭向來沒有抵抗力⋯⋯ </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA1/Drumstick.avif" alt="Drumstick!"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>125</sub>s<br>ISO 100<br>65 mm</small></p>
+<p>這枚鏡外觀和操控上最大的特色就是附帶了一根雞腿 ⸺ 可拆卸的對焦撥杆. 很多徠卡鏡頭都有輔助對焦指柄, 但指柄更適合精細調焦使用, 對於28mm和潛在的更重視街拍的需求而言, 撥杆在速度上要強得多 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(而且平時沒事撫摸一下也是極好的)</span>. 這根雞腿被設計為可以拆式, 表示我也可以按照自己的喜好去安裝其他帶有3mm螺紋的杆子 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(我這跟搞不好就是東京Camera換的並非原裝⋯⋯)</span>, 我看到有人文攝影家會使用很長的直杆子, 應該是為了極致的zone focus速度進行的改造吧. 不過得小心放在包裡雞腿脫落. 我將本鏡從日本帶回時就掉在包裡了, 還好後來找到, 於是我就用了一點點loctite來一勞永逸. </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA1/Hood.avif" alt="Hammered texture"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>125</sub>s<br>ISO 640<br>65 mm</small></p>
+<p>外觀上的另一大特色就是錘紋遮光罩. 二十一世紀初確善能製造的很多鏡頭都附帶了錘紋遮光罩, 我手上的另一枚Voigtländer Macro APO-Lanther 125mm ƒ&#x2F;2.5也附帶了方形的錘紋遮光罩, 先前介紹過的<a href="/2025-03/TheBigBois/#AF-DC-Nikkor-135mm-f-2D">尼康AF DC-Nikkor 135mm ƒ&#x2F;2D</a>機身也用了錘紋處理, 只不過錘紋的紋理與確善能的略有不同. 錘紋質感無論是視覺還是觸覺上都無與倫比, 極具特色, 很可惜在更現代的鏡頭上幾乎無法看到這樣的表面工藝了. 這枚遮光罩既不是用螺紋旋入, 也不是卡口裝著, 而是用螺絲夾緊固定, 裝卸上便利性介於卡口和旋入之間, 不過我基本上不拆所以不是很在意. </p>
+<p><img src="/2025-09/StepIntoUWA1/Cityriver.avif" alt="Cityriver _gallery &lt;"><small class="exif exif-gallery-left">f/2.8<br>1s<br>ISO 400<br>25 mm</small></p>
+<p><img src="/Frames/Events/Tokyo2024/rainystreet.avif" alt="Tachiaigawa After Rain _gallery &gt;"><small class="exif exif-gallery-right">f/2.8<br><sup>1</sup><sub>25</sub>s<br>ISO 100<br>25 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA1/Overcross.avif" alt="Overcross"><small class="exif exif-right">f/2.8<br>4s<br>ISO 100<br>25 mm</small></p>
+<p>這枚鏡頭在成像上和星耀既相似又不同: 光圈全開時和星耀相似, 因為場曲非常嚴重造成畫面中心銳利邊緣混沌, 但收光圈到ƒ&#x2F;8時, 全畫面都處於景深內, 邊緣也變得可用了. 如果你也在用低畫素機或者膠片, 那麼收至ƒ&#x2F;11時哪怕是最邊角也已經相當不錯. 作為25年前設計的鏡頭, 它的鍍膜技術並不比23年才上市的星耀差, 甚至在夜晚街道上能拍出比星耀乾淨得多的畫面. </p>
+<p class="exif-para"><img src="/Frames/Events/Tokyo2024/nightscape.avif" alt="Cityriver Skytree"><small class="exif exif-right">f/2.8<br>1s<br>ISO 400<br>25 mm</small></p>
+<center>ƒ/4樣片. 可以很明顯看出畫面邊緣由於場曲和彗差造成的像質衰減</center><br/>
+
+<p>若是要論像質, 這枚鏡會被更新的Voigtländer Ultron 28mm ƒ&#x2F;2 Mk Ⅱ打得找不著北, 而ƒ&#x2F;2 Mk Ⅱ甚至只有不到ƒ&#x2F;1.9一半的長度. 但是, 新ƒ&#x2F;2的設計和畫質雖然都很好, 卻都沒那麼有特色 ⸺ 設計上, 近幾年確善能推出的Ultron鏡都採用了家族化的設計語言, 一眼看去很難判斷出眼前的鏡是28mm, 35mm還是50mm; 遮光罩也變成很普通的和徠卡一樣的款式, 雖然對旁軸取景器的遮擋有所減少, 但毫無個性可言了 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(而且還得單獨購買! 太黑心啦!)</span>. </p>
+<p class="exif-para" data-xpan><img src="/2025-09/StepIntoUWA1/Crossroad.avif" alt="Crossroad"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>13</sub>s<br>ISO 250<br>25 mm</small></p>
+<p class="exif-para" data-xpan><img src="/2025-09/StepIntoUWA1/Tachiaigawa.avif" alt="Tachiaigawa"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>13</sub>s<br>ISO 360<br>25 mm</small></p>
+<center>現代福倫達極具特色的十片直邊光圈葉片, 略微收光圈 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(樣圖為ƒ/2.8)</span> 即可獲得非常漂亮的星芒</center><br/>
+
+<p>即便這枚28&#x2F;1.9如此美好,  攜帶單機單鏡出門若需要選擇廣角鏡, 我總會更優先考慮薄若無物的星耀28&#x2F;2.8. 話雖如此, 一年99% 時間裡我的掛機鏡仍舊是Voigtländer 40&#x2F;2.8… 突破舒適圈, 果然不是那麼簡單的事情啊. </p>
+<hr>
+<p>由於寫著寫著突然發現本作總長度恐怕要突破六千字大關, 為便於閱讀我將拆分為三篇成為一個系列, 本篇為開端的啟蒙篇. 後接<a href="/2025-09/StepIntoUWA2">試煉篇</a>與<a href="/2025-09/StepIntoUWA3">終局篇</a></p>
+]]></content>
+      <tags>
+        <tag>gadget</tag>
+        <tag>photography</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Photography is FUN ⸺ 邁向超廣角 (試煉篇)</title>
+    <url>/2025-09/StepIntoUWA2/</url>
+    <content><![CDATA[<blockquote>
+<p>由於寫著寫著突然發現本篇長度恐怕要突破六千字大關, 為便於閱讀我將拆分為三篇, 本篇為承上啟下的試煉篇, 前續<a href="/2025-09/StepIntoUWA1">啟蒙篇</a>後接<a href="/2025-09/StepIntoUWA3">終局篇</a>.</p>
+</blockquote>
+<h3 id="28-→-24-→-21"><a href="#28-→-24-→-21" class="headerlink" title="28 → 24 → 21"></a>28 → 24 → 21</h3><p>自從用星耀28&#x2F;2.8開啟了超廣角的大門, 我就開始逐漸接受了超廣角這個設定 ⸺ 在這個狀態下我並不需要糾結於自己不擅長作減法的弱點, 儘量收入更多元素反而成為了手段, 由此造成混沌成為了目的. 自然而然地, 我又購入了<a href="/2024-03/EvenMoreNikkorVintageLens/#%E6%B5%AE%E5%8B%95%E9%8F%A1%E7%B5%84%E5%A4%A7%E5%89%8D%E8%BC%A9">Nikkor-N･C Auto 1:2.8 f&#x3D;24mm</a>與<a href="/2025-03/OMthePetit/">Olympus H.Zuiko Auto-W 24mm ƒ&#x2F;2.8</a>並使用了很長時間. 然而當下很多手機上都已經配備24mm等效的鏡頭作為主攝像頭, 作為特化鏡頭, 28mm與24mm在廣角的衝擊力上已經無法與手機拉開差距. 自然而然我開始把目光投向21mm段. 一番研究後, 秉承著優先選擇小鏡頭的原則, 我看上了福倫達這枚<strong>Color-Skopar 21mm ƒ&#x2F;4 P</strong>. </p>
+<p><img src="https://novadng.studio/2025-03/TheBigBois/21mm.avif" alt="21mm comparison"></p>
+<center>裝著20/3.5的FM3ᴀ與裝著21/4的Hexar RF. 旁軸相機上基本找不到帶21mm線框的, 只能靠外接取景器了</center><br/>
+
+<p>雖然在介紹尼康<a href="/2025-03/TheBigBois/#Nikkor-UD-Auto-20mm-f-3-5">20&#x2F;3.5</a>的時候提過一嘴, 不過這段時間我對21&#x2F;4P的印象有所改觀. 先前對21&#x2F;4P有場曲 &amp; 銳度糟糕的印象, 蓋因絕大多數時間都是接在索尼α7C上使用, 索尼CMOS的濾鏡組厚度太大導致了場曲加劇, 邊緣像質急劇跌落. 在尼康Zƒ上使用時, 哪怕是全開光圈邊緣像質也算可用, 收到ƒ&#x2F;8後甚至邊角也細節豐富, 可堪風光大任了. </p>
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53192350259/in/album-721777/20311137131/" title="DSC07401Voigtländer Color-Skopar 21mm ƒ-4 P"><img src="https://live.staticflickr.com/65535/53192350259_f560550072_b.jpg" alt="DSC07401Voigtländer Color-Skopar 21mm ƒ-4 P"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<center> 在索尼相機上即使收縮光圈至ƒ/8也相當糟糕的邊角使其難擔風光攝影大任</center><br/>
+
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/Fishing.avif" alt="Fishing"><small class="exif exif-right">f/4<br><sup>1</sup><sub>4000</sub>s<br>ISO 100<br>21 mm</small></p>
+<center>在尼康Zƒ上邊角像質就好了很多, 這是ƒ/4時的樣子</center><br/>
+
+<p>當在Hexar RF上使用時, 雖需要配合外接觀景器來使用略嫌不便, 像質卻完全可以接受, 超廣角帶來的寬大景深也讓普通拍攝相當輕鬆, 使用體驗很好 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(順帶一提, 這枚外接觀景器來自<a href="https://cn.ttartisan.com/?viewfinder-12/231.html">TTArtisan</a>, 做工紮實, 像質也算通透, 價格還挺便宜, 可惜當下已經下架了⋯⋯)</span>. 而尼康因為濾鏡組厚度也比索尼相機上的要小, 實際使用上邊角在收光圈之後也算可用, 於是這枚鏡頭終於從冷宮中重見天日, 令我有些慶幸當時沒有直接選擇把它賣掉. </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21PonZf.avif" alt="21/4P on Zƒ"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>30</sub>s<br>ISO 250<br>18.3 mm</small></p>
+<p>它的身形雖不及星耀28&#x2F;2.8那般小巧, 但也已經足夠玲瓏, 我曾試過將Hexar RF + 21&#x2F;4P作為平時放在包裡攜帶的相機, 改變了心態後使用廣角鏡於我也不再有壓力, 很多日常隨處可見的場景用它拍攝時都會因為視角改變而帶上一絲魄力. 可惜它雖成功從冷宮脫身, 我卻已經開始往更廣的視角窺探⋯⋯ </p>
+<h3 id="變寬超廣也算超廣-代餐寬幅也算XPan"><a href="#變寬超廣也算超廣-代餐寬幅也算XPan" class="headerlink" title="變寬超廣也算超廣, 代餐寬幅也算XPan"></a>變寬超廣也算超廣, 代餐寬幅也算XPan</h3><p>在往更廣的焦距探索前, 一家國產光學廠商<strong>思銳</strong>推出了Z卡口的變寬鏡頭先轉移了我的注意. 印象裡思銳一直是一家周邊廠, 但19~20年左右突然在變寬電影鏡頭領域發力, 憑藉平價變寬電影鏡頭進入更多人視野. 我雖對電影拍攝沒興趣, 但當思銳於2023年公佈 ｢土星｣ 系列全畫幅1.6×變寬鏡頭, 很多人意識到在3:2的全幅相機上了1.6×鏡頭拍攝, 還原後的照片比例就很接近<a href="https://www.hasselblad.com/about/history/xpan/">XPan</a>畫幅 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(<code>5.76:2.4</code> 對XPan的 <code>6.5:2.4</code> )</span>. 這讓早對XPan垂涎已久的我興味盎然: 能夠以一枚鏡實現超廣角 + XPan, 天下竟有這等好事? </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/SiruiOnZf.avif" alt="Sirui 35mm on Zƒ"><small class="exif exif-right">f/1.6<br><sup>1</sup><sub>122</sub>s<br>ISO 50<br>5.1 mm</small></p>
+<p>我購入的這枚鏡是 ｢土星｣ 系列中最廣的<strong>Sirui Saturn 35mm T&#x2F;2.9 1.6x Anamorphic</strong>, 拉伸完後等效約22mm. 如宣傳所說, 這枚鏡的確相當輕巧, 但手感並不廉價, 做工紮實, 設計上唯一的美中不足是因為Z口直徑過大導致鏡頭尾部有個突兀的擴張. </p>
+<p class="exif-para" data-xpan><img src="/2025-09/StepIntoUWA2/Airport.avif" alt="Airport"><small class="exif exif-right">f/4<br><sup>1</sup><sub>30</sub>s<br>ISO 100<br>35 mm</small></p>
+<p>然而上手使用便發現, 作為無觸點純手動鏡, 在Zƒ上對焦必須依賴畫面放大與峰值, 拍攝時確定焦點多少還是有些不便, 面對取景器中被擠壓的畫面構圖也更加燒腦 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(目前似乎只有松下的相機提供了機內還原畫面比例的功能, 要麼就是專門的電影機)</span>, 這使得實際的拍攝體驗與XPan <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(旁軸測距黃斑聯動對焦, 取景器中可直接觀察寬幅畫面)</span> 可說天差地別. 此外, 它的畸變也相當狂放, 因變寬鏡頭特性在不同軸向上形態各異, 後期校正難如登天, 我只能儘量避免拍攝縱向垂直線條很多的場景來揚長避短⋯⋯</p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos1.avif" alt="21mm"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos1Crop.avif" alt="21mm Cropped to XPan"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/35mmPos1.avif" alt="35mm Desqueezed"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>35 mm</small></p>
+<center>從上到下分別是福倫達21/4, 21/4裁切至XPan比例, 思銳35mm拉伸還原. 下同</center><br/>
+
+<p>由於變寬鏡頭實際上只做了一個軸向的壓縮, 所以在沒被壓縮的那一邊依然保留著35mm的透視, 只有長邊會被拉伸出相當於22mm的廣角. 這意味著還原後的照片基本等於拿22mm鏡頭進行XPan裁切. 但是, 我用21&#x2F;4拍攝的照片有更大的裁切空間, 35&#x2F;2.9卻沒有, 那麼 ⸺ 為什麼我不在拍攝時就用21&#x2F;4呢? T&#x2F;2.9比起ƒ&#x2F;4只有一檔的通光量&#x2F;景深差距而已呢. 更何況由於畸變難以校正, 使用場景便受到更大限制. 雖說拉伸之後效果確實挺像是那麼一回事的, 而且順便還可以享受到一些變寬鏡頭的特性 ⸺ 比如縱向拉長的焦外光斑和強光源出現時畫面上的橫向耀斑 ⸺ 但要處理變寬照片實在太麻煩了, 蓋因Lightroom不能直接拉伸照片, 每張圖片我都得用其他工具拉寬後再倒回Lightroom處理, 讓分享門檻一下高了很多. </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos2.avif" alt="21mm"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1000</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos2Crop.avif" alt="21mm Cropped to XPan"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1000</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/35mmPos2.avif" alt="35mm Desqueezed"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>35 mm</small></p>
+<p>透過這些例圖, 也很容易能看出這枚鏡的色溫與福倫達21&#x2F;4差別巨大. 電影鏡頭一般都是和同系列鏡頭一起使用, 所以只要土星系列的鏡頭都保持這樣的色溫對於它的目標受眾就不是問題; 而對於拍攝靜態照片的用家而言, 反正拍了之後無論如何都要後期拉伸, 順手調整一下色溫也並不會增加麻煩程度. 另外, 雖然是完全相同幾位拍攝, 但21&#x2F;4的照片裁切時我選擇保留塔的完整度而捨棄前景地面, 當然我也可以選擇保留更多地面來營造廣闊空間感, 若使用35&#x2F;2.9就無法這麼做. </p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos3.avif" alt="21mm"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>500</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos3Crop.avif" alt="21mm Cropped to XPan"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>500</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2025-09/StepIntoUWA2/35mmPos3.avif" alt="35mm Desqueezed"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>500</sub>s<br>ISO 100<br>35 mm</small></p>
+<p>這枚鏡頭雖然很輕, 但長度和我的長焦鏡頭差不多, 攜帶起來還是略佔地方, 所以我很少帶它出門, 沒有用它拍攝很多照片. 雖然我是抱著想要填補對XPan的渴望購入此鏡, 但使用後反而使我對XPan的渴望更加強烈, 可以說南轅北轍. 話雖如此, 變寬鏡頭的確有其獨特的魅力, 我還是打算留下它並在適當的場合讓它出場, 繼續體驗變寬攝影的樂趣 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(與痛苦)</span>. </p>
+<hr>
+<p>後接<a href="/2025-09/StepIntoUWA3">終局篇</a></p>
+]]></content>
+      <tags>
+        <tag>gadget</tag>
+        <tag>photography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Photography is FUN ⸺ 邁向超廣角 (終局篇?)</title>
     <url>/2025-09/StepIntoUWA3/</url>
     <content><![CDATA[<blockquote>
@@ -1259,53 +1306,6 @@
 <p>雖然說是 ｢終局篇｣, 但前面還是說了一堆小問題, 或許將來會出現光學限制允許內更加完美的15mm. 可是, 同時能在數位與膠片機身上使用, 像質優秀, 體積得當, 我想⋯⋯ 在那枚完美的15mm被開發出來前, 長庚15mm ƒ&#x2F;2就是我的<a href="https://special.tsogen.co.jp/shoshimin">次善</a>. 另外, 我畢竟沒有真的上手試用過10mm, 誰知道哪一天我在凝視超廣深淵時會不會失去全部SAN值, 一步跨入<a href="https://phillipreeve.net/blog/review-laowa-9mm-5-6-ff-rl/">9mm之淵</a>呢⋯⋯</p>
 <hr>
 <p>本系列得到了<a href="https://t.me/Ruoyu_Jiang">姜若愚</a>的審閱</p>
-]]></content>
-      <tags>
-        <tag>gadget</tag>
-        <tag>photography</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Photography is FUN ⸺ 邁向超廣角 (試煉篇)</title>
-    <url>/2025-09/StepIntoUWA2/</url>
-    <content><![CDATA[<blockquote>
-<p>由於寫著寫著突然發現本篇長度恐怕要突破六千字大關, 為便於閱讀我將拆分為三篇, 本篇為承上啟下的試煉篇, 前續<a href="/2025-09/StepIntoUWA1">啟蒙篇</a>後接<a href="/2025-09/StepIntoUWA3">終局篇</a>.</p>
-</blockquote>
-<h3 id="28-→-24-→-21"><a href="#28-→-24-→-21" class="headerlink" title="28 → 24 → 21"></a>28 → 24 → 21</h3><p>自從用星耀28&#x2F;2.8開啟了超廣角的大門, 我就開始逐漸接受了超廣角這個設定 ⸺ 在這個狀態下我並不需要糾結於自己不擅長作減法的弱點, 儘量收入更多元素反而成為了手段, 由此造成混沌成為了目的. 自然而然地, 我又購入了<a href="/2024-03/EvenMoreNikkorVintageLens/#%E6%B5%AE%E5%8B%95%E9%8F%A1%E7%B5%84%E5%A4%A7%E5%89%8D%E8%BC%A9">Nikkor-N･C Auto 1:2.8 f&#x3D;24mm</a>與<a href="/2025-03/OMthePetit/">Olympus H.Zuiko Auto-W 24mm ƒ&#x2F;2.8</a>並使用了很長時間. 然而當下很多手機上都已經配備24mm等效的鏡頭作為主攝像頭, 作為特化鏡頭, 28mm與24mm在廣角的衝擊力上已經無法與手機拉開差距. 自然而然我開始把目光投向21mm段. 一番研究後, 秉承著優先選擇小鏡頭的原則, 我看上了福倫達這枚<strong>Color-Skopar 21mm ƒ&#x2F;4 P</strong>. </p>
-<p><img src="https://novadng.studio/2025-03/TheBigBois/21mm.avif" alt="21mm comparison"></p>
-<center>裝著20/3.5的FM3ᴀ與裝著21/4的Hexar RF. 旁軸相機上基本找不到帶21mm線框的, 只能靠外接取景器了</center><br/>
-
-<p>雖然在介紹尼康<a href="/2025-03/TheBigBois/#Nikkor-UD-Auto-20mm-f-3-5">20&#x2F;3.5</a>的時候提過一嘴, 不過這段時間我對21&#x2F;4P的印象有所改觀. 先前對21&#x2F;4P有場曲 &amp; 銳度糟糕的印象, 蓋因絕大多數時間都是接在索尼α7C上使用, 索尼CMOS的濾鏡組厚度太大導致了場曲加劇, 邊緣像質急劇跌落. 在尼康Zƒ上使用時, 哪怕是全開光圈邊緣像質也算可用, 收到ƒ&#x2F;8後甚至邊角也細節豐富, 可堪風光大任了. </p>
-<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/53192350259/in/album-721777/20311137131/" title="DSC07401Voigtländer Color-Skopar 21mm ƒ-4 P"><img src="https://live.staticflickr.com/65535/53192350259_f560550072_b.jpg" alt="DSC07401Voigtländer Color-Skopar 21mm ƒ-4 P"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
-<center> 在索尼相機上即使收縮光圈至ƒ/8也相當糟糕的邊角使其難擔風光攝影大任</center><br/>
-
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/Fishing.avif" alt="Fishing"><small class="exif exif-right">f/4<br><sup>1</sup><sub>4000</sub>s<br>ISO 100<br>21 mm</small></p>
-<center>在尼康Zƒ上邊角像質就好了很多, 這是ƒ/4時的樣子</center><br/>
-
-<p>當在Hexar RF上使用時, 雖需要配合外接觀景器來使用略嫌不便, 像質卻完全可以接受, 超廣角帶來的寬大景深也讓普通拍攝相當輕鬆, 使用體驗很好 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(順帶一提, 這枚外接觀景器來自<a href="https://cn.ttartisan.com/?viewfinder-12/231.html">TTArtisan</a>, 做工紮實, 像質也算通透, 價格還挺便宜, 可惜當下已經下架了⋯⋯)</span>. 而尼康因為濾鏡組厚度也比索尼相機上的要小, 實際使用上邊角在收光圈之後也算可用, 於是這枚鏡頭終於從冷宮中重見天日, 令我有些慶幸當時沒有直接選擇把它賣掉. </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21PonZf.avif" alt="21/4P on Zƒ"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>30</sub>s<br>ISO 250<br>18.3 mm</small></p>
-<p>它的身形雖不及星耀28&#x2F;2.8那般小巧, 但也已經足夠玲瓏, 我曾試過將Hexar RF + 21&#x2F;4P作為平時放在包裡攜帶的相機, 改變了心態後使用廣角鏡於我也不再有壓力, 很多日常隨處可見的場景用它拍攝時都會因為視角改變而帶上一絲魄力. 可惜它雖成功從冷宮脫身, 我卻已經開始往更廣的視角窺探⋯⋯ </p>
-<h3 id="變寬超廣也算超廣-代餐寬幅也算XPan"><a href="#變寬超廣也算超廣-代餐寬幅也算XPan" class="headerlink" title="變寬超廣也算超廣, 代餐寬幅也算XPan"></a>變寬超廣也算超廣, 代餐寬幅也算XPan</h3><p>在往更廣的焦距探索前, 一家國產光學廠商<strong>思銳</strong>推出了Z卡口的變寬鏡頭先轉移了我的注意. 印象裡思銳一直是一家周邊廠, 但19~20年左右突然在變寬電影鏡頭領域發力, 憑藉平價變寬電影鏡頭進入更多人視野. 我雖對電影拍攝沒興趣, 但當思銳於2023年公佈 ｢土星｣ 系列全畫幅1.6×變寬鏡頭, 很多人意識到在3:2的全幅相機上了1.6×鏡頭拍攝, 還原後的照片比例就很接近<a href="https://www.hasselblad.com/about/history/xpan/">XPan</a>畫幅 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(<code>5.76:2.4</code> 對XPan的 <code>6.5:2.4</code> )</span>. 這讓早對XPan垂涎已久的我興味盎然: 能夠以一枚鏡實現超廣角 + XPan, 天下竟有這等好事? </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/SiruiOnZf.avif" alt="Sirui 35mm on Zƒ"><small class="exif exif-right">f/1.6<br><sup>1</sup><sub>122</sub>s<br>ISO 50<br>5.1 mm</small></p>
-<p>我購入的這枚鏡是 ｢土星｣ 系列中最廣的<strong>Sirui Saturn 35mm T&#x2F;2.9 1.6x Anamorphic</strong>, 拉伸完後等效約22mm. 如宣傳所說, 這枚鏡的確相當輕巧, 但手感並不廉價, 做工紮實, 設計上唯一的美中不足是因為Z口直徑過大導致鏡頭尾部有個突兀的擴張. </p>
-<p class="exif-para" data-xpan><img src="/2025-09/StepIntoUWA2/Airport.avif" alt="Airport"><small class="exif exif-right">f/4<br><sup>1</sup><sub>30</sub>s<br>ISO 100<br>35 mm</small></p>
-<p>然而上手使用便發現, 作為無觸點純手動鏡, 在Zƒ上對焦必須依賴畫面放大與峰值, 拍攝時確定焦點多少還是有些不便, 面對取景器中被擠壓的畫面構圖也更加燒腦 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(目前似乎只有松下的相機提供了機內還原畫面比例的功能, 要麼就是專門的電影機)</span>, 這使得實際的拍攝體驗與XPan <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(旁軸測距黃斑聯動對焦, 取景器中可直接觀察寬幅畫面)</span> 可說天差地別. 此外, 它的畸變也相當狂放, 因變寬鏡頭特性在不同軸向上形態各異, 後期校正難如登天, 我只能儘量避免拍攝縱向垂直線條很多的場景來揚長避短⋯⋯</p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos1.avif" alt="21mm"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos1Crop.avif" alt="21mm Cropped to XPan"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/35mmPos1.avif" alt="35mm Desqueezed"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>35 mm</small></p>
-<center>從上到下分別是福倫達21/4, 21/4裁切至XPan比例, 思銳35mm拉伸還原. 下同</center><br/>
-
-<p>由於變寬鏡頭實際上只做了一個軸向的壓縮, 所以在沒被壓縮的那一邊依然保留著35mm的透視, 只有長邊會被拉伸出相當於22mm的廣角. 這意味著還原後的照片基本等於拿22mm鏡頭進行XPan裁切. 但是, 我用21&#x2F;4拍攝的照片有更大的裁切空間, 35&#x2F;2.9卻沒有, 那麼 ⸺ 為什麼我不在拍攝時就用21&#x2F;4呢? T&#x2F;2.9比起ƒ&#x2F;4只有一檔的通光量&#x2F;景深差距而已呢. 更何況由於畸變難以校正, 使用場景便受到更大限制. 雖說拉伸之後效果確實挺像是那麼一回事的, 而且順便還可以享受到一些變寬鏡頭的特性 ⸺ 比如縱向拉長的焦外光斑和強光源出現時畫面上的橫向耀斑 ⸺ 但要處理變寬照片實在太麻煩了, 蓋因Lightroom不能直接拉伸照片, 每張圖片我都得用其他工具拉寬後再倒回Lightroom處理, 讓分享門檻一下高了很多. </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos2.avif" alt="21mm"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1000</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos2Crop.avif" alt="21mm Cropped to XPan"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1000</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/35mmPos2.avif" alt="35mm Desqueezed"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>2000</sub>s<br>ISO 100<br>35 mm</small></p>
-<p>透過這些例圖, 也很容易能看出這枚鏡的色溫與福倫達21&#x2F;4差別巨大. 電影鏡頭一般都是和同系列鏡頭一起使用, 所以只要土星系列的鏡頭都保持這樣的色溫對於它的目標受眾就不是問題; 而對於拍攝靜態照片的用家而言, 反正拍了之後無論如何都要後期拉伸, 順手調整一下色溫也並不會增加麻煩程度. 另外, 雖然是完全相同幾位拍攝, 但21&#x2F;4的照片裁切時我選擇保留塔的完整度而捨棄前景地面, 當然我也可以選擇保留更多地面來營造廣闊空間感, 若使用35&#x2F;2.9就無法這麼做. </p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos3.avif" alt="21mm"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>500</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/21mmPos3Crop.avif" alt="21mm Cropped to XPan"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>500</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2025-09/StepIntoUWA2/35mmPos3.avif" alt="35mm Desqueezed"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>500</sub>s<br>ISO 100<br>35 mm</small></p>
-<p>這枚鏡頭雖然很輕, 但長度和我的長焦鏡頭差不多, 攜帶起來還是略佔地方, 所以我很少帶它出門, 沒有用它拍攝很多照片. 雖然我是抱著想要填補對XPan的渴望購入此鏡, 但使用後反而使我對XPan的渴望更加強烈, 可以說南轅北轍. 話雖如此, 變寬鏡頭的確有其獨特的魅力, 我還是打算留下它並在適當的場合讓它出場, 繼續體驗變寬攝影的樂趣 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(與痛苦)</span>. </p>
-<hr>
-<p>後接<a href="/2025-09/StepIntoUWA3">終局篇</a></p>
 ]]></content>
       <tags>
         <tag>gadget</tag>
@@ -1527,61 +1527,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日本遊記2026 Part Ⅲ (征途篇)</title>
-    <url>/2026-11/TripToJapan2026SepPart3/</url>
-    <content><![CDATA[<h4 id="Day-6-九月二十五日-大洗-太平洋"><a href="#Day-6-九月二十五日-大洗-太平洋" class="headerlink" title="Day 6. 九月二十五日, 大洗 - 太平洋"></a>Day 6. 九月二十五日, 大洗 - 太平洋</h4><p>終於, 我踏上了前往香音老師故鄉的征程⋯⋯ 之所以用這麼誇張的詞彙, 是因為我沒有選擇輕鬆的途徑 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(從羽田坐飛機直達)</span>, 而選擇去大洗搭渡輪. 因為<a href="https://girls-und-panzer.jp/">少女與戰車</a>也是陪伴了我十餘年的作品, ｢少戰痛城｣ 大洗自然對我很有吸引力 ⸺ 話雖如此, 在大洗停留的時間只有一下午, 沒法仔細逛. 所幸天公作美, 陰雲終於散去, 我得以盡情欣賞沿途的風光. </p>
-<p><a href="https://www.anitabi.cn/map?c=140.5802%2C36.3116&z=15.4&bids=40310%2C72266%2C208825"><img src="/2026-11/TripToJapan2026SepPart3/oaraimap.png" alt="大洗地圖" class="noshadow"></a><br/></p>
-<center>密密麻麻的取景點</center><br/>
-
-<p>按照預定計劃, 我從上野搭常磐特急ひたち7號到水戶轉鹿島臨海線. 鹿島臨海線是很古老的柴油客車, 搭乘體驗和電車截然不同, 連購票都是<a href="https://maas-portal.com/hitachinokunikiko">獨立的系統</a>, 還好我提前查了資料沒遇到麻煩, 在日上三竿前到達大洗. 一進站就能看到站內各種少戰人物等身立牌和巨大海報, 從大洗站一出門則是看到一個巨大的漁夫與鮪魚雕塑, 漁夫的神情栩栩如生, 昭示著大洗漁業之繁盛, 但大洗車站卻門可羅雀, 我從車站一路走到碼頭幾乎都沒看到其他人. </p>
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/OaraiStation.avif" alt="Fisherman"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1250</sub>s<br>ISO 100<br>40 mm</small></p>
-<p>把行李箱寄放在碼頭後, 我登上<a href="http://www.oarai-mt.jp/">大洗海洋塔</a>. 海洋塔只有15層, 55m高, 但姑且算是大洗町制高點了. 頂層的展望臺空無一人, 爽爽包場. 比起東京, 俯瞰大洗確實有些平平無奇, 之後要搭乘的渡輪也尚未入港, 我坐在向陽面的長椅上曬了一會兒太陽, 就乘電梯來到樓下的少戰咖啡館. </p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/OaraiTerminal.avif" alt="Terminal"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1250</sub>s<br>ISO 100<br>40 mm</small></p>
-<p>咖啡館正如其名完全裝修成了少戰風格, 吧檯旁邊還有一根長炮管從牆中伸出; 但提供的飲食不太能引起我的興趣, 還是海鮮市場的餐飲區比較適合覓食. </p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/OaraiSt.avif" alt="Oarai Street"><small class="exif exif-right">f/4<br><sup>1</sup><sub>1000</sub>s<br>ISO 100<br>90 mm</small></p>
-<p>在海鮮市場旁的<a href="https://kajima-shokudou.com/">一家食堂</a>吃了一堆價格便宜得有些令人難以置信的海鮮料理填飽肚子之後, 我沿著海岸往<a href="https://www.oarai-isosakijinja.net/">磯前神社</a>方向散步. 沿途還有一座很小的燈塔, 但幾乎沒幾個遊客. 天氣非常宜人, 海風涼爽, 令散步的消食效果事半功倍. </p>
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/KamiisoTorii.avif" alt="Torii"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>800</sub>s<br>ISO 100<br>40 mm</small></p>
-<p>距離神社很遠就能望見礁石上的鳥居, 以及三兩成群的遊客. 鳥居其實不大, 但白色的食材與棕黃的礁岩 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(即傳說中神明降臨的 ｢神機｣)</span> 和湛藍的海面反差強烈, 依然非常醒目. 磯前神社的最大賣點就是它了. 雖然沒能欣賞鳥居日出, 而且今天風和日麗, 海面平靜, 也沒法看到宣傳照里驚濤駭浪中鳥居這種刺激的場面, 但望著海浪中矗立的鳥居令人心情平靜. </p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/Torii.avif" alt="Stairs"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>5000</sub>s<br>ISO 100<br>21 mm</small></p>
-<p>眺望了一陣神機鳥居後我轉身登上台階拜訪神社. 一方面我想幫<a href="https://x.com/_paridae_">米米老師</a>蒐集<a href="https://www.oarai-isosakijinja.net/syuin/">御朱印</a>, 一方面也想為香音老師創作順利祈願. 蒐集御朱印很簡單, 交錢和本子, 稍等片刻就能領取了; 祈願的話, 為了儀式感我走了全套流程: 先在手水舍按照左手 - 右手 - 漱口 - 左手的順序清潔, 然後前往拝殿, 將5円硬幣 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(諧音 ｢ご縁｣)</span> 丟入賽錢箱後行<a href="https://ja.wikipedia.org/wiki/%E4%BA%8C%E7%A4%BC%E4%BA%8C%E6%8B%8D%E6%89%8B%E4%B8%80%E7%A4%BC">二礼二拍手一礼</a>. </p>
-<center class="hr">🙛 🙙</center>
-
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/Boarding.avif" alt="Boarding"><small class="exif exif-right">f/4<br><sup>1</sup><sub>640</sub>s<br>ISO 100<br>40 mm</small></p>
-<p>參拜完神社, 我就散步回碼頭準備登船. 大型車輛的裝載大概已經開始了一段時間, 原先港口停車場的掛車消失了一半多, 剩下的幾輛從船尾的巨大坡道進入船艙; 小客車與摩托車則從船首的小通道魚貫而入. 觀看了一會夕陽下的機動車裝載後, 散客也開始登船. </p>
-<p>我不是很想住大通鋪又不是很確定能否適應膠囊床, 所以選擇了最小的單間. 和很多酒店一樣這其實是個雙人間, 但可以想像如果真的住了兩個人的話會有多麼擁擠. 還好單間至少有獨立浴室, 就憑這點已經好過膠囊床太多⋯⋯ 這段時間渡輪還有吉伊卡哇聯動, 能在船內瞥見不少相關裝飾, 但我對這個作品毫無興趣, 所以也說不出什麼門道.</p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/Room.avif" alt="Room"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>20</sub>s<br>ISO 100<br>21 mm</small></p>
-<p>不過除了睡眠之外大部分時間應該也沒人會待在房間 ⸺ 登船之後不久就到了晚餐時間, 船上餐廳提供了自助餐, 但我因為中午吃得太多了只能象徵性地取用了一丁點菜餚作為晚餐. 結束用餐後我就來到甲板上散步. </p>
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/OaraiFullMoon.avif" alt="Sea Gate"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>8</sub>s<br>ISO 800<br>21 mm</small></p>
-<p>到了六點半左右渡輪開始鳴笛, 比日程上寫的略微提前一些出港. 明月高懸, 在大洗這樣光汙染比東京輕多了的地方看起來更是無比明亮. </p>
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/AftDeck.avif" alt="Aftdeck"><small class="exif exif-right">f/4<br><sup>1</sup><sub>15</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/Chikawa.avif" alt="Chikawa"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>8</sub>s<br>ISO 100<br>21 mm</small></p>
-<p>等到岸邊的燈光也逐漸消失後, 我回到了船艙內. 當然, 睡覺還為時尚早, 我帶上換洗衣物來到大浴場. 只能說不愧是日本人, 在這麼小的渡輪上都要塞下一個基本可以算全功能的大浴場 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(唯一缺失的是冰池)</span>. 在船上泡澡體驗平平無奇, 雖然浴場有窗戶但除了蒸汽之外窗外就是夜空與海, 基本一片漆黑. 但在船上蒸桑拿就挺有趣了, 桑拿房的高溫似乎會放大船的搖晃, 我雖然不暈船但感覺十分新奇. </p>
-<p>泡完澡我就回房間鑽進被窩, 訂好鬧鐘為明天早起觀賞海上日出做準備. 不過躺在床上準備入睡的時候才發現房間的隔音不太好, 引擎的震動和噪音其實比想像中明顯, 雖然船的搖晃很助眠但還是花了好一陣功夫才睡著. </p>
-<h4 id="Day-7-九月二十六日-苫小牧-札幌-北見"><a href="#Day-7-九月二十六日-苫小牧-札幌-北見" class="headerlink" title="Day 7. 九月二十六日, 苫小牧 - 札幌 - 北見"></a>Day 7. 九月二十六日, 苫小牧 - 札幌 - 北見</h4><p>凌晨四點半準時起床來到甲板. 外面不知道具體幾度, 總之冷得要死, 即便我已經提前準備好了長袖外套, 還是被低溫和海風吹得頭痛. 更糟心的是雲層甚厚, 沒有日出能看. 雲層雖然流動得很快, 但並沒有讓太陽露面的意思, 等到陽光已經照亮天空都不散去, 我只能悻悻在甲板上繞了一圈回到船艙內. 好冷. </p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/BeforeDawn.avif" alt="Before Dawn"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>60</sub>s<br>ISO 100<br>21 mm</small></p>
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/DeckBeforeDawn.avif" alt="Deck Before Dawn"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>30</sub>s<br>ISO 100<br>21 mm</small></p>
-<p>吃過早餐之後我回到房間睡回籠覺, 一覺睡到將近正午艙內廣播通知即將靠岸才醒. </p>
-<p><img src="/Frames/Events/Japan2026Sep/TomakomaiPort.avif" alt="Tomakomai Port"></p>
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/TomakomaiPort.avif" alt="Tomakomai Port"><small class="exif exif-right">f/4<br><sup>1</sup><sub>4000</sub>s<br>ISO 100<br>21 mm</small></p>
-<center>王子制紙標誌性煙囪, 以及遠方的樽前山</center><br/>
-
-<p>苫小牧天氣十分晴朗, 令人懊惱. 這次旅行並沒有在苫小牧停留的計劃, 所以船一靠岸我就和大部分乘客一樣直奔巴士站, 搭上碼頭開往札幌的快速接駁巴士. 北海道的街景和大洗與東京都截然不同: 北海道秋意已濃, 行道樹已經是紅黃綠相交的狀態; 苫小牧的民房看起來比大洗稀疏些, 屋頂比起瓦片似乎鐵皮更多? 建築看着現代但卻破舊, 昭示著曾經的輝煌和如今的衰退. </p>
-<p>在巴士發車兩小時後, 我已身處札幌. </p>
-<center class="hr">🙛 🙙</center>
-
-<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/SapporoCityview.avif" alt="Sapporo Cityview"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>250</sub>s<br>ISO 100<br>21 mm</small></p>
-<p>雖然對札幌也很感興趣, 但我在札幌只能停留一個半小時左右, 甚至不敢離開車站太遠. 好在巴士站邊上就是JR塔樓展望臺, 我得以不需要擔心錯過接下來的行程登高望遠, 至於更細緻的遊覽就等以後有機會再來吧. 塔樓底部就是JR札幌站和商場, 相當繁華; 展望臺位於38層, 遊客寥寥無幾. 展望臺本身是非常現代的建築, 沒什麼裝飾, 風格接近 Tokyo City View, 但供人休息的長椅不少. 它的洗手間甚至都修在窗邊, 不知道有多少遊客會享受在如廁時俯瞰札幌市景的體驗⋯⋯</p>
-<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/SapporoSkyline.avif" alt="Sapporo Skyline"><small class="exif exif-right">f/4<br><sup>1</sup><sub>250</sub>s<br>ISO 100<br>90 mm</small></p>
-<p>往西北方能望見石狩灣以及沿岸的風力發電機, 而其他方向的風景彷彿是縮小版的東京. 夕陽的餘暉十分美麗, 但前往北見的巴士5:20就會發車, 我沒有機會欣賞落日的全程和夜景, 戀戀不捨地離開. </p>
-<p>從札幌到北見直達的巴士全程五個小時左右. 發車之後不久夜色就徹底籠罩周圍, 窗外幾乎一片漆黑, 除了依舊明亮的十六夜的圓月之外只能依稀看到模糊的樹影. 百無聊賴下我陷入時斷時續的淺眠, 等到車內廣播通知已經到達西七號線才醒來. 終於到北見了. </p>
-<hr>
-<p>日本遊記2026系列: <a href="/2026-10/TripToJapan2026SepPart1">Part Ⅰ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(東京篇上)</span></a>, <a href="/2026-11/TripToJapan2026SepPart2">Part Ⅱ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(東京篇下)</span></a>, Part Ⅳ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(道東篇 WIP)</span></p>
-]]></content>
-      <tags>
-        <tag>travel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>東京遊記PART Ⅰ</title>
     <url>/2024-10/TripToTokyo1/</url>
     <content><![CDATA[<p data-xpan><a data-flickr-embed="true" href="https://www.flickr.com/photos/geoffreyr/54052125636/in/album-72177720321005949" title="DSC_0706-40 mm"><img src="https://live.staticflickr.com/65535/54052125636_6efba503a3_b.jpg"  alt="DSC_0706-40 mm"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
@@ -1675,6 +1620,61 @@
 <p>一夜無眠. </p>
 <hr>
 <p>東京遊記2024系列: <a href="/2024-10/TripToTokyoAnima/">Part ANIMA Ⅲ</a>, <a href="/2024-10/TripToTokyo2/">Part Ⅱ</a>, <a href="/2024-10/TripToTokyo3">Part Ⅲ</a></p>
+]]></content>
+      <tags>
+        <tag>travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日本遊記2026 Part Ⅲ (征途篇)</title>
+    <url>/2026-11/TripToJapan2026SepPart3/</url>
+    <content><![CDATA[<h4 id="Day-6-九月二十五日-大洗-太平洋"><a href="#Day-6-九月二十五日-大洗-太平洋" class="headerlink" title="Day 6. 九月二十五日, 大洗 - 太平洋"></a>Day 6. 九月二十五日, 大洗 - 太平洋</h4><p>終於, 我踏上了前往香音老師故鄉的征程⋯⋯ 之所以用這麼誇張的詞彙, 是因為我沒有選擇輕鬆的途徑 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(從羽田坐飛機直達)</span>, 而選擇去大洗搭渡輪. 因為<a href="https://girls-und-panzer.jp/">少女與戰車</a>也是陪伴了我十餘年的作品, ｢少戰痛城｣ 大洗自然對我很有吸引力 ⸺ 話雖如此, 在大洗停留的時間只有一下午, 沒法仔細逛. 所幸天公作美, 陰雲終於散去, 我得以盡情欣賞沿途的風光. </p>
+<p><a href="https://www.anitabi.cn/map?c=140.5802%2C36.3116&z=15.4&bids=40310%2C72266%2C208825"><img src="/2026-11/TripToJapan2026SepPart3/oaraimap.png" alt="大洗地圖" class="noshadow"></a><br/></p>
+<center>密密麻麻的取景點</center><br/>
+
+<p>按照預定計劃, 我從上野搭常磐特急ひたち7號到水戶轉鹿島臨海線. 鹿島臨海線是很古老的柴油客車, 搭乘體驗和電車截然不同, 連購票都是<a href="https://maas-portal.com/hitachinokunikiko">獨立的系統</a>, 還好我提前查了資料沒遇到麻煩, 在日上三竿前到達大洗. 一進站就能看到站內各種少戰人物等身立牌和巨大海報, 從大洗站一出門則是看到一個巨大的漁夫與鮪魚雕塑, 漁夫的神情栩栩如生, 昭示著大洗漁業之繁盛, 但大洗車站卻門可羅雀, 我從車站一路走到碼頭幾乎都沒看到其他人. </p>
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/OaraiStation.avif" alt="Fisherman"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1250</sub>s<br>ISO 100<br>40 mm</small></p>
+<p>把行李箱寄放在碼頭後, 我登上<a href="http://www.oarai-mt.jp/">大洗海洋塔</a>. 海洋塔只有15層, 55m高, 但姑且算是大洗町制高點了. 頂層的展望臺空無一人, 爽爽包場. 比起東京, 俯瞰大洗確實有些平平無奇, 之後要搭乘的渡輪也尚未入港, 我坐在向陽面的長椅上曬了一會兒太陽, 就乘電梯來到樓下的少戰咖啡館. </p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/OaraiTerminal.avif" alt="Terminal"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>1250</sub>s<br>ISO 100<br>40 mm</small></p>
+<p>咖啡館正如其名完全裝修成了少戰風格, 吧檯旁邊還有一根長炮管從牆中伸出; 但提供的飲食不太能引起我的興趣, 還是海鮮市場的餐飲區比較適合覓食. </p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/OaraiSt.avif" alt="Oarai Street"><small class="exif exif-right">f/4<br><sup>1</sup><sub>1000</sub>s<br>ISO 100<br>90 mm</small></p>
+<p>在海鮮市場旁的<a href="https://kajima-shokudou.com/">一家食堂</a>吃了一堆價格便宜得有些令人難以置信的海鮮料理填飽肚子之後, 我沿著海岸往<a href="https://www.oarai-isosakijinja.net/">磯前神社</a>方向散步. 沿途還有一座很小的燈塔, 但幾乎沒幾個遊客. 天氣非常宜人, 海風涼爽, 令散步的消食效果事半功倍. </p>
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/KamiisoTorii.avif" alt="Torii"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>800</sub>s<br>ISO 100<br>40 mm</small></p>
+<p>距離神社很遠就能望見礁石上的鳥居, 以及三兩成群的遊客. 鳥居其實不大, 但白色的食材與棕黃的礁岩 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(即傳說中神明降臨的 ｢神機｣)</span> 和湛藍的海面反差強烈, 依然非常醒目. 磯前神社的最大賣點就是它了. 雖然沒能欣賞鳥居日出, 而且今天風和日麗, 海面平靜, 也沒法看到宣傳照里驚濤駭浪中鳥居這種刺激的場面, 但望著海浪中矗立的鳥居令人心情平靜. </p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/Torii.avif" alt="Stairs"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>5000</sub>s<br>ISO 100<br>21 mm</small></p>
+<p>眺望了一陣神機鳥居後我轉身登上台階拜訪神社. 一方面我想幫<a href="https://x.com/_paridae_">米米老師</a>蒐集<a href="https://www.oarai-isosakijinja.net/syuin/">御朱印</a>, 一方面也想為香音老師創作順利祈願. 蒐集御朱印很簡單, 交錢和本子, 稍等片刻就能領取了; 祈願的話, 為了儀式感我走了全套流程: 先在手水舍按照左手 - 右手 - 漱口 - 左手的順序清潔, 然後前往拝殿, 將5円硬幣 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(諧音 ｢ご縁｣)</span> 丟入賽錢箱後行<a href="https://ja.wikipedia.org/wiki/%E4%BA%8C%E7%A4%BC%E4%BA%8C%E6%8B%8D%E6%89%8B%E4%B8%80%E7%A4%BC">二礼二拍手一礼</a>. </p>
+<center class="hr">🙛 🙙</center>
+
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/Boarding.avif" alt="Boarding"><small class="exif exif-right">f/4<br><sup>1</sup><sub>640</sub>s<br>ISO 100<br>40 mm</small></p>
+<p>參拜完神社, 我就散步回碼頭準備登船. 大型車輛的裝載大概已經開始了一段時間, 原先港口停車場的掛車消失了一半多, 剩下的幾輛從船尾的巨大坡道進入船艙; 小客車與摩托車則從船首的小通道魚貫而入. 觀看了一會夕陽下的機動車裝載後, 散客也開始登船. </p>
+<p>我不是很想住大通鋪又不是很確定能否適應膠囊床, 所以選擇了最小的單間. 和很多酒店一樣這其實是個雙人間, 但可以想像如果真的住了兩個人的話會有多麼擁擠. 還好單間至少有獨立浴室, 就憑這點已經好過膠囊床太多⋯⋯ 這段時間渡輪還有吉伊卡哇聯動, 能在船內瞥見不少相關裝飾, 但我對這個作品毫無興趣, 所以也說不出什麼門道.</p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/Room.avif" alt="Room"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>20</sub>s<br>ISO 100<br>21 mm</small></p>
+<p>不過除了睡眠之外大部分時間應該也沒人會待在房間 ⸺ 登船之後不久就到了晚餐時間, 船上餐廳提供了自助餐, 但我因為中午吃得太多了只能象徵性地取用了一丁點菜餚作為晚餐. 結束用餐後我就來到甲板上散步. </p>
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/OaraiFullMoon.avif" alt="Sea Gate"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>8</sub>s<br>ISO 800<br>21 mm</small></p>
+<p>到了六點半左右渡輪開始鳴笛, 比日程上寫的略微提前一些出港. 明月高懸, 在大洗這樣光汙染比東京輕多了的地方看起來更是無比明亮. </p>
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/AftDeck.avif" alt="Aftdeck"><small class="exif exif-right">f/4<br><sup>1</sup><sub>15</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/Chikawa.avif" alt="Chikawa"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>8</sub>s<br>ISO 100<br>21 mm</small></p>
+<p>等到岸邊的燈光也逐漸消失後, 我回到了船艙內. 當然, 睡覺還為時尚早, 我帶上換洗衣物來到大浴場. 只能說不愧是日本人, 在這麼小的渡輪上都要塞下一個基本可以算全功能的大浴場 <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(唯一缺失的是冰池)</span>. 在船上泡澡體驗平平無奇, 雖然浴場有窗戶但除了蒸汽之外窗外就是夜空與海, 基本一片漆黑. 但在船上蒸桑拿就挺有趣了, 桑拿房的高溫似乎會放大船的搖晃, 我雖然不暈船但感覺十分新奇. </p>
+<p>泡完澡我就回房間鑽進被窩, 訂好鬧鐘為明天早起觀賞海上日出做準備. 不過躺在床上準備入睡的時候才發現房間的隔音不太好, 引擎的震動和噪音其實比想像中明顯, 雖然船的搖晃很助眠但還是花了好一陣功夫才睡著. </p>
+<h4 id="Day-7-九月二十六日-苫小牧-札幌-北見"><a href="#Day-7-九月二十六日-苫小牧-札幌-北見" class="headerlink" title="Day 7. 九月二十六日, 苫小牧 - 札幌 - 北見"></a>Day 7. 九月二十六日, 苫小牧 - 札幌 - 北見</h4><p>凌晨四點半準時起床來到甲板. 外面不知道具體幾度, 總之冷得要死, 即便我已經提前準備好了長袖外套, 還是被低溫和海風吹得頭痛. 更糟心的是雲層甚厚, 沒有日出能看. 雲層雖然流動得很快, 但並沒有讓太陽露面的意思, 等到陽光已經照亮天空都不散去, 我只能悻悻在甲板上繞了一圈回到船艙內. 好冷. </p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/BeforeDawn.avif" alt="Before Dawn"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>60</sub>s<br>ISO 100<br>21 mm</small></p>
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/DeckBeforeDawn.avif" alt="Deck Before Dawn"><small class="exif exif-right">f/2.8<br><sup>1</sup><sub>30</sub>s<br>ISO 100<br>21 mm</small></p>
+<p>吃過早餐之後我回到房間睡回籠覺, 一覺睡到將近正午艙內廣播通知即將靠岸才醒. </p>
+<p><img src="/Frames/Events/Japan2026Sep/TomakomaiPort.avif" alt="Tomakomai Port"></p>
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/TomakomaiPort.avif" alt="Tomakomai Port"><small class="exif exif-right">f/4<br><sup>1</sup><sub>4000</sub>s<br>ISO 100<br>21 mm</small></p>
+<center>王子制紙標誌性煙囪, 以及遠方的樽前山</center><br/>
+
+<p>苫小牧天氣十分晴朗, 令人懊惱. 這次旅行並沒有在苫小牧停留的計劃, 所以船一靠岸我就和大部分乘客一樣直奔巴士站, 搭上碼頭開往札幌的快速接駁巴士. 北海道的街景和大洗與東京都截然不同: 北海道秋意已濃, 行道樹已經是紅黃綠相交的狀態; 苫小牧的民房看起來比大洗稀疏些, 屋頂比起瓦片似乎鐵皮更多? 建築看着現代但卻破舊, 昭示著曾經的輝煌和如今的衰退. </p>
+<p>在巴士發車兩小時後, 我已身處札幌. </p>
+<center class="hr">🙛 🙙</center>
+
+<p class="exif-para"><img src="/2026-11/TripToJapan2026SepPart3/SapporoCityview.avif" alt="Sapporo Cityview"><small class="exif exif-right">f/5.6<br><sup>1</sup><sub>250</sub>s<br>ISO 100<br>21 mm</small></p>
+<p>雖然對札幌也很感興趣, 但我在札幌只能停留一個半小時左右, 甚至不敢離開車站太遠. 好在巴士站邊上就是JR塔樓展望臺, 我得以不需要擔心錯過接下來的行程登高望遠, 至於更細緻的遊覽就等以後有機會再來吧. 塔樓底部就是JR札幌站和商場, 相當繁華; 展望臺位於38層, 遊客寥寥無幾. 展望臺本身是非常現代的建築, 沒什麼裝飾, 風格接近 Tokyo City View, 但供人休息的長椅不少. 它的洗手間甚至都修在窗邊, 不知道有多少遊客會享受在如廁時俯瞰札幌市景的體驗⋯⋯</p>
+<p class="exif-para" data-xpan><img src="/2026-11/TripToJapan2026SepPart3/SapporoSkyline.avif" alt="Sapporo Skyline"><small class="exif exif-right">f/4<br><sup>1</sup><sub>250</sub>s<br>ISO 100<br>90 mm</small></p>
+<p>往西北方能望見石狩灣以及沿岸的風力發電機, 而其他方向的風景彷彿是縮小版的東京. 夕陽的餘暉十分美麗, 但前往北見的巴士5:20就會發車, 我沒有機會欣賞落日的全程和夜景, 戀戀不捨地離開. </p>
+<p>從札幌到北見直達的巴士全程五個小時左右. 發車之後不久夜色就徹底籠罩周圍, 窗外幾乎一片漆黑, 除了依舊明亮的十六夜的圓月之外只能依稀看到模糊的樹影. 百無聊賴下我陷入時斷時續的淺眠, 等到車內廣播通知已經到達西七號線才醒來. 終於到北見了. </p>
+<hr>
+<p>日本遊記2026系列: <a href="/2026-10/TripToJapan2026SepPart1">Part Ⅰ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(東京篇上)</span></a>, <a href="/2026-11/TripToJapan2026SepPart2">Part Ⅱ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(東京篇下)</span></a>, Part Ⅳ <span style="font-weight: 600; font-size: 0.87em; color: color-mix(in srgb, currentColor 72%, transparent)">(道東篇 WIP)</span></p>
 ]]></content>
       <tags>
         <tag>travel</tag>
